@@ -1,0 +1,14 @@
+$primary-color: #333;
+$font-size: 20px;
+
+.site, #page {
+  background-color: $primary-color;
+}
+
+h2 {
+  font-size: $font-size;
+
+  &.entry-title {
+    color: white;
+  }
+}
