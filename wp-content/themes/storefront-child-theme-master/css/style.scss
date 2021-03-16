@@ -1,5 +1,6 @@
 $primary-color: #333;
 $font-size: 20px;
+$blue: blue;
 
 .site, #page {
   background-color: $primary-color;
@@ -11,4 +12,9 @@ h2 {
   &.entry-title {
     color: white;
   }
+}
+
+.nav-menu {
+  font-size: $font-size;
+  background-color: $blue;
 }
