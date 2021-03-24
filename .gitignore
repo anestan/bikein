@@ -1,4 +1,2 @@
 # Ignore everything in the root except the "wp-content" directory.
-/*
-*wp-config.php
-!wp-content/
+wp-config.php
