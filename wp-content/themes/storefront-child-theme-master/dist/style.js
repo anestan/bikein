@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./css/style.scss");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./scss/style.scss");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./css/style.scss":
-/*!************************!*\
-  !*** ./css/style.scss ***!
-  \************************/
+/***/ "./scss/style.scss":
+/*!*************************!*\
+  !*** ./scss/style.scss ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./css/style.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/style.scss?");
 
 /***/ })
 

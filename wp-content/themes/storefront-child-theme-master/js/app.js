@@ -1,4 +1,7 @@
-import '../css/style.scss'
+import '../scss/style.scss'
 
-import datepicker from './js-datepicker.js';
-import swiper from './swiper.js';
+import cvrautofill from './cvrautofill.js';
+import mmenu from './mmenu.js';
+import loadmore from './loadmore.js';
+import script_ajax from './script_ajax.js';
+import sidebar from './sidebar.js';

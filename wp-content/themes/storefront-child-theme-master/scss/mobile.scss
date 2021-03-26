@@ -1,0 +1,187 @@
+/* Responsive - Mobile */
+
+@media only screen and (max-width: 767px) {
+    /* Header Mobile */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+      }
+    
+      #masthead {
+        padding: 15px 0;
+      }
+    
+      .header-cart-wrapper {
+        display: none;
+      }
+    
+      .header-mobile {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        align-items: center;
+      }
+    
+      .storefront-primary-navigation, .post-type-archive-product .woocommerce-products-header, .header-search, .header-cart, .woocommerce-pagination {
+        display:none;
+      }
+    
+      .image-logo img{
+        max-height: 80px;
+      }
+      .image-logo {
+        width: 30%;
+      }
+    
+      .header-mobile i {
+        transition: all 0.3s ease;
+        vertical-align: bottom;
+        transform: scale(2);
+      }
+    
+      .header-mobile i:active {
+        transform: scale(1.6);
+      }
+    
+      .header-mobile a {
+        line-height: 0;
+      }
+    
+      .navigation-header {
+        background-color: transparent;
+      }
+    
+      .header-sellingpoint {
+        display: none;
+      }
+    /* Header Mobile End */
+      #secondary {
+        display: none;
+        width: 100%;
+        padding: 1em 1.4em;
+        margin-top: 1.3em;
+        border-radius: 10px;
+        border: 3px solid #EFEFEF;
+      }
+    
+      .widget_custom_html {
+        display: block;
+      }
+      ul.products li.product img {
+        width: 100%;
+      }
+    
+      ul.products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      ul.products:after, ul.products:before {
+        content: none;
+      }
+    
+      ul.products li.product {
+        width: 46.411765%;
+        float: left;
+        margin-right: 0;
+        margin-bottom: 30px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .add_to_cart_button {
+        font-size: 13px;
+      }
+    
+      .woof_container_product_cat, .woof_price2_search_container, .woof_container_pa_maerke {
+        display: inline-block;
+        margin-left: 0px;
+      }
+      #woof_widget-2 {
+        display: none;
+      }
+      .header-widget-region .col-full {
+        border: 0;
+      }
+    
+      .show_filter {
+        display: block;
+        width: 100%;
+        background-color: #FFF;
+        border: 1px solid #1A936F;
+        color: #1A936F;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .show_filter:hover {
+        background-color: #FFF;
+        border: 1px solid #1A936F;
+        color: #1A936F;
+      }
+      .show_filter:active {
+        background-color: #1A936F;
+        color: #FFF;
+        border: 1px solid #1A936F;
+      }
+    
+      form.cart {
+        flex-direction: column;
+      }
+    
+      .single-product div.product .variations_button, .footer-widgets {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+      }
+    
+      .quantity {
+        padding-bottom: 20px;
+      }
+    
+      .sf_top_bar, .col-full, .footer-widgets, .footer-widgets .widget {
+        padding: 0;
+      }
+    
+      .woocommerce-page #content, .footer-widgets {
+        margin: 0 20px;
+      }
+    
+      .footer-widgets .block {
+        margin-bottom: 20px;
+      }
+    
+      .storefront-breadcrumb {
+        margin: 0 20px 2.706325903em;
+      }
+    
+      .loadmore_button {
+        width: auto;
+      }
+    
+      .post-type-archive-product .col-full, .tax-product_cat .col-full {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+      button.single_add_to_cart_button.button.alt {
+        width: 100%;
+      }
+    
+      #woocommerce_price_filter-2, #woocommerce_product_categories-2, #woocommerce_layered_nav-4, #woocommerce_layered_nav-2 {
+        display: none;
+      }
+    
+      .btm_bar {
+        padding: 20px 20px 85px 20px;
+      }
+      .site-search .widget_product_search form::before {
+        display: none;
+      }
+      .site-search .widget_product_search form {
+        display: flex;
+      }
+    }

@@ -4,9 +4,9 @@ var path = require('path');
 
 // change these variables to fit your project
 const jsPath= './js';
-const cssPath = './css';
+const cssPath = './scss';
 const outputPath = 'dist';
-const localDomain = 'https://rustbike.com';
+const localDomain = 'http://localhost:8888/webshop-test/';
 const entryPoints = {
   // 'app' is the output name, people commonly use 'bundle'
   // you can have more than 1 entry point

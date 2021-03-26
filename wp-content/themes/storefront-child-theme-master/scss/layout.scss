@@ -1,0 +1,33 @@
+/* Page wrapper */
+
+#page {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page {
+	overflow-x: visible;
+}
+  
+  .site {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  }
+  
+  .woocommerce-page #content {
+    margin: 0 60px;
+  }
+  
+  .storefront-breadcrumb {
+    margin: 0 60px 3.706325903em;
+  }
+  
+  /* Content wrapper */
+  /* Container width | col-full */
+  .col-full {
+    width: inherit;
+    max-width: 100%;
+    padding: 0px;
+    margin: auto;
+  }
