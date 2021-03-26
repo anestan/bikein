@@ -11,7 +11,7 @@
  * the readme will list any important changes.
  *
  * @see         https://docs.woocommerce.com/document/template-structure/
- * @package     WooCommerce\Templates
+ * @package     WooCommerce/Templates
  * @version     3.0.0
  */
 
@@ -22,43 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 ?>
 <div class="product_meta">
-
-<?php 
- if ($product->is_type( 'simple' )){
-    
-	echo '<div class="custom-attributes">';
-	 
-    // Size
-    $size_attribute = $product->get_attribute( 'pa_stoerrelse' );
-    $size_name = 'Størrelse: ';
-
-	if (!empty($size_attribute)) {
-    	echo '<p class="attributes-and-color">' .  $size_name  .  $size_attribute;
-	}
-
-    // Color
-    $terms = get_the_terms( $product->get_id(), 'color' );
-    $output = array();
-
-	if (!empty($terms)) {
-
-		echo '<p class="attributes-and-color">';
-
-		foreach($terms as $term) {
-				$output[] = $term->name;
-			}
-			echo 'Farve: ' . implode(', ', $output);
-			echo '</p>';
-		}
-	}
-
-	echo '</div>';
-
-?>
-
-
-
-
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
 
@@ -73,5 +36,41 @@ global $product;
 	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
+
+</div>
+
+<!-- Selling point -->
+<div class="sellingpoints">
+
+<div class="header-sellingpoint">
+        <i class="<?php echo get_theme_mod( 'header_selling_icon_1'); ?>"></i>
+        <p class="sellingpoint-wrapper">
+          <?php echo get_theme_mod( 'header_selling_block_1'); ?>
+          <span class="sellingpoint-subtitle">
+            <?php echo get_theme_mod( 'header_selling_subtitle_1'); ?>
+          </span>
+        </p>
+    </div>
+
+    <div class="header-sellingpoint">
+        <i class="<?php echo get_theme_mod( 'header_selling_icon_2'); ?>"></i>
+        <p class="sellingpoint-wrapper">
+          <?php echo get_theme_mod( 'header_selling_block_2'); ?>
+          <span class="sellingpoint-subtitle">
+            <?php echo get_theme_mod( 'header_selling_subtitle_2'); ?>
+          </span>
+        </p>
+    </div>
+
+
+    <div class="header-sellingpoint">
+        <i class="<?php echo get_theme_mod( 'header_selling_icon_3'); ?>"></i>
+        <p class="sellingpoint-wrapper">
+          <?php echo get_theme_mod( 'header_selling_block_3'); ?>
+          <span class="sellingpoint-subtitle">
+            <?php echo get_theme_mod( 'header_selling_subtitle_3'); ?>
+          </span>
+        </p>
+	</div>
 
 </div>

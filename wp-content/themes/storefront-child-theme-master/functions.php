@@ -44,13 +44,6 @@ add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style' );
 add_theme_support( 'custom-logo' );
 
 
-/*Allow SVG*/
-function cc_mime_types($mimes) {
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
-   }
-add_filter('upload_mimes', 'cc_mime_types');
-
 /* Remove footer credit */
 add_action( 'init', 'custom_remove_footer_credit', 10 );
 
@@ -60,79 +53,8 @@ function custom_remove_footer_credit () {
 }
 
 
-/* Update price with table on product page */
-//add_action( 'woocommerce_single_product_summary', 'woocommerce_total_product_price', 31 );
-function woocommerce_total_product_price() {
-    global $woocommerce, $product;
-    if( $product->is_type( 'simple' ) ){
-		?>
-        <script>
-            jQuery(function($){
 
-                var price = <?php echo $product->get_price(); ?>,
-                    currency = '<?php echo get_woocommerce_currency_symbol(); ?>',
-                    get_id = '<?php echo $get_id = $product->get_id(); ?>',
-                    product_variation = '<?php echo $product = new WC_Product_Variation(81); ?>', //Grøn hoodie
-                    variation_price = '<?php echo $regular_price = $product_variation->regular_price; ?>'; //fejler
-
-								var bulk_pricing = []
-
-								$('td').each(function (index, value){
-								    bulk_pricing.push({index: value})
-								});
-
-                $('[name=quantity]').change(function(){
-
-									var product_total_before = parseFloat(price * this.value);
-
-                  if ( get_id == 15 ) {
-
-                    if (!(this.value < 4)) {
-
-                        var pricecalc_discount = price - 40;
-                        var product_total = parseFloat(pricecalc_discount * this.value);
-
-												$('.price .amount').html( "<span class='price_before'>" + product_total_before.toFixed(2) + "</span>" + ' ' + product_total.toFixed(2) + ' ' + currency);
-
-                     }	else if (!(this.value < 3)) {
-
-                         var pricecalc_discount = price - 30;
-                         var product_total = parseFloat(pricecalc_discount * this.value);
-
-												 $('.price .amount').html( "<span class='price_before'>" + product_total_before.toFixed(2) + "</span>" + ' ' + product_total.toFixed(2) + ' ' + currency);
-
-                     } else if (!(this.value < 2)) {
-
-                         var pricecalc_discount = price - 10;
-                         var product_total = parseFloat(pricecalc_discount * this.value);
-
-                         $('.price .amount').html( "<span class='price_before'>" + product_total_before.toFixed(2) + "</span>" + ' ' + product_total.toFixed(2) + ' ' + currency);
-
-                     } else if (!(this.value < 1)) {
-
-											  var product_total = parseFloat(price * this.value);
-
-                         $('.price .amount').html( product_total.toFixed(2) + ' ' + currency);
-
-                     }
-                  } else {
-                    if (!(this.value < 1)) {
-
-                       var product_total = parseFloat(price * this.value);
-
-                        $('.price .amount').html( product_total.toFixed(2) + ' ' + currency);
-
-                    }
-                  }
-
-                });
-            });
-        </script>
-    <?php
-    }
-}
-
-/*Add scroll button to short description on product page*/
+/* Add scroll button to short description on product page */
 function scroll_btn(){
   echo '<i class="fas fa-arrow-down scroll_btn"></i>';
 }
@@ -327,7 +249,6 @@ function misha_my_load_more_scripts() {
 
 	// In most cases it is already included on the page and this line can be removed
 	wp_enqueue_script('jquery');
-
 
 	// now the most interesting part
 	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
