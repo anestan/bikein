@@ -14,6 +14,7 @@ const entryPoints = {
   'style': cssPath + '/style.scss',
 };
 
+
 module.exports = {
   entry: entryPoints,
   output: {
@@ -24,7 +25,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-
     // Uncomment this if you want to use CSS Live reload
     /*
     new BrowserSyncPlugin({

@@ -1,8 +1,75 @@
+
+// Colors
 $primary-color: #333;
 $font-size: 20px;
 $blue: blue;
+$gray: #f0f0f0;
+$black: #000000;
+$white: #ffffff;
+$orange: #bd7b00;
 
 
+// Hover
+$orange-hover: #f5a103;
+
+
+// Font
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-small: $font-size-base * 0.75;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-normal-bold: 500;
+$font-weight-bold: 700;
+
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.250;
+
+$font-family-sans-serif:      "Work Sans", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:            $font-family-sans-serif;
+
+
+html, body, button, input, textarea {
+  font-family: $font-family-base;
+}
+
+
+// Heading
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: $font-family-base;
+}
+
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+
+
+/*
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     font-family: 'Work Sans', sans-serif;
@@ -23,3 +90,4 @@ h1, h2, h3, h4, h5, h6 {
   h5 {
     font-size: 18px
   }
+*/

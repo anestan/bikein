@@ -1,23 +1,48 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap);
+html, body, button, input, textarea {
+  font-family: "Work Sans", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: 'Work Sans', sans-serif; }
+  font-weight: 400;
+  font-family: "Work Sans", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 h1 {
-  font-size: 42px; }
+  font-size: 2.5rem; }
 
 h2 {
-  font-size: 34px; }
+  font-size: 2rem; }
 
 h3 {
-  font-size: 26px; }
+  font-size: 1.75rem; }
 
 h4 {
-  font-size: 22px; }
+  font-size: 1.5rem; }
 
 h5 {
-  font-size: 18px; }
+  font-size: 1.25rem; }
 
+/*
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 26px
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 18px
+  }
+*/
 /* Page wrapper */
 #page {
   max-width: 1400px;
@@ -44,6 +69,33 @@ h5 {
   max-width: 100%;
   padding: 0px;
   margin: auto; }
+
+.topbar {
+  min-height: 50px;
+  background-color: #f0f0f0;
+  padding: 10px 0 10px 0; }
+  .topbar .topbar-wrapper {
+    display: flex; }
+  .topbar .selling-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 50%; }
+    .topbar .selling-points .topbar-selling-point {
+      display: flex;
+      font-weight: 500;
+      padding-right: 40px; }
+      .topbar .selling-points .topbar-selling-point i {
+        padding-right: 10px;
+        font-size: 25px; }
+      .topbar .selling-points .topbar-selling-point p {
+        margin: 0; }
+      .topbar .selling-points .topbar-selling-point .selling-point-wrapper .selling-point-title {
+        margin: 0;
+        font-size: 0.75rem; }
+  .topbar .top-menu {
+    flex: 50%; }
 
 /* Top header */
 /* Sticky Header */
@@ -1436,10 +1488,6 @@ button#vatButton {
 
 .button.success:hover {
   background-color: #666666; }
-
-/* HTML */
-html, body, button, input, textarea {
-  font-family: 'Work Sans', sans-serif; }
 
 /*
 .site, #page {

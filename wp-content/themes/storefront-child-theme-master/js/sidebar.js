@@ -1,7 +1,5 @@
 jQuery(function($){
 
-
-
     var $sidebar = $('.cart-sidebar');
     
       $(".header_cart_wrapper").on('click', function(e) {

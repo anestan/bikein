@@ -17,7 +17,13 @@
 
 defined( 'ABSPATH' ) || exit;
 
+/** Load More or View More Functionality 
+ * What it is doing is checking if an ajax request was fired
+ * and if fired, will run the code and exit to terminate the ajax request
+ */ 
+
 get_header( 'shop' );
+
 
 /**
  * Hook: woocommerce_before_main_content.

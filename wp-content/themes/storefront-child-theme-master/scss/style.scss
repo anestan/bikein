@@ -3,6 +3,7 @@
 
 @import 'variables.scss';
 @import 'layout.scss';
+@import 'topbar.scss';
 @import 'header.scss';
 @import 'footer.scss';
 @import 'tablet.scss';
@@ -15,10 +16,7 @@
 @import '../scss/woocommerce/checkout.scss';
 
 
-/* HTML */
-html, body, button, input, textarea {
-  font-family: 'Work Sans', sans-serif;
-}
+
 
 // remove after test
 /*

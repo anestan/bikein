@@ -1,0 +1,45 @@
+.topbar {
+    min-height: 50px;
+    background-color: $gray;
+    padding: 10px 0 10px 0;
+
+    .topbar-wrapper {
+        display: flex;
+    }
+
+    .selling-points {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 50%;
+
+        .topbar-selling-point {
+            display: flex;
+            font-weight: $font-weight-normal-bold;
+            padding-right: 40px;
+    
+            i {
+                padding-right: 10px;
+                font-size: 25px;
+            }
+
+            p {
+                margin: 0;
+            }
+    
+            .selling-point-wrapper {
+                .selling-point-title {
+                    margin: 0;
+                    font-size: $font-size-small;
+                }
+            }
+    
+        }
+    }
+    
+    .top-menu {
+        flex: 50%;
+    }
+}
+

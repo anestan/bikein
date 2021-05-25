@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _cvrautofill_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cvrautofill.js */ \"./js/cvrautofill.js\");\n/* harmony import */ var _cvrautofill_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_cvrautofill_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _mmenu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mmenu.js */ \"./js/mmenu.js\");\n/* harmony import */ var _mmenu_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mmenu_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _loadmore_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loadmore.js */ \"./js/loadmore.js\");\n/* harmony import */ var _loadmore_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_loadmore_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _script_ajax_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./script_ajax.js */ \"./js/script_ajax.js\");\n/* harmony import */ var _script_ajax_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_script_ajax_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _sidebar_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sidebar.js */ \"./js/sidebar.js\");\n/* harmony import */ var _sidebar_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sidebar_js__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _cvrautofill_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cvrautofill.js */ \"./js/cvrautofill.js\");\n/* harmony import */ var _cvrautofill_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_cvrautofill_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _mmenu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mmenu.js */ \"./js/mmenu.js\");\n/* harmony import */ var _mmenu_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mmenu_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _loadmore_data_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loadmore_data.js */ \"./js/loadmore_data.js\");\n/* harmony import */ var _loadmore_data_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_loadmore_data_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _loadmore_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./loadmore.js */ \"./js/loadmore.js\");\n/* harmony import */ var _loadmore_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_loadmore_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _sidebar_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sidebar.js */ \"./js/sidebar.js\");\n/* harmony import */ var _sidebar_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sidebar_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _filters_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./filters.js */ \"./js/filters.js\");\n/* harmony import */ var _filters_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_filters_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sticky_header.js */ \"./js/sticky_header.js\");\n/* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_sticky_header_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _stock_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./stock.js */ \"./js/stock.js\");\n/* harmony import */ var _stock_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_stock_js__WEBPACK_IMPORTED_MODULE_8__);\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./js/app.js?");
 
 /***/ }),
 
@@ -109,6 +109,17 @@ eval("(function($){\n\t$(document).ready(function () {\n\n        // Inserts vat
 
 /***/ }),
 
+/***/ "./js/filters.js":
+/*!***********************!*\
+  !*** ./js/filters.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#secondary\").slideToggle(400);\n\t});\n});\n\n\n//# sourceURL=webpack:///./js/filters.js?");
+
+/***/ }),
+
 /***/ "./js/loadmore.js":
 /*!************************!*\
   !*** ./js/loadmore.js ***!
@@ -116,7 +127,18 @@ eval("(function($){\n\t$(document).ready(function () {\n\n        // Inserts vat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("jQuery(function($){ // use jQuery code inside this to avoid \"$ is not defined\" error\n\t$('.loadmore_button').click(function(){\n\n\t\tvar button = $(this),\n\t\t    data = {\n\t\t\t'action': 'loadmore',\n\t\t\t'query': misha_loadmore_params.posts, // that's how we get params from wp_localize_script() function\n\t\t\t'page' : misha_loadmore_params.current_page\n\t\t};\n\n\t\t$.ajax({ // you can also use $.post here\n\t\t\turl : misha_loadmore_params.ajaxurl, // AJAX handler\n\t\t\tdata : data,\n\t\t\ttype : 'POST',\n\t\t\tbeforeSend : function ( xhr ) {\n\t\t\t\tbutton.text('Henter...'); // change the button text, you can also add a preloader image\n\t\t\t},\n\t\t\tsuccess : function( data ){\n\t\t\t\tif( data ) {\n\t\t\t\t\tbutton.text( 'Se flere produkter' ).prev().before(data); // insert new posts\n\t\t\t\t\tmisha_loadmore_params.current_page++;\n\n\t\t\t\t\tif ( misha_loadmore_params.current_page == misha_loadmore_params.max_page )\n\t\t\t\t\t\tbutton.remove(); // if last page, remove the button\n\n\t\t\t\t\t// you can also fire the \"post-load\" event here if you use a plugin that requires it\n\t\t\t\t\t// $( document.body ).trigger( 'post-load' );\n\t\t\t\t} else {\n\t\t\t\t\tbutton.remove(); // if no data, remove the button as well\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t});\n});\n\n\n// Show or hide stock\njQuery(function($){\n\t$(\"#stockButton\").click(function() {\n\t  $(\".stock_status\").toggle(\"slide\");\n\t});\n});\n\n//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#secondary\").slideToggle(400);\n\t});\n});\n\n\n\njQuery(function($){\n\tvar prevScrollpos = window.pageYOffset;\n\twindow.onscroll = function() {\n\tvar currentScrollPos = window.pageYOffset;\n\t  if (prevScrollpos > currentScrollPos) {\n\t\tdocument.getElementById(\"masthead\").style.top = \"0\";\n\t  } else {\n\t\tdocument.getElementById(\"masthead\").style.top = \"-200px\";\n\t  }\n\t  prevScrollpos = currentScrollPos;\n\t}\n\n});\n\n\n//# sourceURL=webpack:///./js/loadmore.js?");
+eval("jQuery(function($){ // use jQuery code inside this to avoid \"$ is not defined\" error\n\t$('.loadmore_button').click(function(){\n\n\t\tvar button = $(this),\n\t\t    data = {\n\t\t\t'action': 'loadmore',\n\t\t\t'query': loadmore_params.posts,\n\t\t\t'page' : loadmore_params.current_page\n\t\t};\n\n\t\t$.ajax({ // you can also use $.post here\n\t\t\turl : loadmore_params.ajaxurl, // AJAX handler\n\t\t\tdata : data,\n\t\t\ttype : 'POST',\n\t\t\tbeforeSend : function ( xhr ) {\n\t\t\t\tbutton.text('Henter...'); // change the button text, you can also add a preloader image\n\t\t\t},\n\t\t\tsuccess : function( data ){\n\t\t\t\tif( data ) {\n\t\t\t\t\tbutton.text( 'Se flere produkter' ).prev().before(data); // insert new posts\n\t\t\t\t\tloadmore_params.current_page++;\n\n\t\t\t\t\tif ( loadmore_params.current_page == loadmore_params.max_page )\n\t\t\t\t\t\tbutton.remove(); // if last page, remove the button\n\n\t\t\t\t\t// $( document.body ).trigger( 'post-load' );\n\t\t\t\t} else {\n\t\t\t\t\tbutton.remove(); // if no data, remove the button as well\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t});\n});\n\n\n//# sourceURL=webpack:///./js/loadmore.js?");
+
+/***/ }),
+
+/***/ "./js/loadmore_data.js":
+/*!*****************************!*\
+  !*** ./js/loadmore_data.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("jQuery.noConflict($);\n/* Ajax functions */\n\njQuery(document).ready(function($) {\n    //onclick\n    $(\"#loadMore\").on('click', function(e) {\n        //init\n        var that = $(this);\n        var page = $(this).data('page');\n        var newPage = page + 1;\n        var ajaxurl = that.data('url');\n        //ajax call\n        $.ajax({\n            url: ajaxurl,\n            type: 'post',\n            data: {\n                page: page,\n                action: 'ajax_script_load_more'\n\n            },\n            error: function(response) {\n                console.log(response);\n            },\n            success: function(response) {\n                //check\n                if (response == 0) {\n                    $('#ajax-content').append('<div class=\"text-center\"><h3>You reached the end of the line!</h3><p>No more posts to load.</p></div>');\n                    $('#loadMore').hide();\n                } else {\n                    that.data('page', newPage);\n                    $('#ajax-content').append(response);\n                }\n            }\n        });\n    });\n}); \n\n//# sourceURL=webpack:///./js/loadmore_data.js?");
 
 /***/ }),
 
@@ -131,17 +153,6 @@ eval("!function(t){var e={};function n(o){if(e[o])return e[o].exports;var i=e[o]
 
 /***/ }),
 
-/***/ "./js/script_ajax.js":
-/*!***************************!*\
-  !*** ./js/script_ajax.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("jQuery.noConflict($);\n/* Ajax functions */\njQuery(document).ready(function($) {\n    //onclick\n    $(\"#loadMore\").on('click', function(e) {\n        //init\n        var that = $(this);\n        var page = $(this).data('page');\n        var newPage = page + 1;\n        var ajaxurl = that.data('url');\n        //ajax call\n        $.ajax({\n            url: ajaxurl,\n            type: 'post',\n            data: {\n                page: page,\n                action: 'ajax_script_load_more'\n\n            },\n            error: function(response) {\n                console.log(response);\n            },\n            success: function(response) {\n                //check\n                if (response == 0) {\n                    $('#ajax-content').append('<div class=\"text-center\"><h3>You reached the end of the line!</h3><p>No more posts to load.</p></div>');\n                    $('#loadMore').hide();\n                } else {\n                    that.data('page', newPage);\n                    $('#ajax-content').append(response);\n                }\n            }\n        });\n    });\n});\n\n\n//# sourceURL=webpack:///./js/script_ajax.js?");
-
-/***/ }),
-
 /***/ "./js/sidebar.js":
 /*!***********************!*\
   !*** ./js/sidebar.js ***!
@@ -149,7 +160,29 @@ eval("jQuery.noConflict($);\n/* Ajax functions */\njQuery(document).ready(functi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("jQuery(function($){\n\n\n\n    var $sidebar = $('.cart-sidebar');\n    \n      $(\".header_cart_wrapper\").on('click', function(e) {\n        e.preventDefault();\n    \n        if (!$sidebar.hasClass('cart-active')) {\n          $sidebar.addClass('cart-active');\n    \n          $(document).one('click', function closeTooltip(e) {\n              if ($sidebar.has(e.target).length === 0 && $('.header_cart_wrapper').has(e.target).length === 0) {\n                  $sidebar.removeClass('cart-active');\n              } else if ($sidebar.hasClass('cart-active')) {\n                  $(document).one('click', closeTooltip);\n              }\n          });\n          } else {\n            $menu.removeClass('cart-active');\n          }\n    \n      });\n    });\n    \n\n//# sourceURL=webpack:///./js/sidebar.js?");
+eval("jQuery(function($){\n\n    var $sidebar = $('.cart-sidebar');\n    \n      $(\".header_cart_wrapper\").on('click', function(e) {\n        e.preventDefault();\n    \n        if (!$sidebar.hasClass('cart-active')) {\n          $sidebar.addClass('cart-active');\n    \n          $(document).one('click', function closeTooltip(e) {\n              if ($sidebar.has(e.target).length === 0 && $('.header_cart_wrapper').has(e.target).length === 0) {\n                  $sidebar.removeClass('cart-active');\n              } else if ($sidebar.hasClass('cart-active')) {\n                  $(document).one('click', closeTooltip);\n              }\n          });\n          } else {\n            $menu.removeClass('cart-active');\n          }\n    \n      });\n    });\n    \n\n//# sourceURL=webpack:///./js/sidebar.js?");
+
+/***/ }),
+
+/***/ "./js/sticky_header.js":
+/*!*****************************!*\
+  !*** ./js/sticky_header.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Sticky header\njQuery(function($){\n\tvar prevScrollpos = window.pageYOffset;\n\twindow.onscroll = function() {\n\tvar currentScrollPos = window.pageYOffset;\n\t  if (prevScrollpos > currentScrollPos) {\n\t\tdocument.getElementById(\"masthead\").style.top = \"0\";\n\t  } else {\n\t\tdocument.getElementById(\"masthead\").style.top = \"-200px\";\n\t  }\n\t  prevScrollpos = currentScrollPos;\n\t}\n\n});\n\n//# sourceURL=webpack:///./js/sticky_header.js?");
+
+/***/ }),
+
+/***/ "./js/stock.js":
+/*!*********************!*\
+  !*** ./js/stock.js ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Show or hide stock\njQuery(function($){\n\t$(\"#stockButton\").click(function() {\n\t  $(\".stock_status\").toggle(\"slide\");\n\t});\n});\n\n//# sourceURL=webpack:///./js/stock.js?");
 
 /***/ }),
 
