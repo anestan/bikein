@@ -10,10 +10,6 @@
 
   /* Header */
 
-  .elementor-page .storefront-breadcrumb, .elementor-page .header-widget-region {
-    display: none;
-  }
-
   #menu-hovedmenu .sub-menu ul {
     padding: 0px 0px;
     background-color: #FFF;
@@ -21,26 +17,6 @@
 
   #menu-hovedmenu .sub-menu ul li .sub-menu {
     padding: 12px 0px;
-    }
-
-  #menu-hovedmenu .smm-mega-menu {
-    margin: 0 auto;
-    background-color: #FFF;
-    min-width: 1080px;
-    box-shadow: 0px 3px 6px 0px rgba(62, 58, 51, 0.16);
-    border-bottom: 5px solid #1A936F;
-    padding-bottom: 65px;
-  }
-
-  .main-navigation #menu-hovedmenu li.smm-active ul.sub-menu {
-      background-color: transparent;
-    }
-
-  .main-navigation #menu-hovedmenu li.smm-active .widget h3.widget-title {
-    font-size: 20px;
-      color: black;
-      text-transform: uppercase;
-      font-weight: 600;
     }
 
     #menu-hovedmenu .menu_item_information .widget_recent_entries li a {
@@ -54,17 +30,11 @@
     #menu-hovedmenu .menu_item_information .widget_recent_entries li a:hover {
       text-decoration: underline;
     }
-    .smm-mega-menu .smm-row div:not(:last-child) {
-      border-right: 1px solid rgba(192,192,192,0.2)
-    }
+
 
   #menu-hovedmenu .menu-item .menu-item-type-taxonomy li a {
       text-transform: capitalize;
       line-height: 120%;
-    }
-
-    #menu-hovedmenu .smm-mega-menu .smm-row div {
-      margin-bottom: -15px;
     }
 
     #menu-hovedmenu .menu-item .menu-item-type-taxonomy li a:hover {
@@ -91,16 +61,6 @@
       text-decoration: underline;
      }
 
-    #menu-hovedmenu .sub-menu .menu-item a  {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    text-transform: capitalize;
-    font-size: 18px;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
-    padding-left: 0px;
-  }
-
   #menu-hovedmenu .menu-item .menu-item-type-taxonomy ul a {
       font-weight: normal;
   }
@@ -115,15 +75,6 @@
 
   #menu-hovedmenu {
     position: relative;
-  }
-
-  .smm-mega-menu li {
-    text-align: left !important;
-    transition: all 0.2s ease;
-  }
-
-  .smm-mega-menu li:hover {
-    transform: translateX(6px);
   }
 
   .header-wrapper {
