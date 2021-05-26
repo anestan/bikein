@@ -68,13 +68,21 @@ h5 {
 }
 
 
+//Layout
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 
 /*
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     font-family: 'Work Sans', sans-serif;
   }
-  
+
   h1 {
     font-size: 42px;
   }

@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     font-family: 'Work Sans', sans-serif;
   }
-  
+
   h1 {
     font-size: 42px;
   }
@@ -97,95 +97,21 @@ h1, h2, h3, h4, h5, h6 {
   .topbar .top-menu {
     flex: 50%; }
 
-/* Top header */
-/* Sticky Header */
+/* Header */
 #masthead {
   position: sticky;
   z-index: 999;
-  background-color: #fff;
+  background-color: #ffffff;
   transition: 0.3s all; }
-
-/* Header */
-#menu-hovedmenu .sub-menu ul {
-  padding: 0px 0px;
-  background-color: #FFF; }
-
-#menu-hovedmenu .sub-menu ul li .sub-menu {
-  padding: 12px 0px; }
-
-#menu-hovedmenu .menu_item_information .widget_recent_entries li a {
-  font-weight: normal; }
-
-#menu-hovedmenu .menu_item_information .widget_recent_entries .widget-title {
-  font-size: 14px; }
-
-#menu-hovedmenu .menu_item_information .widget_recent_entries li a:hover {
-  text-decoration: underline; }
-
-#menu-hovedmenu .menu-item .menu-item-type-taxonomy li a {
-  text-transform: capitalize;
-  line-height: 120%; }
-
-#menu-hovedmenu .menu-item .menu-item-type-taxonomy li a:hover {
-  text-decoration: underline; }
-
-#menu-hovedmenu .menu-item .menu-item-type-taxonomy ul a {
-  font-weight: normal; }
-
-#menu-hovedmenu .sub-menu ul li a {
-  padding: 5px; }
-
-#menu-hovedmenu .sub-menu ul li ul li {
-  padding-bottom: 2px;
-  line-height: 1.5; }
-
-#menu-hovedmenu #menu-information .sub-menu a {
-  font-weight: 400; }
-
-#menu-hovedmenu #menu-information .sub-menu a:hover {
-  text-decoration: underline; }
-
-#menu-hovedmenu .menu-item .menu-item-type-taxonomy ul a {
-  font-weight: normal; }
-
-#menu-hovedmenu .menu-item-has-children:hover::after {
-  display: inherit; }
-
-#menu-hovedmenu .menu-item {
-  text-align: center; }
-
-#menu-hovedmenu {
-  position: relative; }
-
-.header-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%; }
-
-#masthead {
-  padding: 0px;
-  margin-bottom: 0px; }
-
-#masthead i {
-  color: #1A936F; }
-
-.site-header {
-  border: 0;
-  padding: 0; }
-
-.header-wrapper {
-  padding: 10px; }
-
-/* Header Logo */
-.image-logo img {
-  max-height: 100px;
-  width: auto; }
-
-.image-logo {
-  display: flex;
-  align-items: center;
-  width: 10%; }
+  #masthead .header-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    #masthead .header-wrapper .image-logo {
+      max-height: 100px;
+      width: auto; }
 
 /* Header cart */
 .header-cart-outer-wrapper, .header-search {
