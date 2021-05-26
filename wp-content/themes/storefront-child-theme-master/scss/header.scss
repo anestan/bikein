@@ -8,10 +8,28 @@
 
     .header-wrapper {
       @include flexbox;
+      justify-content: space-between;
+      padding: 1em 0;
 
       .image-logo {
-        max-height: 100px;
-        width: auto;
+        margin-right: 5em;
+
+        img {
+          max-height: 50px;
+          width: auto;
+        }
+      }
+
+      .header-search {
+        .woocommerce-product-search {
+          margin: 0;
+        }
+      }
+
+      .navigation-header-content{
+        margin-left: auto;
+        margin-right: 1em;
+        @include flexbox;
       }
     }
 
@@ -27,9 +45,6 @@
   .header-cart-outer-wrapper, .header-search {
     display: flex;
     align-items: center;
-  }
-  .header-cart-outer-wrapper {
-    width: 10%;
   }
 
   .header-cart-wrapper {
@@ -72,56 +87,56 @@
     font-weight: 600;
   }
 
-  .header-search form, .storefront_primary_navigation #site-navigation {
-    margin: 0;
-  }
-
-  input.search-form {
-      outline: none;
-  }
-
-  input.search-form::-webkit-search-decoration,
-  input.search-form::-webkit-search-cancel-button {
-      display: none;
-  }
-
-  input[type=search] {
-      background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-      border: solid 2px #f0f0f0;
-      padding: 10px 10px 10px 32px;
-    height: 20px;
-    color: transparent;
-
-    box-sizing: content-box;
-      -webkit-appearance: textfield;
-      -webkit-box-sizing: content-box;
-      font-family: inherit;
-      font-size: 100%;
-
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-
-    cursor: pointer;
-    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.125) !important;
-  }
-
-  input[type=search]:hover {
-      background-color: #fff;
-  }
-  input[type=search]:focus {
-      padding-left: 32px;
-      color: #2F2D32;
-      background-color: #fff;
-      cursor: auto;
-  }
-
-  input:-moz-placeholder {
-      color: transparent;
-  }
-  input::-webkit-input-placeholder {
-      color: transparent;
-  }
+  // .header-search form, .storefront_primary_navigation #site-navigation {
+  //   margin: 0;
+  // }
+  //
+  // input.search-form {
+  //     outline: none;
+  // }
+  //
+  // input.search-form::-webkit-search-decoration,
+  // input.search-form::-webkit-search-cancel-button {
+  //     display: none;
+  // }
+  //
+  // input[type=search] {
+  //     background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  //     border: solid 2px #f0f0f0;
+  //     padding: 10px 10px 10px 32px;
+  //   height: 20px;
+  //   color: transparent;
+  //
+  //   box-sizing: content-box;
+  //     -webkit-appearance: textfield;
+  //     -webkit-box-sizing: content-box;
+  //     font-family: inherit;
+  //     font-size: 100%;
+  //
+  //     -webkit-border-radius: 10px;
+  //     -moz-border-radius: 10px;
+  //     border-radius: 10px;
+  //
+  //   cursor: pointer;
+  //   box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.125) !important;
+  // }
+  //
+  // input[type=search]:hover {
+  //     background-color: #fff;
+  // }
+  // input[type=search]:focus {
+  //     padding-left: 32px;
+  //     color: #2F2D32;
+  //     background-color: #fff;
+  //     cursor: auto;
+  // }
+  //
+  // input:-moz-placeholder {
+  //     color: transparent;
+  // }
+  // input::-webkit-input-placeholder {
+  //     color: transparent;
+  // }
 
   /* Header Navigation */
   .header-widget-region::after, .header-widget-region::before, .col-full::before, .col-full::after, .widget_custom_html {
@@ -133,17 +148,6 @@
   }
   .widget:last-child {
     margin: 0;
-  }
-
-  .navigation-header {
-    background-color: #EFEFEF;
-  }
-
-  .navigation-header-content {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
   }
 
   .navigation-header-content .main-navigation ul li a {
