@@ -141,19 +141,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div> <!-- End navigation header -->
 
 			    <!-- Cart -->
-					<div class="header-cart-outer-wrapper">
-						<a class="header-cart-wrapper" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-							<div class="header-cart">
-								<div class="cart-product-amount">
-									<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
-								</div>
-								<i class="fas fa-shopping-cart"></i>
-								<?php
-									// echo do_shortcode( '[elementor-template id="10350"]' );
-								?>
+					<a class="header-cart-wrapper" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+						<div class="header-cart">
+							<div class="cart-product-amount">
+								<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
 							</div>
-						</a>
-					</div>
+							<i class="fas fa-shopping-cart"></i>
+							<?php
+								// echo do_shortcode( '[elementor-template id="10350"]' );
+							?>
+						</div>
+					</a>
 	    <!-- Mobil menu -->
 			    <div class="header-mobile">
 						<a href="#menu"><span><i class="fas fa-bars"></i></span></a>

@@ -100,10 +100,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffffff;
   transition: 0.3s all; }
   #masthead .header-wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,25 +114,13 @@ h1, h2, h3, h4, h5, h6 {
     #masthead .header-wrapper .navigation-header-content {
       margin-left: auto;
       margin-right: 1em;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
       align-items: center; }
+    #masthead .header-wrapper .header-cart-wrapper
+.header-cart i {
+      font-size: 1.5rem; }
 
 /* Header cart */
-.header-cart-outer-wrapper, .header-search {
-  display: flex;
-  align-items: center; }
-
-.header-cart-wrapper {
-  transition: all 0.3s ease;
-  text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; }
-
 .header-cart {
   position: relative; }
 
@@ -157,82 +141,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 17px;
   font-weight: 400;
   z-index: 20; }
-
-.header-cart-wrapper .cart-total span {
-  color: #2F2D32; }
-
-.header-cart-wrapper .cart-total {
-  padding-right: 10px;
-  font-size: 14px;
-  font-weight: 600; }
-
-/* Header Navigation */
-.header-widget-region::after, .header-widget-region::before, .col-full::before, .col-full::after, .widget_custom_html {
-  display: none; }
-
-.widget {
-  margin: 0 0 2.4em; }
-
-.widget:last-child {
-  margin: 0; }
-
-.navigation-header-content .main-navigation ul li a {
-  color: #2F2D32;
-  padding: 20px 1em; }
-
-.storefront-primary-navigation {
-  width: 100%;
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  margin: 0 auto;
-  font-weight: 400;
-  text-align: center; }
-
-#site-navigation {
-  width: 100%;
-  float: none;
-  margin: 0; }
-
-i.fas.fa-shopping-cart {
-  font-size: 26px;
-  transition: 0.25s; }
-
-i.fas.fa-shopping-cart:hover {
-  color: #FFF; }
-
-/* Header End */
-/* Filters */
-.header-widget-region .col-full {
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-top: 15px;
-  padding: 0 20px 0 20px;
-  border-radius: 10px; }
-
-.header-widget-region .widget {
-  padding: 0.25em 0; }
-
-.woof_container_pa_stoerrelse h4 {
-  font-size: 16px;
-  font-weight: 500; }
-
-.woof_container_pa_maerke {
-  display: inline-block; }
-
-.woof_container_pa_maerke .chosen-container, .woof_price2_search_container .chosen-container, .woof_container_product_cat .chosen-container {
-  width: 200px !important; }
-
-.woof_container_product_cat, .woof_price2_search_container {
-  display: inline-block;
-  margin-left: 10px; }
-
-.woof_submit_search_form_container {
-  float: right;
-  margin: 0; }
-
-/* Header widget region for filters */
-.single-product .header-widget-region, .woocommerce-cart .header-widget-region, .woocommerce-checkout .header-widget-region, .home .header-widget-region {
-  display: none; }
 
 /* Footer */
 i.fab.footer-facebook, i.fab.footer-instagram {
