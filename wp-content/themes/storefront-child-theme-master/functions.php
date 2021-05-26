@@ -42,8 +42,10 @@ require_once( get_stylesheet_directory() . '/inc/woocommerce/product.php');
 
 // Add custom style and javascript
 function mytheme_enqueue_style() {
-    wp_enqueue_style( 'mytheme-style', get_stylesheet_directory_uri() . '/dist/style.css' );
     wp_enqueue_script( 'myscript', get_stylesheet_directory_uri() . '/dist/app.js');
+
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/dist/style.css' );
+    //wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
-add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style' );
+add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style', 999 );
 

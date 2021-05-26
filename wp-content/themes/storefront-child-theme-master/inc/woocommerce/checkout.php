@@ -7,8 +7,6 @@
 function woocommerce_add_checkout_fields( $fields ) {
     if (function_exists('is_checkout') && is_checkout()) {
 
-        wp_enqueue_script( 'cvrscript', get_stylesheet_directory_uri() . '/assets/js/cvrautofill.js');
-
         $fields['billing_vat'] = array(
             'label'        => __( 'CVR nr.' ),
             'type'        => 'text',

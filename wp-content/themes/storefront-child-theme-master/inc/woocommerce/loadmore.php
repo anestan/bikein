@@ -10,7 +10,7 @@ function load_more_product_script() {
 	//wp_enqueue_script('jquery'); // In most cases it is already included on the page and this line can be removed
 
     // register our main script but do not enqueue it yet
-	wp_register_script( 'loadmore', get_stylesheet_directory_uri() . '/dist/app.js', array('jquery') );
+	wp_register_script( 'loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery') );
 
 	// we have to pass parameters to app.js script but we can get the parameters values only in PHP
 	wp_localize_script( 'loadmore', 'loadmore_params', array(
