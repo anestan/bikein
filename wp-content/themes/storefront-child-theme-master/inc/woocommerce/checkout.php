@@ -20,3 +20,12 @@ function woocommerce_add_checkout_fields( $fields ) {
     }
 }
 add_filter( 'woocommerce_billing_fields', 'woocommerce_add_checkout_fields' );
+
+/* WooCommerce - Reorder fields */
+function country_reorder( $checkout_fields ) {
+    $checkout_fields['billing']['billing_country']['priority'] = 50;
+    $checkout_fields['billing']['billing_postcode']['priority'] = 70;
+    $checkout_fields['billing']['billing_city']['priority'] = 80;
+	return $checkout_fields;
+}
+add_filter( 'woocommerce_checkout_fields', 'country_reorder' );

@@ -1,5 +1,73 @@
 /* ******* Checkout ********* */
 
+@media (min-width: 768px) {
+
+  .woocommerce-billing-fields__field-wrapper {
+
+    #billing_first_name_field {
+      width: 48%;
+      margin-right: 2%;
+    }
+
+    #billing_last_name_field {
+      width: 48%;
+    }
+
+    #billing_vat_field {
+      width: 48%;
+      float: left;
+      margin-right: 2%;
+    }
+
+    #billing_company_field {
+      width: 48%;
+      float: right;
+      clear: none;
+    }
+
+    #billing_postcode_field {
+      width: 48%;
+      float: left;
+      margin-right: 2%;
+    }
+
+    #billing_city_field {
+      width: 48%;
+      float: left;
+      clear: none;
+      margin-right: 2%;
+    }
+
+    #billing_country_field {
+      width: 48%;
+    }
+
+    #billing_state_field {
+      width: 48%;
+      float: left;
+      clear: none;
+    }
+
+    #billing_phone_field {
+      width: 48%;
+      float: left;
+      margin-right: 2%;
+    }
+
+    #billing_email_field {
+      width: 48%;
+      float: left;
+      clear: none;
+    }
+
+  }
+
+
+}
+
+
+
+
 .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
     display: none;
   }
