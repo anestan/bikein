@@ -86,7 +86,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <div class="top-menu">
-	<?php 
+	<?php
 	wp_nav_menu(
 	  array(
 	  'theme_location'  => 'secondary',
@@ -103,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- End Top Bar -->
 
-	
+
 	  <div class="col-full">
 	    <div class="header-wrapper">
 	   <!-- Logo -->
@@ -118,27 +118,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			    </div>
 			    <!-- Search -->
 			    <div class="header-search">
-			      <?php get_product_search_form(); ?>
+			      <?php echo do_shortcode('[fibosearch]'); ?>
 			    </div>
-			    <!-- Cart -->
-					<div class="header-cart-outer-wrapper">
-						<a class="header-cart-wrapper" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-							<div class="cart-total">
-								<?php global $woocommerce;
-									echo $woocommerce->cart->get_cart_total();
-								?>
-							</div>
-							<div class="header-cart">
-								<div class="cart-product-amount">
-									<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
+
+					<!-- Navigation -->
+					<div class="navigation-header-content">
+					<!-- Menu -->
+						<div class="storefront-primary-navigation">
+							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
+								  <div class="menu">
+								  <?php
+								  wp_nav_menu(
+								    array(
+								      'theme_location'  => 'primary',
+								      'container_class' => 'primary-navigation',
+								    )
+								  );
+								  ?>
 								</div>
-								<i class="fas fa-shopping-cart"></i>
-								<?php
-									// echo do_shortcode( '[elementor-template id="10350"]' );
-								?>
+							</nav><!-- #site-navigation -->
+						</div>
+					</div> <!-- End navigation header -->
+
+			    <!-- Cart -->
+					<a class="header-cart-wrapper" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+						<div class="header-cart">
+							<div class="cart-product-amount">
+								<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
 							</div>
-						</a>
-					</div>
+							<i class="fas fa-shopping-cart"></i>
+							<?php
+								// echo do_shortcode( '[elementor-template id="10350"]' );
+							?>
+						</div>
+					</a>
 	    <!-- Mobil menu -->
 			    <div class="header-mobile">
 						<a href="#menu"><span><i class="fas fa-bars"></i></span></a>
@@ -178,25 +191,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 					</script>
 		    </div> <!-- End Header Wrapper -->
-			</div>
-			<div id="header-nav" class="navigation-header">
-				<div class="navigation-header-content">
-				<!-- Menu -->
-					<div class="storefront-primary-navigation">
-						<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
-							  <div class="menu">
-							  <?php
-							  wp_nav_menu(
-							    array(
-							      'theme_location'  => 'primary',
-							      'container_class' => 'primary-navigation',
-							    )
-							  );
-							  ?>
-							</div>
-						</nav><!-- #site-navigation -->
-					</div>
-				</div> <!-- End navigation header -->
 			</div>
 			<?php
 			/**
