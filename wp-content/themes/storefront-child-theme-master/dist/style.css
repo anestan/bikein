@@ -238,16 +238,22 @@ h5 {
   .woocommerce-checkout #header-nav {
     height: 4px; } }
 
-/* Responsive - Mobile */
 @media only screen and (max-width: 767px) {
-  /* Header Mobile */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999; }
-  #masthead {
-    padding: 15px 0; }
+  #page .col-full {
+    margin-left: 1em;
+    margin-right: 1em; }
+  #page #masthead .topbar .col-full .topbar-wrapper {
+    display: block; }
+    #page #masthead .topbar .col-full .topbar-wrapper .selling-points {
+      justify-content: space-between; }
+      #page #masthead .topbar .col-full .topbar-wrapper .selling-points .topbar-selling-point {
+        padding-right: 0; }
+        #page #masthead .topbar .col-full .topbar-wrapper .selling-points .topbar-selling-point p {
+          display: flex;
+          align-items: center;
+          flex-direction: column; }
+        #page #masthead .topbar .col-full .topbar-wrapper .selling-points .topbar-selling-point i {
+          align-self: center; }
   .header-cart-wrapper {
     display: none; }
   .header-mobile {
