@@ -254,30 +254,28 @@ h5 {
           flex-direction: column; }
         #page #masthead .topbar .col-full .topbar-wrapper .selling-points .topbar-selling-point i {
           align-self: center; }
-  #page #masthead .topbar .col-full .header-wrapper .header-cart-wrapper {
-    display: none; }
-  #page #masthead .topbar .col-full .header-mobile {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    align-items: center; }
-  .storefront-primary-navigation, .post-type-archive-product .woocommerce-products-header, .header-search, .header-cart, .woocommerce-pagination {
-    display: none; }
-  .image-logo img {
-    max-height: 80px; }
-  .image-logo {
+  #page #masthead .col-full .header-wrapper .image-logo {
     width: 30%; }
-  .header-mobile i {
-    transition: all 0.3s ease;
-    vertical-align: bottom;
-    transform: scale(2); }
-  .header-mobile i:active {
-    transform: scale(1.6); }
-  .header-mobile a {
-    line-height: 0; }
-  .navigation-header {
-    background-color: transparent; }
-  .header-sellingpoint {
+    #page #masthead .col-full .header-wrapper .image-logo img {
+      max-height: 80px; }
+  #page #masthead .col-full .header-wrapper .header-search,
+  #page #masthead .col-full .header-wrapper .navigation-header-content,
+  #page #masthead .col-full .header-wrapper .header-cart-wrapper {
+    display: none; }
+  #page #masthead .col-full .header-wrapper .header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px; }
+    #page #masthead .col-full .header-wrapper .header-mobile i {
+      transition: all 0.3s ease;
+      vertical-align: bottom;
+      transform: scale(2); }
+      #page #masthead .col-full .header-wrapper .header-mobile i:active {
+        transform: scale(1.6); }
+    #page #masthead .col-full .header-wrapper .header-mobile a {
+      line-height: 0; }
+  .post-type-archive-product .woocommerce-products-header, .woocommerce-pagination {
     display: none; }
   /* Header Mobile End */
   #secondary {

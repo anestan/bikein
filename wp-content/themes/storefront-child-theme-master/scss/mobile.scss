@@ -6,6 +6,8 @@
   }
 
   #masthead {
+
+//Top bar
     .topbar {
       .col-full {
         .topbar-wrapper {
@@ -25,61 +27,58 @@
               i{
                 align-self: center;
               }
-
-
             }
           }
         }
+      }
+    } //topbar end
 
-        .header-wrapper {
-          .header-cart-wrapper {
-            display: none;
+//Header
+    .col-full {
+      .header-wrapper {
+
+        .image-logo {
+          width: 30%;
+
+          img {
+            max-height: 80px;
           }
         }
 
+        .header-search,
+        .navigation-header-content,
+        .header-cart-wrapper {
+          display: none;
+        }
+
         .header-mobile {
-          display: flex;
+          @include flexbox;
           justify-content: flex-end;
           padding-right: 20px;
-          align-items: center;
+
+          i {
+            transition: all 0.3s ease;
+            vertical-align: bottom;
+            transform: scale(2);
+
+            &:active {
+              transform: scale(1.6);
+            }
+          }
+
+          a {
+            line-height: 0;
+          }
         }
       }
-    }
-  }
-}
+    }//Header end
+  }//Masthead end
+}//Page end
 
-      .storefront-primary-navigation, .post-type-archive-product .woocommerce-products-header, .header-search, .header-cart, .woocommerce-pagination {
+    .post-type-archive-product .woocommerce-products-header, .woocommerce-pagination {
         display:none;
       }
 
-      .image-logo img{
-        max-height: 80px;
-      }
-      .image-logo {
-        width: 30%;
-      }
-
-      .header-mobile i {
-        transition: all 0.3s ease;
-        vertical-align: bottom;
-        transform: scale(2);
-      }
-
-      .header-mobile i:active {
-        transform: scale(1.6);
-      }
-
-      .header-mobile a {
-        line-height: 0;
-      }
-
-      .navigation-header {
-        background-color: transparent;
-      }
-
-      .header-sellingpoint {
-        display: none;
-      }
     /* Header Mobile End */
       #secondary {
         display: none;
