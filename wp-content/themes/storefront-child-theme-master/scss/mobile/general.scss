@@ -4,82 +4,13 @@
     margin-left: 1em;
     margin-right: 1em;
   }
+}//page end
 
-  #masthead {
+.footer-widgets {
+  flex-wrap: wrap;
+}
 
-//Top bar
-    .topbar {
-      .col-full {
-        .topbar-wrapper {
-          display: block;
 
-          .selling-points {
-            justify-content: space-between;
-
-            .topbar-selling-point {
-              padding-right: 0;
-
-              p{
-                @include flexbox;
-                flex-direction: column;
-              }
-
-              i{
-                align-self: center;
-              }
-            }
-          }
-        }
-      }
-    } //topbar end
-
-//Header
-    .col-full {
-      .header-wrapper {
-
-        .image-logo {
-          width: 30%;
-
-          img {
-            max-height: 80px;
-          }
-        }
-
-        .header-search,
-        .navigation-header-content,
-        .header-cart-wrapper {
-          display: none;
-        }
-
-        .header-mobile {
-          @include flexbox;
-          justify-content: flex-end;
-          padding-right: 20px;
-
-          i {
-            transition: all 0.3s ease;
-            vertical-align: bottom;
-            transform: scale(2);
-
-            &:active {
-              transform: scale(1.6);
-            }
-          }
-
-          a {
-            line-height: 0;
-          }
-        }
-      }
-    }//Header end
-  }//Masthead end
-}//Page end
-
-    .post-type-archive-product .woocommerce-products-header, .woocommerce-pagination {
-        display:none;
-      }
-
-    /* Header Mobile End */
       #secondary {
         display: none;
         width: 100%;
