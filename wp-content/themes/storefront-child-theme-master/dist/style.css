@@ -970,40 +970,31 @@ button.single_add_to_cart_button.button.alt {
   margin: 0; }
 
 /* Product archive */
-/* Same height on products */
-ul.products li.product {
+.product {
   height: 360px;
   justify-content: space-between;
   display: flex;
   flex-direction: column; }
+  .product .woocommerce-loop-product__link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative; }
+  .product img {
+    max-height: 220px;
+    width: auto;
+    margin-bottom: auto;
+    margin-top: auto; }
+  .product .woocommerce-loop-product__title {
+    margin: .6em 0; }
 
-ul.products li.product a.woocommerce-loop-product__link {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; }
-
-ul.products li.product img {
-  max-height: 220px;
-  width: auto;
-  margin-bottom: auto;
-  margin-top: auto; }
-
-/* Same height on products END*/
-.woocommerce-pagination {
+.woocommerce-pagination,
+.single.single-product.woocommerce-page .onsale,
+.single.single-product.woocommerce-page .badge,
+.widget_categories ul li:before,
+.show_filter {
   display: none; }
-
-.post-type-archive-product #content {
-  margin-top: 30px; }
-
-.post-type-archive-product .storefront-breadcrumb {
-  display: none; }
-
-.post-type-archive-product .page-title {
-  font-size: 20px; }
-
-a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
-  position: relative; }
 
 .badge, .onsale {
   display: block;
@@ -1040,36 +1031,12 @@ a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
   position: relative;
   margin-bottom: 10px; }
 
-.single.single-product.woocommerce-page .onsale, .single.single-product.woocommerce-page .badge {
-  display: none; }
-
-ul.products li.product .woocommerce-loop-product__title {
-  margin: .6em 0; }
-
-/* Product arcive - Sidebar */
-.show_filter {
-  display: none; }
-
-.widget_product_categories ul li::before {
-  content: ""; }
-
-.widget_product_categories ul li.current-cat::before {
-  content: "\f111";
-  color: #1A936F;
-  opacity: 0.6; }
-
-.widget_product_categories ul li.current-cat > a {
-  color: #1A936F; }
-
-.widget-area .widget-title {
-  font-size: 16px; }
-
-.widget-area .widget a {
-  text-decoration: none;
-  font-weight: 500; }
-
-.widget_price_filter .ui-slider .ui-slider-range, .widget_price_filter .ui-slider .ui-slider-handle {
-  background-color: #1A936F; }
+.widget_categories li {
+  padding-left: 0 !important; }
+  .widget_categories li a {
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    text-transform: uppercase; }
 
 /* Cart */
 .woocommerce-cart-form {
