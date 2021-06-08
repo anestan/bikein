@@ -53,7 +53,7 @@ do_action( 'woocommerce_before_main_content' );
 if ( woocommerce_product_loop() ) {
 
 		if ( is_active_sidebar( 'top-filter-area' ) ) : ?>
-		<div id="archive-top-filters" class="archive-top-filters">
+		<div id="archive-top-filters" class="filter-wrapper">
 		<?php dynamic_sidebar( 'top-filter-area' ); ?>
 		</div>
 		<?php endif;

@@ -75,13 +75,12 @@
 //product badge end
 
 //archive top widgets
-#archive-top-filters {
+.filter-wrapper {
   @include flexbox;
   justify-content: space-between;
 
-  div {
+  .widget {
     width: 24%;
-
   }
 }
 //archive top widgets end
@@ -97,3 +96,13 @@
   }
 }
 //archive sidebar end
+
+//load more button
+.loadmore_button {
+  display: block;
+  margin-left: auto;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+//load more button end
