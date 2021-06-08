@@ -71,19 +71,19 @@ function display_label_text(){
 add_action( 'woocommerce_before_shop_loop_item_title', 'display_label_text', 3 );
 add_action( 'woocommerce_before_single_product_summary', 'display_label_text', 3 );
 
-//Custom widget area
+//Archive top filters
 
-function register_custom_widget_area() {
+function archive_top_filters() {
   register_sidebar(
     array(
-      'id' => 'custom-widget-area',
-      'name' => esc_html__( 'Archive Widgets', 'theme-domain' ),
+      'id' => 'top-filter-area',
+      'name' => esc_html__( 'Archive Top Filters', 'theme-domain' ),
       'description' => esc_html__( 'Widgets til toppen af produktarkivet', 'theme-domain' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget' => '</div>',
-      'before_title' => '<div class="widget-title-holder"><h3 class="widget-title">',
+      'before_title' => '<div class="widget-title-wrapper"><h3 class="widget-title">',
       'after_title' => '</h3></div>'
     )
   );
 }
-add_action( 'widgets_init', 'register_custom_widget_area' );
+add_action( 'widgets_init', 'archive_top_filters' );

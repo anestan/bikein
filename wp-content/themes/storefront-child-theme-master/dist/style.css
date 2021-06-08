@@ -1031,11 +1031,11 @@ button.single_add_to_cart_button.button.alt {
   position: relative;
   margin-bottom: 10px; }
 
-#secondary-sidebar {
+#archive-top-filters {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  #secondary-sidebar div {
+  #archive-top-filters div {
     width: 24%; }
 
 .widget_categories li {
