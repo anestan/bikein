@@ -74,6 +74,18 @@
 }
 //product badge end
 
+//archive top widgets
+#secondary-sidebar {
+  @include flexbox;
+  justify-content: space-between;
+
+  div {
+    width: 24%;
+
+  }
+}
+//archive top widgets end
+
 //archive sidebar
 .widget_categories li{
   padding-left: 0 !important;
