@@ -16,11 +16,17 @@ add_filter( 'woocommerce_get_image_size_single', function( $size ) {
     );
 } );
 
+//Rearrange price and short desc
+add_action('woocommerce_single_product_summary', 'move_single_product_price', 1);
+function move_single_product_price() {
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 29);
+}
 
 /* Change number of related products */
 function woo_related_products_limit() {
     global $product;
-  
+
       $args['posts_per_page'] = 6;
       return $args;
   }
@@ -30,7 +36,7 @@ function woo_related_products_limit() {
       $args['columns'] = 4; // arranged in 4 columns
       return $args;
   }
-  
+
 
 
 
