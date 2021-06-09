@@ -17,10 +17,10 @@
 
 defined( 'ABSPATH' ) || exit;
 
-/** Load More or View More Functionality 
+/** Load More or View More Functionality
  * What it is doing is checking if an ajax request was fired
  * and if fired, will run the code and exit to terminate the ajax request
- */ 
+ */
 
 get_header( 'shop' );
 
@@ -52,6 +52,11 @@ do_action( 'woocommerce_before_main_content' );
 <?php
 if ( woocommerce_product_loop() ) {
 
+		if ( is_active_sidebar( 'top-filter-area' ) ) : ?>
+		<div id="archive-top-filters" class="filter-wrapper">
+		<?php dynamic_sidebar( 'top-filter-area' ); ?>
+		</div>
+		<?php endif;
 	/**
 	 * Hook: woocommerce_before_shop_loop.
 	 *

@@ -14,8 +14,11 @@ function remove_woocommerce_catalog_ordering() {
 	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 ); // If using Storefront, replace 30 by 10.
 }
 
+//Remove add to cart button
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
-/* 
+
+/*
 ** PRODUCT BADGE - CUSTOM FIELD **
 */
 function label_general_custom_field() {
@@ -70,3 +73,20 @@ function display_label_text(){
 }
 add_action( 'woocommerce_before_shop_loop_item_title', 'display_label_text', 3 );
 add_action( 'woocommerce_before_single_product_summary', 'display_label_text', 3 );
+
+//Archive top filters
+
+function archive_top_filters() {
+  register_sidebar(
+    array(
+      'id' => 'top-filter-area',
+      'name' => esc_html__( 'Archive Top Filters', 'theme-domain' ),
+      'description' => esc_html__( 'Widgets til toppen af produktarkivet', 'theme-domain' ),
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget' => '</div>',
+      'before_title' => '<div class="widget-title-wrapper"><h3 class="widget-title">',
+      'after_title' => '</h3></div>'
+    )
+  );
+}
+add_action( 'widgets_init', 'archive_top_filters' );

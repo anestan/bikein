@@ -3,6 +3,16 @@
 /* Logo */
 add_theme_support( 'custom-logo' );
 
+// Remove page title on all woo pages
+add_filter( 'woocommerce_show_page_title', '__return_null' );
+
+//Remove breadcrumbs on all woo pages
+add_action( 'init', 'wc_remove_storefront_breadcrumbs');
+
+function wc_remove_storefront_breadcrumbs() {
+  remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
+}
+
 // Remove sidebar on all Woo Pages
 function iconic_remove_sidebar( $is_active_sidebar, $index ) {
     if( $index !== "sidebar-1" ) {
@@ -29,7 +39,7 @@ function admin_custom_css() {
       }
     </style>';
   }
-  
+
   add_action('admin_head', 'admin_custom_css');
 
 
