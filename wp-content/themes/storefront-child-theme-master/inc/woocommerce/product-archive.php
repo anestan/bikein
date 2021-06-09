@@ -87,17 +87,3 @@ function archive_top_filters() {
   );
 }
 add_action( 'widgets_init', 'archive_top_filters' );
-
-//Remove select2 in product filters
-
-add_action( 'wp_enqueue_scripts', 'wsis_dequeue_stylesandscripts_select2', 100 );
-
-function wsis_dequeue_stylesandscripts_select2() {
-    if ( class_exists( 'woocommerce' ) ) {
-        wp_dequeue_style( 'selectWoo' );
-        wp_deregister_style( 'selectWoo' );
-
-        wp_dequeue_script( 'selectWoo');
-        wp_deregister_script('selectWoo');
-    }
-} 
