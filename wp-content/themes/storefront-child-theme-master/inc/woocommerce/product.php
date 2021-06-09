@@ -23,6 +23,9 @@ function move_single_product_price() {
     add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 29);
 }
 
+//Remove product meta
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
 /* Change number of related products */
 function woo_related_products_limit() {
     global $product;
