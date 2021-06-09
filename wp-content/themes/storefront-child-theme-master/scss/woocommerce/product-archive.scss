@@ -9,10 +9,12 @@
 
   .woocommerce-loop-product__link {
     height: 100%;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     position: relative;
+    @include box-style;
   }
 
   img {
@@ -75,6 +77,9 @@
 //product badge end
 
 //archive top widgets
+.select2-search--hide {
+  display: block !important;
+}
 .filter-wrapper {
   @include flexbox;
   justify-content: space-between;

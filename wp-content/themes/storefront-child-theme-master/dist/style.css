@@ -977,10 +977,13 @@ button.single_add_to_cart_button.button.alt {
   flex-direction: column; }
   .product .woocommerce-loop-product__link {
     height: 100%;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: flex-end;
-    position: relative; }
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 6px; }
   .product img {
     max-height: 220px;
     width: auto;
@@ -1030,6 +1033,9 @@ button.single_add_to_cart_button.button.alt {
 .single .badge {
   position: relative;
   margin-bottom: 10px; }
+
+.select2-search--hide {
+  display: block !important; }
 
 .filter-wrapper {
   display: flex;

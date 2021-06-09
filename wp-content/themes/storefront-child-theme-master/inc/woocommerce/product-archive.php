@@ -14,6 +14,9 @@ function remove_woocommerce_catalog_ordering() {
 	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 ); // If using Storefront, replace 30 by 10.
 }
 
+//Remove add to cart button
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
 
 /*
 ** PRODUCT BADGE - CUSTOM FIELD **
