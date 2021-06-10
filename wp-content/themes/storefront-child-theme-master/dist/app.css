@@ -688,47 +688,31 @@ body.mm-ocd-opened {
   display: none; }
 
 /* Product page */
-.summary .price .amount {
+.summary .price ins, .summary .price del {
   font-size: 34px;
   color: #2F2D32; }
+  .summary .price ins .woocommerce-Price-currencySymbol, .summary .price del .woocommerce-Price-currencySymbol {
+    padding-right: 5px; }
 
-.summary.entry-summary .price {
-  display: flex !important;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.summary .woocommerce-Price-currencySymbol {
-  padding-right: 5px; }
-
-.summary.entry-summary .price ins span {
-  float: left; }
-
-.summary.entry-summary .price del span {
-  float: left;
-  font-size: 16px !important; }
-
-.summary.entry-summary .price del span.woocommerce-Price-currencySymbol::before {
-  content: 'Vejl. '; }
-
-.woocommerce-product-details__short-description p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  margin-bottom: 0; }
-
-.stock.in-stock::before {
-  content: "\f00c"; }
-
-.stock.out-of-stock::before {
-  content: "\f00d"; }
-
-.stock.out-of-stock {
+.summary .out-of-stock {
   color: rgba(228, 55, 51, 0.8); }
+  .summary .out-of-stock::before {
+    content: "\f00d"; }
 
-.stock.in-stock {
+.summary .in-stock {
   color: rgba(66, 162, 27, 0.73); }
+  .summary .in-stock::before {
+    content: "\f00c"; }
+
+.summary input[type='number'] {
+  -moz-appearance: textfield; }
+  .summary input[type='number']::-webkit-inner-spin-button,
+  .summary input[type='number'] ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+.storefront-full-width-content .related.products h2:first-child {
+  text-align: left; }
 
 /* Product archive */
 ul.products li.product {

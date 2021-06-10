@@ -1,12 +1,5 @@
 <?php
 
-/* Add scroll button to short description on product page */
-function scroll_btn(){
-  echo '<i class="fas fa-arrow-down scroll_btn"></i>';
-}
-add_action( 'woocommerce_single_product_summary', 'scroll_btn', 20 );
-
-
 /* WooCommerce - single product image size */
 add_filter( 'woocommerce_get_image_size_single', function( $size ) {
     return array(
