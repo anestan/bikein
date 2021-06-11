@@ -688,30 +688,37 @@ body.mm-ocd-opened {
   display: none; }
 
 /* Product page */
-.summary .price ins, .summary .price del {
-  font-size: 34px;
-  color: #2F2D32; }
-  .summary .price ins .woocommerce-Price-currencySymbol, .summary .price del .woocommerce-Price-currencySymbol {
-    padding-right: 5px; }
+#main .product .woocommerce-product-gallery {
+  width: 50%; }
 
-.summary .out-of-stock {
-  color: rgba(228, 55, 51, 0.8); }
-  .summary .out-of-stock::before {
-    content: "\f00d"; }
+#main .product .summary {
+  width: 43%; }
+  #main .product .summary .price ins, #main .product .summary .price del {
+    font-size: 34px;
+    color: #2F2D32; }
+    #main .product .summary .price ins .woocommerce-Price-currencySymbol, #main .product .summary .price del .woocommerce-Price-currencySymbol {
+      padding-right: 5px; }
+  #main .product .summary .out-of-stock {
+    color: rgba(228, 55, 51, 0.8); }
+    #main .product .summary .out-of-stock::before {
+      content: "\f00d"; }
+  #main .product .summary .in-stock {
+    color: rgba(66, 162, 27, 0.73); }
+    #main .product .summary .in-stock::before {
+      content: "\f00c"; }
+  #main .product .summary .qty_button {
+    display: none; }
+  #main .product .summary input[type='number'] {
+    -moz-appearance: textfield;
+    height: 100%; }
+    #main .product .summary input[type='number']::-webkit-inner-spin-button,
+    #main .product .summary input[type='number'] ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+  #main .product .summary .single_add_to_cart_button {
+    padding: 18px 25px; }
 
-.summary .in-stock {
-  color: rgba(66, 162, 27, 0.73); }
-  .summary .in-stock::before {
-    content: "\f00c"; }
-
-.summary input[type='number'] {
-  -moz-appearance: textfield; }
-  .summary input[type='number']::-webkit-inner-spin-button,
-  .summary input[type='number'] ::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0; }
-
-.storefront-full-width-content .related.products h2:first-child {
+#main .product .storefront-full-width-content .related.products h2:first-child {
   text-align: left; }
 
 /* Product archive */

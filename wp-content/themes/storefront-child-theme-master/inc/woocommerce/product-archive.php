@@ -90,3 +90,5 @@ function archive_top_filters() {
   );
 }
 add_action( 'widgets_init', 'archive_top_filters' );
+
+//move archive title
