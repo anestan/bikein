@@ -794,7 +794,8 @@ ul.products li.product {
   align-items: center;
   justify-content: space-between; }
   .filter-wrapper .widget {
-    width: 24%; }
+    width: 24%;
+    margin: 0; }
 
 .widget_categories li {
   padding-left: 0 !important; }

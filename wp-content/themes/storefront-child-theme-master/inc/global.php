@@ -3,12 +3,7 @@
 /* Logo */
 add_theme_support( 'custom-logo' );
 
-// Remove page title on all woo pages
-add_filter( 'woocommerce_show_page_title', '__return_null' );
 
-function wc_remove_storefront_breadcrumbs() {
-  remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
-}
 
 // Remove sidebar on all Woo Pages
 function iconic_remove_sidebar( $is_active_sidebar, $index ) {
