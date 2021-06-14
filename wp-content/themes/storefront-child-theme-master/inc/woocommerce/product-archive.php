@@ -61,6 +61,7 @@ add_action('woocommerce_process_product_meta', 'save_woocommerce_product_custom_
 function display_label_text(){
   global $product;
 
+  echo "<div class='badge-wrapper'>";
   $new = get_post_meta( $product->get_id(), 'nyhed', true );
   if ($new == 'yes') {
     echo '<span class="shop badge nyhed">NYHED</span>';
@@ -69,9 +70,9 @@ function display_label_text(){
   if ($exclusive == 'yes') {
     echo '<span class="shop badge eksklusiv">EKSKLUSIV</span>';
   }
-
+  echo "</div>";
 }
-add_action( 'woocommerce_before_shop_loop_item_title', 'display_label_text', 3 );
+add_action( 'woocommerce_after_shop_loop_item', 'display_label_text', 3 );
 add_action( 'woocommerce_before_single_product_summary', 'display_label_text', 3 );
 
 //Archive top filters
@@ -99,3 +100,10 @@ function move_storefront_breadcrumbs() {
   }
 }
 add_action( 'wp', 'move_storefront_breadcrumbs');
+
+//rearrange archive product thumbnail
+function archive_product_layout() {
+  remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
+  add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 5 );
+}
+add_action( 'wp', 'archive_product_layout' );
