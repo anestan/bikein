@@ -1,5 +1,20 @@
 /* Product archive */
 
+//archive header
+.woocommerce-products-header {
+  padding: 5em;
+  @include flexbox;
+  justify-content: space-between;
+
+  .term-description {
+    width: 40%;
+  }
+
+  .storefront-breadcrumb {
+    margin: 0;
+  }
+}
+
 //product
 ul.products {
   li.product {

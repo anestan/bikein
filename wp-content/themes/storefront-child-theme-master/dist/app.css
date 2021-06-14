@@ -30,12 +30,6 @@ h5 {
 .site {
   background: #ffffff; }
 
-.woocommerce-page #content {
-  margin: 0 60px; }
-
-.storefront-breadcrumb {
-  margin: 0 60px 3.706325903em; }
-
 /* Content wrapper */
 /* Container width | col-full */
 .col-full {
@@ -722,6 +716,16 @@ body.mm-ocd-opened {
   text-align: left; }
 
 /* Product archive */
+.woocommerce-products-header {
+  padding: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .woocommerce-products-header .term-description {
+    width: 40%; }
+  .woocommerce-products-header .storefront-breadcrumb {
+    margin: 0; }
+
 ul.products li.product {
   height: 360px;
   justify-content: space-between;
