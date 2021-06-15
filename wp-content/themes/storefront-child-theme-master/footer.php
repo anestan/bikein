@@ -29,12 +29,14 @@
 
 		</div><!-- .col-full -->
 
+		<div class="col-full">
 		<?php
 				if ( is_active_sidebar( 'footer-bottom-widgets' ) ) : ?>
-				<div id="footer-bottom-widgets" class="filter-wrapper">
+				<div id="footer-bottom-widgets" class="footer-widgets-wrapper">
 				<?php dynamic_sidebar( 'footer-bottom-widgets' ); ?>
 				</div>
 			<?php endif; ?>
+		</div>
 
     <div class="btm_bar">
       <ul>

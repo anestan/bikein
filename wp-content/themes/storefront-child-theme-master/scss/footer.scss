@@ -31,15 +31,6 @@
             }
           }
 
-          .gallery {
-            @include flexbox;
-
-            .gallery-item {
-              max-width: 50px;
-              padding: 5px;
-            }
-          }
-
           .menu {
             li {
               padding: 0;
@@ -56,13 +47,42 @@
       }
     }
   }
+.footer-widgets-wrapper {
+  @include flexbox;
+  justify-content: flex-end;
 
-  .menu-social-container {
-    li {
-      padding-left: 0;
+  .widget {
+    margin: 0;
+  }
+
+  .gallery {
+    @include flexbox;
+    margin: 0;
+
+    .gallery-item {
+      max-width: 70px;
+      padding: 5px;
     }
   }
 
+  .widget_nav_menu {
+    margin-left: 20%;
+  }
+
+  #menu-social {
+    @include flexbox;
+
+    li {
+      padding: 0;
+      margin: 10px;
+      font-size: $h1-font-size;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
   .btm_bar {
     display: flex;
     justify-content: center;
@@ -73,6 +93,10 @@
     ul {
       @include reset_list-style;
       max-width: 350px;
+
+      li {
+        margin: 0 10px;
+      }
     }
   }
 }
