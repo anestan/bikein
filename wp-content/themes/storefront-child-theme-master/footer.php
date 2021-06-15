@@ -28,6 +28,14 @@
 			?>
 
 		</div><!-- .col-full -->
+
+		<?php
+				if ( is_active_sidebar( 'footer-bottom-widgets' ) ) : ?>
+				<div id="footer-bottom-widgets" class="filter-wrapper">
+				<?php dynamic_sidebar( 'footer-bottom-widgets' ); ?>
+				</div>
+			<?php endif; ?>
+
     <div class="btm_bar">
       <ul>
         <li><a href="#">Cookies</a></li>

@@ -43,14 +43,20 @@ ul.products {
         flex-direction: column;
         justify-content: center;
 
+        bdi {
+          font-size: $h4-font-size
+        }
+
         del {
           order: 2;
+          bdi {
+            font-size: $font-size-base;
+          }
         }
 
         ins {
           order: 1;
           margin-left: 0;
-          font-size: $h4-font-size;
         }
       }
     }
@@ -141,12 +147,17 @@ span.select2.select2-container.select2-container--default * {
 //archive top widgets end
 
 //archive sidebar
-.widget_categories li{
-  padding-left: 0 !important;
+.widget_product_categories ul li{
+
+  &.current-cat::before {
+    content: "@";
+    color: $orange;
+    opacity: 1;
+  }
 
   a {
     text-decoration: none !important;
-    font-weight: 500 !important;
+    font-weight: 500;
     text-transform: uppercase;
   }
 }
