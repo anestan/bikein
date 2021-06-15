@@ -1,6 +1,8 @@
 /* Product page */
 #main {
-  .product {  
+  .product {
+    overflow: visible;
+    
     .woocommerce-product-gallery {
       width: 50%;
     }
