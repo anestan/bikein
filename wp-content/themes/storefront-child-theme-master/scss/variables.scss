@@ -2,6 +2,7 @@
 // Colors
 $gray: #f0f0f0;
 $black: #000000;
+$darkgray: #404040;
 $white: #ffffff;
 $orange: #bd7b00;
 
@@ -80,7 +81,7 @@ h5 {
 }
 
 @mixin reset_before_after {
-  ::before, ::after {
+  &::before, &::after {
     content: none;
   }
 }
