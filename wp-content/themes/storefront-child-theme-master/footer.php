@@ -42,7 +42,7 @@
 			<div class="btm_bar_textfield">
 			<?php
 				if ( is_active_sidebar( 'btm_bar_left' ) ) : ?>
-				<div id="btm_bar_left" class="footer-widgets-wrapper">
+				<div id="btm_bar_left" class="btm-bar-widget">
 				<?php dynamic_sidebar( 'btm_bar_left' ); ?>
 				</div>
 			<?php endif; ?>
@@ -50,7 +50,7 @@
 			<div class="btm_bar_textfield">
 			<?php
 				if ( is_active_sidebar( 'btm_bar_right' ) ) : ?>
-				<div id="btm_bar_right" class="footer-widgets-wrapper">
+				<div id="btm_bar_right" class="btm-bar-widget">
 				<?php dynamic_sidebar( 'btm_bar_right' ); ?>
 				</div>
 			<?php endif; ?>

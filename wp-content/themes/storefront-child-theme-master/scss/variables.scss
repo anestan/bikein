@@ -81,7 +81,7 @@ h5 {
 }
 
 @mixin reset_before_after {
-  ::before, ::after {
+  &::before, &::after {
     content: none;
   }
 }
