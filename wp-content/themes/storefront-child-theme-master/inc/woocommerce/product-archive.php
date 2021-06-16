@@ -15,36 +15,14 @@ function remove_woocommerce_catalog_ordering() {
 }
 
 /* Move sorting - Product page top */
-add_action( 'after_setup_theme', 'move_woocommerce_catalog_ordering' );
-function move_woocommerce_catalog_ordering() {
-	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
-  add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
-}
+// add_action( 'after_setup_theme', 'move_woocommerce_catalog_ordering' );
+// function move_woocommerce_catalog_ordering() {
+// 	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
+//   add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
+// }
 
 //Remove add to cart button
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
-
-//Remove Price Range
-// function wc_varb_price_range( $wcv_price, $product ) {
-//
-//     $prefix = sprintf('%s ', __('', 'wcvp_range'));
-//
-//     $wcv_reg_min_price = $product->get_variation_regular_price( 'min', true );
-//     $wcv_min_sale_price    = $product->get_variation_sale_price( 'min', true );
-//     $wcv_max_price = $product->get_variation_price( 'max', true );
-//     $wcv_min_price = $product->get_variation_price( 'min', true );
-//
-//     $wcv_price = ( $wcv_min_sale_price == $wcv_reg_min_price ) ?
-//         wc_price( $wcv_reg_min_price ) :
-//         '<del>' . wc_price( $wcv_reg_min_price ) . '</del>' . '<ins>' . wc_price( $wcv_min_sale_price ) . '</ins>';
-//
-//     return ( $wcv_min_price == $wcv_max_price ) ?
-//         $wcv_price :
-//         sprintf('%s%s', $prefix, $wcv_price);
-// }
-
-add_filter( 'woocommerce_variable_sale_price_html', 'wc_varb_price_range', 10, 2 );
-add_filter( 'woocommerce_variable_price_html', 'wc_varb_price_range', 10, 2 );
 
 /*
 ** PRODUCT BADGE - CUSTOM FIELD **

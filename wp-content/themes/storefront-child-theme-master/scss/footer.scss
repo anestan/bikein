@@ -52,6 +52,7 @@
   justify-content: flex-end;
 
   .widget {
+    width: 21.7391304348%;
     margin: 0;
   }
 
@@ -63,10 +64,6 @@
       max-width: 70px;
       padding: 5px;
     }
-  }
-
-  .widget_nav_menu {
-    margin-left: 20%;
   }
 
   #menu-social {
@@ -85,17 +82,37 @@
 }
   .btm_bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 100px 60px 10px 60px;
+    margin-top: 7.5em;
+    margin-bottom: 3em;
     font-size: $font-size-small;
+
+    &.col-full::before, &.col-full::after {
+      content: none;
+    }
+
+    p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
 
     ul {
       @include reset_list-style;
       max-width: 350px;
+      margin: 0;
 
       li {
         margin: 0 10px;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+        }
+
+        &::before {
+          content: none;
+        }
       }
     }
   }

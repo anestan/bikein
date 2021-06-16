@@ -30,7 +30,7 @@
 		</div><!-- .col-full -->
 
 		<div class="col-full">
-		<?php
+			<?php
 				if ( is_active_sidebar( 'footer-bottom-widgets' ) ) : ?>
 				<div id="footer-bottom-widgets" class="footer-widgets-wrapper">
 				<?php dynamic_sidebar( 'footer-bottom-widgets' ); ?>
@@ -38,12 +38,23 @@
 			<?php endif; ?>
 		</div>
 
-    <div class="btm_bar">
-      <ul>
-        <li><a href="#">Cookies</a></li>
-        <li>Copyright - Firmanavn</li>
-        <li><a href="#">Persondatapolitik</a></li>
-      </ul>
+    <div class="col-full btm_bar">
+			<div class="btm_bar_textfield">
+			<?php
+				if ( is_active_sidebar( 'btm_bar_left' ) ) : ?>
+				<div id="btm_bar_left" class="footer-widgets-wrapper">
+				<?php dynamic_sidebar( 'btm_bar_left' ); ?>
+				</div>
+			<?php endif; ?>
+			</div>
+			<div class="btm_bar_textfield">
+			<?php
+				if ( is_active_sidebar( 'btm_bar_right' ) ) : ?>
+				<div id="btm_bar_right" class="footer-widgets-wrapper">
+				<?php dynamic_sidebar( 'btm_bar_right' ); ?>
+				</div>
+			<?php endif; ?>
+			</div>
     </div>
 	</footer><!-- #colophon -->
 
