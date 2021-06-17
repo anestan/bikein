@@ -40,7 +40,7 @@ h5 {
 
 .topbar {
   min-height: 50px;
-  background-color: #f0f0f0;
+  background-color: #EBEBEB;
   padding: 10px 0 10px 0; }
   .topbar .topbar-wrapper {
     display: flex; }
@@ -153,7 +153,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border-bottom: 1px solid #404040; }
+    border-bottom: 1px solid #EBEBEB; }
     .site-footer .footer-widgets-wrapper .gallery {
       display: flex;
       align-items: center;
@@ -764,7 +764,7 @@ body.mm-ocd-opened {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: #EBEBEB;
   margin-bottom: 1.7em; }
   .woocommerce-products-header .term-description {
     width: 40%; }

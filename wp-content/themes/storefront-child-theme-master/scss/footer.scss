@@ -58,7 +58,7 @@
 .footer-widgets-wrapper {
   @include flexbox;
   justify-content: flex-end;
-  border-bottom: 1px solid $darkgray;
+  border-bottom: 1px solid $gray;
 
   .gallery {
     @include flexbox;
