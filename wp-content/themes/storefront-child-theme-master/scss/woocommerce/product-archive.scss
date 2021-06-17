@@ -151,6 +151,15 @@ span.select2.select2-container.select2-container--default * {
 //archive top widgets end
 
 //archive sidebar
+.woocommerce-widget-layered-nav-list {
+  a {
+    margin-left: -25px;
+    padding-left: 25px;
+    position: relative;
+    text-decoration: none !important;
+  }
+}
+
 .widget_product_categories ul li{
 
   &.cat-item.current-cat::before {
