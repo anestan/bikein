@@ -862,10 +862,13 @@ span.select2.select2-container.select2-container--default * {
   float: right;
   margin: 0; }
 
-.widget_product_categories ul li.current-cat::before {
+.widget_product_categories ul li.cat-item.current-cat::before {
   content: "@";
   color: #bd7b00;
   opacity: 1; }
+
+.widget_product_categories ul li.cat-item::before {
+  content: none; }
 
 .widget_product_categories ul li a {
   text-decoration: none !important;
