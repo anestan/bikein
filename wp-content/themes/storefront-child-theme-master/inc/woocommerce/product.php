@@ -95,64 +95,30 @@ function save_custom_shipping_settings_fields_values($post_id){
  }
 
 
-// Show text field on simple product page
-add_action( 'woocommerce_after_add_to_cart_button', 'display_custom_fields_variable', 15 );
-function display_custom_fields_variable() {
+// Show text field on product page
+add_action( 'woocommerce_after_add_to_cart_button', 'display_custom_fields', 15 );
+function display_custom_fields() {
     global $product;
 
-    if ($product->is_type( 'variable' )) {
+    $fields_values = array(); // Initializing
 
-      $fields_values = array(); // Initializing
+    if( $text_field_1 = $product->get_meta('_text_field_1') )
+        $fields_values[] = $text_field_1; // Set the value in the array
 
-      if( $text_field_1 = $product->get_meta('_text_field_1') )
-          $fields_values[] = $text_field_1; // Set the value in the array
+    if( $text_field_2 = $product->get_meta('_text_field_2') )
+        $fields_values[] = $text_field_2; // Set the value in the array
 
-      if( $text_field_2 = $product->get_meta('_text_field_2') )
-          $fields_values[] = $text_field_2; // Set the value in the array
+    // If the array of values is not empty
+    if( sizeof( $fields_values ) > 0 ){
 
-      // If the array of values is not empty
-      if( sizeof( $fields_values ) > 0 ){
+        echo '<div class="shipping-info-wrapper">';
 
-          echo '<div class="shipping-info-wrapper">';
+        // Loop through each existing custom field value
+        foreach( $fields_values as $key => $value ) {
+            echo '<p class="shipping-info-text">' . $value . '</p>';
+        }
 
-          // Loop through each existing custom field value
-          foreach( $fields_values as $key => $value ) {
-              echo '<p class="shipping-info-text">' . $value . '</p>';
-          }
+        echo '</div>';
 
-          echo '</div>';
-
-      }
     }
-
 }
-
-// Show text field on variable product page
-add_action( 'woocommerce_after_add_to_cart_form', 'display_custom_fields_simple', 15 );
-function display_custom_fields_simple() {
-    global $product;
-
-    if ($product->is_type( 'simple' )) {
-      $fields_values = array(); // Initializing
-
-      if( $text_field_1 = $product->get_meta('_text_field_1') )
-          $fields_values[] = $text_field_1; // Set the value in the array
-
-      if( $text_field_2 = $product->get_meta('_text_field_2') )
-          $fields_values[] = $text_field_2; // Set the value in the array
-
-      // If the array of values is not empty
-      if( sizeof( $fields_values ) > 0 ){
-
-          echo '<div class="shipping-info-wrapper">';
-
-          // Loop through each existing custom field value
-          foreach( $fields_values as $key => $value ) {
-              echo '<p class="shipping-info-text">' . $value . '</p>';
-          }
-
-          echo '</div>';
-
-      }
-    }
-  }
