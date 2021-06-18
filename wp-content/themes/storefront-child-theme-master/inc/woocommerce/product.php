@@ -63,9 +63,9 @@ add_filter( 'woocommerce_variable_price_html', 'wc_varb_price_range', 10, 2 );
 
 
 
-// Admin: Add product custom text fields
-add_action( 'woocommerce_product_options_shipping', 'add_custom_general_settings_fields' );
-function add_custom_general_settings_fields() {
+// Add product custom text fields
+add_action( 'woocommerce_product_options_shipping', 'add_custom_shipping_settings_fields' );
+function add_custom_shipping_settings_fields() {
 
     echo '<div class="options_group">';
     echo '<h4 class="shipping_info_title">Leveringsinformation</h4>';
@@ -84,8 +84,8 @@ function add_custom_general_settings_fields() {
 }
 
 // Save custom text fields
-add_action( 'woocommerce_process_product_meta', 'save_custom_general_settings_fields_values', 20, 1 );
-function save_custom_general_settings_fields_values($post_id){
+add_action( 'woocommerce_process_product_meta', 'save_custom_shipping_settings_fields_values', 20, 1 );
+function save_custom_shipping_settings_fields_values($post_id){
     if ( isset($_POST['_text_field_1']) )
         update_post_meta( $post_id, '_text_field_1', sanitize_text_field($_POST['_text_field_1']) );
 
@@ -95,30 +95,64 @@ function save_custom_general_settings_fields_values($post_id){
  }
 
 
-// Show text field on product page
-add_action( 'woocommerce_after_add_to_cart_button', 'display_custom_fields', 15 );
-function display_custom_fields() {
+// Show text field on simple product page
+add_action( 'woocommerce_after_add_to_cart_button', 'display_custom_fields_variable', 15 );
+function display_custom_fields_variable() {
     global $product;
 
-    $fields_values = array(); // Initializing
+    if ($product->is_type( 'variable' )) {
 
-    if( $text_field_1 = $product->get_meta('_text_field_1') )
-        $fields_values[] = $text_field_1; // Set the value in the array
+      $fields_values = array(); // Initializing
 
-    if( $text_field_2 = $product->get_meta('_text_field_2') )
-        $fields_values[] = $text_field_2; // Set the value in the array
+      if( $text_field_1 = $product->get_meta('_text_field_1') )
+          $fields_values[] = $text_field_1; // Set the value in the array
 
-    // If the array of values is not empty
-    if( sizeof( $fields_values ) > 0 ){
+      if( $text_field_2 = $product->get_meta('_text_field_2') )
+          $fields_values[] = $text_field_2; // Set the value in the array
 
-        echo '<div class"shipping-info-wrapper">';
+      // If the array of values is not empty
+      if( sizeof( $fields_values ) > 0 ){
 
-        // Loop through each existing custom field value
-        foreach( $fields_values as $key => $value ) {
-            echo '<p class="shipping-info-text">' . $value . '</p>';
-        }
+          echo '<div class="shipping-info-wrapper">';
 
-        echo '</div>';
+          // Loop through each existing custom field value
+          foreach( $fields_values as $key => $value ) {
+              echo '<p class="shipping-info-text">' . $value . '</p>';
+          }
 
+          echo '</div>';
+
+      }
     }
+
 }
+
+// Show text field on variable product page
+add_action( 'woocommerce_after_add_to_cart_form', 'display_custom_fields_simple', 15 );
+function display_custom_fields_simple() {
+    global $product;
+
+    if ($product->is_type( 'simple' )) {
+      $fields_values = array(); // Initializing
+
+      if( $text_field_1 = $product->get_meta('_text_field_1') )
+          $fields_values[] = $text_field_1; // Set the value in the array
+
+      if( $text_field_2 = $product->get_meta('_text_field_2') )
+          $fields_values[] = $text_field_2; // Set the value in the array
+
+      // If the array of values is not empty
+      if( sizeof( $fields_values ) > 0 ){
+
+          echo '<div class="shipping-info-wrapper">';
+
+          // Loop through each existing custom field value
+          foreach( $fields_values as $key => $value ) {
+              echo '<p class="shipping-info-text">' . $value . '</p>';
+          }
+
+          echo '</div>';
+
+      }
+    }
+  }

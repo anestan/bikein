@@ -755,6 +755,9 @@ body.mm-ocd-opened {
         margin: 0; }
     #main .product .summary .single_add_to_cart_button {
       padding: 18px 25px; }
+    #main .product .summary .woocommerce-variation-add-to-cart {
+      display: flex;
+      align-items: center; }
   #main .product .storefront-full-width-content .related.products h2:first-child {
     text-align: left; }
 

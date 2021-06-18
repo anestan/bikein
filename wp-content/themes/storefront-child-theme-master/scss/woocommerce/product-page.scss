@@ -2,7 +2,7 @@
 #main {
   .product {
     overflow: visible;
-    
+
     .woocommerce-product-gallery {
       width: 50%;
     }
@@ -51,6 +51,16 @@
       .single_add_to_cart_button {
         padding: 18px 25px;
       }
+
+      .woocommerce-variation-add-to-cart {
+        @include flexbox;
+      }
+
+      .shipping-info-wrapper (
+        p {
+          padding: 0;
+        }
+      )
     }
 
     .storefront-full-width-content {
@@ -66,3 +76,5 @@
     }
   }
 }
+
+//Flexbox on single product cart form
