@@ -1,5 +1,16 @@
 /* Product page */
+
+//Width on related products
+
 #main {
+  .related {
+    .products {
+      li {
+        width: 22.73913% !important;
+      }
+    }
+  }
+
   .product {
     overflow: visible;
 
@@ -78,5 +89,3 @@
     }
   }
 }
-
-//Flexbox on single product cart form
