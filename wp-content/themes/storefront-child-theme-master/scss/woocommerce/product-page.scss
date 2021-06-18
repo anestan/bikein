@@ -40,6 +40,7 @@
 
       input[type='number'] {
         -moz-appearance:textfield;
+        padding: 18px 0;
         &::-webkit-inner-spin-button,
          ::-webkit-outer-spin-button {
            -webkit-appearance: none;
@@ -53,9 +54,13 @@
 
       .shipping-info-wrapper {
         float: right;
+        padding: 5px 0;
 
         .shipping-info-text {
             margin: 0;
+            &:first-of-type {
+              font-weight: $font-weight-bold;
+            }
         }
       }
     }

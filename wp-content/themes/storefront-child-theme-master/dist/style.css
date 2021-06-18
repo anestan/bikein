@@ -747,7 +747,8 @@ body.mm-ocd-opened {
     #main .product .summary .qty_button {
       display: none; }
     #main .product .summary input[type='number'] {
-      -moz-appearance: textfield; }
+      -moz-appearance: textfield;
+      padding: 18px 0; }
       #main .product .summary input[type='number']::-webkit-inner-spin-button,
       #main .product .summary input[type='number'] ::-webkit-outer-spin-button {
         -webkit-appearance: none;
@@ -755,9 +756,12 @@ body.mm-ocd-opened {
     #main .product .summary .single_add_to_cart_button {
       padding: 18px 25px; }
     #main .product .summary .shipping-info-wrapper {
-      float: right; }
+      float: right;
+      padding: 5px 0; }
       #main .product .summary .shipping-info-wrapper .shipping-info-text {
         margin: 0; }
+        #main .product .summary .shipping-info-wrapper .shipping-info-text:first-of-type {
+          font-weight: 700; }
   #main .product .storefront-full-width-content .related.products h2:first-child {
     text-align: left; }
 
