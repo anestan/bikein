@@ -19,6 +19,11 @@
         margin: 0;
         width: 25%;
         padding-right: 5em;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+
         &:last-of-type {
           padding-right: 0;
         }
@@ -61,16 +66,26 @@
 .footer-widgets-wrapper {
   @include flexbox;
   justify-content: flex-end;
-  border-bottom: 1px solid $gray;
+  margin-top: 2em;
+
+  .widget {
+    margin: 0 0 0 0em;
+  }
 
   .gallery {
     @include flexbox;
+    justify-content: flex-end;
     margin: 0;
 
     .gallery-item {
       max-width: 60px;
       margin-right: 0.7em;
     }
+  }
+
+  .menu-social-container {
+    display: flex;
+    justify-content: flex-end;
   }
 
   #menu-social {
@@ -100,8 +115,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 5em;
+    margin-top: 4em;
     font-size: $font-size-small;
+    border-top: 1px solid $gray;
+    padding-top: 2em;
     @include reset_before_after;
 
     p {
