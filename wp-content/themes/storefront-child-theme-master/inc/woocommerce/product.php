@@ -3,8 +3,8 @@
 /* WooCommerce - single product image size */
 add_filter( 'woocommerce_get_image_size_single', function( $size ) {
     return array(
-        'width'  => 800,
-        'height' => '',
+        'width'  => 600,
+        'height' => 600,
         'crop'   => 0,
     );
 } );
@@ -57,18 +57,12 @@ function wc_varb_price_range( $wcv_price, $product ) {
 add_filter( 'woocommerce_variable_sale_price_html', 'wc_varb_price_range', 10, 2 );
 add_filter( 'woocommerce_variable_price_html', 'wc_varb_price_range', 10, 2 );
 
-//shipping information custom field
 
-
-
-
-
-// Add product custom text fields
+// Add product custom shipping text fields
 add_action( 'woocommerce_product_options_shipping', 'add_custom_shipping_settings_fields' );
 function add_custom_shipping_settings_fields() {
 
     echo '<div class="options_group">';
-    echo '<h4 class="shipping_info_title">Leveringsinformation</h4>';
 
     woocommerce_wp_text_input( array(
         'id'          => '_text_field_1',
@@ -83,7 +77,7 @@ function add_custom_shipping_settings_fields() {
     echo '</div>';
 }
 
-// Save custom text fields
+// Save custom shipping text fields
 add_action( 'woocommerce_process_product_meta', 'save_custom_shipping_settings_fields_values', 20, 1 );
 function save_custom_shipping_settings_fields_values($post_id){
     if ( isset($_POST['_text_field_1']) )
@@ -95,7 +89,7 @@ function save_custom_shipping_settings_fields_values($post_id){
  }
 
 
-// Show text field on product page
+// Show shipping text field on product page
 add_action( 'woocommerce_after_add_to_cart_button', 'display_custom_fields', 15 );
 function display_custom_fields() {
     global $product;
@@ -115,7 +109,72 @@ function display_custom_fields() {
 
         // Loop through each existing custom field value
         foreach( $fields_values as $key => $value ) {
-            echo '<p class="shipping-info-text">' . $value . '</p>';
+            echo '<p class="info-text">' . $value . '</p>';
+        }
+
+        echo '</div>';
+
+    }
+}
+
+
+//Variant flavor text field
+
+
+add_action( 'woocommerce_product_options_advanced', 'add_custom_general_fields' );
+
+function add_custom_general_fields() {
+
+    echo '<div class="options_group">';
+
+    woocommerce_wp_text_input( array(
+        'id'          => '_variant_text_field_1',
+        'label'       => __( 'Overskrift', 'woocommerce' ),
+        'class'    => array('show_if_variable'),
+    ) );
+
+    woocommerce_wp_textarea_input( array(
+        'id'          => '_variant_text_field_2',
+        'label'       => __( 'Beskrivelse', 'woocommerce' ),
+        'class'    => array('show_if_variable'),
+    ) );
+
+    echo '</div>';
+}
+
+// Save custom shipping text fields
+add_action( 'woocommerce_process_product_meta', 'save_custom_general_fields_values', 20, 1 );
+function save_custom_general_fields_values($post_id){
+    if ( isset($_POST['_variant_text_field_1']) )
+        update_post_meta( $post_id, '_variant_text_field_1', sanitize_text_field($_POST['_variant_text_field_1']) );
+
+    if ( isset($_POST['_variant_text_field_2']) )
+        update_post_meta( $post_id, '_variant_text_field_2', sanitize_text_field($_POST['_variant_text_field_2']) );
+
+ }
+
+
+// Show shipping text field on product page
+add_action( 'woocommerce_before_add_to_cart_form', 'display_variant_fields', 15 );
+function display_variant_fields() {
+    global $product;
+
+    $fields_values = array(); // Initializing
+
+    if( $variant_text_field_1 = $product->get_meta('_variant_text_field_1') )
+        $fields_values[] = $variant_text_field_1; // Set the value in the array
+
+    if( $variant_text_field_2 = $product->get_meta('_variant_text_field_2') )
+        $fields_values[] = $variant_text_field_2; // Set the value in the array
+
+    // If the array of values is not empty
+    if( sizeof( $fields_values ) > 0 ){
+
+        echo '<div class="variant-info-wrapper">';
+
+        // Loop through each existing custom field value
+        foreach( $fields_values as $key => $value ) {
+            echo '<p class="info-text">' . $value . '</p>';
         }
 
         echo '</div>';

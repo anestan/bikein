@@ -736,11 +736,16 @@ body.mm-ocd-opened {
     width: 50%; }
   #main .product .summary {
     width: 43%; }
-    #main .product .summary .price ins, #main .product .summary .price del {
+    #main .product .summary .price bdi {
       font-size: 34px;
       color: #2F2D32; }
-      #main .product .summary .price ins .woocommerce-Price-currencySymbol, #main .product .summary .price del .woocommerce-Price-currencySymbol {
-        padding-right: 5px; }
+    #main .product .summary .variant-info-wrapper {
+      border: 1px solid #EBEBEB;
+      border-radius: 8px;
+      padding: 1.6em 2.2em;
+      margin: 1.5em 0; }
+      #main .product .summary .variant-info-wrapper .info-text:first-of-type {
+        font-size: 1.25rem; }
     #main .product .summary .out-of-stock {
       color: rgba(228, 55, 51, 0.8); }
       #main .product .summary .out-of-stock::before {
@@ -763,10 +768,10 @@ body.mm-ocd-opened {
     #main .product .summary .shipping-info-wrapper {
       float: right;
       padding: 5px 0; }
-      #main .product .summary .shipping-info-wrapper .shipping-info-text {
-        margin: 0; }
-        #main .product .summary .shipping-info-wrapper .shipping-info-text:first-of-type {
-          font-weight: 700; }
+    #main .product .summary .info-text {
+      margin: 0; }
+      #main .product .summary .info-text:first-of-type {
+        font-weight: 700; }
   #main .product .storefront-full-width-content .related.products h2:first-child {
     text-align: left; }
 

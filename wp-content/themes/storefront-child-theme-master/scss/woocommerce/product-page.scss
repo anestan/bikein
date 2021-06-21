@@ -21,12 +21,20 @@
     .summary {
       width: 43%;
       .price {
-        ins, del {
+        bdi {
           font-size: 34px;
           color: #2F2D32;
+        }
+      }
 
-          .woocommerce-Price-currencySymbol {
-            padding-right: 5px;
+      .variant-info-wrapper {
+        border: 1px solid $gray;
+        border-radius: 8px;
+        padding: 1.6em 2.2em;
+        margin: 1.5em 0;
+        .info-text{
+          &:first-of-type {
+            font-size: $h5-font-size;
           }
         }
       }
@@ -66,12 +74,11 @@
       .shipping-info-wrapper {
         float: right;
         padding: 5px 0;
-
-        .shipping-info-text {
-            margin: 0;
-            &:first-of-type {
-              font-weight: $font-weight-bold;
-            }
+      }
+      .info-text {
+        margin: 0;
+        &:first-of-type {
+          font-weight: $font-weight-bold;
         }
       }
     }
