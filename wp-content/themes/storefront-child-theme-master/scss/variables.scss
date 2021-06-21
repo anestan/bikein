@@ -1,6 +1,8 @@
 
 // Colors
-$gray: #f0f0f0;
+$lightgray: #f9f9f9;
+$gray: #EBEBEB;
+$darkgray: #404040;
 $black: #000000;
 $white: #ffffff;
 $orange: #bd7b00;
@@ -74,9 +76,13 @@ h5 {
 
 
 //Elements
+@mixin box-style {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+}
 
 @mixin reset_before_after {
-  ::before, ::after {
+  &::before, &::after {
     content: none;
   }
 }

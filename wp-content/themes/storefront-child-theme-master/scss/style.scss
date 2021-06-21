@@ -19,7 +19,6 @@
 
 
 
-
 // remove after test
 /*
 .site, #page {
@@ -58,25 +57,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 #masthead button {
   border-radius: 10px;
 }
-
-/* Load more button */
-.loadmore_button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  background-color: #FFF;
-  border: 1px solid #1A936F;
-  color: #1A936F;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.loadmore_button:hover {
-  background-color: #FFF;
-  border: 1px solid #1A936F;
-  color: #1A936F;
-}
-
 
 /* Responsive - Desktop */
 @media only screen and (min-width: 1024px) {

@@ -3,6 +3,8 @@
 /* Logo */
 add_theme_support( 'custom-logo' );
 
+
+
 // Remove sidebar on all Woo Pages
 function iconic_remove_sidebar( $is_active_sidebar, $index ) {
     if( $index !== "sidebar-1" ) {
@@ -29,7 +31,7 @@ function admin_custom_css() {
       }
     </style>';
   }
-  
+
   add_action('admin_head', 'admin_custom_css');
 
 
