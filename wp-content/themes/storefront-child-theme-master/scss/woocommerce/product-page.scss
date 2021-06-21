@@ -1,8 +1,19 @@
 /* Product page */
+
+//Width on related products
+
 #main {
+  .related {
+    .products {
+      li {
+        width: 22.73913% !important;
+      }
+    }
+  }
+
   .product {
     overflow: visible;
-    
+
     .woocommerce-product-gallery {
       width: 50%;
     }
@@ -10,12 +21,20 @@
     .summary {
       width: 43%;
       .price {
-        ins, del {
+        bdi {
           font-size: 34px;
           color: #2F2D32;
+        }
+      }
 
-          .woocommerce-Price-currencySymbol {
-            padding-right: 5px;
+      .variant-info-wrapper {
+        border: 1px solid $gray;
+        border-radius: 8px;
+        padding: 1.6em 2.2em;
+        margin: 1.5em 0;
+        .info-text{
+          &:first-of-type {
+            font-size: $h5-font-size;
           }
         }
       }
@@ -40,7 +59,7 @@
 
       input[type='number'] {
         -moz-appearance:textfield;
-        height: 100%;
+        padding: 18px 0;
         &::-webkit-inner-spin-button,
          ::-webkit-outer-spin-button {
            -webkit-appearance: none;
@@ -50,6 +69,17 @@
 
       .single_add_to_cart_button {
         padding: 18px 25px;
+      }
+
+      .shipping-info-wrapper {
+        float: right;
+        padding: 5px 0;
+      }
+      .info-text {
+        margin: 0;
+        &:first-of-type {
+          font-weight: $font-weight-bold;
+        }
       }
     }
 

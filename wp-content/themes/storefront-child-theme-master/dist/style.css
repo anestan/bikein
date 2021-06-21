@@ -40,7 +40,7 @@ h5 {
 
 .topbar {
   min-height: 50px;
-  background-color: #f0f0f0;
+  background-color: #EBEBEB;
   padding: 10px 0 10px 0; }
   .topbar .topbar-wrapper {
     display: flex; }
@@ -132,6 +132,8 @@ h5 {
       padding-right: 5em; }
       .site-footer .col-full .footer-widgets .block:last-of-type {
         padding-right: 0; }
+      .site-footer .col-full .footer-widgets .block:first-of-type {
+        width: 40%; }
       .site-footer .col-full .footer-widgets .block .widget {
         margin: 0; }
         .site-footer .col-full .footer-widgets .block .widget .widget-title {
@@ -146,14 +148,14 @@ h5 {
           .site-footer .col-full .footer-widgets .block .widget .menu li a {
             text-decoration: none;
             font-size: 1rem;
-            font-weight: 300; }
+            font-weight: 500; }
         .site-footer .col-full .footer-widgets .block .widget .menu::before, .site-footer .col-full .footer-widgets .block .widget .menu::after {
           content: none; }
   .site-footer .footer-widgets-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border-bottom: 1px solid #404040; }
+    border-bottom: 1px solid #EBEBEB; }
     .site-footer .footer-widgets-wrapper .gallery {
       display: flex;
       align-items: center;
@@ -725,17 +727,25 @@ body.mm-ocd-opened {
   display: none; }
 
 /* Product page */
+#main .related .products li {
+  width: 22.73913% !important; }
+
 #main .product {
   overflow: visible; }
   #main .product .woocommerce-product-gallery {
     width: 50%; }
   #main .product .summary {
     width: 43%; }
-    #main .product .summary .price ins, #main .product .summary .price del {
+    #main .product .summary .price bdi {
       font-size: 34px;
       color: #2F2D32; }
-      #main .product .summary .price ins .woocommerce-Price-currencySymbol, #main .product .summary .price del .woocommerce-Price-currencySymbol {
-        padding-right: 5px; }
+    #main .product .summary .variant-info-wrapper {
+      border: 1px solid #EBEBEB;
+      border-radius: 8px;
+      padding: 1.6em 2.2em;
+      margin: 1.5em 0; }
+      #main .product .summary .variant-info-wrapper .info-text:first-of-type {
+        font-size: 1.25rem; }
     #main .product .summary .out-of-stock {
       color: rgba(228, 55, 51, 0.8); }
       #main .product .summary .out-of-stock::before {
@@ -748,13 +758,20 @@ body.mm-ocd-opened {
       display: none; }
     #main .product .summary input[type='number'] {
       -moz-appearance: textfield;
-      height: 100%; }
+      padding: 18px 0; }
       #main .product .summary input[type='number']::-webkit-inner-spin-button,
       #main .product .summary input[type='number'] ::-webkit-outer-spin-button {
         -webkit-appearance: none;
         margin: 0; }
     #main .product .summary .single_add_to_cart_button {
       padding: 18px 25px; }
+    #main .product .summary .shipping-info-wrapper {
+      float: right;
+      padding: 5px 0; }
+    #main .product .summary .info-text {
+      margin: 0; }
+      #main .product .summary .info-text:first-of-type {
+        font-weight: 700; }
   #main .product .storefront-full-width-content .related.products h2:first-child {
     text-align: left; }
 
@@ -764,7 +781,7 @@ body.mm-ocd-opened {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: #EBEBEB;
   margin-bottom: 1.7em; }
   .woocommerce-products-header .term-description {
     width: 40%; }
@@ -862,10 +879,19 @@ span.select2.select2-container.select2-container--default * {
   float: right;
   margin: 0; }
 
-.widget_product_categories ul li.current-cat::before {
+.woocommerce-widget-layered-nav-list a {
+  margin-left: -25px;
+  padding-left: 25px;
+  position: relative;
+  text-decoration: none !important; }
+
+.widget_product_categories ul li.cat-item.current-cat::before {
   content: "@";
   color: #bd7b00;
   opacity: 1; }
+
+.widget_product_categories ul li.cat-item::before {
+  content: none; }
 
 .widget_product_categories ul li a {
   text-decoration: none !important;
