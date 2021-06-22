@@ -29,7 +29,7 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_ad
 */
 function label_general_custom_field() {
     global $woocommerce, $post;
-   echo '<div class="option_group ">';
+   echo '<div class="option_group">';
    echo '<h2>Labels</h2>';
 
     woocommerce_wp_checkbox(
