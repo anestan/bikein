@@ -27,24 +27,38 @@
   }
 }
 
-ul.products {
+.site-main ul.products.columns-3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   @include reset_before_after;
 
   li.product {
+    height: auto;
     width: 46.411765%;
     float: left;
-    margin-right: 0;
+    margin-right: 0 !important;
     margin-bottom: 30px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
+      a.woocommerce-loop-product__link {
+        padding: 1em;
+        width: 100%;
+
+        .price {
+          bdi {
+            font-size: $font-size-base;
+          }
+        }
+      }
+
     img {
-      width: 100%;
+      width: auto;
+      max-height: 125px;
+      margin: 1em 0;
     }
 
     .add_to_cart_button {
@@ -52,11 +66,36 @@ ul.products {
       width: 100%;
     }
 
-    .badge-wrapper {
-      flex-direction: column;
+    .badge-wrapper, .onsale {
+      display: none;
     }
   }
 } //archive products end
+
+//archive page
+.loadmore_button {
+  margin: 0 auto;
+}
+.show_filter {
+  display: block;
+  width: 100%;
+  background-color: #FFF;
+  border: 1px solid $orange;
+  color: $orange;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #FFF;
+    border: 1px solid $orange;
+    color: $orange;
+  }
+  &:active {
+    background-color: $orange;
+    color: #FFF;
+    border: 1px solid $orange;
+  }
+}
 
 //Footer
 .site-footer {
@@ -95,25 +134,6 @@ ul.products {
   }
 }
 
-      .show_filter {
-        display: block;
-        width: 100%;
-        background-color: #FFF;
-        border: 1px solid #1A936F;
-        color: #1A936F;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      .show_filter:hover {
-        background-color: #FFF;
-        border: 1px solid #1A936F;
-        color: #1A936F;
-      }
-      .show_filter:active {
-        background-color: #1A936F;
-        color: #FFF;
-        border: 1px solid #1A936F;
-      }
 
       form.cart {
         flex-direction: column;
@@ -143,10 +163,6 @@ ul.products {
 
       .storefront-breadcrumb {
         margin: 0 20px 2.706325903em;
-      }
-
-      .loadmore_button {
-        width: auto;
       }
 
       .post-type-archive-product .col-full, .tax-product_cat .col-full {
