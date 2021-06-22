@@ -59,34 +59,36 @@ add_filter( 'woocommerce_variable_price_html', 'wc_varb_price_range', 10, 2 );
 
 
 // Add product custom shipping text fields
-add_action( 'woocommerce_product_options_shipping', 'add_custom_shipping_settings_fields' );
 function add_custom_shipping_settings_fields() {
 
     echo '<div class="options_group">';
+    echo '<h2>Leveringsinfo</h2>';
 
     woocommerce_wp_text_input( array(
-        'id'          => '_text_field_1',
+        'id'          => '_shipping_heading',
         'label'       => __( 'Overskrift', 'woocommerce' ),
     ) );
 
     woocommerce_wp_text_input( array(
-        'id'          => '_text_field_2',
+        'id'          => '_shipping_text',
         'label'       => __( 'Beskrivelse', 'woocommerce' ),
     ) );
 
     echo '</div>';
 }
+add_action( 'woocommerce_product_options_shipping', 'add_custom_shipping_settings_fields' );
 
 // Save custom shipping text fields
-add_action( 'woocommerce_process_product_meta', 'save_custom_shipping_settings_fields_values', 20, 1 );
 function save_custom_shipping_settings_fields_values($post_id){
-    if ( isset($_POST['_text_field_1']) )
-        update_post_meta( $post_id, '_text_field_1', sanitize_text_field($_POST['_text_field_1']) );
 
-    if ( isset($_POST['_text_field_2']) )
-        update_post_meta( $post_id, '_text_field_2', sanitize_text_field($_POST['_text_field_2']) );
+    $shipping_heading = $_POST['_shipping_heading'];
+	update_post_meta( $post_id, '_shipping_heading', esc_attr( $shipping_heading ) );
+
+    $shipping_text = $_POST['_shipping_text'];
+	update_post_meta( $post_id, '_shipping_text', esc_attr( $shipping_text ) );
 
  }
+ add_action( 'woocommerce_process_product_meta', 'save_custom_shipping_settings_fields_values');
 
 
 // Show shipping text field on product page
@@ -96,10 +98,10 @@ function display_custom_fields() {
 
     $fields_values = array(); // Initializing
 
-    if( $text_field_1 = $product->get_meta('_text_field_1') )
+    if( $text_field_1 = $product->get_meta('_shipping_heading') )
         $fields_values[] = $text_field_1; // Set the value in the array
 
-    if( $text_field_2 = $product->get_meta('_text_field_2') )
+    if( $text_field_2 = $product->get_meta('_shipping_text') )
         $fields_values[] = $text_field_2; // Set the value in the array
 
     // If the array of values is not empty
@@ -120,12 +122,12 @@ function display_custom_fields() {
 
 //Variant flavor text field
 
-
-add_action( 'woocommerce_product_options_advanced', 'add_custom_general_fields' );
+/* add_action( 'woocommerce_product_options_advanced', 'add_custom_general_fields' );
 
 function add_custom_general_fields() {
 
     echo '<div class="options_group">';
+    echo '<h2>Varia</h2>';
 
     woocommerce_wp_text_input( array(
         'id'          => '_variant_text_field_1',
@@ -181,3 +183,4 @@ function display_variant_fields() {
 
     }
 }
+ */

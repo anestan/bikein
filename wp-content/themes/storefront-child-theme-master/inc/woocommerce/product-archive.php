@@ -80,8 +80,8 @@ function display_label_text(){
 add_action( 'woocommerce_after_shop_loop_item', 'display_label_text', 3 );
 add_action( 'woocommerce_before_single_product_summary', 'display_label_text', 3 );
 
-//Archive top filters
 
+//Archive top filters
 function archive_top_filters() {
   register_sidebar(
     array(
