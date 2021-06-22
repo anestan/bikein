@@ -22,15 +22,15 @@
 }
 
 //product
-ul.products {
+
+.site-main ul.products.columns-3 {
   li.product {
     height: 500px;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    width: 31.411765% !important;
-    margin-right: 2.882353% !important;
-    margin-bottom: 2.882353%;
+    width: 31.411765%;
+    margin: 0 2.882353% 2.882353% 0;
 
     .woocommerce-loop-product__link {
       height: 100%;
