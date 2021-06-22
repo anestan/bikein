@@ -954,6 +954,8 @@ button#vatButton {
     display: block; }
   .filter-wrapper {
     flex-wrap: wrap; }
+    .filter-wrapper .widget {
+      width: 47%; }
   ul.products {
     display: flex;
     flex-wrap: wrap;
@@ -974,6 +976,8 @@ button#vatButton {
       ul.products li.product .add_to_cart_button {
         font-size: 12px;
         width: 100%; }
+      ul.products li.product .badge-wrapper {
+        flex-direction: column; }
   .site-footer .col-full .footer-widgets {
     flex-wrap: wrap; }
     .site-footer .col-full .footer-widgets .block {

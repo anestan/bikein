@@ -21,6 +21,10 @@
 
 .filter-wrapper {
   flex-wrap: wrap;
+
+  .widget {
+    width: 47%;
+  }
 }
 
 ul.products {
@@ -46,6 +50,10 @@ ul.products {
     .add_to_cart_button {
       font-size: 12px;
       width: 100%;
+    }
+
+    .badge-wrapper {
+      flex-direction: column;
     }
   }
 } //archive products end
