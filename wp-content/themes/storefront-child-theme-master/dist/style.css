@@ -113,7 +113,7 @@ h5 {
 /* Footer */
 .site-footer {
   padding: 50px 0 0 0; }
-  .site-footer .footer-widgets {
+  .site-footer .col-full .footer-widgets {
     padding: 0;
     border-bottom: 0;
     display: flex;
@@ -133,20 +133,20 @@ h5 {
         width: 40%; }
       .site-footer .col-full .footer-widgets .block .widget {
         margin: 0; }
-        .site-footer .footer-widgets .block .widget .widget-title {
+        .site-footer .col-full .footer-widgets .block .widget .widget-title {
           text-transform: uppercase;
           font-size: 1rem;
           font-weight: 400;
           border: 0; }
-        .site-footer .footer-widgets .block .widget .textwidget p {
+        .site-footer .col-full .footer-widgets .block .widget .textwidget p {
           font-weight: 300; }
         .site-footer .col-full .footer-widgets .block .widget .menu li {
           padding: 0; }
-          .site-footer .footer-widgets .block .widget .menu li a {
+          .site-footer .col-full .footer-widgets .block .widget .menu li a {
             text-decoration: none;
             font-size: 1rem;
             font-weight: 500; }
-        .site-footer .col-full .footer-widgets .block .widget .menu::before, .site-footer .col-full .footer-widgets .block .widget .menu::after {
+        .site-footer .col-full .footer-widgets .block .widget::before, .site-footer .col-full .footer-widgets .block .widget::after {
           content: none; }
   .site-footer .footer-widgets-wrapper {
     display: flex;
@@ -943,8 +943,6 @@ button#vatButton {
   #page .col-full {
     margin-left: 1em;
     margin-right: 1em; }
-  .footer-widgets {
-    flex-wrap: wrap; }
   #secondary {
     display: none;
     width: 100%;
@@ -954,11 +952,13 @@ button#vatButton {
     border: 1px solid #EFEFEF; }
   .widget_custom_html {
     display: block; }
+  .filter-wrapper {
+    flex-wrap: wrap; }
   ul.products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-    ul.products ::before, ul.products ::after {
+    ul.products::before, ul.products::after {
       content: none; }
     ul.products li.product {
       width: 46.411765%;
@@ -974,6 +974,24 @@ button#vatButton {
       ul.products li.product .add_to_cart_button {
         font-size: 12px;
         width: 100%; }
+  .site-footer .col-full .footer-widgets {
+    flex-wrap: wrap; }
+    .site-footer .col-full .footer-widgets .block {
+      margin: 1em 0 1em 0;
+      padding: 0;
+      width: 50%;
+      text-align: center; }
+      .site-footer .col-full .footer-widgets .block:first-of-type, .site-footer .col-full .footer-widgets .block:last-of-type {
+        width: 100%; }
+  .site-footer .col-full .footer-widgets-wrapper {
+    flex-direction: column; }
+    .site-footer .col-full .footer-widgets-wrapper .gallery-item {
+      margin: 0 0.5em; }
+    .site-footer .col-full .footer-widgets-wrapper .widget {
+      width: auto;
+      margin: 1em 0 1em 0; }
+      .site-footer .col-full .footer-widgets-wrapper .widget li {
+        margin: 0 0.5em; }
   .show_filter {
     display: block;
     width: 100%;
