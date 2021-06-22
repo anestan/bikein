@@ -5,7 +5,7 @@
   padding: 5em;
   @include flexbox;
   justify-content: space-between;
-  background-color: $gray;
+  background-color: $lightgray;
   margin-bottom: 1.7em;
 
   .term-description {
@@ -14,6 +14,10 @@
 
   .storefront-breadcrumb {
     margin: 0;
+
+    .col-full {
+      padding: 0;
+    }
   }
 }
 
@@ -101,6 +105,11 @@ ul.products {
         font-weight: $font-weight-normal-bold;
         &::before {
           content: "\f00c ";
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-family: Font Awesome\ 5 Free;
+          float: left;
+          margin-right: 5px;
         }
       }
     }
@@ -151,6 +160,16 @@ span.select2.select2-container.select2-container--default * {
 //archive top widgets end
 
 //archive sidebar
+.widget_layered_nav {
+  li:before {
+    color: $gray;
+  }
+  .chosen:before {
+    color: $orange;
+  }
+}
+
+
 .woocommerce-widget-layered-nav-list {
   a {
     margin-left: -25px;
@@ -158,6 +177,7 @@ span.select2.select2-container.select2-container--default * {
     position: relative;
     text-decoration: none !important;
   }
+
 }
 
 .widget_product_categories ul li{
