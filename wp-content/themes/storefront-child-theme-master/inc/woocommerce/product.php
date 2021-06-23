@@ -116,6 +116,7 @@ function display_custom_fields() {
     }
 }
 
+//dropdown test
 
 //Variant flavor text field
 
