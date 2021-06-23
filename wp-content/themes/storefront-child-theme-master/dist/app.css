@@ -620,7 +620,15 @@ body.mm-ocd-opened {
 #main .product {
   overflow: visible; }
   #main .product .woocommerce-product-gallery {
-    width: 50%; }
+    width: 50%;
+    height: 600px; }
+    #main .product .woocommerce-product-gallery figure {
+      height: 100%; }
+      #main .product .woocommerce-product-gallery figure .woocommerce-product-gallery__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit; }
   #main .product .summary {
     width: 43%; }
     #main .product .summary .price bdi {

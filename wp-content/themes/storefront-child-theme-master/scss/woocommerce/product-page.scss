@@ -16,6 +16,17 @@
 
     .woocommerce-product-gallery {
       width: 50%;
+      height: 600px;
+
+      figure {
+        height: 100%;
+
+        .woocommerce-product-gallery__image {
+          @include flexbox;
+          justify-content: center;
+          height: inherit;
+        }
+      }
     }
 
     .summary {
