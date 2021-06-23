@@ -38,39 +38,3 @@ global $product;
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 
 </div>
-
-<!-- Selling point -->
-<div class="sellingpoints">
-
-<div class="header-sellingpoint">
-        <i class="<?php echo get_theme_mod( 'header_selling_icon_1'); ?>"></i>
-        <p class="sellingpoint-wrapper">
-          <?php echo get_theme_mod( 'header_selling_block_1'); ?>
-          <span class="sellingpoint-subtitle">
-            <?php echo get_theme_mod( 'header_selling_subtitle_1'); ?>
-          </span>
-        </p>
-    </div>
-
-    <div class="header-sellingpoint">
-        <i class="<?php echo get_theme_mod( 'header_selling_icon_2'); ?>"></i>
-        <p class="sellingpoint-wrapper">
-          <?php echo get_theme_mod( 'header_selling_block_2'); ?>
-          <span class="sellingpoint-subtitle">
-            <?php echo get_theme_mod( 'header_selling_subtitle_2'); ?>
-          </span>
-        </p>
-    </div>
-
-
-    <div class="header-sellingpoint">
-        <i class="<?php echo get_theme_mod( 'header_selling_icon_3'); ?>"></i>
-        <p class="sellingpoint-wrapper">
-          <?php echo get_theme_mod( 'header_selling_block_3'); ?>
-          <span class="sellingpoint-subtitle">
-            <?php echo get_theme_mod( 'header_selling_subtitle_3'); ?>
-          </span>
-        </p>
-	</div>
-
-</div>

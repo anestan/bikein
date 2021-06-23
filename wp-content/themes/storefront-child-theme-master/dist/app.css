@@ -625,7 +625,15 @@ body.mm-ocd-opened {
     width: 43%; }
     #main .product .summary .price bdi {
       font-size: 34px;
-      color: #2F2D32; }
+      color: #000000; }
+    #main .product .summary .price {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      #main .product .summary .price .woocommerce-price-suffix {
+        width: 100%;
+        font-size: 0.75rem;
+        color: #999999; }
     #main .product .summary .variant-info-wrapper {
       border: 1px solid #dbdbdb;
       border-radius: 8px;
@@ -659,6 +667,8 @@ body.mm-ocd-opened {
       margin: 0; }
       #main .product .summary .info-text:first-of-type {
         font-weight: 700; }
+    #main .product .summary .product_meta * {
+      color: #999999; }
   #main .product .storefront-full-width-content .related.products h2:first-child {
     text-align: left; }
 
@@ -738,7 +748,7 @@ body.mm-ocd-opened {
     width: 80%; }
     .site-main ul.products.columns-3 li.product .badge-wrapper .badge {
       font-weight: 500; }
-      ul.products li.product .badge-wrapper .badge::before {
+      .site-main ul.products.columns-3 li.product .badge-wrapper .badge::before {
         content: "\f00c ";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -989,14 +999,11 @@ button#vatButton {
       width: 46.411765%;
       float: left;
       margin-right: 0 !important;
-      margin-bottom: 30px !important;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center; }
+      margin-bottom: 30px !important; }
       .site-main ul.products.columns-3 li.product a.woocommerce-loop-product__link {
         padding: 1em;
-        width: 100%; }
+        width: 100%;
+        justify-content: space-between; }
         .site-main ul.products.columns-3 li.product a.woocommerce-loop-product__link .price bdi {
           font-size: 1rem; }
       .site-main ul.products.columns-3 li.product img {
@@ -1054,16 +1061,10 @@ button#vatButton {
     padding-bottom: 20px; }
   .sf_top_bar, .col-full, .footer-widgets, .footer-widgets .widget {
     padding: 0; }
-  .woocommerce-page #content, .footer-widgets {
-    margin: 0 20px; }
   .footer-widgets .block {
     margin-bottom: 20px; }
   .storefront-breadcrumb {
     margin: 0 20px 2.706325903em; }
-  .post-type-archive-product .col-full, .tax-product_cat .col-full {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center; }
   button.single_add_to_cart_button.button.alt {
     width: 100%; }
   #woocommerce_price_filter-2, #woocommerce_product_categories-2, #woocommerce_layered_nav-4, #woocommerce_layered_nav-2 {

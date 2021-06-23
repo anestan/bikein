@@ -23,7 +23,18 @@
       .price {
         bdi {
           font-size: 34px;
-          color: #2F2D32;
+          color: $black;
+        }
+      }
+
+      .price {
+        @include flexbox;
+        flex-wrap: wrap;
+
+        .woocommerce-price-suffix {
+          width: 100%;
+          font-size: $font-size-small;
+          color: $darkergray;
         }
       }
 
@@ -40,14 +51,14 @@
       }
 
       .out-of-stock {
-        color: rgba(228,55,51,0.8);
+        color: $red;
         &::before {
           content: "\f00d";
         }
       }
 
       .in-stock {
-        color: rgba(66,162,27,0.73);
+        color: $green;
         &::before {
           content: "\f00c";
         }
@@ -80,6 +91,10 @@
         &:first-of-type {
           font-weight: $font-weight-bold;
         }
+      }
+
+      .product_meta *{
+        color: $darkergray;
       }
     }
 
