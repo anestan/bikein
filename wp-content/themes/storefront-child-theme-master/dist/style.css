@@ -1128,14 +1128,16 @@ button#vatButton {
   .site-footer .col-full .footer-widgets {
     flex-wrap: wrap; }
     .site-footer .col-full .footer-widgets .block {
-      margin: 1em 0 1em 0;
+      margin: 0.5em 0;
       padding: 0;
       width: 50%;
-      text-align: center; }
+      text-align: center;
+      justify-content: center; }
       .site-footer .col-full .footer-widgets .block:first-of-type, .site-footer .col-full .footer-widgets .block:last-of-type {
         width: 100%; }
   .site-footer .col-full .footer-widgets-wrapper {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 0; }
     .site-footer .col-full .footer-widgets-wrapper .gallery-item {
       margin: 0 0.5em; }
     .site-footer .col-full .footer-widgets-wrapper .widget {
@@ -1143,26 +1145,20 @@ button#vatButton {
       margin: 1em 0 1em 0; }
       .site-footer .col-full .footer-widgets-wrapper .widget li {
         margin: 0 0.5em; }
-  form.cart {
-    flex-direction: column; }
-  .single-product div.product .variations_button, .footer-widgets {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .quantity {
-    padding-bottom: 20px; }
-  .sf_top_bar, .col-full, .footer-widgets, .footer-widgets .widget {
-    padding: 0; }
-  .footer-widgets .block {
-    margin-bottom: 20px; }
-  .storefront-breadcrumb {
-    margin: 0 20px 2.706325903em; }
-  button.single_add_to_cart_button.button.alt {
-    width: 100%; }
-  #woocommerce_price_filter-2, #woocommerce_product_categories-2, #woocommerce_layered_nav-4, #woocommerce_layered_nav-2 {
+  .site-footer .btm_bar {
+    width: auto;
+    flex-flow: column-reverse;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0; }
+    .site-footer .btm_bar .widget {
+      margin: 0; }
+      .site-footer .btm_bar .widget:first-of-type {
+        margin-top: 1.5em; }
+  #woocommerce_layered_nav-4, #woocommerce_layered_nav-2 {
     display: none; }
   .btm_bar {
-    padding: 20px 20px 85px 20px; }
+    padding: 0px 0px 85px 0px; }
   .site-search .widget_product_search form::before {
     display: none; }
   .site-search .widget_product_search form {
