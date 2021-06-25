@@ -34,7 +34,7 @@ function woo_related_products_limit() {
 
 /* Replace variable price range with single variation price */
 //Remove Price Range
-function wc_varb_price_range( $wcv_price, $product ) {
+function variable_product_price_range( $wcv_price, $product ) {
     $prefix = sprintf('%s ', __('', 'wcvp_range'));
 
     $wcv_reg_min_price = $product->get_variation_regular_price( 'min', true );
@@ -48,11 +48,11 @@ function wc_varb_price_range( $wcv_price, $product ) {
 
     return ( $wcv_min_price == $wcv_max_price ) ?
         $wcv_price :
-        sprintf('Fra: %s%s', $prefix, $wcv_price);
+        sprintf('%s%s', $prefix, $wcv_price);
 }
 
-add_filter( 'woocommerce_variable_sale_price_html', 'wc_varb_price_range', 10, 2 );
-add_filter( 'woocommerce_variable_price_html', 'wc_varb_price_range', 10, 2 );
+add_filter( 'woocommerce_variable_sale_price_html', 'variable_product_price_range', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'variable_product_price_range', 10, 2 );
 
 
 // Add product custom shipping text fields
