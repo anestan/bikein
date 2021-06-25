@@ -614,9 +614,6 @@ body.mm-ocd-opened {
   display: none; }
 
 /* Product page */
-#main .related .products li {
-  width: 22.73913% !important; }
-
 #main .product {
   overflow: visible; }
   #main .product .woocommerce-product-gallery {
@@ -1128,6 +1125,11 @@ button#vatButton {
       border: 1px solid #bd7b00; }
   #main .product .summary, #main .product .woocommerce-product-gallery {
     width: auto; }
+  #main .related .products {
+    display: flex;
+    flex-wrap: wrap; }
+    #main .related .products li {
+      width: 48.411765%; }
   .site-footer .col-full .footer-widgets {
     flex-wrap: wrap; }
     .site-footer .col-full .footer-widgets .block {

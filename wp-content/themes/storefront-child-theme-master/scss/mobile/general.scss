@@ -123,6 +123,16 @@
         width: auto;
       }
     }
+
+    .related {
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          width: 48.411765%;
+        }
+      }
+    }
   }
 
   //Footer
