@@ -680,78 +680,24 @@ body.mm-ocd-opened {
   #main .product .storefront-full-width-content .related.products h2:first-child {
     text-align: left; }
 
-.woocommerce.single-product .product .summary .variations {
-  width: 100%; }
+/* Styling for select button */
+/* adds style to divs */
+/* by default all divs are hidden */
+.custom_option {
+  display: none;
+  border: 2px solid #ccc;
+  margin-right: 5px;
+  padding: 2px 5px;
+  cursor: pointer; }
 
-.woocommerce.single-product .product .summary .variations td {
-  display: block;
-  width: 100%; }
+/* show only divs with class "is-visible" */
+.custom_option.is-visible {
+  display: inline-block; }
 
-.woocommerce.single-product .product .summary .variations td label {
-  font-family: 'Nunito', Helvetica, Arial, sans-serif;
-  letter-spacing: 0px;
-  font-weight: normal;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  text-align: left;
-  display: block;
-  margin-top: 20px; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer input {
-  visibility: hidden; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer > select {
-  display: none; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer > label {
-  display: inline-block;
-  margin: 5px 5px 0 0; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer > label > span {
-  font-family: 'Oswald', 'Nunito', Helvetica, Arial, sans-serif;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: normal;
-  font-size: .8em;
-  padding: 17px 11px;
-  text-align: center;
-  display: block;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #f9f9f9;
-  -webkit-transition: all 160ms ease;
-  transition: all 160ms ease;
-  border-radius: 8px;
-  border: 1px solid #dbdbdb;
-  color: #404040; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer > label > span:hover {
-  background-color: #bd7b00;
-  color: #ffffff;
-  -webkit-transition: all 160ms linear;
-  transition: all 160ms linear;
-  border-color: #bd7b00; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer > label > input {
-  position: absolute;
-  top: -20px; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer > label > .checked {
-  background-color: #bd7b00;
-  color: #ffffff;
-  -webkit-transition: all 250ms linear;
-  transition: all 250ms linear;
-  border-color: #bd7b00; }
-
-.woocommerce.single-product .product .summary .variations .radioSelectContainer.pa_flavor {
-  max-height: 220px;
-  overflow-y: scroll; }
-
-.woocommerce.single-product .product .summary .variations .reset_variations {
-  margin-top: 15px;
-  display: block !important; }
+/* adds the style to the selected div */
+.custom_option.on {
+  background-color: #777;
+  color: white; }
 
 /* Product archive */
 .woocommerce-products-header {
