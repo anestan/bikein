@@ -41,9 +41,9 @@
       width: 100%;
       text-align: left;
     }
-  }  
+  }
 
-  .site-main ul.products.columns-3 {
+  .site-main ul.products.columns-3, .related ul.products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -86,7 +86,7 @@
       }
 
       .badge-wrapper, .onsale {
-        display: none;
+        display: none!important;
       }
     }
   } //archive products end
@@ -121,7 +121,9 @@
     .product {
       .summary, .woocommerce-product-gallery {
         width: auto;
+        height: auto;
       }
+
     }
 
     .related {
@@ -130,6 +132,7 @@
         flex-wrap: wrap;
         li {
           width: 48.411765%;
+          height: inherit;
         }
       }
     }

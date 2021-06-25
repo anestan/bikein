@@ -27,7 +27,7 @@
       width: 43%;
       .price {
         bdi {
-          font-size: 34px;
+          font-size: $h4-font-size;
           color: $black;
         }
       }
@@ -125,19 +125,34 @@
 /* by default all divs are hidden */
 .custom_option {
   display: none;
-  border: 2px solid #ccc;
-  margin-right: 5px;
-  padding: 2px 5px;
+  border: 2px solid $orange;
+  margin: 5px 5px 0 0;
+  padding: 7px 14px;
   cursor: pointer;
+  background-color: $white;
+  color: $darkgray;
+  border-radius: 6px;
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: #FFF8EB;
+  }
+  &.is-visible {
+    display:inline-block;
+  }
+  &.on {
+    background-color: $orange;
+    color: $white;
+  }
 }
 
-/* show only divs with class "is-visible" */
-.custom_option.is-visible {
-  display:inline-block;
-}
-
-/* adds the style to the selected div */
-.custom_option.on {
-  background-color: #777;
-  color: white;
-}
+// /* show only divs with class "is-visible" */
+// .custom_option.is-visible {
+//   display:inline-block;
+// }
+//
+// /* adds the style to the selected div */
+// .custom_option.on {
+//   background-color: $orange;
+//   color: $white;
+// }
