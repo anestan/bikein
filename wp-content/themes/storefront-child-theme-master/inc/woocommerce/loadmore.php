@@ -17,7 +17,9 @@ function load_more_product_script() {
 		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
 		'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
 		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
-		'max_page' => $wp_query->max_num_pages
+		'max_page' => $wp_query->max_num_pages,
+		'post_count' => $wp_query->post_count,
+		'post_found' => $wp_query->found_posts
 	) );
 
  	wp_enqueue_script( 'loadmore' );

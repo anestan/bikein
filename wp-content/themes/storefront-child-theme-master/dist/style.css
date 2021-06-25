@@ -838,6 +838,9 @@ span.select2.select2-container.select2-container--default * {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+#progress-bar {
+  float: left; }
+
 /* Cart */
 .woocommerce-cart-form {
   margin-top: -50px; }
@@ -1100,20 +1103,12 @@ button#vatButton {
     width: auto;
     flex-flow: column-reverse;
     text-align: center;
-    padding-top: 0;
+    padding: 0px 0px 85px 0px;
     margin-top: 0; }
     .site-footer .btm_bar .widget {
       margin: 0; }
       .site-footer .btm_bar .widget:first-of-type {
-        margin-top: 1.5em; }
-  #woocommerce_layered_nav-4, #woocommerce_layered_nav-2 {
-    display: none; }
-  .btm_bar {
-    padding: 0px 0px 85px 0px; }
-  .site-search .widget_product_search form::before {
-    display: none; }
-  .site-search .widget_product_search form {
-    display: flex; } }
+        margin-top: 1.5em; } }
 
 @media only screen and (max-width: 767px) {
   #masthead .topbar-wrapper {

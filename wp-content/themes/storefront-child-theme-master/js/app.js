@@ -9,3 +9,4 @@ import filter from './filters.js';
 import sticky_header from './sticky_header.js';
 import stock from './stock.js';
 import variation_select from './variation_select.js';
+import progress_bar from './progress_bar.js';
