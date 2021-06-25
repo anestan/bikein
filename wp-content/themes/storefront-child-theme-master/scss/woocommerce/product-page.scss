@@ -122,3 +122,28 @@
     }
   }
 }
+
+
+
+/* Styling for select button */
+
+/* adds style to divs */
+/* by default all divs are hidden */
+.custom_option {
+  display: none;
+  border: 2px solid #ccc;
+  margin-right: 5px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+/* show only divs with class "is-visible" */
+.custom_option.is-visible {
+  display:inline-block;
+}
+
+/* adds the style to the selected div */
+.custom_option.on {
+  background-color: #777;
+  color: white;
+}
