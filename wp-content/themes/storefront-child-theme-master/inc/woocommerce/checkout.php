@@ -29,3 +29,4 @@ function country_reorder( $checkout_fields ) {
 	return $checkout_fields;
 }
 add_filter( 'woocommerce_checkout_fields', 'country_reorder' );
+
