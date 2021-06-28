@@ -98,8 +98,14 @@
         }
       }
 
-      .product_meta *{
-        color: $darkergray;
+      .product_meta {    
+          *{
+            color: $darkgray;
+          }
+
+          a {
+            font-weight: 500;
+          }
       }
     }
 

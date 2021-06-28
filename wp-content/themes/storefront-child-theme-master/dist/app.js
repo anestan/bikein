@@ -160,7 +160,7 @@ eval("!function(t){var e={};function n(o){if(e[o])return e[o].exports;var i=e[o]
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Update progress bar on product archive\njQuery(function($){\n\t\n\t$(\".loadmore_button\").on('click', function(e) {\n\n\t    var button = $(this),\n\t\tdata = {\n\t\t'action': 'loadmore',\n\t\t'query': loadmore_params.posts\n\t\t};\n\n\t\t$.ajax({\n\t\t\turl : loadmore_params.ajaxurl, // AJAX handler\n\t\t\tdata : data,\n\t\t\ttype : 'POST',\n\t\t\tsuccess : function( data ){\n\t\t\t\tif( data ) {\n\t\t\t\n\t\t\t\t\t// replace value with post count * 2\n\t\t\t\t\tvar post_count = loadmore_params.post_count;\n\t\t\t\t\t$('#progress-bar').val(post_count * 2);\n\t\t\t\t\n\t\t\t\t}\n\t\t\t}\n\t\t});\n       \n\n\t});\n\n});\n\n//# sourceURL=webpack:///./js/progress_bar.js?");
+eval("// Update progress bar on product archive\njQuery(function($){\n\t\n\t$(\".loadmore_button\").on('click', function(e) {\n\n\t    var button = $(this),\n\t\tdata = {\n\t\t'action': 'loadmore',\n\t\t'query': loadmore_params.posts\n\t\t};\n\n\t\t$.ajax({\n\t\t\turl : loadmore_params.ajaxurl, // AJAX handler\n\t\t\tdata : data,\n\t\t\ttype : 'POST',\n\t\t\tsuccess : function( data ){\n\t\t\t\tif( data ) {\n\t\t\t\n\t\t\t\t\t// replace value with post count * 2\n\t\t\t\t\tvar post_count = loadmore_params.post_count;\n\t\t\t\t\t$('#progress-bar').val(post_count + post_count);\n\t\t\t\t\n\t\t\t\t}\n\t\t\t}\n\t\t});\n       \n\n\t});\n\n});\n\n//# sourceURL=webpack:///./js/progress_bar.js?");
 
 /***/ }),
 
