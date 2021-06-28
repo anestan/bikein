@@ -18,7 +18,7 @@ jQuery(function($){
 			
 					// replace value with post count * 2
 					var post_count = loadmore_params.post_count;
-					$('#progress-bar').val(post_count * 2);
+					$('#progress-bar').val(post_count + post_count);
 				
 				}
 			}
