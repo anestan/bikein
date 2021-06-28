@@ -104,7 +104,7 @@
       .badge {
         font-weight: $font-weight-normal-bold;
         &::before {
-          content: "\f00c ";
+          content: "\f00c";
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           font-family: Font Awesome\ 5 Free;
@@ -166,6 +166,7 @@ span.select2.select2-container.select2-container--default * {
   }
   .chosen:before {
     color: $orange;
+    opacity: 1;
   }
 }
 
@@ -183,7 +184,8 @@ span.select2.select2-container.select2-container--default * {
 .widget_product_categories ul li{
 
   &.cat-item.current-cat::before {
-    content: "@";
+    content: "\f054";
+    font-family: Font Awesome\ 5 Free;
     color: $orange;
     opacity: 1;
   }
@@ -208,3 +210,13 @@ span.select2.select2-container.select2-container--default * {
   letter-spacing: 1px;
 }
 //load more button end
+
+
+
+// Progress bar
+
+  #progress-bar {
+    float: left;
+  }
+
+// progress bar end

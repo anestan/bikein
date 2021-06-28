@@ -673,7 +673,9 @@ body.mm-ocd-opened {
       #main .product .summary .info-text:first-of-type {
         font-weight: 700; }
     #main .product .summary .product_meta * {
-      color: #999999; }
+      color: #404040; }
+    #main .product .summary .product_meta a {
+      font-weight: 500; }
   #main .product .storefront-full-width-content .related.products h2:first-child {
     text-align: left; }
 
@@ -773,7 +775,7 @@ body.mm-ocd-opened {
     .site-main ul.products.columns-3 li.product .badge-wrapper .badge {
       font-weight: 500; }
       .site-main ul.products.columns-3 li.product .badge-wrapper .badge::before {
-        content: "\f00c ";
+        content: "\f00c";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-family: Font Awesome\ 5 Free;
@@ -810,7 +812,8 @@ span.select2.select2-container.select2-container--default * {
   color: #dbdbdb; }
 
 .widget_layered_nav .chosen:before {
-  color: #bd7b00; }
+  color: #bd7b00;
+  opacity: 1; }
 
 .woocommerce-widget-layered-nav-list a {
   margin-left: -25px;
@@ -819,7 +822,8 @@ span.select2.select2-container.select2-container--default * {
   text-decoration: none !important; }
 
 .widget_product_categories ul li.cat-item.current-cat::before {
-  content: "@";
+  content: "\f054";
+  font-family: Font Awesome\ 5 Free;
   color: #bd7b00;
   opacity: 1; }
 
@@ -837,6 +841,9 @@ span.select2.select2-container.select2-container--default * {
   width: fit-content;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+#progress-bar {
+  float: left; }
 
 /* Cart */
 .woocommerce-cart-form {
@@ -1100,20 +1107,12 @@ button#vatButton {
     width: auto;
     flex-flow: column-reverse;
     text-align: center;
-    padding-top: 0;
+    padding: 0px 0px 85px 0px;
     margin-top: 0; }
     .site-footer .btm_bar .widget {
       margin: 0; }
       .site-footer .btm_bar .widget:first-of-type {
-        margin-top: 1.5em; }
-  #woocommerce_layered_nav-4, #woocommerce_layered_nav-2 {
-    display: none; }
-  .btm_bar {
-    padding: 0px 0px 85px 0px; }
-  .site-search .widget_product_search form::before {
-    display: none; }
-  .site-search .widget_product_search form {
-    display: flex; } }
+        margin-top: 1.5em; } }
 
 @media only screen and (max-width: 767px) {
   #masthead .topbar-wrapper {
