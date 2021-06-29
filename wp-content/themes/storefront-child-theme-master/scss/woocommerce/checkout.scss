@@ -149,3 +149,14 @@
   .button.success:hover {
     background-color: #666666;
   }
+
+
+
+  /* checkout product image on order review */
+  .cart_item {
+    .product-image img {
+      width: 52px;
+      height: 45px;
+      object-fit: contain;
+    }
+  }
