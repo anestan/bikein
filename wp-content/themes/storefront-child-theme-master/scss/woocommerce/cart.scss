@@ -60,3 +60,19 @@
 .woocommerce input[name="update_cart"] {
 	display: none;
 }
+
+
+/* Col for cart */
+#cart-overview {
+
+  .col-cart-one {
+    float: left;
+    width: 48%;
+  }
+
+  .col-cart-two {
+    float: right;
+    width: 48%;
+  }
+
+}

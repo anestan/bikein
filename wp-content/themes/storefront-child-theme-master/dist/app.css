@@ -895,6 +895,15 @@ table.cart td.actions {
 .woocommerce input[name="update_cart"] {
   display: none; }
 
+/* Col for cart */
+#cart-overview .col-cart-one {
+  float: left;
+  width: 48%; }
+
+#cart-overview .col-cart-two {
+  float: right;
+  width: 48%; }
+
 /* ******* Checkout ********* */
 @media (min-width: 768px) {
   .woocommerce-billing-fields__field-wrapper #billing_first_name_field {

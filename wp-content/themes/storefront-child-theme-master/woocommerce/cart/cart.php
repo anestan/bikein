@@ -57,6 +57,36 @@ dataLayer.push({
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
+
+	<div id="cart-overview">
+			<div class="col-cart-one">
+
+				<!-- Product count -->
+				<div class="cart-product-count">
+						<?php 
+							global $woocommerce;
+							$cart_count = $woocommerce->cart->cart_contents_count;
+							if ( $cart_count <= 1 ) {
+								echo $woocommerce->cart->cart_contents_count . " vare i kurven";
+							}
+							else {
+								echo $woocommerce->cart->cart_contents_count . " varer i kurven";
+							}
+						?>
+				</div>
+
+				<h3><?php esc_html_e( 'Cart', 'woocommerce' ); ?></h3>
+			</div>
+
+			<div class="col-cart-two">
+				test 1
+			</div>
+	</div>
+
+	
+
+
+
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 		<thead>
 			<tr>
