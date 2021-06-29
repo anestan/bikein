@@ -1002,6 +1002,12 @@ button#vatButton {
 .button.success:hover {
   background-color: #666666; }
 
+/* checkout product image on order review */
+.cart_item .product-image img {
+  width: 52px;
+  height: 45px;
+  object-fit: contain; }
+
 @media only screen and (max-width: 767px) {
   #page .col-full {
     margin: 0 0.8em; }
