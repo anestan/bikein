@@ -27,3 +27,4 @@ function sb_remove_item(){
       }
   }
   add_action('wp_sb_remove_item', 'sb_remove_item');
+
