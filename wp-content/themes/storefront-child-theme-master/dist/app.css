@@ -891,11 +891,10 @@ table.cart td.actions {
   border-color: #f2f2f2; }
 
 /* Remove update cart button */
-/* .woocommerce button[name="update_cart"],
+.woocommerce button[name="update_cart"],
 .woocommerce input[name="update_cart"] {
-	display: none;
-}
- */
+  display: none; }
+
 /* Col for cart */
 /* temp */
 #cart-overview .col-cart-one {
