@@ -66,7 +66,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		</span>
 	</h3>
 
-	<p class="order_review_subtitle">Din bestilling er først bindende, når vi har bekræftet din ordre.</p>
+	<p class="order_review_subtitle"><?php esc_html_e( 'Din bestilling er først bindende, når vi har bekræftet din ordre.', 'woocommerce' ); ?>
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

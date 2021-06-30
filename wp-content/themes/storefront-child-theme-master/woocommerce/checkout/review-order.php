@@ -18,8 +18,6 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<!-- Custom review order -->
-
 <div class="shop_table woocommerce-checkout-review-order-table">
 	
 	<!-- Shipping -->

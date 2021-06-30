@@ -3,9 +3,11 @@
     margin-top: -50px;
   }
 
+ 
   button.button.update_cart {
      display: none;
   }
+
 
   .product-remove .remove::before {
     font-size: 22px;
@@ -59,4 +61,49 @@
 .woocommerce button[name="update_cart"],
 .woocommerce input[name="update_cart"] {
 	display: none;
+}
+
+
+/* Col for cart */
+  /* temp */
+#cart-overview {
+
+  .col-cart-one {
+    float: left;
+    width: 62%;
+  }
+
+  .col-cart-two {
+    float: right;
+    width: 36%;
+  }
+
+  .coupons {
+    margin-top: 40px;
+  }
+
+}
+
+/* temp */
+.cart-shop-table {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .product-thumbnail img {
+    max-width: 2em;
+    height: auto;
+    object-fit: contain;
+  }
+
+}
+
+/* TEMP - remove page titel cart */
+#post-7 .entry-title {
+  display: none;
+}
+
+.cart-collaterals .cart_totals, .cart-collaterals .shipping_calculator {
+  width: 100% !important;
 }
