@@ -112,5 +112,3 @@ function archive_product_layout() {
   add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 5 );
 }
 add_action( 'wp', 'archive_product_layout' );
-
-//add show/hide filter button below page title

@@ -1119,6 +1119,10 @@ button#vatButton {
           font-size: 0.75rem; }
           #main .related .products li a.woocommerce-loop-product__link .price bdi {
             font-size: 0.75rem; }
+      #main .related .products li img {
+        width: auto;
+        max-height: 125px;
+        margin: 0.5em 0; }
   .site-footer .col-full .footer-widgets {
     flex-wrap: wrap; }
     .site-footer .col-full .footer-widgets .block {
