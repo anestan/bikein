@@ -116,7 +116,7 @@ eval("(function($){\n\t$(document).ready(function () {\n\n        // Inserts vat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#secondary\").slideToggle(400);\n\t});\n});\n\n\n//# sourceURL=webpack:///./js/filters.js?");
+eval("//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#archive-top-filters\").slideToggle(400);\n\t\t$(\"#archive-top-filters\").css(\"display\",\"flex\");\n\t});\n});\n\n\n//# sourceURL=webpack:///./js/filters.js?");
 
 /***/ }),
 
@@ -213,9 +213,9 @@ eval("/* Select variation buttons on product page */\n\njQuery(function($){\n\n 
   !*** ./scss/style.scss ***!
   \*************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/style.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Invalid CSS after \\\"      }\\\": expected \\\"}\\\", was \\\"<<<<<<< HEAD\\\"\\n        on line 98 of scss/woocommerce/product-page.scss\\n        from line 11 of scss/style.scss\\n>>       }\\n\\n   -------^\\n\\n    at /Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/webpack/lib/NormalModule.js:316:20\\n    at /Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at context.callback (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\\n    at Object.callback (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/sass-loader/dist/index.js:62:7)\\n    at Object.done [as callback] (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/neo-async/async.js:8069:18)\\n    at options.error (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/node-sass/lib/index.js:293:32)\");\n\n//# sourceURL=webpack:///./scss/style.scss?");
 
 /***/ })
 

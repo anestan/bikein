@@ -22,12 +22,11 @@
       }
     }
 
-
     .summary {
       width: 43%;
       .price {
         bdi {
-          font-size: 34px;
+          font-size: $h4-font-size;
           color: $black;
         }
       }
@@ -98,14 +97,15 @@
         }
       }
 
-      .product_meta {    
-          *{
-            color: $darkgray;
-          }
+      .product_meta {
+        border-top: 0;
 
-          a {
-            font-weight: 500;
-          }
+        *{
+          color: $darkergray;
+          font-size: $font-size-small;
+          font-weight: $font-weight-light;
+          text-decoration: none;
+        }
       }
     }
 
@@ -121,6 +121,20 @@
       }
     }
   }
+
+  .tabs {
+    li {
+      &.active {
+        background-color: $lightgray;
+        transition: all 0.2s ease;
+        font-weight: $font-weight-normal-bold;
+      }
+
+      a {
+        padding: 1em;
+      }
+    }
+  }
 }
 
 
@@ -131,19 +145,25 @@
 /* by default all divs are hidden */
 .custom_option {
   display: none;
-  border: 2px solid #ccc;
-  margin-right: 5px;
-  padding: 2px 5px;
+  border: 1px solid $gray;
+  margin: 5px 5px 0 0;
+  padding: 7px 14px;
   cursor: pointer;
-}
+  background-color: $white;
+  color: $darkgray;
+  border-radius: 6px;
+  transition: 0.2s ease;
 
-/* show only divs with class "is-visible" */
-.custom_option.is-visible {
-  display:inline-block;
-}
-
-/* adds the style to the selected div */
-.custom_option.on {
-  background-color: #777;
-  color: white;
+  &:hover {
+    background-color: $lightgray;
+    transition: 0.2s ease;
+  }
+  &.is-visible {
+    display:inline-block;
+  }
+  &.on {
+    background-color: $orange;
+    color: $white;
+    border-color: $orange;
+  }
 }
