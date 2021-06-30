@@ -53,9 +53,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<span class="selling-point-title">
           <?php echo get_theme_mod( 'header_selling_block_1'); ?>
 		</span>
-          <span class="selling-point-subtitle">
-            <?php echo get_theme_mod( 'header_selling_subtitle_1'); ?>
-          </span>
         </p>
     </div>
 
@@ -65,9 +62,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  <span class="selling-point-title">
           	<?php echo get_theme_mod( 'header_selling_block_2'); ?>
 		  </span>
-          <span class="selling-point-subtitle">
-            <?php echo get_theme_mod( 'header_selling_subtitle_2'); ?>
-          </span>
         </p>
     </div>
 
@@ -78,9 +72,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  <span class="selling-point-title">
           	<?php echo get_theme_mod( 'header_selling_block_3'); ?>
 		  </span>
-          <span class="selling-point-subtitle">
-            <?php echo get_theme_mod( 'header_selling_subtitle_3'); ?>
-          </span>
         </p>
     </div>
 </div>

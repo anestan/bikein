@@ -132,6 +132,50 @@ defined( 'ABSPATH' ) || exit;
 	</div>
 	<!-- Cart proceed to checkout End -->
 
+
+
+	<!-- Selling points -->
+	<div class="selling-points-cart">
+		<div class="cart-selling-point">
+			<i class="<?php echo get_theme_mod( 'header_selling_icon_1'); ?>"></i>
+			<p class="selling-point-wrapper">
+			<span class="selling-point-title">
+			<?php echo get_theme_mod( 'header_selling_block_1'); ?>
+			</span>
+			</p>
+		</div>
+
+		<div class="cart-selling-point">
+			<i class="<?php echo get_theme_mod( 'header_selling_icon_2'); ?>"></i>
+			<p class="selling-point-wrapper">
+			<span class="selling-point-title">
+				<?php echo get_theme_mod( 'header_selling_block_2'); ?>
+			</span>
+			</p>
+		</div>
+	</div>
+	<!-- Selling points end -->
+
+
+	<hr />
+
+
+	<!-- Terms -->
+	<div class="terms">
+		<div class="terms">
+			<?php 
+				$terms = get_permalink( wc_terms_and_conditions_page_id() );
+				$policy = get_permalink( get_option( 'wp_page_for_privacy_policy' )  );
+			?>
+			<p> <a href="<?php echo $terms ?>">Handelsbetingelser</a> </p>
+		</div>
+		<div class="policy">
+			<p> <a href="<?php echo $policy ?>">Privatlivspolitik</a> </p>
+		</div>
+
+	</div>
+	<!-- Terms end -->
+
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
 
 </div>
