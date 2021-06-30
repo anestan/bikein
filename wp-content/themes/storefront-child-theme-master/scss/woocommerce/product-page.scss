@@ -22,7 +22,6 @@
       }
     }
 
-
     .summary {
       width: 43%;
       .price {
@@ -98,8 +97,15 @@
         }
       }
 
-      .product_meta *{
-        color: $darkergray;
+      .product_meta {
+        border-top: 0;
+
+        *{
+          color: $darkergray;
+          font-size: $font-size-small;
+          font-weight: $font-weight-light;
+          text-decoration: none;
+        }
       }
     }
 
@@ -115,6 +121,20 @@
       }
     }
   }
+
+  .tabs {
+    li {
+      &.active {
+        background-color: $lightgray;
+        transition: all 0.2s ease;
+        font-weight: $font-weight-normal-bold;
+      }
+
+      a {
+        padding: 1em;
+      }
+    }
+  }
 }
 
 
@@ -125,7 +145,7 @@
 /* by default all divs are hidden */
 .custom_option {
   display: none;
-  border: 2px solid $orange;
+  border: 1px solid $gray;
   margin: 5px 5px 0 0;
   padding: 7px 14px;
   cursor: pointer;
@@ -135,7 +155,8 @@
   transition: 0.2s ease;
 
   &:hover {
-    background-color: #FFF8EB;
+    background-color: $lightgray;
+    transition: 0.2s ease;
   }
   &.is-visible {
     display:inline-block;
@@ -143,16 +164,6 @@
   &.on {
     background-color: $orange;
     color: $white;
+    border-color: $orange;
   }
 }
-
-// /* show only divs with class "is-visible" */
-// .custom_option.is-visible {
-//   display:inline-block;
-// }
-//
-// /* adds the style to the selected div */
-// .custom_option.on {
-//   background-color: $orange;
-//   color: $white;
-// }
