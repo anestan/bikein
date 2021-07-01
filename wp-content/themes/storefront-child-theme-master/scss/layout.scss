@@ -17,3 +17,7 @@
     max-width: 1400px !important;
     margin: auto;
   }
+
+input {
+  border-radius: $global-radius;
+}

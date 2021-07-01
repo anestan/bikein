@@ -40,6 +40,9 @@ h5 {
   max-width: 1400px !important;
   margin: auto; }
 
+input {
+  border-radius: 3px; }
+
 .topbar {
   min-height: 50px;
   background-color: #dbdbdb;
