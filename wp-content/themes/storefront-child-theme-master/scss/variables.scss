@@ -2,7 +2,7 @@
 // Colors
 $lightgray: #f9f9f9;
 $gray: #dbdbdb;
-$darkergray:#999999;
+$darkergray:#C2C2C2;
 $darkgray: #404040;
 $black: #000000;
 $white: #ffffff;
@@ -14,6 +14,11 @@ $red: rgba(228,55,51,0.8);
 // Hover
 $orange-hover: #f5a103;
 
+// Animation duration on eg. hover
+* {
+  transition: all 0.2s ease;
+}
+
 
 // Font
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
@@ -23,6 +28,8 @@ $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-normal-bold: 500;
 $font-weight-bold: 700;
+
+$uppercase: uppercase;
 
 $line-height-base: 1.5;
 

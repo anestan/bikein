@@ -59,10 +59,7 @@
       float: left;
       clear: none;
     }
-
   }
-
-
 }
 
 
@@ -71,11 +68,11 @@
 .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
     display: none;
   }
-  
+
   .woocommerce-checkout #content {
     margin-top: 60px;
   }
-  
+
   .woocommerce-checkout #header-nav {
     height: 0;
     display: flex;
@@ -84,45 +81,45 @@
     padding: 0 60px;
     border-bottom: 1px solid #EFEFEF;
   }
-  
+
   .woocommerce-checkout .navigation-header-content {
     margin: 0;
   }
-  
+
   .form-row input, .form-row textarea, .form-row select {
        border-radius: 10px;
     }
-  
+
   input[type='text'], input[type='number'], input[type='email'], input[type='tel'], input[type='url'], input[type='password'], input[type='search'], textarea, .input-text {
-       background-color: #FFF;
+       background-color: transparent;
        box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.125);
     }
-  
+
   input[type='text']:focus, input[type='number']:focus, input[type='email']:focus, input[type='tel']:focus, input[type='url']:focus, input[type='password']:focus, input[type='search']:focus, textarea:focus, .input-text:focus {
        background-color: #f1f1f1;
        outline: none;
     }
-  
+
   .form-row.woocommerce-validated input.input-text {
       box-shadow: inset 0px 0px 0px 2px rgba(87, 155, 83, 0.8);
     }
-  
+
   /* Invalid input border - Checkout */
     .form-row.woocommerce-invalid input.input-text {
        box-shadow: inset 0px 0px 1px 1px #e2401c;
     }
-  
+
   /* Checkout - DAWA suggestions */
   .dawa-autocomplete-suggestion {
     list-style-type: none;
   }
-  
+
   .woocommerce-input-wrapper ul {
     margin: 0px;
   }
-  
+
   /* Checkout CVR button - CVR fetching status */
-  
+
   button#vatButton {
     padding: 0.4180469716em 0.71575em;
     font-size: 12px;
@@ -130,7 +127,7 @@
     margin-top: 10px;
     border-radius: 10px;
   }
-  
+
   .button.default {
     background-color: #579b53;
   }
