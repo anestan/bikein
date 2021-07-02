@@ -919,7 +919,10 @@ span.select2.select2-container.select2-container--default * {
       font-weight: 500; }
   .woocommerce-cart .col-cart-two {
     float: right;
-    width: 33%; }
+    width: 40%;
+    padding: 6em; }
+    .woocommerce-cart .col-cart-two h2 {
+      font-weight: 500; }
   .woocommerce-cart .coupons {
     margin-top: 40px; }
   .woocommerce-cart .cart-collaterals .cart_totals, .woocommerce-cart .cart-collaterals .shipping_calculator {

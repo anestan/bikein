@@ -84,7 +84,12 @@
 
   .col-cart-two {
     float: right;
-    width: 33%;
+    width: 40%;
+    padding: 6em;
+
+    h2 {
+      font-weight: $font-weight-normal-bold;
+    }
   }
 
   .coupons {
