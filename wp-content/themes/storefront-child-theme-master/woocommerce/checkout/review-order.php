@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <div class="shop_table woocommerce-checkout-review-order-table">
-	
+
 	<!-- Shipping -->
 	<div class="cart-delivery">
 		<?php
@@ -42,8 +42,6 @@ defined( 'ABSPATH' ) || exit;
 		?>
 	</div>
 
-	<hr />
-
 	<!-- Coupon -->
 	<div class="cart-coupon">
 		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
@@ -54,7 +52,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php endforeach; ?>
 	</div>
 
-	
+
 
 	<!-- Fee -->
 	<div class="cart-fee">
@@ -103,8 +101,6 @@ defined( 'ABSPATH' ) || exit;
 		<div><?php wc_cart_totals_order_total_html(); ?></div>
 	</div>
 
-	<hr />
-
 	<!-- Products -->
 	<?php
 		do_action( 'woocommerce_review_order_before_cart_contents' );
@@ -115,12 +111,12 @@ defined( 'ABSPATH' ) || exit;
 			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 				?>
 				<div class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-					
+
 					<div class="product-image">
 						<?php $thumbnail = $_product->get_image(); echo $thumbnail;
 						?>
 					</div>
-					
+
 					<div class="product-name">
 						<?php echo "<p>" . apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' . "</p>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</div>
@@ -145,7 +141,7 @@ defined( 'ABSPATH' ) || exit;
 		?>
 
 
-<hr />
+
 
 	<!-- Additional fields -->
 	<div class="woocommerce-additional-fields">
