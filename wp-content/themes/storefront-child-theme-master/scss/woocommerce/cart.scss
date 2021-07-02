@@ -105,6 +105,31 @@
       @include flexbox;
       justify-content: space-between;
     }
+
+    .cart-proceed-to-checkout {
+      margin-top: 1.5em;
+    }
+
+    .cart-selling-point {
+      @include flexbox;
+      margin-bottom: 1em;
+
+      i {
+        margin-right: 0.5em;
+        color: $darkgray;
+      }
+      p {
+        margin: 0;
+        color: $darkgray;
+      }
+    }
+
+    .terms-wrapper {
+      @include flexbox;
+      .terms  {
+        margin-right: 1em;
+      }
+    }
   }
 
   .coupons {

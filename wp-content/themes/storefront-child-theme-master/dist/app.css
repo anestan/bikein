@@ -936,6 +936,23 @@ span.select2.select2-container.select2-container--default * {
       display: flex;
       align-items: center;
       justify-content: space-between; }
+    .woocommerce-cart .col-cart-two .cart-proceed-to-checkout {
+      margin-top: 1.5em; }
+    .woocommerce-cart .col-cart-two .cart-selling-point {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em; }
+      .woocommerce-cart .col-cart-two .cart-selling-point i {
+        margin-right: 0.5em;
+        color: #404040; }
+      .woocommerce-cart .col-cart-two .cart-selling-point p {
+        margin: 0;
+        color: #404040; }
+    .woocommerce-cart .col-cart-two .terms-wrapper {
+      display: flex;
+      align-items: center; }
+      .woocommerce-cart .col-cart-two .terms-wrapper .terms {
+        margin-right: 1em; }
   .woocommerce-cart .coupons {
     margin-top: 40px; }
   .woocommerce-cart .cart-collaterals .cart_totals, .woocommerce-cart .cart-collaterals .shipping_calculator {

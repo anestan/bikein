@@ -161,7 +161,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 	<!-- Terms -->
-	<div class="terms">
+	<div class="terms-wrapper">
 		<div class="terms">
 			<?php
 				$terms = get_permalink( wc_terms_and_conditions_page_id() );
