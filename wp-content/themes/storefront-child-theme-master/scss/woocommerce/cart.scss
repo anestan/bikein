@@ -1,6 +1,9 @@
 /* Cart */
 .woocommerce-cart {
-
+  button, .checkout-button {
+    text-transform: uppercase;
+    font-weight: $font-weight-normal-bold;
+  }
   //display none on these elements
   .storefront-breadcrumb, #update_cart, #post-7 .entry-title  {
     display: none;
@@ -87,6 +90,11 @@
     width: 40%;
     padding: 6em;
 
+    .cart-overview {
+      text-transform: uppercase;
+      font-weight: $font-weight-normal-bold;
+    }
+
     h2 {
       font-weight: $font-weight-normal-bold;
     }
@@ -106,8 +114,21 @@
       justify-content: space-between;
     }
 
+    .woocommerce-shipping-methods, .woocommerce-shipping-destination, .shipping-calculator-button {
+      text-transform: none;
+      font-weight: $font-weight-normal;
+    }
+
     .cart-proceed-to-checkout {
       margin-top: 1.5em;
+      .checkout-button {
+        background-color: $green;
+        font-size: $h5-font-size;
+
+        &:hover {
+          background-color: $green-hover;
+        }
+      }
     }
 
     .cart-selling-point {

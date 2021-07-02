@@ -872,6 +872,9 @@ span.select2.select2-container.select2-container--default * {
 .woocommerce-cart {
   /* Col for cart */
   /* TEMP - remove page titel cart */ }
+  .woocommerce-cart button, .woocommerce-cart .checkout-button {
+    text-transform: uppercase;
+    font-weight: 500; }
   .woocommerce-cart .storefront-breadcrumb, .woocommerce-cart #update_cart, .woocommerce-cart #post-7 .entry-title {
     display: none; }
   .woocommerce-cart .col-cart-one {
@@ -924,6 +927,9 @@ span.select2.select2-container.select2-container--default * {
     float: right;
     width: 40%;
     padding: 6em; }
+    .woocommerce-cart .col-cart-two .cart-overview {
+      text-transform: uppercase;
+      font-weight: 500; }
     .woocommerce-cart .col-cart-two h2 {
       font-weight: 500; }
     .woocommerce-cart .col-cart-two p {
@@ -936,8 +942,16 @@ span.select2.select2-container.select2-container--default * {
       display: flex;
       align-items: center;
       justify-content: space-between; }
+    .woocommerce-cart .col-cart-two .woocommerce-shipping-methods, .woocommerce-cart .col-cart-two .woocommerce-shipping-destination, .woocommerce-cart .col-cart-two .shipping-calculator-button {
+      text-transform: none;
+      font-weight: 400; }
     .woocommerce-cart .col-cart-two .cart-proceed-to-checkout {
       margin-top: 1.5em; }
+      .woocommerce-cart .col-cart-two .cart-proceed-to-checkout .checkout-button {
+        background-color: rgba(66, 162, 27, 0.73);
+        font-size: 1.25rem; }
+        .woocommerce-cart .col-cart-two .cart-proceed-to-checkout .checkout-button:hover {
+          background-color: rgba(66, 162, 27, 0.9); }
     .woocommerce-cart .col-cart-two .cart-selling-point {
       display: flex;
       align-items: center;
