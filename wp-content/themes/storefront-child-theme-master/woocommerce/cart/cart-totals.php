@@ -25,6 +25,8 @@ defined( 'ABSPATH' ) || exit;
 	<h2><?php esc_html_e( 'Ordreoverblik', 'woocommerce' ); ?></h2>
 	<p><?php esc_html_e( 'Din bestilling er først bindende, når vi har bekræftet din ordre.', 'woocommerce' ); ?></p>
 
+	<hr/>
+
 	<!-- Cart overview -->
 	<div class="cart-overview">
 
@@ -34,8 +36,6 @@ defined( 'ABSPATH' ) || exit;
 				<div><?php wc_cart_totals_subtotal_html(); ?></div>
 		</div>
 
-		<hr />
-
 		<!-- Coupon -->
 		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
 			<div class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
@@ -44,8 +44,8 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 		<?php endforeach; ?>
 
-		
-		<hr />
+
+		<hr/>
 
 
 		<!-- Shipping -->
@@ -163,7 +163,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- Terms -->
 	<div class="terms">
 		<div class="terms">
-			<?php 
+			<?php
 				$terms = get_permalink( wc_terms_and_conditions_page_id() );
 				$policy = get_permalink( get_option( 'wp_page_for_privacy_policy' )  );
 			?>

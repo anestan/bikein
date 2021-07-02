@@ -90,6 +90,21 @@
     h2 {
       font-weight: $font-weight-normal-bold;
     }
+
+    p {
+      font-size: $font-size-small;
+      color: $darkergray-2;
+    }
+
+    hr {
+      margin: 1.5em 0;
+      background-color: $lightergray;
+    }
+
+    .cart-subtotal, .order-total {
+      @include flexbox;
+      justify-content: space-between;
+    }
   }
 
   .coupons {

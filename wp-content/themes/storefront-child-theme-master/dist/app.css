@@ -43,6 +43,9 @@ h5 {
 input {
   border-radius: 3px; }
 
+hr {
+  margin: 0; }
+
 .topbar {
   min-height: 50px;
   background-color: #dbdbdb;
@@ -923,6 +926,16 @@ span.select2.select2-container.select2-container--default * {
     padding: 6em; }
     .woocommerce-cart .col-cart-two h2 {
       font-weight: 500; }
+    .woocommerce-cart .col-cart-two p {
+      font-size: 0.75rem;
+      color: #8F8F8F; }
+    .woocommerce-cart .col-cart-two hr {
+      margin: 1.5em 0;
+      background-color: #EBEBEB; }
+    .woocommerce-cart .col-cart-two .cart-subtotal, .woocommerce-cart .col-cart-two .order-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
   .woocommerce-cart .coupons {
     margin-top: 40px; }
   .woocommerce-cart .cart-collaterals .cart_totals, .woocommerce-cart .cart-collaterals .shipping_calculator {
