@@ -973,44 +973,6 @@ span.select2.select2-container.select2-container--default * {
     width: 100% !important; }
 
 /* ******* Checkout ********* */
-@media (min-width: 768px) {
-  .woocommerce-billing-fields__field-wrapper #billing_first_name_field {
-    width: 48%;
-    margin-right: 2%; }
-  .woocommerce-billing-fields__field-wrapper #billing_last_name_field {
-    width: 48%; }
-  .woocommerce-billing-fields__field-wrapper #billing_vat_field {
-    width: 48%;
-    float: left;
-    margin-right: 2%; }
-  .woocommerce-billing-fields__field-wrapper #billing_company_field {
-    width: 48%;
-    float: right;
-    clear: none; }
-  .woocommerce-billing-fields__field-wrapper #billing_postcode_field {
-    width: 48%;
-    float: left;
-    margin-right: 2%; }
-  .woocommerce-billing-fields__field-wrapper #billing_city_field {
-    width: 48%;
-    float: left;
-    clear: none;
-    margin-right: 2%; }
-  .woocommerce-billing-fields__field-wrapper #billing_country_field {
-    width: 48%; }
-  .woocommerce-billing-fields__field-wrapper #billing_state_field {
-    width: 48%;
-    float: left;
-    clear: none; }
-  .woocommerce-billing-fields__field-wrapper #billing_phone_field {
-    width: 48%;
-    float: left;
-    margin-right: 2%; }
-  .woocommerce-billing-fields__field-wrapper #billing_email_field {
-    width: 48%;
-    float: left;
-    clear: none; } }
-
 .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
   display: none; }
 

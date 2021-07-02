@@ -48,33 +48,34 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
 	<?php endif; ?>
-	
+
 	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-	
-	<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?>
-		<span class="order_review_count">
-			<?php 
-				global $woocommerce;
-				$cart_count = $woocommerce->cart->cart_contents_count;
-				if ( $cart_count <= 1 ) {
-					echo "(" . $woocommerce->cart->cart_contents_count . " vare)";
-				}
-				else {
-					echo "(" . $woocommerce->cart->cart_contents_count . " varer)";
-				}
-			 ?>
-		</span>
-	</h3>
 
-	<p class="order_review_subtitle"><?php esc_html_e( 'Din bestilling er først bindende, når vi har bekræftet din ordre.', 'woocommerce' ); ?>
-	
-	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-	<div id="order_review" class="woocommerce-checkout-review-order">
-		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-	</div>
+		
+		<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
+		<div id="order_review" class="woocommerce-checkout-review-order">
+			<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?>
+				<p class="order_review_count">
+					<?php
+						global $woocommerce;
+						$cart_count = $woocommerce->cart->cart_contents_count;
+						if ( $cart_count <= 1 ) {
+							echo "(" . $woocommerce->cart->cart_contents_count . " vare)";
+						}
+						else {
+							echo "(" . $woocommerce->cart->cart_contents_count . " varer)";
+						}
+					 ?>
+				</p>
+			</h3>
+
+			<p class="order_review_subtitle"><?php esc_html_e( 'Din bestilling er først bindende, når vi har bekræftet din ordre.', 'woocommerce' ); ?>
+			<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+		</div>
+
+		<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
 </form>
 
