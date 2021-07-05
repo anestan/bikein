@@ -213,9 +213,9 @@ eval("/* Select variation buttons on product page */\n\njQuery(function($){\n\n 
   !*** ./scss/style.scss ***!
   \*************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/style.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Undefined variable: \\\"$lightergray\\\".\\n        on line 33 of scss/woocommerce/checkout.scss\\n        from line 15 of scss/style.scss\\n>>         border-top: 1px solid $lightergray;\\n\\n   ------------------------------^\\n\\n    at /Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/webpack/lib/NormalModule.js:316:20\\n    at /Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at context.callback (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\\n    at Object.callback (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/sass-loader/dist/index.js:62:7)\\n    at Object.done [as callback] (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/neo-async/async.js:8069:18)\\n    at options.error (/Users/nikolaj/Sites/www/webshop-test/wp-content/themes/storefront-child-theme-master/node_modules/node-sass/lib/index.js:293:32)\");\n\n//# sourceURL=webpack:///./scss/style.scss?");
 
 /***/ })
 

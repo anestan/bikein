@@ -117,20 +117,40 @@ defined( 'ABSPATH' ) || exit;
 						?>
 					</div>
 
-					<div class="product-name">
-						<?php echo "<p>" . apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' . "</p>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					</div>
+					<div class="name-quantity">
+						<div class="product-name">
+							<?php echo "<p>" . apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' . "</p>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						</div>
 
-					<div class="product-quantity">
-						<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <span>Antal: <strong class="product-quantity">' . sprintf( '%s', $cart_item['quantity'] ) . '</strong></span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-			        </div>
+						<div class="product-quantity">
+							<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <span>Antal: <strong class="product-quantity">' . sprintf( '%s', $cart_item['quantity'] ) . '</strong></span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				     </div>
+					</div>
 
 					<div clas="product-variable">
 						<?php echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</div>
 
-					<div class="product-price">
-						<?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+					<div class="price-remove">
+						<div class="product-price">
+							<?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						</div>
+
+						<div class="product-remove">
+							<?php
+								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+								'woocommerce_cart_item_remove_link',
+									sprintf(
+									'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+										esc_html__( 'Remove this item', 'woocommerce' ),
+										esc_attr( $product_id ),
+										esc_attr( $_product->get_sku() )
+									),
+								$cart_item_key
+								);
+							?>
+						</div>
 					</div>
 			</div>
 				<?php

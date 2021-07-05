@@ -29,15 +29,27 @@
 
       .cart_item {
         @include flexbox;
-        justify-content: space-between;
-        border-top: 1px solid $lighter-gray;
-        height: 10em;
+        justify-content: flex-start;
+        border-top: 1px solid $lightergray;
+        padding: 1.5em 0;
+
+        p {
+          margin: 0;
+        }
 
         .product-image img {
-          width: 9em;
-          height: auto;
+          max-width: 5em;
+          max-height: 5em;
           object-fit: contain;
           margin: 0;
+        }
+
+        .name-quantity {
+          margin-left: 1em;
+        }
+
+        .price-remove, .product-remove a {
+          margin-left: auto;
         }
       }
 
@@ -47,13 +59,6 @@
       }
     }
   }
-
-
-
-
-
-
-
 }
 
 
