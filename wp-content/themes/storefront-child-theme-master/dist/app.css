@@ -992,12 +992,14 @@ span.select2.select2-container.select2-container--default * {
   .woocommerce-checkout #order_review .shop_table .cart_item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-top: 1px solid #EBEBEB;
-    height: 10em; }
+    padding: 1.5em 0; }
+    .woocommerce-checkout #order_review .shop_table .cart_item p {
+      margin: 0; }
     .woocommerce-checkout #order_review .shop_table .cart_item .product-image img {
-      width: 9em;
-      height: auto;
+      max-width: 5em;
+      max-height: 5em;
       object-fit: contain;
       margin: 0; }
   .woocommerce-checkout #order_review .shop_table .woocommerce-additional-fields {

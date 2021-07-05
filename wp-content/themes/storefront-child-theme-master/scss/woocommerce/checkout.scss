@@ -29,13 +29,17 @@
 
       .cart_item {
         @include flexbox;
-        justify-content: space-between;
+        justify-content: flex-start;
         border-top: 1px solid $lightergray;
-        height: 10em;
+        padding: 1.5em 0;
+
+        p {
+          margin: 0;
+        }
 
         .product-image img {
-          width: 9em;
-          height: auto;
+          max-width: 5em;
+          max-height: 5em;
           object-fit: contain;
           margin: 0;
         }
