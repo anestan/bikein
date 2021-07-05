@@ -38,7 +38,7 @@
         .woocommerce-price-suffix {
           width: 100%;
           font-size: $font-size-small;
-          color: $darkergray;
+          color: $darker-gray;
         }
       }
 
@@ -101,7 +101,7 @@
         border-top: 0;
 
         *{
-          color: $darkergray;
+          color: $darker-gray;
           font-size: $font-size-small;
           font-weight: $font-weight-light;
           text-decoration: none;
@@ -125,7 +125,7 @@
   .tabs {
     li {
       &.active {
-        background-color: $lightgray;
+        background-color: $light-gray;
         transition: all 0.2s ease;
         font-weight: $font-weight-normal-bold;
       }
@@ -150,12 +150,12 @@
   padding: 7px 14px;
   cursor: pointer;
   background-color: $white;
-  color: $darkgray;
+  color: $light-black;
   border-radius: 6px;
   transition: 0.2s ease;
 
   &:hover {
-    background-color: $lightgray;
+    background-color: $light-gray;
     transition: 0.2s ease;
   }
   &.is-visible {

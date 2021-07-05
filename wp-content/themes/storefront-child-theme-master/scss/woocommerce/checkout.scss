@@ -6,7 +6,7 @@
     width: 60%;
     margin-right: 0;
     padding: 6em;
-    background-color: $lightgray;
+    background-color: $light-gray;
   }
 
   #order_review {
@@ -20,7 +20,7 @@
     .shop_table {
       hr {
         margin: 1.5em 0;
-        background-color: $lightergray;
+        background-color: $lighter-gray;
       }
 
       .order-total {
@@ -30,7 +30,7 @@
       .cart_item {
         @include flexbox;
         justify-content: space-between;
-        border-top: 1px solid $lightergray;
+        border-top: 1px solid $lighter-gray;
         height: 10em;
 
         .product-image img {
@@ -43,7 +43,7 @@
 
       .woocommerce-additional-fields {
         padding-top: 1.5em;
-        border-top: 1px solid $lightergray;
+        border-top: 1px solid $lighter-gray;
       }
     }
   }
