@@ -14,7 +14,7 @@
     float: left;
     width: 60%;
     padding: 6em;
-    background-color: $lightgray;
+    background-color: $light-gray;
 
     .cart-header {
       .cart-product-count {
@@ -37,8 +37,8 @@
       }
 
       .product-thumbnail img {
-        max-width: 9em;
-        height: auto;
+        max-width: 5em;
+        height: 5em;
         object-fit: contain;
         margin: 0;
       }
@@ -58,7 +58,7 @@
           }
         }
         .product-price {
-          color: $darkgray;
+          color: $light-black;
         }
       }
 
@@ -70,7 +70,7 @@
       .product-remove {
         .remove::before {
           content: "\f00d";
-          color: $darkergray;
+          color: $darker-gray;
         }
       }
     }
@@ -101,12 +101,12 @@
 
     p {
       font-size: $font-size-small;
-      color: $darkergray-2;
+      color: $dark-gray;
     }
 
     hr {
       margin: 1.5em 0;
-      background-color: $lightergray;
+      background-color: $lighter-gray;
     }
 
     .cart-subtotal, .order-total {
@@ -137,11 +137,11 @@
 
       i {
         margin-right: 0.5em;
-        color: $darkgray;
+        color: $light-black;
       }
       p {
         margin: 0;
-        color: $darkgray;
+        color: $light-black;
       }
     }
 
@@ -159,11 +159,17 @@
 
 
 
-/* TEMP - remove page titel cart */
+  /* TEMP - remove page titel cart */
 
-.cart-collaterals .cart_totals, .cart-collaterals .shipping_calculator {
-  width: 100% !important;
-}
+  .cart-collaterals .cart_totals, .cart-collaterals .shipping_calculator {
+    width: 100% !important;
+  }
 
+  /* TEMP - img styling cross sell */
+  .cross-sells {
+    img {
+      max-width: 5em;
+    }
+  }
 
 }

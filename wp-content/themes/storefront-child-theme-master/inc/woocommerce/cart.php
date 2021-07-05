@@ -24,3 +24,15 @@ function sb_remove_item(){
   }
   add_action('wp_sb_remove_item', 'sb_remove_item');
 
+
+
+/* Reorder Cross Sell to woocommerce_after_cart_contents */
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+add_action( 'woocommerce_after_cart_contents', 'woocommerce_cross_sell_display' );
+
+/* Display Only 2 Cross Sells instead of default 3 */
+add_filter( 'woocommerce_cross_sells_total', 'change_cross_sells_product_number' );
+  
+function change_cross_sells_product_number( $columns ) {
+   return 2;
+}
