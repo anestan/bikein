@@ -59,14 +59,14 @@ dataLayer.push({
 
 
 	<div id="cart-overview">
-			
+
 		<div class="col-cart-one">
 
 			<!-- Cart Header -->
 			<div class="cart-header">
 				<!-- Product count -->
 				<div class="cart-product-count">
-					<?php 
+					<?php
 						global $woocommerce;
 						$cart_count = $woocommerce->cart->cart_contents_count;
 						if ( $cart_count <= 1 ) {
@@ -87,6 +87,7 @@ dataLayer.push({
 
 			<!-- Cart shop table -->
 
+      <div class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 			<?php
 			foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 				$_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
@@ -96,10 +97,8 @@ dataLayer.push({
 					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 				?>
 
-			<div class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-			
 				<div class="cart-shop-table">
-					
+
 					<!-- Product thumbnail -->
 					<div class="product-thumbnail">
 							<?php
@@ -196,14 +195,13 @@ dataLayer.push({
 							);
 						?>
 					</div>
-				
-				
+        </div>
+
 					<?php
 					}
 				}
 				?>
-				</div>
-			</div>
+      </div>
 			<!-- Cart shop table end -->
 
 			<?php do_action( 'woocommerce_cart_contents' ); ?>
@@ -239,17 +237,17 @@ dataLayer.push({
 		<!-- Col two -->
 		<div class="col-cart-two">
 			<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
-				<div class="cart-collaterals">
-					<?php
-						/**
-						 * Cart collaterals hook.
-						 *
-						 * @hooked woocommerce_cross_sell_display
-						 * @hooked woocommerce_cart_totals - 10
-						 */
-						do_action( 'woocommerce_cart_collaterals' );
-					?>
-				</div>
+			<div class="cart-collaterals">
+				<?php
+					/**
+					 * Cart collaterals hook.
+					 *
+					 * @hooked woocommerce_cross_sell_display
+					 * @hooked woocommerce_cart_totals - 10
+					 */
+					do_action( 'woocommerce_cart_collaterals' );
+				?>
+			</div>
 		</div>
 		<!-- Col two end -->
 
@@ -258,4 +256,3 @@ dataLayer.push({
 	<!-- Cart overview end -->
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
-	
