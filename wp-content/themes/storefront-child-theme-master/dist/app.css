@@ -1002,6 +1002,10 @@ span.select2.select2-container.select2-container--default * {
       max-height: 5em;
       object-fit: contain;
       margin: 0; }
+    .woocommerce-checkout #order_review .shop_table .cart_item .name-quantity {
+      margin-left: 1em; }
+    .woocommerce-checkout #order_review .shop_table .cart_item .price-remove, .woocommerce-checkout #order_review .shop_table .cart_item .product-remove a {
+      margin-left: auto; }
   .woocommerce-checkout #order_review .shop_table .woocommerce-additional-fields {
     padding-top: 1.5em;
     border-top: 1px solid #EBEBEB; }

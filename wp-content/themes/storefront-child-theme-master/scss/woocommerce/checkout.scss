@@ -43,6 +43,14 @@
           object-fit: contain;
           margin: 0;
         }
+
+        .name-quantity {
+          margin-left: 1em;
+        }
+
+        .price-remove, .product-remove a {
+          margin-left: auto;
+        }
       }
 
       .woocommerce-additional-fields {
@@ -51,13 +59,6 @@
       }
     }
   }
-
-
-
-
-
-
-
 }
 
 
