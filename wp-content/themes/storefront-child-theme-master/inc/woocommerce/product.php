@@ -30,6 +30,20 @@ function woo_related_products_limit() {
       return $args;
   }
 
+//Edit upsell column count
+
+add_action( 'init', 'bbloomer_remove_storefront_theme_upsells');
+
+function bbloomer_remove_storefront_theme_upsells() {
+remove_action( 'woocommerce_after_single_product_summary', 'storefront_upsell_display', 15 );
+}
+
+add_action( 'woocommerce_after_single_product_summary', 'bbloomer_woocommerce_output_upsells', 15 );
+
+function bbloomer_woocommerce_output_upsells() {
+woocommerce_upsell_display( 4,4 );
+}
+
 
 
 /* Replace variable price range with single variation price */
