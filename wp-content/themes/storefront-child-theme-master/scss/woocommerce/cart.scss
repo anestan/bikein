@@ -66,22 +66,6 @@
         margin-left: auto;
         margin-right: 2em;
       }
-
-      .product-remove {
-        .remove::before {
-          content: "\f00d";
-          color: $darker-gray;
-        }
-      }
-    }
-
-    .coupons {
-      input {
-        background-color: $gray;
-        box-shadow: none;
-        opacity: 0.3;
-        font-weight: $font-weight-normal-bold;
-      }
     }
   }
 
@@ -161,7 +145,6 @@
   }
 
 
-
   /* TEMP - remove page titel cart */
 
   .cart-collaterals .cart_totals, .cart-collaterals .shipping_calculator {
@@ -175,4 +158,32 @@
     }
   }
 
+}
+
+//Global styles
+a.remove::before {
+  content: "\f00d";
+  color: $darker-gray;
+}
+
+.coupons {
+  input {
+    background-color: $lighter-gray !important;
+    box-shadow: none !important;
+    opacity: 0.6;
+    font-weight: $font-weight-normal-bold;
+    padding: 10px;
+  }
+  button {
+    padding: 8px 15px;
+    border: 2px solid $darker-gray;
+    color: $darker-gray;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $darker-gray;
+      color: $light-gray;
+      border-color: $darker-gray;
+    }
+  }
 }
