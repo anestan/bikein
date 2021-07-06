@@ -1,12 +1,26 @@
 /* ******* Checkout ********* */
 
 .woocommerce-checkout {
+  .entry-header {
+    display: none;
+  }
 
   .col2-set {
     width: 60%;
     margin-right: 0;
     padding: 6em;
     background-color: $light-gray;
+
+    input {
+      background-color: $white;
+    }
+
+    .col-1 {
+      h3 {
+        font-size: $h3-font-size;
+        font-weight: $font-weight-normal-bold;
+      }
+    }
   }
 
   #order_review {
@@ -15,12 +29,37 @@
 
     #order_review_heading {
       float: none;
+      width: auto;
+      @include flexbox;
+      font-weight: $font-weight-normal-bold;
+      font-size: $h3-font-size;
+      line-height: 1;
+      margin-bottom: 0.5em;
+      padding-bottom: 0;
+
+
+      p {
+        margin: 0 0 0 0.9em;
+        font-size: $h5-font-size;
+      }
+    }
+
+    .order_review_subtitle {
+      font-size: $font-size-small;
+      color: $dark-gray;
     }
 
     .shop_table {
       hr {
         margin: 1.5em 0;
         background-color: $lighter-gray;
+      }
+
+      .cart-delivery, .cart-subtotal, .order-total {
+        @include flexbox;
+        justify-content: space-between;
+        font-weight: $font-weight-normal-bold;
+        text-transform: $uppercase;
       }
 
       .order-total {

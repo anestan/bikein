@@ -932,7 +932,10 @@ span.select2.select2-container.select2-container--default * {
       text-transform: uppercase;
       font-weight: 500; }
     .woocommerce-cart .col-cart-two h2 {
-      font-weight: 500; }
+      font-weight: 500;
+      font-size: 1.75rem;
+      line-height: 1;
+      margin-bottom: 0.5em; }
     .woocommerce-cart .col-cart-two p {
       font-size: 0.75rem;
       color: #8F8F8F; }
@@ -976,20 +979,48 @@ span.select2.select2-container.select2-container--default * {
     max-width: 5em; }
 
 /* ******* Checkout ********* */
+.woocommerce-checkout .entry-header {
+  display: none; }
+
 .woocommerce-checkout .col2-set {
   width: 60%;
   margin-right: 0;
   padding: 6em;
   background-color: #f9f9f9; }
+  .woocommerce-checkout .col2-set input {
+    background-color: #ffffff; }
+  .woocommerce-checkout .col2-set .col-1 h3 {
+    font-size: 1.75rem;
+    font-weight: 500; }
 
 .woocommerce-checkout #order_review {
   width: 40%;
   padding: 6em; }
   .woocommerce-checkout #order_review #order_review_heading {
-    float: none; }
+    float: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    padding-bottom: 0; }
+    .woocommerce-checkout #order_review #order_review_heading p {
+      margin: 0 0 0 0.9em;
+      font-size: 1.25rem; }
+  .woocommerce-checkout #order_review .order_review_subtitle {
+    font-size: 0.75rem;
+    color: #8F8F8F; }
   .woocommerce-checkout #order_review .shop_table hr {
     margin: 1.5em 0;
     background-color: #EBEBEB; }
+  .woocommerce-checkout #order_review .shop_table .cart-delivery, .woocommerce-checkout #order_review .shop_table .cart-subtotal, .woocommerce-checkout #order_review .shop_table .order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    text-transform: uppercase; }
   .woocommerce-checkout #order_review .shop_table .order-total {
     margin-bottom: 1.5em; }
   .woocommerce-checkout #order_review .shop_table .cart_item {
