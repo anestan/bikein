@@ -943,6 +943,14 @@ span.select2.select2-container.select2-container--default * {
       display: flex;
       align-items: center;
       justify-content: space-between; }
+    .woocommerce-cart .col-cart-two .order-total-price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .woocommerce-cart .col-cart-two .order-total-price .includes_tax {
+        font-size: 0.65rem;
+        text-transform: capitalize;
+        font-weight: 400; }
     .woocommerce-cart .col-cart-two .woocommerce-shipping-methods, .woocommerce-cart .col-cart-two .woocommerce-shipping-destination, .woocommerce-cart .col-cart-two .shipping-calculator-button {
       text-transform: none;
       font-weight: 400; }

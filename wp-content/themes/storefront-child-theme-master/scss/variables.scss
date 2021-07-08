@@ -26,6 +26,7 @@ $green-hover:rgba(66,162,27,0.9);
 // Font
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-small: $font-size-base * 0.75;
+$font-size-xtra-small: $font-size-base * 0.65;
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -33,6 +34,9 @@ $font-weight-normal-bold: 500;
 $font-weight-bold: 700;
 
 $uppercase: uppercase;
+$lowercase: lowercase;
+$capitalize: capitalize;
+
 
 $line-height-base: 1.5;
 
