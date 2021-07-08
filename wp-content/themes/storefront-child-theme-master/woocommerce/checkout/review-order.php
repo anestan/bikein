@@ -98,7 +98,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- Total -->
 	<div class="order-total">
 		<div><?php esc_html_e( 'Total', 'woocommerce' ); ?></div>
-		<div><?php wc_cart_totals_order_total_html(); ?></div>
+		<div class="order-total-price"><?php wc_cart_totals_order_total_html(); ?></div>
 	</div>
 
 	<!-- Products -->
