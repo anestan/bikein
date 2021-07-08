@@ -12,8 +12,9 @@
  *
  * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 3.8.0
+ * @version 5.2.0
  */
+
 
 defined( 'ABSPATH' ) || exit;
 ?>
@@ -119,7 +120,7 @@ defined( 'ABSPATH' ) || exit;
 
 					<div class="name-quantity">
 						<div class="product-name">
-							<?php echo "<p>" . apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' . "</p>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+							<?php echo "<p>" . wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) ) . '&nbsp;' . "</p>"; ?>
 						</div>
 
 						<div class="product-quantity">
