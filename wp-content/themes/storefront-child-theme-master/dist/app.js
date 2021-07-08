@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Hide cart form on Cart page\njQuery(function($){\n\n\tjQuery( document.body ).on( 'wc_cart_emptied', function(){\n\t\t$(\".woocommerce-cart .woocommerce-cart-form\").hide();\n\t});\n\n});\n\n//# sourceURL=webpack:///./js/cart_empty.js?");
+eval("// Hide cart form on Cart page\njQuery(function($){\n\n/* \tjQuery( document.body ).on( 'wc_cart_emptied', function(){\n\t\t$(\".woocommerce-cart .woocommerce-cart-form\").hide();\n\t}); */\n\n});\n\n//# sourceURL=webpack:///./js/cart_empty.js?");
 
 /***/ }),
 

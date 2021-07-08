@@ -990,14 +990,7 @@ a.remove::before {
   padding: 10px; }
 
 .coupons button {
-  padding: 8px 15px;
-  border: 2px solid #C2C2C2;
-  color: #C2C2C2;
-  background-color: transparent; }
-  .coupons button:hover {
-    background-color: #C2C2C2;
-    color: #f9f9f9;
-    border-color: #C2C2C2; }
+  padding: 8px 15px; }
 
 /* ******* Checkout ********* */
 .woocommerce-checkout .entry-header {

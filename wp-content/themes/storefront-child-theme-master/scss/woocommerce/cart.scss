@@ -188,14 +188,5 @@ a.remove::before {
   }
   button {
     padding: 8px 15px;
-    border: 2px solid $darker-gray;
-    color: $darker-gray;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $darker-gray;
-      color: $light-gray;
-      border-color: $darker-gray;
-    }
   }
 }
