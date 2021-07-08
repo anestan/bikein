@@ -1,12 +1,26 @@
 /* ******* Checkout ********* */
 
 .woocommerce-checkout {
+  .entry-header {
+    display: none;
+  }
 
   .col2-set {
     width: 60%;
     margin-right: 0;
     padding: 6em;
     background-color: $light-gray;
+
+    input {
+      background-color: $white;
+    }
+
+    .col-1 {
+      h3 {
+        font-size: $h3-font-size;
+        font-weight: $font-weight-normal-bold;
+      }
+    }
   }
 
   #order_review {
@@ -15,12 +29,37 @@
 
     #order_review_heading {
       float: none;
+      width: auto;
+      @include flexbox;
+      font-weight: $font-weight-normal-bold;
+      font-size: $h3-font-size;
+      line-height: 1;
+      margin-bottom: 0.5em;
+      padding-bottom: 0;
+
+
+      p {
+        margin: 0 0 0 0.9em;
+        font-size: $h5-font-size;
+      }
+    }
+
+    .order_review_subtitle {
+      font-size: $font-size-small;
+      color: $dark-gray;
     }
 
     .shop_table {
       hr {
         margin: 1.5em 0;
         background-color: $lighter-gray;
+      }
+
+      .cart-delivery, .cart-subtotal, .order-total {
+        @include flexbox;
+        justify-content: space-between;
+        font-weight: $font-weight-normal-bold;
+        text-transform: $uppercase;
       }
 
       .order-total {
@@ -31,7 +70,7 @@
         @include flexbox;
         justify-content: flex-start;
         border-top: 1px solid $lighter-gray;
-        padding: 1.5em 0;
+        padding: 1.7em 0;
 
         p {
           margin: 0;
@@ -46,16 +85,30 @@
 
         .name-quantity {
           margin-left: 1em;
+
+          .product-name {
+            text-transform: $uppercase;
+            font-weight: $font-weight-normal-bold;
+          }
         }
 
         .price-remove, .product-remove a {
           margin-left: auto;
+        }
+        .product-price {
+          font-weight: $font-weight-normal-bold;
         }
       }
 
       .woocommerce-additional-fields {
         padding-top: 1.5em;
         border-top: 1px solid $lighter-gray;
+      }
+    }
+
+    .woocommerce-terms-and-conditions-wrapper {
+      p {
+        font-size: $font-size-small;
       }
     }
   }
@@ -126,29 +179,20 @@
 
   button#vatButton {
     padding: 0.4180469716em 0.71575em;
-    font-size: 12px;
-    color: #ffffff;
+    font-size: $font-size-small;
+    color: $white;
     margin-top: 10px;
     border-radius: 10px;
   }
 
   .button.default {
-    background-color: #579b53;
-  }
-  .button.default:hover{
-    background-color: #3b6d39;
+    background-color: $green;
   }
   .button.failure {
-    background-color: #c60101;
-  }
-  .button.failure:hover {
-    background-color: #890101;
+    background-color: $red;
   }
   .button.success {
-    background-color: #aaaaaa;
-  }
-  .button.success:hover {
-    background-color: #666666;
+    background-color: $darker-gray;
   }
 
 
