@@ -1,0 +1,72 @@
+
+
+.shipmondo_guide_link, .shipmondo_range_helper_text
+{
+	font-style: italic;
+	font-size: 11px;
+}
+
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table {
+	border-spacing: 0;
+}
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table tbody tr th {
+	padding-left: 10px;
+}
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table tr.shipmondo_tr:nth-child(even) {
+	background: #e9e9e9;
+}
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table tr.shipmondo_tr:nth-child(odd) {
+	background: #dfdfdf;
+}
+
+.wp-admin .wrap.woocommerce table.form-table .save_and_addnew_wrapper {
+	padding: 20px 10px;
+	display: inline-block;
+}
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table .shipmondo_unit_td_wrapper {
+	padding: 15px 0;
+}
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table div.shipmondo_unit_wrapper {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	white-space: nowrap;
+}
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table .shipmondo_input_minimum {
+	width: 100%;
+}
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table div.shipmondo_unit_wrapper div.shipmondo_minimum_sign_wrapper,
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table div.shipmondo_unit_wrapper div.shipmondo_maximum_sign_wrapper {
+	display: inline;
+}
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table div.shipmondo_unit_wrapper div.shipmondo_minimum_sign_wrapper,
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table div.shipmondo_unit_wrapper div.shipmondo_maximum_sign_wrapper {
+	width: 17px;
+	float: none;
+}
+
+
+.wp-admin .wrap.woocommerce table.form-table table.shipmondo_table tr td div.shipmondo_cart_total_wrapper {
+	text-align: center;
+	width: calc(100% - 40px);
+	display: inline-block;
+}
+
+.error-range-row
+{
+	background-color: #FFA9A9 !important;
+}
+
+.Price_div, .Weight_div
+{
+	background: #dfdfdf;
+	width: 100%;
+}
+
