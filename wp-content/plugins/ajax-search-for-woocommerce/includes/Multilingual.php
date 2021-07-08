@@ -76,7 +76,7 @@ class Multilingual {
 	 * @return bool
 	 */
 	public static function isLangCode( $lang ) {
-		return ! empty( $lang ) && is_string( $lang ) && (bool) preg_match( '/^([a-z]{2,3})$|^([a-z]{2}\-[a-z]{4})$/', $lang );
+		return ! empty( $lang ) && is_string( $lang ) && (bool) preg_match( '/^([a-z]{2,3})$|^([a-z]{2}\-[a-z]{2,4})$/', $lang );
 	}
 
 	/**
@@ -207,7 +207,7 @@ class Multilingual {
 			$lang = pll_get_term_language($termID, 'slug');
 		}
 
-		// TranslatePress has no language relationship with the post, so we always return the default
+		// TranslatePress/qTranslate-XT has no language relationship with the post, so we always return the default
 		$lang = apply_filters( 'dgwt/wcas/multilingual/term-language', $lang, $termID, $taxonomy );
 
 		return $lang;
@@ -249,9 +249,11 @@ class Multilingual {
 	/**
 	 * Active languages
 	 *
+	 * @param bool $includeInvalid Also return invalid languages
+	 *
 	 * @return array
 	 */
-	public static function getLanguages() {
+	public static function getLanguages( $includeInvalid = false ) {
 
 		$langs = array();
 
@@ -260,7 +262,7 @@ class Multilingual {
 
 			if ( is_array( $wpmlLangs ) ) {
 				foreach ( $wpmlLangs as $langCode => $details ) {
-					if ( self::isLangCode( $langCode ) ) {
+					if ( self::isLangCode( $langCode ) || $includeInvalid ) {
 						$langs[] = strtolower( $langCode );
 					}
 				}
@@ -284,7 +286,7 @@ class Multilingual {
 			$langs[] = self::getDefaultLanguage();
 		}
 
-		$langs = apply_filters( 'dgwt/wcas/multilingual/languages', $langs );
+		$langs = apply_filters( 'dgwt/wcas/multilingual/languages', $langs, $includeInvalid );
 
 		return $langs;
 

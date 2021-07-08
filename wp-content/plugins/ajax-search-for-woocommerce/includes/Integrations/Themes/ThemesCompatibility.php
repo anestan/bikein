@@ -47,118 +47,143 @@ class ThemesCompatibility {
 	 */
 	public function supportedThemes() {
 		return array(
-			'storefront' => array(
+			'storefront'    => array(
 				'slug' => 'storefront',
 				'name' => 'Storefront',
 			),
-			'flatsome'   => array(
+			'flatsome'      => array(
 				'slug' => 'flatsome',
 				'name' => 'Flatsome',
 			),
-			'astra'      => array(
+			'astra'         => array(
 				'slug' => 'astra',
 				'name' => 'Astra',
 			),
-			'thegem'     => array(
+			'thegem'        => array(
 				'slug' => 'thegem',
 				'name' => 'TheGem',
 			),
-			'impreza'    => array(
+			'impreza'       => array(
 				'slug' => 'impreza',
 				'name' => 'Impreza',
 			),
-			'woodmart'   => array(
+			'woodmart'      => array(
 				'slug' => 'woodmart',
 				'name' => 'Woodmart',
 			),
-			'enfold'     => array(
+			'enfold'        => array(
 				'slug' => 'enfold',
 				'name' => 'Enfold',
 			),
-			'shopkeeper' => array(
+			'shopkeeper'    => array(
 				'slug' => 'shopkeeper',
 				'name' => 'Shopkeeper',
 			),
-			'the7'       => array(
+			'the7'          => array(
 				'slug' => 'the7',
 				'name' => 'The7',
 			),
-			'dt-the7'    => array(
+			'dt-the7'       => array(
 				'slug' => 'dt-the7',
 				'name' => 'The7',
 			),
-			'avada'      => array(
+			'avada'         => array(
 				'slug' => 'avada',
 				'name' => 'Avada',
 			),
-			'shop-isle'  => array(
+			'shop-isle'     => array(
 				'slug'      => 'shop-isle',
 				'className' => 'ShopIsle',
 				'name'      => 'Shop Isle',
 			),
-			'shopical'   => array(
+			'shopical'      => array(
 				'slug' => 'shopical',
 				'name' => 'Shopical',
 			),
-			'ekommart'   => array(
+			'shopical-pro'  => array(
+				'slug' => 'shopical-pro',
+				'name' => 'ShopicalPro',
+			),
+			'ekommart'      => array(
 				'slug' => 'ekommart',
 				'name' => 'Ekommart',
 			),
-			'savoy'      => array(
+			'savoy'         => array(
 				'slug' => 'savoy',
 				'name' => 'Savoy',
 			),
-			'sober'      => array(
+			'sober'         => array(
 				'slug' => 'sober',
 				'name' => 'Sober',
 			),
-			'bridge'     => array(
+			'bridge'        => array(
 				'slug' => 'bridge',
 				'name' => 'Bridge',
 			),
-			'divi'       => array(
+			'divi'          => array(
 				'slug' => 'divi',
 				'name' => 'Divi',
 			),
-			'block-shop' => array(
+			'block-shop'    => array(
 				'slug' => 'block-shop',
 				'name' => 'BlockShop',
 			),
-			'dfd-ronneby' => array(
+			'dfd-ronneby'   => array(
 				'slug' => 'dfd-ronneby',
 				'name' => 'DFDRonneby',
 			),
-			'restoration' => array(
+			'restoration'   => array(
 				'slug' => 'restoration',
 				'name' => 'Restoration',
 			),
-			'salient' => array(
+			'salient'       => array(
 				'slug' => 'salient',
 				'name' => 'Salient',
 			),
-			'konte' => array(
+			'konte'         => array(
 				'slug' => 'konte',
 				'name' => 'Konte',
 			),
-			'rehub-theme' => array(
+			'rehub-theme'   => array(
 				'slug' => 'rehub-theme',
 				'name' => 'Rehub',
 			),
-			'supro' => array(
+			'supro'         => array(
 				'slug' => 'supro',
 				'name' => 'Supro',
 			),
-			'open-shop' => array(
+			'open-shop'     => array(
 				'slug' => 'open-shop',
 				'name' => 'OpenShop',
 			),
-			'ciyashop' => array(
+			'ciyashop'      => array(
 				'slug' => 'ciyashop',
 				'name' => 'CiyaShop',
 			),
-			'bigcart' => array(
+			'bigcart'       => array(
 				'slug' => 'bigcart',
 				'name' => 'BigCart',
+			),
+			'top-store-pro' => array(
+				'slug' => 'top-store-pro',
+				'name' => 'TopStorePro',
+			),
+			'top-store'     => array(
+				'slug' => 'top-store',
+				'name' => 'TopStore',
+			),
+			'goya'          => array(
+				'slug' => 'goya',
+				'name' => 'Goya',
+			),
+			'electro'       => array(
+				'slug' => 'electro',
+				'name' => 'Electro',
+			),
+			'shopisle-pro' => array(
+				'slug'      => 'shopisle-pro',
+				'className' => 'ShopIslePro',
+				'name'      => 'ShopIsle PRO',
 			),
 		);
 	}

@@ -14,8 +14,12 @@ class Troubleshooting
 {
     const  SECTION_ID = 'dgwt_wcas_troubleshooting' ;
     const  TRANSIENT_RESULTS_KEY = 'dgwt_wcas_troubleshooting_async_results' ;
+    const  TRANSIENT_TEST_KEY = 'dgwt_wcas_test_transients' ;
+    const  TRANSIENT_TEST_KEY2 = 'dgwt_wcas_test_transients2' ;
     const  ASYNC_TEST_NONCE = 'troubleshooting-async-test' ;
     const  RESET_ASYNC_TESTS_NONCE = 'troubleshooting-reset-async-tests' ;
+    const  FIX_OUTOFSTOCK_NONCE = 'troubleshooting-fix-outofstock' ;
+    const  DISMIS_ELEMENTOR_TEMPLATE_NONCE = 'troubleshooting-dismiss-elementor-template' ;
     public function __construct()
     {
         if ( !$this->checkRequirements() ) {
@@ -27,6 +31,8 @@ class Troubleshooting
         add_action( DGWT_WCAS_SETTINGS_KEY . '-form_bottom_' . self::SECTION_ID, array( $this, 'tabContent' ) );
         add_action( 'wp_ajax_dgwt_wcas_troubleshooting_test', array( $this, 'asyncTest' ) );
         add_action( 'wp_ajax_dgwt_wcas_troubleshooting_reset_async_tests', array( $this, 'resetAsyncTests' ) );
+        add_action( 'wp_ajax_dgwt_wcas_troubleshooting_fix_outofstock', array( $this, 'fixOutOfStock' ) );
+        add_action( 'wp_ajax_dgwt_wcas_troubleshooting_dismiss_elementor_template', array( $this, 'dismissElementorTemplate' ) );
     }
     
     /**
@@ -102,6 +108,19 @@ class Troubleshooting
     }
     
     /**
+     * Dismiss Elementor template error
+     */
+    public function dismissElementorTemplate()
+    {
+        if ( !current_user_can( 'administrator' ) ) {
+            wp_die( -1, 403 );
+        }
+        check_ajax_referer( self::DISMIS_ELEMENTOR_TEMPLATE_NONCE );
+        update_option( 'dgwt_wcas_dismiss_elementor_template', '1' );
+        wp_send_json_success();
+    }
+    
+    /**
      * Pass "troubleshooting" data to JavaScript on Settings page
      *
      * @param array $localize
@@ -112,8 +131,10 @@ class Troubleshooting
     {
         $localize['troubleshooting'] = array(
             'nonce' => array(
-            'troubleshooting_async_test'        => wp_create_nonce( self::ASYNC_TEST_NONCE ),
-            'troubleshooting_reset_async_tests' => wp_create_nonce( self::RESET_ASYNC_TESTS_NONCE ),
+            'troubleshooting_async_test'                 => wp_create_nonce( self::ASYNC_TEST_NONCE ),
+            'troubleshooting_reset_async_tests'          => wp_create_nonce( self::RESET_ASYNC_TESTS_NONCE ),
+            'troubleshooting_fix_outofstock'             => wp_create_nonce( self::FIX_OUTOFSTOCK_NONCE ),
+            'troubleshooting_dismiss_elementor_template' => wp_create_nonce( self::DISMIS_ELEMENTOR_TEMPLATE_NONCE ),
         ),
             'tests' => array(
             'direct'        => array(),
@@ -126,6 +147,8 @@ class Troubleshooting
             'results_async' => array(),
         ),
         );
+        set_transient( self::TRANSIENT_TEST_KEY, '1', HOUR_IN_SECONDS );
+        set_transient( self::TRANSIENT_TEST_KEY2, '1', 1 );
         $asyncTestsResults = get_transient( self::TRANSIENT_RESULTS_KEY );
         
         if ( !empty($asyncTestsResults) && is_array( $asyncTestsResults ) ) {
@@ -274,7 +297,7 @@ class Troubleshooting
         
         if ( $markAsCritical ) {
             $result['status'] = 'critical';
-            $linkToDocs = 'https://fibosearch.com/documentation/troubleshooting/the-indexer-was-stuck/';
+            $linkToDocs = 'https://fibosearch.com/documentation/troubleshooting/the-search-index-could-not-be-built/';
             $linkToWpHealth = admin_url( 'site-health.php' );
             $result['label'] = __( 'Your site could not complete a loopback request', 'ajax-search-for-woocommerce' );
             if ( !dgoraAsfwFs()->is_premium() ) {
@@ -430,6 +453,71 @@ class Troubleshooting
     }
     
     /**
+     * Test if Elementor has defined correct template for search results
+     *
+     * @return array The test result.
+     */
+    public function getTestElementorSearchResultsTemplate()
+    {
+        global  $wp_query ;
+        $result = array(
+            'label'       => '',
+            'status'      => 'good',
+            'description' => '',
+            'actions'     => '',
+            'test'        => 'ElementorSearchTemplate',
+        );
+        if ( get_option( 'dgwt_wcas_dismiss_elementor_template' ) === '1' ) {
+            return $result;
+        }
+        if ( !defined( 'ELEMENTOR_VERSION' ) || !defined( 'ELEMENTOR_PRO_VERSION' ) ) {
+            return $result;
+        }
+        if ( version_compare( ELEMENTOR_VERSION, '2.9.0' ) < 0 || version_compare( ELEMENTOR_PRO_VERSION, '2.10.0' ) < 0 ) {
+            return $result;
+        }
+        $conditionsManager = \ElementorPro\Plugin::instance()->modules_manager->get_modules( 'theme-builder' )->get_conditions_manager();
+        // Prepare $wp_query so that the conditions for checking if there is a search page are true.
+        $wp_query->is_search = true;
+        $wp_query->is_post_type_archive = true;
+        set_query_var( 'post_type', 'product' );
+        $documents = $conditionsManager->get_documents_for_location( 'archive' );
+        // Reset $wp_query
+        $wp_query->is_search = false;
+        $wp_query->is_post_type_archive = false;
+        set_query_var( 'post_type', '' );
+        // Stop checking - a template from a theme or WooCommerce will be used
+        if ( empty($documents) ) {
+            return $result;
+        }
+        /**
+         * @var \ElementorPro\Modules\ThemeBuilder\Documents\Theme_Document $document
+         */
+        $document = current( $documents );
+        
+        if ( !$this->doesElementorElementsContainsWidget( $document->get_elements_data(), 'wc-archive-products' ) ) {
+            $linkToDocs = 'https://fibosearch.com/documentation/troubleshooting/the-search-results-page-created-in-elementor-doesnt-display-products/';
+            $dismissButton = get_submit_button(
+                __( 'Dismiss', 'ajax-search-for-woocommerce' ),
+                'secondary',
+                'dgwt-wcas-dismiss-elementor-template',
+                false
+            );
+            $templateLink = '<a target="_blank" href="' . admin_url( 'post.php?post=' . $document->get_post()->ID . '&action=elementor' ) . '">' . $document->get_post()->post_title . '</a>';
+            $result['label'] = __( 'There is no correct template in Elementor Theme Builder for the WooCommerce search results page.', 'ajax-search-for-woocommerce' );
+            $result['description'] = '<p>' . sprintf( __( 'You are using Elementor and we noticed that the template used in the search results page titled <strong>%s</strong> does not include the <strong>Archive Products</strong> widget.', 'ajax-search-for-woocommerce' ), $templateLink ) . '</p>';
+            $result['description'] .= '<p><b>' . __( 'Solution', 'ajax-search-for-woocommerce' ) . '</b></p>';
+            $result['description'] .= '<p>' . sprintf( __( 'Add <strong>Archive Products</strong> widget to the template <strong>%s</strong> or create a new template dedicated to the WooCommerce search results page. Learn how to do it in <a href="%s" target="_blank">our documentation</a>.', 'ajax-search-for-woocommerce' ), $templateLink, $linkToDocs ) . '</p>';
+            $result['description'] .= '<br/><hr/><br/>';
+            $result['description'] .= '<p>' . sprintf( __( 'If you think the search results page is displaying your products correctly, you can ignore and dismiss this message: %s', 'ajax-search-for-woocommerce' ), $dismissButton ) . '</p>';
+            $result['status'] = 'critical';
+            return $result;
+        }
+        
+        return $result;
+    }
+    
+    /**
      * Return a set of tests
      *
      * @return array The list of tests to run.
@@ -457,6 +545,10 @@ class Troubleshooting
             array(
             'label' => __( 'Incompatible "Searching by Text" extension in WOOF - WooCommerce Products Filter', 'ajax-search-for-woocommerce' ),
             'test'  => 'WoofSearchTextExtension',
+        ),
+            array(
+            'label' => __( 'Elementor search results template', 'ajax-search-for-woocommerce' ),
+            'test'  => 'ElementorSearchResultsTemplate',
         )
         ),
             'async'  => array( array(
@@ -494,6 +586,38 @@ class Troubleshooting
             return true;
         }
         return false;
+    }
+    
+    /**
+     * Check if Elementor elements contains specific widget type
+     *
+     * @param $elements
+     * @param $widget
+     *
+     * @return bool
+     */
+    private function doesElementorElementsContainsWidget( $elements, $widget )
+    {
+        $result = false;
+        if ( !is_array( $elements ) || empty($elements) || empty($widget) ) {
+            return false;
+        }
+        if ( isset( $elements['widgetType'] ) && $elements['widgetType'] === 'wc-archive-products' ) {
+            $result = true;
+        }
+        // Plain array of elements
+        
+        if ( !isset( $elements['elements'] ) ) {
+            foreach ( $elements as $element ) {
+                $result = $result || $this->doesElementorElementsContainsWidget( $element, $widget );
+            }
+        } else {
+            if ( isset( $elements['elements'] ) && is_array( $elements['elements'] ) && !empty($elements['elements']) ) {
+                $result = $result || $this->doesElementorElementsContainsWidget( $elements['elements'], $widget );
+            }
+        }
+        
+        return $result;
     }
     
     /**

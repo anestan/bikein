@@ -35,9 +35,8 @@ if ( ! defined( 'DGWT_WCAS_FILE' ) ) {
 				<?php echo $vars->priceHtml; ?>
 			</div>
 
-			<div class="dgwt-wcas-details-hr"></div>
-
 			<?php if ( ! empty( $vars->desc ) ): ?>
+				<div class="dgwt-wcas-details-hr"></div>
 				<div class="dgwt-wcas-details-desc">
 					<?php echo wp_kses_post( $vars->desc ); ?>
 				</div>

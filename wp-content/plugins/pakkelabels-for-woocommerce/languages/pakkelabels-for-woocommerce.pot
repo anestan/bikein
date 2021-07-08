@@ -1,0 +1,513 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Shipmondo for WooCommerce\n"
+"POT-Creation-Date: 2018-02-06 14:26+0100\n"
+"PO-Revision-Date: 2018-01-03 10:43+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: shipmondo.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/legacy_shipmondo_shipping_admin.php:42
+#: includes/method_settings/legacy-settings-default.php:45
+#: includes/method_settings/settings-default.php:40
+#: includes/shipmondo_shipping_admin.php:41
+msgid "Weight"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:43
+#: includes/method_settings/legacy-settings-default.php:46
+#: includes/method_settings/settings-default.php:41
+#: includes/shipmondo_shipping_admin.php:42
+msgid "Price"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:44
+#: includes/shipmondo_shipping_admin.php:43
+msgid "Quantity"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:45
+#: includes/shipmondo_shipping_admin.php:44
+msgid "Title for Shipmondo"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:46
+#: includes/shipmondo_shipping_admin.php:45
+msgid "Minimum cart total"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:47
+#: includes/shipmondo_shipping_admin.php:46
+msgid "Maximum cart total"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:48
+#: includes/legacy_shipmondo_shipping_admin.php:53
+#: includes/method_settings/legacy-settings-default.php:50
+#: includes/method_settings/settings-default.php:45
+#: includes/shipmondo_shipping_admin.php:47
+#: includes/shipmondo_shipping_admin.php:52
+msgid "Shipping Price"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:49
+#: includes/shipmondo_shipping_admin.php:48
+msgid "Add row"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:50
+#: includes/shipmondo_shipping_admin.php:49
+msgid "Cart Total"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_admin.php:54
+#: includes/shipmondo_shipping_admin.php:53
+msgid ""
+"In the price table below, you can choose to setup different shipping prices, "
+"that will be based on the carts total of your choosen type.<br/>If the cart "
+"total falls outside of any of the choosen ranges, the shipping price will "
+"default to the highest shipping price.<br/>Please make sure to follow the "
+"woocommerce standard, and use a period (.) as a decimal seperator."
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring.php:19
+#: includes/shipmondo_shipping_bring.php:20
+msgid "Bring - Optional pickup location"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring.php:20
+#: includes/shipmondo_shipping_bring.php:21
+msgid ""
+"Adds the option to ship with Bring - Optional pickup location to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring_business.php:15
+msgid "Bring Business "
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring_business.php:16
+#: includes/shipmondo_shipping_bring_business.php:19
+msgid "Adds the option to ship with the Bring business to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring_business.php:46
+#: includes/legacy_shipmondo_shipping_bring_business.php:48
+#: includes/legacy_shipmondo_shipping_gls_business.php:52
+#: includes/legacy_shipmondo_shipping_gls_business.php:54
+#: includes/legacy_shipmondo_shipping_postnord_business.php:52
+#: includes/legacy_shipmondo_shipping_postnord_business.php:54
+#: includes/shipmondo_shipping_bring_business.php:53
+#: includes/shipmondo_shipping_bring_business.php:55
+#: includes/shipmondo_shipping_gls_business.php:55
+#: includes/shipmondo_shipping_gls_business.php:57
+#: includes/shipmondo_shipping_postnord_business.php:55
+#: includes/shipmondo_shipping_postnord_business.php:57
+msgid "Please fill out the Shipping company"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring_business.php:53
+#: includes/legacy_shipmondo_shipping_bring_business.php:55
+#: includes/legacy_shipmondo_shipping_gls_business.php:59
+#: includes/legacy_shipmondo_shipping_gls_business.php:61
+#: includes/legacy_shipmondo_shipping_postnord_business.php:59
+#: includes/legacy_shipmondo_shipping_postnord_business.php:61
+#: includes/shipmondo_shipping_bring_business.php:60
+#: includes/shipmondo_shipping_bring_business.php:62
+#: includes/shipmondo_shipping_gls_business.php:62
+#: includes/shipmondo_shipping_gls_business.php:64
+#: includes/shipmondo_shipping_postnord_business.php:62
+#: includes/shipmondo_shipping_postnord_business.php:64
+msgid "Please fill out the billing company"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring_business.php:71
+#: includes/legacy_shipmondo_shipping_gls_business.php:77
+#: includes/legacy_shipmondo_shipping_postnord_business.php:77
+#: includes/shipmondo_shipping_bring_business.php:79
+#: includes/shipmondo_shipping_gls_business.php:81
+#: includes/shipmondo_shipping_postnord_business.php:81
+msgid "The company name is required."
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring_private.php:21
+#: includes/shipmondo_shipping_bring_private.php:20
+msgid "Bring - Evening delivery to private"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_bring_private.php:22
+#: includes/shipmondo_shipping_bring_private.php:21
+msgid ""
+"Adds the option to ship with Bring - Evening delivery to private to the "
+"checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_dao.php:24
+#: includes/shipmondo_shipping_dao.php:20
+msgid "DAO Pickup Point"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_dao.php:25
+#: includes/shipmondo_shipping_dao.php:21
+msgid "Adds the option to ship with the DAO pickup point to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_dao_direct.php:21
+#: includes/shipmondo_shipping_dao_direct.php:20
+msgid "DAO Direct"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_dao_direct.php:22
+msgid "Adds the option to ship with the DAO direct to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_gls.php:24
+#: includes/shipmondo_shipping_gls.php:20
+msgid "GLS Pickup Point"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_gls.php:25
+#: includes/shipmondo_shipping_gls.php:21
+msgid "Adds the option to ship with the GLS pickup point to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_gls_business.php:21
+msgid "GLS Business "
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_gls_business.php:22
+#: includes/shipmondo_shipping_gls_business.php:21
+msgid "Adds the option to ship with the GLS business to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_gls_private.php:21
+#: includes/shipmondo_shipping_gls_private.php:20
+msgid "GLS Private"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_gls_private.php:22
+msgid "Adds the option to ship with the GLS private to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_main.php:70
+#: includes/shipmondo_shipping_main.php:77
+msgid "Pakkeshop"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_main.php:82
+#: includes/shipmondo_shipping_main.php:87
+msgid "Pickup point is selected during checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_main.php:233
+#: includes/shipmondo_shipping_main.php:122
+msgid "(free)"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_pdk.php:24
+#: includes/shipmondo_shipping_pdk.php:20
+msgid "PostNord Pickup Point"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_pdk.php:25
+#: includes/shipmondo_shipping_pdk.php:21
+msgid "Adds the option to ship with the PostNord pickup point to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_postnord_business.php:21
+#: includes/shipmondo_shipping_postnord_business.php:20
+msgid "PostNord Business"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_postnord_business.php:22
+#: includes/shipmondo_shipping_postnord_business.php:21
+msgid "Adds the option to ship with the PostNord business to the checkout"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_postnord_private.php:21
+#: includes/shipmondo_shipping_postnord_private.php:20
+msgid "PostNord Private"
+msgstr ""
+
+#: includes/legacy_shipmondo_shipping_postnord_private.php:22
+msgid "Adds the option to ship with the PostNord private to the checkout"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:15
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:17
+msgid "Enable this shipping method"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:21
+#: includes/method_settings/settings-default.php:16
+msgid "Method Name"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:23
+#: includes/method_settings/settings-default.php:18
+msgid ""
+"This controls the title which customer will be presented for during checkout."
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:28
+#: includes/method_settings/settings-default.php:23
+msgid "Tax Status"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:33
+#: includes/method_settings/settings-default.php:28
+msgid "Taxable"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:34
+#: includes/method_settings/settings-default.php:29
+msgctxt "Tax status"
+msgid "None"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:38
+#: includes/method_settings/settings-default.php:33
+msgid "Differentiated Price Type"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:40
+#: includes/method_settings/settings-default.php:35
+msgid "Choose what the shipping price is based on"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:44
+#: includes/method_settings/settings-default.php:39
+msgid "Normal"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:52
+#: includes/method_settings/settings-default.php:47
+msgid ""
+"This controls what the customer will have to pay for this shipping method."
+"<br/><br/> Simple math functions can also be inserted instead and will be "
+"calculated.<br/><br/>Using [qty] is a placeholder for the quantity of items "
+"in the cart."
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:58
+#: includes/method_settings/settings-default.php:53
+msgid "Hide if outside conditions"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:61
+msgid ""
+"Check this to hide this particular shipping method, if the conditions above "
+"are not fulfilled."
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:66
+msgid "Availability"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:71
+msgid "All allowed countries"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:72
+#: includes/method_settings/legacy-settings-default.php:76
+msgid "Specific Countries"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:84
+#: includes/method_settings/settings-default.php:62
+msgid "Enable Free Shipping"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:89
+#: includes/method_settings/settings-default.php:67
+msgid "No"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:90
+#: includes/method_settings/settings-default.php:68
+msgid "Yes"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:94
+#: includes/method_settings/settings-default.php:72
+msgid "Minimum Purchase For Free Shipping"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:97
+#: includes/method_settings/settings-default.php:75
+msgid ""
+"This control the minimum amount the customer will have to purchase "
+"(subtotal) for to get free shipping. <br/><br/><strong>This rule will "
+"overrule any differentiated price ranges if the condition is met.</strong>"
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:102
+msgid "Free shipping when a shipping coupon is used."
+msgstr ""
+
+#: includes/method_settings/legacy-settings-default.php:105
+#: includes/method_settings/settings-default.php:83
+msgid ""
+"Check this to enable customers to enabled free shipping for this shipping "
+"method, when a shipping coupon is used."
+msgstr ""
+
+#: includes/method_settings/settings-default.php:56
+msgid ""
+"Mark this, to hide this shipping method, if the conditions under "
+"Differentiated Price Type not is fulfilled."
+msgstr ""
+
+#: includes/method_settings/settings-default.php:80
+msgid "Free shipping when a shipping coupon is used"
+msgstr ""
+
+#: includes/shipmondo_shipping_bring_business.php:18
+msgid "Bring Business"
+msgstr ""
+
+#: includes/shipmondo_shipping_dao_direct.php:21
+msgid "Adds the option to ship with the DAO direct in the checkout"
+msgstr ""
+
+#: includes/shipmondo_shipping_gls_business.php:20
+msgid "GLS Business"
+msgstr ""
+
+#: includes/shipmondo_shipping_gls_private.php:21
+msgid "Adds the option to ship with the GLS private in the checkout"
+msgstr ""
+
+#: includes/shipmondo_shipping_postnord_private.php:21
+msgid "Adds the option to ship with the PostNord private in the checkout"
+msgstr ""
+
+#: shipmondo.php:131
+#, php-format
+msgid "Please go to the WooCommerce -> %s, and set a valid frontend key"
+msgstr ""
+
+#: shipmondo.php:147
+#, php-format
+msgid "Please go to the WooCommerce -> %s, and set a valid Google Map API key"
+msgstr ""
+
+#: shipmondo.php:186
+msgid "Please select a pickup point before placing your order."
+msgstr ""
+
+#: plugin/controllers/controller.service-point.php:43
+#: templates/service-point-selection/modal-content.php:3
+msgid "Choose pickup point"
+msgstr ""
+
+#: plugin/controllers/controller.service-point.php:73
+#: templates/service-point-selection/modal.php:8
+msgid "Something went wrong, please try again!"
+msgstr ""
+
+#: plugin/controllers/controller.service-point.php:79
+msgid "No pickup points found, please try another zipcode!"
+msgstr ""
+
+#. Author of the plugin/theme
+#: settings/settings-plugin.php:12
+msgid "Shipmondo"
+msgstr ""
+
+#: settings/settings-plugin.php:22
+msgid "API Settings"
+msgstr ""
+
+#: settings/settings-plugin.php:29
+msgid "Shipping Module key:"
+msgstr ""
+
+#: settings/settings-plugin.php:37
+msgid "Google Map API key:"
+msgstr ""
+
+#: settings/settings-plugin.php:66
+msgid ""
+"Generate a shipping module key from: <a target=\"_blank\" href=\"https://app."
+"shipmondo/main/app/#/setting/api\">Shipmondo</a> "
+msgstr ""
+
+#: settings/settings-plugin.php:67
+msgid ""
+"</br>Generate a personal Google Map API key from:  <a target=\"_blank\" href="
+"\"https://developers.google.com/maps/documentation/javascript/get-api-key"
+"\">Google</a>"
+msgstr ""
+
+#: settings/settings-plugin.php:77
+msgid "Shipmondo shipping module"
+msgstr ""
+
+#: templates/service-point-selection/modal-content.php:4
+#, php-format
+msgid "%s pickup point found"
+msgid_plural "%s pickup points found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/service-point-selection/modal-content.php:37
+msgid "Powered by Shipmondo"
+msgstr ""
+
+#: templates/service-point-selection/modal-error.php:3
+#: templates/service-point-selection/modal.php:9
+msgid "Close"
+msgstr ""
+
+#: templates/service-point-selection/modal.php:1
+msgid "packetshop window"
+msgstr ""
+
+#: templates/service-point-selection/open-modal-button.php:5
+msgid "Zipcode"
+msgstr ""
+
+#: templates/service-point-selection/open-modal-button.php:11
+msgid "Find nearest pickup point"
+msgstr ""
+
+#: templates/service-point-selection/open-modal-button.php:24
+msgid "Currently choosen pickup point:"
+msgstr ""
+
+#: templates/service-point-selection/open-modal-button.php:31
+msgid "Please enter a zipcode to select a pickup point"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Shipmondo for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://shipmondo.com"
+msgstr "https://shipmondo.com"
+
+#. Description of the plugin/theme
+msgid "Bring, DAO365, GLS and PostNord Shipping for WooCommerce"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://shipmondo.com"
+msgstr "https://shipmondo.com"

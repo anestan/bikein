@@ -392,7 +392,16 @@ class Product
      */
     public function getCustomField( $metaKey )
     {
-        return get_post_meta( $this->productID, $metaKey, true );
+        $result = apply_filters(
+            'dgwt/wcas/product/custom_field',
+            false,
+            $metaKey,
+            $this->productID
+        );
+        if ( $result !== false ) {
+            return $result;
+        }
+        return get_post_meta( $this->productID, sanitize_key( $metaKey ), true );
     }
     
     /**

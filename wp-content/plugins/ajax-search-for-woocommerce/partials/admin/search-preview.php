@@ -68,7 +68,10 @@ $labelSeeAll    = Helpers::getLabel( 'show_more' );
                     </span>
 				</div>
 
-				<div class="dgwt-wcas-suggestion dgwt-wcas-suggestion-brand">
+				<div class="dgwt-wcas-suggestion dgwt-wcas-suggestion-brand js-dgwt-wcas-suggestion-brand">
+					<span class="dgwt-wcas-si">
+                        <img src="<?php echo DGWT_WCAS_URL; ?>assets/img/product-preview.png">
+                    </span>
                     <span class="dgwt-wcas-st">
                         <span class="dgwt-wcas-st--direct-headline"><?php echo Helpers::getLabel( 'brand' ); ?></span>
                         <?php _e( 'Sample brand <strong>name</strong>', 'ajax-search-for-woocommerce' ); ?>
@@ -81,7 +84,10 @@ $labelSeeAll    = Helpers::getLabel( 'show_more' );
                     </span>
 				</div>
 
-				<div class="dgwt-wcas-suggestion dgwt-wcas-suggestion-cat">
+				<div class="dgwt-wcas-suggestion dgwt-wcas-suggestion-cat js-dgwt-wcas-suggestion-cat">
+					<span class="dgwt-wcas-si">
+                        <img src="<?php echo DGWT_WCAS_URL; ?>assets/img/product-preview.png">
+                    </span>
                     <span class="dgwt-wcas-st">
                         <span class="dgwt-wcas-st--direct-headline"><?php echo Helpers::getLabel( 'category' ); ?></span>
                         <?php _e( 'Sample category <strong>name</strong>', 'ajax-search-for-woocommerce' ); ?>

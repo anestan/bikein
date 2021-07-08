@@ -76,9 +76,7 @@ class Upgrade {
 		?>
 		<script>
 			(function ($) {
-				var $handler = $('.dgwt-wcas-premium-only label, .dgwt-wcas-premium-only input, .dgwt-wcas-premium-only button, .dgwt-wcas-premium-only--trigger');
-
-				$handler.on('click', function (e) {
+				$(document).on('click', '.dgwt-wcas-premium-only label, .dgwt-wcas-premium-only input, .dgwt-wcas-premium-only button, .dgwt-wcas-premium-only--trigger', function (e) {
 					triggerModal(e);
 				});
 

@@ -403,21 +403,22 @@ class Search
         $args = array(
             'taxonomy' => 'product_cat',
         );
-        $product_categories = get_terms( 'product_cat', apply_filters( 'dgwt/wcas/search/product_cat/args', $args ) );
+        $productCategories = get_terms( 'product_cat', apply_filters( 'dgwt/wcas/search/product_cat/args', $args ) );
+        $keywordUnslashed = wp_unslash( $keyword );
         // Compare keyword and term name
         $i = 0;
-        foreach ( $product_categories as $cat ) {
+        foreach ( $productCategories as $cat ) {
             
             if ( $i < $limit ) {
-                $cat_name = html_entity_decode( $cat->name );
-                $pos = strpos( mb_strtolower( $cat_name ), mb_strtolower( $keyword ) );
+                $catName = html_entity_decode( $cat->name );
+                $pos = strpos( mb_strtolower( $catName ), mb_strtolower( $keywordUnslashed ) );
                 
                 if ( $pos !== false ) {
                     $termLang = Multilingual::getTermLang( $cat->term_id, 'product_cat' );
                     $results[$i] = array(
                         'term_id'     => $cat->term_id,
                         'taxonomy'    => 'product_cat',
-                        'value'       => preg_replace( sprintf( "/(%s)/", $keyword ), "\$1", $cat_name ),
+                        'value'       => $catName,
                         'url'         => get_term_link( $cat, 'product_cat' ),
                         'breadcrumbs' => Helpers::getTermBreadcrumbs(
                         $cat->term_id,
@@ -455,20 +456,21 @@ class Search
         $args = array(
             'taxonomy' => 'product_tag',
         );
-        $product_tags = get_terms( 'product_tag', apply_filters( 'dgwt/wcas/search/product_tag/args', $args ) );
+        $productTags = get_terms( 'product_tag', apply_filters( 'dgwt/wcas/search/product_tag/args', $args ) );
+        $keywordUnslashed = wp_unslash( $keyword );
         // Compare keyword and term name
         $i = 0;
-        foreach ( $product_tags as $tag ) {
+        foreach ( $productTags as $tag ) {
             
             if ( $i < $limit ) {
-                $tag_name = html_entity_decode( $tag->name );
-                $pos = strpos( mb_strtolower( $tag_name ), mb_strtolower( $keyword ) );
+                $tagName = html_entity_decode( $tag->name );
+                $pos = strpos( mb_strtolower( $tagName ), mb_strtolower( $keywordUnslashed ) );
                 
                 if ( $pos !== false ) {
                     $results[$i] = array(
                         'term_id'  => $tag->term_id,
                         'taxonomy' => 'product_tag',
-                        'value'    => preg_replace( sprintf( "/(%s)/", $keyword ), "\$1", $tag_name ),
+                        'value'    => $tagName,
                         'url'      => get_term_link( $tag, 'product_tag' ),
                         'parents'  => '',
                         'type'     => 'taxonomy',

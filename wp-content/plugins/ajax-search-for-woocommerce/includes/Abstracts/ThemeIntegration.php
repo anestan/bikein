@@ -95,7 +95,7 @@ abstract class ThemeIntegration {
 	 *
 	 * @return void
 	 */
-	private function maybeOverwriteSearch() {
+	protected function maybeOverwriteSearch() {
 		$partialPath = DGWT_WCAS_DIR . 'partials/themes/' . $this->themeSlug . '.php';
 		if ( $this->canReplaceSearch() && file_exists( $partialPath ) ) {
 			require_once( $partialPath );

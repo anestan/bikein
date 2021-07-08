@@ -15,6 +15,7 @@
     width: 60%;
     padding: 6em;
     background-color: $light-gray;
+    min-height: 800px;
 
     .cart-header {
       .cart-product-count {
@@ -73,6 +74,7 @@
     float: right;
     width: 40%;
     padding: 6em;
+    min-height: 800px;
 
     .cart-overview {
       text-transform: uppercase;
@@ -99,18 +101,6 @@
     .cart-subtotal, .order-total {
       @include flexbox;
       justify-content: space-between;
-    }
-
-    .order-total-price {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-      .includes_tax {
-        font-size: $font-size-xtra-small;
-        text-transform: $capitalize;
-        font-weight: $font-weight-normal;
-      }
     }
 
     .woocommerce-shipping-methods, .woocommerce-shipping-destination, .shipping-calculator-button {
@@ -172,6 +162,34 @@
 
 }
 
+
+/* Cart + checkout */
+.woocommerce-cart, .woocommerce-checkout {
+  // Order total
+  .order-total-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .includes_tax {
+      font-size: $font-size-xtra-small;
+      text-transform: $capitalize;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  //Coupon
+  .cart-discount {
+    @include flexbox;
+    justify-content: space-between;
+    border-top: 1px solid $lighter-gray;
+    margin: 1.5em 0;
+    padding-top: 1.5em;
+  }
+}
+
+
+
 //Global styles
 a.remove::before {
   content: "\f00d";
@@ -188,14 +206,5 @@ a.remove::before {
   }
   button {
     padding: 8px 15px;
-    border: 2px solid $darker-gray;
-    color: $darker-gray;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $darker-gray;
-      color: $light-gray;
-      border-color: $darker-gray;
-    }
   }
 }

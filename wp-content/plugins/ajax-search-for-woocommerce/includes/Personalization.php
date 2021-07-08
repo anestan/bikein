@@ -42,7 +42,7 @@ class Personalization {
 
 		ob_start();
 		?>
-		<style type="text/css">
+		<style>
 
 			.dgwt-wcas-ico-magnifier,
 			.dgwt-wcas-ico-magnifier-handler {

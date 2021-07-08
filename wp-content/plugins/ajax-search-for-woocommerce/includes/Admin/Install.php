@@ -78,6 +78,19 @@ class Install
     }
     
     /**
+     * Check if SQL server support JSON data type
+     */
+    private static function checkIfDbSupportJson()
+    {
+        global  $wpdb ;
+        $suppress_errors = $wpdb->suppress_errors;
+        $wpdb->suppress_errors();
+        $result = $wpdb->get_var( "SELECT JSON_CONTAINS('[1,2,3]', '2')" );
+        $wpdb->suppress_errors( $suppress_errors );
+        update_option( 'dgwt_wcas_db_json_support', ( $result === '1' && empty($wpdb->last_error) ? 'yes' : 'no' ) );
+    }
+    
+    /**
      * Compare plugin version and install if a new version is available
      *
      * @return void

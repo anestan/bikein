@@ -11,10 +11,6 @@
 	font-weight: lighter;
 }
 
-.dgwt-wcas-settings:not(.dgwt-wcas-settings-theme-supported) .dgwt-wcas-only-desc > th {
-    display: none;
-}
-
 .dgwt-wcas-only-desc > td {
     min-width: 600px
 }
@@ -69,8 +65,26 @@
     min-width: 165px;
 }
 
+.dgwt_wcas_settings-group .form-table td fieldset {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: flex-start;
+}
+
 .dgwt_wcas_settings-group .form-table td fieldset label {
-    margin: 0 !important;
+	margin: 0 !important;
+	display: flex;
+	align-items: center;
+}
+
+.dgwt_wcas_settings-group .form-table td fieldset label + label {
+	border-left: 1px dashed #d7d7d7;
+	padding-left: 20px;
+}
+
+.dgwt_wcas_settings-group .form-table td fieldset label + label .dgwt_wcas_settings-description-field {
+	margin-left: 15px;
 }
 
 .dgwt_wcas_settings-group .form-table > tbody > tr > th,
@@ -341,12 +355,6 @@
     display: none;
 }
 
-.dgwt_wcas_settings-group .form-table td fieldset label {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
 .dgwt_wcas_settings-group label input[type="checkbox"] {
     margin: 0;
 }
@@ -529,7 +537,7 @@
     padding: 15px;
 }
 
-.dgwt-wcas-troubleshooting-wrapper .dgwt-wcas-settings-info pre {
+.dgwt-wcas-indexing-header__troubleshooting pre, .dgwt-wcas-troubleshooting-wrapper .dgwt-wcas-settings-info pre {
 	display: inline-block;
 	background: #eee;
 	padding: 10px;
@@ -1063,6 +1071,17 @@ input[type=checkbox].dgwt-wcas-check:checked ~ .dgwt-wcas-switch {
 	border: 1px solid #f0c0c1;
 	margin-bottom: 20px;
 	font-family: monospace;
+	font-size: 12px;
+}
+.dgwt-wcas-indexing-header__error-code {
+	background: #f5dede;
+	border: 1px solid #f0c0c1;
+	padding: 1px 4px;
+	display: inline-block;
+	margin: 5px 0 5px 0;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: monospace;
 }
 
 .wcas-ajax-build-index-wait {
@@ -1234,6 +1253,9 @@ td.dgwt-wcas-indexing-details-row a {
 .dgwt-wcas-is-details .dgwt-wcas-preview-source .dgwt-wcas-suggestions-wrapp {
     margin: 0;
 }
+.dgwt-wcas-preview-source .dgwt-wcas-details-inner {
+	display: block;
+}
 
 .dgwt-wcas-hide {
     display: none !important;
@@ -1247,6 +1269,21 @@ td.dgwt-wcas-indexing-details-row a {
     min-width: 600px;
     margin: 0 auto;
     padding: 20px 40px;
+}
+
+.dgwt-wcas-preview-source .dgwt-wcas-suggestion-brand .dgwt-wcas-si,
+.dgwt-wcas-preview-source .dgwt-wcas-suggestion-cat .dgwt-wcas-si {
+	display: none;
+}
+
+.dgwt-wcas-preview-source .dgwt-wcas-suggestion-brand.dgwt-wcas-has-img .dgwt-wcas-si,
+.dgwt-wcas-preview-source .dgwt-wcas-suggestion-cat.dgwt-wcas-has-img .dgwt-wcas-si {
+	display: block;
+}
+
+.dgwt-wcas-preview-source .dgwt-wcas-suggestion-brand.dgwt-wcas-has-img .dgwt-wcas-st,
+.dgwt-wcas-preview-source .dgwt-wcas-suggestion-cat.dgwt-wcas-has-img .dgwt-wcas-st {
+	padding-left: 10px;
 }
 
 .dgwt-wcas-search-wrapp,
@@ -1536,6 +1573,7 @@ td.dgwt-wcas-indexing-details-row a {
 h3.dgwt-wcas-troubleshooting-issue-title {
 	font-size: 20px;
 	margin-bottom: 12px;
+	line-height: 1em;
 }
 
 .dgwt-wcas-troubleshooting-wrapper .progress-bar-inner {
@@ -1557,6 +1595,32 @@ h3.dgwt-wcas-troubleshooting-issue-title {
 
 .dgwt-wcas-troubleshooting-wrapper input[name="dgwt-wcas-reset-async-tests"] {
 	margin-top: 30px;
+}
+
+.dgwt-wcas-troubleshooting-wrapper .dgwt-wcas-error-log {
+	background: #f5dede;
+	padding: 10px;
+	border: 1px solid #f0c0c1;
+	margin-bottom: 20px;
+	font-family: monospace;
+}
+
+.dgwt-wcas-troubleshooting-wrapper .dgwt-wcas-ajax-loader {
+	-moz-transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/preloader.gif);
+	background-size: 20px 20px;
+	opacity: 0;
+	margin-bottom: -5px;
+	margin-left: 5px;
+}
+
+.dgwt-wcas-troubleshooting-wrapper .dgwt-wcas-ajax-loader.loading {
+	opacity: 1;
 }
 
 /* Settings - Filters rules */

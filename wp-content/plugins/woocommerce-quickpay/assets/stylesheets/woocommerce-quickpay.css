@@ -1,0 +1,258 @@
+.woocommerce-quickpay-capture {
+	color:#85ad74 !important;
+}
+.woocommerce-quickpay-subscribe {
+	color:#85ad74 !important;
+}
+
+.woocommerce-quickpay-cancel {
+	color:#ad74a2 !important;
+}
+
+.woocommerce-quickpay-authorize,
+.woocommerce-quickpay-recurring,
+.woocommerce-quickpay-refund {
+	color:#7499ad !important;
+}
+
+.woocommerce-quickpay-order-transaction-data table.meta tr td {
+	font-size: 11px;
+	color: #555;
+	padding: 0 !important;
+	line-height: 1.7em !important;
+}
+.woocommerce-quickpay-order-transaction-data table.meta tr td:first-child {
+	font-weight: 500;
+}
+
+.woocommerce-quickpay-order-transaction-data .transaction-brand img {
+	max-height: 16px;
+}
+
+.woocommerce-quickpay-order-transaction-data .tags {
+	margin-top: 5px;
+}
+
+.woocommerce-quickpay-order-transaction-data .tags:before,
+.woocommerce-quickpay-order-transaction-data .tags:after {
+	content: "";
+	display: table;
+}
+
+.woocommerce-quickpay-order-transaction-data .tag {
+	float: left;
+	display: inline-block;
+	padding: 7px 10px;
+	background-color: #e5e5e5;
+	color: #777;
+	font-size: 9px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	line-height: 100%;
+}
+
+.woocommerce-quickpay-order-transaction-data .tag:not(:last-child) {
+	margin: 0 5px 5px 0;
+}
+
+.woocommerce-quickpay-order-transaction-data .tag.is-test {
+	background: #ebe9a3;
+	color: #78790b;
+	font-weight: bold;
+}
+
+.woocommerce-quickpay-order-transaction-data .tag.is-cancel {
+	background: #eba3a3;
+	color: #761919;
+	font-weight: bold;
+}
+
+.woocommerce-quickpay-order-transaction-data .tag.is-authorize,
+.woocommerce-quickpay-order-transaction-data .tag.is-recurring,
+.woocommerce-quickpay-order-transaction-data .tag.is-refund {
+	background: #c8d7e1;
+	color: #2e4453;
+}
+
+.woocommerce-quickpay-order-transaction-data .tag.is-capture,
+.woocommerce-quickpay-order-transaction-data .tag.is-subscribe {
+	background: #c6e1c6;
+	color: #5b841b;
+}
+
+.woocommerce-quickpay-order-transaction-data .meta:not(:last-child) {
+	margin-bottom: 3px;
+}
+
+.woocommerce-quickpay-order-transaction-data .transaction-brand img,
+.qp-meta-card img {
+	top: 4px;
+	position: relative;
+}
+
+.qp-meta-card img {
+	max-height: 20px;
+}
+
+.woocommerce-quickpay-order-transaction-data .transaction-brand img {
+	margin: -1px 3px 0 0 !important;
+	border-radius: 3px;
+}
+
+#quickpay-payment-actions {
+	position:relative;
+}
+
+#quickpay-payment-actions .left {
+	float:left;
+}
+#quickpay-payment-actions .right {
+	float:right;
+}
+
+#quickpay-payment-actions .loader {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background: rgba( 255, 255, 255, 0.7 ) url('../images/loader.gif') no-repeat center center;
+	background-size: 50% ;
+}
+
+.quickpay-loader {
+    min-height:20px;
+	width:50px;
+	background: url('../images/loader.gif') no-repeat center center;
+	background-size: 100%;
+}
+
+#quickpay-payment-actions h4 .inline_total {
+	float: right;
+	color: #999;
+}
+
+#quickpay-payment-actions b, #quickpay-payment-actions strong {
+	font-weight:700;
+}
+
+#quickpay-payment-actions .quickpay-split-container {
+	border-top: 1px solid #ddd;
+	margin: 0 -12px;
+	padding: 10px 10px 0;
+}
+
+#quickpay-payment-actions .warning {
+	color:#a00;
+}
+
+
+.qp-full-width, .qp-full-width .button {
+	width: 100%;
+	display: block;
+	text-align: center;
+	clear: both;
+}
+
+.qp-balance {
+	margin-bottom: 0;
+	height: 20px;
+}
+
+.qp-balance + li:not(.qp-balance) {
+	margin-top: 5px;
+}
+
+.qp-balance:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.qp-balance__label,
+.qp-balance__amount {
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+	float: left;
+	padding: 7px 10px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #8a8a8a;
+}
+
+.qp-balance__label {
+	font-weight: bold;
+	width: 60%;
+	border-right: 2.5px solid #FFF;
+}
+.qp-balance__amount {
+	border-right: 0;
+	width: 40%;
+	border-left: 2.5px solid #FFF;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.qp-balance__currency {
+	margin-right: 10px;
+}
+
+.qp-balance.last .qp-balance__currency {
+	margin-right: 0;
+}
+
+#qp-balance__amount-field {
+	width: 100%;
+	font-size: 10px;
+	margin-top: -5px;
+	top: 3px;
+	position: relative;
+	margin-left: 5px;
+	min-height: auto;
+}
+
+
+.button.wcqp-debug-button {
+	margin-right: 5px;
+}
+
+.wcqp_api_indicator {
+	position: absolute;
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	margin-left: 10px;
+	top: -5px;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.wcqp_api_indicator.error {
+	background-image: url(../images/icons/error.png);
+}
+.wcqp_api_indicator.ok {
+	background-image: url(../images/icons/ok.png);
+}
+.wcqp_api_indicator.refresh {
+	cursor: pointer;
+	top: -4px;
+	background-image: url(../images/icons/refresh.png);
+}
+
+.wcqp_api_indicator.is-loading {
+	-webkit-animation:spin 4s linear infinite;
+	-moz-animation:spin 4s linear infinite;
+	animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.woocommerce table.form-table fieldset:first-child {
+	position: relative;
+}

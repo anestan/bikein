@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-10 13:58:00+0000\n"
+"PO-Revision-Date: 2021-06-18 02:01:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +31,7 @@ msgid "off"
 msgstr "off"
 
 #: wp-includes/script-loader.php:1674 wp-includes/formatting.php:3888
-#: wp-includes/js/dist/editor.js:12012
+#: wp-includes/js/dist/editor.js:11270
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "words"
@@ -49,7 +49,7 @@ msgstr "on"
 
 #. translators: 'rtl' or 'ltr'. This sets the text direction for WordPress.
 #: wp-includes/script-loader.php:280 wp-includes/class-wp-locale.php:217
-#: wp-includes/js/dist/i18n.js:1213
+#: wp-includes/js/dist/i18n.js:1374
 msgctxt "text direction"
 msgid "ltr"
 msgstr "ltr"
@@ -91,12 +91,185 @@ msgid "number_format_decimal_point"
 msgstr ","
 
 #: wp-includes/category-template.php:161
-#: wp-includes/js/dist/block-editor.js:20198
-#: wp-includes/js/dist/block-editor.js:20203
-#: wp-includes/js/dist/block-editor.js:20483
-#: wp-includes/js/dist/edit-post.js:4103 wp-admin/includes/upgrade.php:158
+#: wp-includes/js/dist/block-editor.js:21492
+#: wp-includes/js/dist/block-editor.js:21497
+#: wp-includes/js/dist/block-editor.js:21777
+#: wp-includes/js/dist/edit-post.js:4862 wp-admin/includes/upgrade.php:158
 msgid "Uncategorized"
 msgstr "Ikke-kategoriseret"
+
+#: wp-includes/blocks/latest-posts.php:138
+#: wp-includes/blocks/latest-posts.php:153
+msgid "This content is password protected."
+msgstr "Dette indhold er adgangskodebeskyttet"
+
+#: wp-includes/https-detection.php:139
+msgid "SSL verification failed."
+msgstr "SSL verificering mislykkedes."
+
+#: wp-includes/https-detection.php:134
+msgid "HTTPS request failed."
+msgstr "HTTPS forespørgsel mislykkedes."
+
+#. translators: 1: $l10n, 2: wp_add_inline_script()
+#: wp-includes/class.wp-scripts.php:492
+msgid "The %1$s parameter must be an array. To pass arbitrary data to scripts, use the %2$s function instead."
+msgstr "Parameteren %1$s skal være en array. For at sende vilkårlige data til scripts, brug i stedet %2$s funktionen."
+
+#: wp-includes/query.php:909
+msgid "https://developer.wordpress.org/reference/functions/is_main_query/"
+msgstr "https://developer.wordpress.org/reference/functions/is_main_query/"
+
+#: wp-includes/taxonomy.php:610
+msgid "Filter by category"
+msgstr "Sorter efter kategori"
+
+#. translators: Documentation explaining HTTPS and why it should be used.
+#: wp-includes/functions.php:7635
+msgid "https://wordpress.org/support/article/why-should-i-use-https/"
+msgstr "https://wordpress.org/support/article/why-should-i-use-https/"
+
+#: wp-includes/class-wp-fatal-error-handler.php:196
+msgid "Learn more about troubleshooting WordPress."
+msgstr "Lær mere om fejlsøgning i WordPress."
+
+#. translators: Documentation about troubleshooting.
+#: wp-includes/class-wp-fatal-error-handler.php:195
+msgid "https://wordpress.org/support/article/faq-troubleshooting/"
+msgstr "https://wordpress.org/support/article/faq-troubleshooting/"
+
+#: wp-includes/user.php:4281
+msgid "The confirmation key has expired for this personal data request."
+msgstr "Bekræftelseskoden for denne persondataforspørgsel er udløbet."
+
+#: wp-includes/user.php:4277
+msgid "The confirmation key is invalid for this personal data request."
+msgstr "Denne bekræftelseskode er ugyldig for denne persondataforspørgsel."
+
+#: wp-includes/user.php:4258
+msgid "The confirmation key is missing from this personal data request."
+msgstr "Bekræftelseskoden mangler ved denne persondataforspørgsel."
+
+#: wp-includes/user.php:4254
+msgid "This personal data request has expired."
+msgstr "Denne persondataforspørgsel er udløbet."
+
+#: wp-includes/user.php:4062 wp-includes/user.php:4250
+#: wp-admin/includes/privacy-tools.php:23
+#: wp-admin/includes/privacy-tools.php:52
+msgid "Invalid personal data request."
+msgstr "Ugyldig anmodning om personlige data."
+
+#: wp-includes/user.php:3973
+msgid "Invalid request status."
+msgstr "Ugyldig anmodningsstatus."
+
+#: wp-includes/class-wp-application-passwords.php:78
+msgid "Each application name should be unique."
+msgstr "Hvert applikationsnavn bør være entydigt."
+
+#: wp-includes/https-detection.php:150
+msgid "It looks like the response did not come from this site."
+msgstr "Det ser ud til svaret ikke kom fra dette websted."
+
+#. translators: 1: Parameter, 2: List of valid values.
+#: wp-includes/rest-api.php:1971
+msgid "%1$s is not one of %2$l."
+msgstr "%1$s er ikke en af %2$l."
+
+#. translators: 1: Parameter, 2: Valid values.
+#: wp-includes/rest-api.php:1967
+msgid "%1$s is not %2$s."
+msgstr "%1$s er ikke %2$s."
+
+#: wp-includes/cron.php:1197
+msgid "The cron event list could not be saved."
+msgstr "Listen over Cron begivenheder kunne ikke gemmes."
+
+#: wp-includes/cron.php:578 wp-includes/cron.php:667
+msgid "A plugin prevented the hook from being cleared."
+msgstr "Et plugin forhindrede hooket i at blive ryddet."
+
+#: wp-includes/cron.php:498
+msgid "A plugin prevented the event from being unscheduled."
+msgstr "Et plugin forhindrede begivenheden i at blive fjernet fra planlagte."
+
+#: wp-includes/cron.php:407
+msgid "A plugin prevented the event from being rescheduled."
+msgstr "Et plugin forhindrede begivenheden i at blive flyttet."
+
+#: wp-includes/cron.php:254 wp-includes/cron.php:423
+msgid "Event schedule does not exist."
+msgstr "Begivenheden er ikke planlagt."
+
+#: wp-includes/cron.php:183 wp-includes/cron.php:295
+msgid "A plugin disallowed this event."
+msgstr "Et plugin tillader ikke denne begivenhed."
+
+#: wp-includes/cron.php:154
+msgid "A duplicate event already exists."
+msgstr "En tilsvarende begivenhed findes allerede."
+
+#: wp-includes/cron.php:97 wp-includes/cron.php:276
+msgid "A plugin prevented the event from being scheduled."
+msgstr "Et plugin forhindrede denne begivenhed i blive oprettet."
+
+#: wp-includes/cron.php:45 wp-includes/cron.php:241 wp-includes/cron.php:346
+#: wp-includes/cron.php:467
+msgid "Event timestamp must be a valid Unix timestamp."
+msgstr "Begivenhedens timestamp skal være et gyldigt Unix timestamp."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1369
+msgid "Crop arguments."
+msgstr "Beskæringsargumenter."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1364
+msgid "Crop type."
+msgstr "Beskæringstype."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1346
+msgid "Rotation arguments."
+msgstr "Rotationsargumenter."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1341
+msgid "Rotation type."
+msgstr "Rotationstype."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1338
+msgid "Rotation"
+msgstr "Rotation"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1330
+msgid "Image edit."
+msgstr "Rediger billede."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1326
+msgid "Array of image edits."
+msgstr "Array af billederedigeringer."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:431
+msgid "Sorry, you are not allowed to delete this application password."
+msgstr "Du har desværre ikke tilladelse til at slette applikationskodeordet."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:376
+msgid "Sorry, you are not allowed to delete application passwords for this user."
+msgstr "Beklager, du har ikke tilladelse til at slette applikationsadgangskoder for denne bruger."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:161
+msgid "Theme not found."
+msgstr "Tema ikke fundet."
+
+#: wp-login.php:903
+msgid "Save Password"
+msgstr "Gem adgangskode"
+
+#: wp-login.php:902
+msgid "Generate Password"
+msgstr "Generer adgangskode"
+
+#: wp-login.php:855
+msgid "Enter your new password below or generate one."
+msgstr "Indtast din nye adgangskode nedenfor eller dan en ny."
 
 #: wp-includes/block-patterns/large-header-button.php:10
 msgid "Thou hast seen<br>nothing yet"
@@ -110,12 +283,12 @@ msgstr "Denne fil indlæses kun for bagudkompatibilitet med SimplePie 1.2.x. Ove
 msgid "&larr; Go to Tags"
 msgstr "&larr; Gå til Tags"
 
-#: wp-includes/media.php:4382
+#: wp-includes/media.php:4388
 msgid "&#8592; Go to library"
 msgstr "&#8592; Gå til biblioteket"
 
-#: wp-includes/js/dist/block-editor.js:9394
-#: wp-includes/js/dist/edit-post.js:4361 wp-admin/menu.php:188
+#: wp-includes/js/dist/block-editor.js:10688
+#: wp-includes/js/dist/edit-post.js:5120 wp-admin/menu.php:188
 msgid "Appearance"
 msgstr "Udseende"
 
@@ -275,26 +448,38 @@ msgid "Used as:"
 msgstr "Brugt som:"
 
 #. translators: 1: Parameter, 2: Multiplier.
-#: wp-includes/rest-api.php:2414
+#: wp-includes/rest-api.php:2420
 msgid "%1$s must be a multiple of %2$s."
 msgstr "%1$s skal være et multiplum af %2$s."
 
-#: wp-includes/rest-api.php:2305
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2311
 msgid "%1$s must contain at most %2$s property."
 msgid_plural "%1$s must contain at most %2$s properties."
 msgstr[0] "%1$s skal højst indeholde %2$s egenskab."
 msgstr[1] "%1$s skal højst indeholde %2$s egenskaber."
 
-#: wp-includes/rest-api.php:2289
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2295
 msgid "%1$s must contain at least %2$s property."
 msgid_plural "%1$s must contain at least %2$s properties."
 msgstr[0] "%1$s skal mindst indeholde %2$s egenskab."
 msgstr[1] "%1$s skal mindst indeholde %2$s egenskaber."
 
+#. translators: %s: Parameter.
+#: wp-includes/rest-api.php:1893
+msgid "%s matches more than one of the expected formats."
+msgstr "%s passer til mere end et af de forventede formater."
+
 #. translators: 1: Parameter, 2: Schema titles.
 #: wp-includes/rest-api.php:1885
 msgid "%1$s matches %2$l, but should match only one."
 msgstr "%1$s passer til %2$l, men bør kun passe til et."
+
+#. translators: %s: Parameter.
+#: wp-includes/rest-api.php:1789
+msgid "%s does not match any of the expected formats."
+msgstr "%s passer ikke til nogen af de forventede formater."
 
 #. translators: 1: Parameter, 2: Schema titles.
 #: wp-includes/rest-api.php:1785
@@ -415,8 +600,8 @@ msgstr "Du må sende et array med indlægsformatet."
 msgid "This password reset request originated from the IP address %s."
 msgstr "Denne forespørgsel på nulstilling af adgangskoden kom fra IP-adressen %s."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3887
-#: wp-includes/class-wp-xmlrpc-server.php:3894
+#: wp-includes/class-wp-xmlrpc-server.php:3930
+#: wp-includes/class-wp-xmlrpc-server.php:3937
 msgid "Sorry, you are not allowed to comment on this post."
 msgstr "Du har desværre ikke tilladelse til at kommentere på dette indlæg."
 
@@ -671,7 +856,7 @@ msgid "This theme doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr "Dette tema virker ikke med dine versioner af WordPress og PHP."
 
 #. translators: %s: register_rest_field
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2479
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2526
 msgid "Please use %s to add new schema properties."
 msgstr "Brug venligst %s til at tilføje nye schema-egenskaber."
 
@@ -713,22 +898,22 @@ msgstr "Beklager, du har ikke tilladelse til at aktivere dette plugin."
 #. translators: %s: the author.
 #. translators: byline. %s: current author.
 #: wp-includes/blocks/rss.php:60 wp-includes/blocks/latest-posts.php:114
-#: wp-includes/js/dist/block-library.js:19344
+#: wp-includes/js/dist/block-library.js:18416
 msgid "by %s"
 msgstr "af %s"
 
-#: wp-includes/js/dist/core-data.js:3111
+#: wp-includes/js/dist/core-data.js:2849
 #: wp-admin/includes/ajax-actions.php:1506
 msgid "Menu Item"
 msgstr "Menupunkt"
 
-#: wp-includes/js/dist/core-data.js:3099 wp-admin/includes/template.php:459
+#: wp-includes/js/dist/core-data.js:2837 wp-admin/includes/template.php:459
 #: wp-admin/edit-form-comment.php:72
 msgid "Comment"
 msgstr "Kommentar"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1361
-#: wp-includes/js/dist/block-library.js:5837
+#: wp-includes/js/dist/block-library.js:4906
 #: wp-admin/includes/image-edit.php:54
 msgid "Crop"
 msgstr "Beskær"
@@ -741,6 +926,11 @@ msgstr "Håndter indlejring"
 #: wp-includes/ms-load.php:495
 msgid "Read the <a href=\"%s\" target=\"_blank\">Debugging a WordPress Network</a> article. Some of the suggestions there may help you figure out what went wrong."
 msgstr "Læs <a href=\"%s\" target=\"_blank\">Debug et WordPress Netværk</a> artiklen. Nogle af forslagene der kunne hjælpe dig med at regne det ud."
+
+#. translators: %s: Block pattern name.
+#: wp-includes/class-wp-block-pattern-categories-registry.php:64
+msgid "Block pattern category \"%s\" not found."
+msgstr "Blokmønster kategori \"%s\" blev ikke fundet."
 
 #: wp-includes/class-wp-block-pattern-categories-registry.php:41
 msgid "Block pattern category name must be a string."
@@ -871,6 +1061,11 @@ msgstr "<strong>Fejl</strong>: Der opstod et problem under oprettelsen af webste
 msgid "<strong>Error</strong>: Site URL you&#8217;ve entered is already taken."
 msgstr "<strong>Fejl</strong>: Den URL, du har skrevet, er allerede i brug."
 
+#. translators: %s: Pattern name.
+#: wp-includes/class-wp-block-patterns-registry.php:77
+msgid "Pattern \"%s\" not found."
+msgstr "Mønstret \"%s\" blev ikke fundet."
+
 #: wp-includes/class-wp-block-patterns-registry.php:54
 msgid "Pattern content must be a string."
 msgstr "Indholdet skal være en tekststreng."
@@ -883,11 +1078,11 @@ msgstr "Titlen skal være en tekststreng."
 msgid "Pattern name must be a string."
 msgstr "Mønsternavn skal være en tekststreng."
 
-#: wp-includes/media.php:4410
+#: wp-includes/media.php:4416
 msgid "Attachment details"
 msgstr "Detaljer for vedhæftning"
 
-#: wp-includes/media.php:4356 wp-includes/media.php:4378
+#: wp-includes/media.php:4362 wp-includes/media.php:4384
 msgid "Add media"
 msgstr "Tilføj medie"
 
@@ -905,55 +1100,64 @@ msgid "File URL:"
 msgstr "Fil-URL:"
 
 #. translators: %s: The name of a JSON field expecting a valid UUID.
-#: wp-includes/rest-api.php:2151
+#: wp-includes/rest-api.php:2157
 msgid "%s is not a valid UUID."
 msgstr "%s er en ugyldig UUID."
 
-#: wp-includes/rest-api.php:2127
+#: wp-includes/rest-api.php:2133
 msgid "Invalid hex color."
 msgstr "Ugyldig HEX-farve."
 
 #. translators: 1: Parameter, 2: Pattern.
-#: wp-includes/rest-api.php:2575
+#: wp-includes/rest-api.php:2581
 msgid "%1$s does not match pattern %2$s."
 msgstr " %1$s matcher ikke mønster %2$s."
 
-#: wp-includes/rest-api.php:2560
+#. translators: 1: Parameter, 2: Number of characters.
+#: wp-includes/rest-api.php:2566
 msgid "%1$s must be at most %2$s character long."
 msgid_plural "%1$s must be at most %2$s characters long."
 msgstr[0] " %1$s må højst være %2$s tegn."
 msgstr[1] " %1$s må højst være %2$s tegn."
 
-#: wp-includes/rest-api.php:2544
+#. translators: 1: Parameter, 2: Number of characters.
+#: wp-includes/rest-api.php:2550
 msgid "%1$s must be at least %2$s character long."
 msgid_plural "%1$s must be at least %2$s characters long."
 msgstr[0] " %1$s skal mindst være %2$s tegn."
 msgstr[1] " %1$s skal mindst være %2$s tegn."
 
 #. translators: 1: Property of an object, 2: Parameter.
-#: wp-includes/rest-api.php:2232 wp-includes/rest-api.php:2242
+#: wp-includes/rest-api.php:2238 wp-includes/rest-api.php:2248
 msgid "%1$s is a required property of %2$s."
 msgstr "%1$s er en påkrævet egenskab af %2$s."
 
-#: wp-includes/rest-api.php:2371
+#. translators: %s: Parameter.
+#: wp-includes/rest-api.php:2390 wp-includes/rest-api.php:2692
+msgid "%s has duplicate items."
+msgstr "%s har dublerede elementer."
+
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2377
 msgid "%1$s must contain at most %2$s item."
 msgid_plural "%1$s must contain at most %2$s items."
 msgstr[0] " %1$s skal højst indeholde %2$s element."
 msgstr[1] " %1$s skal højst indeholde %2$s elementer."
 
-#: wp-includes/rest-api.php:2355
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2361
 msgid "%1$s must contain at least %2$s item."
 msgid_plural "%1$s must contain at least %2$s items."
 msgstr[0] "%1$s skal indeholde mindst %2$s element."
 msgstr[1] "%1$s skal indeholde mindst %2$s elementer."
 
 #. translators: 1: Parameter, 2: The list of allowed types.
-#: wp-includes/rest-api.php:2076 wp-includes/rest-api.php:2670
+#: wp-includes/rest-api.php:2082 wp-includes/rest-api.php:2676
 msgid "The \"type\" schema keyword for %1$s can only be one of the built-in types: %2$l."
 msgstr "Schema nøgleordet \"type\" for %1$s kan kun være en af de indbyggede typer: %2$l."
 
 #. translators: %s: Parameter.
-#: wp-includes/rest-api.php:2054 wp-includes/rest-api.php:2653
+#: wp-includes/rest-api.php:2060 wp-includes/rest-api.php:2659
 msgid "The \"type\" schema keyword for %s is required."
 msgstr "\"Type\" schema nøgleord for %s er påkrævet."
 
@@ -1594,31 +1798,31 @@ msgstr "Beskytttet med adgangskode"
 msgid "Namespace must not start or end with a slash."
 msgstr "Navneområdet må ikke starte eller slutte med en skråstreg"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3389
-#: wp-includes/class-wp-xmlrpc-server.php:3392
+#: wp-includes/class-wp-xmlrpc-server.php:3432
+#: wp-includes/class-wp-xmlrpc-server.php:3435
 msgid "Sorry, the category could not be created."
 msgstr "Beklager, din kategori kunne ikke oprettes."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1790
-#: wp-includes/class-wp-xmlrpc-server.php:5224
+#: wp-includes/class-wp-xmlrpc-server.php:1833
+#: wp-includes/class-wp-xmlrpc-server.php:5267
 msgid "Sorry, the post could not be deleted."
 msgstr "Beklager, indlægget kunne ikke slettes."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1647
-#: wp-includes/class-wp-xmlrpc-server.php:5164
-#: wp-includes/class-wp-xmlrpc-server.php:5922
+#: wp-includes/class-wp-xmlrpc-server.php:1690
+#: wp-includes/class-wp-xmlrpc-server.php:5207
+#: wp-includes/class-wp-xmlrpc-server.php:5965
 msgid "Sorry, the post could not be updated."
 msgstr "Beklager, indlægget kunne ikke opdateres."
 
-#: wp-includes/media.php:4457 wp-includes/js/dist/block-library.js:25772
+#: wp-includes/media.php:4463 wp-includes/js/dist/block-library.js:24844
 msgid "Select poster image"
 msgstr "Vælg plakatbillede"
 
-#: wp-includes/js/dist/edit-post.js:6663 wp-admin/edit-form-advanced.php:145
+#: wp-includes/js/dist/edit-post.js:7422 wp-admin/edit-form-advanced.php:145
 msgid "View post"
 msgstr "Se indlæg"
 
-#: wp-includes/js/dist/components.js:30546 wp-includes/js/dist/editor.js:10816
+#: wp-includes/js/dist/components.js:23561 wp-includes/js/dist/editor.js:10085
 #: wp-admin/edit-tags.php:451 wp-admin/includes/meta-boxes.php:890
 #: wp-admin/includes/meta-boxes.php:1563
 #: wp-admin/includes/class-wp-terms-list-table.php:189
@@ -1628,7 +1832,7 @@ msgstr "Se indlæg"
 msgid "Slug"
 msgstr "Korttitel"
 
-#: wp-includes/js/dist/editor.js:7748 wp-admin/includes/meta-boxes.php:708
+#: wp-includes/js/dist/editor.js:7017 wp-admin/includes/meta-boxes.php:708
 msgid "https://wordpress.org/support/article/excerpt/"
 msgstr "https://wordpress.org/support/article/excerpt/"
 
@@ -1686,7 +1890,7 @@ msgstr "IP"
 
 #: wp-includes/user.php:3467
 msgid "Longitude"
-msgstr "Længegrad"
+msgstr "Længdegrad"
 
 #: wp-includes/user.php:3466
 msgid "Latitude"
@@ -1725,13 +1929,13 @@ msgstr "Som svar til: %s"
 msgid "HTTP redirect status code must be a redirection code, 3xx."
 msgstr "HTTP redirect statuskode skal være en redirection kode, 3xx."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2933
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2980
 msgid "Limit result set based on relationship between multiple taxonomies."
 msgstr "Begræns resultatet ud fra relationen mellem flere taksonomier."
 
 #. translators: 1: The taxonomy name, 2: The property name, either 'rest_base'
 #. or 'name', 3: The conflicting value.
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2431
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2478
 msgid "The \"%1$s\" taxonomy \"%2$s\" property (%3$s) conflicts with an existing property on the REST API Posts Controller. Specify a custom \"rest_base\" when registering the taxonomy to avoid this error."
 msgstr "\"%1$s\" taksonomiens \"%2$s\" egenskab (%3$s) kommer i konflikt med en eksisterende egenskab i REST API indlægskontrol. Specificer en \"rest_base\" når taksonomien registreres for at undgå denne fejl."
 
@@ -1803,14 +2007,14 @@ msgstr "Hvorvidt links til indlæg- og kommentar RSS feed tilføjes til sidehove
 msgid "Whether theme opts in to wide alignment CSS class."
 msgstr "Hvorvidt temaet vælger at bruge CSS klasse for bred tekstjustering. "
 
-#: wp-includes/class-wp-xmlrpc-server.php:5011
-#: wp-includes/class-wp-xmlrpc-server.php:5024
+#: wp-includes/class-wp-xmlrpc-server.php:5054
+#: wp-includes/class-wp-xmlrpc-server.php:5067
 msgid "Sorry, this method is not supported."
 msgstr "Beklager, denne metode er ikke understøttet."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1649
-#: wp-includes/class-wp-xmlrpc-server.php:5084
-#: wp-includes/class-wp-xmlrpc-server.php:5577
+#: wp-includes/class-wp-xmlrpc-server.php:1692
+#: wp-includes/class-wp-xmlrpc-server.php:5127
+#: wp-includes/class-wp-xmlrpc-server.php:5620
 msgid "Sorry, the post could not be created."
 msgstr "Beklager, dit indlæg kunne ikke oprettes."
 
@@ -1861,34 +2065,34 @@ msgstr "Ukendt mailadresse. Kontroller igen eller prøv med dit brugernavn."
 msgid "Unknown username. Check again or try your email address."
 msgstr "Ukendt brugernavn. Kontroller igen eller prøv med din mailadresse."
 
-#: wp-includes/media.php:4482
+#: wp-includes/media.php:4488
 msgid "Media list"
 msgstr "Medieliste"
 
-#: wp-includes/media.php:4481
+#: wp-includes/media.php:4487
 msgid "Filter media"
 msgstr "Filtrer medier"
 
 #: wp-includes/media-template.php:316
-#: wp-includes/js/dist/block-library.js:19287
-#: wp-includes/js/dist/block-library.js:21677
+#: wp-includes/js/dist/block-library.js:18359
+#: wp-includes/js/dist/block-library.js:20749
 #: wp-admin/includes/class-wp-media-list-table.php:45
 msgid "Grid view"
 msgstr "Gittervisning"
 
-#: wp-includes/media-template.php:313 wp-includes/js/dist/block-editor.js:28489
-#: wp-includes/js/dist/block-library.js:19278
-#: wp-includes/js/dist/block-library.js:21668
+#: wp-includes/media-template.php:313 wp-includes/js/dist/block-editor.js:29791
+#: wp-includes/js/dist/block-library.js:18350
+#: wp-includes/js/dist/block-library.js:20740
 #: wp-admin/includes/class-wp-media-list-table.php:44
 msgid "List view"
 msgstr "Listevisning"
 
-#: wp-includes/js/dist/block-library.js:7550 wp-admin/credits.php:25
+#: wp-includes/js/dist/block-library.js:6619 wp-admin/credits.php:25
 #: wp-admin/privacy.php:22 wp-admin/freedoms.php:28 wp-admin/about.php:26
 msgid "Code is Poetry"
 msgstr "Kode er poeci"
 
-#: wp-includes/js/dist/block-directory.js:1829
+#: wp-includes/js/dist/block-directory.js:1481
 #: wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php:63
 #: wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php:136
 #: wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php:142
@@ -1898,11 +2102,11 @@ msgstr "Kode er poeci"
 msgid "Retry"
 msgstr "Forsøg igen"
 
-#: wp-includes/js/dist/editor.js:6923 wp-admin/includes/template.php:2585
+#: wp-includes/js/dist/editor.js:6193 wp-admin/includes/template.php:2585
 msgid "Restore the backup"
 msgstr "Gendan sikkerhedskopien"
 
-#: wp-includes/js/dist/editor.js:6920 wp-admin/includes/template.php:2584
+#: wp-includes/js/dist/editor.js:6190 wp-admin/includes/template.php:2584
 msgid "The backup of this post in your browser is different from the version below."
 msgstr "Den backup, der er af dette indlæg i din browser, er forskellig fra versionen nedenunder."
 
@@ -1925,6 +2129,7 @@ msgstr "Nuværende plugin: %1$s (version %2$s)"
 msgid "Current theme: %1$s (version %2$s)"
 msgstr "Nuværende tema: %1$s (version %2$s)"
 
+#. translators: %s: Current WordPress version number.
 #. translators: %s: Your current version of WordPress.
 #: wp-includes/class-wp-recovery-mode-email-service.php:336
 #: wp-admin/includes/class-wp-site-health.php:266
@@ -2007,19 +2212,19 @@ msgstr "Ikke nok data til at oprette denne bruger."
 msgid "Sorry, marking a user as spam is only supported on Multisite."
 msgstr "Beklager, at markere en bruger som spam understøttes kun i Multisite."
 
-#: wp-includes/media.php:4920
+#: wp-includes/media.php:4926
 msgid "User&#8217;s media data."
 msgstr "Brugerens mediedata."
 
-#: wp-includes/media.php:4407
+#: wp-includes/media.php:4413
 msgid "No media items found. Try a different search."
 msgstr "Ingen medieelementer blev fundet. Prøv med en anden søgning."
 
-#: wp-includes/media.php:4405
+#: wp-includes/media.php:4411
 msgid "Number of media items displayed: %d. Scroll the page for more results."
 msgstr "Antallet af medieelementer der vises: %d. Rul på siden for at se flere resultater."
 
-#: wp-includes/media.php:4404
+#: wp-includes/media.php:4410
 msgid "Number of media items found: %d"
 msgstr "Antallet af medieelementer der er fundet: %d"
 
@@ -2088,9 +2293,9 @@ msgid "Sorry, you are not allowed to delete revisions of this post."
 msgstr "Beklager, du har ikke tilladelse til at slette revisioner af dette indlæg. "
 
 #. translators: %s: Custom field key.
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:320
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:334
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:384
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:324
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:338
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:388
 msgid "Could not update the meta value of %s in database."
 msgstr "Kunne ikke opdatere metaværdi for %s i database."
 
@@ -2212,7 +2417,7 @@ msgstr "Videotitel"
 msgid "Caption&hellip;"
 msgstr "Undertekst&hellip;"
 
-#: wp-includes/media-template.php:407 wp-includes/js/dist/editor.js:12154
+#: wp-includes/media-template.php:407 wp-includes/js/dist/editor.js:11412
 #: wp-admin/includes/class-wp-themes-list-table.php:271
 #: wp-admin/includes/class-wp-theme-install-list-table.php:369
 #: wp-admin/import.php:205
@@ -2227,7 +2432,7 @@ msgstr "Forhåndsvisning af vedhæftning"
 msgid "Your browser cannot upload files"
 msgstr "Din browser kan ikke uploade filer"
 
-#: wp-includes/class-wp-xmlrpc-server.php:615 wp-includes/option.php:2186
+#: wp-includes/class-wp-xmlrpc-server.php:658 wp-includes/option.php:2186
 msgid "Allow people to submit comments on new posts."
 msgstr "Tillad folk at skrive kommentarer til nye indlæg."
 
@@ -2327,7 +2532,7 @@ msgid "[%s] Login Details"
 msgstr "[%s] Login detaljer"
 
 #: wp-includes/media-template.php:538 wp-includes/media-template.php:689
-#: wp-includes/media.php:4395 wp-admin/includes/meta-boxes.php:337
+#: wp-includes/media.php:4401 wp-admin/includes/meta-boxes.php:337
 #: wp-admin/includes/meta-boxes.php:441 wp-admin/includes/media.php:1736
 #: wp-admin/includes/class-wp-media-list-table.php:179
 #: wp-admin/includes/class-wp-comments-list-table.php:374
@@ -2337,7 +2542,7 @@ msgid "Move to Trash"
 msgstr "Flyt til papirkurv"
 
 #: wp-includes/media-template.php:536 wp-includes/media-template.php:687
-#: wp-includes/media.php:4396
+#: wp-includes/media.php:4402
 msgid "Restore from Trash"
 msgstr "Gendan fra papirkurv"
 
@@ -2390,16 +2595,16 @@ msgstr "[%s] Anmodning om ændring af e-mail"
 msgid "[%s] Email Changed"
 msgstr "[%s] E-mail ændret"
 
-#: wp-includes/js/dist/block-library.js:12218 wp-admin/options-reading.php:152
+#: wp-includes/js/dist/block-library.js:11290 wp-admin/options-reading.php:152
 msgid "posts"
 msgstr "Indlæg"
 
 #: wp-includes/widgets/class-wp-widget-calendar.php:34
-#: wp-includes/js/dist/block-library.js:12216
+#: wp-includes/js/dist/block-library.js:11288
 msgid "A calendar of your site’s posts."
 msgstr "En kalender med dit websteds indlæg."
 
-#: wp-includes/media.php:4421
+#: wp-includes/media.php:4427
 msgid "Edit gallery"
 msgstr "Rediger galleri"
 
@@ -2493,6 +2698,10 @@ msgstr "Administrator"
 msgid "Select site icon"
 msgstr "Vælg ikon for webstedet"
 
+#: wp-includes/user.php:3994
+msgid "An incomplete personal data request for this email address already exists."
+msgstr "En ufuldstændig anmodning for denne e-mailadresse eksisterer allerede."
+
 #: wp-includes/class-wp-customize-widgets.php:778
 msgid "Keep widget settings and move it to the inactive widgets"
 msgstr "Behold widget-indstillinger og flyt den til inaktive widgets"
@@ -2538,7 +2747,7 @@ msgstr "Yderligere billeder tilføjet til dette galleri: %s"
 #. Translators: %s: The selected image filename.
 #: wp-includes/widgets/class-wp-widget-media-image.php:364
 #: wp-includes/widgets/class-wp-widget-media-gallery.php:204
-#: wp-includes/js/dist/editor.js:7929
+#: wp-includes/js/dist/editor.js:7198
 msgid "The current image has no alternative text. The file name is: %s"
 msgstr "Det nuværende billede har ingen alt-tekst. Filnavnet er: %s"
 
@@ -2773,77 +2982,77 @@ msgstr "Klassisk Blok tastaturgenveje"
 msgid "Sorry, you are not allowed to view autosaves of this post."
 msgstr "Beklager, du har rettigheder til at se autogemte versioner af dette indlæg."
 
-#: wp-includes/js/dist/block-editor.js:21601
-#: wp-includes/js/dist/block-library.js:3065 wp-admin/edit-form-blocks.php:306
+#: wp-includes/js/dist/block-editor.js:22895
+#: wp-includes/js/dist/block-library.js:2132 wp-admin/edit-form-blocks.php:306
 msgid "Start writing or type / to choose a block"
 msgstr "Start med at skrive eller tast / for at vælge en blok"
 
-#: wp-includes/media.php:4433 wp-includes/js/dist/block-library.js:6319
-#: wp-includes/js/dist/block-library.js:6320
+#: wp-includes/media.php:4439 wp-includes/js/dist/block-library.js:5388
+#: wp-includes/js/dist/block-library.js:5389
 msgid "Edit image"
 msgstr "Rediger billede"
 
 #: wp-includes/block-patterns/large-header-button.php:10
 #: wp-includes/block-patterns/large-header.php:10
-#: wp-includes/js/dist/block-library.js:14322
-#: wp-includes/js/dist/block-library.js:14378
-#: wp-includes/js/dist/block-library.js:14424
-#: wp-includes/js/dist/block-library.js:14480
+#: wp-includes/js/dist/block-library.js:13394
+#: wp-includes/js/dist/block-library.js:13450
+#: wp-includes/js/dist/block-library.js:13496
+#: wp-includes/js/dist/block-library.js:13552
 msgid "Write title…"
 msgstr "Skriv titel..."
 
-#: wp-includes/js/dist/blocks.js:6107 wp-admin/options-media.php:100
+#: wp-includes/js/dist/blocks.js:287 wp-admin/options-media.php:100
 msgid "Embeds"
 msgstr "Indlejringer"
 
-#: wp-includes/js/dist/edit-post.js:4412 wp-includes/js/dist/edit-post.js:6768
+#: wp-includes/js/dist/edit-post.js:5171 wp-includes/js/dist/edit-post.js:7527
 #: wp-admin/includes/meta-boxes.php:1545 wp-admin/menu.php:296
 msgid "Discussion"
 msgstr "Diskussion"
 
-#: wp-includes/js/dist/editor.js:11839 wp-includes/js/dist/editor.js:11845
+#: wp-includes/js/dist/editor.js:11097 wp-includes/js/dist/editor.js:11103
 #: wp-admin/edit-form-advanced.php:519 wp-admin/edit-form-blocks.php:317
 msgid "Add title"
 msgstr "Tilføj overskrift"
 
-#: wp-includes/js/dist/editor.js:10055 wp-admin/includes/meta-boxes.php:163
+#: wp-includes/js/dist/editor.js:9324 wp-admin/includes/meta-boxes.php:163
 msgid "Visibility:"
 msgstr "Synlighed:"
 
 #: wp-includes/media-template.php:514 wp-includes/media-template.php:743
-#: wp-includes/js/dist/editor.js:10220 wp-includes/js/dist/edit-post.js:3030
-#: wp-includes/js/dist/block-library.js:16809
+#: wp-includes/js/dist/editor.js:9489 wp-includes/js/dist/edit-post.js:3789
+#: wp-includes/js/dist/block-library.js:15881
 #: wp-admin/includes/class-wp-privacy-policy-content.php:421
 #: wp-admin/includes/media.php:3335 wp-admin/site-health-info.php:102
 msgid "Copied!"
 msgstr "Kopieret!"
 
-#: wp-includes/js/dist/editor.js:8866 wp-admin/includes/meta-boxes.php:364
+#: wp-includes/js/dist/editor.js:8135 wp-admin/includes/meta-boxes.php:364
 #: wp-admin/includes/meta-boxes.php:365
 msgid "Submit for Review"
 msgstr "Indsend til gennemsyn"
 
-#: wp-includes/media.php:4431 wp-includes/js/dist/block-library.js:9107
+#: wp-includes/media.php:4437 wp-includes/js/dist/block-library.js:8176
 msgid "Replace image"
 msgstr "Erstat billede"
 
-#: wp-includes/js/dist/editor.js:7708 wp-admin/includes/meta-boxes.php:801
+#: wp-includes/js/dist/editor.js:6977 wp-admin/includes/meta-boxes.php:801
 msgid "Allow comments"
 msgstr "Tillad kommentarer"
 
-#: wp-includes/js/dist/editor.js:7140 wp-admin/includes/meta-boxes.php:1008
+#: wp-includes/js/dist/editor.js:6410 wp-admin/includes/meta-boxes.php:1008
 #: wp-admin/includes/media.php:1411 wp-admin/includes/media.php:2570
 #: wp-admin/includes/class-wp-posts-list-table.php:1728
 msgid "Order"
 msgstr "Rækkefølge"
 
-#: wp-includes/js/dist/block-editor.js:18851
+#: wp-includes/js/dist/block-editor.js:20145
 #: wp-admin/includes/class-theme-installer-skin.php:248
 #: wp-admin/includes/class-plugin-installer-skin.php:224
 msgid "Current"
 msgstr "Nuværende"
 
-#: wp-includes/js/dist/components.js:40654
+#: wp-includes/js/dist/components.js:33669
 #: wp-admin/includes/edit-tag-messages.php:14
 msgid "Item added."
 msgstr "Element tilføjet."
@@ -2857,8 +3066,8 @@ msgstr "Element tilføjet."
 #: wp-includes/class-wp-customize-manager.php:4342
 #: wp-includes/class-wp-customize-manager.php:5664
 #: wp-includes/class-wp-customize-manager.php:5685
-#: wp-includes/js/dist/components.js:37709 wp-includes/js/dist/editor.js:8472
-#: wp-includes/js/dist/edit-post.js:3218 wp-admin/includes/theme.php:827
+#: wp-includes/js/dist/components.js:30724 wp-includes/js/dist/editor.js:7741
+#: wp-includes/js/dist/edit-post.js:3977 wp-admin/includes/theme.php:827
 #: wp-admin/includes/class-wp-privacy-policy-content.php:360
 #: wp-admin/includes/meta-boxes.php:80 wp-admin/includes/media.php:3225
 #: wp-admin/includes/class-wp-site-health.php:738
@@ -2869,7 +3078,7 @@ msgstr "Element tilføjet."
 #: wp-admin/includes/class-wp-site-health.php:1523
 #: wp-admin/includes/class-wp-site-health.php:1605
 #: wp-admin/includes/class-wp-site-health.php:1624
-#: wp-admin/includes/class-wp-site-health.php:2258
+#: wp-admin/includes/class-wp-site-health.php:2228
 #: wp-admin/includes/dashboard.php:1243 wp-admin/includes/dashboard.php:1255
 #: wp-admin/includes/dashboard.php:1268 wp-admin/includes/dashboard.php:1796
 msgid "(opens in a new tab)"
@@ -2963,19 +3172,19 @@ msgstr "Intern søgehåndteringsfejl."
 msgid "REST search handlers must extend the %s class."
 msgstr "REST-baserede søgehåndteringer skal udvide %s klassen."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2523
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2570
 msgid "The current user can post unfiltered HTML markup and JavaScript."
 msgstr "Den nuværende bruger kan udgive ufiltreret HTML og JavaScript."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2299
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2346
 msgid "Version of the content block format used by the object."
 msgstr "Versionen af indholdsblok formatet brugt af objektet."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2184
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2231
 msgid "Slug automatically generated from the object title."
 msgstr "Korttitel automatisk genereret ud fra objektets titel."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2177
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2224
 msgid "Permalink template for the object."
 msgstr "Permalink skabelon for objektet."
 
@@ -3088,24 +3297,24 @@ msgid "[%1$s] Action Confirmed: %2$s"
 msgstr "[%1$s] Handling bekræftet: %2$s"
 
 #. translators: %s: Taxonomy name.
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2577
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2624
 msgid "The current user can create terms in the %s taxonomy."
 msgstr "Denne bruger kan oprette termer i %s-klassificeringen."
 
 #. translators: %s: Taxonomy name.
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2575
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2622
 msgid "The current user can assign terms in the %s taxonomy."
 msgstr "Denne bruger kan tildele termer i %s-klassificeringen."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2556
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2603
 msgid "The current user can change the author on this post."
 msgstr "Denne bruger kan ændre forfatteren på dette indlæg."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2540
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2587
 msgid "The current user can sticky this post."
 msgstr "Denne bruger kan fastgøre dette indlæg."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2507
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2554
 msgid "The current user can publish this post."
 msgstr "Denne bruger kan udgive dette indlæg."
 
@@ -3290,7 +3499,7 @@ msgstr "Bruger-ID"
 msgid "WordPress User"
 msgstr "WordPress bruger"
 
-#: wp-includes/media.php:4863
+#: wp-includes/media.php:4869
 msgid "WordPress Media"
 msgstr "WordPress medie"
 
@@ -3443,7 +3652,7 @@ msgstr "Begræns resultat-sæt til brugere som regnes for forfattere."
 msgid "Sorry, you are not allowed to query users by this parameter."
 msgstr "Beklager, men du har ikke tilladelse til at søge brugere ved hjælp af denne parameter."
 
-#: wp-includes/media.php:4388
+#: wp-includes/media.php:4394
 #: wp-admin/includes/class-wp-media-list-table.php:155
 msgctxt "media items"
 msgid "Mine"
@@ -3473,7 +3682,7 @@ msgid "You need a higher level of permission."
 msgstr "Du har brug for et højere adgangsniveau."
 
 #: wp-includes/script-loader.php:694 wp-includes/script-loader.php:1167
-#: wp-includes/class-wp-xmlrpc-server.php:3956 wp-includes/functions.php:3300
+#: wp-includes/class-wp-xmlrpc-server.php:3999 wp-includes/functions.php:3300
 #: wp-includes/class-wp-customize-manager.php:449
 #: wp-admin/includes/class-custom-image-header.php:775
 #: wp-admin/includes/class-custom-image-header.php:939
@@ -3519,7 +3728,7 @@ msgid "Installed"
 msgstr "Installeret"
 
 #. translators: %s: Property of an object.
-#: wp-includes/rest-api.php:2271
+#: wp-includes/rest-api.php:2277
 msgid "%1$s is not a valid property of Object."
 msgstr "%1$s er ikke en gyldig egenskab af Object."
 
@@ -3716,7 +3925,7 @@ msgid "Displays an image gallery."
 msgstr "Viser et billed-galleri."
 
 #: wp-includes/widgets/class-wp-widget-media-gallery.php:28
-#: wp-includes/js/dist/editor.js:8098 wp-includes/js/dist/block-library.js:9590
+#: wp-includes/js/dist/editor.js:7367 wp-includes/js/dist/block-library.js:8662
 #: wp-admin/includes/media.php:20
 msgid "Gallery"
 msgstr "Galleri"
@@ -4004,7 +4213,7 @@ msgstr "Filippinsk"
 msgid "Estonian"
 msgstr "Estisk"
 
-#: wp-includes/script-loader.php:981 wp-includes/js/dist/block-library.js:25435
+#: wp-includes/script-loader.php:981 wp-includes/js/dist/block-library.js:24507
 #: wp-admin/includes/ms.php:664
 msgid "English"
 msgstr "Engelsk"
@@ -4065,7 +4274,7 @@ msgstr "Afrikaans"
 msgid "Live Broadcast"
 msgstr "Live-udsendelse"
 
-#: wp-includes/script-loader.php:966 wp-includes/js/dist/block-library.js:25306
+#: wp-includes/script-loader.php:966 wp-includes/js/dist/block-library.js:24378
 msgid "Chapters"
 msgstr "Kapitler"
 
@@ -4234,7 +4443,7 @@ msgstr "Søg WordPress.org temaer"
 #: wp-includes/customize/class-wp-customize-theme-control.php:263
 #: wp-admin/includes/theme.php:1004 wp-admin/includes/theme.php:1007
 msgid "Install &amp; Preview"
-msgstr "Installer %amp; Forhåndsvisning"
+msgstr "Installer &amp; forhåndsvis"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-item-setting.php:727
 msgid "Invalid URL."
@@ -4245,7 +4454,7 @@ msgstr "Ugyldig URL."
 msgid "Time to add some links! Click &#8220;%s&#8221; to start putting pages, categories, and custom links in your menu. Add as many things as you&#8217;d like."
 msgstr "Tid til at tilføje nogle links! Klik &#8220;%s&#8221; for at begynde at lægge sider, kategorier og brugerdefinerede links i din menu. Tilføj så mange ting som du vil."
 
-#: wp-includes/media.php:4436
+#: wp-includes/media.php:4442
 #: wp-includes/customize/class-wp-customize-media-control.php:252
 msgid "Choose image"
 msgstr "Vælg billede"
@@ -4303,22 +4512,22 @@ msgid "Hour"
 msgstr "Time"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:160
-#: wp-includes/js/dist/components.js:35984
+#: wp-includes/js/dist/components.js:28999
 msgid "Time"
 msgstr "Tid"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:146
-#: wp-includes/js/dist/components.js:35915 wp-admin/includes/template.php:826
+#: wp-includes/js/dist/components.js:28930 wp-admin/includes/template.php:826
 msgid "Day"
 msgstr "Dag"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:130
-#: wp-includes/js/dist/components.js:35930 wp-admin/includes/template.php:816
+#: wp-includes/js/dist/components.js:28945 wp-admin/includes/template.php:816
 msgid "Month"
 msgstr "Måned"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:127
-#: wp-includes/js/dist/components.js:35968
+#: wp-includes/js/dist/components.js:28983
 #: wp-admin/includes/ajax-actions.php:2182
 #: wp-admin/includes/class-wp-posts-list-table.php:660
 #: wp-admin/includes/class-wp-posts-list-table.php:1578
@@ -4585,7 +4794,7 @@ msgctxt "label for button in the audio widget"
 msgid "Add Audio"
 msgstr "Tilføj lydklip"
 
-#: wp-includes/media.php:3956 wp-admin/includes/media.php:3295
+#: wp-includes/media.php:3962 wp-admin/includes/media.php:3295
 msgid "(no author)"
 msgstr "(ingen forfatter)"
 
@@ -4795,22 +5004,22 @@ msgid "Displays an audio player."
 msgstr "Viser en lydafspiller."
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:2449
+#: wp-includes/rest-api.php:2455
 msgid "%1$s must be less than or equal to %2$d"
 msgstr "%1$s skal være mindre end eller lig med %2$d"
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:2441
+#: wp-includes/rest-api.php:2447
 msgid "%1$s must be less than %2$d"
 msgstr "%1$s skal være mindre end %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:2431
+#: wp-includes/rest-api.php:2437
 msgid "%1$s must be greater than or equal to %2$d"
 msgstr "%1$s skal være lig med eller større end %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:2423
+#: wp-includes/rest-api.php:2429
 msgid "%1$s must be greater than %2$d"
 msgstr "%1$s skal være større end %2$d"
 
@@ -4823,13 +5032,13 @@ msgid "Limit result set to terms with one or more specific slugs."
 msgstr "Begræns svar til en eller flere specifikke korttitler."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:312
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:353
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:393
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:160
 msgid "The page number requested is larger than the number of pages available."
 msgstr "Det forespurgte sidenummer er større end antallet af tilgængelige sider."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:237
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:174
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:214
 msgid "You need to define an include parameter to order by include."
 msgstr "Du skal definere et inkluderingsparameter for at sortere efter inkludering."
 
@@ -4887,7 +5096,7 @@ msgstr "Udvalgt billede"
 msgid "%1$s is deprecated. The callback from %2$s is used instead."
 msgstr "%1$s er forældet. Callback fra %2$s bruges i stedet."
 
-#: wp-includes/media.php:4392
+#: wp-includes/media.php:4398
 msgid ""
 "You are about to permanently delete these items from your site.\n"
 "This action cannot be undone.\n"
@@ -4897,7 +5106,7 @@ msgstr ""
 "Denne handling kan ikke fortrydes.\n"
 "'Annuller' for at stoppe, 'OK' for at slette."
 
-#: wp-includes/media.php:4391
+#: wp-includes/media.php:4397
 msgid ""
 "You are about to permanently delete this item from your site.\n"
 "This action cannot be undone.\n"
@@ -4908,12 +5117,12 @@ msgstr ""
 "'Annuller' for at stoppe, 'OK' for at slette."
 
 #. translators: 1: Suggested width number, 2: Suggested height number.
-#: wp-includes/media-template.php:296 wp-includes/media.php:4443
+#: wp-includes/media-template.php:296 wp-includes/media.php:4449
 msgid "Suggested image dimensions: %1$s by %2$s pixels."
 msgstr "Foreslåede billeddimensioner: %1$s x %2$s pixels."
 
 #: wp-includes/script-loader.php:869 wp-includes/functions.php:2679
-#: wp-includes/js/dist/media-utils.js:1084 wp-admin/includes/file.php:890
+#: wp-includes/js/dist/media-utils.js:937 wp-admin/includes/file.php:890
 msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "Beklager, denne filtype er ikke tilladt af sikkerhedsmæssige årsager."
 
@@ -5147,7 +5356,7 @@ msgstr "Termen kan ikke slettes."
 msgid "Sorry, you are not allowed to view themes."
 msgstr "Beklager, du har ikke rettigheder til at se termaer."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2178
+#: wp-includes/class-wp-xmlrpc-server.php:2221
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:432
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:569
 msgid "Cannot set parent term, taxonomy is not hierarchical."
@@ -5248,7 +5457,7 @@ msgid "Invalid slug."
 msgstr "Ugyldig korttitel."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:717
-#: wp-includes/rest-api.php:2139 wp-includes/user.php:3965
+#: wp-includes/rest-api.php:2145 wp-includes/user.php:3965
 #: wp-admin/network/site-new.php:96
 msgid "Invalid email address."
 msgstr "Ugyldig e-mailadresse."
@@ -5266,7 +5475,7 @@ msgstr "Ugyldig JSONP callback funktion."
 msgid "Invalid page template."
 msgstr "Ugyldig sideskabelon."
 
-#: wp-includes/script-loader.php:1210 wp-includes/rest-api.php:2133
+#: wp-includes/script-loader.php:1210 wp-includes/rest-api.php:2139
 #: wp-includes/post.php:3917 wp-admin/includes/post.php:188
 msgid "Invalid date."
 msgstr "Ugyldig dato."
@@ -5348,7 +5557,7 @@ msgstr "Du har desværre ikke tilladelse til at sortere brugere efter denne para
 msgid "Sorry, you are not allowed to filter users by role."
 msgstr "Du har desværre ikke tilladelse til at filtrere brugere efter rolle."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3683
+#: wp-includes/class-wp-xmlrpc-server.php:3726
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:934
 msgid "Sorry, you are not allowed to delete this comment."
 msgstr "Du har desværre ikke tilladelse til at slette denne kommentar."
@@ -5425,19 +5634,19 @@ msgstr "Om dette websted"
 
 #. translators: %s: Custom field key.
 #: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:227
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:269
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:364
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:273
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:368
 msgid "Sorry, you are not allowed to edit the %s custom field."
 msgstr "Beklager, men du har ikke rettigheder til at rette det brugerdefinerede felt %s."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:560
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:733
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:606
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:779
 msgid "Sorry, you are not allowed to assign the provided terms."
 msgstr "Beklager, men du har ikke rettigheder til at tilknytte de tildelte termer."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1344
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:544
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:725
+#: wp-includes/class-wp-xmlrpc-server.php:1387
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:590
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:771
 msgid "Sorry, you are not allowed to make posts sticky."
 msgstr "Beklager, men du har ikke rettigheder til at gøre indlægget fastgjort."
 
@@ -5647,7 +5856,7 @@ msgid "Revisions do not support trashing. Set '%s' to delete."
 msgstr "Versioner understøtter ikke papirkurven. Sæt '%s' for at slette."
 
 #. translators: %s: force=true
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:929
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:975
 msgid "The post does not support trashing. Set '%s' to delete."
 msgstr "Dette indlæg understøtter ikke papirkurven. Sæt '%s' for at slette."
 
@@ -5664,7 +5873,7 @@ msgstr "Eller indtast en YouTube-URL:"
 msgid "Invalid JSON body passed."
 msgstr "Ugyldig JSON body sendt."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2765
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2812
 msgid "Limit result set to posts assigned one or more statuses."
 msgstr "Begræns svaret til indlæg tildelt en eller flere statusser."
 
@@ -5677,11 +5886,11 @@ msgstr "Kommentarfeltet overskrider den tilladte længde."
 msgid "Taxonomies associated with post type."
 msgstr "Klassificeringer forbundet med denne indholdstype."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2755
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2802
 msgid "Limit result set to posts with one or more specific slugs."
 msgstr "Begræns svaret til indlæg med en eller flere korttitler."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3944
+#: wp-includes/class-wp-xmlrpc-server.php:3987
 msgid "Comment is required."
 msgstr "Kommentar er påkrævet."
 
@@ -5702,7 +5911,7 @@ msgid "I really need an ID for this to work."
 msgstr "Jeg har virkelig brug for et ID for at det kan virke."
 
 #: wp-includes/block-patterns/three-buttons.php:10
-#: wp-includes/js/dist/block-library.js:12104
+#: wp-includes/js/dist/block-library.js:11176
 msgid "Contact us"
 msgstr "Kontakt os"
 
@@ -5711,50 +5920,54 @@ msgstr "Kontakt os"
 msgid "Homepage"
 msgstr "Forside"
 
-#: wp-includes/script-loader.php:819 wp-includes/js/dist/components.js:31129
+#: wp-includes/script-loader.php:819 wp-includes/js/dist/components.js:24144
 msgid "Item selected."
 msgstr "Element valgt."
 
-#: wp-includes/rest-api.php:2506
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2512
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s skal være mellem %2$d (inklusiv) og %3$d (inklusiv)"
 
-#: wp-includes/rest-api.php:2476
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2482
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s skal være mellem %2$d (eksklusiv) og %3$d (inklusive)"
 
-#: wp-includes/rest-api.php:2491
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2497
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s skal være mellem %2$d (inklusiv) og %3$d (eksklusiv)"
 
-#: wp-includes/rest-api.php:2461
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2467
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s skal være mellem %2$d (eksklusiv) og %3$d (eksklusiv)"
 
 #. translators: %s: IP address.
-#: wp-includes/rest-api.php:2145
+#: wp-includes/rest-api.php:2151
 msgid "%s is not a valid IP address."
 msgstr "%s er ikke en gyldig IP-adresse."
 
 #. translators: 1: Parameter, 2: List of types.
 #. translators: 1: Parameter, 2: Type name.
-#: wp-includes/rest-api.php:2064 wp-includes/rest-api.php:2174
-#: wp-includes/rest-api.php:2196 wp-includes/rest-api.php:2219
-#: wp-includes/rest-api.php:2334 wp-includes/rest-api.php:2405
-#: wp-includes/rest-api.php:2534 wp-includes/rest-api.php:2602
+#: wp-includes/rest-api.php:2070 wp-includes/rest-api.php:2180
+#: wp-includes/rest-api.php:2202 wp-includes/rest-api.php:2225
+#: wp-includes/rest-api.php:2340 wp-includes/rest-api.php:2411
+#: wp-includes/rest-api.php:2540 wp-includes/rest-api.php:2608
 msgid "%1$s is not of type %2$s."
 msgstr "%1$s er ikke af typen %2$s."
 
 #. translators: 1: Parameter, 2: List of valid values.
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1401
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1447
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s er ikke en af %2$s."
 
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:501
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:505
 msgid "Meta fields."
 msgstr "Metafelter."
 
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:238
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:242
 msgid "Could not delete meta value from database."
 msgstr "Kunne ikke slette metaværdi fra database."
 
@@ -5878,189 +6091,194 @@ msgstr "%s egenskaben har en ugyldig gemt værdi og kan ikke opdateres til null.
 msgid "Invalid revision ID."
 msgstr "Ugyldig versions-ID."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2834
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2881
 #: wp-includes/class-wp-customize-nav-menus.php:952
 msgid "Status is forbidden."
 msgstr "Status er forbudt."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2778
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2825
 msgid "Limit result set to items that are sticky."
 msgstr "Begræns svaret til elementer, der er fastgjorte."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2745
+#. translators: %s: Taxonomy name.
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:3030
+msgid "Limit result set to items except those with specific terms assigned in the %s taxonomy."
+msgstr "Begræns svar til alle elementer, der har en specifik term tildelt i %s klassiferingen."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2792
 msgid "Limit result set to all items except those of a particular parent ID."
 msgstr "Begræns svaret til alle elementer, bortset fra dem med en specifik overordnet ID."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2737
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2784
 msgid "Limit result set to items with particular parent IDs."
 msgstr "Begræns svar til elementer med en bestemt overordnet ID."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1599
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:785
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2700
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2747
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1510
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:1030
 msgid "Offset the result set by a specific number of items."
 msgstr "Forskyd svaret med en specifikt antal elementer."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2694
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2741
 msgid "Limit result set to posts with a specific menu_order value."
 msgstr "Begræns svaret til indlæg med en specifik menu_order-værdi."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2653
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2700
 msgid "Ensure result set excludes posts assigned to specific authors."
 msgstr "Sørg for, at resultatsættet udelukker indlæg fra specifikke forfattere."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2645
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2692
 msgid "Limit result set to posts assigned to specific authors."
 msgstr "Begræns resultatsættet til indlæg fra specifikke forfattere."
 
 #. translators: %s: Taxonomy name.
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2442
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2489
 msgid "The terms assigned to the object in the %s taxonomy."
 msgstr "Termerne knyttet til objektet i %s-klassificering."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2412
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2459
 msgid "The theme file to use to display the object."
 msgstr "Temafilen, som skal bruges for at vise objektet."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2167
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2214
 msgid "A password to protect access to the content and excerpt."
 msgstr "En adgangskode til at beskytte adgangen til indhold og uddrag."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2405
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2452
 msgid "Whether or not the object should be treated as sticky."
 msgstr "Om objektet skal behandles som fastgjort eller ej."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2389
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2436
 msgid "The format for the object."
 msgstr "Formatet for objektet."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2378
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2425
 msgid "The order of the object in relation to other object of its type."
 msgstr "Objektets rækkefølge i forhold til andre objekter af samme type."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2369
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2416
 msgid "Whether or not the object can be pinged."
 msgstr "Om objektet kan pinges eller ej."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2363
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2410
 msgid "Whether or not comments are open on the object."
 msgstr "Om objektet er åbent for kommentarer eller ej."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2355
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2402
 msgid "The ID of the featured media for the object."
 msgstr "ID'et for objektets udvalgte medie."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2344
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2391
 msgid "Whether the excerpt is protected with a password."
 msgstr "Om uddraget er beskyttet med en adgangskode."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2338
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2385
 msgid "HTML excerpt for the object, transformed for display."
 msgstr "HTML-uddrag for objektet, transformeret for visning."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2333
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2380
 msgid "Excerpt for the object, as it exists in the database."
 msgstr "Uddrag for objektet, som det eksisterer i databasen."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2324
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2371
 msgid "The excerpt for the object."
 msgstr "Uddrag for objektet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:678
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2316
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2363
 msgid "The ID for the author of the object."
 msgstr "ID'et for objektets forfatter."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2305
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2352
 msgid "Whether the content is protected with a password."
 msgstr "Om indholdet er beskyttet af en adgangskode."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2268
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2315
 msgid "HTML title for the object, transformed for display."
 msgstr "HTML-titel for objektet, transformeret for visning."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2263
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2310
 msgid "Title for the object, as it exists in the database."
 msgstr "Titel for objektet, som det eksisterer i databasen."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2254
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2301
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:254
 msgid "The title for the object."
 msgstr "Objektets titel."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2161
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2208
 msgid "Type of Post for the object."
 msgstr "Objektets indholdstype."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2152
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2199
 msgid "A named status for the object."
 msgstr "En navngivet status for objektet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:722
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2144
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2191
 msgid "An alphanumeric identifier for the object unique to its type."
 msgstr "En alfanumerisk identifikator, unik for dets indholdstype, for objektet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:711
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2137
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2184
 msgid "The date the object was last modified, as GMT."
 msgstr "Datoobjektet blev senest ændret, i GMT-tid."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:705
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2130
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2177
 msgid "The date the object was last modified, in the site's timezone."
 msgstr "Datoen, objektet senest blev ændret, i webstedets tidszone."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2109
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2156
 msgid "GUID for the object, transformed for display."
 msgstr "GUID for objektet, transformeret for visning."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:695
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2103
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2150
 msgid "GUID for the object, as it exists in the database."
 msgstr "GUID for objektet, som det eksisterer i databasen."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2097
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2144
 msgid "The globally unique identifier for the object."
 msgstr "Den globalt unikke identifikator for objektet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1461
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:689
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2091
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2138
 msgid "The date the object was published, as GMT."
 msgstr "Dato objektet blev udgivet, i GMT-tid."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1455
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:683
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2085
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2132
 msgid "The date the object was published, in the site's timezone."
 msgstr "Datoen objektet blev udgivet, i webstedets tidszone."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1353
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1399
 msgid "Invalid featured media ID."
 msgstr "Ugyldigt udvalgt medie-ID."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:143
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1220
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1266
 #: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:259
 msgid "Invalid post parent ID."
 msgstr "Ugyldig ID for overordnet indlæg."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1204
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1250
 msgid "A password protected post can not be set to sticky."
 msgstr "Et adgangskodebeskyttet indlæg kan ikke fastgøres."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1193
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1239
 msgid "A sticky post can not be password protected."
 msgstr "Et fastgjort indlæg kan ikke beskyttes med adgangskode."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1185
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1231
 msgid "A post can not be sticky and have a password."
 msgstr "Et indlæg kan ikke være fastgjort og have adgangskode."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:938
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:984
 msgid "The post has already been deleted."
 msgstr "Indlægget er allerede blevet slettet."
 
@@ -6074,8 +6292,8 @@ msgstr "Beklager, du har ikke tilladelse til at redigere kommentarer."
 msgid "Sorry, you are not allowed to manage this plugin."
 msgstr "Beklager, du har ikke tilladelse til at administrere dette plugin."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:526
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:580
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:572
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:626
 msgid "Cannot create existing post."
 msgstr "Kan ikke oprette eksisterende indlæg."
 
@@ -6083,17 +6301,17 @@ msgstr "Kan ikke oprette eksisterende indlæg."
 msgid "Sorry, you are not allowed to create new users."
 msgstr "Beklager, du har ikke tilladelse til at oprette nye brugere."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:440
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:480
 msgid "Incorrect post password."
 msgstr "Forkert adgangskode for indlæg."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:228
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:165
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:205
 msgid "You need to define a search term to order by relevance."
 msgstr "Du skal definere en søgeterm, hvis du vil sortere efter relevans."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1672
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:85
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:93
 msgid "The password for the post if it is password protected."
 msgstr "Adgangskode for indlægget, hvis det er adgangskodebeskyttet."
 
@@ -6195,14 +6413,14 @@ msgstr "Begræns svaret til kommentarer fra specifikke overordnede ID'er."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1614
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:797
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2712
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2759
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1523
 msgid "Sort collection by object attribute."
 msgstr "Sorter samling efter enhedsattribut."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1604
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:790
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2705
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2752
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1516
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:1036
 msgid "Order sort attribute ascending or descending."
@@ -6210,7 +6428,7 @@ msgstr "Rækkefølge for sorteringsattribut stigende eller faldende."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1590
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:776
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2684
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2731
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1501
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:1020
 msgid "Limit result set to specific IDs."
@@ -6218,13 +6436,13 @@ msgstr "Begræns svaret til specifikke ID'er."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1581
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:767
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2675
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2722
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1492
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:1011
 msgid "Ensure result set excludes specific IDs."
 msgstr "Sørg for at svaret ekskluderer specifikke ID'er."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2663
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2710
 msgid "Limit response to posts published before a given ISO8601 compliant date."
 msgstr "Begræns svaret til indlæg udgivet før en given ISO8601-kompatibel dato."
 
@@ -6240,7 +6458,7 @@ msgstr "Sørg for at svaret ekskluderer kommentarer tildelt specifikke brugeres 
 msgid "Limit result set to comments assigned to specific user IDs. Requires authorization."
 msgstr "Begræns svaret til kommentarer tildelt specifikke bruger ID'er. Kræver godkendelse."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2632
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2679
 msgid "Limit response to posts published after a given ISO8601 compliant date."
 msgstr "Begræns svaret til indlæg udgivet efter en given ISO8601 kompatibel dato."
 
@@ -6270,30 +6488,30 @@ msgstr "ID på det tilknyttede indlægs element."
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:78
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:98
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:717
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2193
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2240
 #: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:89
 #: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:115
 msgid "The ID for the parent of the object."
 msgstr "ID for objektets overordnede element."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1467
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2123
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2170
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:260
 msgid "URL to the object."
 msgstr "URL for objektet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1447
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2293
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2340
 msgid "HTML content for the object, transformed for display."
 msgstr "HTML indhold for objektet, tilpasset visning."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1442
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2288
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2335
 msgid "Content for the object, as it exists in the database."
 msgstr "Objektets indhold, som det findes i databasen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1433
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2279
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2326
 msgid "The content for the object."
 msgstr "Objektets indhold."
 
@@ -6325,8 +6543,8 @@ msgstr "ID for brugerobjektet, hvis forfatter var en bruger."
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1384
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:102
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:700
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:95
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2117
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:103
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2164
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:248
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:37
 msgid "Unique identifier for the object."
@@ -6364,7 +6582,7 @@ msgstr "Oprettelse af kommentar kræver gyldige forfatternavn- og e-mail-værdie
 msgid "Cannot create existing comment."
 msgstr "Kan ikke oprette eksisterende kommentar."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3856
+#: wp-includes/class-wp-xmlrpc-server.php:3899
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:446
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:468
 #: wp-includes/comment.php:3519
@@ -6377,7 +6595,7 @@ msgid "Query parameter not permitted: %s"
 msgstr "Forespørgselsparameter er ikke tilladt: %s"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:104
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:119
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:127
 msgid "Whether to bypass Trash and force deletion."
 msgstr "Hvorvidt sletning skal forbigå papirkurv og slette permanent."
 
@@ -6582,7 +6800,7 @@ msgstr "En by i samme tidszone som dig."
 msgid "Site title."
 msgstr "Webstedstitel."
 
-#: wp-includes/media.php:4403
+#: wp-includes/media.php:4409
 msgid "Search media items..."
 msgstr "Søg medieelementer..."
 
@@ -6668,30 +6886,30 @@ msgstr "Klik for at redigere denne menu."
 msgid "Markup is not allowed in CSS."
 msgstr "Markup er ikke tilladt i CSS."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3801
+#: wp-includes/class-wp-xmlrpc-server.php:3844
 msgid "Sorry, the comment could not be updated."
 msgstr "Beklager, men kommentaren kunne ikke opdateres."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2735
+#: wp-includes/class-wp-xmlrpc-server.php:2778
 msgid "Invalid role."
 msgstr "Ugyldig rolle."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2355
+#: wp-includes/class-wp-xmlrpc-server.php:2398
 msgid "Sorry, you are not allowed to assign this term."
 msgstr "Beklager, men du har ikke rettigheder til at tilknytte denne term."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2275
+#: wp-includes/class-wp-xmlrpc-server.php:2318
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:644
 msgid "Sorry, you are not allowed to delete this term."
 msgstr "Beklager, du har ikke rettigheder til at slette denne term."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2165
+#: wp-includes/class-wp-xmlrpc-server.php:2208
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:362
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:543
 msgid "Sorry, you are not allowed to edit this term."
 msgstr "Beklager, du har ikke rettigheder til at redigere denne term."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2092
+#: wp-includes/class-wp-xmlrpc-server.php:2135
 msgid "Sorry, the term could not be created."
 msgstr "Beklager, men din term kunne ikke oprettes."
 
@@ -6900,12 +7118,12 @@ msgid "Howdy, %s"
 msgstr "Hejsa, %s"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-location-control.php:86
-#: wp-admin/nav-menus.php:780
+#: wp-admin/nav-menus.php:771
 msgid "Edit selected menu"
 msgstr "Rediger valgte menu"
 
 #: wp-includes/class-wp-editor.php:1408
-#: wp-includes/js/dist/format-library.js:1162
+#: wp-includes/js/dist/format-library.js:1158
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "Advarsel: linket er blevet indsat, men indenholder måske fejl. Test det venligst."
 
@@ -6953,21 +7171,21 @@ msgstr "Et navn er krævet for denne term."
 msgid "Inexistent terms."
 msgstr "Ikke-eksisterende termer."
 
-#: wp-includes/class-wp-xmlrpc-server.php:4857
+#: wp-includes/class-wp-xmlrpc-server.php:4900
 msgid "Sorry, you are not allowed to access user data on this site."
 msgstr "Du har desværre ikke tilladelse til at tilgå brugerdata på dette websted."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2972
-#: wp-includes/class-wp-xmlrpc-server.php:3194 wp-admin/includes/post.php:478
+#: wp-includes/class-wp-xmlrpc-server.php:3015
+#: wp-includes/class-wp-xmlrpc-server.php:3237 wp-admin/includes/post.php:478
 msgid "Sorry, you are not allowed to edit pages."
 msgstr "Du har desværre ikke tilladelse til at redigere sider."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2797
-#: wp-includes/class-wp-xmlrpc-server.php:2847
+#: wp-includes/class-wp-xmlrpc-server.php:2840
+#: wp-includes/class-wp-xmlrpc-server.php:2890
 msgid "Sorry, you are not allowed to edit your profile."
 msgstr "Du har desværre ikke tilladelse til at redigere din profil."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2654
+#: wp-includes/class-wp-xmlrpc-server.php:2697
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:680
 #: wp-admin/user-edit.php:97 wp-admin/user-edit.php:129
 #: wp-admin/user-edit.php:185 wp-admin/users.php:106 wp-admin/users.php:136
@@ -7003,23 +7221,24 @@ msgstr "Mørk"
 msgid "Tan"
 msgstr "Gyldenbrun"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2929
-#: wp-includes/class-wp-xmlrpc-server.php:3145 wp-admin/includes/post.php:265
+#: wp-includes/class-wp-xmlrpc-server.php:2972
+#: wp-includes/class-wp-xmlrpc-server.php:3188 wp-admin/includes/post.php:265
 #: wp-admin/includes/ajax-actions.php:1993
 msgid "Sorry, you are not allowed to edit this page."
 msgstr "Du har desværre ikke tilladelse til at redigere denne side."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3079
+#: wp-includes/class-wp-xmlrpc-server.php:3122
 msgid "Sorry, you are not allowed to delete this page."
 msgstr "Du har desværre ikke tilladelse til at slette denne side."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1784
-#: wp-includes/class-wp-xmlrpc-server.php:5218
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:857
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:905
+#: wp-includes/class-wp-xmlrpc-server.php:1827
+#: wp-includes/class-wp-xmlrpc-server.php:5261
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:903
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:951
 msgid "Sorry, you are not allowed to delete this post."
 msgstr "Du har desværre ikke tilladelse til at slette dette indlæg."
 
+#. translators: %s: Site title.
 #: wp-login.php:292
 msgctxt "site"
 msgid "&larr; Go to %s"
@@ -7078,11 +7297,11 @@ msgstr "Forhåndsvisning af billedets beskæringsområde. Kræver interaktion me
 #. translators: %s: Documentation URL.
 #: wp-includes/formatting.php:4864
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
-msgstr "Et strukturtag er krævet når der bruges brugerdefinerede permanente links. <a href=\"%s\">Lær mere</a>"
+msgstr "Et strukturtag er krævet når der bruges brugerdefinerede permalinks. <a href=\"%s\">Lær mere</a>"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4310
-#: wp-includes/class-wp-xmlrpc-server.php:4363
-#: wp-includes/class-wp-xmlrpc-server.php:6340
+#: wp-includes/class-wp-xmlrpc-server.php:4353
+#: wp-includes/class-wp-xmlrpc-server.php:4406
+#: wp-includes/class-wp-xmlrpc-server.php:6383
 #: wp-admin/includes/ajax-actions.php:2429
 #: wp-admin/includes/ajax-actions.php:2495 wp-admin/async-upload.php:38
 #: wp-admin/upload.php:13 wp-admin/media-new.php:16
@@ -7090,11 +7309,11 @@ msgstr "Et strukturtag er krævet når der bruges brugerdefinerede permanente li
 msgid "Sorry, you are not allowed to upload files."
 msgstr "Du har desværre ikke tilladelse til at overføre filer."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3357
+#: wp-includes/class-wp-xmlrpc-server.php:3400
 msgid "Sorry, you are not allowed to add a category."
 msgstr "Du har desværre ikke tilladelse til at tilføje en kategori."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2717
+#: wp-includes/class-wp-xmlrpc-server.php:2760
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:204
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:426
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:432
@@ -7125,11 +7344,11 @@ msgid "Link options"
 msgstr "Link-indstillinger"
 
 #: wp-includes/script-loader.php:1122
-#: wp-includes/js/dist/format-library.js:1166
+#: wp-includes/js/dist/format-library.js:1162
 msgid "Link inserted."
 msgstr "Link indsat."
 
-#: wp-includes/script-loader.php:1121 wp-includes/js/dist/block-editor.js:30792
+#: wp-includes/script-loader.php:1121 wp-includes/js/dist/block-editor.js:32094
 msgid "Link selected."
 msgstr "Link markeret."
 
@@ -7139,7 +7358,7 @@ msgstr "Link markeret."
 msgid "%s is required to strip image meta."
 msgstr "%s er påkrævet for at fjerne metadata fra billede."
 
-#: wp-includes/media.php:4406
+#: wp-includes/media.php:4412
 msgid "No media items found."
 msgstr "Ingen mediefiler fundet."
 
@@ -7209,7 +7428,7 @@ msgid "Unregistering a built-in taxonomy is not allowed."
 msgstr "Afregistrering af en indbygget taksonomi er ikke tilladt."
 
 #: wp-includes/script-loader.php:1174
-#: wp-includes/js/dist/block-library.js:12324
+#: wp-includes/js/dist/block-library.js:11396
 msgid "(Untitled)"
 msgstr "(Uden titel)"
 
@@ -7271,7 +7490,7 @@ msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "%1$s %2$s %3$s %4$s Feed"
 
 #: wp-includes/media-template.php:199 wp-includes/media-template.php:347
-#: wp-includes/functions.php:6624 wp-includes/js/dist/components.js:41856
+#: wp-includes/functions.php:6624 wp-includes/js/dist/components.js:34871
 msgid "Close dialog"
 msgstr "Luk dialog"
 
@@ -7349,7 +7568,7 @@ msgid "Invalid object type."
 msgstr "Ugyldig objekttype."
 
 #: wp-includes/class-wp-editor.php:1385
-#: wp-includes/js/dist/block-editor.js:30839
+#: wp-includes/js/dist/block-editor.js:32141
 msgid "Paste URL or type to search"
 msgstr "Indsæt URL eller skriv for at søge"
 
@@ -7520,11 +7739,11 @@ msgstr "januar"
 msgid "Sharing options"
 msgstr "Delingsindstillinger"
 
-#: wp-includes/class-wp-xmlrpc-server.php:600
+#: wp-includes/class-wp-xmlrpc-server.php:643
 msgid "Medium-Large size image height"
 msgstr "Medium-stor billedhøjde"
 
-#: wp-includes/class-wp-xmlrpc-server.php:595
+#: wp-includes/class-wp-xmlrpc-server.php:638
 msgid "Medium-Large size image width"
 msgstr "Medium-stor billedbredde"
 
@@ -7810,7 +8029,7 @@ msgid "Usernames can only contain lowercase letters (a-z) and numbers."
 msgstr "Brugernavne må kun bestå af små bogstaver (a-z) og tal."
 
 #. translators: %s: Playlist item title.
-#: wp-includes/media.php:2516 wp-includes/media.php:2533
+#: wp-includes/media.php:2522 wp-includes/media.php:2539
 msgctxt "playlist item title"
 msgid "&#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221;"
@@ -7982,8 +8201,8 @@ msgstr[1] "%s <span class=\"screen-reader-text\">Kommentarer</span>"
 msgid "When in reorder mode, additional controls to reorder widgets will be available in the widgets list above."
 msgstr "Når du ændrer rækkefølge, vises der ekstra kontroller til at ændre rækkefølgen på widgets i widgetlisten ovenfor."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3547
-#: wp-includes/class-wp-xmlrpc-server.php:3751
+#: wp-includes/class-wp-xmlrpc-server.php:3590
+#: wp-includes/class-wp-xmlrpc-server.php:3794
 msgid "Sorry, you are not allowed to moderate or edit this comment."
 msgstr "Du har desværre ikke tilladelse til at moderere eller redigere denne kommentar."
 
@@ -8064,7 +8283,7 @@ msgstr "Skjul adgangskode"
 msgid "Show password"
 msgstr "Vis adgangskode"
 
-#: wp-includes/class-wp-customize-nav-menus.php:511 wp-admin/nav-menus.php:963
+#: wp-includes/class-wp-customize-nav-menus.php:511 wp-admin/nav-menus.php:954
 msgid "Menu Name"
 msgstr "Menunavn"
 
@@ -8131,7 +8350,7 @@ msgid "Hide header image"
 msgstr "Skjul header-billede"
 
 #: wp-includes/class-wp-customize-manager.php:5161
-#: wp-includes/js/dist/edit-post.js:4751 wp-admin/includes/template.php:2331
+#: wp-includes/js/dist/edit-post.js:5510 wp-admin/includes/template.php:2331
 msgid "Site Icon"
 msgstr "Webstedsikon"
 
@@ -8383,7 +8602,7 @@ msgstr "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 msgid "Content:"
 msgstr "Indhold:"
 
-#: wp-includes/class-wp-xmlrpc-server.php:620
+#: wp-includes/class-wp-xmlrpc-server.php:663
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new posts."
 msgstr "Tillad link-notifikationer fra andre blogge (pingbacks og trackbacks) på nye indlæg"
 
@@ -8489,44 +8708,44 @@ msgid "This panel is used for managing navigation menus for content you have alr
 msgstr "Dette panel bruges til at håndtere navigationsmenuer for indhold, du allerede har udgivet på dit websted. Du kan oprette menuer og tilføje punkter for eksisterende indhold såsom sider, indlæg, kategorier, tags, formater eller egne links."
 
 #. translators: 1: Item name, 2: Item position, 3: Parent item name.
-#: wp-includes/class-wp-customize-nav-menus.php:566 wp-admin/nav-menus.php:496
+#: wp-includes/class-wp-customize-nav-menus.php:566 wp-admin/nav-menus.php:487
 msgid "%1$s. Sub item number %2$d under %3$s."
 msgstr "%1$s. Underpunkt nummer %2$d under %3$s."
 
 #. translators: 1: Item name, 2: Item position, 3: Total number of items.
-#: wp-includes/class-wp-customize-nav-menus.php:564 wp-admin/nav-menus.php:494
+#: wp-includes/class-wp-customize-nav-menus.php:564 wp-admin/nav-menus.php:485
 msgid "%1$s. Menu item %2$d of %3$d."
 msgstr "%1$s. Menupunkt %2$d af %3$d."
 
 #. translators: %s: Previous item name.
-#: wp-includes/class-wp-customize-nav-menus.php:562 wp-admin/nav-menus.php:492
+#: wp-includes/class-wp-customize-nav-menus.php:562 wp-admin/nav-menus.php:483
 msgid "Out from under %s"
 msgstr "Ud fra under %s"
 
 #. translators: %s: Previous item name.
-#: wp-includes/class-wp-customize-nav-menus.php:560 wp-admin/nav-menus.php:490
+#: wp-includes/class-wp-customize-nav-menus.php:560 wp-admin/nav-menus.php:481
 msgid "Under %s"
 msgstr "Under %s"
 
 #. translators: %s: Previous item name.
-#: wp-includes/class-wp-customize-nav-menus.php:558 wp-admin/nav-menus.php:488
+#: wp-includes/class-wp-customize-nav-menus.php:558 wp-admin/nav-menus.php:479
 msgid "Move out from under %s"
 msgstr "Flyt ud fra under %s"
 
 #. translators: %s: Previous item name.
-#: wp-includes/class-wp-customize-nav-menus.php:556 wp-admin/nav-menus.php:486
+#: wp-includes/class-wp-customize-nav-menus.php:556 wp-admin/nav-menus.php:477
 msgid "Move under %s"
 msgstr "Flyt under %s"
 
-#: wp-includes/class-wp-customize-nav-menus.php:554 wp-admin/nav-menus.php:484
+#: wp-includes/class-wp-customize-nav-menus.php:554 wp-admin/nav-menus.php:475
 msgid "Move to the top"
 msgstr "Flyt til toppen"
 
-#: wp-includes/class-wp-customize-nav-menus.php:553 wp-admin/nav-menus.php:483
+#: wp-includes/class-wp-customize-nav-menus.php:553 wp-admin/nav-menus.php:474
 msgid "Move down one"
 msgstr "Flyt en ned"
 
-#: wp-includes/class-wp-customize-nav-menus.php:552 wp-admin/nav-menus.php:482
+#: wp-includes/class-wp-customize-nav-menus.php:552 wp-admin/nav-menus.php:473
 msgid "Move up one"
 msgstr "Flyt en op"
 
@@ -8596,7 +8815,7 @@ msgid "Home"
 msgstr "Forside"
 
 #: wp-includes/customize/class-wp-customize-new-menu-control.php:59
-#: wp-admin/nav-menus.php:966 wp-admin/nav-menus.php:1101
+#: wp-admin/nav-menus.php:957 wp-admin/nav-menus.php:1099
 msgid "Create Menu"
 msgstr "Opret menu"
 
@@ -8643,17 +8862,17 @@ msgid "Navigation Label"
 msgstr "Menutitel"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-auto-add-control.php:46
-#: wp-admin/nav-menus.php:1035
+#: wp-admin/nav-menus.php:1026
 msgid "Automatically add new top-level pages to this menu"
 msgstr "Tilføj automatisk nye sider uden forældre til denne menu"
 
 #: wp-includes/class-wp-customize-nav-menus.php:509
-#: wp-includes/js/dist/core-data.js:3117
+#: wp-includes/js/dist/core-data.js:2855
 msgid "Menu Location"
 msgstr "Menu-placeringer"
 
 #: wp-includes/class-wp-customize-nav-menus.php:1103
-#: wp-admin/nav-menus.php:1095
+#: wp-admin/nav-menus.php:1093
 msgid "Delete Menu"
 msgstr "Slet menu"
 
@@ -8794,7 +9013,7 @@ msgstr ""
 "\n"
 "--Holdet @ SITE_NAME"
 
-#: wp-includes/media.php:4370
+#: wp-includes/media.php:4376
 msgid "Drag and drop to reorder media files."
 msgstr "Træk og slip for at omorganisere mediefiler."
 
@@ -8971,7 +9190,7 @@ msgstr "Kommentar: %s"
 msgid "URL: %s"
 msgstr "URL: %s"
 
-#: wp-includes/media.php:4389
+#: wp-includes/media.php:4395
 msgctxt "noun"
 msgid "Trash"
 msgstr "Papirkurv"
@@ -8980,7 +9199,7 @@ msgstr "Papirkurv"
 msgid "Edit Selection"
 msgstr "Rediger valg"
 
-#: wp-includes/script-loader.php:1732 wp-includes/js/dist/components.js:42346
+#: wp-includes/script-loader.php:1732 wp-includes/js/dist/components.js:35361
 msgid "Previous"
 msgstr "Forrige"
 
@@ -9104,13 +9323,13 @@ msgctxt "label for custom color"
 msgid "Custom..."
 msgstr "Brugerdefineret..."
 
-#: wp-includes/class-wp-editor.php:1268 wp-includes/js/dist/components.js:30749
+#: wp-includes/class-wp-editor.php:1268 wp-includes/js/dist/components.js:23764
 msgid "Custom color"
 msgstr "Brugerdefineret farve"
 
 #: wp-includes/class-wp-editor.php:1267
-#: wp-includes/js/dist/block-library.js:14846
-#: wp-includes/js/dist/block-library.js:22669
+#: wp-includes/js/dist/block-library.js:13918
+#: wp-includes/js/dist/block-library.js:21741
 msgid "Color"
 msgstr "Farve"
 
@@ -9175,7 +9394,7 @@ msgstr "Link"
 msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new."
 msgstr "<strong>Du har nu opdateret WordPress!</strong> Log venligst ind igen for at se hvad der er nyt."
 
-#: wp-includes/media.php:4393
+#: wp-includes/media.php:4399
 msgid ""
 "You are about to trash these items.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -9187,7 +9406,7 @@ msgstr ""
 msgid "Press return or enter to open this panel"
 msgstr "Tryk på Return eller Enter for at åbne dette panel"
 
-#: wp-includes/media.php:4394
+#: wp-includes/media.php:4400
 msgid "Bulk select"
 msgstr "Vælg flere"
 
@@ -9206,34 +9425,34 @@ msgstr "(intet mærkat)"
 msgid "This site is no longer available."
 msgstr "Dette websted er ikke længere tilgængeligt."
 
-#: wp-includes/media.php:4402
+#: wp-includes/media.php:4408
 msgid "Search media"
 msgstr "Søg medier"
 
-#: wp-includes/media.php:4400
+#: wp-includes/media.php:4406
 #: wp-admin/includes/class-wp-media-list-table.php:271
 msgid "Filter by type"
 msgstr "Filtrer efter type"
 
-#: wp-includes/post.php:1752 wp-includes/media.php:4399
+#: wp-includes/post.php:1752 wp-includes/media.php:4405
 msgid "Filter by date"
 msgstr "Filtrer efter dato"
 
-#: wp-includes/media.php:4387
+#: wp-includes/media.php:4393
 #: wp-admin/includes/class-wp-media-list-table.php:150
 msgid "Unattached"
 msgstr "Uhæftede"
 
-#: wp-includes/media.php:4384 wp-admin/includes/media.php:2833
+#: wp-includes/media.php:4390 wp-admin/includes/media.php:2833
 #: wp-admin/includes/class-wp-list-table.php:650
 msgid "All dates"
 msgstr "Alle datoer"
 
-#: wp-includes/media.php:2882
+#: wp-includes/media.php:2888
 msgid "Bitrate Mode"
 msgstr "Bitrate-tilstand"
 
-#: wp-includes/media.php:2881
+#: wp-includes/media.php:2887
 msgid "Bitrate"
 msgstr "Bitrate"
 
@@ -9361,62 +9580,62 @@ msgstr "<strong>Fejl</strong>: Cookies er blokeret eller understøttes ikke af d
 msgid "<strong>Error</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
 msgstr "<strong>Fejl</strong>: Cookies er blokeret på grund af uventet output. For hjælp, se venligst <a href=\"%1$s\">denne dokumentation</a> eller prøv <a href=\"%2$s\">supportfora</a>."
 
-#: wp-includes/media.php:4468
+#: wp-includes/media.php:4474
 msgid "Add to Audio Playlist"
 msgstr "Tilføj til lydafspilningsliste"
 
-#: wp-includes/media.php:4467
+#: wp-includes/media.php:4473
 msgid "Add to audio playlist"
 msgstr "Tilføj til lydafspilningsliste"
 
-#: wp-includes/media.php:4466
+#: wp-includes/media.php:4472
 msgid "Update audio playlist"
 msgstr "Opdater lydafspilningsliste"
 
-#: wp-includes/media.php:4465
+#: wp-includes/media.php:4471
 msgid "Insert audio playlist"
 msgstr "Indsæt lydafspilningsliste"
 
-#: wp-includes/media.php:4464
+#: wp-includes/media.php:4470
 msgid "&#8592; Cancel audio playlist"
 msgstr "&#8592; Annuller lydafspilningsliste"
 
-#: wp-includes/media.php:4463
+#: wp-includes/media.php:4469
 msgid "Edit audio playlist"
 msgstr "Rediger lydafspilningsliste"
 
-#: wp-includes/media.php:4444
+#: wp-includes/media.php:4450
 msgid "There has been an error cropping your image."
 msgstr "Der opstod en fejl under beskæringen af dit billede."
 
-#: wp-includes/media.php:2879
+#: wp-includes/media.php:2885
 msgctxt "video or audio"
 msgid "Length"
 msgstr "Længde"
 
-#: wp-includes/media.php:2878
+#: wp-includes/media.php:2884
 #: wp-includes/customize/class-wp-customize-date-time-control.php:151
-#: wp-includes/js/dist/components.js:35973 wp-admin/includes/template.php:827
+#: wp-includes/js/dist/components.js:28988 wp-admin/includes/template.php:827
 msgid "Year"
 msgstr "År"
 
-#: wp-includes/media.php:2877
+#: wp-includes/media.php:2883
 msgid "Genre"
 msgstr "Genre"
 
 #: wp-includes/media-template.php:492 wp-includes/media-template.php:721
-#: wp-includes/media.php:2873
+#: wp-includes/media.php:2879
 msgid "Album"
 msgstr "Album"
 
 #: wp-includes/media-template.php:491 wp-includes/media-template.php:720
-#: wp-includes/media.php:2872
+#: wp-includes/media.php:2878
 msgid "Artist"
 msgstr "Kunstner"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:130
 #: wp-includes/media-template.php:1213
-#: wp-includes/js/dist/block-editor.js:33590
+#: wp-includes/js/dist/block-editor.js:34892
 msgid "Link CSS Class"
 msgstr "Link CSS klasse"
 
@@ -9434,12 +9653,12 @@ msgstr "Billedtitelattribut"
 msgid "Advanced Options"
 msgstr "Avancerede indstillinger"
 
-#: wp-includes/media-template.php:1143 wp-includes/js/dist/components.js:39768
+#: wp-includes/media-template.php:1143 wp-includes/js/dist/components.js:32783
 msgid "Custom Size"
 msgstr "Tilpasset størrelse"
 
 #: wp-includes/media-template.php:1090
-#: wp-includes/js/dist/block-library.js:22094
+#: wp-includes/js/dist/block-library.js:21166
 msgid "Display Settings"
 msgstr "Visningsindstillinger"
 
@@ -9499,7 +9718,7 @@ msgctxt "auto preload"
 msgid "Auto"
 msgstr "Automatisk"
 
-#: wp-includes/media.php:4441
+#: wp-includes/media.php:4447
 msgid "Cropping&hellip;"
 msgstr "Beskærer&hellip;"
 
@@ -9639,7 +9858,7 @@ msgid "Replace"
 msgstr "Erstat"
 
 #: wp-includes/class-wp-editor.php:1240
-#: wp-includes/js/dist/block-library.js:2957
+#: wp-includes/js/dist/block-library.js:2024
 msgctxt "editor button"
 msgid "Left to right"
 msgstr "Venstre mod højre"
@@ -9751,115 +9970,115 @@ msgstr "Forespørgslen %s skal have en pladsholder."
 msgid "Invalid menu ID."
 msgstr "Ugyldigt menu-ID."
 
-#: wp-includes/media.php:4478
+#: wp-includes/media.php:4484
 msgid "Add to video Playlist"
 msgstr "Tilføj til videoafspilningsliste"
 
-#: wp-includes/media.php:4477
+#: wp-includes/media.php:4483
 msgid "Add to video playlist"
 msgstr "Tilføj til videoafspilningsliste"
 
-#: wp-includes/media.php:4476
+#: wp-includes/media.php:4482
 msgid "Update video playlist"
 msgstr "Opdater videoafspilningsliste"
 
-#: wp-includes/media.php:4475
+#: wp-includes/media.php:4481
 msgid "Insert video playlist"
 msgstr "Indsæt videoafspilningsliste"
 
-#: wp-includes/media.php:4474
+#: wp-includes/media.php:4480
 msgid "&#8592; Cancel video playlist"
 msgstr "&#8592; Annuller videoafspilningsliste"
 
-#: wp-includes/media.php:4473
+#: wp-includes/media.php:4479
 msgid "Edit video playlist"
 msgstr "Rediger videoafspilningsliste"
 
-#: wp-includes/media.php:4472
+#: wp-includes/media.php:4478
 msgid "Create video playlist"
 msgstr "Opret videoafspilningsliste"
 
-#: wp-includes/media.php:4471
+#: wp-includes/media.php:4477
 msgid "Drag and drop to reorder videos."
 msgstr "Træk og slip for at omorganisere videoer."
 
-#: wp-includes/media.php:4462
+#: wp-includes/media.php:4468
 msgid "Create audio playlist"
 msgstr "Opret en lydafspilningsliste"
 
-#: wp-includes/media.php:4461
+#: wp-includes/media.php:4467
 msgid "Drag and drop to reorder tracks."
 msgstr "Træk og slip for at omorganisere spor."
 
-#: wp-includes/media.php:4458
+#: wp-includes/media.php:4464
 msgid "Add subtitles"
 msgstr "Tilføj undertekst"
 
-#: wp-includes/media.php:4455
+#: wp-includes/media.php:4461
 msgid "Add video source"
 msgstr "Tilføj videokilde"
 
-#: wp-includes/media.php:4454
+#: wp-includes/media.php:4460
 msgid "Replace video"
 msgstr "Erstat video"
 
-#: wp-includes/media.php:4453
+#: wp-includes/media.php:4459
 msgid "Video details"
 msgstr "Videodetaljer"
 
-#: wp-includes/media.php:4449
+#: wp-includes/media.php:4455
 msgid "Add audio source"
 msgstr "Tilføj lydkilde"
 
-#: wp-includes/media.php:4448
+#: wp-includes/media.php:4454
 msgid "Replace audio"
 msgstr "Erstat lyd"
 
-#: wp-includes/media.php:4447
+#: wp-includes/media.php:4453
 msgid "Audio details"
 msgstr "Lyddetaljer"
 
-#: wp-includes/media.php:4440
+#: wp-includes/media.php:4446
 msgid "Crop your image"
 msgstr "Beskær dit billede"
 
-#: wp-includes/media.php:4439
+#: wp-includes/media.php:4445
 msgid "Crop image"
 msgstr "Beskær billede"
 
-#: wp-includes/media.php:4438
+#: wp-includes/media.php:4444
 msgid "Skip cropping"
 msgstr "Drop beskæring"
 
-#: wp-includes/media.php:4437
+#: wp-includes/media.php:4443
 msgid "Select and crop"
 msgstr "Vælg og beskær"
 
-#: wp-includes/media.php:4432 wp-includes/media.php:4450
-#: wp-includes/media.php:4456
+#: wp-includes/media.php:4438 wp-includes/media.php:4456
+#: wp-includes/media.php:4462
 msgid "Cancel edit"
 msgstr "Fortryd redigering"
 
-#: wp-includes/media.php:4430
+#: wp-includes/media.php:4436
 msgid "Image details"
 msgstr "Billeddetaljer"
 
-#: wp-includes/media.php:4381
+#: wp-includes/media.php:4387
 msgid "Create a new video playlist"
 msgstr "Opret en ny videoafspilningsliste"
 
-#: wp-includes/media.php:4380
+#: wp-includes/media.php:4386
 msgid "Create a new playlist"
 msgstr "Opret en ny afspilningsliste"
 
 #: wp-includes/class-wp-customize-section.php:365
-#: wp-includes/class-wp-customize-widgets.php:821 wp-includes/media.php:4363
+#: wp-includes/class-wp-customize-widgets.php:821 wp-includes/media.php:4369
 #: wp-includes/class-wp-customize-panel.php:369
 #: wp-includes/customize/class-wp-customize-themes-panel.php:70
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:72
 #: wp-includes/class-wp-customize-nav-menus.php:1144
-#: wp-includes/js/dist/components.js:43071
-#: wp-includes/js/dist/edit-post.js:4774 wp-admin/includes/ms.php:49
+#: wp-includes/js/dist/components.js:36086
+#: wp-includes/js/dist/edit-post.js:5533 wp-admin/includes/ms.php:49
 #: wp-admin/theme-install.php:59
 msgid "Back"
 msgstr "Tilbage"
@@ -9873,15 +10092,15 @@ msgid "Poster Image"
 msgstr "Plakat"
 
 #: wp-includes/media-template.php:1309 wp-includes/media-template.php:1408
-#: wp-includes/js/dist/block-library.js:10376
-#: wp-includes/js/dist/block-library.js:25237
+#: wp-includes/js/dist/block-library.js:9448
+#: wp-includes/js/dist/block-library.js:24309
 msgid "Autoplay"
 msgstr "Afspil automatisk"
 
 #: wp-includes/media-template.php:1300 wp-includes/media-template.php:1399
-#: wp-includes/js/dist/block-library.js:10401
-#: wp-includes/js/dist/block-library.js:25198
-#: wp-includes/js/dist/block-library.js:25309
+#: wp-includes/js/dist/block-library.js:9473
+#: wp-includes/js/dist/block-library.js:24270
+#: wp-includes/js/dist/block-library.js:24381
 #: wp-admin/includes/meta-boxes.php:1462
 msgid "Metadata"
 msgstr "Metadata"
@@ -9916,7 +10135,7 @@ msgid "Toolbar Toggle"
 msgstr "Vis/skjul værktøjslinje"
 
 #. translators: button label text should, if possible, be under 16 characters.
-#: wp-includes/js/dist/edit-post.js:3143 wp-includes/js/dist/edit-post.js:4972
+#: wp-includes/js/dist/edit-post.js:3902 wp-includes/js/dist/edit-post.js:5731
 #: wp-admin/tools.php:42 wp-admin/menu.php:278
 msgid "Tools"
 msgstr "Værktøjer"
@@ -9926,18 +10145,18 @@ msgid "Show invisible characters"
 msgstr "Vis usynlige tegn"
 
 #: wp-includes/class-wp-editor.php:1350
-#: wp-includes/js/dist/block-library.js:21150
-#: wp-includes/js/dist/format-library.js:1550
+#: wp-includes/js/dist/block-library.js:20222
+#: wp-includes/js/dist/format-library.js:1546
 msgid "Text color"
 msgstr "Tekstfarve"
 
 #: wp-includes/class-wp-editor.php:1349
-#: wp-includes/js/dist/block-library.js:24359
+#: wp-includes/js/dist/block-library.js:23431
 msgid "Background color"
 msgstr "Baggrundsfarve"
 
 #: wp-includes/class-wp-editor.php:1318
-#: wp-includes/js/dist/block-library.js:24284
+#: wp-includes/js/dist/block-library.js:23356
 msgid "Delete column"
 msgstr "Slet kolonne"
 
@@ -9989,10 +10208,10 @@ msgstr "Forskel på store og små bogstaver"
 msgid "Find and replace"
 msgstr "Søg og erstat"
 
-#: wp-includes/media-template.php:1226 wp-includes/media.php:4361
-#: wp-includes/js/dist/block-editor.js:32096
-#: wp-includes/js/dist/block-library.js:14788
-#: wp-includes/js/dist/block-library.js:25782
+#: wp-includes/media-template.php:1226 wp-includes/media.php:4367
+#: wp-includes/js/dist/block-editor.js:33398
+#: wp-includes/js/dist/block-library.js:13860
+#: wp-includes/js/dist/block-library.js:24854
 msgid "Replace"
 msgstr "Erstat"
 
@@ -10005,7 +10224,7 @@ msgid "Paste as text"
 msgstr "Indsæt som tekst"
 
 #: wp-includes/class-wp-editor.php:1243
-#: wp-includes/js/dist/block-library.js:20474
+#: wp-includes/js/dist/block-library.js:19546
 msgid "Page break"
 msgstr "Sideskift"
 
@@ -10086,7 +10305,7 @@ msgid "Visual aids"
 msgstr "Visuelle hjælpemidler"
 
 #: wp-includes/class-wp-editor.php:1165
-#: wp-includes/js/dist/block-editor.js:6604
+#: wp-includes/js/dist/block-editor.js:7898
 msgid "Align left"
 msgstr "Venstrestil"
 
@@ -10103,7 +10322,7 @@ msgid "Decrease indent"
 msgstr "Formindsk indrykning"
 
 #: wp-includes/class-wp-editor.php:1163
-#: wp-includes/js/dist/block-editor.js:6608
+#: wp-includes/js/dist/block-editor.js:7902
 msgid "Align center"
 msgstr "Centrer"
 
@@ -10120,7 +10339,7 @@ msgid "Numbered list"
 msgstr "Nummereret liste"
 
 #: wp-includes/class-wp-editor.php:1164
-#: wp-includes/js/dist/block-editor.js:6612
+#: wp-includes/js/dist/block-editor.js:7906
 msgid "Align right"
 msgstr "Højrestil"
 
@@ -10137,7 +10356,7 @@ msgstr "Vælg et område at flytte denne widget ind i:"
 
 #: wp-includes/class-wp-customize-widgets.php:697
 #: wp-includes/class-wp-customize-nav-menus.php:1091
-#: wp-includes/js/dist/block-editor.js:18554
+#: wp-includes/js/dist/block-editor.js:19848
 #: wp-admin/includes/class-walker-nav-menu-edit.php:138
 #: wp-admin/includes/template.php:1339
 msgid "Move up"
@@ -10145,7 +10364,7 @@ msgstr "Flyt op"
 
 #: wp-includes/class-wp-customize-widgets.php:696
 #: wp-includes/class-wp-customize-nav-menus.php:1092
-#: wp-includes/js/dist/block-editor.js:18560
+#: wp-includes/js/dist/block-editor.js:19854
 #: wp-admin/includes/class-walker-nav-menu-edit.php:155
 #: wp-admin/includes/template.php:1349
 msgid "Move down"
@@ -10203,7 +10422,7 @@ msgstr "https://wordpress.org/support/forum/requests-and-feedback"
 msgid "https://wordpress.org/support/"
 msgstr "https://wordpress.org/support/"
 
-#: wp-includes/js/dist/editor.js:8113
+#: wp-includes/js/dist/editor.js:7382
 #: wp-admin/includes/class-wp-privacy-requests-table.php:44
 #: wp-admin/includes/ajax-actions.php:2182
 #: wp-admin/includes/class-wp-posts-list-table.php:1838
@@ -10235,7 +10454,7 @@ msgid "Attempted to set image quality outside of the range [1,100]."
 msgstr "Forsøgte at indstille billedkvaliteten udenfor det definerede område [1,100]."
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:26
-#: wp-includes/js/dist/block-library.js:26166
+#: wp-includes/js/dist/block-library.js:25238
 msgid "A cloud of your most used tags."
 msgstr "En sky med dine meste brugte tags."
 
@@ -10312,7 +10531,7 @@ msgstr "Standard"
 
 #: wp-includes/admin-bar.php:212
 #: wp-includes/widgets/class-wp-nav-menu-widget.php:49
-#: wp-includes/js/dist/core-data.js:3105
+#: wp-includes/js/dist/core-data.js:2843
 msgid "Menu"
 msgstr "Menu"
 
@@ -10475,7 +10694,7 @@ msgstr "G:i"
 #. Post edited time.
 #. translators: 1: Post edited date, 2: Post edited time.
 #: wp-includes/script-loader.php:161 wp-includes/script-loader.php:376
-#: wp-includes/media.php:3939 wp-includes/class-wp-locale.php:363
+#: wp-includes/media.php:3945 wp-includes/class-wp-locale.php:363
 #: wp-admin/includes/class-wp-privacy-policy-content.php:378
 #: wp-admin/includes/schema.php:426 wp-admin/includes/media.php:1694
 #: wp-admin/includes/ajax-actions.php:1563
@@ -10492,11 +10711,11 @@ msgstr "G:i"
 msgid "F j, Y"
 msgstr "j. F Y"
 
-#: wp-includes/class-wp-xmlrpc-server.php:503
+#: wp-includes/class-wp-xmlrpc-server.php:546
 msgid "The URL to the admin area"
 msgstr "URL til administrationspanelet"
 
-#: wp-includes/class-wp-xmlrpc-server.php:498
+#: wp-includes/class-wp-xmlrpc-server.php:541
 msgid "Login Address (URL)"
 msgstr "Login-adresse (URL)"
 
@@ -10562,17 +10781,17 @@ msgstr "Ingen tags fundet."
 msgid "Do not deregister the %1$s script in the administration area. To target the front-end theme, use the %2$s hook."
 msgstr "Afregistrer ikke scriptet %1$s i administrationspanelet. For at ramme frontend-temaet, så brug %2$s hook'et."
 
-#: wp-includes/class-wp-xmlrpc-server.php:493 wp-admin/options-general.php:92
+#: wp-includes/class-wp-xmlrpc-server.php:536 wp-admin/options-general.php:92
 #: wp-admin/network/site-info.php:162 wp-admin/network/site-info.php:170
 #: wp-admin/network/site-new.php:208
 msgid "Site Address (URL)"
 msgstr "Webstedsadresse (URL)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:488 wp-admin/options-general.php:87
+#: wp-includes/class-wp-xmlrpc-server.php:531 wp-admin/options-general.php:87
 msgid "WordPress Address (URL)"
 msgstr "WordPress-adresse (URL)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2660
+#: wp-includes/class-wp-xmlrpc-server.php:2703
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:680
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:383
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:707
@@ -10586,11 +10805,11 @@ msgstr "Ugyldigt bruger-ID."
 msgid "Random Order"
 msgstr "Tilfældig rækkefølge"
 
-#: wp-includes/media.php:4413 wp-includes/js/dist/block-editor.js:32743
+#: wp-includes/media.php:4419 wp-includes/js/dist/block-editor.js:34045
 msgid "Insert from URL"
 msgstr "Indsæt fra URL"
 
-#: wp-includes/media.php:4369
+#: wp-includes/media.php:4375
 msgid "%d selected"
 msgstr "%d valgt"
 
@@ -10599,7 +10818,7 @@ msgctxt "Links widget"
 msgid "Random"
 msgstr "Tilfældig"
 
-#: wp-includes/media-template.php:1475 wp-includes/media.php:4385
+#: wp-includes/media-template.php:1475 wp-includes/media.php:4391
 #: wp-admin/includes/class-wp-themes-list-table.php:93
 #: wp-admin/includes/class-wp-list-table.php:335
 #: wp-admin/includes/ajax-actions.php:2179
@@ -10607,7 +10826,7 @@ msgstr "Tilfældig"
 msgid "No items found."
 msgstr "Ingen emner fundet."
 
-#: wp-includes/media.php:4427
+#: wp-includes/media.php:4433
 msgid "Reverse order"
 msgstr "Omvendt rækkefølge"
 
@@ -10616,7 +10835,7 @@ msgid "Deselect"
 msgstr "Fravælg"
 
 #: wp-includes/media-template.php:541 wp-includes/media-template.php:692
-#: wp-includes/media.php:4397 wp-admin/includes/meta-boxes.php:335
+#: wp-includes/media.php:4403 wp-admin/includes/meta-boxes.php:335
 #: wp-admin/includes/meta-boxes.php:444
 #: wp-admin/includes/class-wp-media-list-table.php:177
 #: wp-admin/includes/class-wp-media-list-table.php:182
@@ -10637,7 +10856,7 @@ msgstr "Afvis fejl"
 msgid "Uploading"
 msgstr "Uploader"
 
-#: wp-includes/media.php:3696
+#: wp-includes/media.php:3702
 msgid "No editor could be selected."
 msgstr "Editor kunne ikke vælges."
 
@@ -10653,8 +10872,8 @@ msgid "Manage Video"
 msgstr "Håndter video"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:28
-#: wp-includes/post.php:2870 wp-includes/js/dist/editor.js:8116
-#: wp-includes/js/dist/block-editor.js:32695
+#: wp-includes/post.php:2870 wp-includes/js/dist/editor.js:7385
+#: wp-includes/js/dist/block-editor.js:33997
 msgid "Video"
 msgstr "Video"
 
@@ -10689,8 +10908,8 @@ msgid "Insert into page"
 msgstr "Indsæt på siden"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:28
-#: wp-includes/post.php:2861 wp-includes/js/dist/editor.js:8092
-#: wp-includes/js/dist/block-editor.js:32691
+#: wp-includes/post.php:2861 wp-includes/js/dist/editor.js:7361
+#: wp-includes/js/dist/block-editor.js:33993
 msgid "Audio"
 msgstr "Lyd"
 
@@ -10698,7 +10917,7 @@ msgstr "Lyd"
 msgid "Uploaded to this post"
 msgstr "Uploadet til dette indlæg"
 
-#: wp-includes/media.php:4383
+#: wp-includes/media.php:4389
 #: wp-admin/includes/class-wp-media-list-table.php:127
 msgid "All media items"
 msgstr "Alle medier"
@@ -10709,11 +10928,11 @@ msgid "Custom URL"
 msgstr "Tilpasset URL"
 
 #: wp-includes/media-template.php:903 wp-includes/class-wp-editor.php:1304
-#: wp-includes/js/dist/block-library.js:9613
-#: wp-includes/js/dist/block-library.js:13129
-#: wp-includes/js/dist/block-library.js:19246
-#: wp-includes/js/dist/block-library.js:21724
-#: wp-includes/js/dist/block-library.js:24802
+#: wp-includes/js/dist/block-library.js:8685
+#: wp-includes/js/dist/block-library.js:12201
+#: wp-includes/js/dist/block-library.js:18318
+#: wp-includes/js/dist/block-library.js:20796
+#: wp-includes/js/dist/block-library.js:23874
 #: wp-admin/includes/class-wp-screen.php:1158
 msgid "Columns"
 msgstr "Kolonner"
@@ -10727,20 +10946,20 @@ msgid "Attachment Details"
 msgstr "Detaljer for vedhæftning"
 
 #: wp-includes/media-template.php:856 wp-includes/media-template.php:936
-#: wp-includes/media-template.php:1127 wp-includes/media.php:4004
-#: wp-includes/js/dist/components.js:36371
-#: wp-includes/js/dist/block-editor.js:11998
-#: wp-includes/js/dist/block-library.js:26608
+#: wp-includes/media-template.php:1127 wp-includes/media.php:4010
+#: wp-includes/js/dist/components.js:29386
+#: wp-includes/js/dist/block-editor.js:13292
+#: wp-includes/js/dist/block-library.js:25680
 #: wp-admin/includes/class-custom-background.php:599
 #: wp-admin/includes/media.php:1170 wp-admin/edit-form-blocks.php:240
 msgid "Large"
 msgstr "Stor"
 
-#: wp-includes/media.php:4422
+#: wp-includes/media.php:4428
 msgid "&#8592; Cancel gallery"
 msgstr "&#8592; Fortryd galleri"
 
-#: wp-includes/media.php:4374
+#: wp-includes/media.php:4380
 msgid "Upload images"
 msgstr "Upload billeder"
 
@@ -10756,25 +10975,25 @@ msgstr "Indstillinger for visning af vedhæftning"
 msgid "WordPress &rsaquo; Success"
 msgstr "WordPress &rsaquo; Succes"
 
-#: wp-includes/media.php:4373
+#: wp-includes/media.php:4379
 msgid "Upload files"
 msgstr "Upload filer"
 
-#: wp-includes/media.php:4423 wp-admin/includes/media.php:2669
+#: wp-includes/media.php:4429 wp-admin/includes/media.php:2669
 msgid "Insert gallery"
 msgstr "Indsæt galleri"
 
 #: wp-includes/media-template.php:209 wp-includes/media-template.php:216
-#: wp-includes/media-template.php:253 wp-includes/js/dist/components.js:37178
+#: wp-includes/media-template.php:253 wp-includes/js/dist/components.js:30193
 #: wp-admin/includes/media.php:2233
 msgid "Drop files to upload"
 msgstr "Træk filer for at uploade"
 
-#: wp-includes/media.php:4420
+#: wp-includes/media.php:4426
 msgid "Create gallery"
 msgstr "Opret galleri"
 
-#: wp-includes/media.php:4377 wp-includes/js/dist/block-editor.js:32770
+#: wp-includes/media.php:4383 wp-includes/js/dist/block-editor.js:34072
 #: wp-admin/includes/media.php:21 wp-admin/upload.php:79
 #: wp-admin/upload.php:216
 msgid "Media Library"
@@ -10835,15 +11054,15 @@ msgstr ""
 
 #: wp-includes/media-template.php:819 wp-includes/media-template.php:894
 #: wp-includes/media-template.php:1167
-#: wp-includes/js/dist/block-editor.js:33519
-#: wp-includes/js/dist/block-library.js:9301
+#: wp-includes/js/dist/block-editor.js:34821
+#: wp-includes/js/dist/block-library.js:8370
 msgid "Media File"
 msgstr "Mediefil"
 
 #: wp-includes/media-template.php:826 wp-includes/media-template.php:891
 #: wp-includes/media-template.php:1170
-#: wp-includes/js/dist/block-editor.js:33527
-#: wp-includes/js/dist/block-library.js:9298 wp-admin/includes/media.php:2611
+#: wp-includes/js/dist/block-editor.js:34829
+#: wp-includes/js/dist/block-library.js:8367 wp-admin/includes/media.php:2611
 msgid "Attachment Page"
 msgstr "Side for vedhæftning"
 
@@ -10853,7 +11072,7 @@ msgstr "Side for vedhæftning"
 msgid "Link To"
 msgstr "Link til"
 
-#: wp-includes/media.php:4424
+#: wp-includes/media.php:4430
 msgid "Update gallery"
 msgstr "Opdater galleri"
 
@@ -10920,13 +11139,13 @@ msgstr "%1$s %2$s"
 msgid "Could not insert term relationship into the database."
 msgstr "Kunne ikke indsætte termforhold i databasen"
 
-#: wp-includes/media-template.php:756 wp-includes/js/dist/components.js:30752
-#: wp-includes/js/dist/components.js:41704 wp-admin/theme-install.php:209
+#: wp-includes/media-template.php:756 wp-includes/js/dist/components.js:23767
+#: wp-includes/js/dist/components.js:34719 wp-admin/theme-install.php:209
 #: wp-admin/theme-install.php:232 wp-admin/js/color-picker.js:154
 msgid "Clear"
 msgstr "Ryd"
 
-#: wp-includes/media.php:4425 wp-includes/media.php:4426
+#: wp-includes/media.php:4431 wp-includes/media.php:4432
 msgid "Add to gallery"
 msgstr "Tilføj til galleri"
 
@@ -10934,7 +11153,7 @@ msgstr "Tilføj til galleri"
 msgid "Insert into post"
 msgstr "Indsæt i indlæg"
 
-#: wp-includes/media.php:4379
+#: wp-includes/media.php:4385
 msgid "Create a new gallery"
 msgstr "Opret nyt galleri"
 
@@ -10967,36 +11186,36 @@ msgstr "%1$s %2$s %3$s Feed"
 msgid "Display post date?"
 msgstr "Vis indlægsdato?"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5395 wp-admin/includes/post.php:40
+#: wp-includes/class-wp-xmlrpc-server.php:5438 wp-admin/includes/post.php:40
 #: wp-admin/includes/post.php:85
 msgid "Sorry, you are not allowed to create pages as this user."
 msgstr "Du har desværre ikke tilladelse til at oprette sider som denne bruger."
 
-#: wp-includes/class-wp-xmlrpc-server.php:4643
-#: wp-includes/class-wp-xmlrpc-server.php:4726
+#: wp-includes/class-wp-xmlrpc-server.php:4686
+#: wp-includes/class-wp-xmlrpc-server.php:4769
 msgid "Sorry, revisions are disabled."
 msgstr "Beklager, ændringer er deaktiveret."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3255
-#: wp-includes/class-wp-xmlrpc-server.php:4638
-#: wp-includes/class-wp-xmlrpc-server.php:4964
-#: wp-includes/class-wp-xmlrpc-server.php:6151 wp-admin/includes/post.php:480
+#: wp-includes/class-wp-xmlrpc-server.php:3298
+#: wp-includes/class-wp-xmlrpc-server.php:4681
+#: wp-includes/class-wp-xmlrpc-server.php:5007
+#: wp-includes/class-wp-xmlrpc-server.php:6194 wp-admin/includes/post.php:480
 msgid "Sorry, you are not allowed to edit posts."
 msgstr "Du har desværre ikke tilladelse til at redigere indlæg."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2890
+#: wp-includes/class-wp-xmlrpc-server.php:2933
 msgid "Sorry, the user could not be updated."
 msgstr "Beklager, men brugeren kan ikke opdateres."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1704
+#: wp-includes/class-wp-xmlrpc-server.php:1747
 msgid "There is a revision of this post that is more recent."
 msgstr "Der er en udgave af dette indlæg, som er nyere."
 
-#: wp-includes/class-wp-xmlrpc-server.php:279
+#: wp-includes/class-wp-xmlrpc-server.php:298
 msgid "Incorrect username or password."
 msgstr "Forkert brugernavn eller adgangskode."
 
-#: wp-includes/class-wp-xmlrpc-server.php:268
+#: wp-includes/class-wp-xmlrpc-server.php:287
 msgid "XML-RPC services are disabled on this site."
 msgstr "XML-RPC-tjenester er deaktiveret på dette websted."
 
@@ -11017,7 +11236,7 @@ msgstr "Header-tekstfarve"
 msgid "Colors"
 msgstr "Farver"
 
-#: wp-includes/script-loader.php:1162 wp-includes/js/dist/editor.js:10658
+#: wp-includes/script-loader.php:1162 wp-includes/js/dist/editor.js:9927
 #: wp-admin/js/widgets.js:130 wp-admin/js/widgets.js:575
 msgid "Saved"
 msgstr "Gemt"
@@ -11041,15 +11260,15 @@ msgstr "Vælg fil"
 msgid "Customize"
 msgstr "Tilpas"
 
-#: wp-includes/class-wp-xmlrpc-server.php:739
+#: wp-includes/class-wp-xmlrpc-server.php:782
 msgid "Insufficient arguments passed to this XML-RPC method."
 msgstr "Utilstrækkelige argumenter gennemført ved denne XML-RPC metode."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1336
+#: wp-includes/class-wp-xmlrpc-server.php:1379
 msgid "Sorry, you cannot stick a private post."
 msgstr "Du kan desværre ikke fastgøre et privat indlæg."
 
-#: wp-includes/class-wp-xmlrpc-server.php:5873
+#: wp-includes/class-wp-xmlrpc-server.php:5916
 msgid "Sorry, you are not allowed to publish this page."
 msgstr "Du har desværre ikke tilladelse til at udgive denne side."
 
@@ -11061,7 +11280,7 @@ msgstr "Du har desværre ikke tilladelse til at udgive denne side."
 msgid "Header Image"
 msgstr "Header-billede"
 
-#: wp-includes/class-wp-xmlrpc-server.php:533
+#: wp-includes/class-wp-xmlrpc-server.php:576
 msgid "Post Thumbnail"
 msgstr "Indlægs-miniature"
 
@@ -11112,17 +11331,17 @@ msgid "Background Image"
 msgstr "Baggrundsbillede"
 
 #: wp-includes/class-wp-customize-manager.php:5283
-#: wp-includes/js/dist/block-editor.js:8668
-#: wp-includes/js/dist/block-editor.js:10801
-#: wp-includes/js/dist/block-library.js:11329
+#: wp-includes/js/dist/block-editor.js:9962
+#: wp-includes/js/dist/block-editor.js:12095
+#: wp-includes/js/dist/block-library.js:10401
 #: wp-admin/includes/class-custom-background.php:454
 #: wp-admin/includes/class-custom-background.php:455
 msgid "Background Color"
 msgstr "Baggrundsfarve"
 
-#: wp-includes/js/dist/block-editor.js:8664
-#: wp-includes/js/dist/block-editor.js:10800
-#: wp-includes/js/dist/block-library.js:11325
+#: wp-includes/js/dist/block-editor.js:9958
+#: wp-includes/js/dist/block-editor.js:12094
+#: wp-includes/js/dist/block-library.js:10397
 #: wp-admin/includes/class-custom-image-header.php:716
 msgid "Text Color"
 msgstr "Tekstfarve"
@@ -11132,7 +11351,7 @@ msgid "Change image"
 msgstr "Skift billede"
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:140
-#: wp-includes/js/dist/editor.js:7879 wp-includes/js/dist/block-library.js:9112
+#: wp-includes/js/dist/editor.js:7148 wp-includes/js/dist/block-library.js:8181
 msgid "Remove image"
 msgstr "Fjern billede"
 
@@ -11150,25 +11369,25 @@ msgid "Allowed Files"
 msgstr "Tilladte filer"
 
 #: wp-includes/media-template.php:574
-#: wp-includes/class-wp-customize-widgets.php:777 wp-includes/media.php:4362
+#: wp-includes/class-wp-customize-widgets.php:777 wp-includes/media.php:4368
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:158
 #: wp-includes/customize/class-wp-customize-media-control.php:228
 #: wp-includes/customize/class-wp-customize-media-control.php:238
 #: wp-includes/customize/class-wp-customize-media-control.php:249
 #: wp-includes/customize/class-wp-customize-media-control.php:259
 #: wp-includes/class-wp-customize-manager.php:5200
-#: wp-includes/class-wp-editor.php:1383 wp-includes/js/dist/edit-post.js:2944
-#: wp-includes/js/dist/block-library.js:25792
+#: wp-includes/class-wp-editor.php:1383 wp-includes/js/dist/edit-post.js:3703
+#: wp-includes/js/dist/block-library.js:24864
 #: wp-admin/includes/class-walker-nav-menu-edit.php:278
 #: wp-admin/includes/class-wp-users-list-table.php:269
 #: wp-admin/includes/class-wp-users-list-table.php:463
 msgid "Remove"
 msgstr "Fjern"
 
-#: wp-includes/js/dist/block-editor.js:32220
-#: wp-includes/js/dist/block-editor.js:32784
-#: wp-includes/js/dist/block-editor.js:32797
-#: wp-includes/js/dist/block-library.js:25574
+#: wp-includes/js/dist/block-editor.js:33522
+#: wp-includes/js/dist/block-editor.js:34086
+#: wp-includes/js/dist/block-editor.js:34099
+#: wp-includes/js/dist/block-library.js:24646
 #: wp-admin/includes/class-custom-background.php:333
 #: wp-admin/includes/media.php:2260 wp-admin/includes/media.php:2262
 #: wp-admin/includes/class-custom-image-header.php:613
@@ -11176,12 +11395,12 @@ msgstr "Fjern"
 msgid "Upload"
 msgstr "Upload"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2410
-#: wp-includes/class-wp-xmlrpc-server.php:2516
+#: wp-includes/class-wp-xmlrpc-server.php:2453
+#: wp-includes/class-wp-xmlrpc-server.php:2559
 msgid "Sorry, you are not allowed to assign terms in this taxonomy."
 msgstr "Du har desværre ikke tilladelse til at tildele termer i denne taksonomi."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2285
+#: wp-includes/class-wp-xmlrpc-server.php:2328
 msgid "Sorry, deleting the term failed."
 msgstr "Beklager, sletning af termen mislykkedes."
 
@@ -11191,14 +11410,14 @@ msgstr "Beklager, sletning af termen mislykkedes."
 msgid "Sorry, you are not allowed to manage terms in this taxonomy."
 msgstr "Du har desværre ikke tilladelse til at håndtere termer i denne taksonomi."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2210
+#: wp-includes/class-wp-xmlrpc-server.php:2253
 msgid "Sorry, editing the term failed."
 msgstr "Beklager, redigering af termen mislykkedes."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1538
-#: wp-includes/class-wp-xmlrpc-server.php:2161
-#: wp-includes/class-wp-xmlrpc-server.php:2271
-#: wp-includes/class-wp-xmlrpc-server.php:2351 wp-includes/taxonomy.php:2247
+#: wp-includes/class-wp-xmlrpc-server.php:1581
+#: wp-includes/class-wp-xmlrpc-server.php:2204
+#: wp-includes/class-wp-xmlrpc-server.php:2314
+#: wp-includes/class-wp-xmlrpc-server.php:2394 wp-includes/taxonomy.php:2247
 msgid "Invalid term ID."
 msgstr "Ugyldigt term ID."
 
@@ -11207,36 +11426,36 @@ msgstr "Ugyldigt term ID."
 msgid "Sorry, you are not allowed to edit terms in this taxonomy."
 msgstr "Du har desværre ikke tilladelse til at redigere termer i denne taksonomi."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2071
-#: wp-includes/class-wp-xmlrpc-server.php:2189
+#: wp-includes/class-wp-xmlrpc-server.php:2114
+#: wp-includes/class-wp-xmlrpc-server.php:2232
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:442
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:579
 #: wp-includes/taxonomy.php:2263 wp-includes/taxonomy.php:3031
 msgid "Parent term does not exist."
 msgstr "Forældretermen eksisterer ikke."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2060
+#: wp-includes/class-wp-xmlrpc-server.php:2103
 msgid "This taxonomy is not hierarchical."
 msgstr "Denne taksonomi er ikke hierarkisk."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2055
-#: wp-includes/class-wp-xmlrpc-server.php:2172
+#: wp-includes/class-wp-xmlrpc-server.php:2098
+#: wp-includes/class-wp-xmlrpc-server.php:2215
 msgid "The term name cannot be empty."
 msgstr "Termens navn kan ikke være blankt."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2045
+#: wp-includes/class-wp-xmlrpc-server.php:2088
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:411
 #: wp-admin/edit-tags.php:86
 msgid "Sorry, you are not allowed to create terms in this taxonomy."
 msgstr "Du har desværre ikke tilladelse til at oprette termer i denne taksonomi."
 
 #: wp-includes/class-wp-term.php:172
-#: wp-includes/class-wp-xmlrpc-server.php:2039
-#: wp-includes/class-wp-xmlrpc-server.php:2144
-#: wp-includes/class-wp-xmlrpc-server.php:2260
-#: wp-includes/class-wp-xmlrpc-server.php:2339
-#: wp-includes/class-wp-xmlrpc-server.php:2404
-#: wp-includes/class-wp-xmlrpc-server.php:2510
+#: wp-includes/class-wp-xmlrpc-server.php:2082
+#: wp-includes/class-wp-xmlrpc-server.php:2187
+#: wp-includes/class-wp-xmlrpc-server.php:2303
+#: wp-includes/class-wp-xmlrpc-server.php:2382
+#: wp-includes/class-wp-xmlrpc-server.php:2447
+#: wp-includes/class-wp-xmlrpc-server.php:2553
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:189
 #: wp-includes/class-wp-tax-query.php:548
 #: wp-includes/class-wp-tax-query.php:555 wp-includes/taxonomy.php:498
@@ -11253,13 +11472,13 @@ msgstr "Ugyldig taksonomi."
 msgid "Select Link Category:"
 msgstr "Vælg linkkategori:"
 
-#: wp-includes/class-wp-xmlrpc-server.php:528 wp-admin/includes/file.php:53
+#: wp-includes/class-wp-xmlrpc-server.php:571 wp-admin/includes/file.php:53
 #: wp-admin/includes/file.php:61
 msgid "Stylesheet"
 msgstr "Stylesheet"
 
-#: wp-includes/class-wp-xmlrpc-server.php:523
-#: wp-includes/js/dist/edit-post.js:6254 wp-admin/includes/meta-boxes.php:976
+#: wp-includes/class-wp-xmlrpc-server.php:566
+#: wp-includes/js/dist/edit-post.js:7013 wp-admin/includes/meta-boxes.php:976
 #: wp-admin/includes/class-wp-posts-list-table.php:1739
 msgid "Template"
 msgstr "Skabelon"
@@ -11302,7 +11521,7 @@ msgstr "Tilpas: %s"
 #: wp-includes/class-wp-customize-control.php:589
 #: wp-includes/class-wp-customize-nav-menus.php:704
 #: wp-admin/options-reading.php:114 wp-admin/options-reading.php:131
-#: wp-admin/includes/template.php:728 wp-admin/nav-menus.php:853
+#: wp-admin/includes/template.php:728 wp-admin/nav-menus.php:844
 #: wp-admin/widgets.php:333 wp-admin/export.php:211 wp-admin/export.php:216
 #: wp-admin/export.php:258 wp-admin/export.php:263 wp-admin/export.php:298
 #: wp-admin/export.php:303 wp-admin/options-privacy.php:278
@@ -11319,35 +11538,35 @@ msgstr "Beskrivelse"
 msgid "Your latest posts"
 msgstr "Dine seneste indlæg"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1409
-#: wp-includes/class-wp-xmlrpc-server.php:5699
+#: wp-includes/class-wp-xmlrpc-server.php:1452
+#: wp-includes/class-wp-xmlrpc-server.php:5742
 msgid "The post type may not be changed."
 msgstr "Indholdstypen kan ikke ændres."
 
-#: wp-includes/class-wp-xmlrpc-server.php:518
+#: wp-includes/class-wp-xmlrpc-server.php:561
 msgid "Image default align"
 msgstr "Standard billedjustering"
 
-#: wp-includes/class-wp-xmlrpc-server.php:513
+#: wp-includes/class-wp-xmlrpc-server.php:556
 msgid "Image default size"
 msgstr "Standard billedstørrelse"
 
-#: wp-includes/class-wp-xmlrpc-server.php:508
+#: wp-includes/class-wp-xmlrpc-server.php:551
 msgid "Image default link type"
 msgstr "Standard billede-link"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1406
-#: wp-includes/class-wp-xmlrpc-server.php:1885
-#: wp-includes/class-wp-xmlrpc-server.php:4721
-#: wp-includes/class-wp-xmlrpc-server.php:4907
-#: wp-includes/class-wp-xmlrpc-server.php:5146
-#: wp-includes/class-wp-xmlrpc-server.php:5689
-#: wp-includes/class-wp-xmlrpc-server.php:6010
-#: wp-includes/class-wp-xmlrpc-server.php:6383
-#: wp-includes/class-wp-xmlrpc-server.php:6572
-#: wp-includes/class-wp-xmlrpc-server.php:6630
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:430
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:709
+#: wp-includes/class-wp-xmlrpc-server.php:1449
+#: wp-includes/class-wp-xmlrpc-server.php:1928
+#: wp-includes/class-wp-xmlrpc-server.php:4764
+#: wp-includes/class-wp-xmlrpc-server.php:4950
+#: wp-includes/class-wp-xmlrpc-server.php:5189
+#: wp-includes/class-wp-xmlrpc-server.php:5732
+#: wp-includes/class-wp-xmlrpc-server.php:6053
+#: wp-includes/class-wp-xmlrpc-server.php:6426
+#: wp-includes/class-wp-xmlrpc-server.php:6615
+#: wp-includes/class-wp-xmlrpc-server.php:6673
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:470
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:755
 #: wp-admin/includes/post.php:267 wp-admin/includes/post.php:1891
 #: wp-admin/includes/post.php:1895 wp-admin/includes/media.php:3768
 #: wp-admin/includes/ajax-actions.php:1997
@@ -11366,9 +11585,9 @@ msgctxt "tag delimiter"
 msgid ","
 msgstr ","
 
-#: wp-includes/class-wp-xmlrpc-server.php:1951
-#: wp-includes/class-wp-xmlrpc-server.php:4512
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:143
+#: wp-includes/class-wp-xmlrpc-server.php:1994
+#: wp-includes/class-wp-xmlrpc-server.php:4555
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:151
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:95
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:157
 #: wp-admin/post.php:135 wp-admin/edit.php:17 wp-admin/edit.php:42
@@ -11376,29 +11595,29 @@ msgid "Sorry, you are not allowed to edit posts in this post type."
 msgstr "Du har desværre ikke tilladelse til at redigere indlæg af denne indholdstype."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:484
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:953
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:999
 msgid "The post cannot be deleted."
 msgstr "Indlægget kan ikke slettes."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3439
+#: wp-includes/class-wp-xmlrpc-server.php:3482
 msgid "Sorry, you are not allowed to delete this category."
 msgstr "Du har desværre ikke tilladelse til at slette en kategori."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1593
+#: wp-includes/class-wp-xmlrpc-server.php:1636
 msgid "Sorry, you are not allowed to add a term to one of the given taxonomies."
 msgstr "Du har desværre ikke tilladelse til at tilføje en term til en af de givne taksonomier."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1585
+#: wp-includes/class-wp-xmlrpc-server.php:1628
 msgid "Ambiguous term name used in a hierarchical taxonomy. Please use term ID instead."
 msgstr "Et flertydigt navn på en term er brugt i en hierarkisk taksonomi. Brug venligst term ID i stedet."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1529
-#: wp-includes/class-wp-xmlrpc-server.php:1556
+#: wp-includes/class-wp-xmlrpc-server.php:1572
+#: wp-includes/class-wp-xmlrpc-server.php:1599
 msgid "Sorry, you are not allowed to assign a term to one of the given taxonomies."
 msgstr "Du har desværre ikke tilladelse til at tildele en term til en af de givne taksonomier."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1525
-#: wp-includes/class-wp-xmlrpc-server.php:1552
+#: wp-includes/class-wp-xmlrpc-server.php:1568
+#: wp-includes/class-wp-xmlrpc-server.php:1595
 msgid "Sorry, one of the given taxonomies is not supported by the post type."
 msgstr "Beklager, en af de givne taksonomier er ikke understøttet af indholdstypen."
 
@@ -11407,27 +11626,27 @@ msgstr "Beklager, en af de givne taksonomier er ikke understøttet af indholdsty
 msgid "Sorry, you are not allowed to view this item."
 msgstr "Du har desværre ikke tilladelse til at se dette emne."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1452
-#: wp-includes/class-wp-xmlrpc-server.php:5403
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1168
+#: wp-includes/class-wp-xmlrpc-server.php:1495
+#: wp-includes/class-wp-xmlrpc-server.php:5446
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1214
 msgid "Invalid author ID."
 msgstr "Ugyldigt forfatter-ID."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1446
-#: wp-includes/class-wp-xmlrpc-server.php:5390
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:536
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:552
+#: wp-includes/class-wp-xmlrpc-server.php:1489
+#: wp-includes/class-wp-xmlrpc-server.php:5433
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:582
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:598
 #: wp-admin/includes/post.php:42 wp-admin/includes/post.php:87
 #: wp-admin/press-this.php:20 wp-admin/post-new.php:61
 msgid "Sorry, you are not allowed to create posts as this user."
 msgstr "Du har desværre ikke tilladelse til at oprette indlæg som denne bruger."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1440
+#: wp-includes/class-wp-xmlrpc-server.php:1483
 msgid "Sorry, you are not allowed to create password protected posts in this post type."
 msgstr "Du har desværre ikke tilladelse til at oprette adgangskodebeskyttede indlæg af denne indholdstype."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1423
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1309
+#: wp-includes/class-wp-xmlrpc-server.php:1466
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1355
 msgid "Sorry, you are not allowed to create private posts in this post type."
 msgstr "Du har desværre ikke tilladelse til at oprette private indlæg af denne indholdstype."
 
@@ -11681,9 +11900,9 @@ msgstr "Din konto er nu aktiveret. <a href=\"%1$s\">Log ind</a> eller gå tilbag
 msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
 msgstr "Din konto er nu aktiveret. <a href=\"%1$s\">Vis dit websted</a> eller <a href=\"%2$s\">Log ind</a>"
 
-#: wp-includes/class-wp-editor.php:1256 wp-includes/js/dist/editor.js:8104
-#: wp-includes/js/dist/block-library.js:11546
-#: wp-includes/js/dist/format-library.js:1214
+#: wp-includes/class-wp-editor.php:1256 wp-includes/js/dist/editor.js:7373
+#: wp-includes/js/dist/block-library.js:10618
+#: wp-includes/js/dist/format-library.js:1210
 msgid "Link"
 msgstr "Link"
 
@@ -11714,8 +11933,8 @@ msgstr "Plakat"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:72
 #: wp-includes/widgets/class-wp-widget-media-video.php:74
 #: wp-includes/media-template.php:1296 wp-includes/media-template.php:1395
-#: wp-includes/js/dist/block-library.js:10385
-#: wp-includes/js/dist/block-library.js:25258
+#: wp-includes/js/dist/block-library.js:9457
+#: wp-includes/js/dist/block-library.js:24330
 msgid "Preload"
 msgstr "Preload"
 
@@ -11801,8 +12020,8 @@ msgctxt "Post format"
 msgid "Audio"
 msgstr "Lyd"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5351
-#: wp-includes/class-wp-xmlrpc-server.php:5706
+#: wp-includes/class-wp-xmlrpc-server.php:5394
+#: wp-includes/class-wp-xmlrpc-server.php:5749
 msgid "Invalid post format."
 msgstr "Ugyldigt indlægsformat."
 
@@ -11874,10 +12093,10 @@ msgstr "Ingen sider fundet."
 msgid "Shortlink"
 msgstr "Kortlink"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1502
-#: wp-includes/class-wp-xmlrpc-server.php:4318
-#: wp-includes/class-wp-xmlrpc-server.php:5553
-#: wp-includes/class-wp-xmlrpc-server.php:5947
+#: wp-includes/class-wp-xmlrpc-server.php:1545
+#: wp-includes/class-wp-xmlrpc-server.php:4361
+#: wp-includes/class-wp-xmlrpc-server.php:5596
+#: wp-includes/class-wp-xmlrpc-server.php:5990
 msgid "Invalid attachment ID."
 msgstr "Ugyldigt ID på vedhæftet fil."
 
@@ -11887,36 +12106,36 @@ msgstr "Denne fil behøver ikke længere at blive inkluderet."
 
 #: wp-includes/widgets/class-wp-widget-categories.php:193
 #: wp-includes/widgets/class-wp-widget-archives.php:224
-#: wp-includes/js/dist/block-library.js:10075
-#: wp-includes/js/dist/block-library.js:12389
+#: wp-includes/js/dist/block-library.js:9147
+#: wp-includes/js/dist/block-library.js:11461
 msgid "Display as dropdown"
 msgstr "Vis som rullemenu"
 
-#: wp-includes/class-wp-xmlrpc-server.php:610
+#: wp-includes/class-wp-xmlrpc-server.php:653
 msgid "Large size image height"
 msgstr "Stor størrelse billedehøjde"
 
-#: wp-includes/class-wp-xmlrpc-server.php:605
+#: wp-includes/class-wp-xmlrpc-server.php:648
 msgid "Large size image width"
 msgstr "Stor størrelse billedbredde"
 
-#: wp-includes/class-wp-xmlrpc-server.php:590
+#: wp-includes/class-wp-xmlrpc-server.php:633
 msgid "Medium size image height"
 msgstr "Medium størrelse billedhøjde"
 
-#: wp-includes/class-wp-xmlrpc-server.php:585
+#: wp-includes/class-wp-xmlrpc-server.php:628
 msgid "Medium size image width"
 msgstr "Medium størrelse billedbredde"
 
-#: wp-includes/class-wp-xmlrpc-server.php:580
+#: wp-includes/class-wp-xmlrpc-server.php:623
 msgid "Crop thumbnail to exact dimensions"
 msgstr "Beskær miniature til nøjagtige dimensioner"
 
-#: wp-includes/class-wp-xmlrpc-server.php:575
+#: wp-includes/class-wp-xmlrpc-server.php:618
 msgid "Thumbnail Height"
 msgstr "Højde på miniature"
 
-#: wp-includes/class-wp-xmlrpc-server.php:570
+#: wp-includes/class-wp-xmlrpc-server.php:613
 msgid "Thumbnail Width"
 msgstr "Bredde på miniature"
 
@@ -11997,7 +12216,7 @@ msgstr "Søg i Linkkategorier"
 msgid "Link Category"
 msgstr "Linkkategori"
 
-#: wp-includes/user.php:3454 wp-includes/js/dist/core-data.js:3089
+#: wp-includes/user.php:3454 wp-includes/js/dist/core-data.js:2827
 msgid "User"
 msgstr "Bruger"
 
@@ -12065,7 +12284,7 @@ msgstr "Opdater Tag"
 msgid "Parent Category:"
 msgstr "Forælderkategori:"
 
-#: wp-includes/taxonomy.php:598 wp-includes/js/dist/editor.js:11383
+#: wp-includes/taxonomy.php:598 wp-includes/js/dist/editor.js:10652
 msgid "Parent Category"
 msgstr "Forælderkategori"
 
@@ -12182,40 +12401,40 @@ msgstr "Tilføj venligst en %s-skabelon i dit tema."
 msgid "Theme without %s"
 msgstr "Tema uden %s"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3489
-#: wp-includes/class-wp-xmlrpc-server.php:6272
-#: wp-includes/class-wp-xmlrpc-server.php:6514
+#: wp-includes/class-wp-xmlrpc-server.php:3532
+#: wp-includes/class-wp-xmlrpc-server.php:6315
+#: wp-includes/class-wp-xmlrpc-server.php:6557
 msgid "Sorry, you must be able to edit posts on this site in order to view categories."
 msgstr "Du skal desværre kunne redigere indlæg på dette websted for at se kategorier."
 
-#: wp-includes/class-wp-xmlrpc-server.php:5309
+#: wp-includes/class-wp-xmlrpc-server.php:5352
 msgid "Sorry, you are not allowed to publish pages on this site."
 msgstr "Du har desværre ikke tilladelse til at udgive sider på dette websted."
 
-#: wp-includes/class-wp-xmlrpc-server.php:5322
-#: wp-includes/class-wp-xmlrpc-server.php:5336
-#: wp-includes/class-wp-xmlrpc-server.php:5341
+#: wp-includes/class-wp-xmlrpc-server.php:5365
+#: wp-includes/class-wp-xmlrpc-server.php:5379
+#: wp-includes/class-wp-xmlrpc-server.php:5384
 msgid "Sorry, you are not allowed to publish posts on this site."
 msgstr "Du har desværre ikke tilladelse til at udgive indlæg på dette websted."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1413
-#: wp-includes/class-wp-xmlrpc-server.php:5062
+#: wp-includes/class-wp-xmlrpc-server.php:1456
+#: wp-includes/class-wp-xmlrpc-server.php:5105
 msgid "Sorry, you are not allowed to post on this site."
 msgstr "Du har desværre ikke tilladelse til at skrive på dette websted."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3998
-#: wp-includes/class-wp-xmlrpc-server.php:4082
-#: wp-includes/class-wp-xmlrpc-server.php:4117
-#: wp-includes/class-wp-xmlrpc-server.php:4152
-#: wp-includes/class-wp-xmlrpc-server.php:4419
+#: wp-includes/class-wp-xmlrpc-server.php:4041
+#: wp-includes/class-wp-xmlrpc-server.php:4125
+#: wp-includes/class-wp-xmlrpc-server.php:4160
+#: wp-includes/class-wp-xmlrpc-server.php:4195
+#: wp-includes/class-wp-xmlrpc-server.php:4462
 msgid "Sorry, you are not allowed to access details about this site."
 msgstr "Du har desværre ikke tilladelse til at se detaljer for dette websted."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3299
+#: wp-includes/class-wp-xmlrpc-server.php:3342
 msgid "Sorry, you must be able to edit posts on this site in order to view tags."
 msgstr "Du skal desværre kunne redigere indlæg på dette websted for at kunne se tags."
 
-#: wp-includes/class-wp-xmlrpc-server.php:550
+#: wp-includes/class-wp-xmlrpc-server.php:593
 msgid "Site Tagline"
 msgstr "Webstedsbeskrivelse"
 
@@ -12325,7 +12544,7 @@ msgstr "Der opstod en fejl under forsøg på at tilføje dig til dette websted. 
 msgid "Your email address will not be published."
 msgstr "Din e-mailadresse vil ikke blive publiceret."
 
-#: wp-includes/class-wp-xmlrpc-server.php:6808 wp-includes/class-http.php:275
+#: wp-includes/class-wp-xmlrpc-server.php:6851 wp-includes/class-http.php:275
 #: wp-includes/class-http.php:503
 msgid "A valid URL was not provided."
 msgstr "Den anførte URL er ugyldig."
@@ -12551,7 +12770,7 @@ msgstr "Ét svar til %s"
 
 #: wp-includes/admin-bar.php:984
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:98
-#: wp-includes/class-wp-customize-nav-menus.php:671 wp-admin/nav-menus.php:666
+#: wp-includes/class-wp-customize-nav-menus.php:671 wp-admin/nav-menus.php:657
 #: wp-admin/menu.php:195
 msgid "Menus"
 msgstr "Menuer"
@@ -12571,71 +12790,71 @@ msgstr "WordPress-databasefejl %1$s for forespørgslen %2$s fra %3$s"
 msgid "Your PHP installation appears to be missing the MySQL extension which is required by WordPress."
 msgstr "Det ser ud til, at din PHP-installation mangler MySQL-udvidelsen, som kræves af WordPress."
 
-#: wp-includes/class-wp-xmlrpc-server.php:7042
+#: wp-includes/class-wp-xmlrpc-server.php:7085
 msgid "The specified target URL does not exist."
 msgstr "Den angivne URL findes ikke."
 
 #. translators: 1: URL of the page linked from, 2: URL of the page linked to.
-#: wp-includes/class-wp-xmlrpc-server.php:7009
+#: wp-includes/class-wp-xmlrpc-server.php:7052
 msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 msgstr "Pingback fra %1$s til %2$s registreret. Lad webbet snakke! :-)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6965
+#: wp-includes/class-wp-xmlrpc-server.php:7008
 msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
 msgstr "Kilde-URL'en indeholder ikke et link til destinations-URL'en og kan derfor ikke bruges som kilde."
 
-#: wp-includes/class-wp-xmlrpc-server.php:6923
+#: wp-includes/class-wp-xmlrpc-server.php:6966
 msgid "We cannot find a title on that page."
 msgstr "Vi kan ikke finde en titel på den side."
 
-#: wp-includes/class-wp-xmlrpc-server.php:6902
+#: wp-includes/class-wp-xmlrpc-server.php:6945
 msgid "The source URL does not exist."
 msgstr "Kilde-URL'en findes ikke."
 
-#: wp-includes/class-wp-xmlrpc-server.php:6875
+#: wp-includes/class-wp-xmlrpc-server.php:6918
 msgid "The pingback has already been registered."
 msgstr "Det pingback er allerede blevet registreret."
 
-#: wp-includes/class-wp-xmlrpc-server.php:6865
+#: wp-includes/class-wp-xmlrpc-server.php:6908
 msgid "The source URL and the target URL cannot both point to the same resource."
 msgstr "Kilde-URL og destinations-URL kan ikke pege på samme ressource."
 
-#: wp-includes/class-wp-xmlrpc-server.php:6854
-#: wp-includes/class-wp-xmlrpc-server.php:6861
-#: wp-includes/class-wp-xmlrpc-server.php:6870
-#: wp-includes/class-wp-xmlrpc-server.php:7035
+#: wp-includes/class-wp-xmlrpc-server.php:6897
+#: wp-includes/class-wp-xmlrpc-server.php:6904
+#: wp-includes/class-wp-xmlrpc-server.php:6913
+#: wp-includes/class-wp-xmlrpc-server.php:7078
 msgid "The specified target URL cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
 msgstr "Den angivne URL kan ikke bruges som mål. Enten eksisterer den ikke, eller også er den ikke pingback klar."
 
-#: wp-includes/class-wp-xmlrpc-server.php:6814
+#: wp-includes/class-wp-xmlrpc-server.php:6857
 msgid "Is there no link to us?"
 msgstr "Er der ikke et link til os?"
 
 #. translators: 1: File name, 2: Error message.
-#: wp-includes/class-wp-xmlrpc-server.php:6374
+#: wp-includes/class-wp-xmlrpc-server.php:6417
 msgid "Could not write file %1$s (%2$s)."
 msgstr "Kunne ikke skrive filen %1$s (%2$s)."
 
-#: wp-includes/class-wp-xmlrpc-server.php:5763
+#: wp-includes/class-wp-xmlrpc-server.php:5806
 msgid "Sorry, you are not allowed to change the page author as this user."
 msgstr "Du har desværre ikke tilladelse til at ændre sideforfatteren som denne bruger."
 
-#: wp-includes/class-wp-xmlrpc-server.php:5758
+#: wp-includes/class-wp-xmlrpc-server.php:5801
 msgid "Sorry, you are not allowed to change the post author as this user."
 msgstr "Du har desværre ikke tilladelse til at ændre indlægsforfatteren som denne bruger."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:717
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:763
 msgid "Sorry, you are not allowed to update posts as this user."
 msgstr "Du har ikke tilladelse til at opdatere indlæg som denne bruger."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1396
-#: wp-includes/class-wp-xmlrpc-server.php:1944
-#: wp-includes/class-wp-xmlrpc-server.php:3613
-#: wp-includes/class-wp-xmlrpc-server.php:4506
-#: wp-includes/class-wp-xmlrpc-server.php:5326
-#: wp-includes/class-wp-xmlrpc-server.php:5399
-#: wp-includes/class-wp-xmlrpc-server.php:5694
-#: wp-includes/class-wp-xmlrpc-server.php:5767
+#: wp-includes/class-wp-xmlrpc-server.php:1439
+#: wp-includes/class-wp-xmlrpc-server.php:1987
+#: wp-includes/class-wp-xmlrpc-server.php:3656
+#: wp-includes/class-wp-xmlrpc-server.php:4549
+#: wp-includes/class-wp-xmlrpc-server.php:5369
+#: wp-includes/class-wp-xmlrpc-server.php:5442
+#: wp-includes/class-wp-xmlrpc-server.php:5737
+#: wp-includes/class-wp-xmlrpc-server.php:5810
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:141
 #: wp-includes/post.php:1504 wp-includes/class-wp-customize-nav-menus.php:946
 #: wp-admin/async-upload.php:46 wp-admin/post.php:131 wp-admin/post.php:246
@@ -12644,108 +12863,108 @@ msgstr "Du har ikke tilladelse til at opdatere indlæg som denne bruger."
 msgid "Invalid post type."
 msgstr "Ugyldig indholdstype."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1429
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1319
+#: wp-includes/class-wp-xmlrpc-server.php:1472
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1365
 msgid "Sorry, you are not allowed to publish posts in this post type."
 msgstr "Du har desværre ikke tilladelse til at udgive indlæg af denne indholdstype."
 
-#: wp-includes/class-wp-xmlrpc-server.php:5140
-#: wp-includes/class-wp-xmlrpc-server.php:5214
-#: wp-includes/class-wp-xmlrpc-server.php:6115
-#: wp-includes/class-wp-xmlrpc-server.php:6695
+#: wp-includes/class-wp-xmlrpc-server.php:5183
+#: wp-includes/class-wp-xmlrpc-server.php:5257
+#: wp-includes/class-wp-xmlrpc-server.php:6158
+#: wp-includes/class-wp-xmlrpc-server.php:6738
 msgid "Sorry, no such post."
 msgstr "Indlægget kunne desværre ikke findes."
 
-#: wp-includes/class-wp-xmlrpc-server.php:5149
-#: wp-includes/class-wp-xmlrpc-server.php:5875
-#: wp-includes/class-wp-xmlrpc-server.php:6755
+#: wp-includes/class-wp-xmlrpc-server.php:5192
+#: wp-includes/class-wp-xmlrpc-server.php:5918
+#: wp-includes/class-wp-xmlrpc-server.php:6798
 msgid "Sorry, you are not allowed to publish this post."
 msgstr "Du har desværre ikke tilladelse til at udgive dette indlæg."
 
-#: wp-includes/class-wp-xmlrpc-server.php:4973
-#: wp-includes/class-wp-xmlrpc-server.php:6461
+#: wp-includes/class-wp-xmlrpc-server.php:5016
+#: wp-includes/class-wp-xmlrpc-server.php:6504
 msgid "Either there are no posts, or something went wrong."
 msgstr "Enten er der ingen indlæg, eller også opstod der en fejl."
 
-#: wp-includes/class-wp-xmlrpc-server.php:4253
+#: wp-includes/class-wp-xmlrpc-server.php:4296
 msgid "Sorry, you are not allowed to update options."
 msgstr "Du har desværre ikke tilladelse til at opdatere indstillinger."
 
-#: wp-includes/class-wp-xmlrpc-server.php:4040
+#: wp-includes/class-wp-xmlrpc-server.php:4083
 msgid "Sorry, you are not allowed to access details of this post."
 msgstr "Du har desværre ikke tilladelse til at se detaljer for dette indlæg."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3933
+#: wp-includes/class-wp-xmlrpc-server.php:3976
 msgid "A valid email address is required."
 msgstr "En gyldig e-mailadresse er påkrævet."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3931
+#: wp-includes/class-wp-xmlrpc-server.php:3974
 msgid "Comment author name and email are required."
 msgstr "Kommentarforfatteren skal udfylde navn og e-mail."
 
-#: wp-includes/class-wp-xmlrpc-server.php:1403
-#: wp-includes/class-wp-xmlrpc-server.php:1698
-#: wp-includes/class-wp-xmlrpc-server.php:1780
-#: wp-includes/class-wp-xmlrpc-server.php:1881
-#: wp-includes/class-wp-xmlrpc-server.php:2925
-#: wp-includes/class-wp-xmlrpc-server.php:3871
-#: wp-includes/class-wp-xmlrpc-server.php:3875
-#: wp-includes/class-wp-xmlrpc-server.php:4036
-#: wp-includes/class-wp-xmlrpc-server.php:4634
-#: wp-includes/class-wp-xmlrpc-server.php:4708
-#: wp-includes/class-wp-xmlrpc-server.php:4712
-#: wp-includes/class-wp-xmlrpc-server.php:4717
-#: wp-includes/class-wp-xmlrpc-server.php:4903
-#: wp-includes/class-wp-xmlrpc-server.php:5685
-#: wp-includes/class-wp-xmlrpc-server.php:6006
-#: wp-includes/class-wp-xmlrpc-server.php:6568
-#: wp-includes/class-wp-xmlrpc-server.php:6626
-#: wp-includes/class-wp-xmlrpc-server.php:6751
+#: wp-includes/class-wp-xmlrpc-server.php:1446
+#: wp-includes/class-wp-xmlrpc-server.php:1741
+#: wp-includes/class-wp-xmlrpc-server.php:1823
+#: wp-includes/class-wp-xmlrpc-server.php:1924
+#: wp-includes/class-wp-xmlrpc-server.php:2968
+#: wp-includes/class-wp-xmlrpc-server.php:3914
+#: wp-includes/class-wp-xmlrpc-server.php:3918
+#: wp-includes/class-wp-xmlrpc-server.php:4079
+#: wp-includes/class-wp-xmlrpc-server.php:4677
+#: wp-includes/class-wp-xmlrpc-server.php:4751
+#: wp-includes/class-wp-xmlrpc-server.php:4755
+#: wp-includes/class-wp-xmlrpc-server.php:4760
+#: wp-includes/class-wp-xmlrpc-server.php:4946
+#: wp-includes/class-wp-xmlrpc-server.php:5728
+#: wp-includes/class-wp-xmlrpc-server.php:6049
+#: wp-includes/class-wp-xmlrpc-server.php:6611
+#: wp-includes/class-wp-xmlrpc-server.php:6669
+#: wp-includes/class-wp-xmlrpc-server.php:6794
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:361
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:828
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:397
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:437
 #: wp-includes/comment.php:2458 wp-includes/post.php:3800
 #: wp-includes/post.php:4433 wp-includes/revision.php:324
 msgid "Invalid post ID."
 msgstr "Ugyldigt indlægs-ID."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3601
-#: wp-includes/class-wp-xmlrpc-server.php:3765
+#: wp-includes/class-wp-xmlrpc-server.php:3644
+#: wp-includes/class-wp-xmlrpc-server.php:3808
 msgid "Invalid comment status."
 msgstr "Ugyldig kommentarstatus."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3543
-#: wp-includes/class-wp-xmlrpc-server.php:3679
-#: wp-includes/class-wp-xmlrpc-server.php:3747
+#: wp-includes/class-wp-xmlrpc-server.php:3586
+#: wp-includes/class-wp-xmlrpc-server.php:3722
+#: wp-includes/class-wp-xmlrpc-server.php:3790
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:341
 #: wp-includes/comment.php:2449 wp-admin/comment.php:78
 #: wp-admin/comment.php:276 wp-admin/edit-comments.php:250
 msgid "Invalid comment ID."
 msgstr "Ugyldigt kommentar-ID."
 
-#: wp-includes/class-wp-xmlrpc-server.php:3085
+#: wp-includes/class-wp-xmlrpc-server.php:3128
 msgid "Failed to delete the page."
 msgstr "Kunne ikke slette siden."
 
-#: wp-includes/class-wp-xmlrpc-server.php:2940
-#: wp-includes/class-wp-xmlrpc-server.php:3074
-#: wp-includes/class-wp-xmlrpc-server.php:3140
+#: wp-includes/class-wp-xmlrpc-server.php:2983
+#: wp-includes/class-wp-xmlrpc-server.php:3117
+#: wp-includes/class-wp-xmlrpc-server.php:3183
 msgid "Sorry, no such page."
 msgstr "Den side findes desværre ikke."
 
-#: wp-includes/class-wp-xmlrpc-server.php:565
+#: wp-includes/class-wp-xmlrpc-server.php:608
 msgid "Allow new users to sign up"
 msgstr "Tillad nye brugere at tilmelde sig"
 
-#: wp-includes/class-wp-xmlrpc-server.php:540
+#: wp-includes/class-wp-xmlrpc-server.php:583
 msgid "Time Zone"
 msgstr "Tidszone"
 
-#: wp-includes/class-wp-xmlrpc-server.php:483
+#: wp-includes/class-wp-xmlrpc-server.php:526
 msgid "Software Version"
 msgstr "Softwareversion"
 
-#: wp-includes/class-wp-xmlrpc-server.php:478
+#: wp-includes/class-wp-xmlrpc-server.php:521
 msgid "Software Name"
 msgstr "Softwarenavn"
 
@@ -12780,7 +12999,7 @@ msgstr "%s er dit nye brugernavn"
 
 #: wp-includes/script-loader.php:1731
 #: wp-includes/class-wp-customize-nav-menus.php:1110 wp-signup.php:621
-#: wp-includes/js/dist/components.js:42349
+#: wp-includes/js/dist/components.js:35364
 msgid "Next"
 msgstr "Næste"
 
@@ -13011,8 +13230,8 @@ msgstr "af"
 
 #: wp-includes/script-loader.php:851
 #: wp-includes/widgets/class-wp-widget-media-image.php:28
-#: wp-includes/class-wp-editor.php:1212 wp-includes/js/dist/editor.js:8101
-#: wp-includes/js/dist/block-editor.js:32693 wp-admin/includes/media.php:2929
+#: wp-includes/class-wp-editor.php:1212 wp-includes/js/dist/editor.js:7370
+#: wp-includes/js/dist/block-editor.js:33995 wp-admin/includes/media.php:2929
 msgid "Image"
 msgstr "Billede"
 
@@ -13259,7 +13478,7 @@ msgid "This file is too big. Files must be less than %s KB in size."
 msgstr "Filen er for stor. Filer skal være mindre end %s kB."
 
 #. translators: %s: Allowed space allocation.
-#: wp-includes/class-wp-xmlrpc-server.php:6349 wp-admin/includes/media.php:3085
+#: wp-includes/class-wp-xmlrpc-server.php:6392 wp-admin/includes/media.php:3085
 #: wp-admin/includes/ms.php:233 wp-admin/includes/ms-deprecated.php:35
 msgid "Sorry, you have used your space allocation of %s. Please delete some files to upload more files."
 msgstr "Du har desværre brugt din tildelte plads på %s. Du skal slette nogle filer for at kunne uploade yderligere filer."
@@ -13321,13 +13540,13 @@ msgstr "Den bruger eksisterer ikke."
 
 #: wp-includes/class-wp-locale.php:194
 #: wp-includes/customize/class-wp-customize-date-time-control.php:173
-#: wp-includes/js/dist/components.js:36023
+#: wp-includes/js/dist/components.js:29038
 msgid "PM"
 msgstr "PM"
 
 #: wp-includes/class-wp-locale.php:193
 #: wp-includes/customize/class-wp-customize-date-time-control.php:172
-#: wp-includes/js/dist/components.js:36018
+#: wp-includes/js/dist/components.js:29033
 msgid "AM"
 msgstr "AM"
 
@@ -13373,18 +13592,18 @@ msgstr "Indsæt tag til sideskift"
 msgid "Fill Screen"
 msgstr "Fyld skærm"
 
-#: wp-includes/block-patterns/quote.php:9 wp-includes/js/dist/editor.js:8107
+#: wp-includes/block-patterns/quote.php:9 wp-includes/js/dist/editor.js:7376
 msgid "Quote"
 msgstr "Citat"
 
 #: wp-includes/class-wp-editor.php:1253
-#: wp-includes/js/dist/block-editor.js:33632
+#: wp-includes/js/dist/block-editor.js:34934
 msgid "Remove link"
 msgstr "Fjern link"
 
 #: wp-includes/script-loader.php:662 wp-includes/class-wp-editor.php:1257
-#: wp-includes/js/dist/block-editor.js:33304
-#: wp-includes/js/dist/block-editor.js:33599
+#: wp-includes/js/dist/block-editor.js:34606
+#: wp-includes/js/dist/block-editor.js:34901
 msgid "Insert link"
 msgstr "Indsæt link"
 
@@ -13406,7 +13625,7 @@ msgstr "Bogstav"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:137
 #: wp-includes/media-template.php:1209
-#: wp-includes/js/dist/block-editor.js:33586
+#: wp-includes/js/dist/block-editor.js:34888
 msgid "Link Rel"
 msgstr "Link-rel"
 
@@ -13415,25 +13634,25 @@ msgid "Source"
 msgstr "Kilde"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:79
-#: wp-includes/js/dist/components.js:17925
+#: wp-includes/js/dist/components.js:10940
 #: wp-admin/includes/class-custom-background.php:401
 msgid "Bottom Right"
 msgstr "Nederst til højre"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:71
-#: wp-includes/js/dist/components.js:17923
+#: wp-includes/js/dist/components.js:10938
 #: wp-admin/includes/class-custom-background.php:393
 msgid "Bottom Left"
 msgstr "Nederst til venstre"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:51
-#: wp-includes/js/dist/components.js:17919
+#: wp-includes/js/dist/components.js:10934
 #: wp-admin/includes/class-custom-background.php:373
 msgid "Top Right"
 msgstr "Øverst til højre"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:43
-#: wp-includes/js/dist/components.js:17917
+#: wp-includes/js/dist/components.js:10932
 #: wp-admin/includes/class-custom-background.php:365
 msgid "Top Left"
 msgstr "Øverst til venstre"
@@ -13452,20 +13671,20 @@ msgid "Background"
 msgstr "Baggrund"
 
 #: wp-includes/media-template.php:1028 wp-includes/media-template.php:1092
-#: wp-includes/js/dist/block-editor.js:6678
-#: wp-includes/js/dist/block-editor.js:11259
+#: wp-includes/js/dist/block-editor.js:7972
+#: wp-includes/js/dist/block-editor.js:12553
 msgid "Align"
 msgstr "Justering"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:77
 #: wp-includes/widgets/class-wp-widget-media-video.php:80
 #: wp-includes/media-template.php:1314 wp-includes/media-template.php:1413
-#: wp-includes/js/dist/block-library.js:10381
-#: wp-includes/js/dist/block-library.js:25242
+#: wp-includes/js/dist/block-library.js:9453
+#: wp-includes/js/dist/block-library.js:24314
 msgid "Loop"
 msgstr "Loop"
 
-#: wp-includes/js/dist/components.js:41598
+#: wp-includes/js/dist/components.js:34613
 #: wp-admin/includes/ajax-actions.php:2182
 msgid "Type"
 msgstr "Type"
@@ -13474,7 +13693,7 @@ msgstr "Type"
 msgid "Constrain proportions"
 msgstr "Lås proportioner"
 
-#: wp-includes/class-wp-editor.php:1214 wp-includes/js/dist/edit-post.js:4338
+#: wp-includes/class-wp-editor.php:1214 wp-includes/js/dist/edit-post.js:5097
 msgid "General"
 msgstr "Generelt"
 
@@ -13487,7 +13706,7 @@ msgid "The URL you entered seems to be an email address. Do you want to add the 
 msgstr "Den URL, du har indtastet, lader til at være en e-mailadresse. Vil du tilføje det påkrævede mailto: præfiks?"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:75
-#: wp-includes/class-wp-editor.php:1336 wp-includes/js/dist/components.js:27065
+#: wp-includes/class-wp-editor.php:1336 wp-includes/js/dist/components.js:20080
 #: wp-admin/includes/class-custom-background.php:397
 msgid "Bottom"
 msgstr "Bund"
@@ -13497,8 +13716,8 @@ msgid "Middle"
 msgstr "Midten"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:47
-#: wp-includes/class-wp-editor.php:1334 wp-includes/js/dist/components.js:27064
-#: wp-includes/js/dist/components.js:37893
+#: wp-includes/class-wp-editor.php:1334 wp-includes/js/dist/components.js:20079
+#: wp-includes/js/dist/components.js:30908
 #: wp-admin/includes/class-custom-background.php:369
 msgid "Top"
 msgstr "Top"
@@ -13512,7 +13731,7 @@ msgid "Vertical space"
 msgstr "Vertikal afstand"
 
 #: wp-includes/class-wp-editor.php:1222
-#: wp-includes/js/dist/block-library.js:14824
+#: wp-includes/js/dist/block-library.js:13896
 msgid "Dimensions"
 msgstr "Dimensioner"
 
@@ -13534,7 +13753,7 @@ msgstr "Sæt ind"
 
 #: wp-includes/class-wp-customize-manager.php:4345
 #: wp-includes/class-wp-editor.php:1171
-#: wp-includes/js/dist/block-editor.js:24805
+#: wp-includes/js/dist/block-editor.js:26107
 msgid "Copy"
 msgstr "Kopier"
 
@@ -13543,41 +13762,41 @@ msgid "Cut"
 msgstr "Klip"
 
 #: wp-includes/class-wp-editor.php:1154
-#: wp-includes/js/dist/format-library.js:1719
+#: wp-includes/js/dist/format-library.js:1715
 msgid "Superscript"
 msgstr "Hævet tekst"
 
 #: wp-includes/class-wp-editor.php:1153
-#: wp-includes/js/dist/format-library.js:1659
+#: wp-includes/js/dist/format-library.js:1655
 msgid "Subscript"
 msgstr "Sænket skrift"
 
 #: wp-includes/class-wp-editor.php:1152
-#: wp-includes/js/dist/block-editor.js:8753
-#: wp-includes/js/dist/format-library.js:1348
+#: wp-includes/js/dist/block-editor.js:10047
+#: wp-includes/js/dist/format-library.js:1344
 msgid "Strikethrough"
 msgstr "Gennemstreg"
 
 #: wp-includes/class-wp-editor.php:1151
-#: wp-includes/js/dist/block-editor.js:8749
-#: wp-includes/js/dist/format-library.js:1389
+#: wp-includes/js/dist/block-editor.js:10043
+#: wp-includes/js/dist/format-library.js:1385
 msgid "Underline"
 msgstr "Understreget"
 
 #: wp-includes/script-loader.php:660 wp-includes/class-wp-editor.php:1157
-#: wp-includes/js/dist/block-editor.js:9255
-#: wp-includes/js/dist/format-library.js:890
+#: wp-includes/js/dist/block-editor.js:10549
+#: wp-includes/js/dist/format-library.js:886
 msgid "Italic"
 msgstr "Kursiv"
 
 #: wp-includes/script-loader.php:658 wp-includes/class-wp-editor.php:1156
-#: wp-includes/js/dist/block-editor.js:9277
-#: wp-includes/js/dist/format-library.js:576
+#: wp-includes/js/dist/block-editor.js:10571
+#: wp-includes/js/dist/format-library.js:572
 msgid "Bold"
 msgstr "Fed"
 
 #: wp-includes/script-loader.php:676 wp-includes/class-wp-editor.php:1158
-#: wp-includes/js/dist/block-library.js:12478
+#: wp-includes/js/dist/block-library.js:11550
 msgid "Code"
 msgstr "Kode"
 
@@ -13675,27 +13894,27 @@ msgid "Merge table cells"
 msgstr "Flet tabelceller"
 
 #: wp-includes/class-wp-editor.php:1314
-#: wp-includes/js/dist/block-library.js:24279
+#: wp-includes/js/dist/block-library.js:23351
 msgid "Insert column after"
 msgstr "Indsæt kolonne efter"
 
 #: wp-includes/class-wp-editor.php:1313
-#: wp-includes/js/dist/block-library.js:24274
+#: wp-includes/js/dist/block-library.js:23346
 msgid "Insert column before"
 msgstr "Indsæt kolonne før"
 
 #: wp-includes/class-wp-editor.php:1317
-#: wp-includes/js/dist/block-library.js:24269
+#: wp-includes/js/dist/block-library.js:23341
 msgid "Delete row"
 msgstr "Slet række"
 
 #: wp-includes/class-wp-editor.php:1312
-#: wp-includes/js/dist/block-library.js:24264
+#: wp-includes/js/dist/block-library.js:23336
 msgid "Insert row after"
 msgstr "Indsæt række efter"
 
 #: wp-includes/class-wp-editor.php:1311
-#: wp-includes/js/dist/block-library.js:24259
+#: wp-includes/js/dist/block-library.js:23331
 msgid "Insert row before"
 msgstr "Indsæt række før"
 
@@ -13804,83 +14023,83 @@ msgstr "søndag"
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:160 wp-includes/class-wp-locale.php:188
-#: wp-includes/js/dist/components.js:35962
+#: wp-includes/js/dist/components.js:28977
 msgid "December"
 msgstr "december"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:159 wp-includes/class-wp-locale.php:187
-#: wp-includes/js/dist/components.js:35960
+#: wp-includes/js/dist/components.js:28975
 msgid "November"
 msgstr "november"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:158 wp-includes/class-wp-locale.php:186
-#: wp-includes/js/dist/components.js:35958
+#: wp-includes/js/dist/components.js:28973
 msgid "October"
 msgstr "oktober"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:157 wp-includes/class-wp-locale.php:185
-#: wp-includes/js/dist/components.js:35956
+#: wp-includes/js/dist/components.js:28971
 msgid "September"
 msgstr "september"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:156 wp-includes/class-wp-locale.php:184
-#: wp-includes/js/dist/components.js:35954
+#: wp-includes/js/dist/components.js:28969
 msgid "August"
 msgstr "august"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:155 wp-includes/class-wp-locale.php:183
-#: wp-includes/js/dist/components.js:35952
+#: wp-includes/js/dist/components.js:28967
 msgid "July"
 msgstr "juli"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:154 wp-includes/class-wp-locale.php:182
-#: wp-includes/js/dist/components.js:35950
+#: wp-includes/js/dist/components.js:28965
 msgid "June"
 msgstr "juni"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:153 wp-includes/class-wp-locale.php:181
-#: wp-includes/js/dist/components.js:35948
+#: wp-includes/js/dist/components.js:28963
 msgid "May"
 msgstr "maj"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:152 wp-includes/class-wp-locale.php:180
-#: wp-includes/js/dist/components.js:35946
+#: wp-includes/js/dist/components.js:28961
 msgid "April"
 msgstr "april"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:151 wp-includes/class-wp-locale.php:179
-#: wp-includes/js/dist/components.js:35944
+#: wp-includes/js/dist/components.js:28959
 msgid "March"
 msgstr "marts"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:150 wp-includes/class-wp-locale.php:178
-#: wp-includes/js/dist/components.js:35942
+#: wp-includes/js/dist/components.js:28957
 msgid "February"
 msgstr "februar"
 
 #. translators: Month name.
 #: wp-includes/class-wp-locale.php:149 wp-includes/class-wp-locale.php:177
-#: wp-includes/js/dist/components.js:35940
+#: wp-includes/js/dist/components.js:28955
 msgid "January"
 msgstr "januar"
 
@@ -13954,7 +14173,7 @@ msgstr "%1$s %2$s"
 
 #. translators: 1: Month, 2: Year.
 #. translators: 1: Month name, 2: 4-digit year.
-#: wp-includes/media.php:4292 wp-includes/general-template.php:2031
+#: wp-includes/media.php:4298 wp-includes/general-template.php:2031
 #: wp-admin/includes/class-wp-list-table.php:665
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
@@ -14175,7 +14394,7 @@ msgstr "Giv feedet en titel (valgfrit):"
 msgid "Enter the RSS feed URL here:"
 msgstr "Skriv URL til RSS- eller ATOM-feed her:"
 
-#: wp-includes/widgets.php:1567 wp-includes/js/dist/editor.js:6475
+#: wp-includes/widgets.php:1567 wp-includes/js/dist/editor.js:5745
 msgid "Untitled"
 msgstr "Ingen titel"
 
@@ -14195,7 +14414,7 @@ msgid "Recent Posts"
 msgstr "Seneste indlæg"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:201
-#: wp-includes/js/dist/block-library.js:12393
+#: wp-includes/js/dist/block-library.js:11465
 msgid "Show hierarchy"
 msgstr "Vis hierarki"
 
@@ -14209,7 +14428,7 @@ msgid "Automatically add paragraphs"
 msgstr "Tilføj afsnit automatisk"
 
 #: wp-includes/widgets/class-wp-widget-text.php:42
-#: wp-includes/js/dist/blocks.js:6095
+#: wp-includes/js/dist/blocks.js:275
 msgid "Text"
 msgstr "Tekst"
 
@@ -14219,9 +14438,9 @@ msgstr "Kalender"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:197
 #: wp-includes/widgets/class-wp-widget-archives.php:227
-#: wp-includes/js/dist/block-library.js:10083
-#: wp-includes/js/dist/block-library.js:12397
-#: wp-includes/js/dist/block-library.js:26108
+#: wp-includes/js/dist/block-library.js:9155
+#: wp-includes/js/dist/block-library.js:11469
+#: wp-includes/js/dist/block-library.js:25180
 msgid "Show post counts"
 msgstr "Vis antal indlæg"
 
@@ -14435,8 +14654,8 @@ msgstr "Kommentarer til %s"
 
 #: wp-includes/script-loader.php:814 wp-includes/script-loader.php:1120
 #: wp-includes/class-wp-customize-nav-menus.php:335
-#: wp-includes/js/dist/components.js:43640
-#: wp-includes/js/dist/block-editor.js:20556 wp-admin/includes/nav-menu.php:596
+#: wp-includes/js/dist/components.js:36655
+#: wp-includes/js/dist/block-editor.js:21850 wp-admin/includes/nav-menu.php:596
 #: wp-admin/includes/nav-menu.php:886 wp-admin/js/nav-menu.js:1261
 msgid "No results found."
 msgstr "Ingen resultater fundet."
@@ -14451,24 +14670,24 @@ msgstr "&laquo; Forrige side"
 
 #. translators: 'Label. Used to signify a layout property (eg: margin, padding)
 #. will apply uniformly to all screensizes.'
-#: wp-includes/js/dist/components.js:27063
-#: wp-includes/js/dist/components.js:44409
-#: wp-includes/js/dist/components.js:44428
-#: wp-includes/js/dist/block-editor.js:32971 wp-admin/export.php:187
+#: wp-includes/js/dist/components.js:20078
+#: wp-includes/js/dist/components.js:37424
+#: wp-includes/js/dist/components.js:37443
+#: wp-includes/js/dist/block-editor.js:34273 wp-admin/export.php:187
 #: wp-admin/export.php:199 wp-admin/export.php:224 wp-admin/export.php:246
 #: wp-admin/export.php:271
 msgid "All"
 msgstr "Alle"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3879
+#: wp-includes/class-wp-xmlrpc-server.php:3922
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:549
 #: wp-includes/comment.php:3440
 msgid "Sorry, comments are closed for this item."
 msgstr "Beklager, der er lukket for kommentarer til dette indlæg."
 
 #: wp-includes/admin-bar.php:973 wp-includes/class-wp-customize-widgets.php:415
-#: wp-includes/functions.php:4743 wp-includes/js/dist/blocks.js:6104
-#: wp-includes/js/dist/core-data.js:3087 wp-admin/widgets.php:49
+#: wp-includes/functions.php:4743 wp-includes/js/dist/blocks.js:284
+#: wp-includes/js/dist/core-data.js:2825 wp-admin/widgets.php:49
 msgid "Widgets"
 msgstr "Widgets"
 
@@ -14511,27 +14730,27 @@ msgstr "Titel:"
 #: wp-includes/customize/class-wp-customize-media-control.php:248
 #: wp-includes/customize/class-wp-customize-media-control.php:258
 #: wp-includes/class-wp-customize-manager.php:5201
-#: wp-includes/js/dist/components.js:36432
-#: wp-includes/js/dist/components.js:39662
-#: wp-includes/js/dist/block-editor.js:9305
-#: wp-includes/js/dist/block-editor.js:9569
-#: wp-includes/js/dist/block-library.js:22825
-#: wp-includes/js/dist/block-library.js:26854 wp-admin/js/color-picker.js:149
+#: wp-includes/js/dist/components.js:29447
+#: wp-includes/js/dist/components.js:32677
+#: wp-includes/js/dist/block-editor.js:10599
+#: wp-includes/js/dist/block-editor.js:10863
+#: wp-includes/js/dist/block-library.js:21897
+#: wp-includes/js/dist/block-library.js:25926 wp-admin/js/color-picker.js:149
 msgid "Default"
 msgstr "Standard"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:84
 #: wp-includes/media-template.php:1155 wp-includes/class-wp-editor.php:1324
-#: wp-includes/js/dist/block-editor.js:29977 wp-admin/options-media.php:61
+#: wp-includes/js/dist/block-editor.js:31279 wp-admin/options-media.php:61
 msgid "Height"
 msgstr "Højde"
 
-#: wp-includes/class-wp-xmlrpc-server.php:560 wp-admin/options-general.php:344
+#: wp-includes/class-wp-xmlrpc-server.php:603 wp-admin/options-general.php:344
 #: wp-admin/options-general.php:346
 msgid "Time Format"
 msgstr "Klokkeslætformat"
 
-#: wp-includes/class-wp-xmlrpc-server.php:555 wp-admin/options-general.php:306
+#: wp-includes/class-wp-xmlrpc-server.php:598 wp-admin/options-general.php:306
 #: wp-admin/options-general.php:308
 msgid "Date Format"
 msgstr "Datoformat"
@@ -14546,9 +14765,9 @@ msgstr "Datoformat"
 msgid "Email"
 msgstr "E-mail"
 
-#: wp-includes/class-wp-xmlrpc-server.php:545
+#: wp-includes/class-wp-xmlrpc-server.php:588
 #: wp-includes/class-wp-customize-manager.php:5103
-#: wp-includes/js/dist/core-data.js:3049 wp-admin/options-general.php:64
+#: wp-includes/js/dist/core-data.js:2787 wp-admin/options-general.php:64
 #: wp-admin/install.php:114 wp-admin/network/site-new.php:224
 msgid "Site Title"
 msgstr "Sidetitel"
@@ -14558,8 +14777,8 @@ msgid "First Post"
 msgstr "Første indlæg"
 
 #. translators: accessibility text for the settings landmark region.
-#: wp-includes/admin-bar.php:564 wp-includes/js/dist/edit-post.js:7291
-#: wp-includes/js/dist/edit-post.js:9317 wp-admin/includes/ms.php:1071
+#: wp-includes/admin-bar.php:564 wp-includes/js/dist/edit-post.js:3042
+#: wp-includes/js/dist/edit-post.js:8050 wp-admin/includes/ms.php:1071
 #: wp-admin/options.php:21 wp-admin/menu.php:292 wp-admin/network/menu.php:109
 msgid "Settings"
 msgstr "Indstillinger"
@@ -14641,14 +14860,14 @@ msgstr "<strong>Fejl</strong>: Indtast venligst et brugernavn."
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:78
 #: wp-includes/media-template.php:1150 wp-includes/class-wp-editor.php:1325
-#: wp-includes/js/dist/block-editor.js:29966
-#: wp-includes/js/dist/block-library.js:13701
-#: wp-includes/js/dist/block-library.js:22096
-#: wp-includes/js/dist/format-library.js:786 wp-admin/options-media.php:58
+#: wp-includes/js/dist/block-editor.js:31268
+#: wp-includes/js/dist/block-library.js:12773
+#: wp-includes/js/dist/block-library.js:21168
+#: wp-includes/js/dist/format-library.js:782 wp-admin/options-media.php:58
 msgid "Width"
 msgstr "Bredde"
 
-#: wp-includes/class-wp-theme.php:956 wp-includes/js/dist/block-editor.js:9265
+#: wp-includes/class-wp-theme.php:956 wp-includes/js/dist/block-editor.js:10559
 msgid "Light"
 msgstr "Lys"
 
@@ -14656,7 +14875,7 @@ msgstr "Lys"
 msgid "Yellow"
 msgstr "Gul"
 
-#: wp-includes/class-wp-theme.php:953 wp-includes/js/dist/block-editor.js:11927
+#: wp-includes/class-wp-theme.php:953 wp-includes/js/dist/block-editor.js:13221
 msgid "White"
 msgstr "Hvid"
 
@@ -14692,8 +14911,8 @@ msgstr "Brun"
 msgid "Blue"
 msgstr "Blå"
 
-#: wp-includes/class-wp-theme.php:942 wp-includes/js/dist/block-editor.js:9283
-#: wp-includes/js/dist/block-editor.js:11919
+#: wp-includes/class-wp-theme.php:942 wp-includes/js/dist/block-editor.js:10577
+#: wp-includes/js/dist/block-editor.js:13213
 msgid "Black"
 msgstr "Sort"
 
@@ -14701,7 +14920,7 @@ msgstr "Sort"
 #: wp-includes/class-wp-customize-panel.php:378
 #: wp-includes/customize/class-wp-customize-themes-panel.php:83
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:82
-#: wp-includes/js/dist/edit-post.js:3214
+#: wp-includes/js/dist/edit-post.js:3973
 #: wp-admin/includes/class-wp-screen.php:976 wp-admin/customize.php:229
 msgid "Help"
 msgstr "Hjælp"
@@ -14709,10 +14928,10 @@ msgstr "Hjælp"
 #: wp-includes/script-loader.php:1119
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:113
 #: wp-includes/blocks/rss.php:31 wp-includes/blocks/latest-comments.php:31
-#: wp-includes/blocks/latest-posts.php:102 wp-includes/media.php:3962
-#: wp-includes/js/dist/editor.js:10201 wp-includes/js/dist/editor.js:12470
-#: wp-includes/js/dist/edit-post.js:7212
-#: wp-includes/js/dist/block-library.js:19340 wp-admin/includes/media.php:3315
+#: wp-includes/blocks/latest-posts.php:102 wp-includes/media.php:3968
+#: wp-includes/js/dist/editor.js:9470 wp-includes/js/dist/editor.js:11728
+#: wp-includes/js/dist/edit-post.js:7971
+#: wp-includes/js/dist/block-library.js:18412 wp-admin/includes/media.php:3315
 #: wp-admin/includes/revision.php:59 wp-admin/includes/revision.php:62
 #: wp-admin/includes/template.php:1984 wp-admin/includes/ajax-actions.php:2185
 #: wp-admin/js/inline-edit-post.js:201
@@ -14731,12 +14950,12 @@ msgstr "Rediger medie"
 msgid "New Page"
 msgstr "Ny side"
 
-#: wp-includes/media.php:4358 wp-includes/js/dist/editor.js:6462
-#: wp-includes/js/dist/block-editor.js:33210
-#: wp-includes/js/dist/edit-post.js:4986
-#: wp-includes/js/dist/block-library.js:25782
+#: wp-includes/media.php:4364 wp-includes/js/dist/editor.js:5732
+#: wp-includes/js/dist/block-editor.js:34512
+#: wp-includes/js/dist/edit-post.js:5745
+#: wp-includes/js/dist/block-library.js:24854
 #: wp-admin/includes/template.php:1949 wp-admin/theme-editor.php:238
-#: wp-admin/plugin-editor.php:235 wp-admin/nav-menus.php:893
+#: wp-admin/plugin-editor.php:235 wp-admin/nav-menus.php:884
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:515
 msgid "Select"
 msgstr "Vælg"
@@ -14745,11 +14964,11 @@ msgstr "Vælg"
 #: wp-includes/script-loader.php:1727
 #: wp-includes/class-wp-customize-manager.php:5692
 #: wp-includes/class-wp-editor.php:1179 wp-includes/class-wp-editor.php:1835
-#: wp-includes/js/dist/components.js:36116
-#: wp-includes/js/dist/block-editor.js:33321
-#: wp-includes/js/dist/edit-post.js:3832 wp-includes/js/dist/edit-post.js:4168
-#: wp-includes/js/dist/edit-post.js:4498
-#: wp-includes/js/dist/block-library.js:25450
+#: wp-includes/js/dist/components.js:29131
+#: wp-includes/js/dist/block-editor.js:34623
+#: wp-includes/js/dist/edit-post.js:4591 wp-includes/js/dist/edit-post.js:4927
+#: wp-includes/js/dist/edit-post.js:5257
+#: wp-includes/js/dist/block-library.js:24522
 #: wp-admin/includes/class-wp-theme-install-list-table.php:385
 #: wp-admin/theme-install.php:406
 msgid "Close"
@@ -14789,7 +15008,7 @@ msgstr "Billeder"
 #. translators: %s: Theme author.
 #. translators: %s: Theme author link.
 #. translators: %s: Plugin author.
-#: wp-includes/js/dist/block-directory.js:2172
+#: wp-includes/js/dist/block-directory.js:1824
 #: wp-admin/includes/class-wp-debug-data.php:899
 #: wp-admin/includes/class-wp-debug-data.php:946
 #: wp-admin/includes/class-wp-debug-data.php:1269
@@ -14805,7 +15024,7 @@ msgstr "Billeder"
 msgid "By %s"
 msgstr "Af %s"
 
-#: wp-includes/js/dist/block-library.js:24707
+#: wp-includes/js/dist/block-library.js:23779
 #: wp-admin/includes/class-wp-debug-data.php:69
 #: wp-admin/includes/class-wp-debug-data.php:1084
 #: wp-admin/includes/class-wp-debug-data.php:1179
@@ -14816,11 +15035,11 @@ msgstr "Version"
 
 #: wp-includes/admin-bar.php:1064 wp-includes/admin-bar.php:1065
 #: wp-includes/blocks/search.php:25 wp-includes/blocks/search.php:26
-#: wp-includes/blocks/search.php:52 wp-includes/media.php:4357
-#: wp-includes/media.php:4401 wp-includes/class-wp-editor.php:1856
-#: wp-includes/js/dist/block-editor.js:21110
-#: wp-includes/js/dist/block-library.js:22182
-#: wp-includes/js/dist/block-library.js:22183
+#: wp-includes/blocks/search.php:52 wp-includes/media.php:4363
+#: wp-includes/media.php:4407 wp-includes/class-wp-editor.php:1856
+#: wp-includes/js/dist/block-editor.js:22404
+#: wp-includes/js/dist/block-library.js:21254
+#: wp-includes/js/dist/block-library.js:21255
 #: wp-admin/includes/class-wp-media-list-table.php:300
 #: wp-admin/includes/theme-install.php:126
 #: wp-admin/includes/class-wp-theme-install-list-table.php:59
@@ -14847,7 +15066,7 @@ msgstr "Alle kategorier"
 
 #: wp-includes/class-wp-customize-control.php:637
 #: wp-includes/class-wp-customize-nav-menus.php:1227
-#: wp-includes/js/dist/edit-post.js:4954 wp-admin/includes/meta-boxes.php:554
+#: wp-includes/js/dist/edit-post.js:5713 wp-admin/includes/meta-boxes.php:554
 #: wp-admin/includes/meta-boxes.php:1145
 msgid "Add"
 msgstr "Tilføj"
@@ -14857,7 +15076,7 @@ msgid "Add or remove tags"
 msgstr "Tilføj eller fjern tags"
 
 #: wp-login.php:602 wp-includes/script-loader.php:1117
-#: wp-includes/media.php:4360 wp-includes/js/dist/editor.js:8868
+#: wp-includes/media.php:4366 wp-includes/js/dist/editor.js:8137
 #: wp-admin/includes/class-wp-plugins-list-table.php:610
 #: wp-admin/includes/meta-boxes.php:370 wp-admin/includes/meta-boxes.php:371
 #: wp-admin/includes/meta-boxes.php:452 wp-admin/includes/meta-boxes.php:453
@@ -14872,20 +15091,20 @@ msgstr "Tilføj eller fjern tags"
 msgid "Update"
 msgstr "Opdater"
 
-#: wp-includes/js/dist/editor.js:9159 wp-admin/includes/meta-boxes.php:178
+#: wp-includes/js/dist/editor.js:8428 wp-admin/includes/meta-boxes.php:178
 #: wp-admin/includes/meta-boxes.php:195 wp-admin/js/post.js:874
 msgid "Public"
 msgstr "Offentlig"
 
 #: wp-includes/post.php:969 wp-includes/post.php:989
-#: wp-includes/js/dist/editor.js:9163 wp-admin/includes/meta-boxes.php:169
+#: wp-includes/js/dist/editor.js:8432 wp-admin/includes/meta-boxes.php:169
 #: wp-admin/includes/meta-boxes.php:204
 #: wp-admin/includes/class-wp-posts-list-table.php:1648
 #: wp-admin/includes/class-wp-posts-list-table.php:1848 wp-admin/js/post.js:877
 msgid "Private"
 msgstr "Privat"
 
-#: wp-includes/class-wp-editor.php:1177 wp-includes/js/dist/components.js:30395
+#: wp-includes/class-wp-editor.php:1177 wp-includes/js/dist/components.js:23410
 #: wp-admin/includes/meta-boxes.php:154 wp-admin/includes/meta-boxes.php:207
 #: wp-admin/includes/template.php:861 wp-admin/js/post.js:997
 msgid "OK"
@@ -14896,10 +15115,10 @@ msgid "Image URL"
 msgstr "Billede-URL"
 
 #. translators: Default privacy policy heading.
-#: wp-includes/media.php:4354 wp-includes/media.php:4919
+#: wp-includes/media.php:4360 wp-includes/media.php:4925
 #: wp-includes/class-wp-editor.php:1229
-#: wp-includes/js/dist/block-editor.js:32688 wp-includes/js/dist/blocks.js:6098
-#: wp-includes/js/dist/core-data.js:3062
+#: wp-includes/js/dist/block-editor.js:33990 wp-includes/js/dist/blocks.js:278
+#: wp-includes/js/dist/core-data.js:2800
 #: wp-admin/includes/class-wp-privacy-policy-content.php:500
 #: wp-admin/includes/media.php:2569 wp-admin/export.php:291
 #: wp-admin/menu.php:66 wp-admin/menu.php:297
@@ -14927,24 +15146,24 @@ msgstr "Justering"
 #: wp-includes/widgets/class-wp-widget-media-image.php:72
 #: wp-includes/media-template.php:843 wp-includes/media-template.php:922
 #: wp-includes/media-template.php:1114
-#: wp-includes/js/dist/block-library.js:26673
-#: wp-includes/js/dist/block-library.js:26674 wp-admin/includes/media.php:1219
+#: wp-includes/js/dist/block-library.js:25745
+#: wp-includes/js/dist/block-library.js:25746 wp-admin/includes/media.php:1219
 msgid "Size"
 msgstr "Størrelse"
 
 #: wp-includes/media-template.php:857 wp-includes/media-template.php:937
-#: wp-includes/media-template.php:1128 wp-includes/media.php:4005
-#: wp-includes/js/dist/block-editor.js:12001
+#: wp-includes/media-template.php:1128 wp-includes/media.php:4011
+#: wp-includes/js/dist/block-editor.js:13295
 #: wp-admin/includes/class-custom-background.php:600
 #: wp-admin/includes/media.php:1171 wp-admin/edit-form-blocks.php:241
 msgid "Full Size"
 msgstr "Fuld størrelse"
 
 #: wp-includes/media-template.php:855 wp-includes/media-template.php:935
-#: wp-includes/media-template.php:1126 wp-includes/media.php:4003
-#: wp-includes/js/dist/components.js:36368
-#: wp-includes/js/dist/block-editor.js:9271
-#: wp-includes/js/dist/block-editor.js:11995
+#: wp-includes/media-template.php:1126 wp-includes/media.php:4009
+#: wp-includes/js/dist/components.js:29383
+#: wp-includes/js/dist/block-editor.js:10565
+#: wp-includes/js/dist/block-editor.js:13289
 #: wp-admin/includes/class-custom-background.php:598
 #: wp-admin/includes/media.php:1169 wp-admin/edit-form-blocks.php:239
 msgid "Medium"
@@ -14953,7 +15172,7 @@ msgstr "Medium"
 #: wp-includes/media-template.php:782 wp-includes/media-template.php:1038
 #: wp-includes/media-template.php:1102
 #: wp-includes/customize/class-wp-customize-background-position-control.php:65
-#: wp-includes/class-wp-editor.php:1331 wp-includes/js/dist/components.js:27067
+#: wp-includes/class-wp-editor.php:1331 wp-includes/js/dist/components.js:20082
 #: wp-admin/includes/class-custom-background.php:387
 #: wp-admin/includes/media.php:1128 wp-admin/includes/media.php:2970
 msgid "Right"
@@ -14971,8 +15190,8 @@ msgstr "Center"
 #: wp-includes/media-template.php:776 wp-includes/media-template.php:1032
 #: wp-includes/media-template.php:1096
 #: wp-includes/customize/class-wp-customize-background-position-control.php:57
-#: wp-includes/class-wp-editor.php:1329 wp-includes/js/dist/components.js:27066
-#: wp-includes/js/dist/components.js:37888
+#: wp-includes/class-wp-editor.php:1329 wp-includes/js/dist/components.js:20081
+#: wp-includes/js/dist/components.js:30903
 #: wp-admin/includes/class-custom-background.php:379
 #: wp-admin/includes/media.php:1126 wp-admin/includes/media.php:2966
 msgid "Left"
@@ -14984,7 +15203,7 @@ msgid "Saved."
 msgstr "Gemt."
 
 #: wp-includes/class-wp-editor.php:1390
-#: wp-includes/js/dist/block-library.js:14788 wp-admin/includes/media.php:645
+#: wp-includes/js/dist/block-library.js:13860 wp-admin/includes/media.php:645
 msgid "Add Media"
 msgstr "Tilføj medier"
 
@@ -15003,15 +15222,15 @@ msgid "File &#8220;%s&#8221; doesn&#8217;t exist?"
 msgstr "Filen &#8220;%s&#8221; findes ikke?"
 
 #: wp-includes/media-template.php:854 wp-includes/media-template.php:934
-#: wp-includes/media-template.php:1125 wp-includes/media.php:4002
-#: wp-includes/js/dist/block-editor.js:11992
+#: wp-includes/media-template.php:1125 wp-includes/media.php:4008
+#: wp-includes/js/dist/block-editor.js:13286
 #: wp-admin/includes/class-custom-background.php:597
 #: wp-admin/includes/image-edit.php:234 wp-admin/includes/media.php:1168
 #: wp-admin/edit-form-blocks.php:238
 msgid "Thumbnail"
 msgstr "Miniature"
 
-#: wp-includes/class-wp-editor.php:1175 wp-includes/js/dist/editor.js:6212
+#: wp-includes/class-wp-editor.php:1175 wp-includes/js/dist/editor.js:5482
 #: wp-admin/includes/image-edit.php:81
 msgid "Redo"
 msgstr "Annuller fortryd"
@@ -15047,7 +15266,7 @@ msgid "Sidebar"
 msgstr "Sidebar"
 
 #. translators: accessibility text for the top bar landmark region.
-#: wp-includes/admin-bar.php:1009 wp-includes/js/dist/edit-post.js:9308
+#: wp-includes/admin-bar.php:1009 wp-includes/js/dist/edit-post.js:3033
 #: wp-admin/includes/class-custom-image-header.php:73 wp-admin/menu.php:200
 msgid "Header"
 msgstr "Header"
@@ -15088,18 +15307,18 @@ msgid "Tags"
 msgstr "Tags"
 
 #. translators: accessibility text for the content landmark region.
-#: wp-includes/revision.php:33 wp-includes/js/dist/edit-post.js:9311
+#: wp-includes/revision.php:33 wp-includes/js/dist/edit-post.js:3036
 #: wp-admin/includes/dashboard.php:557 wp-admin/index.php:102
 msgid "Content"
 msgstr "Indhold"
 
-#: wp-includes/script-loader.php:1163 wp-includes/media.php:4359
+#: wp-includes/script-loader.php:1163 wp-includes/media.php:4365
 #: wp-includes/class-wp-editor.php:1178 wp-includes/class-wp-editor.php:1881
-#: wp-includes/js/dist/components.js:30537 wp-includes/js/dist/editor.js:10356
-#: wp-includes/js/dist/block-editor.js:32729
-#: wp-includes/js/dist/block-editor.js:32732
-#: wp-includes/js/dist/edit-post.js:5777
-#: wp-includes/js/dist/block-library.js:5484
+#: wp-includes/js/dist/components.js:23552 wp-includes/js/dist/editor.js:9625
+#: wp-includes/js/dist/block-editor.js:34031
+#: wp-includes/js/dist/block-editor.js:34034
+#: wp-includes/js/dist/edit-post.js:6536
+#: wp-includes/js/dist/block-library.js:4553
 #: wp-admin/includes/image-edit.php:97
 #: wp-admin/includes/class-walker-nav-menu-edit.php:296
 #: wp-admin/includes/meta-boxes.php:155 wp-admin/includes/meta-boxes.php:208
@@ -15110,14 +15329,14 @@ msgstr "Indhold"
 #: wp-admin/includes/class-wp-posts-list-table.php:1940
 #: wp-admin/includes/dashboard.php:192 wp-admin/includes/dashboard.php:1335
 #: wp-admin/options-general.php:129 wp-admin/comment.php:244
-#: wp-admin/nav-menus.php:1076 wp-admin/widgets.php:353
+#: wp-admin/nav-menus.php:1074 wp-admin/widgets.php:353
 #: wp-admin/widgets.php:356 wp-admin/widgets.php:569 wp-admin/user-edit.php:531
 #: wp-admin/user-edit.php:645 wp-admin/js/post.js:997
 #: wp-admin/network/settings.php:181
 msgid "Cancel"
 msgstr "Annuller"
 
-#: wp-includes/admin-bar.php:553 wp-includes/js/dist/edit-post.js:5279
+#: wp-includes/admin-bar.php:553 wp-includes/js/dist/edit-post.js:6038
 #: wp-admin/update-core.php:432 wp-admin/update-core.php:445
 #: wp-admin/plugins.php:600 wp-admin/network/settings.php:469
 #: wp-admin/network/menu.php:103
@@ -15134,9 +15353,9 @@ msgstr "Seneste kommentarer"
 #: wp-includes/media-template.php:1488
 #: wp-includes/class-wp-customize-manager.php:4299
 #: wp-includes/class-wp-editor.php:1245
-#: wp-includes/js/dist/block-editor.js:23475
-#: wp-includes/js/dist/block-editor.js:33676
-#: wp-includes/js/dist/block-library.js:17294
+#: wp-includes/js/dist/block-editor.js:24777
+#: wp-includes/js/dist/block-editor.js:34978
+#: wp-includes/js/dist/block-library.js:16366
 #: wp-admin/includes/class-custom-background.php:258
 #: wp-admin/includes/meta-boxes.php:73 wp-admin/includes/post.php:1766
 #: wp-admin/includes/class-custom-image-header.php:509
@@ -15153,8 +15372,8 @@ msgstr "Forhåndsvis"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/js/dist/block-editor.js:31983
-#: wp-includes/js/dist/block-editor.js:33328
+#: wp-includes/js/dist/block-editor.js:33285
+#: wp-includes/js/dist/block-editor.js:34630
 #: wp-admin/includes/dashboard.php:236 wp-admin/includes/dashboard.php:1332
 #: wp-admin/setup-config.php:252
 msgid "Submit"
@@ -15203,10 +15422,10 @@ msgstr "Rediger tag"
 #: wp-includes/media-template.php:1041 wp-includes/media-template.php:1058
 #: wp-includes/media-template.php:1105 wp-includes/media-template.php:1181
 #: wp-includes/media-template.php:1301 wp-includes/media-template.php:1400
-#: wp-includes/deprecated.php:706 wp-includes/js/dist/components.js:36362
-#: wp-includes/js/dist/block-library.js:9304
-#: wp-includes/js/dist/block-library.js:10404
-#: wp-includes/js/dist/block-library.js:25201 wp-admin/edit-tags.php:467
+#: wp-includes/deprecated.php:706 wp-includes/js/dist/components.js:29377
+#: wp-includes/js/dist/block-library.js:8373
+#: wp-includes/js/dist/block-library.js:9476
+#: wp-includes/js/dist/block-library.js:24273 wp-admin/edit-tags.php:467
 #: wp-admin/includes/class-wp-debug-data.php:1069
 #: wp-admin/includes/media.php:1125 wp-admin/includes/media.php:1253
 #: wp-admin/includes/media.php:2964 wp-admin/includes/media.php:2980
@@ -15228,8 +15447,8 @@ msgid "Description"
 msgstr "Beskrivelse"
 
 #: wp-includes/comment-template.php:2356
-#: wp-includes/js/dist/components.js:30492
-#: wp-includes/js/dist/block-library.js:21530
+#: wp-includes/js/dist/components.js:23507
+#: wp-includes/js/dist/block-library.js:20602
 #: wp-admin/includes/class-wp-debug-data.php:1075
 #: wp-admin/includes/class-wp-debug-data.php:1170
 #: wp-admin/includes/class-wp-users-list-table.php:362
@@ -15241,7 +15460,7 @@ msgid "Name"
 msgstr "Navn"
 
 #: wp-includes/class-wp-editor.php:1215
-#: wp-includes/js/dist/block-editor.js:34172 wp-admin/edit-link-form.php:34
+#: wp-includes/js/dist/block-editor.js:35474 wp-admin/edit-link-form.php:34
 msgid "Advanced"
 msgstr "Avanceret"
 
@@ -15254,16 +15473,16 @@ msgstr "Target"
 #: wp-includes/widgets/class-wp-widget-categories.php:47
 #: wp-includes/category-template.php:547
 #: wp-includes/theme-compat/sidebar.php:129
-#: wp-includes/js/dist/components.js:44414
-#: wp-includes/js/dist/block-library.js:12364
-#: wp-includes/js/dist/block-library.js:12402
+#: wp-includes/js/dist/components.js:37429
+#: wp-includes/js/dist/block-library.js:11436
+#: wp-includes/js/dist/block-library.js:11474
 #: wp-admin/includes/class-wp-links-list-table.php:135
 #: wp-admin/edit-link-form.php:31
 msgid "Categories"
 msgstr "Kategorier"
 
-#: wp-includes/class-wp-editor.php:1247 wp-includes/js/dist/components.js:30569
-#: wp-includes/js/dist/editor.js:6688 wp-includes/js/dist/editor.js:10672
+#: wp-includes/class-wp-editor.php:1247 wp-includes/js/dist/components.js:23584
+#: wp-includes/js/dist/editor.js:5958 wp-includes/js/dist/editor.js:9941
 #: wp-admin/includes/image-edit.php:98 wp-admin/includes/meta-boxes.php:44
 #: wp-admin/includes/meta-boxes.php:398 wp-admin/includes/meta-boxes.php:1046
 #: wp-admin/includes/meta-boxes.php:1458 wp-admin/includes/widgets.php:301
@@ -15298,9 +15517,9 @@ msgstr "Linkkategorier"
 msgid "Revisions"
 msgstr "Ændringer"
 
-#: wp-includes/revision.php:34 wp-includes/js/dist/edit-post.js:4407
-#: wp-includes/js/dist/edit-post.js:6546
-#: wp-includes/js/dist/block-library.js:19118
+#: wp-includes/revision.php:34 wp-includes/js/dist/edit-post.js:5166
+#: wp-includes/js/dist/edit-post.js:7305
+#: wp-includes/js/dist/block-library.js:18190
 #: wp-admin/includes/meta-boxes.php:702 wp-admin/includes/meta-boxes.php:1510
 msgid "Excerpt"
 msgstr "Uddrag"
@@ -15308,8 +15527,8 @@ msgstr "Uddrag"
 #. translators: accessibility text for the publish landmark region.
 #: wp-includes/script-loader.php:1151
 #: wp-includes/class-wp-customize-manager.php:4816
-#: wp-includes/js/dist/editor.js:8873 wp-includes/js/dist/editor.js:9082
-#: wp-includes/js/dist/edit-post.js:6034 wp-includes/js/dist/edit-post.js:9320
+#: wp-includes/js/dist/editor.js:8142 wp-includes/js/dist/editor.js:8351
+#: wp-includes/js/dist/edit-post.js:3045 wp-includes/js/dist/edit-post.js:6793
 #: wp-admin/includes/meta-boxes.php:358 wp-admin/includes/meta-boxes.php:359
 #: wp-admin/includes/meta-boxes.php:1465 wp-admin/customize.php:189
 #: wp-admin/js/post.js:769
@@ -15331,21 +15550,21 @@ msgstr "Udgiv"
 msgid "Comments"
 msgstr "Kommentarer"
 
-#: wp-includes/class-wp-customize-widgets.php:775 wp-includes/media.php:4398
+#: wp-includes/class-wp-customize-widgets.php:775 wp-includes/media.php:4404
 #: wp-includes/class-wp-editor.php:1386
-#: wp-includes/js/dist/block-editor.js:32377
-#: wp-includes/js/dist/block-editor.js:32499
-#: wp-includes/js/dist/edit-post.js:5783
-#: wp-includes/js/dist/block-library.js:5482
-#: wp-includes/js/dist/block-library.js:28090
-#: wp-includes/js/dist/format-library.js:794
+#: wp-includes/js/dist/block-editor.js:33679
+#: wp-includes/js/dist/block-editor.js:33801
+#: wp-includes/js/dist/edit-post.js:6542
+#: wp-includes/js/dist/block-library.js:4551
+#: wp-includes/js/dist/block-library.js:27162
+#: wp-includes/js/dist/format-library.js:790
 #: wp-admin/includes/class-wp-screen.php:1095
 #: wp-admin/includes/class-wp-list-table.php:509
 msgid "Apply"
 msgstr "Anvend"
 
 #. translators: %s: Number of comments.
-#: wp-includes/class-wp-editor.php:1174 wp-includes/js/dist/editor.js:6267
+#: wp-includes/class-wp-editor.php:1174 wp-includes/js/dist/editor.js:5537
 #: wp-admin/includes/image-edit.php:80 wp-admin/includes/media.php:1737
 #: wp-admin/includes/template.php:542 wp-admin/includes/template.php:551
 #: wp-admin/edit-comments.php:279 wp-admin/edit-comments.php:290
@@ -15373,12 +15592,12 @@ msgstr "%s siden"
 #: wp-includes/class-wp-editor.php:1384
 #: wp-includes/class-walker-comment.php:250
 #: wp-includes/class-walker-comment.php:449
-#: wp-includes/js/dist/block-editor.js:31627
-#: wp-includes/js/dist/block-editor.js:32336
-#: wp-includes/js/dist/block-editor.js:33207
-#: wp-includes/js/dist/edit-post.js:4983 wp-includes/js/dist/edit-post.js:4989
-#: wp-includes/js/dist/edit-post.js:6267
-#: wp-includes/js/dist/block-library.js:25359
+#: wp-includes/js/dist/block-editor.js:32929
+#: wp-includes/js/dist/block-editor.js:33638
+#: wp-includes/js/dist/block-editor.js:34509
+#: wp-includes/js/dist/edit-post.js:5742 wp-includes/js/dist/edit-post.js:5748
+#: wp-includes/js/dist/edit-post.js:7026
+#: wp-includes/js/dist/block-library.js:24431
 #: wp-admin/includes/class-wp-links-list-table.php:330
 #: wp-admin/includes/class-walker-nav-menu-edit.php:176
 #: wp-admin/includes/meta-boxes.php:134 wp-admin/includes/meta-boxes.php:186
@@ -15426,14 +15645,14 @@ msgstr "Kommentar"
 #: wp-includes/widgets/class-wp-widget-media-image.php:113
 #: wp-includes/media-template.php:837 wp-includes/media-template.php:1063
 #: wp-includes/media-template.php:1186 wp-includes/media-template.php:1260
-#: wp-includes/media-template.php:1351 wp-includes/media.php:4355
-#: wp-includes/media.php:4912
+#: wp-includes/media-template.php:1351 wp-includes/media.php:4361
+#: wp-includes/media.php:4918
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:94
 #: wp-includes/class-wp-editor.php:1261 wp-includes/class-wp-editor.php:1840
 #: wp-includes/class-wp-customize-nav-menus.php:1257
-#: wp-includes/js/dist/block-editor.js:30866
-#: wp-includes/js/dist/block-editor.js:32492
-#: wp-includes/js/dist/block-library.js:16740
+#: wp-includes/js/dist/block-editor.js:32168
+#: wp-includes/js/dist/block-editor.js:33794
+#: wp-includes/js/dist/block-library.js:15812
 #: wp-admin/includes/class-wp-links-list-table.php:134
 #: wp-admin/includes/class-walker-nav-menu-edit.php:187
 #: wp-admin/includes/media.php:2937 wp-admin/includes/template.php:486
@@ -15444,8 +15663,8 @@ msgid "URL"
 msgstr "URL"
 
 #: wp-includes/class-wp-editor.php:1209 wp-includes/theme-compat/sidebar.php:29
-#: wp-includes/js/dist/components.js:44427 wp-includes/js/dist/editor.js:7548
-#: wp-includes/js/dist/editor.js:7602
+#: wp-includes/js/dist/components.js:37442 wp-includes/js/dist/editor.js:6818
+#: wp-includes/js/dist/editor.js:6872
 #: wp-admin/includes/class-wp-debug-data.php:1089
 #: wp-admin/includes/class-wp-debug-data.php:1184
 #: wp-admin/includes/class-theme-installer-skin.php:241
@@ -15490,7 +15709,7 @@ msgid "Y/m/d"
 msgstr "d.m.Y"
 
 #: wp-includes/post.php:967 wp-includes/post.php:988
-#: wp-includes/js/dist/editor.js:10495 wp-admin/includes/meta-boxes.php:121
+#: wp-includes/js/dist/editor.js:9764 wp-admin/includes/meta-boxes.php:121
 #: wp-admin/includes/meta-boxes.php:149 wp-admin/includes/meta-boxes.php:151
 #: wp-admin/includes/ajax-actions.php:2200
 #: wp-admin/includes/class-wp-posts-list-table.php:1853
@@ -15513,7 +15732,7 @@ msgstr "Udgivet"
 
 #: wp-includes/media-template.php:484 wp-includes/media-template.php:713
 #: wp-includes/revision.php:32 wp-includes/class-wp-editor.php:1205
-#: wp-includes/js/dist/editor.js:5916 wp-admin/includes/media.php:1390
+#: wp-includes/js/dist/editor.js:5186 wp-admin/includes/media.php:1390
 #: wp-admin/includes/media.php:2624 wp-admin/includes/media.php:2945
 #: wp-admin/includes/ajax-actions.php:2182
 #: wp-admin/includes/class-wp-posts-list-table.php:1559
@@ -15521,7 +15740,7 @@ msgstr "Udgivet"
 msgid "Title"
 msgstr "Titel"
 
-#: wp-includes/post.php:1739 wp-includes/js/dist/block-library.js:19271
+#: wp-includes/post.php:1739 wp-includes/js/dist/block-library.js:18343
 msgid "No posts found."
 msgstr "Ingen indlæg fundet."
 

@@ -44,7 +44,7 @@ function display_payments_under_shipping() {
   }
   ?>
   <div class="checkout_payments">
-    <h3><?php esc_html_e( 'Billing', 'woocommerce' ); ?></h3>
+    <h3><?php esc_html_e( 'Betalingsmetode', 'woocommerce' ); ?></h3>
     <?php if ( WC()->cart->needs_payment() ) : ?>
     <ul class="wc_payment_methods payment_methods methods">
     <?php
@@ -67,3 +67,9 @@ add_action( 'woocommerce_checkout_shipping', 'display_payments_under_shipping', 
 /* Moving coupon below shipping  */
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 add_action( 'woocommerce_after_checkout_form', 'woocommerce_checkout_coupon_form' );
+
+/* Remove shipping title on checkout */
+add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
+function custom_shipping_package_name( $name ) {
+    return '';
+}

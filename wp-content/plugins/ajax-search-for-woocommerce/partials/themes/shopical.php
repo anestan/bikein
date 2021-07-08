@@ -30,5 +30,10 @@ function dgwt_wcas_shopical_mobile_search() {
 			});
 		}(jQuery));
 	</script>
+	<style>
+		.dgwt-wcas-overlay-mobile .dgwt-wcas-search-form {
+			padding: 0;
+		}
+	</style>
 	<?php
 }

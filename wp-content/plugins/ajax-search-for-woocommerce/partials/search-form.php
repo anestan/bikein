@@ -12,7 +12,7 @@ $layout = Helpers::getLayoutSettings();
 
 $submitText = Helpers::getLabel( 'submit' );
 $hasSubmit  = DGWT_WCAS()->settings->getOption( 'show_submit_button' );
-$uniqueID   = ++ DGWT_WCAS()->searchInstances . substr( uniqid(), 10, 3 );
+$uniqueID   = ++ DGWT_WCAS()->searchInstances;
 $layoutType = !empty($args['layout'])  ? $args['layout'] : $layout->layout;
 
 $customParams = apply_filters( 'dgwt/wcas/search_bar/custom_params', array(), DGWT_WCAS()->searchInstances );
