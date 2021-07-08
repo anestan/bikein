@@ -35,9 +35,8 @@ if ( ! defined( 'DGWT_WCAS_FILE' ) ) {
 				<?php echo $vars->priceHtml; ?>
 			</div>
 
-			<div class="dgwt-wcas-details-hr"></div>
-
 			<?php if ( ! empty( $vars->attributes ) ): ?>
+				<div class="dgwt-wcas-details-hr"></div>
 				<div class="dgwt-wcas-details-attributes">
 					<?php foreach ( $vars->attributes as $attribute ): ?>
 						<div class="dgwt-wcas-details-attribute"><b><?php echo esc_html( $attribute['label'] ); ?></b>: <span><?php echo esc_html( $attribute['value'] ); ?></span></div>

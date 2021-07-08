@@ -130,6 +130,42 @@
 
     };
 
+	var CHECKBOX_SETTINGS_TOGGLE_SIBLING = {
+		inputSel: 'js-dgwt-wcas-options-toggle-sibling input[type=checkbox]',
+
+		toogleSibling: function ($el) {
+			var _this = this;
+			var checked = $el.is(':checked');
+
+			if (checked) {
+				$el.closest('label').next().fadeIn();
+			} else {
+				$el.closest('label').next().hide();
+			}
+		},
+
+		registerListeners: function () {
+			var _this = this;
+
+			$(document).on('change', '.' + _this.inputSel, function () {
+				_this.toogleSibling($(this));
+			});
+		},
+
+		init: function () {
+			var _this = this;
+			var $sel = $('.' + _this.inputSel);
+
+			if ($sel.length > 0) {
+				_this.registerListeners();
+
+				$sel.each(function () {
+					_this.toogleSibling($(this));
+				});
+			}
+		}
+	};
+
 	var CONDITIONAL_LAYOUT_SETTINGS = {
 		layoutSelect: "select[id*='search_layout']",
 		overlayMobile: "input[id*='enable_mobile_overlay']",
@@ -317,7 +353,18 @@
 
                             if (response.data.loop) {
                                 _this.heartbeat();
-                            }
+                            } else if (response.data.refresh_once.length > 0) {
+                            	// If refresh cookie non exist and Troubleshooting tab is hidden then reload
+								if (
+									!document.cookie.split(';').some(function (item) {
+										return item.trim().indexOf('dgwt_wcas_refresh_once=' + response.data.refresh_once) === 0;
+									}) &&
+									$('#dgwt_wcas_troubleshooting-tab').css('display') === 'none'
+								) {
+									document.cookie = 'dgwt_wcas_refresh_once=' + response.data.refresh_once;
+									location.reload();
+								}
+							}
 
                         }
                     }
@@ -698,8 +745,10 @@
                     'show_product_desc',
                     'show_product_price',
                     'show_matching_categories',
+                    'show_categories_images',
                     'show_matching_tags',
                     'show_matching_brands',
+                    'show_brands_images',
                     'show_matching_posts',
                     'show_matching_pages',
                     'show_grouped_results',
@@ -707,7 +756,7 @@
                     'show_details_box'
                 ];
             for (var i = 0; i < options.length; i++) {
-                var selector = "input[id*='" + options[i] + "']";
+                var selector = "input[id='dgwt_wcas_settings\\[" + options[i] + "\\]']";
                 var $el = $(selector),
                     methodToCall = 'onChange' + _this.camelCase(options[i]);
 
@@ -718,7 +767,9 @@
                 $(document).on('change', selector, function () {
                     methodToCall = $(this).attr('id').replace(']', '').replace('dgwt_wcas_settings[', '');
                     methodToCall = 'onChange' + _this.camelCase(methodToCall);
-                    _this[methodToCall]($(this), this.value);
+					if (typeof (_this[methodToCall]) === 'function') {
+						_this[methodToCall]($(this), this.value);
+					}
                 });
             }
         },
@@ -889,13 +940,13 @@
                 $items = $('.dgwt-wcas-suggestion-cat');
 
             if (_this.isChecked($el)) {
-                $headline.show();
+            	$headline.show();
                 $items.show();
                 $items.removeClass('js-dgwt-wcas-suggestion-hidden');
 
                 _this.onChangeShowGroupedResults($("input[id*='show_grouped_results']"));
             } else {
-                $headline.hide();
+            	$headline.hide();
                 $items.hide();
                 $items.addClass('js-dgwt-wcas-suggestion-hidden');
             }
@@ -904,6 +955,16 @@
             _this.onChangeSuggestionsLimit($limitInput, $limitInput.val());
 
         },
+		onChangeShowCategoriesImages: function ($el, value) {
+			var _this = this,
+				$contentWrapp = $('.js-dgwt-wcas-suggestion-cat');
+
+			if (_this.isChecked($el)) {
+				$contentWrapp.addClass('dgwt-wcas-has-img');
+			} else {
+				$contentWrapp.removeClass('dgwt-wcas-has-img');
+			}
+		},
         onChangeShowMatchingTags: function ($el, value) {
             var _this = this,
                 $headline = $('.dgwt-wcas-suggestion-headline-tag'),
@@ -946,6 +1007,16 @@
             _this.onChangeSuggestionsLimit($limitInput, $limitInput.val());
 
         },
+		onChangeShowBrandsImages: function ($el, value) {
+			var _this = this,
+				$contentWrapp = $('.js-dgwt-wcas-suggestion-brand');
+
+			if (_this.isChecked($el)) {
+				$contentWrapp.addClass('dgwt-wcas-has-img');
+			} else {
+				$contentWrapp.removeClass('dgwt-wcas-has-img');
+			}
+		},
         onChangeShowMatchingPosts: function ($el, value) {
             var _this = this,
                 $headline = $('.dgwt-wcas-suggestion-headline-post'),
@@ -1363,6 +1434,8 @@
 		progressBar: '.dgwt-wcas-troubleshooting-wrapper .progress_bar',
 		progressBarInner: '.dgwt-wcas-troubleshooting-wrapper .progress-bar-inner',
 		resetButtonName: 'dgwt-wcas-reset-async-tests',
+		fixOutofstockButtonName: 'dgwt-wcas-fix-out-of-stock-relationships',
+		dismissElementorTemplateButtonName: 'dgwt-wcas-dismiss-elementor-template',
 		init: function () {
 			var _this = this;
 			if (typeof dgwt_wcas['troubleshooting'] === 'undefined') {
@@ -1396,6 +1469,38 @@
 				var data = {
 					'action': 'dgwt_wcas_troubleshooting_reset_async_tests',
 					'_wpnonce': dgwt_wcas.troubleshooting.nonce.troubleshooting_reset_async_tests
+				};
+				$.post(
+					ajaxurl,
+					data,
+					function () {
+						location.reload();
+					}
+				);
+				return false;
+			});
+
+			$(document).on('click', 'input[name="' + _this.fixOutofstockButtonName + '"]', function (e) {
+				$('input[name="' + _this.fixOutofstockButtonName + '"]').attr('disabled', 'disabled').next().addClass('loading');
+				var data = {
+					'action': 'dgwt_wcas_troubleshooting_fix_outofstock',
+					'_wpnonce': dgwt_wcas.troubleshooting.nonce.troubleshooting_fix_outofstock
+				};
+				$.post(
+					ajaxurl,
+					data,
+					function () {
+						location.reload();
+					}
+				);
+				return false;
+			});
+
+			$(document).on('click', 'input[name="' + _this.dismissElementorTemplateButtonName + '"]', function (e) {
+				$('input[name="' + _this.dismissElementorTemplateButtonName + '"]').attr('disabled', 'disabled');
+				var data = {
+					'action': 'dgwt_wcas_troubleshooting_dismiss_elementor_template',
+					'_wpnonce': dgwt_wcas.troubleshooting.nonce.troubleshooting_dismiss_elementor_template
 				};
 				$.post(
 					ajaxurl,
@@ -1486,6 +1591,25 @@
 				}, 2000);
 			}
 		},
+	}
+
+	var MOVE_OPTIONS = {
+		moveOptionClass: '.js-dgwt-wcas-move-option',
+		init: function () {
+			var optionsToMove = $(this.moveOptionClass);
+			if (optionsToMove.length > 0) {
+				$.each(optionsToMove, function (index, el) {
+					var moveDest = $('#' + $(el).data('move-dest').replace(/(:|\.|\[|\])/g, '\\$1'));
+					if (moveDest.length > 0) {
+						if ($(el).closest('tr').hasClass('dgwt-wcas-premium-only')) {
+							$(el).addClass('dgwt-wcas-premium-only');
+						}
+						$(el).clone().appendTo(moveDest.closest('td fieldset'));
+					}
+					$(el).closest('tr').remove();
+				});
+			}
+		}
 	}
 
 	var SETTINGS_FILTERS_RULES = {
@@ -1683,6 +1807,8 @@
         TOOLTIP.init();
         ADVANCED_SETTINGS.init();
 		TROUBLESHOOTING.init();
+		MOVE_OPTIONS.init();
+		CHECKBOX_SETTINGS_TOGGLE_SIBLING.init();
 
 		SETTINGS_FILTERS_RULES.init();
         window.DGWT_WCAS_SEARCH_PREVIEW.init();

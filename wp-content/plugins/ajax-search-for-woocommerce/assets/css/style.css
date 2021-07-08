@@ -369,6 +369,13 @@ a.dgwt-wcas-product-details-readmore:hover {
     border-radius: 0 0 0 5px;
 }
 
+.dgwt-wcas-details-inner {
+	display: none;
+}
+.dgwt-wcas-details-inner.dgwt-wcas-details-inner-active {
+	display: block;
+}
+
 .dgwt-wcas-details-inner-taxonomy{
    margin-top: 11px;
 }
@@ -932,6 +939,7 @@ input[type="submit"].dgwt-wcas-search-submit, button.dgwt-wcas-search-submit {
 .dgwt-wcas-sf-wrapp {
     zoom: 1;
     width: 100%;
+	max-width: 100vw;
     margin: 0;
     position: relative;
     background: none;
@@ -1218,6 +1226,10 @@ body:not(.dgwt-wcas-is-details) .dgwt-wcas-suggestion:last-child {
     overflow: hidden;
 	min-width: 100vw;
 	min-height: 100vh;
+}
+
+html.dgwt-wcas-overlay-mobile-on {
+	scroll-behavior: unset;
 }
 
 .dgwt-wcas-om-bar {

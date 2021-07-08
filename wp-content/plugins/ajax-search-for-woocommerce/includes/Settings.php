@@ -203,7 +203,7 @@ class Settings
         ),
             630  => array(
             'name'  => 'layout_head',
-            'label' => __( 'Layout (beta)', 'ajax-search-for-woocommerce' ),
+            'label' => __( 'Layout', 'ajax-search-for-woocommerce' ),
             'type'  => 'head',
             'class' => 'dgwt-wcas-sgs-header js-dgwt-wcas-adv-settings',
         ),
@@ -381,8 +381,17 @@ class Settings
             'name'    => 'show_matching_categories',
             'label'   => __( 'Show categories', 'ajax-search-for-woocommerce' ),
             'type'    => 'checkbox',
-            'class'   => 'js-dgwt-wcas-settings-margin',
+            'class'   => 'js-dgwt-wcas-settings-margin js-dgwt-wcas-options-toggle-sibling',
             'default' => 'on',
+        ),
+            1150 => array(
+            'name'      => 'show_categories_images',
+            'label'     => __( 'show images', 'ajax-search-for-woocommerce' ),
+            'type'      => 'checkbox',
+            'class'     => 'js-dgwt-wcas-adv-settings dgwt-wcas-premium-only',
+            'default'   => 'off',
+            'desc'      => __( 'show images', 'ajax-search-for-woocommerce' ),
+            'move_dest' => 'show_matching_categories',
         ),
             1300 => array(
             'name'    => 'show_matching_tags',
@@ -541,21 +550,37 @@ class Settings
         ),
             600 => array(
             'name'  => 'filter_products_head',
-            'label' => __( 'Exclude products', 'ajax-search-for-woocommerce' ),
+            'label' => __( 'Exclude/include products', 'ajax-search-for-woocommerce' ),
             'type'  => 'head',
             'class' => 'dgwt-wcas-sgs-header js-dgwt-wcas-adv-settings',
+        ),
+            625 => array(
+            'name'    => 'filter_products_mode',
+            'label'   => __( 'Filtering mode', 'ajax-search-for-woocommerce' ) . ' ' . Helpers::createQuestionMark(
+            'filter_products_mode',
+            __( 'Exclude the product group from the search results or allow search only among the indicated product group', 'ajax-search-for-woocommerce' ),
+            '',
+            'right'
+        ),
+            'class'   => 'js-dgwt-wcas-adv-settings dgwt-wcas-premium-only',
+            'type'    => 'select',
+            'options' => array(
+            'exclude' => __( 'Exclude', 'ajax-search-for-woocommerce' ),
+            'include' => __( 'Include', 'ajax-search-for-woocommerce' ),
+        ),
+            'default' => 'exclude',
         ),
             650 => array(
             'name'    => 'filter_products_rules',
             'label'   => __( 'Filters', 'ajax-search-for-woocommerce' ) . ' ' . Helpers::createQuestionMark(
             'filter_products_head',
-            __( 'Exclude from search all products that match conditions', 'ajax-search-for-woocommerce' ),
+            __( 'Filters that specify the product group that will be affected by the above mode', 'ajax-search-for-woocommerce' ),
             '',
             'right'
         ),
             'type'    => 'filters_rules_plug',
             'class'   => 'js-dgwt-wcas-adv-settings dgwt-wcas-premium-only',
-            'default' => array(),
+            'default' => '[]',
         ),
         ) ),
             'dgwt_wcas_performance'  => apply_filters( 'dgwt/wcas/settings/section=performance', array(

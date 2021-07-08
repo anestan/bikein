@@ -174,6 +174,7 @@ class SettingsAPI
                     'class'             => ( isset( $option['class'] ) ? $option['class'] : '' ),
                     'sanitize_callback' => ( isset( $option['sanitize_callback'] ) ? $option['sanitize_callback'] : '' ),
                     'type'              => $type,
+                    'move_dest'         => ( isset( $option['move_dest'] ) ? $option['move_dest'] : '' ),
                 );
                 add_settings_field(
                     "{$this->name}[" . $option['name'] . ']',
@@ -279,8 +280,19 @@ class SettingsAPI
             $args['std'],
             $args
         );
+        $moveDest = ( empty($args['move_dest']) ? '' : sprintf(
+            'data-move-dest="%1$s[%2$s]" class="%3$s"',
+            $this->name,
+            $args['move_dest'],
+            'js-dgwt-wcas-move-option'
+        ) );
         $html = '<fieldset>';
-        $html .= sprintf( '<label for="%1$s[%2$s]">', $this->name, $args['id'] );
+        $html .= sprintf(
+            '<label %3$s for="%1$s[%2$s]">',
+            $this->name,
+            $args['id'],
+            $moveDest
+        );
         $html .= sprintf( '<input type="hidden" name="%1$s[%2$s]" value="off" />', $this->name, $args['id'] );
         $html .= sprintf(
             '<input type="checkbox" class="checkbox" id="%1$s[%2$s]" name="%1$s[%2$s]" value="on" %3$s />',
@@ -843,7 +855,7 @@ class SettingsAPI
 				}
 				$('.<?php 
         echo  $this->prefix ;
-        ?>nav-tab-wrapper a:not(.js-nav-tab-minor)').click(function (evt) {
+        ?>nav-tab-wrapper a:not(.js-nav-tab-minor)').on('click', function (evt) {
 
 					if (typeof (localStorage) != 'undefined') {
 						localStorage.setItem('<?php 
@@ -897,7 +909,7 @@ class SettingsAPI
 			});
 		</script>
 
-		<style type="text/css">
+		<style>
 			/** WordPress 3.8 Fix **/
 			.form-table th {
 				padding: 20px 10px;

@@ -579,6 +579,24 @@ class Helpers
     }
     
     /**
+     * Sort from the longest to the shortest
+     *
+     * @param $a
+     * @param $b
+     *
+     * @return int
+     */
+    public static function sortFromLongest( $a, $b )
+    {
+        $la = mb_strlen( $a );
+        $lb = mb_strlen( $b );
+        if ( $la == $lb ) {
+            return strcmp( $b, $a );
+        }
+        return $lb - $la;
+    }
+    
+    /**
      * Get taxonomy parents
      *
      * @param int $term_id
@@ -768,6 +786,9 @@ class Helpers
         $el = $wpdb->get_var( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'product_variation' LIMIT 1" );
         if ( !empty($el) && is_numeric( $el ) ) {
             $allow = true;
+        }
+        if ( DGWT_WCAS()->settings->getOption( 'search_in_product_content' ) !== 'on' ) {
+            $allow = false;
         }
         return apply_filters( 'dgwt/wcas/search_in_variable_products', $allow );
     }
@@ -1039,7 +1060,7 @@ class Helpers
         if ( !$query->get( 'dgwt_wcas', false ) ) {
             return $posts;
         }
-        $query->set( 's', $query->get( 'dgwt_wcas', '' ) );
+        $query->set( 's', wp_unslash( $query->get( 'dgwt_wcas', '' ) ) );
         return $posts;
     }
     

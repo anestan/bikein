@@ -27,6 +27,34 @@ class WooCommerce {
 
 			add_filter( 'woocommerce_get_filtered_term_product_counts_query', array( $this, 'filter_counts_query' ) );
 		}
+
+		$this->syncWithOutOfStockVisibility();
+	}
+
+	/**
+	 * Sync with WooCommerce >> Settings >> Products >> Inventory >> "Out of stock visibility"
+	 */
+	private function syncWithOutOfStockVisibility() {
+		if ( get_option( 'woocommerce_hide_out_of_stock_items' ) === 'yes' ) {
+			// Hide "Exclude “out of stock” products" option
+			add_filter( 'dgwt/wcas/settings', function ( $settingsFields ) {
+				if ( is_array( $settingsFields['dgwt_wcas_search'] ) ) {
+					foreach ( $settingsFields['dgwt_wcas_search'] as $index => $field ) {
+						if ( $field['name'] === 'exclude_out_of_stock' ) {
+							unset( $settingsFields['dgwt_wcas_search'][ $index ] );
+							break;
+						}
+					}
+				}
+
+				return $settingsFields;
+			}, PHP_INT_MAX - 10 );
+
+			// Force value of "Exclude “out of stock” products" option as "on"
+			add_filter( 'dgwt/wcas/settings/load_value/key=exclude_out_of_stock', function ( $value ) {
+				return 'on';
+			}, PHP_INT_MAX - 10 );
+		}
 	}
 
 	/**

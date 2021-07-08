@@ -4,7 +4,7 @@ Tags: woocommerce search, ajax search, search by sku, product search, woocommerc
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
-Stable tag: 1.10.0
+Stable tag: 1.12.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ The most popular **WooCommerce product search plugin**. It gives your users a we
 
 By default, WooCommerce provides a very simple search solution, without live product search or even SKU search. FiboSearch (Ajax Search for WooCommerce) provides advanced search with live suggestions.
 
-Who doesn’t love instant, as-you-type suggestions? In 2021, customers expect smart product search. Baymard Institute’s latest UX research reveals that search autocomplete, auto-suggest, or an instant search feature **is now offered on 96% of major e-commerce sites**. It's a must-have feature for every online business that can’t afford to lose customers. Why? FiboSearch helps users save time and makes shopping easier. As a result, it really boosts sales.
+Who doesn’t love instant, as-you-type suggestions? In 2021, customers expect smart product search. Baymard Institute’s latest UX research reveals that search autocomplete, auto-suggest, or an instant search feature **is now offered on 96% of major e-commerce sites**. It's a must-have feature for every online business that can’t afford to lose customers. Why? FiboSearch helps users save time and makes shopping easier. As a result, Fibo really boosts sales.
 
 = Features =
 &#9989; **Search by product title, long and short description**
@@ -35,8 +35,7 @@ Who doesn’t love instant, as-you-type suggestions? In 2021, customers expect s
 &#9989; **Support for WooCommerce search results page** - after typing enter, users get the same results as in FiboSearch bar
 &#9989; **Grouping instant search results by type** – displaying e.g. first matching categories, then matching products
 &#9989; **Google Analytics** support
-&#9989; **WPML** compatible
-&#9989; **Polylang** compatible
+&#9989; Multilingual support including **WPML**, **Polylang** and **qTranslate-XT**
 &#9989; **Personalization** of search bar and autocomplete suggestions - labels, colors, preloader, image and more
 
 = Try the PRO version =
@@ -48,11 +47,11 @@ FiboSearch also comes in a Pro version, with a modern, inverted index-based sear
 
 &#9989; **Ultra-fast search engine** based on the inverted index – works very fast, even with 100,000+ products
 &#9989; **Fuzzy search** – works even with minor typos
-&#9989; **Search in custom fields**
+&#9989; **Search in custom fields** with dedicated support for ACF
 &#9989; **Search in attributes**
-&#9989; **Search in categories**
+&#9989; **Search in categories**. Supports category thumbnails.
 &#9989; **Search in tags**
-&#9989; **Search in brands** (WooCommerce Brands or YITH WooCommerce Brands)
+&#9989; **Search in brands** (We support WooCommerce Brands, Perfect Brands for WooCommerce, Brands for WooCommerce, YITH WooCommerce Brands). Supports brand thumbnails.
 &#9989; **Search by variation product SKU** – also shows variable products in live search after typing in the exact matching SKU
 &#9989; **Search for posts** – also shows matching posts in live search
 &#9989; **Search for pages** – also shows matching posts in live search
@@ -113,7 +112,7 @@ If you want to replace your search bar in another theme, please [contact our sup
 We will assist with replacing the search bar in your theme for free after you upgrade to the Pro version.
 
 = Can I add the search bar as a WordPress menu item? =
-**Yes, you can!** Go to `Appearance → Menu`. You will see a new menu item called "FiboSearch". Select it and click “Add to menu”. Done!
+**Yes, you can!** Go to `Appearance → Menu`. You will see a new menu item called “FiboSearch”. Select it and click “Add to menu”. Done!
 
 = How can I ask a question? =
 You can submit a ticket on the plugin [website](https://fibosearch.com/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc) and the support team will get in touch with you shortly. We also answer questions on the [WordPress Support Forum](https://wordpress.org/support/plugin/ajax-search-for-woocommerce/).
@@ -143,9 +142,43 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 
 == Changelog ==
 
+= 1.12.0, June 22, 2021 =
+* ADD: Integration with Electro theme
+* ADD: New test for the troubleshooting module - test language codes
+* ADD: New test for the troubleshooting module - check if the Elementor Pro has defined correct template for search results
+
+* FIX: “WOOF – Products Filter for WooCommerce” - disappearing filters if “Dynamic recount” and “Hide empty terms” was enabled and other issues
+* FIX: Remove unnecessary AJAX request on select “See all products ... (X)”
+* FIX: The search form is now generated without random ID, to be compatible with the LiteSpeed Cache plugin
+
+* REFACTOR: Change .dgwt-wcas-suggestion element from &lt;div&gt; to &lt;a&gt; to allow open a suggestion in a new tab
+
+= 1.11.0, May 24, 2021 =
+* ADD: Integration with Goya theme
+* ADD: Integration with Top and Top Store Pro theme
+* ADD: Keep the state of a details panel in memory instead of replacing it every time using jQuery.html() method. Doesn't clear quantity and "add to cart" states.
+* ADD: Prevent submit empty form 
+
+* FIX: W3 validator warning: The type attribute for the style element is not needed and should be omitted.
+* FIX: Search terms with apostrophes
+* FIX: Synchronization with the native WooCommerce option "Out of stock visibility" 
+* FIX: Hiding an unnecessary line in the product details when there is no description
+* FIX: Adding polyfill for supporting “includes” in Internet Explorer 11
+* FIX: Better elements positioning on the "Starting" tab on the plugin settings page
+* FIX: Support for custom Google Analytics object name
+* FIX: Better handling “plus” and “minus” buttons for a quantity field
+* FIX: Uncaught Error: Call to a member function get_review_count() on null
+* FIX: Displaying the search box off screen on mobile devices
+* FIX: Correct way for rebuilding autocomplete feature on an input by manually recalling dgwtWcasAutocomplete(). Remove more events on dispose method
+* FIX: Highlight single chars in autocomplete results
+* FIX: Add trim on query value
+* FIX: Clear search title and phrase from escape characters
+
+
 = 1.10.0, April 22, 2021 =
 * ADD: Possibility to disable select event on suggestions (click and hit the Enter key)
 * ADD: Possibility to disable submit a search form via a filter
+
 * FIX: Not working click event on suggestions after using “back arrow” on a Safari browser
 * FIX: Allow to recognize Chinese lang codes such as zh-hant and zh-hans
 * FIX: Error on PHP 8. Wrong format for printf function
@@ -157,6 +190,7 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 
 = 1.9.0, March 15, 2021 =
 * ADD: Support for WooCommerce Private Store plugin
+
 * CHANGE: Plugin rebranding -  Replace the plugin name AJAX Search for WooCommerce with new name FiboSearch
 * CHANGE: Plugin rebranding -  Replace the old domain ajaxsearch.pro with new fibosearch.com
 * CHANGE: Plugin rebranding -  Update visual assets 
@@ -167,6 +201,7 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIX: Missing of dgwt-wcas-active class when the search was focused too early
 * FIX: Grammar and spelling errors in texts
 * FIX: Not firing jQuery onLoad event for some browsers
+
 * REMOVE: Removed useless dgwt-wcas-search-submit name attribute
 * REMOVE: Removed unused search forms from a Avada theme
 

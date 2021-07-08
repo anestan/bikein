@@ -19,8 +19,7 @@ class RegenerateImages {
 
 	public function init() {
 
-		$displayImages = DGWT_WCAS()->settings->getOption( 'show_product_image' ) === 'on';
-
+		$displayImages = DGWT_WCAS()->settings->getOption( 'show_product_image' ) === 'on' || DGWT_WCAS()->settings->getOption( 'show_categories_images' );
 		$regenerated = get_option( self::ALREADY_REGENERATED_OPT_KEY );
 
 		add_action( 'wp_ajax_' . self::DISMISS_AJAX_ACTION, array( $this, 'dismissNotice' ) );

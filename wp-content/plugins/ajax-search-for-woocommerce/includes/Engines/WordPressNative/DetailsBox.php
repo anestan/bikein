@@ -231,7 +231,9 @@ class DetailsBox
             while ( $products->have_posts() ) {
                 $products->the_post();
                 $product = new Product( get_the_ID() );
-                include DGWT_WCAS_DIR . 'partials/details-panel/term-product.php';
+                if ( $product->isValid() ) {
+                    include DGWT_WCAS_DIR . 'partials/details-panel/term-product.php';
+                }
             }
             echo  '</div>' ;
             
