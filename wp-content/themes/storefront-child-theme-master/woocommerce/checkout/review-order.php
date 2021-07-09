@@ -21,6 +21,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="shop_table woocommerce-checkout-review-order-table">
 
+	<hr>
 	<!-- Shipping -->
 	<div class="cart-delivery">
 		<?php

@@ -65,6 +65,9 @@
           justify-content: space-between;
           font-weight: $font-weight-normal-bold;
           text-transform: $uppercase;
+          div:first-of-type {
+            font-weight: $font-weight-normal;
+          }
         }
 
         .order-total {
@@ -93,7 +96,6 @@
 
             .product-name {
               text-transform: $uppercase;
-              font-weight: $font-weight-normal-bold;
             }
           }
 

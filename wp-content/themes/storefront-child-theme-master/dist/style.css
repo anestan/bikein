@@ -1024,6 +1024,26 @@ form.checkout, form.woocommerce-cart-form {
     position: sticky;
     top: 10%; }
 
+.woocommerce-message, .woocommerce-info, .woocommerce-error {
+  width: fit-content;
+  margin-bottom: 1em;
+  padding: 0 0 0 1.5em;
+  border: 0;
+  background-color: transparent; }
+  .woocommerce-message::before, .woocommerce-info::before, .woocommerce-error::before {
+    left: 0;
+    top: 0; }
+
+.woocommerce-message, .woocommerce-info {
+  color: rgba(66, 162, 27, 0.73); }
+  .woocommerce-message::before, .woocommerce-info::before {
+    color: rgba(66, 162, 27, 0.73); }
+
+.woocommerce-error {
+  color: rgba(228, 55, 51, 0.8); }
+  .woocommerce-error::before {
+    color: rgba(228, 55, 51, 0.8); }
+
 /* ******* Checkout ********* */
 .woocommerce-checkout .entry-header {
   display: none; }
@@ -1070,6 +1090,8 @@ form.checkout, form.woocommerce-cart-form {
       justify-content: space-between;
       font-weight: 500;
       text-transform: uppercase; }
+      .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart-delivery div:first-of-type, .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart-subtotal div:first-of-type, .woocommerce-checkout .order-review-wrapper #order_review .shop_table .order-total div:first-of-type {
+        font-weight: 400; }
     .woocommerce-checkout .order-review-wrapper #order_review .shop_table .order-total {
       margin-bottom: 1.5em; }
     .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart_item {
@@ -1088,8 +1110,7 @@ form.checkout, form.woocommerce-cart-form {
       .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart_item .name-quantity {
         margin-left: 1em; }
         .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart_item .name-quantity .product-name {
-          text-transform: uppercase;
-          font-weight: 500; }
+          text-transform: uppercase; }
       .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart_item .price-remove, .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart_item .product-remove a {
         margin-left: auto; }
       .woocommerce-checkout .order-review-wrapper #order_review .shop_table .cart_item .product-price {

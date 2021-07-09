@@ -241,3 +241,28 @@ form.checkout, form.woocommerce-cart-form {
     top: 10%;
   }
 }
+
+.woocommerce-message, .woocommerce-info, .woocommerce-error {
+  width: fit-content;
+  margin-bottom: 1em;
+  padding: 0 0 0 1.5em;
+  border: 0;
+  background-color: transparent;
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+}
+.woocommerce-message, .woocommerce-info {
+  color: $green;
+  &::before {
+    color: $green;
+  }
+}
+.woocommerce-error {
+  color: $red;
+  &::before {
+    color: $red;
+  }
+}
