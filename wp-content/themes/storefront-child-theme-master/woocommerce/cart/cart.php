@@ -57,7 +57,7 @@ dataLayer.push({
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
-	<div id="cart-overview">
+	<!-- <div id="cart-overview"> -->
 
 		<div class="col-cart-one">
 
@@ -229,11 +229,6 @@ dataLayer.push({
 
 		</div>
 		<!-- Col one end -->
-
-	</form>
-		<?php do_action( 'woocommerce_after_cart_table' ); ?>
-	
-
 		<!-- Col two -->
 		<div class="col-cart-two">
 			<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
@@ -250,9 +245,14 @@ dataLayer.push({
 			</div>
 		</div>
 		<!-- Col two end -->
+	</form>
+		<?php do_action( 'woocommerce_after_cart_table' ); ?>
 
 
-	</div>
+
+
+
+	<!-- </div> -->
 	<!-- Cart overview end -->
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
