@@ -1087,6 +1087,10 @@ a.remove::before {
   .woocommerce-checkout #order_review .woocommerce-terms-and-conditions-wrapper p {
     font-size: 0.75rem; }
 
+/* TEMP for shipping */
+.shipping_logo {
+  width: 45px; }
+
 .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
   display: none; }
 
