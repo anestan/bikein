@@ -24,7 +24,6 @@
 
     .col-2 {
 
-      #shipping_method {
         li {
           @include flexbox;
           flex-wrap: wrap;
@@ -41,7 +40,7 @@
             i {
               font-size: $h5-font-size;
             }
-            img {
+            .shipping_logo {
               width: 75px;
               border: 1px solid $lighter-gray;
               border-radius: 4px;
@@ -68,6 +67,26 @@
               padding: 0;
             }
           }
+        }
+
+
+      .checkout_payments {
+        margin-top: 5em;
+
+        .wc_payment_methods {
+          margin: 0;
+
+          img {
+            margin: 0 0 0 1em;
+            max-height: 35px !important;
+          }
+        }
+
+        .payment_box {
+          width: 100%;
+          margin: 0.5em 0 0 1.6em;
+          color: $dark-gray;
+          font-size: $font-size-small;
         }
       }
     }

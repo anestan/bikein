@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="woocommerce-shipping-fields">
 	<?php if ( true === WC()->cart->needs_shipping_address() ) : ?>
 
-		<hr/>
+
 
 		<h5 id="ship-to-different-address">
 			<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
@@ -55,13 +55,11 @@ defined( 'ABSPATH' ) || exit;
 	<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 
 	<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
-	<hr/>
 	<h3><?php esc_html_e( 'Vælg leveringsmetode', 'woocommerce' ); ?></h3>
 	<?php wc_cart_totals_shipping_html(); ?>
-	<hr/>
 
 	<?php do_action( 'woocommerce_review_order_after_shipping' ); ?>
 
 	<?php endif; ?>
-		
+
 </div>
