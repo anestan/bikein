@@ -21,6 +21,56 @@
         font-weight: $font-weight-normal-bold;
       }
     }
+
+    .col-2 {
+
+      #shipping_method {
+        li {
+          @include flexbox;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 1.2em 0;
+          border-bottom: 1px solid $lighter-gray;
+          label {
+            @include flexbox;
+
+            * {
+              margin-right: 1em;
+            }
+
+            i {
+              font-size: $h5-font-size;
+            }
+            img {
+              width: 75px;
+              border: 1px solid $lighter-gray;
+              border-radius: 4px;
+              background-color: $white;
+              padding: 12px 7px;
+            }
+
+            .amount {
+              margin-left: 1em;
+            }
+          }
+
+          .shipmondo-shipping-field-wrap {
+            width: 60%;
+            margin-left: 1.5em;
+            input.button {
+              background-color: $orange;
+            }
+            .shipmondo-clearfix {
+              width: fit-content;
+            }
+            .shipmondo_zipcode_error_text {
+              border: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
   }
 
 

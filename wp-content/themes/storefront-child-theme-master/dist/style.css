@@ -1058,6 +1058,38 @@ form.checkout, form.woocommerce-cart-form {
   .woocommerce-checkout .col2-set .col-1 h3 {
     font-size: 1.75rem;
     font-weight: 500; }
+  .woocommerce-checkout .col2-set .col-2 #shipping_method li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1.2em 0;
+    border-bottom: 1px solid #EBEBEB; }
+    .woocommerce-checkout .col2-set .col-2 #shipping_method li label {
+      display: flex;
+      align-items: center; }
+      .woocommerce-checkout .col2-set .col-2 #shipping_method li label * {
+        margin-right: 1em; }
+      .woocommerce-checkout .col2-set .col-2 #shipping_method li label i {
+        font-size: 1.25rem; }
+      .woocommerce-checkout .col2-set .col-2 #shipping_method li label img {
+        width: 75px;
+        border: 1px solid #EBEBEB;
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 12px 7px; }
+      .woocommerce-checkout .col2-set .col-2 #shipping_method li label .amount {
+        margin-left: 1em; }
+    .woocommerce-checkout .col2-set .col-2 #shipping_method li .shipmondo-shipping-field-wrap {
+      width: 60%;
+      margin-left: 1.5em; }
+      .woocommerce-checkout .col2-set .col-2 #shipping_method li .shipmondo-shipping-field-wrap input.button {
+        background-color: #bd7b00; }
+      .woocommerce-checkout .col2-set .col-2 #shipping_method li .shipmondo-shipping-field-wrap .shipmondo-clearfix {
+        width: fit-content; }
+      .woocommerce-checkout .col2-set .col-2 #shipping_method li .shipmondo-shipping-field-wrap .shipmondo_zipcode_error_text {
+        border: 0;
+        padding: 0; }
 
 .woocommerce-checkout .order-review-wrapper {
   width: 40%;
