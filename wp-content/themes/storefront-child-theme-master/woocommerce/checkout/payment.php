@@ -22,7 +22,13 @@ if ( ! is_ajax() ) {
 }
 ?>
 <div id="payment" class="woocommerce-checkout-payment">
+
 	<div class="form-row place-order">
+
+		<div>
+			<h3 class="place-order-heading">Bekræft bestilling</h3>
+		</div>
+
 		<noscript>
 			<?php
 			/* translators: $1 and $2 opening and closing emphasis tags respectively */
