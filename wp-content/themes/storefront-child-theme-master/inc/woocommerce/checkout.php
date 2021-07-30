@@ -33,7 +33,7 @@ add_filter( 'woocommerce_checkout_fields', 'country_reorder' );
 
 
 /**
- * Moving the payments under shipping on checkout
+ * Moving the payments below shipping on checkout
  */
 function display_payments_under_shipping() {
   if ( WC()->cart->needs_payment() ) {
@@ -128,3 +128,36 @@ function filter_woocommerce_cart_shipping_method_full_label( $label, $method ) {
   return $label; 
 }
 add_filter( 'woocommerce_cart_shipping_method_full_label', 'filter_woocommerce_cart_shipping_method_full_label', 10, 2 ); 
+
+
+
+/* 
+** Move shipping options below invoice fields on checkout 
+*/
+// hook into the fragments in AJAX and add our new table to the group
+add_filter('woocommerce_update_order_review_fragments', 'webshop_order_fragments_split_shipping', 10, 1);
+
+function webshop_order_fragments_split_shipping($order_fragments) {
+
+	ob_start();
+	webshop_woocommerce_order_review_shipping_split();
+	$webshop_woocommerce_order_review_shipping_split = ob_get_clean();
+
+	$order_fragments['.webshop-checkout-review-shipping-table'] = $webshop_woocommerce_order_review_shipping_split;
+
+	return $order_fragments;
+
+}
+
+// get the template that just has the shipping options that we need for the new table
+function webshop_woocommerce_order_review_shipping_split( $deprecated = false ) {
+	wc_get_template( 'checkout/shipping-order-review.php', array( 'checkout' => WC()->checkout() ) );
+}
+
+
+// Hook the new table in before the customer details - you can move this anywhere you'd like. Dropping the html into the checkout template files should work too.
+add_action('woocommerce_checkout_shipping', 'webshop_move_new_shipping_table', 15);
+
+function webshop_move_new_shipping_table() {
+	echo '<table class="shop_table webshop-checkout-review-shipping-table"> <h3>Vælg leveringsmetode</h3> </table>';
+}

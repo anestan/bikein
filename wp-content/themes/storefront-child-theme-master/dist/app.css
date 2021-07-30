@@ -1162,6 +1162,8 @@ form.checkout, form.woocommerce-cart-form {
     .woocommerce-checkout .order-review-wrapper #order_review .shop_table .woocommerce-additional-fields {
       padding-top: 1.5em;
       border-top: 1px solid #EBEBEB; }
+    .woocommerce-checkout .order-review-wrapper #order_review .place-order-heading {
+      font-weight: 500; }
     .woocommerce-checkout .order-review-wrapper #order_review .woocommerce-terms-and-conditions-wrapper p {
       font-size: 0.75rem; }
 
