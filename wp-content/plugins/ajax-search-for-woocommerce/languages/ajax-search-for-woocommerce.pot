@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-17 11:42+0000\n"
+"POT-Creation-Date: 2021-07-19 13:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Damian Góra <support@fibosearch.com>\n"
 "Language-Team: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: includes/Admin/Troubleshooting.php:1726
+#: includes/Admin/Troubleshooting.php:1772
 msgid "\"Out of stock\" relationships"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr ""
 msgid "-- Disabled"
 msgstr ""
 
-#: partials/admin/indexer-header.php:73
+#: partials/admin/indexer-header.php:83
 #, php-format
 msgid ""
 "<b>Maybe your server can’t send an HTTP requests to itself</b>. Visit the "
@@ -79,17 +79,17 @@ msgid ""
 "products "
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:791
+#: includes/Admin/Troubleshooting.php:802
 msgid ""
 "A real solution is to find the reason why the WP-Cron doesn’t work and fix "
 "it."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1443
+#: includes/Admin/Troubleshooting.php:1484
 msgid "A search engine's AJAX call did not return valid results"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:649
+#: includes/Admin/Troubleshooting.php:652
 #, php-format
 msgid ""
 "Add <strong>Archive Products</strong> widget to the template <strong>"
@@ -98,13 +98,21 @@ msgid ""
 "documentation</a>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:993
+#: includes/Admin/Troubleshooting.php:1004
 #, php-format
 msgid ""
 "Add a constant <code>%s</code> to your <code>wp-config.phps</code> file."
 msgstr ""
 
-#: partials/admin/indexer-header.php:58
+#: partials/admin/indexer-header.php:54
+msgid ""
+"Add below code to your child theme’s <em>functions.php</em> file or via a "
+"plugin that allows custom functions to be added, such as the <a href=\"https:"
+"//wordpress.org/plugins/code-snippets/\" target=\"_blank\">Code snippets</a> "
+"plugin."
+msgstr ""
+
+#: partials/admin/indexer-header.php:68
 msgid ""
 "Add below code to your child theme’s <em>functions.php</em> file or via a "
 "plugin that allows custom functions to be added, such as the <a href=\"https:"
@@ -121,11 +129,11 @@ msgstr ""
 msgid "Add new rule"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1606
+#: includes/Admin/Troubleshooting.php:1647
 msgid "Add the following URL to the white list:"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1556
+#: includes/Admin/Troubleshooting.php:1597
 msgid ""
 "Adding extra rules to <code>/usr/local/nginx/conf/wpsecure_${vhostname}."
 "conf</code>"
@@ -170,7 +178,7 @@ msgstr ""
 msgid "Alternative ways to embed a search bar"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:871
+#: includes/Admin/Troubleshooting.php:882
 #, php-format
 msgid ""
 "An error occurred while trying to connect to the database using a PDO_MYSQL "
@@ -213,7 +221,7 @@ msgstr ""
 msgid "Autocomplete"
 msgstr ""
 
-#: includes/Integrations/Brands.php:182 includes/Integrations/Brands.php:204
+#: includes/Integrations/Brands.php:190 includes/Integrations/Brands.php:212
 #, php-format
 msgid "Based on the plugin %s"
 msgstr ""
@@ -222,7 +230,7 @@ msgstr ""
 msgid "Basic"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1716
+#: includes/Admin/Troubleshooting.php:1762
 msgid "Blocked search endpoint test"
 msgstr ""
 
@@ -243,11 +251,11 @@ msgid "Build ID"
 msgstr ""
 
 #: partials/admin/indexer-header-demo.php:15
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:678
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:682
 msgid "Build index"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:627
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:631
 msgid "Canceling..."
 msgstr ""
 
@@ -255,7 +263,7 @@ msgstr ""
 msgid "Cancellation..."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1078
+#: includes/Admin/Troubleshooting.php:1089
 msgid ""
 "Change the above-mentioned language codes to the correct format: <code>"
 "xx</code>, <code>xxx</code>, <code>xx-xx</code> or <code>xx-xxxx</code>."
@@ -274,7 +282,7 @@ msgstr ""
 msgid "Colors"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:637
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:641
 msgid "Completed. Works."
 msgstr ""
 
@@ -282,18 +290,26 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: partials/admin/indexer-header.php:51
+#: partials/admin/indexer-header.php:61
 msgid ""
 "Contact your hosting provider and ask for increasing the value of the <code>"
 "max_connections</code> variable in your MySQL server. It will definitely "
 "solve the problem."
 msgstr ""
 
+#: partials/admin/indexer-header.php:52
+msgid ""
+"Contact your hosting provider and ask for increasing the value of the <code>"
+"wait_timeout</code> variable in your MySQL server. It should solve the "
+"source of the problem. If your hosting provider isn't able to change MySQL "
+"variables, try to solve it in an alternative way. Follow steps below:"
+msgstr ""
+
 #: includes/Helpers.php:998
 msgid "continue reading"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:751
+#: includes/Admin/Troubleshooting.php:762
 #, php-format
 msgid ""
 "Could not load <code>wp-load.php</code> from the locations it normally is. "
@@ -301,7 +317,7 @@ msgid ""
 "support</a>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:750
+#: includes/Admin/Troubleshooting.php:761
 msgid "Custom location of wp-load.php file"
 msgstr ""
 
@@ -317,7 +333,7 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1478
+#: includes/Admin/Troubleshooting.php:1519
 msgid "Defender plugin by WPMU DEV blocks AJAX calls of the live search"
 msgstr ""
 
@@ -325,11 +341,11 @@ msgstr ""
 msgid "Details panel"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:642
+#: includes/Admin/Troubleshooting.php:645
 msgid "Dismiss"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:348
+#: includes/Admin/Troubleshooting.php:351
 #, php-format
 msgid ""
 "Due to the way the TranslatePress - Multilingual plugin works, we can only "
@@ -337,13 +353,13 @@ msgid ""
 "version</a>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:879
+#: includes/Admin/Troubleshooting.php:890
 msgid ""
 "Edit <code>wp-config.php</code> file, find the <code>DB_HOST</code> constant,"
 " and change its value from <code>localhost</code> to <code>127.0.0.1</code>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1643
+#: includes/Admin/Troubleshooting.php:1684
 msgid "Elementor search results template"
 msgstr ""
 
@@ -356,21 +372,21 @@ msgstr ""
 msgid "End"
 msgstr ""
 
-#: partials/admin/indexer-header.php:43
+#: partials/admin/indexer-header.php:44
 #, php-format
 msgid "Error code %s"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:870
+#: includes/Admin/Troubleshooting.php:881
 msgid "Error establishing a database connection"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1218
+#: includes/Admin/Troubleshooting.php:1259
 #, php-format
 msgid "Error type: <strong>%s</strong>"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:642
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:646
 msgid "Errors"
 msgstr ""
 
@@ -392,7 +408,7 @@ msgstr ""
 msgid "Exclude/include products"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:582
+#: includes/Admin/Troubleshooting.php:585
 msgid "Extensions should looks like the picture below:"
 msgstr ""
 
@@ -421,7 +437,7 @@ msgstr ""
 msgid "FiboSearch Team"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:872
+#: includes/Admin/Troubleshooting.php:883
 msgid ""
 "FiboSearch uses a PDO_MYSQL driver in the search engine. A proper database "
 "connection is required."
@@ -446,11 +462,11 @@ msgstr ""
 msgid "Finalization... Wait a moment. (%s products)"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1605
+#: includes/Admin/Troubleshooting.php:1646
 msgid "Find section <code>Access Control -> whitelist URL</code>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1168
+#: includes/Admin/Troubleshooting.php:1209
 msgid "Fix “Out of stock“ relationships"
 msgstr ""
 
@@ -470,7 +486,7 @@ msgstr ""
 msgid "Fuzzy search"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:428
+#: includes/Admin/Troubleshooting.php:431
 #, php-format
 msgid ""
 "Go to <a href=\"%s\" target=\"_blank\">Tools -> Site Health</a> in your "
@@ -486,7 +502,7 @@ msgid ""
 "Header -> Search</code> and enable <code>Predictive Search</code>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1480
+#: includes/Admin/Troubleshooting.php:1521
 #, php-format
 msgid ""
 "Go to <code>Defender -> Security Tweaks -> <a href=\"%s\" target=\"_blank\">"
@@ -494,14 +510,14 @@ msgid ""
 "exceptions: <code>%s</code>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:694
+#: includes/Admin/Troubleshooting.php:697
 #, php-format
 msgid ""
 "Go to <code>Security -> Settings -> <a href=\"%s\" target=\"_blank\">System "
 "Tweaks</a></code> and uncheck <code>Disable PHP in Plugins</code> option."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:531
+#: includes/Admin/Troubleshooting.php:534
 #, php-format
 msgid ""
 "Go to <code>WooCommerce -> Settings -> <a href=\"%s\" target=\"_blank\">"
@@ -509,7 +525,7 @@ msgid ""
 "option <code>%s</code>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:581
+#: includes/Admin/Troubleshooting.php:584
 #, php-format
 msgid ""
 "Go to <code>WooCommerce -> Settings -> <a href=\"%s\" target=\"_blank\">"
@@ -517,32 +533,32 @@ msgid ""
 "Searching by Text</code> extension and save changes."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:912
+#: includes/Admin/Troubleshooting.php:923
 #, php-format
 msgid ""
 "Go to the <code>Jetpack settings page -> <a href=\"%s\" target=\"_blank\">"
 "Performance tab</a> -> disable the Search module</code>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:837
-#: includes/Admin/Troubleshooting.php:994
-#: includes/Admin/Troubleshooting.php:1079
-#: includes/Admin/Troubleshooting.php:1112
+#: includes/Admin/Troubleshooting.php:848
+#: includes/Admin/Troubleshooting.php:1005
+#: includes/Admin/Troubleshooting.php:1090
+#: includes/Admin/Troubleshooting.php:1123
 #, php-format
 msgid "Go to the Indexer tab and click the button <i>%s</i>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1077
+#: includes/Admin/Troubleshooting.php:1088
 msgid ""
 "Go to the multilingual plugin settings page and find the section where you "
 "can edit the available languages."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1604
+#: includes/Admin/Troubleshooting.php:1645
 msgid "Go to the settings"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:492
+#: includes/Admin/Troubleshooting.php:495
 msgid "Great! Our plugin works great with this version of WordPress."
 msgstr ""
 
@@ -560,7 +576,7 @@ msgstr ""
 msgid "Hard"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1555
+#: includes/Admin/Troubleshooting.php:1596
 msgid "Here are few samples NGINX config which helps other users:"
 msgstr ""
 
@@ -578,7 +594,7 @@ msgid ""
 "time now, and I hope you like it!"
 msgstr ""
 
-#: partials/admin/indexer-header.php:90
+#: partials/admin/indexer-header.php:100
 msgid "Hide details"
 msgstr ""
 
@@ -605,7 +621,7 @@ msgstr ""
 msgid "Icon on mobile, search bar on desktop"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1025
+#: includes/Admin/Troubleshooting.php:1036
 #, php-format
 msgid ""
 "If the following errors are related to your theme or plugins, try to fix "
@@ -613,7 +629,7 @@ msgid ""
 "target=\"_blank\">create a support ticket</a>."
 msgstr ""
 
-#: partials/admin/indexer-header.php:76
+#: partials/admin/indexer-header.php:86
 msgid ""
 "If the indexer still doesn't work, add a constant <code>"
 "define('DGWT_WCAS_INDEXER_MODE', 'sync');</code> to your <code>wp-config."
@@ -626,20 +642,20 @@ msgid ""
 "Help your customers to find the right products even <span>10× faster</span>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1219
+#: includes/Admin/Troubleshooting.php:1260
 msgid ""
 "If you have an object caching plugin, turn it off or check its settings. "
 "Ideally, the transients should not be cached in any way and stored directly "
 "in the database."
 msgstr ""
 
-#: partials/admin/indexer-header.php:53
+#: partials/admin/indexer-header.php:63
 msgid ""
 "If you see the <b>Troubleshooting tab</b> above, click it and try to solve "
 "the issues mentioned there"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:651
+#: includes/Admin/Troubleshooting.php:654
 #, php-format
 msgid ""
 "If you think the search results page is displaying your products correctly, "
@@ -667,32 +683,32 @@ msgstr ""
 msgid "Include"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:579
+#: includes/Admin/Troubleshooting.php:582
 msgid ""
 "Incompatible \"Searching by Text\" extension from WOOF - WooCommerce "
 "Products Filter plugin is active"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1639
+#: includes/Admin/Troubleshooting.php:1680
 msgid ""
 "Incompatible \"Searching by Text\" extension in WOOF - WooCommerce Products "
 "Filter"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1073
+#: includes/Admin/Troubleshooting.php:1084
 msgid "Incompatible multilingual plugin setting"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1631
+#: includes/Admin/Troubleshooting.php:1672
 msgid "Incompatible plugins"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:990
+#: includes/Admin/Troubleshooting.php:1001
 msgid "Incompatible WPML Multilingual CMS plugin setting"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:529
-#: includes/Admin/Troubleshooting.php:1635
+#: includes/Admin/Troubleshooting.php:532
+#: includes/Admin/Troubleshooting.php:1676
 msgid "Incorrect \"Add to cart\" behaviour in WooCommerce settings"
 msgstr ""
 
@@ -712,7 +728,7 @@ msgstr ""
 msgid "Index build start"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1676
+#: includes/Admin/Troubleshooting.php:1717
 msgid "Index completeness test"
 msgstr ""
 
@@ -743,7 +759,11 @@ msgstr ""
 msgid "Individual tips and support by FiboSearch team"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:788
+#: includes/Admin/Troubleshooting.php:1757
+msgid "InnoDB support"
+msgstr ""
+
+#: includes/Admin/Troubleshooting.php:799
 msgid ""
 "Install the <a target=\"_blank\" href=\"https://wordpress."
 "org/plugins/advanced-cron-manager/\">Advanced Cron Manager</a> plugin to "
@@ -751,7 +771,7 @@ msgid ""
 "related to the Indexer:"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:495
+#: includes/Admin/Troubleshooting.php:498
 msgid ""
 "Install the latest version of WordPress for our plugin to work as best it "
 "can!"
@@ -761,14 +781,14 @@ msgstr ""
 msgid "Interval"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1075
+#: includes/Admin/Troubleshooting.php:1086
 #, php-format
 msgid "Invalid language code: <code>%s</code>"
 msgid_plural "Invalid language codes: <code>%s</code>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: partials/admin/indexer-header.php:79
+#: partials/admin/indexer-header.php:89
 #, php-format
 msgid ""
 "Is it still not working? Visit the <a target=\"_blank\" href=\"%s\">"
@@ -776,14 +796,14 @@ msgid ""
 "request</a>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:437
+#: includes/Admin/Troubleshooting.php:440
 #, php-format
 msgid ""
 "Is it still not working? Write a <a target=\"_blank\" href=\"%s\">support "
 "request</a>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:431
+#: includes/Admin/Troubleshooting.php:434
 msgid ""
 "Is your website publicly available only for whitelisted IPs? <b>Add your "
 "server IP to the whitelist</b>. That’s all. This is a common mistake when "
@@ -792,16 +812,16 @@ msgid ""
 "requests to itself."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:765
-#: includes/Admin/Troubleshooting.php:1671
+#: includes/Admin/Troubleshooting.php:776
+#: includes/Admin/Troubleshooting.php:1712
 msgid "Issue with WP-Cron"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:692
+#: includes/Admin/Troubleshooting.php:695
 msgid "iThemes Security plugin blocks AJAX requests"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1686
+#: includes/Admin/Troubleshooting.php:1727
 msgid "Jetpack search module"
 msgstr ""
 
@@ -823,7 +843,7 @@ msgstr ""
 msgid "Logs"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1649
+#: includes/Admin/Troubleshooting.php:1690
 msgid "Loopback request"
 msgstr ""
 
@@ -850,7 +870,7 @@ msgstr ""
 msgid "maximum number of suggestions"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1373
+#: includes/Admin/Troubleshooting.php:1414
 msgid ""
 "Maybe your server blocks it by Apache module <code>mod_security</code>. "
 "Contact your hosting provider and ask what can block the URL you see above."
@@ -868,7 +888,7 @@ msgstr ""
 msgid "Minimum characters"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:946
+#: includes/Admin/Troubleshooting.php:957
 msgid "Missing plugin: WooCommerce Multilingual"
 msgstr ""
 
@@ -886,7 +906,7 @@ msgstr ""
 msgid "More results label"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1706
+#: includes/Admin/Troubleshooting.php:1747
 msgid "Multilingual slugs"
 msgstr ""
 
@@ -902,7 +922,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1552
+#: includes/Admin/Troubleshooting.php:1593
 msgid "NGINX configuration may blocks search requests"
 msgstr ""
 
@@ -918,7 +938,7 @@ msgstr ""
 msgid "No thanks"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1701
+#: includes/Admin/Troubleshooting.php:1742
 msgid "Non Critical Indexer Errors"
 msgstr ""
 
@@ -930,7 +950,7 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:648
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:652
 msgid "Not exist"
 msgstr ""
 
@@ -938,11 +958,11 @@ msgstr ""
 msgid "Note: We currently only support the header type: \"Header 10\""
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1711
+#: includes/Admin/Troubleshooting.php:1752
 msgid "Old index"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:453
+#: includes/Admin/Troubleshooting.php:456
 msgid "One or more required PHP extensions are missing on your server"
 msgstr ""
 
@@ -950,11 +970,11 @@ msgstr ""
 msgid "Overlay on mobile"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1681
+#: includes/Admin/Troubleshooting.php:1722
 msgid "PDO connection test"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1627
+#: includes/Admin/Troubleshooting.php:1668
 msgid "PHP extensions"
 msgstr ""
 
@@ -978,7 +998,7 @@ msgstr ""
 msgid "Pro features"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1211
+#: includes/Admin/Troubleshooting.php:1252
 msgid "Problem with WordPress Transients API"
 msgstr ""
 
@@ -1020,7 +1040,7 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:436
+#: includes/Admin/Troubleshooting.php:439
 #, php-format
 msgid ""
 "Read more about indexer issues on <a target=\"_blank\" href=\"%s\">our "
@@ -1032,11 +1052,11 @@ msgstr ""
 msgid "Readable"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:831
-#: includes/Admin/Troubleshooting.php:987
-#: includes/Admin/Troubleshooting.php:1070
-#: includes/Admin/Troubleshooting.php:1108
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:672
+#: includes/Admin/Troubleshooting.php:842
+#: includes/Admin/Troubleshooting.php:998
+#: includes/Admin/Troubleshooting.php:1081
+#: includes/Admin/Troubleshooting.php:1119
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:676
 msgid "Rebuild index"
 msgstr ""
 
@@ -1118,13 +1138,13 @@ msgstr ""
 msgid "Replace the TheGem default search"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:463
 #: includes/Admin/Troubleshooting.php:466
+#: includes/Admin/Troubleshooting.php:469
 #, php-format
 msgid "Required PHP extension: %s"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1445
+#: includes/Admin/Troubleshooting.php:1486
 msgid "Response body"
 msgstr ""
 
@@ -1222,7 +1242,7 @@ msgstr ""
 msgid "Search in attributes and variation products SKUs (option)"
 msgstr ""
 
-#: includes/Integrations/Brands.php:187
+#: includes/Integrations/Brands.php:195
 msgid "Search in brands"
 msgstr ""
 
@@ -1315,12 +1335,12 @@ msgstr ""
 msgid "select the custom fields you want to add to the search scope"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1859
+#: includes/Admin/Troubleshooting.php:1905
 msgid "Server environment"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1366
-#: includes/Admin/Troubleshooting.php:1444
+#: includes/Admin/Troubleshooting.php:1407
+#: includes/Admin/Troubleshooting.php:1485
 #, php-format
 msgid ""
 "Server response with message <code>%s</code> and status code <code>%s</code>."
@@ -1335,7 +1355,7 @@ msgstr ""
 msgid "Show advanced settings"
 msgstr ""
 
-#: includes/Integrations/Brands.php:209
+#: includes/Integrations/Brands.php:217
 msgid "Show brands"
 msgstr ""
 
@@ -1344,7 +1364,7 @@ msgid "Show categories"
 msgstr ""
 
 #: partials/admin/indexer-header-demo.php:16
-#: partials/admin/indexer-header.php:89
+#: partials/admin/indexer-header.php:99
 msgid "Show details"
 msgstr ""
 
@@ -1353,7 +1373,7 @@ msgid "Show Details panel"
 msgstr ""
 
 #: includes/Settings.php:423 includes/Settings.php:427
-#: includes/Integrations/Brands.php:218 includes/Integrations/Brands.php:222
+#: includes/Integrations/Brands.php:226 includes/Integrations/Brands.php:230
 msgid "show images"
 msgstr ""
 
@@ -1409,29 +1429,29 @@ msgstr ""
 msgid "Sold by:"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:530
-#: includes/Admin/Troubleshooting.php:580
-#: includes/Admin/Troubleshooting.php:648
-#: includes/Admin/Troubleshooting.php:693
-#: includes/Admin/Troubleshooting.php:787
-#: includes/Admin/Troubleshooting.php:878
-#: includes/Admin/Troubleshooting.php:992
-#: includes/Admin/Troubleshooting.php:1076
-#: includes/Admin/Troubleshooting.php:1479
-#: includes/Admin/Troubleshooting.php:1526
-#: includes/Admin/Troubleshooting.php:1602
+#: includes/Admin/Troubleshooting.php:533
+#: includes/Admin/Troubleshooting.php:583
+#: includes/Admin/Troubleshooting.php:651
+#: includes/Admin/Troubleshooting.php:696
+#: includes/Admin/Troubleshooting.php:798
+#: includes/Admin/Troubleshooting.php:889
+#: includes/Admin/Troubleshooting.php:1003
+#: includes/Admin/Troubleshooting.php:1087
+#: includes/Admin/Troubleshooting.php:1520
+#: includes/Admin/Troubleshooting.php:1567
+#: includes/Admin/Troubleshooting.php:1643
 msgid "Solution"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1371
+#: includes/Admin/Troubleshooting.php:1412
 msgid "Solutions"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:424
+#: includes/Admin/Troubleshooting.php:427
 msgid "Solutions:"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1553
+#: includes/Admin/Troubleshooting.php:1594
 #, php-format
 msgid ""
 "Some NGINX configuration may block executing PHP files included directly in "
@@ -1461,7 +1481,7 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:669
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:673
 msgid "Stop process"
 msgstr ""
 
@@ -1473,7 +1493,7 @@ msgstr ""
 msgid "Submit label"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1601
+#: includes/Admin/Troubleshooting.php:1642
 msgid "Sucuri Security firewall may block AJAX calls of the live search"
 msgstr ""
 
@@ -1510,7 +1530,7 @@ msgstr ""
 msgid "Text color"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1525
+#: includes/Admin/Troubleshooting.php:1566
 msgid "The .htaccess file(s) may blocking AJAX calls of the live search"
 msgstr ""
 
@@ -1528,22 +1548,29 @@ msgid ""
 "mean a lot to me if you %ssupport it with a quick review on WordPress.org.%s"
 msgstr ""
 
-#: partials/admin/indexer-header.php:41
+#: partials/admin/indexer-header.php:42
 msgid "The following error caused the index to be canceled:"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1111
+#: includes/Admin/Troubleshooting.php:1122
 msgid "The index was built by the previous plugin version"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:419
+#: includes/Admin/Troubleshooting.php:422
 msgid ""
 "The Indexer uses the WordPress function <code>wp_remote_post()</code> to "
 "build the index in background. Sometimes the server can block this kind of "
 "request and responses with HTTP 401 Unauthorized or 403 Forbidden errors."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:911
+#: includes/Admin/Troubleshooting.php:1152
+msgid ""
+"The InnoDB engine within the MySQL server must be enabled for our plugin to "
+"work properly. Contact your hosting provider and ask for enabling InnoDB "
+"engine in your MySQL server."
+msgstr ""
+
+#: includes/Admin/Troubleshooting.php:922
 #, php-format
 msgid "The Jetpack Search module is incompatible with the %s plugin."
 msgstr ""
@@ -1554,42 +1581,46 @@ msgid ""
 "designed advanced AJAX search bar with live search suggestions."
 msgstr ""
 
+#: includes/Admin/Troubleshooting.php:1151
+msgid "The MySQL server has the InnoDB engine turned off"
+msgstr ""
+
 #: includes/Engines/TNTSearchMySQL/Indexer/Scheduler.php:281
 #, php-format
 msgid "the next index rebuild: %s"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:641
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:645
 msgid "The search index could not be built."
 msgstr ""
 
 #: partials/admin/indexer-header-demo.php:11
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:647
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:651
 msgid "The search index does not exist yet. Build it now."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:835
+#: includes/Admin/Troubleshooting.php:846
 msgid "The search index structure isn't completely"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:635
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:639
 msgid ""
 "The search index was built successfully, but some non-critical errors "
 "occurred."
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:633
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:637
 msgid "The search index was built successfully."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1024
+#: includes/Admin/Troubleshooting.php:1035
 msgid ""
 "The search index was built, but some significant errors occurred during this "
 "process. There is a risk that some products may not be available during the "
 "search."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1368
+#: includes/Admin/Troubleshooting.php:1409
 msgid ""
 "The search uses a dedicated URL to makes queries. In your case, this URL is "
 "blocked for some reason. Let visit it directly in your browser:"
@@ -1599,7 +1630,7 @@ msgstr ""
 msgid "The search will open in overlay on mobile"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1365
+#: includes/Admin/Troubleshooting.php:1406
 msgid ""
 "The server returns an incorrect response for the search engine's AJAX calls"
 msgstr ""
@@ -1611,11 +1642,11 @@ msgid ""
 "adding synonyms."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1216
+#: includes/Admin/Troubleshooting.php:1257
 msgid "the transient value was cached and existed too long"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1214
+#: includes/Admin/Troubleshooting.php:1255
 msgid "the transient value was not returned"
 msgstr ""
 
@@ -1627,38 +1658,38 @@ msgstr ""
 msgid "There are four easy ways to display the search bar in your theme"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1170
+#: includes/Admin/Troubleshooting.php:1211
 msgid ""
 "There is a problem with the visibility of products with “Out of stock“ status"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:646
+#: includes/Admin/Troubleshooting.php:649
 msgid ""
 "There is no correct template in Elementor Theme Builder for the WooCommerce "
 "search results page."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1372
+#: includes/Admin/Troubleshooting.php:1413
 msgid ""
 "Think about what can block the execution of PHP scripts inside <code>wp-"
 "content</code> or <code>wp-content/plugins</code> directory. Maybe you use "
 "some security plugins or you have custom code that may block it."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:418
+#: includes/Admin/Troubleshooting.php:421
 msgid ""
 "This issue may affect the building of the search index. Indexer may stuck at "
 "0%."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:414
+#: includes/Admin/Troubleshooting.php:417
 msgid ""
 "This issue may affect the search results page and e.g. display all products "
 "every time"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:615
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:621
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:619
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:625
 msgid "This process will continue in the background. You can leave this page!"
 msgstr ""
 
@@ -1685,34 +1716,34 @@ msgstr ""
 msgid "To set 100% width leave blank"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1172
+#: includes/Admin/Troubleshooting.php:1213
 #, php-format
 msgid ""
 "Total “out of stock“ products calculated by <code>wc_get_products()</code> "
 "function: <b>%d</b>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1173
+#: includes/Admin/Troubleshooting.php:1214
 #, php-format
 msgid ""
 "Total “out of stock“ products calculated by SQL query on <code>%s</code>: <b>"
 "%d</b>"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1731
+#: includes/Admin/Troubleshooting.php:1777
 msgid "Transients test"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1658
+#: includes/Admin/Troubleshooting.php:1699
 msgid "TranslatePress"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:59 includes/Admin/Troubleshooting.php:78
-#: partials/admin/indexer-header.php:38
+#: includes/Admin/Troubleshooting.php:62 includes/Admin/Troubleshooting.php:81
+#: partials/admin/indexer-header.php:39
 msgid "Troubleshooting"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:675
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:679
 msgid "Try to build the index again."
 msgstr ""
 
@@ -1750,7 +1781,7 @@ msgstr ""
 msgid "Using PHP - %s"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1721
+#: includes/Admin/Troubleshooting.php:1767
 msgid "Valid search results test"
 msgstr ""
 
@@ -1762,15 +1793,15 @@ msgstr ""
 msgid "Vendors"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:620
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:624
 msgid "Wait... Indexing in progress"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:614
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:618
 msgid "Wait... Preparing indexing in progress"
 msgstr ""
 
-#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:626
+#: includes/Engines/TNTSearchMySQL/Indexer/Builder.php:630
 msgid "Wait... The index build process is canceling"
 msgstr ""
 
@@ -1778,7 +1809,7 @@ msgstr ""
 msgid "Warning!"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1527
+#: includes/Admin/Troubleshooting.php:1568
 #, php-format
 msgid ""
 "We recommend contact your hosting provider and ask to check <code>%s</code> "
@@ -1794,7 +1825,7 @@ msgid ""
 "We support this theme and you can easily replace all default search bars."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1171
+#: includes/Admin/Troubleshooting.php:1212
 msgid ""
 "We've detected that some products with a status “Out of Stock“ may have "
 "something wrong with relationships in the database. It affects visibility of "
@@ -1806,7 +1837,7 @@ msgstr ""
 msgid "weekly"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1367
+#: includes/Admin/Troubleshooting.php:1408
 msgid "What's wrong?"
 msgstr ""
 
@@ -1818,28 +1849,28 @@ msgstr ""
 msgid "with simple tricks"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1691
+#: includes/Admin/Troubleshooting.php:1732
 msgid "WooCommerce Multilingual"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:951
+#: includes/Admin/Troubleshooting.php:962
 msgid "WooCommerce Multilingual plugin is enabled but not effective"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1666
+#: includes/Admin/Troubleshooting.php:1707
 msgid "WordPress loading problem"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:483
-#: includes/Admin/Troubleshooting.php:1623
+#: includes/Admin/Troubleshooting.php:486
+#: includes/Admin/Troubleshooting.php:1664
 msgid "WordPress version"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1696
+#: includes/Admin/Troubleshooting.php:1737
 msgid "WPML with disabled translations for products"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:647
+#: includes/Admin/Troubleshooting.php:650
 #, php-format
 msgid ""
 "You are using Elementor and we noticed that the template used in the search "
@@ -1847,47 +1878,47 @@ msgid ""
 "Products</strong> widget."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:296
+#: includes/Admin/Troubleshooting.php:299
 msgid "You are using one or more incompatible plugins"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1074
+#: includes/Admin/Troubleshooting.php:1085
 msgid ""
 "You are using the multilingual plugin, but one or more of the language codes "
 "has wrong format. This needs to be corrected or the index will not be able "
 "to build properly."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:337
+#: includes/Admin/Troubleshooting.php:340
 msgid "You are using TranslatePress with Free version of our plugin"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:991
+#: includes/Admin/Troubleshooting.php:1002
 msgid ""
 "You are using WPML Multilingual CMS, but you have product translations "
 "disabled, so for the search engine to function properly, you must disable "
 "its multi-language support feature."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1174
+#: includes/Admin/Troubleshooting.php:1215
 #, php-format
 msgid "You can fix it by clicking on this button: %s"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:790
+#: includes/Admin/Troubleshooting.php:801
 msgid ""
 "You can run these actions manually via Advanced Cron Manager. Then the "
 "Indexer should run. If the index stuck again, run these actions manually one "
 "more time until the finished index."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1603
+#: includes/Admin/Troubleshooting.php:1644
 msgid ""
 "You need to log in to your <a href=\"https://login.sucuri.net\" "
 "target=\"_blank\">Sucuri panel</a>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:1370
+#: includes/Admin/Troubleshooting.php:1411
 msgid ""
 "You should see <code>pong</code> word as a response. Probably you see "
 "something else."
@@ -1898,16 +1929,16 @@ msgstr ""
 msgid "You use %s plugin version %s"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:316
-#: includes/Admin/Troubleshooting.php:318
+#: includes/Admin/Troubleshooting.php:319
+#: includes/Admin/Troubleshooting.php:321
 #, php-format
 msgid ""
 "You use the %s plugin, which may cause errors in the search results returned "
 "by our plugin."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:307
-#: includes/Admin/Troubleshooting.php:311
+#: includes/Admin/Troubleshooting.php:310
+#: includes/Admin/Troubleshooting.php:314
 #, php-format
 msgid "You use the %s plugin. The %s does not support this plugin."
 msgstr ""
@@ -1917,7 +1948,7 @@ msgstr ""
 msgid "You use the <b>%s</b> theme%s. Fantastic!"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:952
+#: includes/Admin/Troubleshooting.php:963
 #, php-format
 msgid ""
 "You use the WPML Multilingual CMS and WooCommerce Multilingual plugins, but "
@@ -1925,7 +1956,7 @@ msgid ""
 "target=\"_blank\">WooCommerce Multilingual status</a>."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:947
+#: includes/Admin/Troubleshooting.php:958
 #, php-format
 msgid ""
 "You use the WPML Multilingual CMS plugin and to correctly search for "
@@ -1933,18 +1964,18 @@ msgid ""
 "target=\"_blank\">WooCommerce Multilingual</a> plugin."
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:426
+#: includes/Admin/Troubleshooting.php:429
 msgid "Your server can't send an HTTP request to itself"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:532
+#: includes/Admin/Troubleshooting.php:535
 msgid "Your settings should looks like the picture below:"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:361
+#: includes/Admin/Troubleshooting.php:364
 msgid "Your site can perform loopback requests"
 msgstr ""
 
-#: includes/Admin/Troubleshooting.php:410
+#: includes/Admin/Troubleshooting.php:413
 msgid "Your site could not complete a loopback request"
 msgstr ""

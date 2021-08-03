@@ -180,10 +180,20 @@ class ThemesCompatibility {
 				'slug' => 'electro',
 				'name' => 'Electro',
 			),
-			'shopisle-pro' => array(
+			'shopisle-pro'  => array(
 				'slug'      => 'shopisle-pro',
 				'className' => 'ShopIslePro',
 				'name'      => 'ShopIsle PRO',
+			),
+			'estore'        => array(
+				'slug'      => 'estore',
+				'className' => 'Estore',
+				'name'      => 'eStore',
+			),
+			'estore-pro'        => array(
+				'slug'      => 'estore-pro',
+				'className' => 'EstorePro',
+				'name'      => 'eStore Pro',
 			),
 		);
 	}
@@ -194,7 +204,6 @@ class ThemesCompatibility {
 	 * @return void
 	 */
 	private function loadCompatibilities() {
-
 		foreach ( $this->supportedThemes() as $theme ) {
 			if ( $theme['slug'] === $this->themeName ) {
 

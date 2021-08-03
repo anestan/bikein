@@ -16,7 +16,7 @@ class ComposerStaticInit765647f7aee7e9065fbac560f20a7f60
     public static $prefixDirsPsr4 = array (
         'DgoraWcas\\' => 
         array (
-            0 => __DIR__ . '/../..'.'/composer' . '/../includes',
+            0 => __DIR__ . '/../..' . '/includes',
         ),
     );
 

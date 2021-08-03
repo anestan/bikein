@@ -182,7 +182,13 @@ class Helpers
                 break;
         }
         $svg .= ob_get_clean();
-        return apply_filters( 'dgwt/wcas/icon', $svg, $name );
+        return apply_filters(
+            'dgwt/wcas/icon',
+            $svg,
+            $name,
+            $class,
+            $color
+        );
     }
     
     /**

@@ -39,7 +39,8 @@
 .woocommerce_page_dgwt_wcas_settings .update-nag,
 .woocommerce_page_dgwt_wcas_settings .dup-updated,
 .woocommerce_page_dgwt_wcas_settings .sbi_notice,
-.dgwt-wcas-settings > .updated:not(.fs-slug-ajax-search-for-woocommerce) {
+.dgwt-wcas-settings > .updated:not(.fs-slug-ajax-search-for-woocommerce),
+.woocommerce_page_dgwt_wcas_settings .sp-eafree-review-notice {
     display: none!important;
 }
 

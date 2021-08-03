@@ -123,6 +123,21 @@ class Avada {
 				return $args;
 			} );
 
+			add_filter( 'dgwt/wcas/icon', function ( $svg, $name, $class, $color ) {
+				if ( $name === 'magnifier-thin' ) {
+					ob_start();
+					?>
+					<svg version="1.1" class="<?php echo $class; ?>" xmlns="http://www.w3.org/2000/svg"
+						 viewBox="0 0 30 32">
+						<path
+							d="M20.571 15.143q0-3.304-2.348-5.652t-5.652-2.348-5.652 2.348-2.348 5.652 2.348 5.652 5.652 2.348 5.652-2.348 2.348-5.652zM29.714 30q0 0.929-0.679 1.607t-1.607 0.679q-0.964 0-1.607-0.679l-6.125-6.107q-3.196 2.214-7.125 2.214-2.554 0-4.884-0.991t-4.018-2.679-2.679-4.018-0.991-4.884 0.991-4.884 2.679-4.018 4.018-2.679 4.884-0.991 4.884 0.991 4.018 2.679 2.679 4.018 0.991 4.884q0 3.929-2.214 7.125l6.125 6.125q0.661 0.661 0.661 1.607z"></path>
+					</svg>
+					<?php
+					$svg = ob_get_clean();
+				}
+
+				return $svg;
+			}, 10, 4 );
 		}
 	}
 
@@ -141,8 +156,6 @@ class Avada {
 		if ( 'v6' !== Avada()->settings->get( 'header_layout' ) && false === $ubermenu ) {
 			if ( 'main_navigation' === $args->theme_location || 'sticky_navigation' === $args->theme_location ) {
 				if ( Avada()->settings->get( 'main_nav_search_icon' ) ) {
-
-
 					$items .= '<li class="fusion-custom-menu-item fusion-main-menu-search">';
 					$items .= do_shortcode( '[wcas-search-form layout="icon"]' );
 					$items .= '</li>';
@@ -175,18 +188,34 @@ class Avada {
 					width: auto;
 				}
 
-				.fusion-main-menu-search .dgwt-wcas-search-icon svg {
-					display: none;
+				.fusion-main-menu-search .dgwt-wcas-search-wrapp {
+					margin-top: calc((var(--nav_height) / 2) - (var(--nav_typography-font-size) / 2));
 				}
 
-				.fusion-main-menu-search .dgwt-wcas-search-icon {
-					font-family: icomoon;
+				.fusion-header-v7 .fusion-main-menu-search .dgwt-wcas-search-wrapp {
+					margin-top: 0;
 				}
 
-				.fusion-main-menu-search .dgwt-wcas-search-icon:after {
-					content: '\f002';
-					font-size: 15px;
-					line-height: 40px;
+				.dgwt-wcas-ico-magnifier, .dgwt-wcas-ico-magnifier-handler {
+					max-width: none;
+					fill: var(--nav_typography-color);
+					max-height: var(--nav_typography-font-size);
+				}
+
+				.dgwt-wcas-ico-magnifier:hover, .dgwt-wcas-ico-magnifier-handler:hover {
+					fill: var(--menu_hover_first_color);
+				}
+				.dgwt-wcas-sf-wrapp .dgwt-wcas-ico-magnifier:hover {
+					fill: currentColor;
+					opacity: 0.7;
+				}
+
+				.fusion-is-sticky .dgwt-wcas-ico-magnifier, .fusion-is-sticky .dgwt-wcas-ico-magnifier-handler {
+					fill: var(--header_sticky_menu_color);
+				}
+
+				.fusion-is-sticky .dgwt-wcas-ico-magnifier:hover, .fusion-is-sticky .dgwt-wcas-ico-magnifier-handler:hover {
+					fill: var(--menu_hover_first_color);
 				}
 
 				.fusion-header-v4 .fusion-main-menu {

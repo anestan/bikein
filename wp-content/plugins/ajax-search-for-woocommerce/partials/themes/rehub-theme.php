@@ -43,11 +43,27 @@ add_action( 'wp_footer', function () {
 						var $mobile = $('.search-header-contents .js-dgwt-wcas-enable-mobile-form');
 						if ($mobile.length > 0) {
 							$mobile.click();
+
+							// Support for new version of search popup (version >= v16.2)
+							if (document.querySelector('#rhSplashSearch') !== null) {
+								setTimeout(function () {
+									document.getElementById('rhSplashSearch').classList.remove('top-search-onclick-open');
+									document.querySelector('.rh-outer-wrap').classList.remove('rh-outer-wrap-move');
+								}, 100);
+							}
 						}
 					}
 				});
 			});
 		}(jQuery));
 	</script>
+	<style>
+		/* Fix for iPhone sticky header */
+		@media (max-width: 1024px) {
+			.sticky-wrapper.re-stickyheader .rh-stickme {
+				width: 100% !important;
+			}
+		}
+	</style>
 	<?php
-} );
+}, 15 );

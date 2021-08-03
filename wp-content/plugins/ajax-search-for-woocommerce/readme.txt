@@ -2,9 +2,9 @@
 Contributors: damian-gora, matczar
 Tags: woocommerce search, ajax search, search by sku, product search, woocommerce
 Requires at least: 5.0
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 7.0
-Stable tag: 1.12.0
+Stable tag: 1.13.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -141,6 +141,18 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 5. Settings page
 
 == Changelog ==
+
+= 1.13.0, July 27, 2021 =
+* ADD: Integration with "eStore" theme
+* ADD: Allow to open search result in new tab with Ctrl+left mouse key
+
+* FIX: Disappearing suggestions and details panel on click when there were more search bars.
+* FIX: Improved integration with "Avada" theme
+* FIX: Improved mobile search in new version of "Rehub" theme
+* FIX: Unable to use context menu and middle mouse button on search results
+* FIX: "Eletro" theme - Support cases when the search overlay is disabled
+
+* REFACTOR: Clean up composer files
 
 = 1.12.0, June 22, 2021 =
 * ADD: Integration with Electro theme
