@@ -864,7 +864,7 @@ span.select2.select2-container.select2-container--default * {
   float: right; }
 
 #progress-bar {
-  float: left;
+  display: block;
   width: 30%;
   height: 4px;
   background: #EBEBEB;
