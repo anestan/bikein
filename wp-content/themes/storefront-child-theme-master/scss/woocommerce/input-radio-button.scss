@@ -1,0 +1,76 @@
+ .woocommerce-cart, .woocommerce-checkout {
+ 
+    #shipping_method {
+
+        /* Input radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            line-height: 20px;
+        }
+
+        input[type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+            background: #fff;
+        }
+
+        input[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: $orange;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        input[type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        input[type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        /* End input radio buttons */
+
+    }
+
+ }
+
+
+.woocommerce-cart {
+
+    #shipping_method {
+        input[type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+            display: inline-block;
+        }
+    }
+}
+
+
+.woocommerce-checkout {
+    #shipping_method {
+        input[type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+            display: flex;
+        }
+    }
+}

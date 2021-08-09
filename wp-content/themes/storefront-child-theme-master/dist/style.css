@@ -955,6 +955,18 @@ span.select2.select2-container.select2-container--default * {
     .woocommerce-cart .col-cart-two .woocommerce-shipping-methods, .woocommerce-cart .col-cart-two .woocommerce-shipping-destination, .woocommerce-cart .col-cart-two .shipping-calculator-button {
       text-transform: none;
       font-weight: 400; }
+    .woocommerce-cart .col-cart-two #shipping_method li {
+      margin-bottom: 1rem; }
+    .woocommerce-cart .col-cart-two #shipping_method i.fas.fa-store-alt, .woocommerce-cart .col-cart-two #shipping_method i.fas.fa-truck {
+      margin-right: 5px; }
+    .woocommerce-cart .col-cart-two #shipping_method .shipping_logo {
+      display: inline-block;
+      width: 45px;
+      margin-right: 5px; }
+    .woocommerce-cart .col-cart-two #shipping_method .shipping_pickup_cart, .woocommerce-cart .col-cart-two #shipping_method .shipping_company_required {
+      font-style: italic;
+      font-size: 0.75rem;
+      margin-left: 2.15rem; }
     .woocommerce-cart .col-cart-two .cart-proceed-to-checkout {
       margin-top: 1.5em; }
       .woocommerce-cart .col-cart-two .cart-proceed-to-checkout .checkout-button {
@@ -1167,10 +1179,6 @@ form.checkout, form.woocommerce-cart-form {
     .woocommerce-checkout .order-review-wrapper #order_review .woocommerce-terms-and-conditions-wrapper p {
       font-size: 0.75rem; }
 
-/* TEMP for shipping */
-.shipping_logo {
-  width: 45px; }
-
 .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
   display: none; }
 
@@ -1235,6 +1243,52 @@ button#vatButton {
   width: 52px;
   height: 45px;
   object-fit: contain; }
+
+.woocommerce-cart #shipping_method, .woocommerce-checkout #shipping_method {
+  /* Input radio buttons */
+  /* End input radio buttons */ }
+  .woocommerce-cart #shipping_method input[type="radio"], .woocommerce-checkout #shipping_method input[type="radio"] {
+    display: none; }
+  .woocommerce-cart #shipping_method input[type="radio"]:checked + label, .woocommerce-cart #shipping_method [type="radio"]:not(:checked) + label, .woocommerce-checkout #shipping_method input[type="radio"]:checked + label, .woocommerce-checkout #shipping_method [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px; }
+  .woocommerce-cart #shipping_method input[type="radio"]:checked + label:before, .woocommerce-cart #shipping_method [type="radio"]:not(:checked) + label:before, .woocommerce-checkout #shipping_method input[type="radio"]:checked + label:before, .woocommerce-checkout #shipping_method [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff; }
+  .woocommerce-cart #shipping_method input[type="radio"]:checked + label:after, .woocommerce-cart #shipping_method [type="radio"]:not(:checked) + label:after, .woocommerce-checkout #shipping_method input[type="radio"]:checked + label:after, .woocommerce-checkout #shipping_method [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #bd7b00;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .woocommerce-cart #shipping_method input[type="radio"]:not(:checked) + label:after, .woocommerce-checkout #shipping_method input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  .woocommerce-cart #shipping_method input[type="radio"]:checked + label:after, .woocommerce-checkout #shipping_method input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+.woocommerce-cart #shipping_method input[type="radio"]:checked + label, .woocommerce-cart #shipping_method [type="radio"]:not(:checked) + label {
+  display: inline-block; }
+
+.woocommerce-checkout #shipping_method input[type="radio"]:checked + label, .woocommerce-checkout #shipping_method [type="radio"]:not(:checked) + label {
+  display: flex; }
 
 @media only screen and (max-width: 767px) {
   #page .col-full {
