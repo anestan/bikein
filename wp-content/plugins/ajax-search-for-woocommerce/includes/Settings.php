@@ -780,9 +780,12 @@ class Settings
                 $canUpdate = true;
             }
             
+            
             if ( $canUpdate ) {
                 $updated = update_option( $this->settingSlug, $settings );
+                $this->settingsCache = array();
             }
+        
         }
         
         return $updated;
@@ -876,6 +879,14 @@ class Settings
             $is_premium = true;
         }
         return $is_premium;
+    }
+    
+    /**
+     * Clear settings cache
+     */
+    public function clearCache()
+    {
+        $this->settingsCache = array();
     }
 
 }

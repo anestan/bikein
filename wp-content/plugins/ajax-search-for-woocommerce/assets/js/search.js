@@ -530,33 +530,41 @@
 
             var alreadyClicked = false;
             // Redirect to the new URL after click a suggestions
-            $(document).on('click.autocomplete', suggestionSelector, function () {
-            	if(!alreadyClicked) {
+			$(document).on('click.autocomplete', suggestionSelector, function (e) {
+				if (!alreadyClicked) {
 					var that = utils.getActiveInstance();
 					that.actionTriggerSource = 'click';
 
 					alreadyClicked = true;
-					setTimeout(function(){
+					setTimeout(function () {
 						alreadyClicked = false;
 					}, 500);
 
-					that.select($(this).data('index'));
-				}
-            });
-            // Support for touchpads
-			$(document).on('mousedown.autocomplete', suggestionSelector, function (e) {
-				if(typeof e.which === 'number' && e.which === 1) {
-					$(e.target)[0].click();
+					if (typeof e.ctrlKey === 'undefined' || e.ctrlKey === false) {
+						that.select($(this).data('index'));
+						e.preventDefault();
+					}
+				} else {
+					e.preventDefault();
 				}
 			});
 
-			// Use that.select(i) method instead of default browser events on <a> element
-			$(document).on('click.autocomplete', suggestionSelector, function (e) {
-				e.preventDefault();
+			// FIX issue with touchpads for some laptops (marginal cases)
+			$(document).on('mousedown.autocomplete', suggestionSelector, function (e) {
+				var _this = this;
+				if (e.button === 0) {
+					setTimeout(function () {
+						if (!alreadyClicked) {
+							var that = utils.getActiveInstance();
+							that.select($(_this).data('index'));
+						}
+					}, 250);
+				}
 			});
 
 			// Mark cursor position for onBlur event
 			$('.' + that.options.containerClass).on('mousedown.autocomplete', function (e) {
+				var that = utils.getActiveInstance();
 				that.isMouseDownOnSearchElements = true;
 			});
 
@@ -577,6 +585,7 @@
 
 			// Mark cursor position for onBlur event
 			$('.' + that.options.containerDetailsClass).on('mousedown.autocomplete', function (e) {
+				var that = utils.getActiveInstance();
 				that.isMouseDownOnSearchElements = true;
 			});
 

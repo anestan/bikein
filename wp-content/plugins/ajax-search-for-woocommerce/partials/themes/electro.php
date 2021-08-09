@@ -25,11 +25,35 @@ if ( ! function_exists( 'electro_product_search' ) ) {
 }
 
 add_action( 'wp_footer', function () {
-	$breakpoint = DGWT_WCAS()->settings->getOption( 'mobile_breakpoint', 992 );
+	$breakpoint    = DGWT_WCAS()->settings->getOption( 'mobile_breakpoint', 992 );
+	$mobileOverlay = DGWT_WCAS()->settings->getOption( 'enable_mobile_overlay' ) === 'on';
 	?>
 	<script>
 		(function ($) {
+
+			function fiboEletroThemeFocusInput() {
+				$('.handheld-header-links .search > a').on('click', function (e) {
+					setTimeout(function () {
+						var $input = $('.handheld-header-links .site-search .dgwt-wcas-search-input');
+						if ($input.length > 0 && $input.val().length === 0) {
+							$input.focus();
+						}
+					}, 500);
+				});
+			}
+
 			$(window).on('load', function () {
+				<?php if(! $mobileOverlay): ?>
+
+				fiboEletroThemeFocusInput();
+
+				$('.handheld-header-links .search.active > a').on('click', function (e) {
+					var $input = $('.handheld-header-links .site-search .dgwt-wcas-close');
+					if ($input.length > 0) {
+						$input[0].click();
+					}
+				});
+				<?php else: ?>
 				// Search icon - mobile
 				if ($(window).width() <= <?php echo $breakpoint; ?>) {
 					$('.handheld-header-links .search > a').off('click').on('click', function (e) {
@@ -41,15 +65,9 @@ add_action( 'wp_footer', function () {
 					});
 				} else {
 					// Search icon - almost desktop
-					$('.handheld-header-links .search > a').on('click', function (e) {
-						setTimeout(function () {
-							var $input = $('.handheld-header-links .site-search .dgwt-wcas-search-input');
-							if ($input.length > 0 && $input.val().length === 0) {
-								$input.focus();
-							}
-						}, 500);
-					});
+					fiboEletroThemeFocusInput();
 				}
+				<?php endif; ?>
 			});
 		}(jQuery));
 	</script>

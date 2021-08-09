@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 4. Martfury Addons since v2.2.2 by drfuri.com
  * 5. Brands for WooCommerce since v3.5.2 by BeRocket
  * 6. WP Bingo by wpbingo
+ * 7. Premmerce Brands for WooCommerce since v1.2.11 by premmerce
  */
 class Brands {
 	/**
@@ -48,9 +49,12 @@ class Brands {
 	}
 
 	public function init() {
-		$this->setPluginInfo();
-		$this->setBrandTaxonomy();
-		$this->addSettings();
+		// Init brand stuff after theme is ready (to allow apply filters)
+		add_action( 'after_setup_theme', function () {
+			$this->setPluginInfo();
+			$this->setBrandTaxonomy();
+			$this->addSettings();
+		} );
 
 		add_filter( 'dgwt/wcas/suggestion_details/taxonomy/headline', array( $this, 'rebuildDetailsHeader' ), 10, 4 );
 		add_filter( 'dgwt/wcas/taxonomies_with_images', array( $this, 'taxonomiesWithImages' ) );
@@ -102,6 +106,9 @@ class Brands {
 				case 'wpbingo/wpbingo.php':
 					$brandTaxonomy = 'product_brand';
 					break;
+				case 'premmerce-woocommerce-brands/premmerce-brands.php':
+					$brandTaxonomy = 'product_brand';
+					break;
 			}
 		}
 
@@ -125,6 +132,7 @@ class Brands {
 			'martfury-addons/martfury-addons.php',
 			'brands-for-woocommerce/woocommerce-brand.php',
 			'wpbingo/wpbingo.php',
+			'premmerce-woocommerce-brands/premmerce-brands.php',
 		);
 	}
 
@@ -325,6 +333,9 @@ class Brands {
 				$result = true;
 				break;
 			case 'brands-for-woocommerce/woocommerce-brand.php':
+				$result = true;
+				break;
+			case 'premmerce-woocommerce-brands/premmerce-brands.php':
 				$result = true;
 				break;
 		}
