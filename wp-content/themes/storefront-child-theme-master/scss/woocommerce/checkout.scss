@@ -40,6 +40,11 @@
             i {
               font-size: $h5-font-size;
             }
+
+            i.fas.fa-store-alt, i.fas.fa-truck {
+              margin-left: 1rem;
+            }
+
             .shipping_logo {
               width: 75px;
               border: 1px solid $lighter-gray;

@@ -1084,6 +1084,8 @@ form.checkout, form.woocommerce-cart-form {
         margin-right: 1em; }
       .woocommerce-checkout .col2-set .col-2 li label i {
         font-size: 1.25rem; }
+      .woocommerce-checkout .col2-set .col-2 li label i.fas.fa-store-alt, .woocommerce-checkout .col2-set .col-2 li label i.fas.fa-truck {
+        margin-left: 1rem; }
       .woocommerce-checkout .col2-set .col-2 li label .shipping_logo {
         width: 75px;
         border: 1px solid #EBEBEB;
@@ -1263,7 +1265,10 @@ button#vatButton {
     height: 18px;
     border: 1px solid #ddd;
     border-radius: 100%;
-    background: #fff; }
+    background: #fff;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
   .woocommerce-cart #shipping_method input[type="radio"]:checked + label:after, .woocommerce-cart #shipping_method [type="radio"]:not(:checked) + label:after, .woocommerce-checkout #shipping_method input[type="radio"]:checked + label:after, .woocommerce-checkout #shipping_method [type="radio"]:not(:checked) + label:after {
     content: '';
     width: 12px;
@@ -1272,17 +1277,16 @@ button#vatButton {
     position: absolute;
     top: 4px;
     left: 4px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    border-radius: 100%; }
   .woocommerce-cart #shipping_method input[type="radio"]:not(:checked) + label:after, .woocommerce-checkout #shipping_method input[type="radio"]:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0); }
   .woocommerce-cart #shipping_method input[type="radio"]:checked + label:after, .woocommerce-checkout #shipping_method input[type="radio"]:checked + label:after {
     opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1); }
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 .woocommerce-cart #shipping_method input[type="radio"]:checked + label, .woocommerce-cart #shipping_method [type="radio"]:not(:checked) + label {
   display: inline-block; }

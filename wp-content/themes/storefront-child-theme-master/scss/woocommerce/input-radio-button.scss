@@ -24,6 +24,9 @@
             border: 1px solid #ddd;
             border-radius: 100%;
             background: #fff;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
         }
 
         input[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
@@ -35,8 +38,6 @@
             top: 4px;
             left: 4px;
             border-radius: 100%;
-            -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
         }
 
         input[type="radio"]:not(:checked) + label:after {
@@ -47,8 +48,9 @@
 
         input[type="radio"]:checked + label:after {
             opacity: 1;
-            -webkit-transform: scale(1);
-            transform: scale(1);
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
         }
         /* End input radio buttons */
 
@@ -58,7 +60,6 @@
 
 
 .woocommerce-cart {
-
     #shipping_method {
         input[type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
             display: inline-block;
