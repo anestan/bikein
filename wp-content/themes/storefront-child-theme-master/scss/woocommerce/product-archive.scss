@@ -200,13 +200,12 @@ span.select2.select2-container.select2-container--default * {
 }
 //archive sidebar end
 
+
 //load more button
 .loadmore_button {
-  display: block;
-  margin-left: auto;
-  width: fit-content;
   text-transform: uppercase;
   letter-spacing: 1px;
+  float: right;
 }
 //load more button end
 
@@ -215,7 +214,26 @@ span.select2.select2-container.select2-container--default * {
 // Progress bar
 
   #progress-bar {
-    float: left;
+    display: block;
+    width: 30%;
+    height: 4px;
+    background: $lighter-gray;
+    border-radius: 20px;
   }
+
+  #progress-bar::-moz-progress-bar {
+    background: $orange;
+    border-radius: 20px;
+  }
+
+  #progress-bar::-webkit-progress-bar {
+    background: transparent;
+  }
+
+  #progress-bar::-webkit-progress-value {
+    background: $orange;
+    border-radius: 20px;
+  }
+
 
 // progress bar end

@@ -128,6 +128,30 @@
       font-weight: $font-weight-normal;
     }
 
+    #shipping_method {
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+      i.fas.fa-store-alt, i.fas.fa-truck {
+        margin-right: 5px;
+      }
+
+      .shipping_logo {
+        display: inline-block;
+        width: 45px;
+        margin-right: 5px;
+      }
+
+      .shipping_pickup_cart, .shipping_company_required {
+        font-style: italic;
+        font-size: $font-size-small;
+        margin-left: 2.15rem;
+      }
+
+    }
+
     .cart-proceed-to-checkout {
       margin-top: 1.5em;
       .checkout-button {
