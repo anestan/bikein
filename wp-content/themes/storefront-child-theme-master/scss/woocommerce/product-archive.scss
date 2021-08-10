@@ -24,19 +24,24 @@
 //product
 
 .site-main ul.products.columns-3, .related .products.columns-4, .up-sells .products.columns-4, .cross-sells .products.columns-2 {
+  @include reset_before_after;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   li.product {
-    height: 500px;
+    height: 460px;
     display: flex;
     flex-direction: column;
-    width: 31.411765%;
-    margin: 0 2.882353% 2.882353% 0;
+    width: 32%;
+    margin: 0 0 2% 0;
 
     .woocommerce-loop-product__link {
       height: 100%;
-      padding: 3em 1em;
+      padding: 2em 1em;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       position: relative;
       @include box-style;
@@ -99,6 +104,7 @@
       @include flexbox;
       justify-content: space-between;
       width: 80%;
+      margin-top: auto;
 
       .badge {
         font-weight: $font-weight-normal-bold;
