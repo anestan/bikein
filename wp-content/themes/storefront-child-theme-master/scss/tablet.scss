@@ -85,14 +85,43 @@
       }
     }
 
-
+    #primary {
+      width: 100%;
+    }
     #main.site-main {
 
       #archive-top-filters {
-        display: none;
-      }
-      .widget_custom_html {
-        display: block;
+        margin-bottom: 2%;
+
+        .widget_product_categories {
+          width: 100%;
+          display: block;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+
+          .product-categories {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            li {
+              padding-right: 2%;
+              padding-left: 0;
+              margin-bottom: 4%;
+
+              a {
+                border: 1px solid;
+                border-radius: 4px;
+                padding: 0.6em 1em;
+                transition: all 0.3s ease;
+
+                &:focus {
+                  background-color: $lighter-gray;
+                }
+              }
+            }
+          }
+        }
       }
 
       ul.products.columns-3 {
@@ -104,8 +133,8 @@
 
         li.product {
           height: 420px;
-          width: 48%;
-          margin: 0 0 4% 0;
+          width: 32%;
+          margin: 0 0 2% 0;
 
           .badge-wrapper {
             display: none;
@@ -115,21 +144,22 @@
     }
 
     #secondary {
-      button.show_sidebar_filter, button.show_sidebar_cat {
-        display: block;
-      }
-
-      .widget {
-        margin: 0 0 2.2em;
-        min-width: 0;
-        .dgwt-wcas-search-wrapp {
-          min-width: 0;
-        }
-
-        &.widget_layered_nav, &.widget_product_categories {
-          display: none;
-        }
-      }
+      display: none;
+      // button.show_sidebar_filter, button.show_sidebar_cat {
+      //   display: block;
+      // }
+      //
+      // .widget {
+      //   margin: 0 0 2.2em;
+      //   min-width: 0;
+      //   .dgwt-wcas-search-wrapp {
+      //     min-width: 0;
+      //   }
+      //
+      //   &.widget_layered_nav, &.widget_product_categories {
+      //     display: none;
+      //   }
+      // }
     }
 
     /* Product Page */
@@ -149,6 +179,7 @@
     }
     .related .products.columns-4 {
       li.product {
+        height: max-content !important;
         .amount bdi {
           font-size: $font-size-base !important;
         }

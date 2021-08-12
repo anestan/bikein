@@ -127,7 +127,7 @@ eval("(function($){\n\t$(document).ready(function () {\n\n        // Inserts vat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#archive-top-filters\").slideToggle(300);\n\t\t$(\"#archive-top-filters\").css(\"display\",\"flex\");\n\t});\n\n\t$(\".show_sidebar_filter\").click(function() {\n\t  $(\"#secondary .widget_layered_nav\").slideToggle(300);\n\t});\n\n\t$(\".show_sidebar_cat\").click(function() {\n\t  $(\"#secondary .widget_product_categories\").slideToggle(300);\n\t});\n});\n\n\n//# sourceURL=webpack:///./js/filters.js?");
+eval("//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#archive-top-filters\").slideToggle(300);\n\t\t$(\"#archive-top-filters\").css(\"display\",\"flex\");\n\t});\n});\n\n\n//# sourceURL=webpack:///./js/filters.js?");
 
 /***/ }),
 
