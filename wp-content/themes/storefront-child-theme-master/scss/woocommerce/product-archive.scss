@@ -6,7 +6,7 @@
   @include flexbox;
   justify-content: space-between;
   background-color: $light-gray;
-  margin-bottom: 1.7em;
+  margin-bottom: 2%;
 
   .term-description {
     width: 40%;
@@ -162,6 +162,10 @@ span.select2.select2-container.select2-container--default * {
     width: 24%;
     margin: 0 0 2% 0;
 
+    &.widget_custom_html {
+      width: 100%;
+    }
+
     form {
       margin: 0;
     }
@@ -170,6 +174,9 @@ span.select2.select2-container.select2-container--default * {
 .woocommerce-ordering {
   float: right;
   margin: 0;
+}
+.storefront-sorting {
+  display: none;
 }
 //archive top widgets end
 
