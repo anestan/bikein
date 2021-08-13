@@ -224,7 +224,7 @@ hr {
 /* Responsive - Tablet */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .woocommerce-page #content {
-    margin: 0 3%; }
+    margin: 0 3% !important; }
   /* Header Tablet */
   .sticky {
     position: fixed;
@@ -257,8 +257,14 @@ hr {
     flex-wrap: nowrap;
     align-items: center;
     padding: 1em; }
-  #masthead .image-logo {
-    width: 15%; }
+    #masthead .header-wrapper .image-logo {
+      width: 15%; }
+    #masthead .header-wrapper .navigation-header-content {
+      display: none; }
+    #masthead .header-wrapper .header-search {
+      margin-left: auto; }
+    #masthead .header-wrapper .header-cart-wrapper, #masthead .header-wrapper .header-mobile {
+      margin-left: 1.5em; }
   .topbar, .storefront-breadcrumb {
     padding: 0.5em 1em !important; }
   /* Header Tablet End */
@@ -328,15 +334,28 @@ hr {
     .related .products.columns-4 li.product .amount bdi {
       font-size: 1rem !important; }
   /* Cart Page */
-  table.cart td.product-remove a.remove {
-    font-size: 18px; }
-  .woocommerce-cart-form__cart-item .product-name {
-    font-size: 12px; }
+  .woocommerce-cart .woocommerce-cart-form, .woocommerce-cart .woocommerce-checkout, .woocommerce-checkout .woocommerce-cart-form, .woocommerce-checkout .woocommerce-checkout {
+    flex-wrap: wrap; }
+    .woocommerce-cart .woocommerce-cart-form .col-cart-one, .woocommerce-cart .woocommerce-cart-form .col-cart-two, .woocommerce-cart .woocommerce-cart-form .col2-set, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper, .woocommerce-cart .woocommerce-checkout .col-cart-one, .woocommerce-cart .woocommerce-checkout .col-cart-two, .woocommerce-cart .woocommerce-checkout .col2-set, .woocommerce-cart .woocommerce-checkout .order-review-wrapper, .woocommerce-checkout .woocommerce-cart-form .col-cart-one, .woocommerce-checkout .woocommerce-cart-form .col-cart-two, .woocommerce-checkout .woocommerce-cart-form .col2-set, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper, .woocommerce-checkout .woocommerce-checkout .col-cart-one, .woocommerce-checkout .woocommerce-checkout .col-cart-two, .woocommerce-checkout .woocommerce-checkout .col2-set, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper {
+      width: 100%;
+      padding: 3em; }
+      .woocommerce-cart .woocommerce-cart-form .col-cart-one .cross-sells, .woocommerce-cart .woocommerce-cart-form .col-cart-two .cross-sells, .woocommerce-cart .woocommerce-cart-form .col2-set .cross-sells, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .cross-sells, .woocommerce-cart .woocommerce-checkout .col-cart-one .cross-sells, .woocommerce-cart .woocommerce-checkout .col-cart-two .cross-sells, .woocommerce-cart .woocommerce-checkout .col2-set .cross-sells, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .cross-sells, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .cross-sells, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .cross-sells, .woocommerce-checkout .woocommerce-cart-form .col2-set .cross-sells, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .cross-sells, .woocommerce-checkout .woocommerce-checkout .col-cart-one .cross-sells, .woocommerce-checkout .woocommerce-checkout .col-cart-two .cross-sells, .woocommerce-checkout .woocommerce-checkout .col2-set .cross-sells, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .cross-sells {
+        margin-top: 3em; }
   /* Checkout Page */
-  .woocommerce-checkout #content {
-    margin-top: 50px; }
-  .woocommerce-checkout #header-nav {
-    height: 4px; } }
+  /* Footer */
+  #colophon {
+    padding: 3%; }
+    #colophon .col-full .footer-widgets {
+      flex-wrap: wrap; }
+      #colophon .col-full .footer-widgets .block {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 33%;
+        padding-right: 0; }
+        #colophon .col-full .footer-widgets .block:first-of-type {
+          width: 100%; }
+    #colophon .btm_bar .widget {
+      margin: 0; } }
 
 /*!
  * Mmenu Light
