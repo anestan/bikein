@@ -187,9 +187,13 @@ span.select2.select2-container.select2-container--default * {
 .woocommerce-ordering {
   float: right;
   margin: 0;
+  padding: 0;
 }
 .storefront-sorting {
-  margin: 2% 0 0 0;
+  margin: 5% 0 0 0;
+  &:first-of-type {
+    display: none;
+  }
 }
 //archive top widgets end
 
@@ -258,25 +262,27 @@ span.select2.select2-container.select2-container--default * {
 
   #progress-bar {
     display: block;
-    width: 30%;
+    width: 33%;
     height: 4px;
     background: $lighter-gray;
     border-radius: 20px;
+
+    &::-moz-progress-bar {
+      background: $orange;
+      border-radius: 20px;
+    }
+    &::-webkit-progress-bar {
+      background: transparent;
+    }
+    &::-webkit-progress-value {
+      background: $orange;
+      border-radius: 20px;
+    }
+  }
+  .woocommerce-result-count {
+    margin-top: 1em;
   }
 
-  #progress-bar::-moz-progress-bar {
-    background: $orange;
-    border-radius: 20px;
-  }
-
-  #progress-bar::-webkit-progress-bar {
-    background: transparent;
-  }
-
-  #progress-bar::-webkit-progress-value {
-    background: $orange;
-    border-radius: 20px;
-  }
 
 
 // progress bar end
