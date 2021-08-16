@@ -8,9 +8,10 @@ function remove_result_count() {
 }
 
 /* Remove sorting - Product page bottom */
-add_action( 'after_setup_theme', 'remove_woocommerce_catalog_ordering', 1 );
-function remove_woocommerce_catalog_ordering() {
-	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 ); // If using Storefront, replace 30 by 10.
+add_action( 'wp', 'bbloomer_remove_default_sorting_storefront' );
+
+function bbloomer_remove_default_sorting_storefront() {
+   remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
 }
 
 /* Move sorting - Product page top */
@@ -111,5 +112,3 @@ function archive_product_layout() {
   add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 5 );
 }
 add_action( 'wp', 'archive_product_layout' );
-
-
