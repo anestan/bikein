@@ -267,6 +267,8 @@ hr {
       margin-left: 1.5em; }
   .topbar, .storefront-breadcrumb {
     padding: 0.5em 1em !important; }
+  .woocommerce-checkout .header-widget-region, .woocommerce-cart .header-widget-region {
+    display: none; }
   /* Header Tablet End */
   /* Archive Page */
   .col-full .woocommerce-products-header {
