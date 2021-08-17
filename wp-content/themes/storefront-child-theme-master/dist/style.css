@@ -1188,6 +1188,10 @@ form.checkout, form.woocommerce-cart-form {
   .woocommerce-error::before {
     color: rgba(228, 55, 51, 0.8); }
 
+@media only screen and (min-width: 1025px) {
+  .selling-points-cart {
+    margin-top: 7em; } }
+
 /* ******* Checkout ********* */
 .woocommerce-checkout .entry-header {
   display: none; }
