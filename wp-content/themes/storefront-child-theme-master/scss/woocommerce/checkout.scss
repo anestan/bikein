@@ -73,12 +73,13 @@
       .checkout_payments {
         margin-top: 5em;
 
-        .wc_payment_methods {
+        ul.wc_payment_methods {
           margin: 0;
 
-          img {
+          label img {
             margin: 0 0 0 1em;
-            max-height: 35px !important;
+            height: 35px;
+            min-height: 35px;
           }
         }
 

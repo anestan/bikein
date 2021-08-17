@@ -264,6 +264,33 @@
               text-align: center;
             }
           }
+
+          #ship-to-different-address {
+            font-size: $font-size-base;
+          }
+          #shipping_method {
+            li {
+              font-size: $font-size-small;
+
+              label {
+                width: 100%;
+              }
+              .woocommerce-Price-amount {
+                margin-right: 0;
+                margin-left: auto;
+                padding-left: 1em;
+
+                bdi, .woocommerce-Price-currencySymbol  {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+
+          .checkout_payments ul.wc_payment_methods label img {
+            min-height: 20px;
+            height: 20px;
+          }
         }
       }
 
@@ -309,6 +336,23 @@
       }
       .cart-selling-point:last-of-type {
         padding-right: 0;
+      }
+
+      .woocommerce-checkout-review-order-table {
+        .name-quantity{
+          font-size: $font-size-small;
+        }
+        .product-remove {
+          display: none;
+        }
+      }
+
+      .woocommerce_checkout_coupon {
+        display: none;
+      }
+
+      #payment .place-order {
+        margin-top: 1em;
       }
     }
   //Footer
