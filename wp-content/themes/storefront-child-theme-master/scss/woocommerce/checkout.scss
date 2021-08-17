@@ -40,11 +40,6 @@
             i {
               font-size: $h5-font-size;
             }
-
-            i.fas.fa-store-alt, i.fas.fa-truck {
-              margin-left: 1rem;
-            }
-
             .shipping_logo {
               width: 75px;
               border: 1px solid $lighter-gray;
@@ -187,10 +182,6 @@
         }
       }
 
-      .place-order-heading {
-        font-weight: 500;
-      }
-
       .woocommerce-terms-and-conditions-wrapper {
         p {
           font-size: $font-size-small;
@@ -199,6 +190,13 @@
     }
   }
 }
+
+
+/* TEMP for shipping */
+.shipping_logo {
+  width: 45px;
+}
+
 
 
 
