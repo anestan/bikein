@@ -184,6 +184,10 @@
         }
       }
 
+      .coupons #coupon_code {
+        width: 48%;
+      }
+
       .woocommerce-terms-and-conditions-wrapper {
         p {
           font-size: $font-size-small;
