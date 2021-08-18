@@ -1,0 +1,145 @@
+//Cart & Checkout
+.woocommerce-cart, .woocommerce-checkout {
+  .woocommerce-cart-form, .woocommerce-checkout {
+    .col-cart-one, .col-cart-two, .col2-set, .order-review-wrapper {
+      width: 100%;
+      padding: 1.5em;
+
+      .cart-shop-table {
+        padding: 1em 0;
+
+        .product-info-wrapper {
+          flex-direction: column;
+
+          .product-info {
+            .product-name a {
+              font-weight: $font-weight-normal;
+            }
+            .product-price {
+              color: $light-black;
+              margin: 0.7em 0;
+              font-weight: $font-weight-normal-bold;
+            }
+          }
+
+
+//Cart
+          .product-quantity-selection {
+            margin: 0;
+
+            input {
+              width: 3em;
+              font-size: $font-size-base;
+            }
+          }
+        }
+        .product-quantity {
+          display: none;
+        }
+      }
+
+      .cart_totals {
+        h2, p {
+          text-align: center;
+        }
+      }
+
+      .woocommerce-billing-fields {
+        h3 {
+          font-size: $h4-font-size;
+          text-align: center;
+        }
+      }
+
+      #ship-to-different-address {
+        font-size: $font-size-base;
+      }
+      #shipping_method {
+        li {
+          font-size: $font-size-small;
+
+          label {
+            width: 100%;
+          }
+          .woocommerce-Price-amount {
+            margin-right: 0;
+            margin-left: auto;
+            padding-left: 1em;
+
+            bdi, .woocommerce-Price-currencySymbol  {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      div.checkout_payments ul.wc_payment_methods label img {
+        min-height: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .coupon {
+    text-align: center;
+
+    button {
+      margin-top: 1em;
+    }
+  }
+
+  .cross-sells {
+    h2 {
+      font-size: $h4-font-size;
+      text-align: center;
+    }
+    ul.products {
+      &.columns-2 {
+        grid-template-columns: 1fr 1fr;
+
+        li.product {
+          height: auto;
+          .woocommerce-loop-product__link {
+            padding: 0.5em;
+            img {
+              max-height: 100px;
+              margin: 1em 0;
+            }
+            .price {
+              bdi {
+                font-size: $font-size-base;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .wc-proceed-to-checkout, .selling-points-cart, .terms-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-selling-point:last-of-type {
+    padding-right: 0;
+  }
+
+
+
+//Checkout
+  .woocommerce-checkout-review-order-table {
+    .name-quantity{
+      font-size: $font-size-small;
+    }
+    .product-remove {
+      display: none;
+    }
+  }
+
+  .woocommerce_checkout_coupon {
+    display: none;
+  }
+
+  #payment .place-order {
+    margin-top: 1em;
+  }
+}

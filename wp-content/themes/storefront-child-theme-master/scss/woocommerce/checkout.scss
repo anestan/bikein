@@ -40,11 +40,6 @@
             i {
               font-size: $h5-font-size;
             }
-
-            i.fas.fa-store-alt, i.fas.fa-truck {
-              margin-left: 1rem;
-            }
-
             .shipping_logo {
               width: 75px;
               border: 1px solid $lighter-gray;
@@ -78,12 +73,13 @@
       .checkout_payments {
         margin-top: 5em;
 
-        .wc_payment_methods {
+        ul.wc_payment_methods {
           margin: 0;
 
-          img {
+          label img {
             margin: 0 0 0 1em;
-            max-height: 35px !important;
+            height: 35px;
+            min-height: 35px;
           }
         }
 
@@ -96,6 +92,7 @@
       }
     }
   }
+
 
 
   .order-review-wrapper {
@@ -187,10 +184,6 @@
         }
       }
 
-      .place-order-heading {
-        font-weight: 500;
-      }
-
       .woocommerce-terms-and-conditions-wrapper {
         p {
           font-size: $font-size-small;
@@ -199,6 +192,13 @@
     }
   }
 }
+
+
+/* TEMP for shipping */
+.shipping_logo {
+  width: 45px;
+}
+
 
 
 

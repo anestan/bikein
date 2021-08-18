@@ -1,0 +1,53 @@
+//Footer
+#colophon.site-footer {
+  .col-full {
+    .footer-widgets {
+      flex-wrap: wrap;
+
+      .block {
+        margin: 0.5em 0;
+        padding: 0;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+
+        &:first-of-type, &:last-of-type {
+          width: 100%;
+        }
+      }
+    }
+
+    .footer-widgets-wrapper {
+      flex-direction: column;
+      margin-top: 0;
+
+      .gallery-item {
+        margin: 0 0.5em;
+      }
+
+      .widget {
+        width: auto;
+        margin: 1em 0 1em 0;
+
+        li {
+          margin: 0 0.5em;
+        }
+      }
+    }
+  }
+
+  .btm_bar {
+    width: auto;
+    flex-flow: column-reverse;
+    text-align: center;
+    padding: 0px 0px 85px 0px;
+    margin-top: 0;
+
+    .widget {
+      margin: 0;
+      &:first-of-type {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
