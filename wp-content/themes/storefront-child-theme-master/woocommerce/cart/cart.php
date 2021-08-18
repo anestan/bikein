@@ -171,12 +171,12 @@ dataLayer.push({
 
 
 					<!-- Product quantity -->
-					<!-- <div class="product-quantity" data-title="<?php // esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+					 <div class="product-quantity" data-title="<?php // esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 						<?php
-							// echo "<div>Antal</div>";
-							// echo "<div>" . $cart_item['quantity'] . "</div>";
+						   echo "<div>Antal:</div>";
+							 echo "<div>" . $cart_item['quantity'] . "</div>";
 						?>
-					</div> -->
+					</div>
 
 					<!-- Remove product from cart -->
 					<div class="product-remove">
