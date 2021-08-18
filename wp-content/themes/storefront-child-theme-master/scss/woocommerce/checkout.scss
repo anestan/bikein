@@ -1,7 +1,7 @@
 /* ******* Checkout ********* */
 
 .woocommerce-checkout {
-  .entry-header {
+  .entry-header, .storefront-primary-navigation, .header-search, .storefront-breadcrumb, .header-cart-wrapper {
     display: none;
   }
 
@@ -10,10 +10,6 @@
     margin-right: 0;
     padding: 6em;
     background-color: $light-gray;
-
-    input {
-      background-color: $white;
-    }
 
     .col-1 {
       h3 {
@@ -93,7 +89,49 @@
     }
   }
 
+  .form-row {
+    input, textarea, select {
+     border-radius: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+    input {
+       background-color: transparent;
+       box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.125);
+    }
 
+    //Checkout CVR button
+    button#vatButton {
+      padding: 0.4180469716em 0.71575em;
+      font-size: $font-size-small;
+      color: $white;
+      margin-top: 10px;
+      border-radius: 10px;
+
+      &.default {
+        background-color: $green;
+      }
+      &.failure {
+        background-color: $red;
+      }
+      &.success {
+        background-color: $darker-gray;
+      }
+    } //Checkout CVR button END
+
+    //Invalid input border - Checkout
+    &.woocommerce-invalid input.input-text {
+       box-shadow: inset 0px 0px 1px 1px #e2401c;
+    } //Invalid input border - Checkout END
+  }
+  input {
+    background-color: $white;
+    &:focus {
+       background-color: #f1f1f1;
+       outline: none;
+    }
+  }
 
   .order-review-wrapper {
     width: 40%;
@@ -156,10 +194,9 @@
           }
 
           .product-image img {
-            max-width: 5em;
-            max-height: 5em;
+            width: 52px;
+            height: 45px;
             object-fit: contain;
-            margin: 0;
           }
 
           .name-quantity {
@@ -184,10 +221,6 @@
         }
       }
 
-      .coupons #coupon_code {
-        width: 48%;
-      }
-
       .woocommerce-terms-and-conditions-wrapper {
         p {
           font-size: $font-size-small;
@@ -195,99 +228,11 @@
       }
     }
   }
+  .coupons #coupon_code {
+    width: 48%;
+  }
 }
-
-
-/* TEMP for shipping */
-.shipping_logo {
-  width: 45px;
+/* Checkout - DAWA suggestions */
+.dawa-autocomplete-suggestion {
+  list-style-type: none;
 }
-
-
-
-
-//To be rewritten
-
-  .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
-    display: none;
-  }
-
-  .woocommerce-checkout #content {
-    margin-top: 60px;
-  }
-
-  .woocommerce-checkout #header-nav {
-    height: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 60px;
-    border-bottom: 1px solid #EFEFEF;
-  }
-
-  .woocommerce-checkout .navigation-header-content {
-    margin: 0;
-  }
-
-  .form-row input, .form-row textarea, .form-row select {
-       border-radius: 10px;
-    }
-
-  input[type='text'], input[type='number'], input[type='email'], input[type='tel'], input[type='url'], input[type='password'], input[type='search'], textarea, .input-text {
-       background-color: transparent;
-       box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.125);
-    }
-
-  input[type='text']:focus, input[type='number']:focus, input[type='email']:focus, input[type='tel']:focus, input[type='url']:focus, input[type='password']:focus, input[type='search']:focus, textarea:focus, .input-text:focus {
-       background-color: #f1f1f1;
-       outline: none;
-    }
-
-  .form-row.woocommerce-validated input.input-text {
-      box-shadow: inset 0px 0px 0px 2px rgba(87, 155, 83, 0.8);
-    }
-
-  /* Invalid input border - Checkout */
-    .form-row.woocommerce-invalid input.input-text {
-       box-shadow: inset 0px 0px 1px 1px #e2401c;
-    }
-
-  /* Checkout - DAWA suggestions */
-  .dawa-autocomplete-suggestion {
-    list-style-type: none;
-  }
-
-  .woocommerce-input-wrapper ul {
-    margin: 0px;
-  }
-
-  /* Checkout CVR button - CVR fetching status */
-
-  button#vatButton {
-    padding: 0.4180469716em 0.71575em;
-    font-size: $font-size-small;
-    color: $white;
-    margin-top: 10px;
-    border-radius: 10px;
-  }
-
-  .button.default {
-    background-color: $green;
-  }
-  .button.failure {
-    background-color: $red;
-  }
-  .button.success {
-    background-color: $darker-gray;
-  }
-
-
-
-  /* checkout product image on order review */
-  .cart_item {
-    .product-image img {
-      width: 52px;
-      height: 45px;
-      object-fit: contain;
-    }
-  }

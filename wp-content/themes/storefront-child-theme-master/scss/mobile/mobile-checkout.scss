@@ -54,42 +54,39 @@
       #ship-to-different-address {
         font-size: $font-size-base;
       }
+      
       #shipping_method {
         li {
           font-size: $font-size-small;
-
           label {
-            width: 100%;
-          }
-          .woocommerce-Price-amount {
-            margin-right: 0;
-            margin-left: auto;
-            padding-left: 1em;
-
-            bdi, .woocommerce-Price-currencySymbol  {
-              margin-right: 0;
+            img {
+              width: 45px;
             }
           }
         }
       }
+
       div.checkout_payments ul.wc_payment_methods label img {
         min-height: 20px;
         height: 20px;
       }
-    }
-  }
+      .coupon, .coupons {
+        text-align: center;
 
-  .coupon {
-    text-align: center;
+        #coupon_code {
+          width: auto;
+        }
 
-    button {
-      margin-top: 1em;
+        button {
+          margin-top: 1em;
+        }
+      }
     }
   }
 
   .cross-sells {
     h2 {
-      font-size: $h4-font-size;
+      font-size: $h5-font-size;
       text-align: center;
     }
     ul.products {
@@ -135,11 +132,11 @@
     }
   }
 
-  .woocommerce_checkout_coupon {
-    display: none;
-  }
-
   #payment .place-order {
     margin-top: 1em;
   }
+}
+//Remove handheld footer bar on checkout
+.woocommerce-checkout .storefront-handheld-footer-bar {
+  display: none;
 }

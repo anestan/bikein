@@ -266,6 +266,7 @@ a.remove::before {
 
 form.checkout, form.woocommerce-cart-form {
   display: flex;
+  flex-wrap: wrap;
 
   .col-cart-one, .col-cart-two, #order_review, .col2-set {
     float: none;
