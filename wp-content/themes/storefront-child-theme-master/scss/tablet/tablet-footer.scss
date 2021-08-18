@@ -1,0 +1,26 @@
+/* Footer */
+#colophon {
+  padding: 3%;
+  .col-full {
+    .footer-widgets {
+      flex-wrap: wrap;
+
+      .block {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 33%;
+        padding-right: 0;
+
+        &:first-of-type {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .btm_bar {
+    .widget {
+      margin: 0;
+    }
+  }
+}

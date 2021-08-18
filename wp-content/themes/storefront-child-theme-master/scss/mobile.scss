@@ -1,0 +1,10 @@
+/* Responsive - Mobile */
+@media only screen and (max-width: 767px) {
+
+@import '../scss/mobile/mobile-header.scss';
+@import '../scss/mobile/mobile-archive.scss';
+@import '../scss/mobile/mobile-product.scss';
+@import '../scss/mobile/mobile-cart-checkout.scss';
+@import '../scss/mobile/mobile-footer.scss';
+
+}

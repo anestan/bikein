@@ -2,27 +2,9 @@
 
   #masthead {
   //Top bar
-      .topbar-wrapper {
-        display: block;
-
-        .selling-points {
-          justify-content: space-between;
-
-          .topbar-selling-point {
-            padding-right: 0;
-
-            p{
-              @include flexbox;
-              flex-direction: column;
-            }
-
-            i{
-              align-self: center;
-            }
-          }
-        }
-      } //topbar end
-
+  .topbar {
+    display: none;
+  }
 
   //Header
     .header-wrapper {

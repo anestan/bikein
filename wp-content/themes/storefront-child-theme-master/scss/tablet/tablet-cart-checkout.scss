@@ -1,0 +1,28 @@
+/* Cart / Checkout */
+.woocommerce-cart, .woocommerce-checkout {
+  article.hentry, #main, #primary {
+    margin: 0;
+  }
+  .woocommerce-cart-form, .woocommerce-checkout {
+    flex-wrap: wrap;
+
+    .col-cart-one, .col-cart-two, .col2-set, .order-review-wrapper {
+      width: 100%;
+      padding: 3em;
+
+      .cross-sells {
+        margin-top: 3em;
+      }
+    }
+  }
+  .woocommerce_checkout_coupon {
+    padding: 0 3em 1em 3em;
+  }
+  .selling-points-cart {
+    display: flex;
+
+    .cart-selling-point {
+      padding-right: 1em;
+    }
+  }
+}
