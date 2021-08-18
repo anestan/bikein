@@ -15,31 +15,30 @@
         flex: 50%;
 
         .topbar-selling-point {
-            display: flex;
+            @include flexbox;
             font-weight: $font-weight-normal-bold;
+            font-size: $font-size-small;
             padding-right: 40px;
-    
+
             i {
                 padding-right: 10px;
-                font-size: 25px;
             }
 
             p {
                 margin: 0;
             }
-    
+
             .selling-point-wrapper {
                 .selling-point-title {
                     margin: 0;
                     font-size: $font-size-small;
                 }
             }
-    
+
         }
     }
-    
+
     .top-menu {
         flex: 50%;
     }
 }
-
