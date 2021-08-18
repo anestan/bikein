@@ -342,7 +342,6 @@ hr {
     height: 100%; }
     .related .products.columns-4 li.product .amount bdi {
       font-size: 1rem !important; }
-  /* Cart / Checkout */
   .woocommerce-cart article.hentry, .woocommerce-cart #main, .woocommerce-cart #primary, .woocommerce-checkout article.hentry, .woocommerce-checkout #main, .woocommerce-checkout #primary {
     margin: 0; }
   .woocommerce-cart .woocommerce-cart-form, .woocommerce-cart .woocommerce-checkout, .woocommerce-checkout .woocommerce-cart-form, .woocommerce-checkout .woocommerce-checkout {
@@ -352,12 +351,12 @@ hr {
       padding: 3em; }
       .woocommerce-cart .woocommerce-cart-form .col-cart-one .cross-sells, .woocommerce-cart .woocommerce-cart-form .col-cart-two .cross-sells, .woocommerce-cart .woocommerce-cart-form .col2-set .cross-sells, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .cross-sells, .woocommerce-cart .woocommerce-checkout .col-cart-one .cross-sells, .woocommerce-cart .woocommerce-checkout .col-cart-two .cross-sells, .woocommerce-cart .woocommerce-checkout .col2-set .cross-sells, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .cross-sells, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .cross-sells, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .cross-sells, .woocommerce-checkout .woocommerce-cart-form .col2-set .cross-sells, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .cross-sells, .woocommerce-checkout .woocommerce-checkout .col-cart-one .cross-sells, .woocommerce-checkout .woocommerce-checkout .col-cart-two .cross-sells, .woocommerce-checkout .woocommerce-checkout .col2-set .cross-sells, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .cross-sells {
         margin-top: 3em; }
-  .woocommerce-cart .woocommerce_checkout_coupon, .woocommerce-checkout .woocommerce_checkout_coupon {
-    padding: 0 3em 1em 3em; }
   .woocommerce-cart .selling-points-cart, .woocommerce-checkout .selling-points-cart {
     display: flex; }
     .woocommerce-cart .selling-points-cart .cart-selling-point, .woocommerce-checkout .selling-points-cart .cart-selling-point {
       padding-right: 1em; }
+  .woocommerce-cart .woocommerce_checkout_coupon, .woocommerce-checkout .woocommerce_checkout_coupon {
+    padding: 0 3em 1em 3em; }
   /* Footer */
   #colophon {
     padding: 3%; }

@@ -1,4 +1,4 @@
-//Cart
+//Cart & Checkout
 .woocommerce-cart, .woocommerce-checkout {
   .woocommerce-cart-form, .woocommerce-checkout {
     .col-cart-one, .col-cart-two, .col2-set, .order-review-wrapper {
@@ -22,6 +22,8 @@
             }
           }
 
+
+//Cart
           .product-quantity-selection {
             margin: 0;
 
@@ -119,6 +121,9 @@
     padding-right: 0;
   }
 
+
+
+//Checkout
   .woocommerce-checkout-review-order-table {
     .name-quantity{
       font-size: $font-size-small;
