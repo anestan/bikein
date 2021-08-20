@@ -32,14 +32,15 @@
   transform: scale(1.2);
 }
 
-#masthead {
-  .selling-points {
+.selling-points {
   flex: unset;
-    .topbar-selling-point {
-      padding-right: 1em;
-      width: fit-content;
-    }
+  .topbar-selling-point {
+    padding-right: 1em;
+    width: fit-content;
   }
+}
+
+#masthead {
 
   .header-wrapper {
     flex-wrap: nowrap;
