@@ -101,19 +101,19 @@
   display: block;
   width: 100%;
   background-color: #FFF;
-  border: 1px solid $orange;
-  color: $orange;
+  border: 1px solid $blue;
+  color: $blue;
   text-transform: uppercase;
   letter-spacing: 1px;
 
   &:hover {
     background-color: #FFF;
-    border: 1px solid $orange;
-    color: $orange;
+    border: 1px solid $blue;
+    color: $blue;
   }
   &:active {
-    background-color: $orange;
+    background-color: $blue;
     color: #FFF;
-    border: 1px solid $orange;
+    border: 1px solid $blue;
   }
 }

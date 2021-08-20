@@ -209,7 +209,7 @@ span.select2.select2-container.select2-container--default * {
     color: $gray;
   }
   .chosen:before {
-    color: $orange;
+    color: $blue;
     opacity: 1;
   }
 }
@@ -230,7 +230,7 @@ span.select2.select2-container.select2-container--default * {
   &.cat-item.current-cat::before {
     content: "\f054";
     font-family: Font Awesome\ 5 Free;
-    color: $orange;
+    color: $blue;
     opacity: 1;
   }
   &.cat-item::before {
@@ -268,14 +268,14 @@ span.select2.select2-container.select2-container--default * {
     border-radius: 20px;
 
     &::-moz-progress-bar {
-      background: $orange;
+      background: $blue;
       border-radius: 20px;
     }
     &::-webkit-progress-bar {
       background: transparent;
     }
     &::-webkit-progress-value {
-      background: $orange;
+      background: $blue;
       border-radius: 20px;
     }
   }
