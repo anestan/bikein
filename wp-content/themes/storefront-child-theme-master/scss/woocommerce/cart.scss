@@ -48,13 +48,12 @@
 
       .product-info-wrapper {
         display: flex;
-        flex-grow: 1;
         margin-left: 1em;
-        justify-content: space-between;
+        justify-content: flex-start;
 
         .product-info {
           .product-name a {
-            font-size: $font-size-base;
+            font-size: $font-size-small;
             text-decoration: none;
             font-weight: $font-weight-normal-bold;
             text-transform: $uppercase;
@@ -63,18 +62,21 @@
             }
           }
           .product-price {
+            font-size: $font-size-small;
             color: $light-black;
           }
         }
 
         .product-quantity-selection {
           margin-right: 1em;
+          @include flexbox;
         }
       }
 
       .product-quantity {
         display: flex;
         margin-right: 1em;
+        margin-left: auto;
         div:last-of-type {
           margin-left: 0.5em;
           font-weight: $font-weight-normal-bold;
@@ -139,10 +141,18 @@
       font-weight: $font-weight-normal;
     }
 
-    #shipping_method {
+    #shipping_method.woocommerce-shipping-methods {
 
       li {
         margin-bottom: 1rem;
+      }
+
+      input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label {
+        display: block;
+      }
+
+      .woocommerce-Price-amount {
+        float: right;
       }
 
       i.fas.fa-store-alt, i.fas.fa-truck {
@@ -255,12 +265,12 @@ a.remove::before {
   input {
     background-color: $lighter-gray !important;
     box-shadow: none !important;
-    opacity: 0.6;
     font-weight: $font-weight-normal-bold;
     padding: 10px;
   }
   button {
     padding: 8px 15px;
+    text-transform: capitalize;
   }
 }
 

@@ -37,64 +37,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php do_action( 'storefront_before_site' ); ?>
 
 <div id="page" class="hfeed site">
+	<!-- Top Bar-->
+		<div class="topbar">
+			<div class="col-full">
+				<div class="topbar-wrapper">
+					<div class="selling-points">
+					    <div class="topbar-selling-point">
+					        <i class="<?php echo get_theme_mod( 'header_selling_icon_1'); ?>"></i>
+					        <p class="selling-point-wrapper">
+							<span class="selling-point-title">
+					          <?php echo get_theme_mod( 'header_selling_block_1'); ?>
+							</span>
+					        </p>
+					    </div>
+					    <div class="topbar-selling-point">
+					        <i class="<?php echo get_theme_mod( 'header_selling_icon_2'); ?>"></i>
+					        <p class="selling-point-wrapper">
+							  <span class="selling-point-title">
+					          	<?php echo get_theme_mod( 'header_selling_block_2'); ?>
+							  </span>
+					        </p>
+					    </div>
+					    <div class="topbar-selling-point">
+					        <i class="<?php echo get_theme_mod( 'header_selling_icon_3'); ?>"></i>
+					        <p class="selling-point-wrapper">
+							  <span class="selling-point-title">
+					          	<?php echo get_theme_mod( 'header_selling_block_3'); ?>
+							  </span>
+					        </p>
+					    </div>
+					</div>
+					<div class="top-menu">
+						<?php
+						wp_nav_menu(
+						  array(
+						  'theme_location'  => 'secondary',
+						  'container_class' => 'secondary-navigation',
+						  )
+						);
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- End Top Bar -->
 	<header id="masthead" role="banner" style="">
-
-<!-- Top Bar-->
-
-<div class="topbar">
-<div class="col-full">
-
-<div class="topbar-wrapper">
-
-<div class="selling-points">
-    <div class="topbar-selling-point">
-        <i class="<?php echo get_theme_mod( 'header_selling_icon_1'); ?>"></i>
-        <p class="selling-point-wrapper">
-		<span class="selling-point-title">
-          <?php echo get_theme_mod( 'header_selling_block_1'); ?>
-		</span>
-        </p>
-    </div>
-
-    <div class="topbar-selling-point">
-        <i class="<?php echo get_theme_mod( 'header_selling_icon_2'); ?>"></i>
-        <p class="selling-point-wrapper">
-		  <span class="selling-point-title">
-          	<?php echo get_theme_mod( 'header_selling_block_2'); ?>
-		  </span>
-        </p>
-    </div>
-
-
-    <div class="topbar-selling-point">
-        <i class="<?php echo get_theme_mod( 'header_selling_icon_3'); ?>"></i>
-        <p class="selling-point-wrapper">
-		  <span class="selling-point-title">
-          	<?php echo get_theme_mod( 'header_selling_block_3'); ?>
-		  </span>
-        </p>
-    </div>
-</div>
-
-<div class="top-menu">
-	<?php
-	wp_nav_menu(
-	  array(
-	  'theme_location'  => 'secondary',
-	  'container_class' => 'secondary-navigation',
-	  )
-	);
-	?>
-</div>
-
-</div>
-
-</div>
-</div>
-
-<!-- End Top Bar -->
-
-
 	  <div class="col-full">
 	    <div class="header-wrapper">
 	   <!-- Logo -->
