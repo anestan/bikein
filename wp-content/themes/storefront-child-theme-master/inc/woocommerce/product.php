@@ -44,31 +44,6 @@ function bbloomer_woocommerce_output_upsells() {
 woocommerce_upsell_display( 4,4 );
 }
 
-
-
-/* Replace variable price range with single variation price */
-//Remove Price Range
-function variable_product_price_range( $wcv_price, $product ) {
-    $prefix = sprintf('%s ', __('', 'wcvp_range'));
-
-    $wcv_reg_min_price = $product->get_variation_regular_price( 'min', true );
-    $wcv_min_sale_price    = $product->get_variation_sale_price( 'min', true );
-    $wcv_max_price = $product->get_variation_price( 'max', true );
-    $wcv_min_price = $product->get_variation_price( 'min', true );
-
-    $wcv_price = ( $wcv_min_sale_price == $wcv_reg_min_price ) ?
-        wc_price( $wcv_reg_min_price ) :
-        '<del>' . wc_price( $wcv_reg_min_price ) . '</del>' . '<ins>' . wc_price( $wcv_min_sale_price ) . '</ins>';
-
-    return ( $wcv_min_price == $wcv_max_price ) ?
-        $wcv_price :
-        sprintf('%s%s', $prefix, $wcv_price);
-}
-
-add_filter( 'woocommerce_variable_sale_price_html', 'variable_product_price_range', 10, 2 );
-add_filter( 'woocommerce_variable_price_html', 'variable_product_price_range', 10, 2 );
-
-
 // Add product custom shipping text fields
 function add_custom_shipping_settings_fields() {
 
