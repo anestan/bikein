@@ -1,0 +1,48 @@
+@media only screen and (max-width: 767px) {
+
+  //Top bar
+  .topbar {
+    display: none;
+  }
+
+  #masthead {
+  //Header
+    .header-wrapper {
+
+      .image-logo {
+        width: 30%;
+
+        img {
+          max-height: 80px;
+        }
+      }
+
+      .header-search,
+      .navigation-header-content,
+      .header-cart-wrapper {
+        display: none;
+      }
+
+      .header-mobile {
+        @include flexbox;
+        justify-content: flex-end;
+        padding-right: 20px;
+
+        i {
+          transition: all 0.3s ease;
+          vertical-align: bottom;
+          transform: scale(2);
+
+          &:active {
+            transform: scale(1.6);
+          }
+        }
+
+        a {
+          line-height: 0;
+        }
+      }
+    }
+  }//Masthead end
+
+}

@@ -47,11 +47,12 @@
           margin-bottom: 2%;
 
           a {
-            border: 1px solid;
+            border: 1px solid #aaa;
             border-radius: 4px;
             padding: 0.6em 1em;
             transition: all 0.3s ease;
             display: block;
+            color: #999;
 
             &:focus {
               background-color: $lighter-gray;
@@ -74,7 +75,7 @@
       height: 420px;
 
       .badge-wrapper {
-        display: none;
+        width: 100%;
       }
     }
   }

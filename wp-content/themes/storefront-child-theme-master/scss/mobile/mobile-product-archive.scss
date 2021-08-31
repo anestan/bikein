@@ -90,10 +90,20 @@
               }
             }
           }
+          .badge-wrapper {
+            font-size: $font-size-xtra-small;
+          }
         }
       }
     }
   }
+}
+
+ul.products li.product span.onsale {
+  top: 25%;
+  width: 4.5em;
+  height: 4.5em;
+  font-size: $font-size-xtra-small;
 }
 
 button.show_filter {
