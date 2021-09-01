@@ -10,17 +10,19 @@
     .header-wrapper {
 
       .image-logo {
-        width: 30%;
+        flex: 2;
 
         img {
           max-height: 80px;
         }
       }
 
-      .header-search,
-      .navigation-header-content,
       .header-cart-wrapper {
-        display: none;
+        flex: 0;
+      }
+
+      .dgwt-wcas-search-icon.js-dgwt-wcas-search-icon-handler {
+        margin-left: auto;
       }
 
       .header-mobile {
@@ -43,6 +45,5 @@
         }
       }
     }
-  }//Masthead end
-
+  } //Masthead end
 }

@@ -420,13 +420,13 @@ hr {
   .topbar {
     display: none; }
   #masthead .header-wrapper .image-logo {
-    width: 30%; }
+    flex: 2; }
     #masthead .header-wrapper .image-logo img {
       max-height: 80px; }
-  #masthead .header-wrapper .header-search,
-  #masthead .header-wrapper .navigation-header-content,
   #masthead .header-wrapper .header-cart-wrapper {
-    display: none; }
+    flex: 0; }
+  #masthead .header-wrapper .dgwt-wcas-search-icon.js-dgwt-wcas-search-icon-handler {
+    margin-left: auto; }
   #masthead .header-wrapper .header-mobile {
     display: flex;
     align-items: center;
