@@ -54,7 +54,7 @@
       #ship-to-different-address {
         font-size: $font-size-base;
       }
-      
+
       #shipping_method {
         li {
           font-size: $font-size-small;
@@ -62,6 +62,10 @@
             img {
               width: 45px;
             }
+          }
+          .shipmondo-shipping-field-wrap {
+            width: 100%;
+            margin: 0;
           }
         }
       }

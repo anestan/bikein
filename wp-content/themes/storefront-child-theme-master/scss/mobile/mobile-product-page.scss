@@ -5,13 +5,13 @@
       width: auto;
       height: auto;
 
+      .product_title.entry-title {
+        font-size: $h3-font-size;
+      }
+
       .shipping-info-wrapper {
         float: none;
         padding: 1em 0;
-      }
-
-      .product_meta * {
-        color: $dark-gray;
       }
     }
     .woocommerce-product-gallery {

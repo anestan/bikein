@@ -12,8 +12,7 @@
       padding: 1em 0;
 
       .image-logo {
-        flex: 1;
-        margin-right: auto;
+        margin-right: 5em;
 
         img {
           max-height: 50px;
@@ -22,16 +21,16 @@
       }
 
       .header-search {
-        flex: 1;
         .woocommerce-product-search {
           margin: 0;
         }
       }
 
-      .header-cart-wrapper {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
+      .navigation-header-content{
+        margin-left: auto;
+        margin-right: 1em;
+        @include flexbox;
+      }
 
         .header-cart {
           position: relative;
@@ -60,16 +59,5 @@
           }
         }
       }
-    }
-
-    .navigation-header-content{
-      justify-content: center;
-      @include flexbox;
-      background-color: $gray;
-
-      a {
-        padding: 1em;
-      }
-    }
 
 }

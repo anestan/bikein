@@ -54,6 +54,12 @@
         }
       }
 
+      a.reset_variations {
+        display: block;
+        margin: 1em 0 0 0;
+        color: $orange;
+      }
+
       .out-of-stock {
         color: $red;
         &::before {
