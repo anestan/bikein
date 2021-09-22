@@ -11,6 +11,7 @@
           $link = $_product->get_permalink();
           $price = get_post_meta($values['product_id'] , '_price', true);
           $getProductDetail = wc_get_product( $values['product_id'] );
+          $cartTotal = $woocommerce->cart->get_cart_total();
 
           echo '<a href="'. $link .'">';
             echo "<div class='preview-img'>".$getProductDetail->get_image()."</div>";
@@ -21,6 +22,14 @@
         echo "</li>";
       }
       echo "</ul>";
+
+      echo "<div class='preview-btm'";
+        echo "<div cart-total-wrapper>";
+          echo "<span>Pris i alt:</span>";
+          echo $cartTotal;
+        echo "</div>";
+        echo "<a href='".wc_get_cart_url()."' class='preview-cart-btn'>Indkøbskurv</a>";
+      echo "</div></div>";
     ?>
 
 </div>

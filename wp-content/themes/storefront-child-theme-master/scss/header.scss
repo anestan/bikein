@@ -72,6 +72,12 @@
         right: 0;
         top: 100%;
         z-index: 999;
+        border: 1px solid $gray;
+        background-color: $white;
+
+        span {
+          display: block;
+        }
 
         ul {
           list-style: none;
@@ -79,7 +85,9 @@
           display: flex;
           flex-direction: column;
           border-collapse: collapse;
-          border: 1px solid $gray;
+          height: 300px;
+          overflow: hidden;
+          overflow-y: scroll;
 
           li {
             padding: 1em;
@@ -114,7 +122,6 @@
               margin-left: 1em;
 
               .preview-title {
-                font-size: $h6-font-size;
                 text-transform: capitalize;
               }
 
@@ -126,13 +133,29 @@
             .preview-price {
               width: auto;
               margin-left: auto;
-              font-size: $h6-font-size;
-            }
-            span {
-              display: block;
             }
           }
         }
+      }
+
+      .preview-btm {
+        border-top: 1px solid $gray;
+        @include flexbox;
+        justify-content: space-between;
+        padding: 1em;
+
+        .amount bdi {
+          @include flexbox;
+        }
+      }
+      .preview-cart-btn {
+        margin: 0 1em 1em 1em;
+        padding: 0.5em;
+        display: block;
+        text-align: center;
+        background-color: $orange;
+        color: $white;
+        border-radius: $global-radius;
       }
     }
 
