@@ -6,6 +6,10 @@
     background-color: $white;
     transition: 0.3s all;
 
+    .col-full {
+      position: relative;
+    }
+
     .header-wrapper {
       @include flexbox;
       justify-content: space-between;
@@ -59,6 +63,16 @@
             font-size: $h4-font-size;
           }
         }
+      }
+
+      #cart-preview {
+        display: block;
+        background-color: skyblue;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 0;
+        top: 100%;
       }
     }
 

@@ -84,6 +84,8 @@ hr {
   z-index: 999;
   background-color: #ffffff;
   transition: 0.3s all; }
+  #masthead .col-full {
+    position: relative; }
   #masthead .header-wrapper {
     display: flex;
     align-items: center;
@@ -124,6 +126,14 @@ hr {
           z-index: 20; }
         #masthead .header-wrapper .header-cart-wrapper .header-cart i {
           font-size: 1.5rem; }
+    #masthead .header-wrapper #cart-preview {
+      display: block;
+      background-color: skyblue;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      right: 0;
+      top: 100%; }
   #masthead .navigation-header-content {
     justify-content: center;
     display: flex;
