@@ -127,11 +127,11 @@ hr {
         #masthead .header-wrapper .header-cart-wrapper .header-cart i {
           font-size: 1.5rem; }
     #masthead .header-wrapper #cart-preview {
-      display: block;
+      display: none;
       width: 350px;
       position: absolute;
-      right: 0;
-      top: 100%;
+      right: 2%;
+      top: 67%;
       z-index: 999;
       border: 1px solid #dbdbdb;
       background-color: #ffffff; }

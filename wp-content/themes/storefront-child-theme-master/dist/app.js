@@ -182,7 +182,7 @@ eval("// Update progress bar on product archive\njQuery(function($){\n\t\n\t$(\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("jQuery(function($){\n\n    var $sidebar = $('.cart-sidebar');\n    \n      $(\".header_cart_wrapper\").on('click', function(e) {\n        e.preventDefault();\n    \n        if (!$sidebar.hasClass('cart-active')) {\n          $sidebar.addClass('cart-active');\n    \n          $(document).one('click', function closeTooltip(e) {\n              if ($sidebar.has(e.target).length === 0 && $('.header_cart_wrapper').has(e.target).length === 0) {\n                  $sidebar.removeClass('cart-active');\n              } else if ($sidebar.hasClass('cart-active')) {\n                  $(document).one('click', closeTooltip);\n              }\n          });\n          } else {\n            $menu.removeClass('cart-active');\n          }\n    \n      });\n    });\n    \n\n//# sourceURL=webpack:///./js/sidebar.js?");
+eval("jQuery(function($){\n  var timeout;\n  //Show and hide cart preview on hover\n  $(\".header-cart, #cart-preview\").hover(function(){\n      clearTimeout(timeout);\n      $('#cart-preview').show();\n  },function(){\n    timeout = setTimeout(function () {\n      $('#cart-preview').hide();\n    }, 600);\n  });\n\n});\n\n\n//# sourceURL=webpack:///./js/sidebar.js?");
 
 /***/ }),
 
