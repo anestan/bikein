@@ -100,8 +100,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			    </div>
 
 			    <!-- Cart -->
-					<a class="header-cart-wrapper" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-						<div class="header-cart">
+					<div class="header-cart-wrapper">
+						<a class="header-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
 							<div class="cart-product-amount">
 								<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
 							</div>
@@ -109,8 +109,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<?php
 								// echo do_shortcode( '[elementor-template id="10350"]' );
 							?>
-						</div>
-					</a>
+						</a>
+					</div>
 					<?php include 'inc/woocommerce/cart-preview.php';?>
 	    <!-- Mobil menu -->
 			    <div class="header-mobile">

@@ -66,11 +66,11 @@
       }
 
       #cart-preview {
-        display: block;
+        display: none;
         width: 350px;
         position: absolute;
-        right: 0;
-        top: 100%;
+        right: 2%;
+        top: 67%;
         z-index: 999;
         border: 1px solid $gray;
         background-color: $white;
