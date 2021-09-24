@@ -47,8 +47,6 @@
           }
         }
 
-        
-
           .menu {
             li {
               padding: 0;
@@ -151,4 +149,16 @@
       @include reset_before_after;
     }
   }
+}
+
+.storefront-handheld-footer-bar {
+  a::before {
+    color: $blue;
+  }
+  ul li.cart .footer-cart-contents span.count {
+    background-color: $blue;
+  }
+}
+.dgwt-wcas-om-bar button.dgwt-wcas-om-return {
+  background-color: $blue;
 }

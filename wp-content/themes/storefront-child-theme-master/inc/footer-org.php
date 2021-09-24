@@ -10,9 +10,11 @@ function custom_remove_footer_credit () {
 
 
 /* Remove Storefront Mobile Menu Links */
-add_action( 'init', 'jk_remove_storefront_handheld_footer_bar' );
-function jk_remove_storefront_handheld_footer_bar() {
-  remove_action( 'storefront_footer', 'storefront_handheld_footer_bar', 999 );
+add_filter( 'storefront_handheld_footer_bar_links', 'jk_remove_handheld_footer_links' );
+function jk_remove_handheld_footer_links( $links ) {
+	unset( $links['my-account'] );
+
+	return $links;
 }
 
 //Footer widget area

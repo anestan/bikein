@@ -1,0 +1,63 @@
+/* Header */
+
+#masthead {
+    position: sticky;
+    z-index: 999;
+    background-color: $white;
+    transition: 0.3s all;
+
+    .header-wrapper {
+      @include flexbox;
+      justify-content: space-between;
+      padding: 1em 0;
+
+      .image-logo {
+        margin-right: 5em;
+
+        img {
+          max-height: 50px;
+          width: auto;
+        }
+      }
+
+      .header-search {
+        .woocommerce-product-search {
+          margin: 0;
+        }
+      }
+
+      .navigation-header-content{
+        margin-left: auto;
+        margin-right: 1em;
+        @include flexbox;
+      }
+
+        .header-cart {
+          position: relative;
+
+          .cart-product-amount {
+            position: absolute;
+            padding: 1px;
+            width: 17px;
+            background: #2f2d3200;
+            color: $black;
+            font-size: 11px;
+            line-height: 14px;
+            min-width: 13px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #2f2d32;
+            top: -13px;
+            right: -14px;
+            height: 17px;
+            font-weight: $font-weight-normal;
+            z-index: 20;
+          }
+
+          i {
+            font-size: $h4-font-size;
+          }
+        }
+      }
+
+}

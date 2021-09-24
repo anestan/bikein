@@ -11,12 +11,12 @@ $white: #ffffff;
 $blue: #bd7b00;
 $green: rgba(66,162,27,0.73);
 $red: rgba(228,55,51,0.8);
-
+$orange:#bd7b00;
 
 // Hover
-$blue-hover: #f5a103;
+$orange-hover: #a46200;
 $green-hover:rgba(66,162,27,0.9);
-
+$gray-hover: #f5f5f5;
 // Animation duration on eg. hover
 * {
   transition: all 0.2s ease;
@@ -45,6 +45,7 @@ $h2-font-size: $font-size-base * 2;
 $h3-font-size: $font-size-base * 1.75;
 $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.250;
+$h6-font-size: $font-size-base * 1.125;
 
 $font-family-sans-serif:      "Work Sans", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-base:            $font-family-sans-serif;
