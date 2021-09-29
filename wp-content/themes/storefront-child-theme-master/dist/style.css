@@ -143,7 +143,7 @@ hr {
         display: flex;
         flex-direction: column;
         border-collapse: collapse;
-        height: 300px;
+        max-height: 300px;
         overflow: hidden;
         overflow-y: scroll; }
         #masthead .header-wrapper #cart-preview ul li {

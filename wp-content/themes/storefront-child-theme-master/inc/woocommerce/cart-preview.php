@@ -30,6 +30,3 @@
         echo "</div>";
         echo "<a href='".wc_get_cart_url()."' class='preview-cart-btn'>Indkøbskurv</a>";
       echo "</div>";
-    ?>
-
-<!-- </div> -->
