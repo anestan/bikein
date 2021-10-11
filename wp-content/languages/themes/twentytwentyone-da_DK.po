@@ -28,45 +28,45 @@ msgstr "Ældre <span class=\"nav-short\">indlæg</span>"
 msgid "Newer <span class=\"nav-short\">posts</span>"
 msgstr "Nyere <span class=\"nav-short\">indlæg</span>"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:189
-#: classes/class-twenty-twenty-one-customize-notice-control.php:42
+#: classes/class-twenty-twenty-one-customize-notice-control.php:40
+#: classes/class-twenty-twenty-one-dark-mode.php:178
 msgid "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 msgstr "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 
 #. translators: %s: Twenty Twenty-One support article URL.
-#: classes/class-twenty-twenty-one-dark-mode.php:188
+#: classes/class-twenty-twenty-one-dark-mode.php:177
 msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
 msgstr "Mørk tilstand er en enhedsindstilling. Hvis en besøgende på dit websted anmoder om det, vil dit websted blive vist med en mørk baggrund og lys tekst. <a href=\"%s\">Læs mere om Mørk tilstand.</a>"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:192
+#: classes/class-twenty-twenty-one-dark-mode.php:181
 msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
 msgstr "Mørk tilstand kan også slås til og fra med en knap, som du kan finde i nederste højre hjørne på siden."
 
-#: classes/class-twenty-twenty-one-dark-mode.php:408
+#: classes/class-twenty-twenty-one-dark-mode.php:380
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
 msgstr "Dette websted bruger LocalStorage til at gemme indstillingen, når understøttelse af mørk tilstand slås til eller fra.<br> LocalStorage er nødvendig for, at indstillingen kan fungere, og bruges kun, når en bruger klikker på knappen Mørk tilstand.<br> Ingen data gemmes i databasen eller overføres."
 
-#: classes/class-twenty-twenty-one-dark-mode.php:407
+#: classes/class-twenty-twenty-one-dark-mode.php:379
 msgid "Suggested text:"
 msgstr "Foreslået tekst:"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:406
+#: classes/class-twenty-twenty-one-dark-mode.php:378
 msgid "Twenty Twenty-One uses LocalStorage when Dark Mode support is enabled."
 msgstr "Twenty Twenty-One bruger LocalStorage, når understøttelse af mørk tilstand er aktiveret."
 
-#: classes/class-twenty-twenty-one-dark-mode.php:199
+#: classes/class-twenty-twenty-one-dark-mode.php:188
 msgid "Dark Mode support"
 msgstr "Understøttelse af Mørk tilstand"
 
-#: classes/class-twenty-twenty-one-customize-notice-control.php:43
+#: classes/class-twenty-twenty-one-customize-notice-control.php:41
 msgid "Learn more about Dark Mode."
 msgstr "Læs mere om Mørk tilstand."
 
-#: classes/class-twenty-twenty-one-customize-notice-control.php:41
+#: classes/class-twenty-twenty-one-customize-notice-control.php:39
 msgid "To access the Dark Mode settings, select a light background color."
 msgstr "Hvis du vil have adgang til indstillingerne for Mørk tilstand, skal du vælge en lys baggrundsfarve."
 
-#: classes/class-twenty-twenty-one-dark-mode.php:145
+#: classes/class-twenty-twenty-one-dark-mode.php:134
 msgid "Colors & Dark Mode"
 msgstr "Farver & Mørk tilstand"
 
@@ -75,17 +75,17 @@ msgctxt "Label for sticky posts"
 msgid "Featured post"
 msgstr "Fremhævet opslag"
 
-#: inc/template-functions.php:399
+#: inc/template-functions.php:424
 msgctxt "Post password form"
 msgid "Submit"
 msgstr "Send"
 
-#: inc/template-functions.php:399
+#: inc/template-functions.php:424
 msgctxt "Post password form"
 msgid "Password"
 msgstr "Adgangskode"
 
-#: inc/template-functions.php:174
+#: inc/template-functions.php:183
 msgctxt "Added to posts and pages that are missing titles"
 msgid "Untitled"
 msgstr "Uden titel"
@@ -110,20 +110,25 @@ msgctxt "Block pattern sample content"
 msgid "example@example.com"
 msgstr "example@example.com"
 
-#: classes/class-twenty-twenty-one-customize.php:143
+#: classes/class-twenty-twenty-one-customize.php:138
 msgctxt "Customizer control"
 msgid "Background color"
 msgstr "Baggrundsfarve"
 
+#. translators: %s: WordPress Version.
+#. translators: %s: WordPress Version.
 #. translators: %s: WordPress Version.
 #: inc/back-compat.php:42 inc/back-compat.php:61 inc/back-compat.php:86
 msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
 msgstr "Dette tema kræver WordPress 5,3 eller nyere. Du kører version %s. Opgrader venligst."
 
 #. translators: %: Page number.
+#. translators: %: Page number.
+#. translators: %: Page number.
+#. translators: %: Page number.
+#: image.php:48 template-parts/content/content-page.php:36
+#: template-parts/content/content-single.php:30
 #: template-parts/content/content.php:36
-#: template-parts/content/content-page.php:36
-#: template-parts/content/content-single.php:30 image.php:46
 msgid "Page %"
 msgstr "Side %"
 
@@ -178,16 +183,16 @@ msgstr[1] "%s kommentarer"
 msgid "1 comment"
 msgstr "1 kommentar"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:358
+#: classes/class-twenty-twenty-one-dark-mode.php:334
 msgid "On"
 msgstr "Til"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:355
+#: classes/class-twenty-twenty-one-dark-mode.php:331
 msgid "Off"
 msgstr "Fra"
 
 #. translators: %s: On/Off
-#: classes/class-twenty-twenty-one-dark-mode.php:345
+#: classes/class-twenty-twenty-one-dark-mode.php:321
 msgid "Dark Mode: %s"
 msgstr "Mørk tilstand: %s"
 
@@ -195,11 +200,11 @@ msgstr "Mørk tilstand: %s"
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "&#8220;Påskeliljer&#8221; af Berthe Morisot"
 
-#: inc/template-functions.php:397
+#: inc/template-functions.php:422
 msgid "This content is password protected. Please enter a password to view."
 msgstr "Dette indhold er beskyttet med adgangskode. Angiv adgangskode, for at se indholdet."
 
-#: inc/menu-functions.php:35
+#: inc/menu-functions.php:34
 msgid "Open menu"
 msgstr "Åbn menu"
 
@@ -267,7 +272,7 @@ msgctxt "Theme starter content"
 msgid "Create your website with blocks"
 msgstr "Lav dit website ved hjælp af blokke"
 
-#: inc/template-functions.php:399
+#: inc/template-functions.php:424
 msgctxt "Post password form"
 msgid "Enter"
 msgstr "Indsæt"
@@ -320,16 +325,16 @@ msgstr "Legende i sandet"
 msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
 msgstr "&#8220;Legende i sandet&#8221; af Berthe Morisot"
 
-#: classes/class-twenty-twenty-one-customize.php:113
+#: classes/class-twenty-twenty-one-customize.php:108
 msgid "Summary"
 msgstr "Sammenfatning"
 
-#: classes/class-twenty-twenty-one-customize.php:90
+#: classes/class-twenty-twenty-one-customize.php:85
 msgid "Excerpt Settings"
 msgstr "Indstillinger for uddrag"
 
 #. translators: %s: Parent post.
-#: image.php:59
+#: image.php:61
 msgid "Published in %s"
 msgstr "Udgivet i %s"
 
@@ -337,12 +342,13 @@ msgstr "Udgivet i %s"
 msgid "Thick"
 msgstr "Tyk"
 
-#: classes/class-twenty-twenty-one-customize.php:111
+#: classes/class-twenty-twenty-one-customize.php:106
 msgid "On Archive Pages, posts show:"
 msgstr "På arkivsider vises indlæg med:"
 
 #. translators: %s: Author name.
-#: template-parts/post/author-bio.php:19 inc/template-tags.php:49
+#. translators: %s: Author name.
+#: inc/template-tags.php:49 template-parts/post/author-bio.php:19
 msgid "By %s"
 msgstr "Skrevet af %s"
 
@@ -369,7 +375,8 @@ msgid "Search&hellip;"
 msgstr "Søg&hellip;"
 
 #. translators: %s: Search term.
-#: template-parts/content/content-none.php:22 search.php:21
+#. translators: %s: Search term.
+#: search.php:21 template-parts/content/content-none.php:22
 msgid "Results for \"%s\""
 msgstr "Resultater for \"%s\""
 
@@ -402,15 +409,20 @@ msgstr[0] "Vi fandt %d resultat af din søgning."
 msgstr[1] "Vi fandt %d resultater af din søgning."
 
 #. translators: %s: List of tags.
+#. translators: %s: List of tags.
 #: inc/template-tags.php:118 inc/template-tags.php:162
 msgid "Tagged %s"
 msgstr "Mærket %s"
 
 #. translators: %s: List of categories.
+#. translators: %s: List of categories.
 #: inc/template-tags.php:108 inc/template-tags.php:152
 msgid "Categorized as %s"
 msgstr "Kategoriseret som %s"
 
+#. translators: Used between list items, there is a space after the comma.
+#. translators: Used between list items, there is a space after the comma.
+#. translators: Used between list items, there is a space after the comma.
 #. translators: Used between list items, there is a space after the comma.
 #: inc/template-tags.php:104 inc/template-tags.php:114
 #: inc/template-tags.php:148 inc/template-tags.php:158
@@ -418,13 +430,17 @@ msgid ", "
 msgstr ", "
 
 #. translators: %s: Name of current post. Only visible to screen readers.
-#: template-parts/content/content-page.php:48 image.php:68 image.php:93
-#: inc/template-tags.php:92 inc/template-tags.php:135
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:135
+#: template-parts/content/content-page.php:48
 msgid "Edit %s"
 msgstr "Rediger %s"
 
 #. translators: %s: Name of current post.
-#: inc/template-functions.php:132
+#: inc/template-functions.php:138
 msgid "Continue reading %s"
 msgstr "Fortsæt læsning af %s"
 
@@ -519,7 +535,7 @@ msgstr "Link område"
 msgid "Large text"
 msgstr "Stor tekst"
 
-#: image.php:81
+#: image.php:83
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Fuld størrelse"
@@ -529,10 +545,10 @@ msgstr "Fuld størrelse"
 msgid "Published %s"
 msgstr "Udgivet %s"
 
-#: template-parts/content/content.php:33
+#: comments.php:62 image.php:45 inc/template-tags.php:228
 #: template-parts/content/content-page.php:33
-#: template-parts/content/content-single.php:27 comments.php:62 image.php:43
-#: inc/template-tags.php:228
+#: template-parts/content/content-single.php:27
+#: template-parts/content/content.php:33
 msgid "Page"
 msgstr "Side"
 
@@ -544,8 +560,8 @@ msgstr "Luk"
 msgid "Menu"
 msgstr "Menu"
 
-#: template-parts/header/site-nav.php:13 functions.php:76
-#: inc/starter-content.php:154
+#: functions.php:76 inc/starter-content.php:154
+#: template-parts/header/site-nav.php:13
 msgid "Primary menu"
 msgstr "Primær menu"
 
@@ -661,7 +677,7 @@ msgstr "Lille"
 msgid "Extra small"
 msgstr "Ekstra lille"
 
-#: functions.php:77 inc/starter-content.php:165 footer.php:24
+#: footer.php:24 functions.php:77 inc/starter-content.php:165
 msgid "Secondary menu"
 msgstr "Sekundær menu"
 
@@ -677,11 +693,11 @@ msgstr "Nyere kommentarer"
 msgid "Older comments"
 msgstr "Ældre kommentarer"
 
-#: classes/class-twenty-twenty-one-customize.php:114
+#: classes/class-twenty-twenty-one-customize.php:109
 msgid "Full text"
 msgstr "Fuld tekst"
 
-#: classes/class-twenty-twenty-one-customize.php:80
+#: classes/class-twenty-twenty-one-customize.php:75
 msgid "Display Site Title & Tagline"
 msgstr "Vis websted titel & slogan"
 
@@ -689,7 +705,7 @@ msgstr "Vis websted titel & slogan"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Det ser ud som der er ikke er noget her. Har du prøvet med en søgning?"
 
-#: template-parts/content/content-none.php:30 404.php:16
+#: 404.php:16 template-parts/content/content-none.php:30
 msgid "Nothing here"
 msgstr "Intet her"
 

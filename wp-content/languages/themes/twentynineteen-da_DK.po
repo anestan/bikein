@@ -23,7 +23,7 @@ msgstr "Hov! Den side findes ikke."
 msgid "Comments are closed."
 msgstr "Lukket for kommentarer."
 
-#: template-parts/header/site-branding.php:46 functions.php:61
+#: functions.php:61 template-parts/header/site-branding.php:46
 msgid "Social Links Menu"
 msgstr "Menu til sociale links"
 
@@ -31,16 +31,17 @@ msgstr "Menu til sociale links"
 msgid "Skip to content"
 msgstr "Videre til indhold"
 
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content-single.php:40
 #: template-parts/content/content.php:49
-#: template-parts/content/content-page.php:27
-#: template-parts/content/content-single.php:40 image.php:52
 msgid "Pages:"
 msgstr "Sider:"
 
-#. translators: %s: Post title. Only visible to screen readers.
 #. translators: %s: Post title.
+#. translators: %s: Post title. Only visible to screen readers.
+#. translators: %s: Post title. Only visible to screen readers.
+#: functions.php:225 template-parts/content/content-single.php:27
 #: template-parts/content/content.php:36
-#: template-parts/content/content-single.php:27 functions.php:225
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Læs videre<span class=\"screen-reader-text\"> \"%s\"</span>"
 
@@ -72,6 +73,7 @@ msgstr "Vi kan vist ikke finde, hvad du leder efter. Måske en søgning vil hjæ
 msgid "Top Menu"
 msgstr "Topmenu"
 
+#. translators: Used between list items, there is a space after the comma.
 #. translators: Used between list items, there is a space after the comma.
 #: inc/template-tags.php:86 inc/template-tags.php:98
 msgid ", "
