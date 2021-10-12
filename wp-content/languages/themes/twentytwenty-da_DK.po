@@ -20,7 +20,7 @@ msgstr "Vores standardtema for 2020 er designet til at udnytte fleksibiliteten i
 msgid "Twenty Twenty"
 msgstr "Twenty Twenty"
 
-#: classes/class-twentytwenty-customize.php:246
+#: classes/class-twentytwenty-customize.php:250
 msgid "Show author bio"
 msgstr "Vis forfatterbio"
 
@@ -33,7 +33,7 @@ msgctxt "Theme starter content"
 msgid "The New UMoMA Opens its Doors"
 msgstr "Det nye UMoMA åbner dørene"
 
-#: inc/template-tags.php:396
+#: inc/template-tags.php:414
 msgctxt "A string that is output before one or more categories"
 msgid "In"
 msgstr "I"
@@ -89,35 +89,35 @@ msgstr "Værker og dage"
 msgid "The New UMoMA Opens its Doors"
 msgstr "Det nye UMoMA åbner dørene"
 
-#: classes/class-twentytwenty-customize.php:395
+#: classes/class-twentytwenty-customize.php:399
 msgid "Overlay Opacity"
 msgstr "Overlejringens gennemsigtighed"
 
-#: classes/class-twentytwenty-customize.php:375
+#: classes/class-twentytwenty-customize.php:379
 msgid "The color used for the text in the overlay."
 msgstr "Den farve, der bruges til teksten i overlejringen."
 
-#: classes/class-twentytwenty-customize.php:374
+#: classes/class-twentytwenty-customize.php:378
 msgid "Overlay Text Color"
 msgstr "Overlejret tekstfarve"
 
-#: classes/class-twentytwenty-customize.php:353
+#: classes/class-twentytwenty-customize.php:357
 msgid "The color used for the overlay. Defaults to the accent color."
 msgstr "Den farve, der bruges til overlejringen. Anvender som standard markeringsfarven."
 
-#: classes/class-twentytwenty-customize.php:352
+#: classes/class-twentytwenty-customize.php:356
 msgid "Overlay Background Color"
 msgstr "Overlejring baggrundsfarve"
 
-#: classes/class-twentytwenty-customize.php:283
+#: classes/class-twentytwenty-customize.php:287
 msgid "Settings for the \"Cover Template\" page template. Add a featured image to use as background."
 msgstr "Indstillinger for sideskabelonen \"Forsideskabelon\". Tilføj et udvalgt billede, der bruges som baggrund."
 
-#: classes/class-twentytwenty-customize.php:183
+#: classes/class-twentytwenty-customize.php:187
 msgid "Apply a custom color for links, buttons, featured images."
 msgstr "Anvend en brugerdefineret farve til links, knapper, udvalgte billeder."
 
-#: classes/class-twentytwenty-customize.php:123
+#: classes/class-twentytwenty-customize.php:127
 msgid "Primary Color"
 msgstr "Primær farve"
 
@@ -133,7 +133,7 @@ msgstr "1. oktober -- 1. december "
 msgid "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
 msgstr "Den førende destination for moderne kunst i det nordlige Sverige. Åben fra 10.00 til 18.00 hver dag i sommermånederne."
 
-#: template-parts/modal-search.php:20 searchform.php:24
+#: searchform.php:28 template-parts/modal-search.php:20
 msgid "Search for:"
 msgstr "Søg efter:"
 
@@ -177,15 +177,21 @@ msgstr "Lukket for kommentarer."
 msgid "Social Links Menu"
 msgstr "Menu til sociale links"
 
-#: template-parts/content.php:48 template-parts/content-cover.php:138
+#: template-parts/content-cover.php:138 template-parts/content.php:48
 msgid "Pages:"
 msgstr "Sider:"
 
-#: template-parts/pagination.php:25
+#. Translators: This text contains HTML to allow the text to be shorter on
+#. small screens. The text inside the span with the class nav-short will be
+#. hidden on small screens.
+#: template-parts/pagination.php:27
 msgid "Older <span class=\"nav-short\">Posts</span>"
 msgstr "Ældre <span class=\"nav-short\">indlæg</span>"
 
-#: template-parts/pagination.php:21
+#. Translators: This text contains HTML to allow the text to be shorter on
+#. small screens. The text inside the span with the class nav-short will be
+#. hidden on small screens.
+#: template-parts/pagination.php:19
 msgid "Newer <span class=\"nav-short\">Posts</span>"
 msgstr "Nyere <span class=\"nav-short\">indlæg</span>"
 
@@ -214,11 +220,12 @@ msgid "Footer"
 msgstr "Sidefod"
 
 #. translators: %s: Author name.
-#: template-parts/entry-author-bio.php:20 inc/template-tags.php:357
+#. translators: %s: Author name.
+#: inc/template-tags.php:375 template-parts/entry-author-bio.php:20
 msgid "By %s"
 msgstr "Af %s"
 
-#: template-parts/content.php:48 template-parts/content-cover.php:138
+#: template-parts/content-cover.php:138 template-parts/content.php:48
 msgid "Page"
 msgstr "Side"
 
@@ -226,12 +233,12 @@ msgstr "Side"
 msgid "Scroll Down"
 msgstr "Rul ned"
 
-#: searchform.php:27
+#: searchform.php:31
 msgctxt "submit button"
 msgid "Search"
 msgstr "Søg"
 
-#: searchform.php:25
+#: searchform.php:29
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Søg &hellip;"
@@ -244,20 +251,20 @@ msgstr "Vi kunne ikke finde nogen resultater til din søgning. Du kan prøve ige
 msgid "Search:"
 msgstr "Søg:"
 
-#: inc/template-tags.php:410
+#: inc/template-tags.php:428
 msgid "Tags"
 msgstr "Tags"
 
-#: template-parts/content-cover.php:70 template-parts/entry-header.php:36
-#: inc/template-tags.php:392
+#: inc/template-tags.php:410 template-parts/content-cover.php:70
+#: template-parts/entry-header.php:36
 msgid "Categories"
 msgstr "Kategorier"
 
-#: inc/template-tags.php:374
+#: inc/template-tags.php:392
 msgid "Post date"
 msgstr "Indlægsdato"
 
-#: inc/template-tags.php:350
+#: inc/template-tags.php:368
 msgid "Post author"
 msgstr "Indlægsforfatter"
 
@@ -273,83 +280,83 @@ msgstr "Menu"
 msgid "Continue reading"
 msgstr "Fortsæt læsning"
 
-#: functions.php:550
+#: functions.php:578
 msgctxt "Short name of the larger font size in the block editor."
 msgid "XL"
 msgstr "XL"
 
-#: functions.php:549
+#: functions.php:577
 msgctxt "Name of the larger font size in the block editor"
 msgid "Larger"
 msgstr "Større"
 
-#: functions.php:544
+#: functions.php:572
 msgctxt "Short name of the large font size in the block editor."
 msgid "L"
 msgstr "L"
 
-#: functions.php:543
+#: functions.php:571
 msgctxt "Name of the large font size in the block editor"
 msgid "Large"
 msgstr "Stor"
 
-#: functions.php:538
+#: functions.php:566
 msgctxt "Short name of the regular font size in the block editor."
 msgid "M"
 msgstr "M"
 
-#: functions.php:537
+#: functions.php:565
 msgctxt "Name of the regular font size in the block editor"
 msgid "Regular"
 msgstr "Almindelig"
 
-#: functions.php:532
+#: functions.php:560
 msgctxt "Short name of the small font size in the block editor."
 msgid "S"
 msgstr "S"
 
-#: functions.php:531
+#: functions.php:559
 msgctxt "Name of the small font size in the block editor"
 msgid "Small"
 msgstr "Lille"
 
-#: functions.php:516
+#: functions.php:544
 msgid "Background Color"
 msgstr "Baggrundsfarve"
 
-#: functions.php:503
+#: functions.php:531
 msgid "Subtle Background"
 msgstr "Diskret baggrund"
 
-#: functions.php:383
+#: functions.php:403
 msgid "Widgets in this area will be displayed in the second column in the footer."
 msgstr "Widgets i dette område vil blive vist i den anden kolonne i sidefoden."
 
-#: functions.php:381
+#: functions.php:401
 msgid "Footer #2"
 msgstr "Sidefod #2"
 
-#: functions.php:371
+#: functions.php:391
 msgid "Widgets in this area will be displayed in the first column in the footer."
 msgstr "Widgets i dette område vil blive vist i den første kolonne i sidefoden."
 
-#: functions.php:369
+#: functions.php:389
 msgid "Footer #1"
 msgstr "Sidefod #1"
 
-#: functions.php:344
+#: functions.php:362
 msgid "Skip to the content"
 msgstr "Spring til indholdet"
 
-#: functions.php:266
+#: functions.php:277
 msgid "Social Menu"
 msgstr "Social menu"
 
-#: functions.php:265
+#: functions.php:276
 msgid "Footer Menu"
 msgstr "Sidefod Menu"
 
-#: functions.php:264
+#: functions.php:275
 msgid "Mobile Menu"
 msgstr "Mobil menu"
 
@@ -387,62 +394,62 @@ msgstr "En kommentar til &ldquo;%s&rdquo;"
 msgid "Leave a comment"
 msgstr "Skriv en kommentar"
 
-#: classes/class-twentytwenty-walker-page.php:107 inc/template-tags.php:558
+#: classes/class-twentytwenty-walker-page.php:110 inc/template-tags.php:580
 msgid "Show sub menu"
 msgstr "Vis undermenu"
 
 #. translators: %d: ID of a post.
-#: classes/class-twentytwenty-walker-page.php:70
+#: classes/class-twentytwenty-walker-page.php:73
 msgid "#%d (no title)"
 msgstr "#%d (ingen titel)"
 
-#: classes/class-twentytwenty-walker-comment.php:98
+#: classes/class-twentytwenty-walker-comment.php:102
 msgid "Your comment is awaiting moderation."
 msgstr "Din kommentar afventer godkendelse."
 
 #. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentytwenty-walker-comment.php:68
+#: classes/class-twentytwenty-walker-comment.php:72
 msgid "%1$s at %2$s"
 msgstr "%1$s kl. %2$s"
 
-#: classes/class-twentytwenty-walker-comment.php:56
+#: classes/class-twentytwenty-walker-comment.php:60
 msgid "says:"
 msgstr "siger:"
 
-#: classes/class-twentytwenty-customize.php:396
+#: classes/class-twentytwenty-customize.php:400
 msgid "Make sure that the contrast is high enough so that the text is readable."
 msgstr "Sørg for, at kontrasten er høj nok til, at teksten kan læses."
 
-#: classes/class-twentytwenty-customize.php:305
+#: classes/class-twentytwenty-customize.php:309
 msgid "Fixed Background Image"
 msgstr "Fast baggrundsbillede"
 
 #. Template Name of the theme
-#: classes/class-twentytwenty-customize.php:281
+#: classes/class-twentytwenty-customize.php:285
 msgid "Cover Template"
 msgstr "Forsideskabelon"
 
-#: classes/class-twentytwenty-customize.php:269
+#: classes/class-twentytwenty-customize.php:273
 msgid "Full text"
 msgstr "Fuld tekst"
 
-#: classes/class-twentytwenty-customize.php:225
+#: classes/class-twentytwenty-customize.php:229
 msgid "Show search in header"
 msgstr "Vis søgning i sidehoved"
 
-#: classes/class-twentytwenty-customize.php:202
+#: classes/class-twentytwenty-customize.php:206
 msgid "Theme Options"
 msgstr "Temaindstillinger"
 
-#: classes/class-twentytwenty-customize.php:101
+#: classes/class-twentytwenty-customize.php:105
 msgid "Header &amp; Footer Background Color"
 msgstr "Sidehoved &amp; sidefod, baggrundsfarve"
 
-#: classes/class-twentytwenty-customize.php:82
+#: classes/class-twentytwenty-customize.php:86
 msgid "Scales the logo to half its uploaded size, making it sharp on high-res screens."
 msgstr "Skalerer logoet til halvdelen af dets uploadede størrelse, hvilket gør det skarpt på skærme med høj opløsning."
 
-#: classes/class-twentytwenty-customize.php:81
+#: classes/class-twentytwenty-customize.php:85
 msgid "Retina logo"
 msgstr "Retina logo"
 
@@ -459,43 +466,43 @@ msgid "Full Width Template"
 msgstr "Fuld bredde skabelon"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:207
+#: inc/template-tags.php:223
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Rediger <span class=\"screen-reader-text\" >%s</span>"
 
-#: inc/template-tags.php:448
+#: inc/template-tags.php:466
 msgid "Sticky post"
 msgstr "Fastgjort indlæg"
 
-#: functions.php:488
+#: functions.php:516
 msgid "Accent Color"
 msgstr "Accentfarve"
 
-#: functions.php:263
+#: functions.php:274
 msgid "Desktop Expanded Menu"
 msgstr "Computer udvidet menu"
 
-#: functions.php:262
+#: functions.php:273
 msgid "Desktop Horizontal Menu"
 msgstr "Computer vandret menu"
 
-#: classes/class-twentytwenty-walker-comment.php:133
+#: classes/class-twentytwenty-walker-comment.php:137
 msgid "By Post Author"
 msgstr "Af indlæggets forfatter"
 
-#: classes/class-twentytwenty-walker-comment.php:82
+#: classes/class-twentytwenty-walker-comment.php:86
 msgid "Edit"
 msgstr "Rediger"
 
-#: classes/class-twentytwenty-customize.php:306
+#: classes/class-twentytwenty-customize.php:310
 msgid "Creates a parallax effect when the visitor scrolls."
 msgstr "Skaber en parallaxeffekt, når den besøgende ruller."
 
-#: classes/class-twentytwenty-customize.php:270
+#: classes/class-twentytwenty-customize.php:274
 msgid "Summary"
 msgstr "Resume"
 
-#: classes/class-twentytwenty-customize.php:267
+#: classes/class-twentytwenty-customize.php:271
 msgid "On archive pages, posts show:"
 msgstr "På arkivsider, vis indlæg:"
 
