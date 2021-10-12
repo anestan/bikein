@@ -8,13 +8,18 @@ $darker-gray:#C2C2C2;
 $light-black: #404040;
 $black: #000000;
 $white: #ffffff;
-$blue: #bd7b00;
 $green: rgba(66,162,27,0.73);
 $red: rgba(228,55,51,0.8);
-$orange:#bd7b00;
+$yellow:#bd7b00;
+
+//Custom
+$beige-dark: #e2d8c5;
+$beige:#F9F7F6;      //Siders baggrund
+$yellow:#F7D544;     //CTA
+$blue:#121144; //Tekst, ikoner
 
 // Hover
-$orange-hover: #a46200;
+$yellow-hover: #a46200;
 $green-hover:rgba(66,162,27,0.9);
 $gray-hover: #f5f5f5;
 // Animation duration on eg. hover
