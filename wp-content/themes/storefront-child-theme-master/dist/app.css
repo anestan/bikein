@@ -31,7 +31,7 @@ h5 {
   overflow-x: visible; }
 
 .site {
-  background: #ffffff; }
+  background: #F9F7F6; }
 
 /* Content wrapper */
 /* Container width | col-full */
@@ -45,6 +45,9 @@ input {
 
 hr {
   margin: 0; }
+
+.elementor-page .storefront-breadcrumb, .elementor-page .header-widget-region {
+  display: none; }
 
 .topbar {
   background-color: #dbdbdb;
@@ -227,13 +230,13 @@ hr {
   content: none; }
 
 .storefront-handheld-footer-bar a::before {
-  color: #bd7b00; }
+  color: #121144; }
 
 .storefront-handheld-footer-bar ul li.cart .footer-cart-contents span.count {
-  background-color: #bd7b00; }
+  background-color: #121144; }
 
 .dgwt-wcas-om-bar button.dgwt-wcas-om-return {
-  background-color: #bd7b00; }
+  background-color: #121144; }
 
 /* Responsive - Tablet */
 @media only screen and (max-width: 1024px) {
@@ -242,7 +245,7 @@ hr {
     background-color: #ffffff; }
     #menu .mm-spn.mm-spn--navbar.mm-spn--main:after {
       opacity: 1;
-      color: #bd7b00; }
+      color: #121144; }
   .woocommerce-page #content {
     margin: 0 3%; }
   .sticky {
@@ -497,18 +500,18 @@ hr {
     display: block;
     width: 100%;
     background-color: #FFF;
-    border: 1px solid #bd7b00;
-    color: #bd7b00;
+    border: 1px solid #121144;
+    color: #121144;
     text-transform: uppercase;
     letter-spacing: 1px; }
     button.show_filter:hover {
       background-color: #FFF;
-      border: 1px solid #bd7b00;
-      color: #bd7b00; }
+      border: 1px solid #121144;
+      color: #121144; }
     button.show_filter:active {
-      background-color: #bd7b00;
+      background-color: #121144;
       color: #FFF;
-      border: 1px solid #bd7b00; }
+      border: 1px solid #121144; }
   #main div.product .summary {
     width: auto;
     height: auto; }
@@ -1022,7 +1025,7 @@ body.mm-ocd-opened {
     #main .product .summary a.reset_variations {
       display: block;
       margin: 1em 0 0 0;
-      color: #bd7b00; }
+      color: #F7D544; }
     #main .product .summary .out-of-stock {
       color: rgba(228, 55, 51, 0.8); }
       #main .product .summary .out-of-stock::before {
@@ -1086,9 +1089,9 @@ body.mm-ocd-opened {
   .custom_option.is-visible {
     display: inline-block; }
   .custom_option.on {
-    background-color: #bd7b00;
+    background-color: #121144;
     color: #ffffff;
-    border-color: #bd7b00; }
+    border-color: #121144; }
 
 /* Product archive */
 .woocommerce-products-header {
@@ -1232,7 +1235,7 @@ span.select2.select2-container.select2-container--default * {
     display: none; }
 
 body .select2-container--default .select2-results__option--highlighted[aria-selected], body .select2-container--default .select2-results__option--highlighted[data-selected] {
-  background-color: #bd7b00; }
+  background-color: #F7D544; }
 
 #secondary .show_sidebar_filter, #secondary .show_sidebar_cat, #secondary .woocommerce-widget-layered-nav {
   display: none; }
@@ -1241,7 +1244,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
   color: #dbdbdb; }
 
 .widget_layered_nav .chosen:before {
-  color: #bd7b00;
+  color: #121144;
   opacity: 1; }
 
 .woocommerce-widget-layered-nav-list a {
@@ -1253,7 +1256,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
 .widget_product_categories ul li.cat-item.current-cat::before {
   content: "\f054";
   font-family: Font Awesome\ 5 Free;
-  color: #bd7b00;
+  color: #121144;
   opacity: 1; }
 
 .widget_product_categories ul li.cat-item::before {
@@ -1278,12 +1281,12 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
   background: #EBEBEB;
   border-radius: 20px; }
   #progress-bar::-moz-progress-bar {
-    background: #bd7b00;
+    background: #121144;
     border-radius: 20px; }
   #progress-bar::-webkit-progress-bar {
     background: transparent; }
   #progress-bar::-webkit-progress-value {
-    background: #bd7b00;
+    background: #121144;
     border-radius: 20px; }
 
 .woocommerce-result-count {
@@ -1535,7 +1538,7 @@ form.checkout, form.woocommerce-cart-form {
       width: 60%;
       margin-left: 1.5em; }
       .woocommerce-checkout .col2-set .col-2 li .shipmondo-shipping-field-wrap input.button {
-        background-color: #bd7b00; }
+        background-color: #121144; }
       .woocommerce-checkout .col2-set .col-2 li .shipmondo-shipping-field-wrap .shipmondo-clearfix {
         width: fit-content; }
       .woocommerce-checkout .col2-set .col-2 li .shipmondo-shipping-field-wrap .shipmondo_zipcode_error_text {
@@ -1694,7 +1697,7 @@ form.checkout, form.woocommerce-cart-form {
     content: '';
     width: 12px;
     height: 12px;
-    background: #bd7b00;
+    background: #121144;
     position: absolute;
     top: 4px;
     left: 4px;

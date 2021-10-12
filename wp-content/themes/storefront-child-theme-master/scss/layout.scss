@@ -7,7 +7,7 @@
   }
 
   .site {
-    background: $white;
+    background: $beige;
   }
 
   /* Content wrapper */
@@ -24,4 +24,10 @@ input {
 
 hr {
   margin: 0;
+}
+
+.elementor-page {
+  .storefront-breadcrumb, .header-widget-region {
+    display: none;
+  }
 }
