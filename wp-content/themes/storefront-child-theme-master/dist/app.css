@@ -85,7 +85,7 @@ hr {
 #masthead {
   position: sticky;
   z-index: 999;
-  background-color: #ffffff;
+  background-color: #121144;
   transition: 0.3s all; }
   #masthead .header-wrapper {
     display: flex;
@@ -95,8 +95,8 @@ hr {
     #masthead .header-wrapper .image-logo {
       margin-right: 5em; }
       #masthead .header-wrapper .image-logo img {
-        max-height: 50px;
-        width: auto; }
+        height: auto;
+        max-width: 60%; }
     #masthead .header-wrapper .header-search .woocommerce-product-search {
       margin: 0; }
     #masthead .header-wrapper .navigation-header-content {
@@ -104,14 +104,20 @@ hr {
       margin-right: 1em;
       display: flex;
       align-items: center; }
+      #masthead .header-wrapper .navigation-header-content ul.menu li.current-menu-item > a, #masthead .header-wrapper .navigation-header-content ul.menu a:hover {
+        color: #F7D544; }
+      #masthead .header-wrapper .navigation-header-content ul.menu li a {
+        padding: 1em 2em;
+        text-transform: uppercase;
+        letter-spacing: 0.25em; }
     #masthead .header-wrapper .header-cart {
       position: relative; }
       #masthead .header-wrapper .header-cart .cart-product-amount {
         position: absolute;
         padding: 1px;
         width: 17px;
-        background: #2f2d3200;
-        color: #000000;
+        background: #ffffff;
+        color: #121144;
         font-size: 11px;
         line-height: 14px;
         min-width: 13px;
@@ -125,6 +131,8 @@ hr {
         z-index: 20; }
       #masthead .header-wrapper .header-cart i {
         font-size: 1.5rem; }
+        #masthead .header-wrapper .header-cart i:hover {
+          color: #F7D544; }
 
 /* Footer */
 .site-footer {
@@ -144,8 +152,12 @@ hr {
       width: 25%;
       padding-right: 5em;
       display: flex;
-      align-items: flex-end;
-      justify-content: flex-end; }
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column; }
+      .site-footer .col-full .footer-widgets .block img {
+        max-width: 50%;
+        margin-bottom: 2em; }
       .site-footer .col-full .footer-widgets .block:last-of-type {
         padding-right: 0; }
       .site-footer .col-full .footer-widgets .block:first-of-type {

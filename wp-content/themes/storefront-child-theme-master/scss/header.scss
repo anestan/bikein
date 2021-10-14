@@ -3,7 +3,7 @@
 #masthead {
     position: sticky;
     z-index: 999;
-    background-color: $white;
+    background-color: $blue;
     transition: 0.3s all;
 
     .header-wrapper {
@@ -15,8 +15,8 @@
         margin-right: 5em;
 
         img {
-          max-height: 50px;
-          width: auto;
+          height: auto;
+          max-width: 60%;
         }
       }
 
@@ -30,6 +30,17 @@
         margin-left: auto;
         margin-right: 1em;
         @include flexbox;
+
+        ul.menu {
+          li.current-menu-item>a, a:hover {
+            color: $yellow;
+          }
+          li a {
+            padding: 1em 2em;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+          }
+        }
       }
 
         .header-cart {
@@ -39,8 +50,8 @@
             position: absolute;
             padding: 1px;
             width: 17px;
-            background: #2f2d3200;
-            color: $black;
+            background: $white;
+            color: $blue;
             font-size: 11px;
             line-height: 14px;
             min-width: 13px;
@@ -56,6 +67,9 @@
 
           i {
             font-size: $h4-font-size;
+            &:hover {
+              color: $yellow;
+            }
           }
         }
       }
