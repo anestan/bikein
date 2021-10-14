@@ -15,8 +15,8 @@
         margin-right: 5em;
 
         img {
-          max-height: 50px;
-          width: auto;
+          height: auto;
+          max-width: 60%;
         }
       }
 
@@ -34,6 +34,11 @@
         ul.menu {
           li.current-menu-item>a, a:hover {
             color: $yellow;
+          }
+          li a {
+            padding: 1em 2em;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
           }
         }
       }
@@ -62,6 +67,9 @@
 
           i {
             font-size: $h4-font-size;
+            &:hover {
+              color: $yellow;
+            }
           }
         }
       }
