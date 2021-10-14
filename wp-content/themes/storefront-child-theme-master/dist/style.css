@@ -152,8 +152,12 @@ hr {
       width: 25%;
       padding-right: 5em;
       display: flex;
-      align-items: flex-end;
-      justify-content: flex-end; }
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column; }
+      .site-footer .col-full .footer-widgets .block img {
+        max-width: 50%;
+        margin-bottom: 2em; }
       .site-footer .col-full .footer-widgets .block:last-of-type {
         padding-right: 0; }
       .site-footer .col-full .footer-widgets .block:first-of-type {

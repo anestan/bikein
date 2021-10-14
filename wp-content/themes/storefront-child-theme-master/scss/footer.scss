@@ -20,8 +20,14 @@
         width: 25%;
         padding-right: 5em;
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        img {
+          max-width: 50%;
+          margin-bottom: 2em;
+        }
 
 
         &:last-of-type {
