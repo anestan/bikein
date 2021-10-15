@@ -130,7 +130,8 @@ hr {
         font-weight: 400;
         z-index: 20; }
       #masthead .header-wrapper .header-cart i {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        color: #ffffff; }
         #masthead .header-wrapper .header-cart i:hover {
           color: #F7D544; }
 
