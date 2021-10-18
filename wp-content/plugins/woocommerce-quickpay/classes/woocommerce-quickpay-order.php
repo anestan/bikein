@@ -255,7 +255,7 @@ class WC_QuickPay_Order extends WC_Order {
 
 		if ( $is_subscription ) {
 			$params_subscription = [
-				'description' => 'woocommerce-subscription',
+				'description' => apply_filters( 'woocommerce_quickpay_transaction_params_description', 'woocommerce-subscription', $this ),
 			];
 		}
 
@@ -268,7 +268,7 @@ class WC_QuickPay_Order extends WC_Order {
 			'shopsystem'       => $this->get_transaction_shopsystem_params(),
 		], $this->get_custom_variables() );
 
-		return array_merge( $params, $params_subscription );
+		return apply_filters( 'woocommerce_quickpay_transaction_params', array_merge( $params, $params_subscription ), $this );
 	}
 
 	/**
