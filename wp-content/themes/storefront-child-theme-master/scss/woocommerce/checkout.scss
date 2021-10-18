@@ -9,7 +9,8 @@
     width: 60%;
     margin-right: 0;
     padding: 6em;
-    background-color: $light-gray;
+    background-color: $white;
+    border-radius: 5px;
 
     .col-1 {
       h3 {
@@ -149,6 +150,7 @@
     #order_review {
       width: 100%;
       height: 100%;
+      background-color: transparent;
 
       #order_review_heading {
         float: none;
@@ -244,12 +246,16 @@
   }
   .coupons{
     #coupon_code {
-      width: 48%;
+      width: 46%;
       opacity: 1;
     }
     button {
       text-transform: capitalize;
     }
+  }
+
+  #payment .place-order {
+    background-color: $white;
   }
 }
 /* Checkout - DAWA suggestions */

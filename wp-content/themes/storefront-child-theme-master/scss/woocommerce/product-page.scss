@@ -9,7 +9,9 @@
 
     .woocommerce-product-gallery {
       width: 50%;
-      height: 600px;
+      height: 800px;
+      background-color: $white;
+      border-radius: 5px;
 
       figure {
         height: 100%;
