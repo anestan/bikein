@@ -12,3 +12,4 @@ import variation_select from './variation_select.js';
 import progress_bar from './progress_bar.js';
 import cart_empty from './cart_empty.js';
 import add_to_cart from './add_to_cart.js';
+import cart_preview from './cart_preview.js';
