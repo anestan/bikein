@@ -2,7 +2,7 @@
 Contributors: PerfectSolution
 Tags: gateway, woo commerce, quickpay, quick pay, gateway, integration, woocommerce, woocommerce quickpay, payment, payment gateway, psp
 Requires at least: 4.0.0
-Tested up to: 5.7
+Tested up to: 5.8
 Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,6 +27,20 @@ General:
 3. If WooCommerce Subscriptions is used, the required minimum version is >= 2.0
 
 == Changelog ==
+= 6.4.1 =
+* Fix: WC_QuickPay_API_Transaction::get_brand removes prefixed quickpay_ when fallback to variables.
+* Fix: Refund now supports location header to avoid wrong response messages when capturing Klarna and Anyday payments.
+* Dev: Add filter woocommerce_quickpay_transaction_params
+* Dev: Add filter woocommerce_quickpay_transaction_params_description
+* Bump WC tested with version
+* Bump WP tested with version
+
+= 6.4.0 =
+* Feat: MobilePay Checkout now automatically ticks the terms and condition field during checkout.
+* Fix: PHP8 compatability
+* Fix: Capture now supports location header to avoid wrong response messages when capturing Klarna and Anyday payments.
+* Fix: WC_QuickPay_API_Transaction::get_brand now falls back to variables.payment_methods sent from the shop if brand is empty on metadata.
+
 = 6.3.0 =
 * Remove: BETA from MobilePay Subscriptions
 * Feature: Anyday split payments as payment gateway.

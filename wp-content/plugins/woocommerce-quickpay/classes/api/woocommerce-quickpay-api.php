@@ -18,13 +18,11 @@ class WC_QuickPay_API {
 	 */
 	protected $ch;
 
-
 	/**
 	 * Contains the API url
 	 * @access protected
 	 */
 	protected $api_url = 'https://api.quickpay.net/';
-
 
 	/**
 	 * Contains a resource data object
@@ -197,6 +195,22 @@ class WC_QuickPay_API {
 
 		// Prepare empty variable passed to any exception thrown
 		$request_form_data = '';
+		$response_headers  = [];
+
+		curl_setopt( $this->ch, CURLOPT_HEADERFUNCTION,
+			static function ( $curl, $header ) use ( &$response_headers ) {
+				$len    = strlen( $header );
+				$header = explode( ':', $header, 2 );
+				if ( count( $header ) < 2 ) // ignore invalid headers
+				{
+					return $len;
+				}
+
+				$response_headers[ strtolower( trim( $header[0] ) ) ][] = trim( $header[1] );
+
+				return $len;
+			}
+		);
 
 		// If additional data is delivered, we will send it along with the API request
 		if ( is_array( $form ) && ! empty( $form ) ) {
@@ -248,6 +262,7 @@ class WC_QuickPay_API {
 				$request_form_data,
 				$response_data,
 				curl_getinfo( $this->ch ),
+				$response_headers
 			];
 		} else {
 			$return_data = $this->resource_data;
@@ -268,9 +283,14 @@ class WC_QuickPay_API {
 	 * @return void
 	 */
 	public function set_url( $params ) {
-		curl_setopt( $this->ch, CURLOPT_URL, $this->api_url . trim( $params, '/' ) );
-	}
+		if ( strpos( $params, 'https://' ) === 0 && strpos( $params, '.quickpay.net/' ) !== false ) {
+			$api_url = str_replace( $this->api_url, '', $params );
+		} else {
+			$api_url = $this->api_url . trim( $params, '/' );
+		}
 
+		curl_setopt( $this->ch, CURLOPT_URL, $api_url );
+	}
 
 	/**
 	 * remote_instance function.

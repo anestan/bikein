@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-01 10:49:54+0000\n"
+"PO-Revision-Date: 2021-10-15 21:35:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,14 +31,45 @@ msgstr "Europe/Copenhagen"
 msgid "Continue"
 msgstr "Fortsæt"
 
+#: wp-admin/about.php:205
+msgid "Theme.json"
+msgstr "Theme.json"
+
+#: wp-admin/nav-menus.php:999 wp-admin/nav-menus.php:1034
+msgid "Bulk Select"
+msgstr "Vælg flere"
+
 #. translators: %s: Number of available theme updates.
 #: wp-admin/menu.php:203 wp-admin/network/menu.php:63
 msgid "Themes %s"
 msgstr "Temaer %s"
 
+#: wp-admin/includes/class-wp-debug-data.php:615
+msgid "ImageMagick supported file formats"
+msgstr "ImageMagick understøttet filformater"
+
+#: wp-admin/includes/class-wp-debug-data.php:537
+msgid "Imagick version"
+msgstr "Imagick version"
+
+#: wp-admin/includes/class-theme-installer-skin.php:248
+msgctxt "theme"
+msgid "Uploaded"
+msgstr "Uploadet"
+
+#: wp-admin/includes/class-theme-installer-skin.php:248
+msgctxt "theme"
+msgid "Current"
+msgstr "Nuværende"
+
 #: wp-admin/privacy-policy-guide.php:86
 msgid "Policies"
 msgstr "Politikker"
+
+#. translators: %s: WordPress version.
+#: wp-admin/update-core.php:80
+msgid "Re-install version %s"
+msgstr "Geninstaller version %s"
 
 #: wp-admin/includes/revision.php:96
 msgid "Added"
@@ -1097,6 +1128,11 @@ msgstr "Den overførte fil er udløbet. Gå venligst tilbage og overfør filen i
 #: wp-admin/includes/class-theme-installer-skin.php:359
 msgid "Cancel and go back"
 msgstr "Annuller og gå tilbage"
+
+#: wp-admin/includes/class-theme-installer-skin.php:348
+msgctxt "theme"
+msgid "Replace current with uploaded"
+msgstr "Erstat nuværende med uploaded"
 
 #. translators: %s: Documentation URL.
 #: wp-admin/includes/class-theme-installer-skin.php:336
@@ -12501,6 +12537,10 @@ msgstr "Opdater temaer"
 #: wp-admin/network/site-themes.php:179 wp-admin/network/site-users.php:224
 msgid "Visit"
 msgstr "Besøg"
+
+#: wp-admin/includes/revision.php:95
+msgid "Removed"
+msgstr "Fjernet"
 
 #: wp-admin/ms-delete-site.php:13 wp-admin/my-sites.php:13
 #: wp-admin/network/admin.php:17

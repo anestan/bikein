@@ -220,7 +220,17 @@ class WC_QuickPay_API_Transaction extends WC_QuickPay_API {
 			throw new QuickPay_API_Exception( 'No API payment resource data available.', 0 );
 		}
 
-		return $this->resource_data->metadata->brand;
+		if ( ! empty( $this->resource_data->metadata->brand ) ) {
+			return $this->resource_data->metadata->brand;
+		}
+
+		if ( ! empty( $this->resource_data->variables->payment_method ) ) {
+			return str_replace( 'quickpay_', '', $this->resource_data->variables->payment_method );
+		}
+
+		if ( ! empty( $this->resource_data->link->payment_methods ) ) {
+			return $this->resource_data->link->payment_methods;
+		}
 	}
 
 	/**

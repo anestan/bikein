@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-19 22:07:46+0000\n"
+"PO-Revision-Date: 2021-10-07 08:20:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -300,6 +300,12 @@ msgstr "Normal"
 msgctxt "Font size name"
 msgid "Small"
 msgstr "Lille"
+
+#: wp-includes/js/dist/block-library.js:29265
+#: wp-admin/includes/plugin-install.php:333
+#: wp-admin/includes/theme-install.php:103
+msgid "Keyword"
+msgstr "Nøgleord"
 
 #: wp-includes/block-patterns.php:44
 msgctxt "Block pattern category"
@@ -1037,6 +1043,50 @@ msgstr "Indlejr en simpel lydafspiller."
 msgctxt "block description"
 msgid "Display a monthly archive of your posts."
 msgstr "Vis et månedligt arkiv over dine indlæg."
+
+#. translators: %s: Name of the block's parent.
+#. translators: %s: Link name.
+#. translators: %s: Attachment title.
+#. translators: %s: Plugin name.
+#. translators: %s: Post title.
+#. translators: %s: Taxonomy term name.
+#. translators: %s: User login.
+#. translators: %s: Theme name.
+#. translators: %s: Site URL.
+#: wp-includes/js/dist/block-editor.js:26002
+#: wp-admin/includes/class-wp-links-list-table.php:177
+#: wp-admin/includes/class-wp-media-list-table.php:395
+#: wp-admin/includes/class-wp-plugins-list-table.php:961
+#: wp-admin/includes/class-wp-posts-list-table.php:995
+#: wp-admin/includes/class-wp-terms-list-table.php:377
+#: wp-admin/includes/class-wp-users-list-table.php:504
+#: wp-admin/update-core.php:568 wp-admin/update-core.php:742
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:409
+#: wp-admin/includes/class-wp-ms-users-list-table.php:241
+msgid "Select %s"
+msgstr "Vælg %s"
+
+#: wp-login.php:845
+msgid "<strong>Error</strong>: The passwords do not match."
+msgstr "<strong>Fejl</strong>: Adgangskoderne er ikke ens. "
+
+#: wp-includes/widgets/class-wp-widget-block.php:205
+msgid "Block HTML:"
+msgstr "Blok HTML:"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:386
+msgid "Class name"
+msgstr "Class navn"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php:254
+msgid "Inactive widgets"
+msgstr "Inaktive widgets"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php:224
+#: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:167
+#: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:432
+msgid "Sorry, you are not allowed to manage widgets on this site."
+msgstr "Beklager, du har ikke tilladelse til at håndtere widgets på dette websted."
 
 #: wp-includes/blocks/latest-posts.php:139
 #: wp-includes/blocks/latest-posts.php:154

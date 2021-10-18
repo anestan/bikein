@@ -5,7 +5,7 @@
   padding: 5em;
   @include flexbox;
   justify-content: space-between;
-  background-color: $light-gray;
+  background-color: $white;
   margin-bottom: 2%;
 
   .term-description {
@@ -46,6 +46,7 @@ ul.products {
     margin: 0 !important;
 
     .woocommerce-loop-product__link {
+      background-color: $white;
       height: 100%;
       padding: 2em 1em;
       display: flex;
@@ -275,14 +276,14 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     border-radius: 20px;
 
     &::-moz-progress-bar {
-      background: $blue;
+      background: $yellow;
       border-radius: 20px;
     }
     &::-webkit-progress-bar {
       background: transparent;
     }
     &::-webkit-progress-value {
-      background: $blue;
+      background: $yellow;
       border-radius: 20px;
     }
   }
