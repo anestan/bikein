@@ -37,35 +37,56 @@ function change_cross_sells_product_number( $columns ) {
    return 2;
 }
 
-//AJAX add to cart PHP
-add_action('wp_ajax_woocommerce_ajax_add_to_cart', 'woocommerce_ajax_add_to_cart');
-add_action('wp_ajax_nopriv_woocommerce_ajax_add_to_cart', 'woocommerce_ajax_add_to_cart');
 
-function woocommerce_ajax_add_to_cart() {
 
-    $product_id = apply_filters('woocommerce_add_to_cart_product_id', absint($_POST['product_id']));
-    $quantity = empty($_POST['quantity']) ? 1 : wc_stock_amount($_POST['quantity']);
-    $variation_id = absint($_POST['variation_id']);
-    $passed_validation = apply_filters('woocommerce_add_to_cart_validation', true, $product_id, $quantity);
-    $product_status = get_post_status($product_id);
+/* Add to cart - Ajax */
+function custom_add_to_cart_handler() {
+    if( isset($_POST['product_id']) && isset($_POST['form_data']) ) {
+        $product_id = $_POST['product_id'];
 
-    if ($passed_validation && WC()->cart->add_to_cart($product_id, $quantity, $variation_id) && 'publish' === $product_status) {
+        $variation = $cart_item_data = $custom_data = array(); // Initializing
+        $variation_id = 0; // Initializing
 
-        do_action('woocommerce_ajax_added_to_cart', $product_id);
-
-        if ('yes' === get_option('woocommerce_cart_redirect_after_add')) {
-            wc_add_to_cart_message(array($product_id => $quantity), true);
+        foreach( $_POST['form_data'] as $values ) {
+            if ( strpos( $values['name'], 'attributes_' ) !== false ) {
+                $variation[$values['name']] = $values['value'];
+            } elseif ( $values['name'] === 'quantity' ) {
+                $quantity = $values['value'];
+            } elseif ( $values['name'] === 'variation_id' ) {
+                $variation_id = $values['value'];
+            } elseif ( $values['name'] !== 'add_to_cart' ) {
+                $custom_data[$values['name']] = esc_attr($values['value']);
+            }
         }
 
-        WC_AJAX :: get_refreshed_fragments();
-    } else {
+        $product = wc_get_product( $variation_id ? $variation_id : $product_id );
 
-        $data = array(
-            'error' => true,
-            'product_url' => apply_filters('woocommerce_cart_redirect_after_error', get_permalink($product_id), $product_id));
+        // Allow product custom fields to be added as custom cart item data from $custom_data additional array variable
+        $cart_item_data = (array) apply_filters( 'woocommerce_add_cart_item_data', $cart_item_data, $product_id, $variation_id, $quantity, $custom_data );
 
-        echo wp_send_json($data);
+        // Add to cart
+        $cart_item_key = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation, $cart_item_data );
+
+        $items = WC()->cart->get_cart();
+        global $woocommerce;
+        $item_count = $woocommerce->cart->cart_contents_count;
+
+        if ( $cart_item_key ) {
+          echo '<span class="cart_total_items">' . $item_count . '</span>';
+          $cart_updated = require_once( get_stylesheet_directory() . '/inc/woocommerce/cart-preview-updated.php');
+        }
+        else {
+          $data = array(
+            'error'       => true,
+            'product_url' => apply_filters( 'woocommerce_cart_redirect_after_error', get_permalink( $product_id ), $product_id )
+        );
+
+          wp_send_json( $data );
+        }
+
+        wp_die();
     }
-
-    wp_die();
 }
+
+add_action( 'wc_ajax_custom_add_to_cart', 'custom_add_to_cart_handler' );
+add_action( 'wc_ajax_nopriv_custom_add_to_cart', 'custom_add_to_cart_handler' );

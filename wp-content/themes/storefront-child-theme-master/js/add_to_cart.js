@@ -1,46 +1,49 @@
 jQuery(function($) {
 
-  //AJAX add to cart function
-$('.single_add_to_cart_button').on('click', function(e){
-  e.preventDefault();
-  $thisbutton = $(this),
-              $form = $thisbutton.closest('form.cart'),
-              id = $thisbutton.val(),
-              product_qty = $form.find('input[name=quantity]').val() || 1,
-              product_id = $form.find('input[name=product_id]').val() || id,
-              variation_id = $form.find('input[name=variation_id]').val() || 0;
-  var data = {
-          action: 'ql_woocommerce_ajax_add_to_cart',
-          product_id: product_id,
-          product_sku: '',
-          quantity: product_qty,
-          variation_id: variation_id,
-      };
+    $('form.cart').on('submit', function(e) {
+        e.preventDefault();
 
-    $(document.body).trigger('adding_to_cart', [$thisbutton, data]);
+        var form   = $(this),
+            mainId = form.find('.single_add_to_cart_button').val(),
+            fData  = form.serializeArray();
 
+        if ( mainId === '' ) {
+            mainId = form.find('input[name="product_id"]').val();
+        }
+
+        if ( typeof wc_add_to_cart_params === 'undefined' )
+            return false;
 
         $.ajax({
-            type: 'post',
-            url: wc_add_to_cart_params.ajax_url,
-            data: data,
-            beforeSend: function (response) {
-                $thisbutton.removeClass('added').addClass('loading');
-            },
-            complete: function (response) {
-                $thisbutton.addClass('added').removeClass('loading');
+            type: 'POST',
+            url: wc_add_to_cart_params.wc_ajax_url.toString().replace( '%%endpoint%%', 'custom_add_to_cart' ),
+            data : {
+                'product_id': mainId,
+                'form_data' : fData
             },
             success: function (response) {
+                var cart_url = wc_add_to_cart_params.cart_url;
+                $(document.body).trigger("wc_fragment_refresh");
+                // Replace woocommerce add to cart notice
+                $('.woocommerce-notices-wrapper').replaceWith('<div class="woocommerce-message" role="alert">Produktet blevet tilføjet til din kurv.<a class="button wc-forward" href="' + cart_url + '"> Se kurv</a></div>');
+                $('input[name="quantity"]').val(1);
+                console.log
+                
+                // Replace header cart dropdown
+                $('.cart-dropdown-inner').replaceWith(response);
+                $('#cart-preview').slideDown(300).delay(2000).slideUp(500);
 
-                if (response.error && response.product_url) {
-                    window.location = response.product_url;
-                    return;
-                } else {
-                    $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, $thisbutton]);
-                }
+                // Update cart total items
+                var cart_total_items = $('.cart_total_items').html();
+                $('.cart-product-amount').html(cart_total_items);
+
+                form.unblock();                  
             },
+            error: function (error) {
+                form.unblock();
+                // console.log(error);
+            }
         });
+    });
 
-        return false;
-   });
 });
