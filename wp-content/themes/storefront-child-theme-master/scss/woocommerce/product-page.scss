@@ -130,10 +130,12 @@
     }
   }
 
+  // Tabs
+
   .tabs {
     li {
       &.active {
-        background-color: $light-gray;
+        background-color: $white;
         transition: all 0.2s ease;
         font-weight: $font-weight-normal-bold;
       }
@@ -143,6 +145,11 @@
       }
     }
   }
+
+  .woocommerce-Tabs-panel table:not( .has-background ) th {
+    background-color: $white;
+  }
+
 }
 
 

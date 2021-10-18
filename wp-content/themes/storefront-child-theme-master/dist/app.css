@@ -1078,12 +1078,15 @@ body.mm-ocd-opened {
     text-align: left; }
 
 #main .tabs li.active {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   transition: all 0.2s ease;
   font-weight: 500; }
 
 #main .tabs li a {
   padding: 1em; }
+
+#main .woocommerce-Tabs-panel table:not(.has-background) th {
+  background-color: #ffffff; }
 
 /* Styling for select button */
 /* adds style to divs */
