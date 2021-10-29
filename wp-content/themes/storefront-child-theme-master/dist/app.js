@@ -127,7 +127,7 @@ eval("// Hide cart form on Cart page\njQuery(function($){\n\n\tjQuery( document.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("jQuery(function($){\n  var timeout;\n     //Show and hide cart preview on hover\n     $(\".header-cart, #cart-preview\").hover(function(){\n         clearTimeout(timeout);\n         $('#cart-preview').slideDown(300);\n     },function(){\n       timeout = setTimeout(function () {\n         $('#cart-preview').hide();\n       }, 600);\n     });\n });\n \n \n\n//# sourceURL=webpack:///./js/cart_preview.js?");
+eval("jQuery(function($){\n var timeout;\n\n    if (!$('body').hasClass('woocommerce-checkout') &&\n        !$('body').hasClass('woocommerce-cart')) {\n\n      //Show and hide cart preview on hover\n      $(\".header-cart, #cart-preview\").hover(function(){\n          clearTimeout(timeout);\n          $('#cart-preview').slideDown(300);\n      },function(){\n        timeout = setTimeout(function () {\n          $('#cart-preview').hide();\n        }, 600);\n      });\n    }\n});\n\n\n//# sourceURL=webpack:///./js/cart_preview.js?");
 
 /***/ }),
 
