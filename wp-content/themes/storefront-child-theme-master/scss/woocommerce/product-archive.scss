@@ -201,7 +201,7 @@ span.select2.select2-container.select2-container--default * {
   }
 }
 body .select2-container--default .select2-results__option--highlighted[aria-selected], body .select2-container--default .select2-results__option--highlighted[data-selected] {
-     background-color: $yellow;
+     background-color: $secondary;
 }
 //archive top widgets end
 
@@ -217,7 +217,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     color: $gray;
   }
   .chosen:before {
-    color: $blue;
+    color: $primary;
     opacity: 1;
   }
 }
@@ -238,7 +238,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
   &.cat-item.current-cat::before {
     content: "\f054";
     font-family: Font Awesome\ 5 Free;
-    color: $blue;
+    color: $primary;
     opacity: 1;
   }
   &.cat-item::before {
@@ -276,14 +276,14 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     border-radius: 20px;
 
     &::-moz-progress-bar {
-      background: $yellow;
+      background: $secondary;
       border-radius: 20px;
     }
     &::-webkit-progress-bar {
       background: transparent;
     }
     &::-webkit-progress-value {
-      background: $yellow;
+      background: $secondary;
       border-radius: 20px;
     }
   }

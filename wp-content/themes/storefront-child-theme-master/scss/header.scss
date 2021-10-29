@@ -3,7 +3,7 @@
 #masthead {
     position: sticky;
     z-index: 999;
-    background-color: $blue;
+    background-color: $primary;
     transition: 0.3s all;
 
     .header-wrapper {
@@ -33,7 +33,7 @@
 
         ul.menu {
           li.current-menu-item>a, a:hover {
-            color: $yellow;
+            color: $secondary;
           }
           li a {
             padding: 1em 2em;
@@ -56,7 +56,7 @@
               padding: 1px;
               width: 17px;
               background: $white;
-              color: $blue;
+              color: $primary;
               font-size: 11px;
               line-height: 14px;
               min-width: 13px;
@@ -74,7 +74,7 @@
               font-size: $h4-font-size;
               color: $white;
               &:hover {
-                color: $yellow;
+                color: $secondary;
               }
             }
           }

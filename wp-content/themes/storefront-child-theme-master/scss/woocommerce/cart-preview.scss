@@ -2,7 +2,7 @@
     display: none;
     width: 350px;
     position: absolute;
-    right: 4%;
+    right: 2%;
     top: 100%;
     z-index: 999;
     border: 1px solid $gray;
@@ -85,20 +85,41 @@
     @include flexbox;
     justify-content: space-between;
     padding: 1em;
+    flex-wrap: wrap;
 
     .amount bdi {
       @include flexbox;
     }
+
+    div {
+      width: 100%;
+      @include flexbox;
+      justify-content: space-between;
+    }
   }
   .preview-cart-btn {
-    margin: 0 1em 1em 1em;
+    width: 100%;
+    margin-top: 1em;
     padding: 0.5em;
     display: block;
     text-align: center;
-    background-color: $yellow;
-    color: $white;
+    background-color: $secondary;
+    color: $primary;
     border-radius: $global-radius;
     &:hover {
-      background-color: $yellow-hover;
+      background-color: $primary;
+      color: $secondary;
     }
+}
+
+.cart-preview-empty {
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1024px)  {
+
+  #cart-preview, #cart-preview-updated {
+    display: none !important;
+  }
+
 }
