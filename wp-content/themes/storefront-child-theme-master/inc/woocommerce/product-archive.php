@@ -106,9 +106,9 @@ function move_storefront_breadcrumbs() {
 }
 add_action( 'wp', 'move_storefront_breadcrumbs');
 
-//rearrange archive product thumbnail
-function archive_product_layout() {
-  remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
-  add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 5 );
+/* Change h2 to h5 in product title */ 
+function wps_change_products_title() {
+  echo '<p class="woocommerce-loop-product__title">'. get_the_title() . '</p>';
 }
-add_action( 'wp', 'archive_product_layout' );
+remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
+add_action('woocommerce_before_shop_loop_item_title', 'wps_change_products_title', 5);
