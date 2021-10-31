@@ -2,10 +2,15 @@
 #menu {
   background-color: $white;
 
+  &.mm-spn a {
+    color: $primary;
+  }
+
   .mm-spn.mm-spn--navbar.mm-spn--main:after {
     opacity: 1;
     color: $primary;
   }
+
 }
 .woocommerce-page {
   #content {
@@ -27,18 +32,24 @@
 }
 .header-mobile {
   display: block;
+
+  i {
+    transform: scale(2);
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
 }
 
-.header-mobile i {
-  transform: scale(2);
-  margin-right: 20px;
-  margin-left: 20px;
-  transition: all 0.3s ease;
-}
-
-.header-mobile i:active {
-  transform: scale(1.2);
-}
 
 .selling-points {
   flex: unset;
