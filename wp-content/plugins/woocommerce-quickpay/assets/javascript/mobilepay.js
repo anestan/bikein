@@ -167,7 +167,8 @@
 		forceCheckout(e) {
 			e.preventDefault();
 			var $form = $('form.checkout');
-			$form.find('[name="payment_method"][value="mobilepay_checkout"]').prop('checked', true).change();
+			$form.find('[name="payment_method"][value="mobilepay_checkout"]').prop('checked', true);
+			$form.find('[name="payment_method"]').change();
 			WCQP_MPCheckout.tickTerms();
 			$form.submit();
 		},

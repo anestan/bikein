@@ -260,6 +260,8 @@ hr {
   /* Header Tablet */
   #menu {
     background-color: #ffffff; }
+    #menu.mm-spn a {
+      color: #121144; }
     #menu .mm-spn.mm-spn--navbar.mm-spn--main:after {
       opacity: 1;
       color: #121144; }
@@ -276,13 +278,15 @@ hr {
     display: flex; }
   .header-mobile {
     display: block; }
-  .header-mobile i {
-    transform: scale(2);
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: all 0.3s ease; }
-  .header-mobile i:active {
-    transform: scale(1.2); }
+    .header-mobile i {
+      transform: scale(2);
+      margin-right: 20px;
+      margin-left: 20px;
+      transition: all 0.3s ease; }
+      .header-mobile i:active {
+        transform: scale(1.2); }
+    .header-mobile a {
+      color: #ffffff; }
   .selling-points {
     flex: unset; }
     .selling-points .topbar-selling-point {
@@ -450,6 +454,7 @@ hr {
       #masthead .header-wrapper .header-mobile i:active {
         transform: scale(1.6); }
     #masthead .header-wrapper .header-mobile a {
+      color: #ffffff;
       line-height: 0; } }
 
 @media only screen and (max-width: 767px) {

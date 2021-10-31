@@ -1,4 +1,4 @@
-/*! elementor - v3.4.5 - 12-10-2021 */
+/*! elementor - v3.4.6 - 19-10-2021 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["preloaded-modules"],{
 
 /***/ "../assets/dev/js/frontend/handlers/accordion.js":
@@ -334,16 +334,22 @@ class Counter extends elementorModules.frontend.handlers.Base {
 
   onInit() {
     super.onInit();
-    elementorFrontend.waypoint(this.elements.$counterNumber, () => {
-      const data = this.elements.$counterNumber.data(),
-            decimalDigits = data.toValue.toString().match(/\.(.*)/);
+    this.intersectionObserver = elementorModules.utils.Scroll.scrollObserver({
+      callback: event => {
+        if (event.isInViewport) {
+          this.intersectionObserver.unobserve(this.elements.$counterNumber[0]);
+          const data = this.elements.$counterNumber.data(),
+                decimalDigits = data.toValue.toString().match(/\.(.*)/);
 
-      if (decimalDigits) {
-        data.rounding = decimalDigits[1].length;
+          if (decimalDigits) {
+            data.rounding = decimalDigits[1].length;
+          }
+
+          this.elements.$counterNumber.numerator(data);
+        }
       }
-
-      this.elements.$counterNumber.numerator(data);
     });
+    this.intersectionObserver.observe(this.elements.$counterNumber[0]);
   }
 
 }
