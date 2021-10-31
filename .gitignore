@@ -1,3 +1,6 @@
 # Ignore everything in the root except the "wp-content" directory.
 *.log
 wp-config.php
+
+#Ignore all DS_Store files
+**/.DS_Store
