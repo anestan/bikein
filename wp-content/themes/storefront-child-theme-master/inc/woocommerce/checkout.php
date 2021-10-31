@@ -66,7 +66,7 @@ add_action( 'woocommerce_checkout_shipping', 'display_payments_under_shipping', 
 
 /* Moving coupon below shipping  */
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
-add_action( 'woocommerce_review_order_before_payment', 'woocommerce_checkout_coupon_form',  );
+add_action( 'woocommerce_review_order_before_payment', 'woocommerce_checkout_coupon_form', 10 );
 
 /* Remove shipping title on checkout */
 add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );

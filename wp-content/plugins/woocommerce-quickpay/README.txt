@@ -27,6 +27,9 @@ General:
 3. If WooCommerce Subscriptions is used, the required minimum version is >= 2.0
 
 == Changelog ==
+= 6.4.2 =
+* Fix: Modify force checkout logic used for MobilePay Checkout to enhance theme support.
+
 = 6.4.1 =
 * Fix: WC_QuickPay_API_Transaction::get_brand removes prefixed quickpay_ when fallback to variables.
 * Fix: Refund now supports location header to avoid wrong response messages when capturing Klarna and Anyday payments.
