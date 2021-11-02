@@ -52,9 +52,9 @@ $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.250;
 $h6-font-size: $font-size-base * 1.125;
 
-$font-family-sans-serif:      "Work Sans", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      "Noto Sans", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-base:            $font-family-sans-serif;
-
+$font-family-title:           "Roboto", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 html, body, button, input, textarea {
   font-family: $font-family-base;
@@ -65,7 +65,7 @@ html, body, button, input, textarea {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  font-family: $font-family-base;
+  font-family: $font-family-title;
 }
 
 
