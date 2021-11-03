@@ -1846,6 +1846,26 @@ form.checkout, form.woocommerce-cart-form {
   #cart-preview, #cart-preview-updated {
     display: none !important; } }
 
+.elementor-products-grid ul.products.elementor-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .elementor-products-grid ul.products.elementor-grid li.product a.woocommerce-loop-product__link {
+    display: flex;
+    align-items: center; }
+
+/* Responsive - Mobile */
+@media only screen and (max-width: 767px) {
+  .elementor-products-grid ul.products {
+    grid-template-columns: 1fr; } }
+
+/* Responsive - Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .elementor-products-grid ul.products {
+    grid-template-columns: 1fr 1fr 1fr; }
+    .elementor-products-grid ul.products li:last-of-type {
+      display: none; }
+  .elementor-element ul.products li.product .badge-wrapper {
+    width: 100%; } }
+
 /*
 .site, #page {
   background-color: $primary-color;
