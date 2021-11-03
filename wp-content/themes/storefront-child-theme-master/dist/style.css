@@ -1846,9 +1846,9 @@ form.checkout, form.woocommerce-cart-form {
   #cart-preview, #cart-preview-updated {
     display: none !important; } }
 
-.elementor-products-grid ul.products {
+.elementor-products-grid ul.products.elementor-grid {
   grid-template-columns: 1fr 1fr 1fr 1fr; }
-  .elementor-products-grid ul.products li.product a.woocommerce-loop-product__link {
+  .elementor-products-grid ul.products.elementor-grid li.product a.woocommerce-loop-product__link {
     display: flex;
     align-items: center; }
 

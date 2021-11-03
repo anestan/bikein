@@ -1,6 +1,6 @@
 //Fix product grid display on elementor pages
 .elementor-products-grid {
-  ul.products {
+  ul.products.elementor-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     li.product {
       a.woocommerce-loop-product__link {
