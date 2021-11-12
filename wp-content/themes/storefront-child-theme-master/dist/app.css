@@ -112,6 +112,8 @@ hr {
         letter-spacing: 0.25em;
         width: fit-content;
         font-family: "Roboto", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+      #masthead .header-wrapper .navigation-header-content ul.menu li ul li a {
+        min-width: 250px; }
       #masthead .header-wrapper .navigation-header-content ul.menu .sub-menu {
         transition: none; }
     #masthead .header-wrapper .header-cart-wrapper {

@@ -37,12 +37,18 @@
           li.current-menu-item>a, a:hover {
             color: $secondary;
           }
-          li a {
-            padding: 1em 2em;
-            text-transform: uppercase;
-            letter-spacing: 0.25em;
-            width: fit-content;
-            font-family: $font-family-title;
+          li {
+            a {
+              padding: 1em 2em;
+              text-transform: uppercase;
+              letter-spacing: 0.25em;
+              width: fit-content;
+              font-family: $font-family-title;
+            }
+
+            ul li a {
+              min-width: 250px;
+            }
           }
 
           .sub-menu {
