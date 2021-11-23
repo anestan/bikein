@@ -55,6 +55,7 @@ ul.products {
       align-items: center;
       position: relative;
       @include box-style;
+      white-space: nowrap;
 
       .price {
         @include flexbox;
@@ -92,6 +93,9 @@ ul.products {
 
     .woocommerce-loop-product__title {
       margin: .6em 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 300px;
     }
 
     //product badge
@@ -289,6 +293,8 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
   }
   .woocommerce-result-count {
     margin-top: 1em;
+    float: none;
+    position: absolute;
   }
 
 
