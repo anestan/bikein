@@ -38,6 +38,7 @@ require_once( get_stylesheet_directory() . '/inc/woocommerce/extra-description.p
 require_once( get_stylesheet_directory() . '/inc/woocommerce/loadmore.php');
 require_once( get_stylesheet_directory() . '/inc/woocommerce/product-archive.php');
 require_once( get_stylesheet_directory() . '/inc/woocommerce/product.php');
+require_once( get_stylesheet_directory() . '/inc/woocommerce/ean-field.php');
 
 
 // Add custom style and javascript
