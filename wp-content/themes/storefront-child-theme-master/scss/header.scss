@@ -28,10 +28,11 @@
       }
 
       .navigation-header-content{
-        margin-left: auto;
+        margin-left: 1em;
         margin-right: 1em;
         @include flexbox;
-
+        justify-content: flex-end;
+        width: 100%;
 
 
         ul.menu {
