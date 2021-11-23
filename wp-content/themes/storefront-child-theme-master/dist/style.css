@@ -118,7 +118,6 @@ hr {
       #masthead .header-wrapper .navigation-header-content ul.menu .sub-menu {
         transition: none; }
     #masthead .header-wrapper .header-cart-wrapper {
-      flex: 1;
       display: flex;
       justify-content: flex-end; }
       #masthead .header-wrapper .header-cart-wrapper .header-cart {
