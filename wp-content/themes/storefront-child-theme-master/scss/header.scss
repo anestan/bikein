@@ -10,6 +10,7 @@
       @include flexbox;
       justify-content: space-between;
       padding: 1em 0;
+      position: relative;
 
       .image-logo {
         margin-right: 5em;
