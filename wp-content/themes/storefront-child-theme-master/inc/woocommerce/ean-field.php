@@ -30,7 +30,7 @@ function  woo_save_simple_product_custom_ean_field( $post_id ) {
 	// Save EAN Field
 	$gtin_field = $_POST['_gtin'];
 	if ( ! empty( $gtin_field ) ) {
-		update_post_meta( $post_id, '_text_field', esc_attr( $gtin_field ) );
+		update_post_meta( $post_id, '_gtin', esc_attr( $gtin_field ) );
 	}
 }
 add_action( 'woocommerce_process_product_meta', 'woo_save_simple_product_custom_ean_field' );
@@ -49,6 +49,7 @@ function woo_add_product_variation_custom_ean_field( $loop, $variation_data, $va
 		array(
 			'id'          => 'hwp_var_gtin[' . $variation->ID . ']',
 			'label'       => __( 'EAN', 'woocommerce' ),
+			'placeholder' => 'EAN / Stregkode',
 			'desc_tip'    => true,
 			'description' => __( "Indtast EAN", "woocommerce" ),
 			'value' => get_post_meta( $variation->ID, 'hwp_var_gtin', true )
