@@ -21,6 +21,10 @@
         display: none;
       }
 
+      .header-search {
+        padding-right: 0;
+      }
+
       .header-mobile {
         @include flexbox;
         justify-content: flex-end;
