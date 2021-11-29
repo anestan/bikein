@@ -446,9 +446,7 @@ hr {
     width: 30%; }
     #masthead .header-wrapper .image-logo img {
       max-height: 80px; }
-  #masthead .header-wrapper .header-search,
-  #masthead .header-wrapper .navigation-header-content,
-  #masthead .header-wrapper .header-cart-wrapper {
+  #masthead .header-wrapper .navigation-header-content {
     display: none; }
   #masthead .header-wrapper .header-mobile {
     display: flex;
