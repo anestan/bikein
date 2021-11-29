@@ -70,6 +70,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</div> <!-- End navigation header -->
 
+					<!-- Search -->
+			    <div class="header-search">
+			      <?php echo do_shortcode('[fibosearch]'); ?>
+			    </div>
+
 			     <!-- Cart -->
 					<div class="header-cart-wrapper">
 						<a class="header-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
