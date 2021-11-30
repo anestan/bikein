@@ -25,9 +25,11 @@
 
   #archive-top-filters {
     margin-bottom: 2%;
+    grid-template-columns: repeat(4, 1fr);
 
     .widget_custom_html {
       display: block;
+      grid-column: 1 / -1;
     }
 
     .widget_product_categories {
@@ -35,6 +37,7 @@
       display: none;
       justify-content: flex-start;
       flex-wrap: wrap;
+      grid-column: 1 / -1;
 
       .product-categories {
         display: flex;

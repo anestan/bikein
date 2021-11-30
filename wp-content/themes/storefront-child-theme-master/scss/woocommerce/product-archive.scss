@@ -170,19 +170,17 @@ span.select2.select2-container.select2-container--default * {
 }
 
 .filter-wrapper {
-  @include flexbox;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
 
   .widget_product_categories, .widget_custom_html {
     display: none;
   }
 
   .widget {
-    width: 24%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
+    width: 100%;
+    margin: 0;
 
     &.widget_custom_html {
       width: 100%;
