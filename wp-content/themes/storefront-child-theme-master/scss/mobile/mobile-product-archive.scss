@@ -57,12 +57,7 @@
   #main.site-main {
     #archive-top-filters.filter-wrapper {
       display: none;
-      flex-wrap: wrap;
-
-      .widget {
-        width: 49%;
-        margin: 0 0 3% 0;
-      }
+      grid-template-columns: 1fr 1fr;
 
       div.widget_custom_html {
         display: none;
