@@ -93,6 +93,9 @@
           .badge-wrapper {
             font-size: $font-size-xtra-small;
           }
+          .woocommerce-loop-product__title {
+            max-width: 120px;
+          }          
         }
       }
     }
