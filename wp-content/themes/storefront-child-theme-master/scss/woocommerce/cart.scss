@@ -11,7 +11,7 @@
   #cart-overview {
     width: 100%;
   }
-  
+
 /* Col for cart */
   .col-cart-one {
     float: left;
@@ -305,6 +305,9 @@ form.checkout, form.woocommerce-cart-form {
 .woocommerce-message, .woocommerce-info {
   color: $green;
   &::before {
+    color: $green;
+  }
+  a.restore-item {
     color: $green;
   }
 }

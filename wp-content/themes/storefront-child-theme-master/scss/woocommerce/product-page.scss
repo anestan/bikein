@@ -182,3 +182,21 @@
     border-color: $primary;
   }
 }
+
+.product-template-default .woocommerce-message {
+  @include flexbox;
+  flex-direction: row-reverse;
+  &::before {
+    top: auto;
+  }
+
+  a.button.wc-forward {
+    background-color: $green;
+    padding: 8px 16px;
+    border-radius: $global-radius;
+    margin-right: 1em;
+    &:hover {
+      background-color: $green-hover;
+    }
+  }
+}
