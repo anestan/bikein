@@ -40,7 +40,6 @@ require_once( get_stylesheet_directory() . '/inc/woocommerce/product-archive.php
 require_once( get_stylesheet_directory() . '/inc/woocommerce/product.php');
 require_once( get_stylesheet_directory() . '/inc/woocommerce/ean-field.php');
 
-
 // Add custom style and javascript
 function mytheme_enqueue_style() {
     wp_enqueue_script( 'myscript', get_stylesheet_directory_uri() . '/dist/app.js');

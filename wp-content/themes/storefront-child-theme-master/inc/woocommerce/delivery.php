@@ -36,26 +36,34 @@ function wooelements_filter_shipping_methods( $rates, $package ) {
         }
 	}
 
-	// Go through all products and check their category
-	if ( $economy_shipping_method_key !== FALSE ) {
-		$bike_appliances_found = FALSE;
-		foreach ( $package['contents'] as $key => $item ) {
-			$categories = get_the_terms( $item['product_id'], 'product_cat' );
-
-			if ( $categories && ! is_wp_error( $categories ) && is_array( $categories ) ) {
-				foreach ( $categories as $category ) {
-					if ( "Cykler" === $category->name  ) {
-						$bike_appliances_found = TRUE;
-					}
-				}
-			}
-		}
-
-		// Bike appliances has been found, disable GLS shipping
-		if ( $bike_appliances_found === TRUE ) {
-          unset( $rates[$economy_shipping_method_key] );
-		}
-	}
-
 	return $rates;
 }
+
+
+
+/* Hide shipping based on category */
+function product_category_hide_shipping_methods( $rates, $package ){
+
+    // HERE set your product categories in the array (IDs, slugs or names)
+    $categories = array( 'cykler');
+    $found = false;
+
+    // Loop through each cart item Checking for the defined product categories
+    foreach( $package['contents'] as $cart_item ) {
+        if ( has_term( $categories, 'product_cat', $cart_item['product_id'] ) ){
+            $found = true;
+            break;
+        }
+    }
+
+    $rates_arr = array();
+    if ( $found ) {
+        foreach($rates as $rate_id => $rate) { 
+            if ('local_pickup' === $rate->method_id) {
+                $rates_arr[ $rate_id ] = $rate;
+            }
+        }
+    }
+    return !empty( $rates_arr ) ? $rates_arr : $rates;
+}
+add_filter( 'woocommerce_package_rates', 'product_category_hide_shipping_methods', 90, 2 );
