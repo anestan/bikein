@@ -596,6 +596,8 @@ hr {
           width: auto;
           max-height: 125px;
           margin: 0.5em 0; }
+  .product-template-default .woocommerce-message {
+    font-size: 0.75rem; }
   .woocommerce-cart .woocommerce-cart-form .col-cart-one, .woocommerce-cart .woocommerce-cart-form .col-cart-two, .woocommerce-cart .woocommerce-cart-form .col2-set, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper, .woocommerce-cart .woocommerce-checkout .col-cart-one, .woocommerce-cart .woocommerce-checkout .col-cart-two, .woocommerce-cart .woocommerce-checkout .col2-set, .woocommerce-cart .woocommerce-checkout .order-review-wrapper, .woocommerce-checkout .woocommerce-cart-form .col-cart-one, .woocommerce-checkout .woocommerce-cart-form .col-cart-two, .woocommerce-checkout .woocommerce-cart-form .col2-set, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper, .woocommerce-checkout .woocommerce-checkout .col-cart-one, .woocommerce-checkout .woocommerce-checkout .col-cart-two, .woocommerce-checkout .woocommerce-checkout .col2-set, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper {
     width: 100%;
     padding: 1.5em; }
@@ -1135,6 +1137,20 @@ body.mm-ocd-opened {
     color: #ffffff;
     border-color: #121144; }
 
+.product-template-default .woocommerce-message {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .product-template-default .woocommerce-message::before {
+    top: auto; }
+  .product-template-default .woocommerce-message a.button.wc-forward {
+    background-color: rgba(66, 162, 27, 0.73);
+    padding: 8px 16px;
+    border-radius: 3px;
+    margin-right: 1em; }
+    .product-template-default .woocommerce-message a.button.wc-forward:hover {
+      background-color: rgba(66, 162, 27, 0.9); }
+
 /* Product archive */
 .woocommerce-products-header {
   padding: 5em;
@@ -1536,6 +1552,8 @@ form.checkout, form.woocommerce-cart-form {
 .woocommerce-message, .woocommerce-info {
   color: rgba(66, 162, 27, 0.73); }
   .woocommerce-message::before, .woocommerce-info::before {
+    color: rgba(66, 162, 27, 0.73); }
+  .woocommerce-message a.restore-item, .woocommerce-info a.restore-item {
     color: rgba(66, 162, 27, 0.73); }
 
 .woocommerce-error {
