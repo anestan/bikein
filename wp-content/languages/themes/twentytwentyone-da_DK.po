@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-02 05:21:09+0000\n"
+"PO-Revision-Date: 2021-10-15 16:59:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -216,6 +216,11 @@ msgstr "&#8220;Læsning&#8221; af Berthe Morisot"
 msgid "&#8220;Self portrait&#8221; by Berthe Morisot"
 msgstr "&#8220;Selvportræt&#8221; af Berthe Morisot"
 
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:43
+msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
+msgstr "&#8220;Roses Trémières&#8221; af Berthe Morisot"
+
 #: inc/starter-content.php:112
 msgctxt "Theme starter content"
 msgid "Need help?"
@@ -298,6 +303,10 @@ msgstr "Ung kvinde i Mauve"
 #: inc/block-patterns.php:107
 msgid "In the Bois de Boulogne"
 msgstr "I Bois de Boulogne"
+
+#: inc/block-patterns.php:107
+msgid "Roses Trémières"
+msgstr "Roses Trémières"
 
 #: inc/block-patterns.php:96 inc/block-patterns.php:107
 msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
@@ -439,15 +448,6 @@ msgstr ", "
 msgid "Edit %s"
 msgstr "Rediger %s"
 
-#. translators: %s: Name of current post.
-#: inc/template-functions.php:138
-msgid "Continue reading %s"
-msgstr "Fortsæt læsning af %s"
-
-#: inc/block-styles.php:71
-msgid "Dividers"
-msgstr "Seperatorer"
-
 #: inc/block-patterns.php:116
 msgctxt "Block pattern description"
 msgid "A block with 3 columns that display contact information and social media links."
@@ -474,11 +474,6 @@ msgstr "En blokgruppe med overlappende kolonner, der indeholder to billeder og e
 #: inc/block-patterns.php:92
 msgid "Overlapping images and text"
 msgstr "Overlappende billeder og tekst"
-
-#: inc/block-patterns.php:83
-msgctxt "Block pattern description"
-msgid "A media & text block with a big image on the left and a smaller one with bordered frame on the right."
-msgstr "En medie - og tekstblok med et stort billede til venstre og et mindre med ramme til højre."
 
 #: inc/block-patterns.php:80
 msgid "Two images showcase"
@@ -518,18 +513,10 @@ msgstr "Instagram"
 msgid "Twitter"
 msgstr "Twitter"
 
-#: inc/block-patterns.php:48
-msgid "Let&#8217;s Connect."
-msgstr "Lad os holde forbindelsen."
-
 #: inc/block-patterns.php:47
 msgctxt "Block pattern description"
 msgid "A huge text followed by social networks and email address links."
 msgstr "En meget stor overskrift efterfulgt af links til sociale netværk og e-mailadresse."
-
-#: inc/block-patterns.php:44
-msgid "Links area"
-msgstr "Link område"
 
 #: inc/block-patterns.php:33
 msgid "Large text"
@@ -717,6 +704,33 @@ msgstr "Et nyt  portfolio standardtema til WordPress"
 #: footer.php:60
 msgid "Proudly powered by %s."
 msgstr "Kører på %s."
+
+#. translators: %s: Author name.
+#: template-parts/post/author-bio.php:31
+msgid "View all of %s's posts."
+msgstr "Vis alle indlæg af %s."
+
+#. translators: %s: Name of current post.
+#: inc/template-functions.php:138
+msgid "Continue reading %s"
+msgstr "Læs mere %s"
+
+#: inc/block-styles.php:71
+msgid "Dividers"
+msgstr "Separatorer"
+
+#: inc/block-patterns.php:83
+msgctxt "Block pattern description"
+msgid "A media & text block with a big image on the left and a smaller one with bordered frame on the right."
+msgstr "En medie- og tekstblok med et stort billede til venstre og et mindre med ramme til højre."
+
+#: inc/block-patterns.php:44
+msgid "Links area"
+msgstr "Linkområde"
+
+#: inc/block-patterns.php:48
+msgid "Let&#8217;s Connect."
+msgstr "Let&#8217;s Connect."
 
 #. Author URI of the theme
 #: footer.php:61
