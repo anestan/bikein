@@ -41,6 +41,13 @@
             i {
               font-size: $h5-font-size;
             }
+
+            .shipping-description {
+              font-size: 0.75rem;
+              color: #8F8F8F;
+              margin: 0 0 0 1em;
+            }
+
             .shipping_logo {
               width: 75px;
               border: 1px solid $lighter-gray;

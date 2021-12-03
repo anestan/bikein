@@ -1,4 +1,4 @@
-/*! elementor - v3.4.6 - 19-10-2021 */
+/*! elementor - v3.4.8 - 16-11-2021 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["preloaded-modules"],{
 
 /***/ "../assets/dev/js/frontend/handlers/accordion.js":
@@ -1760,7 +1760,7 @@ module.exports = elementorModules.ViewModule.extend({
       if ('youtube' === videoType) {
         this.prepareYTVideo(apiObject, videoID, $videoContainer, $videoWrapper, $playIcon);
       } else if ('vimeo' === videoType) {
-        this.prepareVimeoVideo(apiObject, videoID, $videoContainer, $videoWrapper, $playIcon);
+        this.prepareVimeoVideo(apiObject, videoURL, $videoContainer, $videoWrapper, $playIcon);
       }
     });
     $playIcon.addClass(classes.playing).removeClass(classes.hidden);
@@ -1796,10 +1796,10 @@ module.exports = elementorModules.ViewModule.extend({
       }
     });
   },
-  prepareVimeoVideo: function (Vimeo, videoId, $videoContainer, $videoWrapper, $playIcon) {
+  prepareVimeoVideo: function (Vimeo, videoURL, $videoContainer, $videoWrapper, $playIcon) {
     const classes = this.getSettings('classes'),
           vimeoOptions = {
-      id: videoId,
+      url: videoURL,
       autoplay: true,
       transparent: false,
       playsinline: false

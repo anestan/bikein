@@ -2,24 +2,281 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-14 09:21:11+0000\n"
+"PO-Revision-Date: 2021-12-03 14:25+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: Poedit 2.4.3\n"
 "Language: da_DK\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout-i2/inner-blocks/checkout-sample-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-totals-block/block.json
 msgctxt "block description"
-msgid "An example block showing how to integrate with Checkout i2."
-msgstr "En demoblok, der viser hvordan man integrere med Checkout i2."
+msgid "Column containing the checkout totals."
+msgstr "Kolonnen indeholder det totale betalingsbeløb."
 
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout-i2/inner-blocks/checkout-sample-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-totals-block/block.json
 msgctxt "block title"
-msgid "Checkout Sample Block"
-msgstr "Demoblok med siden Kasse"
+msgid "Checkout Totals"
+msgstr "Totale betalingsbeløb"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-terms-block/block.json
+msgctxt "block description"
+msgid "Ensure customers agree to your terms and conditions and privacy policy."
+msgstr "Du skal sikre dig, at kunder samtykker til dine betingelser og privatlivspolitikker."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-terms-block/block.json
+msgctxt "block title"
+msgid "Terms and Conditions"
+msgstr "Vilkår og betingelser"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-shipping-methods-block/block.json
+msgctxt "block description"
+msgid "Shipping options for your store."
+msgstr "Forsendelsesmuligheder for din webshop."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-shipping-methods-block/block.json
+msgctxt "block title"
+msgid "Shipping Options"
+msgstr "Forsendelsesmuligheder"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-shipping-address-block/block.json
+msgctxt "block description"
+msgid "Collect your customer's shipping address."
+msgstr "Indhent din kundes leveringsadresse."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-shipping-address-block/block.json
+msgctxt "block title"
+msgid "Shipping Address"
+msgstr "Leveringsadresse"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-payment-block/block.json
+msgctxt "block description"
+msgid "Payment options for your store."
+msgstr "Betalingsmuligheder for din webshop."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-payment-block/block.json
+msgctxt "block title"
+msgid "Payment Options"
+msgstr "Betalingsmuligheder"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-order-note-block/block.json
+msgctxt "block description"
+msgid "Allow customers to add a note to their order."
+msgstr "Tillad kunder at tilføje en note til deres ordre."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-order-note-block/block.json
+msgctxt "block title"
+msgid "Order Note"
+msgstr "Ordrenote"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-fields-block/block.json
+msgctxt "block description"
+msgid "Column containing checkout address fields."
+msgstr "Kolonne indeholder adressefelter på siden Kasse."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-fields-block/block.json
+msgctxt "block title"
+msgid "Checkout Fields"
+msgstr "Felter på siden Kasse"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-contact-information-block/block.json
+msgctxt "block description"
+msgid "Collect your customer's contact information."
+msgstr "Indhent din kundes kontaktinformation."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-contact-information-block/block.json
+msgctxt "block title"
+msgid "Contact Information"
+msgstr "Kontaktinformation"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-billing-address-block/block.json
+msgctxt "block description"
+msgid "Collect your customer's billing address."
+msgstr "Indhent din kundes faktureringsadresse."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-billing-address-block/block.json
+msgctxt "block title"
+msgid "Billing Address"
+msgstr "Faktureringsadresse"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-actions-block/block.json
+msgctxt "block description"
+msgid "Allow customers to place their order."
+msgstr "Tillad kunder at afgive deres ordre."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-actions-block/block.json
+msgctxt "block title"
+msgid "Actions"
+msgstr "Handlinger"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/proceed-to-checkout-block/block.json
+msgctxt "block description"
+msgid "Allow customers proceed to Checkout."
+msgstr "Tillad kunder at fortsætte til siden Kasse."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/proceed-to-checkout-block/block.json
+msgctxt "block title"
+msgid "Proceed to checkout"
+msgstr "Fortsæt til betaling"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/filled-cart-block/block.json
+msgctxt "block description"
+msgid "Contains blocks that are displayed when the cart contains products."
+msgstr "Indholder blokke, der bliver vist, når kurven indeholder varer."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/filled-cart-block/block.json
+msgctxt "block title"
+msgid "Filled Cart"
+msgstr "Fyldt kurv"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/empty-cart-block/block.json
+msgctxt "block description"
+msgid "Contains blocks that are displayed when the cart is empty."
+msgstr "Indholder blokke, der bliver vist, når kurven er tom."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/empty-cart-block/block.json
+msgctxt "block title"
+msgid "Empty Cart"
+msgstr "Tom kurv"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-totals-block/block.json
+msgctxt "block description"
+msgid "Column containing the cart totals."
+msgstr "Kolonne indeholder det samlede beløb i kurven."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-totals-block/block.json
+msgctxt "block title"
+msgid "Cart Totals"
+msgstr "Samlet beløb i kurven"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-order-summary-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-order-summary-block/block.json
+msgctxt "block description"
+msgid "Show customers a summary of their order."
+msgstr "Vis kunder en ordreoversigt."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-order-summary-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-order-summary-block/block.json
+msgctxt "block title"
+msgid "Order Summary"
+msgstr "Ordreoversigt"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-line-items-block/block.json
+msgctxt "block description"
+msgid "Block containing current line items in Cart."
+msgstr "Blok indeholder nuværende linjeenheder i kurv."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-line-items-block/block.json
+msgctxt "block title"
+msgid "Cart Line Items"
+msgstr "Linjeenheder i kurv"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-items-block/block.json
+msgctxt "block description"
+msgid "Column containing cart items."
+msgstr "Kolonne indeholder kurvenheder."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-items-block/block.json
+msgctxt "block title"
+msgid "Cart Items block"
+msgstr "Blok til kurvenheder"
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-express-payment-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-express-payment-block/block.json
+msgctxt "block description"
+msgid "Provide an express payment option for your customers."
+msgstr "Tilbyd en hurtig betalingsmulighed for dine kunder."
+
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/inner-blocks/cart-express-payment-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-express-payment-block/block.json
+msgctxt "block title"
+msgid "Express Checkout"
+msgstr "Hurtig betaling"
+
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:429
+msgid "Sorry, this order requires a shipping option."
+msgstr "Denne ordre kræver en forsendelsesmulighed."
+
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:310
+msgid "If this is a default attribute"
+msgstr "Hvis dette er en standardegenskab"
+
+#. translators: %1$d is the number of products in the cart. %2$s is the cart
+#. total
+#. translators: %1$d is the number of products in the cart. %2$s is the cart
+#. total
+#: packages/woocommerce-blocks/src/BlockTypes/MiniCart.php:219
+#: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:19
+msgid "%1$d item in cart, total price of %2$s"
+msgid_plural "%1$d items in cart, total price of %2$s"
+msgstr[0] "%1$d enhed i kurv, totalpris af %2$s"
+msgstr[1] "%1$d enheder i kurv, totalpris af %2$s"
+
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:391
+msgid "Reach more shoppers and drive sales for your store. Integrate with Google to list your products for free and launch paid ad campaigns."
+msgstr "Nå ud til flere kunder og få mere salg i din webshop. Integrér med Google for at liste dine varer gratis og gå i gang med betalte annoncekampagner."
+
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:390
+msgid "Google Listings & Ads"
+msgstr "Google Listings & Ads"
+
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:260
+msgid "The Eway extension for WooCommerce allows you to take credit card payments directly on your store without redirecting your customers to a third party site to make payment."
+msgstr "Eway udvidelsen til WooCommerce gør det muligt for dig at modtage betalinger med kreditkort direkte i din webshop, således at dine kunder ikke bliver omdirigeret til et tredjepartswebsted for at foretage betalingen der. "
+
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:259
+msgid "Eway"
+msgstr "Eway"
+
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/TaskLists.php:102
+msgid "Task list ID does not exist"
+msgstr "Opgaveliste ID eksisterer ikke"
+
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/TaskLists.php:84
+msgid "Task list ID already exists"
+msgstr "Opgaveliste ID eksisterer allerede"
+
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:920
+msgid "Sorry, that task list was not found"
+msgstr "Denne opgaveliste blev desværre ikke fundet"
+
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:269
+msgid "Sorry, you are not allowed to hide task lists."
+msgstr "Du har desværre ikke tilladelse til at gemme opgavelister. "
+
+#: includes/rest-api/Controllers/Telemetry/class-wc-rest-telemetry-controller.php:134
+msgid "Platform version to track."
+msgstr "Platformversion der skal spores."
+
+#: includes/rest-api/Controllers/Telemetry/class-wc-rest-telemetry-controller.php:127
+msgid "Platform to track."
+msgstr "Platform der skal spores."
+
+#: includes/rest-api/Controllers/Telemetry/class-wc-rest-telemetry-controller.php:62
+msgid "Sorry, you post telemetry data."
+msgstr "Du sender desværre telemetridata."
+
+#: includes/admin/views/html-admin-page-addons.php:69
+msgid "Sorry, could not find anything. Try searching again using a different term."
+msgstr "Søgningen fandt desværre ingenting. Prøv at søge igen med et andet ord."
+
+#. translators: %s vendor link
+#: includes/admin/class-wc-admin-addons.php:1269
+msgid "Developed by %s"
+msgstr "Udviklet af %s"
+
+#: includes/admin/class-wc-admin-addons.php:1228
+msgid "Promoted"
+msgstr "Promoverede"
+
+#: includes/admin/class-wc-admin-addons.php:770
+msgid "See more"
+msgstr "Se mere"
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductCollectionDataSchema.php:102
 msgid "Returns number of products with each stock status."
@@ -38,39 +295,42 @@ msgid "Introducing the Cart and Checkout blocks!"
 msgstr "Præsentation af Kurv og Betaling blokke."
 
 #. translators: %d is the number of products in the cart.
+#. translators: %d number of products of the same type in the cart
 #. translators: %d is the count of items in the cart.
-#: packages/woocommerce-blocks/src/BlockTypes/MiniCart.php:198
-#: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:17
+#: packages/woocommerce-blocks/src/BlockTypes/MiniCart.php:209
+#: packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/order-summary-item.js:119
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:29
+#: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:21
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "%d vare"
 msgstr[1] "%d varer"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:864
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:888
 msgid "Sorry, no snoozed task with that ID was found."
 msgstr "Der blev desværre ikke fundet en udskudt opgave med det ID."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:827
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:851
 msgid "Sorry, no snoozeable task with that ID was found."
 msgstr "Der blev desværre ikke fundet en tidsudskydelig opgave med det ID."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:762
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:786
 msgid "Sorry, no dismissable task with that ID was found."
 msgstr "Der blev desværre ikke fundet en afviselig opgave med det ID."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:256
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:283
 msgid "Sorry, you are not allowed to snooze onboarding tasks."
 msgstr "Du har desværre ikke tilladelse til at udsætte opstartende (onboarding) opgaver."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:242
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:255
 msgid "Sorry, you are not allowed to retrieve onboarding tasks."
 msgstr "Du har desværre ikke tilladelse til at hente opstartende (onboarding) opgaver."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:165
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:178
 msgid "Optional parameter to query specific task list."
 msgstr "Valgfri parameter til forespørgsel på specifik opgaveliste."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:158
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:171
 msgid "Time period to snooze the task."
 msgstr "Tidsperiode til udsættelse af opgaven."
 
@@ -106,25 +366,26 @@ msgstr "Er du sikker på, at du vil fjerne den valgte forsendelse?"
 msgid "Are you sure you want to remove the selected fees?"
 msgstr "Er du sikker på, at du vil fjerne de valgte gebyrer?"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:722
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Marketing.php:21
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Add recommended marketing tools to reach new customers and grow your business"
 msgstr "Tilføj anbefalede marketingværktøjer for at nå ud til nye kunder og øge din omsætning "
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:721
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Marketing.php:20
+#: packages/woocommerce-admin/dist/app/index.js:2
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Set up marketing tools"
 msgstr "Opsæt marketingværktøjer"
 
-#: packages/woocommerce-blocks/src/Domain/Bootstrap.php:129
+#: packages/woocommerce-blocks/src/Domain/Bootstrap.php:128
 msgid "The WooCommerce Blocks feature plugin requires a more recent version of WooCommerce and has been paused. Please update WooCommerce to the latest version to continue enjoying WooCommerce Blocks."
 msgstr "Funktionsplugin'et WooCommerce blokke kræver en nyere version af WooCommerce, så plugin'et er sat på pause. Du kan opdatere WooCommerce til den seneste version, så du kan bruge WooCommerce blokke."
 
-#: packages/woocommerce-blocks/src/BlockTypes/CheckoutI2.php:237
+#: packages/woocommerce-blocks/src/BlockTypes/Checkout.php:227
 msgid "Locations outside all other zones"
 msgstr "Lokationer uden for alle andre zoner"
 
-#: packages/woocommerce-blocks/src/BlockTypes/CheckoutI2.php:236
+#: packages/woocommerce-blocks/src/BlockTypes/Checkout.php:226
 msgid "International"
 msgstr "International"
 
@@ -134,31 +395,27 @@ msgstr "International"
 msgid "%1$1sExplore our docs%2$2s for more information, or just get started!"
 msgstr "%1$1s Gennemgå vores dokumenation %2$2s for mere information, eller start nu!"
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:351
-msgid "Google Ads & Marketing by Kliken"
-msgstr "Google Ads & Marketing by Kliken"
-
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:320
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:359
 msgid "Reach out to customers"
 msgstr "Nå ud til kunder"
 
 #. translators: 1: opening product link tag. 2: closing link tag
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:299
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:338
 msgid "Level up your email marketing with %1$sMailPoet%2$s"
 msgstr "Løft din e-mailmarketing med %1$sMailPoet%2$s"
 
 #. translators: 1: opening product link tag. 2: closing link tag
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:277
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:317
 msgid "Enhance speed and security with %1$sJetpack%2$s"
 msgstr "Mere fart og sikkerhed med %1$sJetpack%2$s"
 
 #. translators: 1: opening product link tag. 2: closing link tag
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:197
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:237
 msgid "Get automated sales tax with %1$sWooCommerce Tax%2$s"
 msgstr "Få automatiseret salgsmoms med %1$sWooCommerce Tax%2$s"
 
 #. translators: 1: opening product link tag. 2: closing link tag
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:130
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:170
 msgid "Print shipping labels with %1$sWooCommerce Shipping%2$s"
 msgstr "Udskriv forsendelsesetiketter med %1$sWooCommerce Shipping%2$s"
 
@@ -170,23 +427,23 @@ msgstr "Postnummer"
 msgid "PIN"
 msgstr "PIN"
 
-#: includes/admin/views/html-admin-page-addons.php:132
+#: includes/admin/class-wc-admin-addons.php:1322
 msgid "View details"
 msgstr "Se informationer"
 
-#: includes/admin/views/html-admin-page-addons.php:129
+#: includes/admin/class-wc-admin-addons.php:1307
 msgid "per year"
 msgstr "per år"
 
-#: includes/admin/views/html-admin-page-addons.php:29
+#: includes/admin/views/html-admin-page-addons.php:31
 msgid "Search for extensions"
 msgstr "Søg efter udvidelser"
 
-#: includes/admin/views/html-admin-page-addons.php:23
+#: includes/admin/views/html-admin-page-addons.php:25
 msgid "Grow your business with hundreds of free and paid WooCommerce extensions."
 msgstr "Forøg din omsætning med hundredvis af gratis såvel som betalte WooCommerce udvidelser."
 
-#: includes/admin/views/html-admin-page-addons.php:14
+#: includes/admin/views/html-admin-page-addons.php:17
 msgid "Browse Categories"
 msgstr "Gennemse kategorier"
 
@@ -195,7 +452,7 @@ msgid "My WooCommerce.com Subscriptions"
 msgstr "Mine WooCommerce.com abonnementer"
 
 #: includes/admin/class-wc-admin-menus.php:155
-#: includes/admin/views/html-admin-page-addons.php:22
+#: includes/admin/views/html-admin-page-addons.php:24
 msgid "WooCommerce Marketplace"
 msgstr "WooCommerce Marketplace"
 
@@ -404,11 +661,11 @@ msgstr "Vi har oprettet en sideskabelon indeholdende Politik for refundering og 
 msgid "Setup a Refund and Returns Policy page to boost your store's credibility."
 msgstr "Opsæt en side med Politik for refundering og returvarer for at øge din webshops troværdighed. "
 
-#: includes/admin/class-wc-admin-addons.php:399
+#: includes/admin/class-wc-admin-addons.php:462
 msgid "Print discounted USPS and DHL labels straight from your WooCommerce dashboard and save on shipping."
 msgstr "Print rabatterede USPS og DHL forsendelsesetiketter fra dit WooCommerce kontrolpanel og spar tid på forsendelse."
 
-#: includes/admin/class-wc-admin-addons.php:398
+#: includes/admin/class-wc-admin-addons.php:461
 msgid "Save time and money with WooCommerce Shipping"
 msgstr "Spar tid og penge med WooCommerce Forsendelse"
 
@@ -417,12 +674,12 @@ msgid "Limit result set to products that are low or out of stock. (Deprecated)"
 msgstr "Afgræns søgeresultat til varer med lavt eller ingen lagerantal. (Forældet)"
 
 #. translators: %1$s contains the filepath of the digital asset.
-#: includes/class-wc-download-handler.php:449
+#: includes/class-wc-download-handler.php:450
 msgid "%1$s could not be served using the Force Download method. A redirect will be used instead."
 msgstr "%1$s kunne ikke gennemføres ved brug af Gennemtving download-metoden. En redirigering vil blive brugt i stedet for."
 
 #. translators: %1$s contains the filepath of the digital asset.
-#: includes/class-wc-download-handler.php:346
+#: includes/class-wc-download-handler.php:347
 msgid "%1$s could not be served using the X-Accel-Redirect/X-Sendfile method. A Force Download will be used instead."
 msgstr "%1$s kunne ikke gennemføres ved brug af X-Accel-Redirect/X-Sendfile-metoden. En  Gennemtving download-metode vil blive brugt i stedet for."
 
@@ -435,54 +692,54 @@ msgstr "Hvis \"Gennemtving downloads\" eller \"X-Accel-Redirect/X-Sendfile\" dow
 msgid "Allow using redirect mode (insecure) as a last resort"
 msgstr "Tillad anvendelse af redirect-metode (usikker) som sidste udvej"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:733
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Appearance.php:18
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Add your logo, create a homepage, and start designing your store."
 msgstr "Tilføj dit logo, opret en forside og begynd at designe din webshop."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:699
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Shipping.php:20
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Set your store location and where you'll ship to."
 msgstr "Angiv din webshops lokation og hvilke steder, du vil sende varer til."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:662
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Payments.php:21
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Choose payment providers and enable payment methods at checkout."
 msgstr "Vælg betalingsudbydere og aktivér betalingsmetoder på siden Kasse."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:647
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/WooCommercePayments.php:21
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "You're only one step away from getting paid. Verify your business details to start managing transactions with WooCommerce Payments."
 msgstr "Du er kun et skridt fra at modtage betaling. Bekræft dine forretningsinformationer så du kan gå i gang med at styre og administrere transaktioner med WooCommerce Payments. "
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:636
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Products.php:18
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Start by adding the first product to your store. You can add your products manually, via CSV, or import them from another service."
 msgstr "Gå i gang med at oprette den første vare i din webshop. Du kan tilføje varer manuelt, via CSV eller importere dem fra et andet system."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:590
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/StoreDetails.php:22
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Your store address is required to set the origin country for shipping, currencies, and payment options."
 msgstr "Din webshops adresse er påkrævet for at kunne angive oprindelseslandet for forsendelse, valutaer og betalingsmetoder."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:679
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Tax.php:22
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Good news! WooCommerce Services and Jetpack can automate your sales tax calculations for you."
 msgstr "Godt nyt! WooCommerce Services og Jetpack kan automatisere dine beregninger af salgsmoms."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:683
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Tax.php:26
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Set your store location and configure tax rate settings."
 msgstr "Angiv din webshops lokation og konfigurér momssatsindstillinger."
 
 #. translators: %1$s: list of product names comma separated, %2%s the last
 #. product name
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:619
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Purchase.php:39
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Good choice! You chose to add %1$s and %2$s to your store."
 msgstr "Godt valg! Du valgte at tilføje %1$s og %2$s til din webshop."
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:347
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:386
 msgid "Grow your store"
 msgstr "Skab vækst i din webshop"
 
@@ -501,7 +758,7 @@ msgstr "Forsendelsesmetode %d"
 msgid "The rate at which tax is applied."
 msgstr "Den sats hvormed moms bliver anvendt."
 
-#: packages/woocommerce-admin/src/Notes/Notes.php:454
+#: packages/woocommerce-admin/src/Notes/Notes.php:455
 msgid "Notes are unavailable because the \"admin-note\" data store cannot be loaded."
 msgstr "Noter er ikke tilgængelige, fordi datalageret for \"admin-note\" ikke kan blive indlæst. "
 
@@ -517,7 +774,7 @@ msgstr "Nedetid for din webshop er lig med mistet salg. Med one-click genoprette
 msgid "Protect your WooCommerce Store with Jetpack Backup."
 msgstr "Beskyt din WooCommerce webshop med Jetpack Backup."
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:100
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:144
 msgid "Mollie"
 msgstr "Mollie"
 
@@ -541,7 +798,7 @@ msgstr "Antal solgte vare-enheder."
 msgid "Products sold"
 msgstr "Solgte varer"
 
-#: packages/woocommerce-admin/src/API/Notes.php:576
+#: packages/woocommerce-admin/src/API/Notes.php:592
 msgid "Source of note."
 msgstr "Kilde til noten."
 
@@ -577,16 +834,22 @@ msgstr "Ændr status til annulleret"
 msgid "Download %d ID"
 msgstr "Download %d ID"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:646
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/TaskLists.php:69
+#: packages/woocommerce-admin/dist/app/index.js:2
+#: packages/woocommerce-admin/dist/chunks/task-list.js:1
+msgid "Things to do next"
+msgstr "Det næste der skal gøres"
+
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/WooCommercePayments.php:20
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Get paid with WooCommerce Payments"
 msgstr "Få betaling med WooCommerce Payments"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:170
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:214
 msgid "Manage transactions without leaving your WordPress Dashboard. Only with WooCommerce Payments."
 msgstr "Administrér transaktioner uden af forlade dit WordPress kontrolpanel. Kun muligt med WooCommerce Payments."
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:325
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:364
 msgid "Create and send purchase follow-up emails, newsletters, and promotional campaigns straight from your dashboard."
 msgstr "Opret og send købs-opfølgende e-mails til kunder, nyhedsbreve og salgskampagner direkte fra dit kontrolpanel."
 
@@ -765,19 +1028,19 @@ msgstr "Dette værktøj vil gendanne opslagstabeldata for vareegenskaber fra eks
 msgid "Regenerate the product attributes lookup table"
 msgstr "Gendan opslagstabellen for vareegenskaber"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:125
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:169
 msgid "Accept credit and debit cards, offline (cash or bank transfer) and logged-in payments with money in Mercado Pago. Safe and secure payments with the leading payment processor in LATAM."
 msgstr "Modtag kredit- og debetkort, offlinebetaling (kontant og bankoverførsel) og online (logged-in) betalinger med penge i Mercado Pago. Trygge og sikre betalinger med den førende betalingsprocessor i LATAM. "
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:124
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:168
 msgid "Mercado Pago Checkout Pro & Custom"
 msgstr "Mercado Pago Betaling Pro & Custom"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:54
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:98
 msgid "Paystack helps African merchants accept one-time and recurring payments online with a modern, safe, and secure payment gateway."
 msgstr "Paystack hjælper afrikanske webshopejere med at modtage engangsbetalinger og gentagne betalinger online med en moderne, tryg og sikker betalingsløsning."
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:53
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:97
 msgid "Paystack"
 msgstr "Paystack"
 
@@ -786,12 +1049,8 @@ msgstr "Paystack"
 msgid "%s connected successfully"
 msgstr "%s er nu forbundet"
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:296
-msgid "Level up your email marketing with {{link}}MailPoet{{/link}}"
-msgstr "Løft din e-mailmarketing til et højere niveau med {{link}}Mailpoet{{/link}}"
-
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:295
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:324
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:335
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:363
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/data/index.js:2
 #: packages/woocommerce-blocks/build/wc-blocks-vendors.js:15
@@ -845,21 +1104,20 @@ msgstr "Hej der,"
 msgid "You have the %s plugin activated but it is not being used."
 msgstr "Du har %s plugin'et aktiveret, men det bliver ikke anvendt."
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:201
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:245
 msgid "Enable PayU’s exclusive plugin for WooCommerce to start accepting payments in 100+ payment methods available in India including credit cards, debit cards, UPI, & more!"
 msgstr "Aktivér PayU's enestående plugin til WooCommerce for at komme i gang med at modtage betalinger fra mere end 100 betalingsmetoder, der findes i Indien; omfattende  kreditkort, betalingskort, UPI og flere!"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:200
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:244
 msgid "PayU for WooCommerce"
 msgstr "PayU til WooCommerce"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:585
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/TaskLists.php:62
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Get ready to start selling"
 msgstr "Gør klar til at starte dit salg"
 
 #: packages/woocommerce-blocks/src/BlockTypes/AbstractBlock.php:110
-#: packages/woocommerce-blocks/src/BlockTypes/CheckoutI2.php:25
 msgid "Block name is required."
 msgstr "Bloknavn er påkrævet."
 
@@ -1036,6 +1294,11 @@ msgid "of"
 msgstr "af"
 
 #: includes/admin/views/html-admin-dashboard-setup.php:18
+#: packages/woocommerce-blocks/build/checkout-blocks/billing-address-frontend.js:1
+#: packages/woocommerce-blocks/build/checkout-blocks/contact-information-frontend.js:1
+#: packages/woocommerce-blocks/build/checkout-blocks/payment-frontend.js:1
+#: packages/woocommerce-blocks/build/checkout-blocks/shipping-address-frontend.js:1
+#: packages/woocommerce-blocks/build/checkout-blocks/shipping-methods-frontend.js:9
 msgid "Step"
 msgstr "Trin"
 
@@ -1075,11 +1338,11 @@ msgstr "Den valgte vare er ikke en variant af %2$s, så prøv at vælge varemuli
 msgid "%1$s (ID: %2$s)"
 msgstr "%1$s (ID: %2$s)"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:101
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:145
 msgid "Effortless payments by Mollie: Offer global and local payment methods, get onboarded in minutes, and supported in your language."
 msgstr "Ubesværet betaling med Mollie: Tilbyd global og lokal betalingsmetoder, kom i gang på få minutter, og det understøtter dit sprog.  "
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:136
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:180
 msgid "PayPal Payments"
 msgstr "PayPal Payments"
 
@@ -1146,39 +1409,39 @@ msgid "The provided email address is not valid"
 msgstr "Den angivne e-mailadresse er ikke gyldig"
 
 #. translators: %s Field label.
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:369
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:373
 msgid "%s is required"
 msgstr "%s er påkrævet"
 
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:282
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:286
 msgid "billing address"
 msgstr "Faktureringsadresse"
 
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:282
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:286
 msgid "shipping address"
 msgstr "Leveringsadresse"
 
 #. translators: %s Address type.
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:281
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:285
 msgid "There was a problem with the provided %s:"
 msgstr "Der opstod et problem med den angivne %s:"
 
 #. translators: %s country code.
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:250
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:254
 msgid "Sorry, we do not allow orders from the provided country (%s)"
 msgstr "Vi tillader desværre ikke ordrer fra det angivne land (%s)"
 
 #. translators: %s country code.
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:235
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:239
 msgid "Sorry, we do not ship orders to the provided country (%s)"
 msgstr "Vi sender desværre ikke varer til det angivne land (%s)"
 
 #. translators: %s provided email.
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:210
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:214
 msgid "The provided email address (%s) is not valid—please provide a valid email address"
 msgstr "Den angivne e-mailadresse (%s) er ikke gyldig - angiv en gyldig e-mailadresse"
 
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:200
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:204
 msgid "A valid email address is required"
 msgstr "En gyldig e-mailadresse er påkrævet"
 
@@ -1188,7 +1451,7 @@ msgid "Script with handle %s had a dependency on itself which has been removed. 
 msgstr "Script med handle %s havde en afhængighed i sig selv, som er blevet fjernet. Dette er en indikation på, at din JS kode har en cirkular afhængighed, som kan give fejl."
 
 #. translators: %s is template name
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:319
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:346
 msgid "Sorry, creating the product with template failed."
 msgstr "Oprettelse af varen med skabelon lykkedes desværre ikke. "
 
@@ -1196,7 +1459,7 @@ msgstr "Oprettelse af varen med skabelon lykkedes desværre ikke. "
 msgid "Product template name."
 msgstr "Vareskabelonnavn."
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:809
+#: packages/woocommerce-admin/src/Features/Onboarding.php:817
 msgid "Extended task List"
 msgstr "Udvidet opgaveliste"
 
@@ -1590,21 +1853,21 @@ msgstr "Er du sikker på, at du er klar?"
 
 #. translators: %1$s: list of product names comma separated, %2%s the last
 #. product name
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:605
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Purchase.php:25
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Add %s to my store"
 msgstr "Tilføj %s til min webshop"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:611
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Purchase.php:31
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Add paid extensions to my store"
 msgstr "Tilføj betalte udvidelser til min webshop"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:186
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:230
 msgid "The official Razorpay extension for WooCommerce allows you to accept credit cards, debit cards, netbanking, wallet, and UPI payments."
 msgstr "Den officielle Razorpay udvidelse til WooCommerce gør det muligt for dig at tage imod betaling via kreditkort, debetkort, bankoverførsler, wallet og UPI betalinger."
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:185
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:229
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/data/index.js:2
 #: packages/woocommerce-blocks/build/wc-blocks-vendors.js:15
@@ -1706,11 +1969,11 @@ msgstr "Du har nået grænsen for brug af din rabatkupon. Prøv igen efter noget
 msgid "Coupon usage limit has been reached. If you were using this coupon just now but order was not complete, you can retry or cancel the order by going to the <a href=\"%s\">my account page</a>."
 msgstr "Du har nået grænsen for brug af din rabatkupon. Hvis du forsøgte at bruge rabatkuponen netop nu, og din bestilling ikke blev gennemført, kan du prøve at bestille igen eller annullere bestillingen ved at gå til <a href=\"%s\">Min konto</a>."
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:339
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:378
 msgid "Create on-brand store campaigns, fast email promotions and customer retargeting with Creative Mail."
 msgstr "Opret on-brand webshopkampagner, hurtig e-mailmarketing og kunde-retargeting med Creative Mail."
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:338
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:377
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/data/index.js:2
 #: packages/woocommerce-blocks/build/wc-blocks-vendors.js:15
@@ -1868,15 +2131,15 @@ msgstr "Tilføjer den nye WooCommerce navigationsoplevelse til kontrolpanelet"
 msgid "Navigation"
 msgstr "Navigation"
 
-#: includes/admin/class-wc-admin-addons.php:494
+#: includes/admin/class-wc-admin-addons.php:559
 msgid "Securely accept cards in your store. See payments, track cash flow into your bank account, and stay on top of disputes – right from your dashboard."
 msgstr "Acceptér sikkert betalingskort i din webshop. Se betalinger, spor pengeflow ind på din bankkonto og hav godt styr på eventuelle tvister - direkte fra dit kontrolpanel."
 
-#: includes/admin/class-wc-admin-addons.php:493
+#: includes/admin/class-wc-admin-addons.php:558
 msgid "Payments made simple, with no monthly fees &mdash; exclusively for WooCommerce stores."
 msgstr "Simpel betaling uden månedlige gebyrer &mdash; kun for WooCommerce webshops."
 
-#: includes/admin/class-wc-admin-addons.php:397
+#: includes/admin/class-wc-admin-addons.php:460
 msgid "WooCommerce Shipping"
 msgstr "WooCommerce Forsendelse"
 
@@ -2117,18 +2380,11 @@ msgstr "Beograd"
 msgid "Accept credit cards with %1$sWooCommerce Payments%2$s"
 msgstr "Modtag betalingskort med %1$sWooCommerce Payments%2$s"
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:352
-msgid "Get in front of shoppers and drive traffic so you can grow your business with Smart Shopping Campaigns and free listings."
-msgstr "Kom forrest og skab trafik til din webshop, så du kan ekspandere din forretning med Smart Shopping Campaigns og gratis listings."
-
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:215
-msgid "eWAY"
-msgstr "eWAY"
-
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:594
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:689
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:706
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:737
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Task.php:124
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Appearance.php:22
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Shipping.php:27
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/StoreDetails.php:26
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Tax.php:32
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Let's go"
@@ -2149,55 +2405,51 @@ msgstr "WooCommerce Blocks (blokke) udviklingsmiljø kræver at %1$s konstanten 
 msgid "Search by similar product name, sku, or attribute value."
 msgstr "Søg på lignende varenavn, SKU eller egenskabsværdi."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:711
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:729
 msgid "If the store is using WooCommerce Payments."
 msgstr "Hvis webshoppen bruger WooCommerce Betalinger."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:705
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:723
 msgid "Active theme modifications."
 msgstr "Aktive designtemamodifikationer."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:699
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:717
 msgid "If the store has the TaxJar extension active."
 msgstr "Hvis webshoppen har TaxJar udvidelse aktiveret."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:690
-msgid "Country codes that are supported by Stripe."
-msgstr "Landekoder, der understøttes af Stripe."
-
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:684
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:711
 msgid "The number of shipping zones configured for the store."
 msgstr "Antallet af forsendelseszoner indstillet for webshoppen."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:678
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:705
 msgid "If the tax step has been completed."
 msgstr "Hvis momstrinet er blevet afsluttet."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:672
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:699
 msgid "If the store has any products."
 msgstr "Hvis webshoppen har nogle varer."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:666
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:693
 msgid "If the store has any physical (non-virtual) products."
 msgstr "Hvis webshoppen har fysiske (ikke-digitale) varer."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:660
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:687
 msgid "If the store has an enabled payment gateway."
 msgstr "Hvis webshoppen har aktiveret en betalingsløsning."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:654
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:681
 msgid "If the store has a homepage created."
 msgstr "Hvis webshoppen har oprettet en forside."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:645
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:672
 msgid "Country codes that support Automated Taxes."
 msgstr "Landekoder der understøtter automatiseret moms."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:228
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:241
 msgid "Sorry, you are not allowed to retrieve onboarding status."
 msgstr "Du har desværre ikke tilladelse til at hente status for opsætning. "
 
-#: packages/woocommerce-admin/src/API/Notes.php:365
+#: packages/woocommerce-admin/src/API/Notes.php:381
 msgid "Please provide an array of IDs through the noteIds param."
 msgstr "Angiv en række af ID'er igennem the noteIds param."
 
@@ -3420,23 +3672,23 @@ msgstr "Sand hvis varen er i restordre."
 msgid "The attribute taxonomy name."
 msgstr "Navnet på egenskabens klassificering (taksonomi)."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:414
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:420
 msgid "Add to cart URL."
 msgstr "Tilføj til kurv-URL (webadresse)."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:372
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:378
 msgid "Is the product stock backordered? This will also return false if backorder notifications are turned off."
 msgstr "Er varen i restordre. Dette vil også returnere falsk, hvis restordremeddelelser er slået fra."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:354
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:360
 msgid "Does the product have additional options before it can be added to the cart?"
 msgstr "Har varen yderligere valgmuligheder, før den kan tilføjes til kurven?"
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:342
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:348
 msgid "The assigned attribute."
 msgstr "Den tildelte egenskab."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:329
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:335
 msgid "List of variation attributes."
 msgstr "Liste med variantegenskaber."
 
@@ -3465,12 +3717,12 @@ msgid "The attribute taxonomy, or null if the attribute is not taxonomy based."
 msgstr "Egenskabsklassificeringen; eller nul, hvis egenskaben ikke er klassificeringsbaseret."
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:267
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:336
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:342
 msgid "The attribute name."
 msgstr "Navnet på egenskab."
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:261
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:323
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:329
 msgid "The attribute ID, or 0 if the attribute is not taxonomy based."
 msgstr "Egenskabs-ID'et; eller 0, hvis egenskaben ikke er klassificeringsbaseret."
 
@@ -3545,15 +3797,15 @@ msgstr "Analytics cache blev slettet."
 msgid "Clear analytics cache"
 msgstr "Slet analytics cache"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:457
+#: packages/woocommerce-admin/src/Features/Onboarding.php:460
 msgid "Customizable products"
 msgstr "Varer der kan tilpasses"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:453
+#: packages/woocommerce-admin/src/Features/Onboarding.php:456
 msgid "Bundles"
 msgstr "Bundter"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:412
+#: packages/woocommerce-admin/src/Features/Onboarding.php:417
 msgid "Education and learning"
 msgstr "Undervisning og læring"
 
@@ -3607,16 +3859,16 @@ msgstr "Ugyldig admin note"
 
 #. translators: %d is the count of items in the cart.
 #. translators: %d is the count of items in the cart.
-#: packages/woocommerce-blocks/src/BlockTypes/MiniCart.php:208
-#: packages/woocommerce-blocks/build/cart-frontend.js:41
-#: packages/woocommerce-blocks/build/cart.js:33
-#: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:19
+#: packages/woocommerce-blocks/src/BlockTypes/MiniCart.php:230
+#: packages/woocommerce-blocks/build/cart-frontend.js:37
+#: packages/woocommerce-blocks/build/cart.js:41
+#: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:23
 msgid "Your cart (%d item)"
 msgid_plural "Your cart (%d items)"
 msgstr[0] "Din kurv (%d enhed)"
 msgstr[1] "Din kurv (%d enheder)"
 
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:340
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:344
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "Country/Region"
 msgstr "Land/Region"
@@ -3627,37 +3879,37 @@ msgstr "Land/Region"
 msgid "Credit / Debit Card"
 msgstr "Kreditkort / Debitkort"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:642
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Products.php:24
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "1 minute per product"
 msgstr "1 minut pr. vare"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:635
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Products.php:17
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Add my products"
 msgstr "Tilføj mine varer"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:694
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:717
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:728
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Marketing.php:27
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Shipping.php:30
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Tax.php:37
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "1 minute"
 msgstr "1 minut"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:630
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:657
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:673
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:740
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Appearance.php:25
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Payments.php:32
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Purchase.php:49
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/WooCommercePayments.php:31
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "2 minutes"
 msgstr "2 minutter"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:598
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/StoreDetails.php:30
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "4 minutes"
 msgstr "4 minutter"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:589
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/StoreDetails.php:21
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Store details"
@@ -3673,7 +3925,7 @@ msgstr "Kladde"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: packages/woocommerce-blocks/src/BlockTypes/AbstractBlock.php:368
+#: packages/woocommerce-blocks/src/BlockTypes/AbstractBlock.php:388
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "words"
@@ -3715,7 +3967,7 @@ msgid "Price data for the product in the current line item, including or excludi
 msgstr "Prisinformation for varen i den aktuelle linjeenhed, inklusiv eller eksklusiv moms baseret på indstillingen \"vis priser på siden Kurv og Kasse\". Forudsat en anvendelse af den mindste enhed af valutaen."
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/CartItemSchema.php:101
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:384
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:390
 msgid "If true, only one item of this product is allowed for purchase in a single order."
 msgstr "Hvis sand, er det kun en enhed af denne vare, der er tilladt at købe i en enkelt ordre. "
 
@@ -3724,7 +3976,7 @@ msgid "True if backorders are allowed past stock availability."
 msgstr "Sandt, hvis restordrer er tilladt inden, der er varer på lager."
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/CartItemSchema.php:53
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:390
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:396
 msgid "The maximum quantity than can be added to the cart at once."
 msgstr "Den maksimale mængde der kan tilføjes til kurven på én gang."
 
@@ -3900,9 +4152,7 @@ msgid "State/County code, or name of the state, county, province, or district."
 msgstr "Landekode eller navn på stat, region, provins eller distrikt."
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:48
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:336
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/edit.js:132
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:340
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "Apartment, suite, etc."
 msgstr "Lejlighed, værelse, osv."
@@ -3996,11 +4246,11 @@ msgid "Parent term ID, if applicable."
 msgstr "ID for hovedudtryk, hvis det er relevant."
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/CartItemSchema.php:83
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:378
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:384
 msgid "Quantity left in stock if stock is low, or null if not applicable."
 msgstr "Antal tilbage på lager, hvis lagerantal er lavt, eller nul, hvis det er relevant."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:316
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:322
 msgid "List of variation IDs, if applicable."
 msgstr "Liste med variant-ID'er, hvis det er relevant."
 
@@ -4056,7 +4306,7 @@ msgid "Cart item is invalid."
 msgstr "Kurvenhed er ugyldig."
 
 #. translators: %s Coupon codes.
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:177
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:181
 msgid "Invalid coupons were removed from the cart: \"%s\""
 msgstr "Ugyldige rabatkuponer blev fjernet fra kurven: \"%s\""
 
@@ -4380,26 +4630,26 @@ msgstr "Plugins blev installeret."
 #. translators: %s: plugin slug (example: woocommerce-services)
 #: packages/woocommerce-admin/src/API/Plugins.php:308
 msgid "The requested plugin `%s` could not be installed. Upgrader install failed."
-msgstr "Det valgte plugin '%s' kunne ikke installeres. Opgradering af installation mislykkedes."
+msgstr "Det valgte plugin '%s' kunne ikke installeres. Opdatering af installation mislykkedes."
 
 #: packages/woocommerce-admin/src/API/Plugins.php:231
 #: packages/woocommerce-admin/src/API/Plugins.php:375
 msgid "Plugins must be a non-empty array."
 msgstr "Plugins skal være en ikke-tom matrix."
 
-#: packages/woocommerce-admin/src/API/Notes.php:700
+#: packages/woocommerce-admin/src/API/Notes.php:716
 msgid "Registers whether the note is deleted or not"
 msgstr "Registrerer om notatet er slettet eller ej"
 
-#: packages/woocommerce-admin/src/API/Notes.php:694
+#: packages/woocommerce-admin/src/API/Notes.php:710
 msgid "The image of the note, if any."
 msgstr "Notatets billede, hvis der er et."
 
-#: packages/woocommerce-admin/src/API/Notes.php:688
+#: packages/woocommerce-admin/src/API/Notes.php:704
 msgid "The layout of the note (e.g. banner, thumbnail, plain)."
 msgstr "Notatets layout (fx banner, miniaturebillede, almindeligt)."
 
-#: packages/woocommerce-admin/src/API/Notes.php:277
+#: packages/woocommerce-admin/src/API/Notes.php:289
 msgid "Sorry, there is no note with that ID."
 msgstr "Beklager, der er intet notat med dette ID."
 
@@ -4649,7 +4899,7 @@ msgid "Import / Export"
 msgstr "Import / Eksport"
 
 #: includes/admin/class-wc-admin-menus.php:155
-#: includes/admin/views/html-admin-page-addons.php:18
+#: includes/admin/views/html-admin-page-addons.php:20
 #: packages/woocommerce-admin/includes/connect-existing-pages.php:26
 #: packages/woocommerce-admin/src/Features/Navigation/CoreMenu.php:113
 msgid "Marketplace"
@@ -4818,7 +5068,7 @@ msgstr "Din Webshops bibliotek til overførsler er <a href=\"%1$s\">tilgængelig
 msgid "%s() was called before the Action Scheduler data store was initialized"
 msgstr "%s() blev kaldt før handlingsplanlæggerens datalager blev igangsat"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:651
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/WooCommercePayments.php:25
 #: packages/woocommerce-admin/dist/app/index.js:2
 #: packages/woocommerce-admin/dist/chunks/3.js:1
 #: packages/woocommerce-admin/dist/chunks/marketing-overview.js:1
@@ -4826,11 +5076,11 @@ msgstr "%s() blev kaldt før handlingsplanlæggerens datalager blev igangsat"
 msgid "Finish setup"
 msgstr "Færdiggør opsætning"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:161
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:205
 msgid "Take payments via bank transfer."
 msgstr "Tag betalinger via bankoverførsel."
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:152
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:196
 msgid "Take payments in cash upon delivery."
 msgstr "Tag betalinger i kontanter ved levering (efterkrav)."
 
@@ -4838,9 +5088,9 @@ msgstr "Tag betalinger i kontanter ved levering (efterkrav)."
 msgid "PayFast"
 msgstr "PayFast"
 
-#: includes/admin/class-wc-admin-addons.php:492
-#: includes/admin/class-wc-admin-addons.php:764
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:169
+#: includes/admin/class-wc-admin-addons.php:557
+#: includes/admin/class-wc-admin-addons.php:1012
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:213
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/data/index.js:2
 #: packages/woocommerce-blocks/build/wc-blocks-vendors.js:15
@@ -4953,39 +5203,39 @@ msgstr "Din webshop er konfigureret til at understøtte digitale varer ved anven
 msgid "Get started"
 msgstr "Begynd"
 
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:332
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:371
 msgid "Send targeted campaigns, recover abandoned carts and much more with Mailchimp."
 msgstr "Send målrettede kampagner, gendan forladte indkøbsvogne og meget mere med MailChimp."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:661
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Payments.php:20
 #: packages/woocommerce-admin/src/Notes/SetUpAdditionalPaymentTypes.php:94
 #: packages/woocommerce-admin/dist/app/index.js:2
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Set up payments"
 msgstr "Opsæt betalinger"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:677
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Tax.php:20
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Set up tax"
 msgstr "Opsæt moms"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:698
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Shipping.php:19
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Set up shipping"
 msgstr "Opsæt forsendelse"
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:732
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Appearance.php:17
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Personalize my store"
 msgstr "Personliggør din webshop"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:227
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:271
 msgid "Securely accept credit and debit cards with one low rate, no surprise fees (custom rates available). Sell online and in store and track sales and inventory in one place."
 msgstr "Sikker accept af kredit- og debetkort med lav sats og ingen overraskende gebyrer (tilpassede priser til rådighed). Sælg i webshop og i butik. Spor salg og lager på ét sted."
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:65
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:76
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:109
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:120
 msgid "Choose the payment that you want, pay now, pay later or slice it. No credit card numbers, no passwords, no worries."
 msgstr "Vælg den betalingsform du ønsker. Betal nu, betal senere eller del betalingen op. Ingen kreditkortnumre, ingen adgangskoder, ingen bekymringer."
 
@@ -4993,7 +5243,7 @@ msgstr "Vælg den betalingsform du ønsker. Betal nu, betal senere eller del bet
 msgid "Accept debit and credit cards in 135+ currencies, methods such as Alipay, and one-touch checkout with Apple Pay."
 msgstr "Acceptér debet-og kreditkort i 135+ valutaer og forskellige betalingsmetoder såsom Alipay og 'one-touch checkout' med Apple Pay."
 
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:626
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Purchase.php:46
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Purchase & install now"
 msgstr "Køb & installer nu"
@@ -5036,70 +5286,70 @@ msgstr "Download din %1$s rapport: %2$s"
 msgid "Current page retrieval should be called on or after the `current_screen` hook."
 msgstr "Aktuel sidehentning skal kaldes på eller efter \"current_screen\" hook'et."
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:803
+#: packages/woocommerce-admin/src/Features/Onboarding.php:809
 msgid "If you need to enable or disable the task lists, please click on the button below."
 msgstr "Hvis du vil aktivere eller deaktivere opgavelisten, så klik på knappen herunder."
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:802
+#: packages/woocommerce-admin/src/Features/Onboarding.php:808
 msgid "Task List"
 msgstr "Opgaveliste"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:806
-#: packages/woocommerce-admin/src/Features/Onboarding.php:813
+#: packages/woocommerce-admin/src/Features/Onboarding.php:812
+#: packages/woocommerce-admin/src/Features/Onboarding.php:821
 msgid "Disable"
 msgstr "Deaktiver"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:810
+#: packages/woocommerce-admin/src/Features/Onboarding.php:818
 msgid "If you need to enable or disable the extended task lists, please click on the button below."
 msgstr "Hvis du vil aktivere eller deaktivere opsætningsguiden igen, så klik på knappen herunder."
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:798
+#: packages/woocommerce-admin/src/Features/Onboarding.php:804
 msgid "Profile Setup Wizard"
 msgstr "Profil Opsætningsguide"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:796
+#: packages/woocommerce-admin/src/Features/Onboarding.php:802
 msgid "WooCommerce Onboarding"
 msgstr "Woocommerce opsætningsguide"
 
 #. translators: site currency symbol (used to show that the product costs
 #. money)
-#: packages/woocommerce-admin/src/Features/Onboarding.php:626
+#: packages/woocommerce-admin/src/Features/Onboarding.php:633
 msgid " — %s"
 msgstr " — %s"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:449
+#: packages/woocommerce-admin/src/Features/Onboarding.php:452
 msgid "Bookings"
 msgstr "Bookinger"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:445
+#: packages/woocommerce-admin/src/Features/Onboarding.php:448
 msgid "Memberships"
 msgstr "Medlemskaber"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:434
+#: packages/woocommerce-admin/src/Features/Onboarding.php:438
 msgid "Physical products"
 msgstr "Fysiske varer"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:407
+#: packages/woocommerce-admin/src/Features/Onboarding.php:412
 msgid "CBD and other hemp-derived products"
 msgstr "CBD og andre hampvarer"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:402
+#: packages/woocommerce-admin/src/Features/Onboarding.php:407
 msgid "Home, furniture, and garden"
 msgstr "Hjem, møbler og have"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:397
+#: packages/woocommerce-admin/src/Features/Onboarding.php:402
 msgid "Food and drink"
 msgstr "Mad og drikke"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:392
+#: packages/woocommerce-admin/src/Features/Onboarding.php:397
 msgid "Electronics and computers"
 msgstr "Elektronik og computere"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:387
+#: packages/woocommerce-admin/src/Features/Onboarding.php:392
 msgid "Health and beauty"
 msgstr "Helse og skønhed"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:382
+#: packages/woocommerce-admin/src/Features/Onboarding.php:387
 msgid "Fashion, apparel, and accessories"
 msgstr "Mode, tøj og tilbehør"
 
@@ -5278,71 +5528,72 @@ msgstr "Uanset om profilen blev gennemført eller ej."
 msgid "Onboarding profile data has been updated."
 msgstr "Opsætningsguidens profildata er blevet opdateret."
 
-#: packages/woocommerce-admin/src/API/Notes.php:682
+#: packages/woocommerce-admin/src/API/Notes.php:698
 msgid "An array of actions, if any, for the note."
 msgstr "En række af handlinger, hvis der er nogen, til notatet."
 
-#: packages/woocommerce-admin/src/API/Notes.php:676
+#: packages/woocommerce-admin/src/API/Notes.php:692
 msgid "Whether or not a user can request to be reminded about the note."
 msgstr "Hvorvidt en bruger kan anmode om at blive mindet om notatet eller ej."
 
-#: packages/woocommerce-admin/src/API/Notes.php:670
+#: packages/woocommerce-admin/src/API/Notes.php:686
 msgid "Date after which the user should be reminded of the note, if any (GMT)."
 msgstr "Dato, hvorefter brugeren skal påmindes om notatet, hvis der er et. I GMT."
 
-#: packages/woocommerce-admin/src/API/Notes.php:664
+#: packages/woocommerce-admin/src/API/Notes.php:680
 msgid "Date after which the user should be reminded of the note, if any."
 msgstr "Dato, hvorefter brugeren skal påmindes om notatet, hvis der er et."
 
-#: packages/woocommerce-admin/src/API/Notes.php:658
+#: packages/woocommerce-admin/src/API/Notes.php:674
 msgid "Date the note was created (GMT)."
 msgstr "Dato for oprettelse af note i GMT (Greenwich Mean Time)."
 
-#: packages/woocommerce-admin/src/API/Notes.php:652
+#: packages/woocommerce-admin/src/API/Notes.php:668
 msgid "Date the note was created."
 msgstr "Dato for notens oprettelse"
 
-#: packages/woocommerce-admin/src/API/Notes.php:646
+#: packages/woocommerce-admin/src/API/Notes.php:662
 msgid "Source of the note."
 msgstr "Notatets kilde."
 
-#: packages/woocommerce-admin/src/API/Notes.php:641
+#: packages/woocommerce-admin/src/API/Notes.php:657
 msgid "The status of the note (e.g. unactioned, actioned)."
 msgstr "Notatets status (f.eks. ikke-handlet, handlet)."
 
-#: packages/woocommerce-admin/src/API/Notes.php:635
+#: packages/woocommerce-admin/src/API/Notes.php:651
 msgid "Content data for the note. JSON string. Available for re-localization."
 msgstr "Indholdsdata til notatet. JSON-streng. Tilgængelig for genlokalisering."
 
-#: packages/woocommerce-admin/src/API/Notes.php:629
+#: packages/woocommerce-admin/src/API/Notes.php:645
 msgid "Content of the note."
 msgstr "Notatets indhold."
 
-#: packages/woocommerce-admin/src/API/Notes.php:623
+#: packages/woocommerce-admin/src/API/Notes.php:639
 msgid "Title of the note."
 msgstr "Notens titel."
 
-#: packages/woocommerce-admin/src/API/Notes.php:617
+#: packages/woocommerce-admin/src/API/Notes.php:633
 msgid "Locale used for the note title and content."
 msgstr "Geografisk sted anvendt til notens titel og indhold."
 
-#: packages/woocommerce-admin/src/API/Notes.php:611
+#: packages/woocommerce-admin/src/API/Notes.php:627
 msgid "The type of the note (e.g. error, warning, etc.)."
 msgstr "Notens type (fx fejl, advarsel etc.)"
 
-#: packages/woocommerce-admin/src/API/Notes.php:605
+#: packages/woocommerce-admin/src/API/Notes.php:621
 msgid "Name of the note."
 msgstr "Navn på noten."
 
-#: packages/woocommerce-admin/src/API/Notes.php:599
+#: packages/woocommerce-admin/src/API/Notes.php:615
 msgid "ID of the note record."
 msgstr "Notens ID-nummer."
 
-#: packages/woocommerce-admin/src/API/Notes.php:566
+#: packages/woocommerce-admin/src/API/Notes.php:101
+#: packages/woocommerce-admin/src/API/Notes.php:582
 msgid "Status of note."
 msgstr "Status på note."
 
-#: packages/woocommerce-admin/src/API/Notes.php:556
+#: packages/woocommerce-admin/src/API/Notes.php:572
 msgid "Type of note."
 msgstr "Notens type."
 
@@ -6412,8 +6663,8 @@ msgstr "Batch-slutpunkt til modtagelse af specifikke ydeevneindikatorer fra 'sta
 
 #: packages/woocommerce-admin/src/API/NoteActions.php:63
 #: packages/woocommerce-admin/src/API/NoteActions.php:73
-#: packages/woocommerce-admin/src/API/Notes.php:143
-#: packages/woocommerce-admin/src/API/Notes.php:256
+#: packages/woocommerce-admin/src/API/Notes.php:155
+#: packages/woocommerce-admin/src/API/Notes.php:268
 msgid "Sorry, there is no resource with that ID."
 msgstr "Der er desværre ingen ressource med dette ID."
 
@@ -6502,13 +6753,13 @@ msgstr "Enheder solgt"
 
 #: packages/woocommerce-admin/src/API/Leaderboards.php:191
 msgid "Top categories - Items sold"
-msgstr "Topkategorier – solgte enheder"
+msgstr "Topkategorier – solgte emner"
 
 #: packages/woocommerce-admin/src/API/Leaderboards.php:131
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Controller.php:301
 #: packages/woocommerce-admin/dist/chunks/analytics-report-coupons.js:1
 msgid "Amount discounted"
-msgstr "Rabatteret beløb"
+msgstr "Beløb fratrukket rabat"
 
 #: packages/woocommerce-admin/src/API/Leaderboards.php:122
 msgid "Top Coupons - Number of Orders"
@@ -6570,68 +6821,68 @@ msgstr "Afgræns søgeresultat til varer, der har tilknyttet den specificerede s
 msgid "Search by similar tax code."
 msgstr "Søg på lignende momskode."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:623
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:650
 msgid "Homepage created"
 msgstr "Forside blev oprettet"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:595
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:622
 msgid "Homepage"
 msgstr "Forside"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:495
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:522
 msgid "New Products"
 msgstr "Nye varer"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:476
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:503
 msgid "Best Sellers"
 msgstr "Mest solgte"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:472
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:499
 msgid "On Sale"
 msgstr "På tilbud"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:468
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:495
 msgid "Fan Favorites"
 msgstr "Fan favoritter"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:464
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:491
 msgid "New In"
 msgstr "Ny i"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:458
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:485
 msgid "Shop by Category"
 msgstr "Køb efter kategori"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:432
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:439
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:459
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:466
 msgid "Content…"
 msgstr "Indhold ..."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:399
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:414
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:426
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:441
 msgid "Go shopping"
 msgstr "Køb"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:395
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:410
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:422
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:437
 msgid "Write a short welcome message here"
 msgstr "Skriv en kort velkomsthilsen her"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:391
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:406
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:418
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:433
 msgid "Welcome to the store"
 msgstr "Velkommen til webshoppen"
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:390
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:405
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:417
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:432
 msgid "Write title…"
 msgstr "Skriv en titel..."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:285
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:312
 msgid "Sorry, the sample products data file was not found."
 msgstr "Desværre, men prøvevaredatafil blev ikke fundet."
 
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:214
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:227
 msgid "Sorry, you are not allowed to create new pages."
 msgstr "Det er desværre ikke tilladt at tilføje ny sider."
 
@@ -6669,13 +6920,13 @@ msgstr "Eller du kan downloade en forhåndsudviklet version af plugin'et ved at 
 
 #. translators: 1: URL of WordPress.org, 2: The minimum WordPress version
 #. number
-#: packages/woocommerce-admin/src/FeaturePlugin.php:237
+#: packages/woocommerce-admin/src/FeaturePlugin.php:238
 msgid "The WooCommerce Admin feature plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
 msgstr "WooCommerce Admin egenskabplugin kræver <a href=\"%1$s\">WordPress</a> %2$s eller højere (nyere) for at kunne blive installeret og aktiveret. "
 
 #. translators: 1: URL of WooCommerce plugin, 2: The minimum WooCommerce
 #. version number
-#: packages/woocommerce-admin/src/FeaturePlugin.php:228
+#: packages/woocommerce-admin/src/FeaturePlugin.php:229
 msgid "The WooCommerce Admin feature plugin requires <a href=\"%1$s\">WooCommerce</a> %2$s or greater to be installed and active."
 msgstr "WooCommerce Admin funktionalitetsplugin kræver <a href=\"%1$s\">WooCommerce</a> %2$s eller en nyere version for at være installeret og aktiv."
 
@@ -6853,7 +7104,7 @@ msgstr "Rapporttabeldata bliver genopbygget. Forvent noget tid til, at data kan 
 
 #: packages/woocommerce-admin/src/ReportsSync.php:79
 msgid "An import is already in progress. Please allow the previous import to complete before beginning a new one."
-msgstr "En import er allerede i gang. Lad den forrige import blive færdig, før en ny påbegyndes."
+msgstr "En import er allerede i gang. Lad den igangværende import blive færdig, før en ny påbegyndes."
 
 #: packages/woocommerce-admin/src/ReportsSync.php:49
 msgid "Report sync schedulers should be derived from the Automattic\\WooCommerce\\Admin\\Schedulers\\ImportScheduler class."
@@ -7156,10 +7407,9 @@ msgid "Choose a country / region&hellip;"
 msgstr "Vælg et land/region"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:164
-#: packages/woocommerce-blocks/build/cart-frontend.js:33
-#: packages/woocommerce-blocks/build/cart.js:25
-#: packages/woocommerce-blocks/build/checkout-frontend.js:25
-#: packages/woocommerce-blocks/build/checkout.js:25
+#: packages/woocommerce-blocks/build/cart-blocks/express-payment--checkout-blocks/express-payment--checkout-blocks/payment-frontend.js:5
+#: packages/woocommerce-blocks/build/cart-frontend.js:35
+#: packages/woocommerce-blocks/build/cart.js:29
 msgid "Fees:"
 msgstr "Gebyrer:"
 
@@ -7258,23 +7508,23 @@ msgstr "URL til billede i fuld størrelse."
 msgid "Unique identifier for the fee within the cart."
 msgstr "Unik identifikator for gebyret i kurven."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:408
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:414
 msgid "Button description."
 msgstr "Beskrivelse af knap."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:402
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:408
 msgid "Button text."
 msgstr "Tekst til knap."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:396
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:402
 msgid "Add to cart button parameters."
 msgstr "Parametre for tilføj til kurv-knappen"
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:366
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:372
 msgid "Is the product in stock?"
 msgstr "Er denne vare på lager?"
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:360
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/ProductSchema.php:366
 msgid "Is the product purchasable?"
 msgstr "Er denne vare til salg?"
 
@@ -7603,7 +7853,7 @@ msgstr[1] "Du kan ikke tilføje en ny betalingsmetode så hurtigt efter den forr
 
 #. translators: 1: wc_get_product 2: woocommerce_init 3:
 #. woocommerce_after_register_taxonomy 4: woocommerce_after_register_post_type
-#: includes/wc-product-functions.php:64
+#: includes/wc-product-functions.php:66
 msgid "%1$s should not be called before the %2$s, %3$s and %4$s actions have finished."
 msgstr "%1$s skal ikke kaldes før %2$s, %3$s og %4$s handlinger er afsluttet."
 
@@ -7647,25 +7897,25 @@ msgstr "MaxMind licensnøglen er ugyldig. Hvis du har genereret denne nøgle for
 
 #. translators: search keyword.
 #. translators: %s: search query
-#: includes/admin/views/html-admin-page-addons.php:68
+#: includes/admin/views/html-admin-page-addons.php:75
 #: packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php:567
 msgid "Search results for \"%s\""
 msgstr "Søgeresultater for \"%s\""
 
 #. translators: Actual coupon code.
-#: includes/abstracts/abstract-wc-order.php:1076
+#: includes/abstracts/abstract-wc-order.php:1078
 msgid "You have used this coupon %s in another transaction during this checkout, and coupon usage limit is reached. Please remove the coupon and try again."
 msgstr "Rabatkuponen %s blev brugt ved valg af en anden vare i denne købssession, og du har nået grænsen for brug af rabatkuponer. Fjern venligst rabatkuponen og prøv igen."
 
 #. translators: Actual coupon code.
-#: includes/abstracts/abstract-wc-order.php:1054
+#: includes/abstracts/abstract-wc-order.php:1056
 msgid "Coupon %s was used in another transaction during this checkout, and coupon usage limit is reached. Please remove the coupon and try again."
 msgstr "Rabatkuponen %s blev brugt i en anden transaktion ved denne betaling, og brugen af rabatkuponen er opbrugt. Fjern venligst rabatkuponen og prøv igen."
 
 #. translators: Actual coupon code.
 #. translators: Actual coupon code.
-#: includes/abstracts/abstract-wc-order.php:1051
-#: includes/abstracts/abstract-wc-order.php:1073
+#: includes/abstracts/abstract-wc-order.php:1053
+#: includes/abstracts/abstract-wc-order.php:1075
 msgid "An unexpected error happened while applying the Coupon %s."
 msgstr "En uventet fejl opstod ved indløsningen af denne rabatkupon %s."
 
@@ -7684,7 +7934,7 @@ msgid "The \"WooCommerce Admin\" plugin will be installed and activated"
 msgstr "\"WooCommerce Admin\" pluginet vil blive installeret og aktiveret."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:453
-#: packages/woocommerce-admin/src/Features/OnboardingTasks.php:688
+#: packages/woocommerce-admin/src/Features/OnboardingTasks/Tasks/Tax.php:31
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Yes please"
 msgstr "Ja, tak"
@@ -7752,7 +8002,7 @@ msgstr "Antal anmeldelser for denne vare."
 msgid "Server requirements not met, missing requirement(s): %s."
 msgstr "Serverkrav blev ikke opfyldt, manglende krav: %s."
 
-#: includes/admin/views/html-admin-page-addons.php:147
+#: includes/admin/views/html-admin-page-addons.php:132
 msgid "Storefront"
 msgstr "Storefront"
 
@@ -8423,7 +8673,7 @@ msgstr "Varekategori URL (webadresse)."
 
 #. translators: %1$s is the install command, %2$s is the build command, %3$s is
 #. the watch command.
-#: packages/woocommerce-blocks/src/Domain/Bootstrap.php:164
+#: packages/woocommerce-blocks/src/Domain/Bootstrap.php:163
 msgid "WooCommerce Blocks development mode requires files to be built. From the plugin directory, run %1$s to install dependencies, %2$s to build the files or %3$s to build the files and watch for changes."
 msgstr "WooCommerce Blocks udviklingstilstand kræver oprettelse af filer. Fra plugin-mappen kører %1$s for at installere afhængigheder, %2$s for at oprette filerne eller %3$s for at oprette filerne og overvåge ændringer."
 
@@ -8557,7 +8807,7 @@ msgstr "By / Landsby"
 
 #: includes/class-wc-countries.php:909
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:66
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:352
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:356
 #: packages/woocommerce-admin/dist/chunks/analytics-report-customers.js:1
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "Postal code"
@@ -10921,7 +11171,7 @@ msgstr "Fejl ved statusovergang."
 msgid "Update status event failed."
 msgstr "Opdatering af statushændelse fejlede."
 
-#: includes/abstracts/abstract-wc-order.php:201
+#: includes/abstracts/abstract-wc-order.php:203
 msgid "Error saving order."
 msgstr "Fejl i forbindelse med at gemme ordre."
 
@@ -11359,7 +11609,7 @@ msgid "Join the 16 million customers who use Mailchimp. Sync list and store data
 msgstr "Slut dig til de 16 millioner kunder, som bruger Mailchimp. Synkroniser maillister og webshopdata for at sende automatiserede e-mails og målrettede kampagner."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1927
-#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:331
+#: packages/woocommerce-admin/src/Features/RemoteFreeExtensions/DefaultFreeExtensions.php:370
 msgid "Mailchimp"
 msgstr "Mailchimp"
 
@@ -11396,7 +11646,6 @@ msgid "WooCommerce PayFast Gateway"
 msgstr "WooCommerce PayFast Gateway"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1495
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:216
 msgid "The eWAY extension for WooCommerce allows you to take credit card payments directly on your store without redirecting your customers to a third party site to make payment."
 msgstr "eWAY udvidelsen til WooCommerce tillader dig at modtage kreditkortbetalinger direkte på din webshop uden at omdirigere dine kunder til en trediemands websted for at foretage betalingen."
 
@@ -12296,7 +12545,7 @@ msgstr "Filtrer på lagerstatus"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:272
 #: includes/admin/reports/class-wc-report-stock.php:114
-#: includes/wc-product-functions.php:874
+#: includes/wc-product-functions.php:876
 #: packages/woocommerce-admin/dist/chunks/analytics-report-stock.js:1
 msgid "On backorder"
 msgstr "I restordre"
@@ -12381,15 +12630,15 @@ msgstr "Betalingsopsætning"
 msgid "payment setup and automated taxes"
 msgstr "betalingsopsætning og automatiseret moms"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:226
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:270
 msgid "Square"
 msgstr "Square"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:75
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:119
 msgid "Klarna Payments"
 msgstr "Klarna betalinger"
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:64
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:108
 msgid "Klarna Checkout"
 msgstr "Klarna kasse"
 
@@ -12688,8 +12937,6 @@ msgid "Order updated and sent."
 msgstr "Ordre blev opdateret og sendt."
 
 #: templates/cart/cart-shipping.php:67
-#: packages/woocommerce-blocks/build/checkout-frontend.js:33
-#: packages/woocommerce-blocks/build/checkout.js:31
 msgid "There are no shipping options available. Please ensure that your address has been entered correctly, or contact us if you need any help."
 msgstr "Der er ikke nogen tilgængelige forsendelsesmetoder. Se venligst efter, om din adresse er indtastet korrekt, eller kontakt os, hvis du har brug for hjælp."
 
@@ -13288,7 +13535,7 @@ msgstr "Ordre planlagt for: %s."
 msgid "Enter a fixed amount or percentage to apply as a fee."
 msgstr "Indtast et fast beløb eller en procent, der skal gælde som et gebyr."
 
-#: includes/abstracts/abstract-wc-order.php:1120
+#: includes/abstracts/abstract-wc-order.php:1122
 #: includes/class-wc-ajax.php:1176 includes/class-wc-ajax.php:1239
 #: includes/class-wc-discounts.php:249
 msgid "Invalid coupon"
@@ -13492,15 +13739,15 @@ msgid_plural "Rated %1$s out of 5 based on %2$s customer ratings"
 msgstr[0] "Bedømt som %1$s ud af 5 baseret på %2$s kundebedømmelse"
 msgstr[1] "Bedømt som %1$s ud af 5 baseret på %2$s kundebedømmelser"
 
-#: includes/wc-product-functions.php:837
+#: includes/wc-product-functions.php:839
 msgid "Search results only"
 msgstr "Kun i søgeresultater"
 
-#: includes/wc-product-functions.php:836
+#: includes/wc-product-functions.php:838
 msgid "Shop only"
 msgstr "Kun i shoppen"
 
-#: includes/wc-product-functions.php:835
+#: includes/wc-product-functions.php:837
 msgid "Shop and search results"
 msgstr "I shoppen og i søgeresultater"
 
@@ -14115,7 +14362,7 @@ msgid "Expired :("
 msgstr "Udløbet :("
 
 #: includes/admin/helper/views/html-main.php:17
-#: packages/woocommerce-admin/src/Features/Onboarding.php:441
+#: packages/woocommerce-admin/src/Features/Onboarding.php:445
 msgid "Subscriptions"
 msgstr "Abonnementer"
 
@@ -14242,7 +14489,7 @@ msgstr "Opret et nyt webhook"
 msgid "Webhooks are event notifications sent to URLs of your choice. They can be used to integrate with third-party services which support them."
 msgstr "Webhooks er handlings-meddelelser, der sendes til URL's (webadresser) efter dit valg. De kan bruges til at integrere med trediemands ydelser, der understøtter dem."
 
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:137
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:181
 msgid "Safe and secure payments using credit cards or your customer's PayPal account."
 msgstr "Sikre betalingstjenester ved brug af kreditkort eller med din kundes PayPal konto."
 
@@ -14324,12 +14571,12 @@ msgstr "Opret en API nøgle"
 msgid "The WooCommerce REST API allows external apps to view and manage store data. Access is granted only to those with valid API keys."
 msgstr "WooCommerce REST API tillader eksterne apps (programmer) at læse og styre data i din webshop. Adgang bliver kun givet til dem med gyldige API nøgler."
 
-#: includes/admin/class-wc-admin-addons.php:400
-#: includes/admin/class-wc-admin-addons.php:495
+#: includes/admin/class-wc-admin-addons.php:463
+#: includes/admin/class-wc-admin-addons.php:560
 msgid "Free - Install now"
 msgstr "Gratis - Installér nu"
 
-#: includes/admin/class-wc-admin-addons.php:742
+#: includes/admin/class-wc-admin-addons.php:990
 #: includes/admin/class-wc-admin-setup-wizard.php:803
 #: includes/admin/class-wc-admin-setup-wizard.php:820
 msgid "WooCommerce Services"
@@ -14592,7 +14839,7 @@ msgstr "Ugyldigt vare-ID"
 #: includes/rest-api/Controllers/Version2/class-wc-rest-setting-options-v2-controller.php:391
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:187
 #: includes/rest-api/Controllers/Version3/class-wc-rest-settings-controller.php:51
-#: packages/woocommerce-admin/src/API/Notes.php:391
+#: packages/woocommerce-admin/src/API/Notes.php:407
 #: packages/woocommerce-admin/src/API/OnboardingProfile.php:102
 #: packages/woocommerce-admin/src/API/Reports/Import/Controller.php:110
 msgid "Sorry, you cannot edit this resource."
@@ -14807,10 +15054,10 @@ msgstr "%s findes ikke."
 #. translators: %s Coupon code.
 #: includes/wc-cart-functions.php:264
 #: packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/discount/index.js:77
-#: packages/woocommerce-blocks/build/cart-frontend.js:35
-#: packages/woocommerce-blocks/build/cart.js:27
-#: packages/woocommerce-blocks/build/checkout-frontend.js:27
-#: packages/woocommerce-blocks/build/checkout.js:27
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:19
+#: packages/woocommerce-blocks/build/cart-frontend.js:39
+#: packages/woocommerce-blocks/build/cart.js:33
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:23
 msgid "Coupon: %s"
 msgstr "Rabatkupon: %s"
 
@@ -14834,8 +15081,7 @@ msgstr "Specifikke lande"
 
 #: includes/shipping/free-shipping/class-wc-shipping-free-shipping.php:47
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
-#: packages/woocommerce-blocks/build/cart.js:31
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/cart.js:37
 msgid "Free shipping"
 msgstr "Gratis forsendelse"
 
@@ -15109,7 +15355,7 @@ msgstr "Søg efter kategorier"
 #: packages/woocommerce-admin/src/API/Reports/Products/Controller.php:393
 #: packages/woocommerce-admin/dist/chunks/analytics-report-categories.js:1
 #: packages/woocommerce-admin/dist/chunks/analytics-report-products.js:1
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-category/edit.js:82
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-category/edit.js:47
 #: packages/woocommerce-blocks/build/reviews-by-category.js:7
 msgid "Category"
 msgid_plural "Categories"
@@ -15148,9 +15394,6 @@ msgstr "Besøg premiumkunde supportforum"
 #: packages/woocommerce-blocks/build/attribute-filter-frontend.js:27
 #: packages/woocommerce-blocks/build/cart-frontend.js:1
 #: packages/woocommerce-blocks/build/cart.js:5
-#: packages/woocommerce-blocks/build/checkout-frontend.js:1
-#: packages/woocommerce-blocks/build/checkout-i2-frontend.js:1
-#: packages/woocommerce-blocks/build/checkout.js:5
 #: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:1
 #: packages/woocommerce-blocks/build/price-filter-frontend.js:1
 #: packages/woocommerce-blocks/build/reviews-frontend.js:5
@@ -15242,7 +15485,7 @@ msgstr "For at <strong>database caching</strong> kan arbejde med WooCommerce, sk
 msgid "%1$s - API %2$s (created on %3$s at %4$s)."
 msgstr "%1$s - API %2$s (oprettet på %3$s ved %4$s)."
 
-#: includes/class-wc-ajax.php:892 includes/class-wc-ajax.php:924
+#: includes/class-wc-ajax.php:891 includes/class-wc-ajax.php:923
 #: includes/class-wc-ajax.php:1013 includes/class-wc-ajax.php:1077
 #: includes/class-wc-ajax.php:1119 includes/class-wc-ajax.php:1172
 #: includes/class-wc-ajax.php:1235 includes/class-wc-ajax.php:1276
@@ -16282,14 +16525,12 @@ msgstr "Fejlretningstilstand"
 #: includes/admin/settings/class-wc-settings-shipping.php:50
 #: includes/admin/settings/class-wc-settings-shipping.php:111
 #: packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/shipping/shipping-rate-selector.js:19
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout-i2/inner-blocks/checkout-shipping-methods-block/no-shipping-placeholder/index.js:18
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/form/no-shipping-placeholder/index.js:18
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/inner-blocks/checkout-shipping-methods-block/no-shipping-placeholder/index.js:18
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:21
 #: packages/woocommerce-blocks/build/cart-frontend.js:41
-#: packages/woocommerce-blocks/build/cart.js:29
-#: packages/woocommerce-blocks/build/checkout-frontend.js:33
-#: packages/woocommerce-blocks/build/checkout-frontend.js:37
-#: packages/woocommerce-blocks/build/checkout.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/cart.js:35
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:25
+#: packages/woocommerce-blocks/build/checkout-blocks/shipping-methods-frontend.js:9
 msgid "Shipping options"
 msgstr "Forsendelsesindstillinger"
 
@@ -16729,11 +16970,11 @@ msgstr "Ugyldigt eller duplikeret SKU (varenummer)."
 msgid "Invalid catalog visibility option."
 msgstr "Ugyldig valgmulighed for varekatalogets (shoppens frontend) synlighed."
 
-#: includes/abstracts/abstract-wc-order.php:582
+#: includes/abstracts/abstract-wc-order.php:584
 msgid "Invalid currency code"
 msgstr "Ugyldig valutakode"
 
-#: includes/abstracts/abstract-wc-order.php:527
+#: includes/abstracts/abstract-wc-order.php:529
 msgid "Invalid parent ID"
 msgstr "Ugyldigt hoved-ID"
 
@@ -17136,7 +17377,7 @@ msgstr "Sørg for at søgeresultat udelukker specifikke ID'er."
 msgid "#%s is an invalid image ID."
 msgstr "#%s er et ugyldigt billed-ID"
 
-#: includes/admin/class-wc-admin-addons.php:672
+#: includes/admin/class-wc-admin-addons.php:879
 #: includes/admin/helper/class-wc-helper.php:363
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.js:1
 msgid "Installed"
@@ -17805,8 +18046,8 @@ msgstr "Afgræns søgeresultater til dem, der matcher en tekststreng."
 #: includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:717
 #: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:567
 #: packages/woocommerce-admin/src/API/Leaderboards.php:455
-#: packages/woocommerce-admin/src/API/Notes.php:547
-#: packages/woocommerce-admin/src/API/ProductsLowInStock.php:297
+#: packages/woocommerce-admin/src/API/Notes.php:563
+#: packages/woocommerce-admin/src/API/ProductsLowInStock.php:298
 #: packages/woocommerce-admin/src/API/Reports/Categories/Controller.php:227
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Controller.php:233
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:280
@@ -17829,8 +18070,8 @@ msgstr "Det højeste antal enheder der skal vises i søgeresultat."
 #: includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:709
 #: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:559
 #: packages/woocommerce-admin/src/API/Leaderboards.php:447
-#: packages/woocommerce-admin/src/API/Notes.php:539
-#: packages/woocommerce-admin/src/API/ProductsLowInStock.php:289
+#: packages/woocommerce-admin/src/API/Notes.php:555
+#: packages/woocommerce-admin/src/API/ProductsLowInStock.php:290
 #: packages/woocommerce-admin/src/API/Reports/Categories/Controller.php:219
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Controller.php:225
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:272
@@ -18033,7 +18274,7 @@ msgstr "Denne betalingsmetode blev ændret til din standard."
 msgid "Payment method deleted."
 msgstr "Betalingsmetode slettet."
 
-#: includes/class-wc-download-handler.php:647
+#: includes/class-wc-download-handler.php:648
 msgid "Go to shop"
 msgstr "Gå til shoppen"
 
@@ -18045,7 +18286,7 @@ msgstr "Ingen forsendelsesmetode er blevet valgt. Vær venlig at dobbelttjekke d
 msgid "Please enter an address to continue."
 msgstr "Indtast venligst en adresse for at fortsætte."
 
-#: includes/class-wc-ajax.php:282 templates/cart/cart-empty.php:35
+#: includes/class-wc-ajax.php:281 templates/cart/cart-empty.php:35
 msgid "Return to shop"
 msgstr "Tilbage til shoppen"
 
@@ -18352,7 +18593,7 @@ msgstr "Afgræns søgeresultat til varer tildelt en specifik type."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:2589
 #: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:2292
-#: packages/woocommerce-admin/src/API/ProductsLowInStock.php:308
+#: packages/woocommerce-admin/src/API/ProductsLowInStock.php:309
 msgid "Limit result set to products assigned a specific status."
 msgstr "Afgræns søgeresultat til varer tildelt en specifik status. "
 
@@ -19795,7 +20036,7 @@ msgstr "Ugyldigt ordrerefunderings-ID."
 #: includes/rest-api/Controllers/Version3/class-wc-rest-order-notes-controller.php:79
 #: includes/rest-api/Controllers/Version3/class-wc-rest-order-refunds-controller.php:44
 #: includes/wc-core-functions.php:149 includes/wc-order-functions.php:514
-#: includes/wc-order-functions.php:1084
+#: includes/wc-order-functions.php:1087
 msgid "Invalid order ID."
 msgstr "Ugyldigt ordre-ID."
 
@@ -20583,7 +20824,7 @@ msgstr "Forsendelsesklasser kan bruges til at gruppere varer, der ligner hinande
 
 #: includes/admin/settings/class-wc-settings-shipping.php:399
 #: packages/woocommerce-blocks/assets/js/blocks/attribute-filter/edit.js:73
-#: packages/woocommerce-blocks/assets/js/blocks/stock-filter/edit.js:37
+#: packages/woocommerce-blocks/assets/js/blocks/stock-filter/edit.js:38
 #: packages/woocommerce-blocks/build/attribute-filter.js:33
 #: packages/woocommerce-blocks/build/stock-filter.js:13
 msgid "Product count"
@@ -20703,8 +20944,7 @@ msgstr "Slutpunkt for siden \"Min Konto &arr; Betalingsmetode\""
 #: includes/admin/settings/class-wc-settings-payment-gateways.php:50
 #: includes/class-wc-query.php:149 includes/wc-account-functions.php:103
 #: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/payment-methods/no-payment-methods/index.js:36
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/checkout-blocks/payment-frontend.js:1
 msgid "Payment methods"
 msgstr "Betalingsmetoder"
 
@@ -20721,7 +20961,7 @@ msgstr[1] ""
 #: includes/class-wc-query.php:140 includes/wc-account-functions.php:101
 #: packages/woocommerce-admin/src/API/Reports/Downloads/Stats/Controller.php:144
 #: packages/woocommerce-admin/src/Features/Analytics.php:278
-#: packages/woocommerce-admin/src/Features/Onboarding.php:438
+#: packages/woocommerce-admin/src/Features/Onboarding.php:442
 #: packages/woocommerce-admin/src/ReportCSVEmail.php:35
 #: templates/emails/email-downloads.php:22
 #: templates/emails/plain/email-downloads.php:20
@@ -20947,7 +21187,7 @@ msgstr "Afgræns søgeresultat til dem med bestemte hoved-ID'er"
 #: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:643
 #: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:667
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:968
-#: packages/woocommerce-admin/src/API/Notes.php:526
+#: packages/woocommerce-admin/src/API/Notes.php:542
 #: packages/woocommerce-admin/src/API/Reports/Categories/Controller.php:255
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Controller.php:261
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:308
@@ -20976,7 +21216,7 @@ msgstr "Sortér samling efter objektegenskab."
 #: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:660
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:959
 #: includes/rest-api/Controllers/Version3/class-wc-rest-terms-controller.php:733
-#: packages/woocommerce-admin/src/API/Notes.php:519
+#: packages/woocommerce-admin/src/API/Notes.php:535
 #: packages/woocommerce-admin/src/API/Reports/Categories/Controller.php:248
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Controller.php:254
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:301
@@ -21231,7 +21471,7 @@ msgstr "Beklager, du kan ikke se denne ressource."
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:170
 #: includes/rest-api/Controllers/Version3/class-wc-rest-shipping-zones-controller-base.php:83
 #: includes/rest-api/Controllers/Version3/class-wc-rest-terms-controller.php:161
-#: packages/woocommerce-admin/src/API/OnboardingTasks.php:200
+#: packages/woocommerce-admin/src/API/OnboardingTasks.php:213
 msgid "Sorry, you are not allowed to create resources."
 msgstr "Beklager, men du har ikke tilladelse til at oprette ressourcer."
 
@@ -21258,10 +21498,11 @@ msgstr "Beklager, men du har ikke tilladelse til at oprette ressourcer."
 #: includes/rest-api/Controllers/Version3/class-wc-rest-shipping-zones-controller-base.php:65
 #: includes/rest-api/Controllers/Version3/class-wc-rest-terms-controller.php:142
 #: packages/woocommerce-admin/src/API/Features.php:61
-#: packages/woocommerce-admin/src/API/Notes.php:224
-#: packages/woocommerce-admin/src/API/Notes.php:238
+#: packages/woocommerce-admin/src/API/Notes.php:236
+#: packages/woocommerce-admin/src/API/Notes.php:250
 #: packages/woocommerce-admin/src/API/OnboardingFreeExtensions.php:61
 #: packages/woocommerce-admin/src/API/OnboardingPayments.php:61
+#: packages/woocommerce-admin/src/API/OnboardingProductTypes.php:61
 #: packages/woocommerce-admin/src/API/OnboardingProfile.php:88
 #: packages/woocommerce-admin/src/API/Reports/Controller.php:60
 msgid "Sorry, you cannot list resources."
@@ -21756,20 +21997,20 @@ msgstr "%s gennemsnitligt beløb for dagligt bruttosalg"
 msgid "Product permalinks"
 msgstr "Vare-permalinks"
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:799
+#: packages/woocommerce-admin/src/Features/Onboarding.php:805
 msgid "If you need to access the setup wizard again, please click on the button below."
 msgstr "Hvis du har brug får opsætningsguiden igen, skal du klikke på knappen nedenfor."
 
-#: packages/woocommerce-admin/src/Features/Onboarding.php:788
-#: packages/woocommerce-admin/src/Features/Onboarding.php:800
+#: packages/woocommerce-admin/src/Features/Onboarding.php:794
+#: packages/woocommerce-admin/src/Features/Onboarding.php:806
 msgid "Setup wizard"
 msgstr "Opsætningsguide (wizard)"
 
-#: includes/admin/class-wc-admin-addons.php:186
+#: includes/admin/class-wc-admin-addons.php:237
 msgid "View more Storefront child themes"
 msgstr "Se flere Storefront undertemaer"
 
-#: includes/admin/class-wc-admin-addons.php:182
+#: includes/admin/class-wc-admin-addons.php:233
 msgid "Need a fresh look? Try Storefront child themes"
 msgstr "Brug for et nyt designtema? Prøv Storefront undertemaer"
 
@@ -21886,7 +22127,7 @@ msgstr "Inden du kan tilføje en variant, skal du tilføje nogle variant-egenska
 #. translators: %s: method
 #. translators: %s: payment method
 #. translators: %s: shipping method
-#: includes/abstracts/abstract-wc-order.php:1994
+#: includes/abstracts/abstract-wc-order.php:2005
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:276
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:328
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:345
@@ -22157,9 +22398,7 @@ msgstr "Ændring af adgangskode"
 #: templates/myaccount/form-edit-account.php:43
 #: templates/myaccount/form-login.php:86
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.js:1
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/form/contact-fields-step.js:61
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/checkout-blocks/contact-information-frontend.js:1
 msgid "Email address"
 msgstr "E-mailadresse"
 
@@ -22210,9 +22449,7 @@ msgstr "Vis ordre: %s"
 #: templates/myaccount/form-edit-address.php:20
 #: templates/myaccount/my-address.php:27
 #: templates/order/order-details-customer.php:50
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/form/shipping-fields-step.js:22
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/checkout-blocks/shipping-address-frontend.js:1
 msgid "Shipping address"
 msgstr "Leveringsadresse"
 
@@ -22221,9 +22458,7 @@ msgstr "Leveringsadresse"
 #: templates/myaccount/form-edit-address.php:20
 #: templates/myaccount/my-address.php:26 templates/myaccount/my-address.php:35
 #: templates/order/order-details-customer.php:31
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/form/billing-fields-step.js:16
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/checkout-blocks/billing-address-frontend.js:1
 msgid "Billing address"
 msgstr "Faktureringsadresse"
 
@@ -22310,9 +22545,7 @@ msgid "You must be logged in to checkout."
 msgstr "Du skal være logget ind for at gennemføre din ordre på siden Kasse."
 
 #: templates/checkout/form-billing.php:53
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/form/contact-fields-step.js:34
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/checkout-blocks/contact-information-frontend.js:1
 msgid "Create an account?"
 msgstr "Opret en kundekonto?"
 
@@ -22338,8 +22571,6 @@ msgstr "Fortsæt til betaling"
 
 #: includes/customizer/class-wc-shop-customizer.php:715
 #: includes/wc-template-functions.php:2183
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/index.js:51
-#: packages/woocommerce-blocks/build/checkout.js:31
 msgid "Checkout"
 msgstr "Kasse"
 
@@ -22383,8 +22614,9 @@ msgid "Subtotal"
 msgstr "Subtotal"
 
 #: templates/cart/cart-totals.php:25
-#: packages/woocommerce-blocks/build/cart-frontend.js:41
-#: packages/woocommerce-blocks/build/cart.js:41
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:23
+#: packages/woocommerce-blocks/build/cart-frontend.js:37
+#: packages/woocommerce-blocks/build/cart.js:43
 msgid "Cart totals"
 msgstr "Samlet beløb i kurv"
 
@@ -22630,7 +22862,7 @@ msgstr "Skjul, hvis kurv er tom"
 #: includes/widgets/class-wc-widget-cart.php:29
 #: includes/widgets/class-wc-widget-cart.php:62
 #: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart/index.js:20
-#: packages/woocommerce-blocks/build/cart.js:43
+#: packages/woocommerce-blocks/build/cart.js:45
 msgid "Cart"
 msgstr "Kurv"
 
@@ -22728,7 +22960,7 @@ msgstr " – Side %s"
 msgid "Search results: &ldquo;%s&rdquo;"
 msgstr "Søgeresultater: &ldquo;%s&rdquo;"
 
-#: includes/wc-product-functions.php:249
+#: includes/wc-product-functions.php:251
 msgctxt "slug"
 msgid "uncategorized"
 msgstr "Ikke kategoriseret"
@@ -22749,7 +22981,7 @@ msgstr "fakturering"
 msgid "Refund &ndash; %s"
 msgstr "Refundér - %s"
 
-#: includes/wc-order-functions.php:930
+#: includes/wc-order-functions.php:936
 msgid "Unpaid order cancelled - time limit reached."
 msgstr "Ikke betalt ordre er annulleret - tidsfrist nået."
 
@@ -23082,8 +23314,8 @@ msgstr "Gebyrtype"
 
 #: includes/shipping/legacy-local-delivery/class-wc-shipping-legacy-local-delivery.php:117
 #: includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php:96
-#: packages/woocommerce-admin/src/Features/Onboarding.php:805
-#: packages/woocommerce-admin/src/Features/Onboarding.php:812
+#: packages/woocommerce-admin/src/Features/Onboarding.php:811
+#: packages/woocommerce-admin/src/Features/Onboarding.php:820
 #: packages/woocommerce-admin/dist/chunks/3.js:1
 msgid "Enable"
 msgstr "Aktivér"
@@ -23229,8 +23461,7 @@ msgid "Flat rate"
 msgstr "Fast sats"
 
 #: includes/wc-account-functions.php:260 includes/wc-account-functions.php:395
-#: packages/woocommerce-blocks/src/BlockTypes/Checkout.php:318
-#: packages/woocommerce-blocks/src/BlockTypes/CheckoutI2.php:345
+#: packages/woocommerce-blocks/src/BlockTypes/Checkout.php:335
 msgid "Credit card"
 msgstr "Kreditkort"
 
@@ -23620,7 +23851,7 @@ msgstr "Den beskrivelse af betalingsmetoden, som kunden vil se på siden Kasse."
 
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:39
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:91
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:160
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:204
 #: packages/woocommerce-blocks/assets/js/payment-method-extensions/payment-methods/bacs/index.js:15
 #: packages/woocommerce-blocks/build/wc-payment-method-bacs.js:1
 msgid "Direct bank transfer"
@@ -24192,7 +24423,7 @@ msgstr "Tilføj ny vare"
 #: packages/woocommerce-blocks/build/product-on-sale.js:11
 #: packages/woocommerce-blocks/build/product-top-rated.js:11
 #: packages/woocommerce-blocks/build/products-by-attribute.js:9
-#: packages/woocommerce-blocks/build/reviews-by-category.js:19
+#: packages/woocommerce-blocks/build/reviews-by-category.js:17
 msgid "%d product"
 msgid_plural "%d products"
 msgstr[0] "%d vare"
@@ -24490,7 +24721,7 @@ msgstr "Kundeoplysninger"
 msgid "Note"
 msgstr "Bemærkning"
 
-#: includes/class-wc-download-handler.php:455
+#: includes/class-wc-download-handler.php:456
 msgid "File not found"
 msgstr "Fil blev ikke fundet"
 
@@ -24594,7 +24825,7 @@ msgstr "Rabatkuponens forbrugsgrænse er nået."
 msgid "Sorry, coupon \"%s\" has already been applied and cannot be used in conjunction with other coupons."
 msgstr "Beklager, rabatkuponen \"%s\" er allerede blevet anvendt og kan ikke anvendes sammen med andre kuponer."
 
-#: includes/abstracts/abstract-wc-order.php:1127
+#: includes/abstracts/abstract-wc-order.php:1129
 #: includes/class-wc-coupon.php:976
 msgid "Coupon code already applied!"
 msgstr "Rabatkuponkode er allerede anvendt!"
@@ -24807,9 +25038,7 @@ msgid "We were unable to process your order, please try again."
 msgstr "Ordren kunne ikke gennemføres, prøv venligst igen."
 
 #: includes/class-wc-checkout.php:240
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/form/order-notes-step.js:35
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/checkout-blocks/order-note-frontend.js:1
 msgid "Notes about your order, e.g. special notes for delivery."
 msgstr "Bemærkninger om din ordre, fx særlige bemærkninger for levering."
 
@@ -25021,15 +25250,15 @@ msgstr "Ugyldigt refunderingsbeløb"
 msgid "Item #%1$s stock increased from %2$s to %3$s."
 msgstr "Vare #%1$s lager er forøget fra %2$s til %3$s."
 
-#: includes/class-wc-ajax.php:282
+#: includes/class-wc-ajax.php:281
 msgid "Sorry, your session has expired."
 msgstr "Beklager, din session er udløbet."
 
-#: includes/class-wc-ajax.php:234
+#: includes/class-wc-ajax.php:233
 msgid "Coupon has been removed."
 msgstr "Rabatkupon er blevet fjernet."
 
-#: includes/class-wc-ajax.php:231
+#: includes/class-wc-ajax.php:230
 msgid "Sorry there was a problem removing this coupon."
 msgstr "Beklager, men der opstod et problem med at fjerne denne rabatkupon."
 
@@ -25268,7 +25497,7 @@ msgstr "Du har ikke tilladelse til at læse vareegenskaber"
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:314
 #: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:427
 #: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:428
-#: includes/wc-product-functions.php:322
+#: includes/wc-product-functions.php:324
 msgid "Placeholder"
 msgstr "Pladsholder"
 
@@ -25612,7 +25841,7 @@ msgstr "Du har ikke tilladelse til at oprette rabatkuponer"
 msgid "No %1$s data specified to create %1$s"
 msgstr "Ingen %1$s data angivet for at oprette %1$s"
 
-#: includes/abstracts/abstract-wc-order.php:1117
+#: includes/abstracts/abstract-wc-order.php:1119
 #: includes/legacy/api/v1/class-wc-api-coupons.php:174
 #: includes/legacy/api/v2/class-wc-api-coupons.php:189
 #: includes/legacy/api/v3/class-wc-api-coupons.php:187
@@ -26185,33 +26414,33 @@ msgstr "Kopiér og indsæt denne information i din ticket når du kontakter supp
 msgid "There are currently no logs to view."
 msgstr "I øjeblikket er der inden logfiler at vise."
 
-#: includes/admin/views/html-admin-page-addons.php:153
+#: includes/admin/views/html-admin-page-addons.php:138
 msgid "Download &amp; install"
 msgstr "Download &amp; installér"
 
-#: includes/admin/views/html-admin-page-addons.php:152
+#: includes/admin/views/html-admin-page-addons.php:137
 msgid "Read all about it"
 msgstr "Læs alt om det her"
 
-#: includes/admin/views/html-admin-page-addons.php:150
+#: includes/admin/views/html-admin-page-addons.php:135
 msgid "Storefront is an intuitive, flexible and <strong>free</strong> WordPress theme offering deep integration with WooCommerce and many of the most popular customer-facing extensions."
 msgstr "Storefront er et intuitivt, fleksibelt og <strong>gratis</strong> WordPress designtema, som tilbyder høj integration med WooCommerce og mange af de andre populære kundeorienterede udvidelser."
 
-#: includes/admin/views/html-admin-page-addons.php:149
+#: includes/admin/views/html-admin-page-addons.php:134
 msgid "We recommend Storefront, the <em>official</em> WooCommerce theme."
 msgstr "Vi anbefaler Storefront, som er det <em>officielle</em> WooCommerce desigtema."
 
-#: includes/admin/views/html-admin-page-addons.php:148
+#: includes/admin/views/html-admin-page-addons.php:133
 msgid "Looking for a WooCommerce theme?"
 msgstr "Leder du efter et WooCommerce tema?"
 
 #. translators: a url
-#: includes/admin/views/html-admin-page-addons.php:142
+#: includes/admin/views/html-admin-page-addons.php:124
 msgid "Our catalog of WooCommerce Extensions can be found on WooCommerce.com here: <a href=\"%s\">WooCommerce Extensions Catalog</a>"
 msgstr "Vores katalog over WooCommerce Extensions kan findes på WooCommerce.com her: <a href=\"%s\">WooCommerce katalog over udvidelser</a>"
 
-#: includes/admin/class-wc-admin-addons.php:670
-#: includes/admin/views/html-admin-page-addons.php:126
+#: includes/admin/class-wc-admin-addons.php:877
+#: includes/admin/class-wc-admin-addons.php:1292
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.js:1
 msgid "Free"
 msgstr "Gratis"
@@ -26224,7 +26453,7 @@ msgstr "Gratis"
 msgid "Marketing"
 msgstr "Marketing"
 
-#: includes/admin/class-wc-admin-addons.php:191
+#: includes/admin/class-wc-admin-addons.php:242
 msgid "Need a theme? Try Storefront"
 msgstr "Brug for et tema? Prøv Storefront"
 
@@ -27238,8 +27467,8 @@ msgstr "Varesøgning"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:208
 #: packages/woocommerce-admin/dist/components/index.js:2
-#: packages/woocommerce-blocks/build/cart-frontend.js:39
-#: packages/woocommerce-blocks/build/checkout-frontend.js:37
+#: packages/woocommerce-blocks/build/cart-frontend.js:45
+#: packages/woocommerce-blocks/build/vendors--cart-blocks/order-summary--checkout-blocks/billing-address--checkout-blocks/order-summary---eb4d2cec-frontend.js:3
 #: packages/woocommerce-blocks/build/wc-blocks-vendors.js:9
 #: packages/woocommerce-blocks/build/wc-blocks-vendors.js:19
 msgid "Reset"
@@ -28347,11 +28576,11 @@ msgstr "Lagerstatus"
 msgid "If managing stock, this controls whether or not backorders are allowed. If enabled, stock quantity can go below 0."
 msgstr "Hvis der er lagerstyring, så kontrollerer dette, hvorvidt restordrer er tilladt. Hvis aktiveret, kan lagerantal være mindre end 0."
 
-#: includes/wc-product-functions.php:888
+#: includes/wc-product-functions.php:890
 msgid "Allow, but notify customer"
 msgstr "Tillad, men underret kunde"
 
-#: includes/wc-product-functions.php:887
+#: includes/wc-product-functions.php:889
 msgid "Do not allow"
 msgstr "Tillad ikke"
 
@@ -28389,7 +28618,7 @@ msgstr "Vælg en momsklasse for denne vare. Momsklasser bruges til at anvende fo
 #: includes/admin/settings/views/html-settings-tax.php:24
 #: includes/admin/views/html-bulk-edit-product.php:95
 #: includes/admin/views/html-quick-edit-product.php:72
-#: includes/wc-product-functions.php:852
+#: includes/wc-product-functions.php:854
 msgid "Standard"
 msgstr "Standard"
 
@@ -28568,10 +28797,10 @@ msgstr "Forbundne varer"
 #: packages/woocommerce-admin/dist/chunks/analytics-report-revenue.js:1
 #: packages/woocommerce-admin/dist/chunks/dashboard-charts.js:1
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:23
 #: packages/woocommerce-blocks/build/cart-frontend.js:43
-#: packages/woocommerce-blocks/build/cart.js:31
-#: packages/woocommerce-blocks/build/checkout-frontend.js:39
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/cart.js:37
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:27
 msgid "Shipping"
 msgstr "Forsendelse"
 
@@ -28655,7 +28884,7 @@ msgstr "Søg efter en download-bar vare&hellip;"
 
 #. translators: %d file count
 #: includes/admin/meta-boxes/class-wc-meta-box-order-downloads.php:57
-#: includes/class-wc-ajax.php:844
+#: includes/class-wc-ajax.php:843
 msgid "File %d"
 msgstr "Fil %d"
 
@@ -28690,7 +28919,7 @@ msgstr "Transaktions ID"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:611
 #: includes/admin/meta-boxes/views/html-order-shipping.php:44
 #: includes/admin/meta-boxes/views/html-order-shipping.php:46
-#: packages/woocommerce-admin/src/Features/Onboarding.php:417
+#: packages/woocommerce-admin/src/Features/Onboarding.php:422
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.js:1
 msgid "Other"
 msgstr "Andre"
@@ -28745,7 +28974,7 @@ msgstr "Der er ikke angivet en faktureringsadresse."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:511
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:42
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:332
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:336
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "Address"
 msgstr "Adresse"
@@ -28795,20 +29024,18 @@ msgstr "Betaling via %s"
 #: includes/class-wc-countries.php:1526
 #: includes/customizer/class-wc-shop-customizer.php:726
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:78
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/edit.js:144
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/form/phone-number/index.js:25
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/checkout-blocks/billing-address-frontend.js:1
+#: packages/woocommerce-blocks/build/checkout-blocks/shipping-address-frontend.js:1
 msgid "Phone"
 msgstr "Telefon"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:48
 #: includes/widgets/class-wc-widget-layered-nav.php:288
 #: packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/coupon/index.js:103
-#: packages/woocommerce-blocks/build/cart-frontend.js:37
-#: packages/woocommerce-blocks/build/cart.js:29
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:29
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:21
+#: packages/woocommerce-blocks/build/cart-frontend.js:41
+#: packages/woocommerce-blocks/build/cart.js:35
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:25
 msgid "Apply"
 msgstr "Anvend"
 
@@ -29281,7 +29508,7 @@ msgstr "Lær mere"
 msgid "Next step"
 msgstr "Næste trin"
 
-#: includes/wc-product-functions.php:889
+#: includes/wc-product-functions.php:891
 msgid "Allow"
 msgstr "Tillad"
 
@@ -29292,7 +29519,7 @@ msgstr "Aktivér efterkrav"
 #: includes/admin/class-wc-admin-setup-wizard.php:1605
 #: includes/gateways/cod/class-wc-gateway-cod.php:58
 #: includes/gateways/cod/class-wc-gateway-cod.php:79
-#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:151
+#: packages/woocommerce-admin/src/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:195
 #: packages/woocommerce-blocks/assets/js/payment-method-extensions/payment-methods/cod/index.js:15
 #: packages/woocommerce-blocks/build/wc-payment-method-cod.js:1
 msgid "Cash on delivery"
@@ -29504,10 +29731,8 @@ msgstr "Moms pr. kode"
 #: packages/woocommerce-admin/dist/chunks/analytics-report-taxes.js:1
 #: packages/woocommerce-admin/dist/chunks/dashboard-charts.js:1
 #: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart/edit.js:102
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/edit.js:306
 #: packages/woocommerce-blocks/build/blocks-checkout.js:1
-#: packages/woocommerce-blocks/build/cart.js:43
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/cart.js:45
 msgid "Taxes"
 msgstr "Moms"
 
@@ -29603,7 +29828,7 @@ msgstr "E-mail"
 msgid "State / County or state code"
 msgstr "Stat / Land eller statskode"
 
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:348
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:352
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "State/County"
 msgstr "Stat/Land"
@@ -29623,7 +29848,7 @@ msgstr "Postnummer"
 #: includes/admin/settings/views/html-settings-tax.php:35
 #: packages/woocommerce-admin/src/API/Reports/Customers/Controller.php:595
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:54
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:344
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:348
 #: templates/cart/shipping-calculator.php:76
 #: packages/woocommerce-admin/dist/chunks/analytics-report-customers.js:1
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.js:1
@@ -29637,9 +29862,7 @@ msgstr "By"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:53
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:105
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:36
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:328
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/edit.js:108
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:332
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "Company"
 msgstr "Firma"
@@ -29650,7 +29873,7 @@ msgstr "Firma"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:101
 #: includes/class-wc-countries.php:692 includes/class-wc-form-handler.php:269
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:30
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:324
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:328
 #: templates/myaccount/form-edit-account.php:31
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "Last name"
@@ -29662,7 +29885,7 @@ msgstr "Efternavn"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:97
 #: includes/class-wc-countries.php:685 includes/class-wc-form-handler.php:268
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/AbstractAddressSchema.php:24
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:320
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/OrderController.php:324
 #: templates/myaccount/form-edit-account.php:27
 #: packages/woocommerce-blocks/build/wc-settings.js:1
 msgid "First name"
@@ -29679,7 +29902,7 @@ msgstr "Fornavn"
 #: packages/woocommerce-admin/dist/chunks/homescreen.js:1
 #: packages/woocommerce-admin/dist/customer-effort-score/index.js:1
 #: packages/woocommerce-admin/dist/experimental/index.js:2
-#: packages/woocommerce-blocks/assets/js/blocks/product-category/block.js:236
+#: packages/woocommerce-blocks/assets/js/blocks/product-category/block.js:249
 #: packages/woocommerce-blocks/assets/js/blocks/product-tag/block.js:218
 #: packages/woocommerce-blocks/assets/js/blocks/products/all-products/edit.js:241
 #: packages/woocommerce-blocks/build/all-products.js:29
@@ -29699,7 +29922,7 @@ msgstr "Katalogsynlighed:"
 #: includes/admin/views/html-bulk-edit-product.php:190
 #: includes/admin/views/html-quick-edit-product.php:148
 #: includes/customizer/class-wc-shop-customizer.php:747
-#: includes/wc-product-functions.php:838
+#: includes/wc-product-functions.php:840
 msgid "Hidden"
 msgstr "Skjul"
 
@@ -29734,19 +29957,19 @@ msgstr "Beskrivelse (valgfri)"
 #: templates/cart/cart.php:143 templates/checkout/form-coupon.php:34
 #: packages/woocommerce-admin/dist/chunks/analytics-report-coupons.js:1
 #: packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/coupon/index.js:52
-#: packages/woocommerce-blocks/build/cart-frontend.js:37
-#: packages/woocommerce-blocks/build/cart.js:29
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:29
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:21
+#: packages/woocommerce-blocks/build/cart-frontend.js:41
+#: packages/woocommerce-blocks/build/cart.js:35
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:25
 msgid "Coupon code"
 msgstr "Rabatkuponkode"
 
 #: includes/admin/class-wc-admin-pointers.php:61
 #: includes/admin/class-wc-admin-post-types.php:620
 #: packages/woocommerce-blocks/assets/js/blocks/reviews/all-reviews/edit.js:35
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-category/edit.js:100
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-category/edit.js:64
 #: packages/woocommerce-blocks/build/all-reviews.js:7
-#: packages/woocommerce-blocks/build/reviews-by-category.js:9
+#: packages/woocommerce-blocks/build/reviews-by-category.js:7
 msgid "Product name"
 msgstr "Varenavn"
 
@@ -29754,20 +29977,20 @@ msgstr "Varenavn"
 msgid "Show all types"
 msgstr "Vis alle typer"
 
-#: includes/wc-product-functions.php:598
+#: includes/wc-product-functions.php:600
 msgid "Simple product"
 msgstr "Enkel vare"
 
-#: includes/wc-product-functions.php:601
+#: includes/wc-product-functions.php:603
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 msgid "Variable product"
 msgstr "Variabel vare"
 
-#: includes/wc-product-functions.php:600
+#: includes/wc-product-functions.php:602
 msgid "External/Affiliate product"
 msgstr "Ekstern/Partner vare"
 
-#: includes/wc-product-functions.php:599
+#: includes/wc-product-functions.php:601
 msgid "Grouped product"
 msgstr "Grupperet vare"
 
@@ -29820,7 +30043,7 @@ msgstr[1] "Plus %d andre noter"
 #: includes/admin/views/html-admin-page-status-logs.php:40
 #: includes/wc-account-functions.php:286
 #: packages/woocommerce-blocks/assets/js/editor-components/view-switcher/index.js:18
-#: packages/woocommerce-blocks/build/cart.js:31
+#: packages/woocommerce-blocks/build/cart.js:39
 msgid "View"
 msgstr "Vis"
 
@@ -29900,24 +30123,22 @@ msgstr "Handlinger"
 #: templates/myaccount/my-orders.php:17 templates/order/order-details.php:52
 #: packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/footer-item/index.js:33
 #: packages/woocommerce-blocks/assets/js/payment-method-extensions/payment-methods/stripe/stripe-utils/utils.js:60
-#: packages/woocommerce-blocks/build/cart-frontend.js:15
-#: packages/woocommerce-blocks/build/cart-frontend.js:33
-#: packages/woocommerce-blocks/build/cart-frontend.js:37
-#: packages/woocommerce-blocks/build/cart.js:25
+#: packages/woocommerce-blocks/build/cart-blocks/express-payment--checkout-blocks/express-payment--checkout-blocks/payment-frontend.js:5
+#: packages/woocommerce-blocks/build/cart-blocks/line-items-frontend.js:13
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:21
+#: packages/woocommerce-blocks/build/cart-frontend.js:13
+#: packages/woocommerce-blocks/build/cart-frontend.js:35
+#: packages/woocommerce-blocks/build/cart-frontend.js:41
 #: packages/woocommerce-blocks/build/cart.js:29
-#: packages/woocommerce-blocks/build/cart.js:41
-#: packages/woocommerce-blocks/build/checkout-frontend.js:25
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:25
-#: packages/woocommerce-blocks/build/checkout.js:29
+#: packages/woocommerce-blocks/build/cart.js:35
+#: packages/woocommerce-blocks/build/cart.js:43
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:25
 #: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:13
 #: packages/woocommerce-blocks/build/wc-payment-method-stripe.js:1
 msgid "Total"
 msgstr "Total"
 
 #: includes/class-wc-checkout.php:239
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/edit.js:190
-#: packages/woocommerce-blocks/build/checkout.js:31
 msgid "Order notes"
 msgstr "Bemærkninger til ordren"
 
@@ -30043,7 +30264,7 @@ msgstr "Kategorier"
 #: includes/widgets/class-wc-widget-products.php:54 templates/cart/cart.php:31
 #: templates/cart/cart.php:97 templates/emails/email-order-details.php:44
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/price/edit.js:73
-#: packages/woocommerce-blocks/assets/js/base/components/price-slider/index.js:355
+#: packages/woocommerce-blocks/assets/js/base/components/price-slider/index.js:360
 #: packages/woocommerce-blocks/assets/js/blocks/active-filters/block.js:73
 #: packages/woocommerce-blocks/build/active-filters-frontend.js:13
 #: packages/woocommerce-blocks/build/active-filters.js:15
@@ -30314,7 +30535,7 @@ msgstr "Tildel eventuelt varekategorier til dine varer for at gøre det lettere 
 #: packages/woocommerce-blocks/build/product-new.js:1
 #: packages/woocommerce-blocks/build/product-on-sale.js:1
 #: packages/woocommerce-blocks/build/product-top-rated.js:1
-#: packages/woocommerce-blocks/build/reviews-by-category.js:9
+#: packages/woocommerce-blocks/build/reviews-by-category.js:7
 msgid "Product Categories"
 msgstr "Varekategorier"
 
@@ -30434,8 +30655,9 @@ msgstr "Shoppens startside"
 #: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-product/edit.js:78
 #: packages/woocommerce-blocks/assets/js/blocks/single-product/edit/index.js:101
 #: packages/woocommerce-blocks/build/all-reviews.js:1
-#: packages/woocommerce-blocks/build/cart-frontend.js:15
-#: packages/woocommerce-blocks/build/cart.js:41
+#: packages/woocommerce-blocks/build/cart-blocks/line-items-frontend.js:13
+#: packages/woocommerce-blocks/build/cart-frontend.js:13
+#: packages/woocommerce-blocks/build/cart.js:43
 #: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:13
 #: packages/woocommerce-blocks/build/reviews-by-category.js:1
 #: packages/woocommerce-blocks/build/reviews-by-product.js:1
@@ -30639,10 +30861,10 @@ msgstr "Har du brug for hjælp til at forstå, bruge eller udvide WooCommerce, s
 #: packages/woocommerce-admin/dist/chunks/analytics-report-revenue.js:1
 #: packages/woocommerce-admin/dist/chunks/dashboard-charts.js:1
 #: packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/discount/index.js:106
-#: packages/woocommerce-blocks/build/cart-frontend.js:37
-#: packages/woocommerce-blocks/build/cart.js:29
-#: packages/woocommerce-blocks/build/checkout-frontend.js:29
-#: packages/woocommerce-blocks/build/checkout.js:29
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:21
+#: packages/woocommerce-blocks/build/cart-frontend.js:41
+#: packages/woocommerce-blocks/build/cart.js:35
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:25
 msgid "Coupons"
 msgstr "Rabatkuponer"
 
@@ -30655,8 +30877,7 @@ msgstr "Rapporter"
 #: includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php:105
 #: includes/shipping/local-pickup/class-wc-shipping-local-pickup.php:31
 #: includes/shipping/local-pickup/class-wc-shipping-local-pickup.php:83
-#: packages/woocommerce-blocks/build/cart.js:31
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/cart.js:37
 msgid "Local pickup"
 msgstr "Lokal afhentning"
 
@@ -30798,7 +31019,7 @@ msgstr "Slet"
 #: packages/woocommerce-blocks/assets/js/blocks/featured-category/block.js:114
 #: packages/woocommerce-blocks/assets/js/blocks/featured-product/block.js:164
 #: packages/woocommerce-blocks/assets/js/blocks/handpicked-products/block.js:172
-#: packages/woocommerce-blocks/assets/js/blocks/product-category/block.js:294
+#: packages/woocommerce-blocks/assets/js/blocks/product-category/block.js:293
 #: packages/woocommerce-blocks/assets/js/blocks/product-tag/block.js:275
 #: packages/woocommerce-blocks/assets/js/blocks/products-by-attribute/block.js:173
 #: packages/woocommerce-blocks/assets/js/blocks/products/all-products/edit.js:151
@@ -30807,7 +31028,7 @@ msgstr "Slet"
 #: packages/woocommerce-blocks/build/all-products.js:29
 #: packages/woocommerce-blocks/build/all-reviews.js:1
 #: packages/woocommerce-blocks/build/attribute-filter.js:33
-#: packages/woocommerce-blocks/build/cart.js:43
+#: packages/woocommerce-blocks/build/cart.js:45
 #: packages/woocommerce-blocks/build/featured-category.js:1
 #: packages/woocommerce-blocks/build/featured-product.js:5
 #: packages/woocommerce-blocks/build/handpicked-products.js:3
@@ -30855,10 +31076,10 @@ msgstr "Egenskaber"
 #: templates/cart/shipping-calculator.php:86
 #: packages/woocommerce-admin/dist/chunks/task-list.js:1
 #: packages/woocommerce-admin/dist/components/index.js:2
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:21
 #: packages/woocommerce-blocks/build/cart-frontend.js:41
-#: packages/woocommerce-blocks/build/cart.js:29
-#: packages/woocommerce-blocks/build/checkout-frontend.js:37
-#: packages/woocommerce-blocks/build/checkout.js:29
+#: packages/woocommerce-blocks/build/cart.js:35
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:25
 #: packages/woocommerce-blocks/build/wc-blocks-vendors.js:9
 msgid "Update"
 msgstr "Opdatér"
@@ -30986,6 +31207,7 @@ msgstr "Kunne ikke tildele adgang - brugeren kan allerede have tilladelse til de
 msgid "No customer selected"
 msgstr "Der er ikke valgt en kunde"
 
+#: includes/admin/class-wc-admin-addons.php:1249
 #: includes/admin/class-wc-admin-assets.php:347
 #: includes/admin/class-wc-admin-post-types.php:683
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:130
@@ -31046,10 +31268,10 @@ msgstr "Klik for at slå til / fra"
 #: packages/woocommerce-blocks/build/active-filters.js:5
 #: packages/woocommerce-blocks/build/attribute-filter-frontend.js:9
 #: packages/woocommerce-blocks/build/attribute-filter.js:7
-#: packages/woocommerce-blocks/build/cart-frontend.js:29
+#: packages/woocommerce-blocks/build/cart-blocks/order-summary-frontend.js:3
+#: packages/woocommerce-blocks/build/cart-frontend.js:17
 #: packages/woocommerce-blocks/build/cart.js:21
-#: packages/woocommerce-blocks/build/checkout-frontend.js:21
-#: packages/woocommerce-blocks/build/checkout.js:21
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:5
 msgid "Remove"
 msgstr "Fjern"
 
@@ -31361,7 +31583,7 @@ msgstr "Kunde-nøgle (key) udløber om"
 #: includes/gateways/cod/class-wc-gateway-cod.php:83
 #: includes/gateways/paypal/includes/settings-paypal.php:25
 #: includes/wc-template-functions.php:1834
-#: packages/woocommerce-admin/src/Features/Onboarding.php:419
+#: packages/woocommerce-admin/src/Features/Onboarding.php:424
 #: templates/single-product/tabs/description.php:22
 msgid "Description"
 msgstr "Beskrivelse"
@@ -31388,7 +31610,7 @@ msgstr "Fra:"
 #: includes/admin/class-wc-admin-reports.php:108
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:276
 #: includes/admin/reports/class-wc-report-stock.php:118
-#: includes/wc-product-functions.php:873
+#: includes/wc-product-functions.php:875
 #: packages/woocommerce-admin/dist/chunks/analytics-report-stock.js:1
 msgid "Out of stock"
 msgstr "Ikke på lager"
@@ -31399,10 +31621,10 @@ msgstr "Ikke på lager"
 #: packages/woocommerce-blocks/build/all-products.js:21
 #: packages/woocommerce-blocks/build/atomic-block-components/stock-indicator-frontend.js:3
 #: packages/woocommerce-blocks/build/atomic-block-components/stock-indicator.js:3
+#: packages/woocommerce-blocks/build/cart-blocks/line-items-frontend.js:9
 #: packages/woocommerce-blocks/build/cart-frontend.js:31
-#: packages/woocommerce-blocks/build/cart.js:23
-#: packages/woocommerce-blocks/build/checkout-frontend.js:23
-#: packages/woocommerce-blocks/build/checkout.js:23
+#: packages/woocommerce-blocks/build/cart.js:29
+#: packages/woocommerce-blocks/build/checkout-blocks/order-summary-frontend.js:19
 #: packages/woocommerce-blocks/build/mini-cart-component-frontend.js:13
 msgid "Available on backorder"
 msgstr "Tilgængelig på restordre"
@@ -31424,7 +31646,7 @@ msgstr "Kun %s tilbage på lager"
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:274
 #: includes/admin/reports/class-wc-report-stock.php:116
 #: includes/wc-formatting-functions.php:1224
-#: includes/wc-product-functions.php:872
+#: includes/wc-product-functions.php:874
 #: packages/woocommerce-admin/dist/chunks/analytics-report-stock.js:1
 msgid "In stock"
 msgstr "På lager"
@@ -31494,17 +31716,16 @@ msgstr "Ordrestatus ændret fra %1$s til %2$s."
 #: includes/admin/wc-admin-functions.php:20 includes/class-wc-order.php:1718
 #: includes/class-wc-order.php:1719 includes/class-wc-privacy.php:52
 #: includes/customizer/class-wc-shop-customizer.php:39
-#: includes/wc-order-functions.php:977
+#: includes/wc-order-functions.php:980
 #: packages/woocommerce-admin/includes/connect-existing-pages.php:62
 #: packages/woocommerce-admin/src/Features/Homescreen.php:84
 #: packages/woocommerce-admin/src/Loader.php:1079
 #: packages/woocommerce-admin/src/PageController.php:183
 #: templates/auth/header.php:32
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/config.js:17
 #: packages/woocommerce-blocks/assets/js/blocks/active-filters/index.js:21
 #: packages/woocommerce-blocks/assets/js/blocks/attribute-filter/index.js:21
+#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart-i2/index.js:26
 #: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart/index.js:26
-#: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/index.js:57
 #: packages/woocommerce-blocks/assets/js/blocks/featured-category/index.js:28
 #: packages/woocommerce-blocks/assets/js/blocks/featured-product/index.js:28
 #: packages/woocommerce-blocks/assets/js/blocks/handpicked-products/index.js:24
@@ -31519,9 +31740,9 @@ msgstr "Ordrestatus ændret fra %1$s til %2$s."
 #: packages/woocommerce-blocks/assets/js/blocks/product-top-rated/index.js:26
 #: packages/woocommerce-blocks/assets/js/blocks/products-by-attribute/index.js:24
 #: packages/woocommerce-blocks/assets/js/blocks/products/all-products/index.js:24
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/all-reviews/index.js:28
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-category/index.js:26
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-product/index.js:26
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/all-reviews/index.js:29
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-category/index.js:27
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-product/index.js:27
 #: packages/woocommerce-blocks/assets/js/blocks/single-product/index.js:27
 #: packages/woocommerce-blocks/assets/js/blocks/stock-filter/index.js:21
 #: packages/woocommerce-blocks/assets/js/index.js:23
@@ -31530,8 +31751,7 @@ msgstr "Ordrestatus ændret fra %1$s til %2$s."
 #: packages/woocommerce-blocks/build/all-products.js:29
 #: packages/woocommerce-blocks/build/all-reviews.js:7
 #: packages/woocommerce-blocks/build/attribute-filter.js:33
-#: packages/woocommerce-blocks/build/cart.js:43
-#: packages/woocommerce-blocks/build/checkout.js:31
+#: packages/woocommerce-blocks/build/cart.js:45
 #: packages/woocommerce-blocks/build/featured-category.js:1
 #: packages/woocommerce-blocks/build/featured-product.js:5
 #: packages/woocommerce-blocks/build/handpicked-products.js:3
@@ -31546,7 +31766,7 @@ msgstr "Ordrestatus ændret fra %1$s til %2$s."
 #: packages/woocommerce-blocks/build/product-tag.js:5
 #: packages/woocommerce-blocks/build/product-top-rated.js:1
 #: packages/woocommerce-blocks/build/products-by-attribute.js:11
-#: packages/woocommerce-blocks/build/reviews-by-category.js:9
+#: packages/woocommerce-blocks/build/reviews-by-category.js:7
 #: packages/woocommerce-blocks/build/reviews-by-product.js:17
 #: packages/woocommerce-blocks/build/single-product.js:5
 #: packages/woocommerce-blocks/build/stock-filter.js:13
@@ -31578,7 +31798,7 @@ msgstr[1] ""
 msgid "Download %d"
 msgstr "Download %d"
 
-#: includes/abstracts/abstract-wc-order.php:2119
+#: includes/abstracts/abstract-wc-order.php:2130
 #: templates/checkout/order-receipt.php:33 templates/checkout/thankyou.php:64
 msgid "Total:"
 msgstr "Total:"
@@ -31595,33 +31815,30 @@ msgstr "Betalingsmetode:"
 msgid "Fee"
 msgstr "Gebyr"
 
-#: includes/abstracts/abstract-wc-order.php:2058
+#: includes/abstracts/abstract-wc-order.php:2069
 #: includes/admin/meta-boxes/views/html-order-items.php:176
-#: packages/woocommerce-blocks/build/cart-frontend.js:33
-#: packages/woocommerce-blocks/build/cart.js:25
-#: packages/woocommerce-blocks/build/checkout-frontend.js:25
-#: packages/woocommerce-blocks/build/checkout.js:25
+#: packages/woocommerce-blocks/build/cart-blocks/express-payment--checkout-blocks/express-payment--checkout-blocks/payment-frontend.js:5
+#: packages/woocommerce-blocks/build/cart-frontend.js:35
+#: packages/woocommerce-blocks/build/cart.js:29
 msgid "Shipping:"
 msgstr "Forsendelse:"
 
-#: includes/abstracts/abstract-wc-order.php:2043
-#: packages/woocommerce-blocks/build/cart-frontend.js:33
-#: packages/woocommerce-blocks/build/cart.js:25
-#: packages/woocommerce-blocks/build/checkout-frontend.js:25
-#: packages/woocommerce-blocks/build/checkout.js:25
+#: includes/abstracts/abstract-wc-order.php:2054
+#: packages/woocommerce-blocks/build/cart-blocks/express-payment--checkout-blocks/express-payment--checkout-blocks/payment-frontend.js:5
+#: packages/woocommerce-blocks/build/cart-frontend.js:35
+#: packages/woocommerce-blocks/build/cart.js:29
 msgid "Discount:"
 msgstr "Rabat:"
 
-#: includes/abstracts/abstract-wc-order.php:2028
+#: includes/abstracts/abstract-wc-order.php:2039
 #: includes/wc-template-functions.php:2194
-#: packages/woocommerce-blocks/build/cart-frontend.js:33
-#: packages/woocommerce-blocks/build/cart.js:25
-#: packages/woocommerce-blocks/build/checkout-frontend.js:25
-#: packages/woocommerce-blocks/build/checkout.js:25
+#: packages/woocommerce-blocks/build/cart-blocks/express-payment--checkout-blocks/express-payment--checkout-blocks/payment-frontend.js:5
+#: packages/woocommerce-blocks/build/cart-frontend.js:35
+#: packages/woocommerce-blocks/build/cart.js:29
 msgid "Subtotal:"
 msgstr "Subtotal:"
 
-#: includes/abstracts/abstract-wc-order.php:1999
+#: includes/abstracts/abstract-wc-order.php:2010
 #: includes/class-wc-cart.php:1585 includes/class-wc-product-grouped.php:120
 msgid "Free!"
 msgstr "Gratis!"
