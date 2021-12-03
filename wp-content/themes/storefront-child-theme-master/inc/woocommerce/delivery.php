@@ -67,3 +67,4 @@ function product_category_hide_shipping_methods( $rates, $package ){
     return !empty( $rates_arr ) ? $rates_arr : $rates;
 }
 add_filter( 'woocommerce_package_rates', 'product_category_hide_shipping_methods', 90, 2 );
+

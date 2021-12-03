@@ -87,7 +87,7 @@ function filter_woocommerce_cart_shipping_method_full_label( $label, $method ) {
       $label = "<i class='fas fa-truck'></i>" . $label;
   }
   elseif ( $method->method_id == "local_pickup" ) {
-      $label = "<i class='fas fa-store-alt'></i>" . $label;
+      $label = "<i class='fas fa-store-alt'></i>" . $label . "<p class='shipping-description'>Kontakt 70 60 24 17 for fragtmuligheder</p>";
   }
   elseif ( $method->label == "GLS - Privatlevering" ) {
     $gls_image_url = get_stylesheet_directory_uri() . '/img/gls-logo.svg';

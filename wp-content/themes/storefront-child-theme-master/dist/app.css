@@ -1595,6 +1595,10 @@ form.checkout, form.woocommerce-cart-form {
         margin-right: 1em; }
       .woocommerce-checkout .col2-set .col-2 li label i {
         font-size: 1.25rem; }
+      .woocommerce-checkout .col2-set .col-2 li label .shipping-description {
+        font-size: 0.75rem;
+        color: #8F8F8F;
+        margin: 0 0 0 1em; }
       .woocommerce-checkout .col2-set .col-2 li label .shipping_logo {
         width: 75px;
         border: 1px solid #EBEBEB;
