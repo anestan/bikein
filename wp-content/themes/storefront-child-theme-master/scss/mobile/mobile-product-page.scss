@@ -15,7 +15,7 @@
       }
     }
     .woocommerce-product-gallery {
-      height: 300px;
+      max-height: 300px;
       figure {
         a {
           height: inherit;
@@ -41,7 +41,7 @@
     }
   }
 
-  .related {
+  .related, .up-sells {
     margin-top: 1em;
     h2 {
       font-size: $h4-font-size;
@@ -61,9 +61,10 @@
           justify-content: space-between;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 4px 0px;
 
-          h2.woocommerce-loop-product__title {
+          .woocommerce-loop-product__title {
             margin-bottom: 0;
             font-size: $font-size-base;
+            max-width: 140px;
           }
 
           .price {
@@ -88,4 +89,5 @@
 
 .product-template-default .woocommerce-message {
   font-size: $font-size-small;
+  display: block;
 }
