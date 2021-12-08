@@ -569,35 +569,37 @@ hr {
     padding: 0; }
   #main .tabs li.active::after {
     content: none; }
-  #main .related {
+  #main .related, #main .up-sells {
     margin-top: 1em; }
-    #main .related h2 {
+    #main .related h2, #main .up-sells h2 {
       font-size: 1.5rem;
       text-align: center; }
-    #main .related .products.columns-4 {
+    #main .related .products.columns-4, #main .up-sells .products.columns-4 {
       grid-template-columns: 1fr 1fr; }
-      #main .related .products.columns-4 li {
+      #main .related .products.columns-4 li, #main .up-sells .products.columns-4 li {
         width: 48.411765%;
         height: inherit; }
-        #main .related .products.columns-4 li a.woocommerce-loop-product__link {
+        #main .related .products.columns-4 li a.woocommerce-loop-product__link, #main .up-sells .products.columns-4 li a.woocommerce-loop-product__link {
           padding: 0.2em;
           width: 100%;
           justify-content: space-between;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 4px 0px; }
-          #main .related .products.columns-4 li a.woocommerce-loop-product__link h2.woocommerce-loop-product__title {
+          #main .related .products.columns-4 li a.woocommerce-loop-product__link .woocommerce-loop-product__title, #main .up-sells .products.columns-4 li a.woocommerce-loop-product__link .woocommerce-loop-product__title {
             margin-bottom: 0;
-            font-size: 1rem; }
-          #main .related .products.columns-4 li a.woocommerce-loop-product__link .price {
+            font-size: 1rem;
+            max-width: 140px; }
+          #main .related .products.columns-4 li a.woocommerce-loop-product__link .price, #main .up-sells .products.columns-4 li a.woocommerce-loop-product__link .price {
             margin-bottom: 0.5em;
             font-size: 0.75rem; }
-            #main .related .products.columns-4 li a.woocommerce-loop-product__link .price bdi {
+            #main .related .products.columns-4 li a.woocommerce-loop-product__link .price bdi, #main .up-sells .products.columns-4 li a.woocommerce-loop-product__link .price bdi {
               font-size: 0.75rem; }
-        #main .related .products.columns-4 li img {
+        #main .related .products.columns-4 li img, #main .up-sells .products.columns-4 li img {
           width: auto;
           max-height: 125px;
           margin: 0.5em 0; }
   .product-template-default .woocommerce-message {
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    display: block; }
   .woocommerce-cart .woocommerce-cart-form .col-cart-one, .woocommerce-cart .woocommerce-cart-form .col-cart-two, .woocommerce-cart .woocommerce-cart-form .col2-set, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper, .woocommerce-cart .woocommerce-checkout .col-cart-one, .woocommerce-cart .woocommerce-checkout .col-cart-two, .woocommerce-cart .woocommerce-checkout .col2-set, .woocommerce-cart .woocommerce-checkout .order-review-wrapper, .woocommerce-checkout .woocommerce-cart-form .col-cart-one, .woocommerce-checkout .woocommerce-cart-form .col-cart-two, .woocommerce-checkout .woocommerce-cart-form .col2-set, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper, .woocommerce-checkout .woocommerce-checkout .col-cart-one, .woocommerce-checkout .woocommerce-checkout .col-cart-two, .woocommerce-checkout .woocommerce-checkout .col2-set, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper {
     width: 100%;
     padding: 1.5em; }
@@ -645,11 +647,13 @@ hr {
     font-size: 1.25rem;
     text-align: center; }
   .woocommerce-cart .cross-sells ul.products.columns-2, .woocommerce-checkout .cross-sells ul.products.columns-2 {
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr; }
     .woocommerce-cart .cross-sells ul.products.columns-2 li.product, .woocommerce-checkout .cross-sells ul.products.columns-2 li.product {
       height: auto; }
       .woocommerce-cart .cross-sells ul.products.columns-2 li.product .woocommerce-loop-product__link, .woocommerce-checkout .cross-sells ul.products.columns-2 li.product .woocommerce-loop-product__link {
         padding: 0.5em; }
+        .woocommerce-cart .cross-sells ul.products.columns-2 li.product .woocommerce-loop-product__link .woocommerce-loop-product__title, .woocommerce-checkout .cross-sells ul.products.columns-2 li.product .woocommerce-loop-product__link .woocommerce-loop-product__title {
+          max-width: 250px; }
         .woocommerce-cart .cross-sells ul.products.columns-2 li.product .woocommerce-loop-product__link img, .woocommerce-checkout .cross-sells ul.products.columns-2 li.product .woocommerce-loop-product__link img {
           max-height: 100px;
           margin: 1em 0; }
@@ -1099,8 +1103,8 @@ body.mm-ocd-opened {
         font-size: 0.75rem;
         font-weight: 300;
         text-decoration: none; }
-  #main .product .storefront-full-width-content .related.products h2:first-child {
-    text-align: left; }
+  #main .product .related {
+    margin-top: 2em; }
 
 #main .tabs li.active {
   background-color: #ffffff;
@@ -1370,7 +1374,6 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     width: 60%;
     padding: 6em;
     background-color: #ffffff;
-    min-height: 800px;
     border-radius: 5px; }
     .woocommerce-cart .col-cart-one .cart-header .cart-product-count {
       font-weight: 500;

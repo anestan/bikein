@@ -116,16 +116,8 @@
       }
     }
 
-    .storefront-full-width-content {
-      .related {
-        &.products {
-          h2 {
-            &:first-child {
-              text-align: left;
-            }
-          }
-        }
-      }
+    .related {
+      margin-top: 2em;
     }
   }
 

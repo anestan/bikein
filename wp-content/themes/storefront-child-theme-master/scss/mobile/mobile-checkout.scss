@@ -95,12 +95,16 @@
     }
     ul.products {
       &.columns-2 {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
 
         li.product {
           height: auto;
           .woocommerce-loop-product__link {
             padding: 0.5em;
+
+            .woocommerce-loop-product__title {
+              max-width: 250px;
+            }
             img {
               max-height: 100px;
               margin: 1em 0;
