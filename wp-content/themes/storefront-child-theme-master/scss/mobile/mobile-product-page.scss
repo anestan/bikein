@@ -15,7 +15,7 @@
       }
     }
     .woocommerce-product-gallery {
-      height: 300px;
+      max-height: 300px;
       figure {
         a {
           height: inherit;

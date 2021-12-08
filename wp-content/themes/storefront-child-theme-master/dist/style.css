@@ -558,7 +558,7 @@ hr {
       float: none;
       padding: 1em 0; }
   #main div.product .woocommerce-product-gallery {
-    height: 300px; }
+    max-height: 300px; }
     #main div.product .woocommerce-product-gallery figure a {
       height: inherit; }
       #main div.product .woocommerce-product-gallery figure a img {
