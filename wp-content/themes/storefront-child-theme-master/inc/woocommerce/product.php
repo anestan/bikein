@@ -9,6 +9,12 @@ add_filter( 'woocommerce_get_image_size_single', function( $size ) {
     );
 } );
 
+/* Product gallery - Remove zoom on hover to prevent image stutter */
+function remove_zoom_lightbox_gallery_support() {
+   remove_theme_support( 'wc-product-gallery-zoom' );
+}
+add_action( 'wp', 'remove_zoom_lightbox_gallery_support', 99 );
+
 //Rearrange price and short desc
 add_action('woocommerce_single_product_summary', 'move_single_product_price', 1);
 function move_single_product_price() {
