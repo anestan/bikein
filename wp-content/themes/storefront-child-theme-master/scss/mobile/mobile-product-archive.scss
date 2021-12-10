@@ -56,10 +56,9 @@
   }
   #main.site-main {
     #archive-top-filters.filter-wrapper {
-      display: none;
       grid-template-columns: 1fr 1fr;
 
-      div.widget_custom_html {
+      .woocommerce-widget-layered-nav {
         display: none;
       }
     }
@@ -106,7 +105,7 @@ ul.products li.product span.onsale {
 
 button.show_filter {
   margin: 1.4em 0;
-  display: block;
+  display: none;
   width: 100%;
   background-color: #FFF;
   border: 1px solid $primary;
