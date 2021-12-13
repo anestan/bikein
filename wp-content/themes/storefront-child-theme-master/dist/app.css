@@ -1104,6 +1104,21 @@ body.mm-ocd-opened {
         text-decoration: none; }
   #main .product .related {
     margin-top: 2em; }
+  #main .product .custom-attributes {
+    margin: 1em 0 1em 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: row; }
+    #main .product .custom-attributes .attributes-and-color {
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #121144;
+      background-color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 2px;
+      border-left: 3px solid #F7D544;
+      font-weight: 400;
+      margin: 0px 1em 0px 0px; }
 
 #main .tabs li.active {
   background-color: #ffffff;

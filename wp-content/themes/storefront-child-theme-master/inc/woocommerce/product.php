@@ -111,7 +111,7 @@ function display_custom_fields() {
     }
 }
 
-
+/* Add to cart */
 add_action('wp_ajax_ql_woocommerce_ajax_add_to_cart', 'ql_woocommerce_ajax_add_to_cart');
 add_action('wp_ajax_nopriv_ql_woocommerce_ajax_add_to_cart', 'ql_woocommerce_ajax_add_to_cart');
 function ql_woocommerce_ajax_add_to_cart() {
@@ -134,3 +134,37 @@ function ql_woocommerce_ajax_add_to_cart() {
             }
             wp_die();
         }
+
+
+/* Show size + color attributes */
+
+// Show shipping text field on product page
+function woo_show_produt_attributes() {
+    global $product;
+
+    if ($product->is_type( 'simple' )){
+    
+        echo '<div class="custom-attributes">';
+         
+            // Size
+            $size_attribute = $product->get_attribute( 'pa_stoerrelse' );
+            $size_name = 'Størrelse: ';
+        
+            if (!empty($size_attribute)) {
+                echo '<p class="attributes-and-color">' .  $size_name  .  $size_attribute;
+            }
+
+
+            // Color
+            $color_attribute = $product->get_attribute( 'pa_farve' );
+            $color_name = 'Farve: ';
+        
+            if (!empty($color_attribute)) {
+                echo '<p class="attributes-and-color">' .  $color_name  .  $color_attribute;
+            }
+        
+
+        echo '</div>';
+    }
+}
+add_action( 'woocommerce_before_add_to_cart_form', 'woo_show_produt_attributes', 15 );

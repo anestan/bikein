@@ -120,6 +120,27 @@
     .related {
       margin-top: 2em;
     }
+
+    // Attributes
+    .custom-attributes {
+      margin: 1em 0 1em 0;
+      width: fit-content;
+      display: flex;
+      flex-direction: row;
+
+      .attributes-and-color {
+        justify-content: space-between;
+        font-size: $font-size-small;
+        color: $primary;
+        background-color: $white;
+        padding: 5px 10px;
+        border-radius: 2px;
+        border-left: 3px solid $secondary;
+        font-weight: 400;
+        margin: 0px 1em 0px 0px;
+      }
+    }
+
   }
 
   // Tabs
